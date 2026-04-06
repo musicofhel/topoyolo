@@ -1,0 +1,66 @@
+# SYNONYMS.md
+
+## The Translation Table
+
+Each row is a single abstract concept. Each column is a domain's name for it. Empty cells mean the domain doesn't use this concept — which is itself informative.
+
+---
+
+### Layer 0: The Algebraic Object
+
+| Concept | TDA | QEC | Dynamical Systems | Neuroscience | Information Theory |
+|---------|-----|-----|-------------------|--------------|-------------------|
+| The space | Simplicial complex | Code complex / cellulation | State space / phase space | Neural manifold | Source alphabet |
+| Local constraint | Simplex inclusion | Stabilizer | Flow equation | Firing rate constraint | Entropy bound |
+| Boundary operator | ∂ (simplicial) | ∂ (cellular) | — | — | — |
+| Cycle | Kernel of ∂ | Error syndrome pattern | Periodic orbit | Recurrent activity pattern | — |
+| Boundary | Image of ∂ | Trivial syndrome | Gradient flow | — | — |
+| Homology class | Persistent feature | Logical qubit | Attractor topology | Population topology (Giusti) | — |
+| Betti number | Feature count per dim | Logical qubit count | — | Intrinsic dimension (related) | — |
+| Coefficient field | Usually ℝ or ℤ/2 | ℤ/2 or ℤ/p | ℝ (continuous) | ℝ | ℝ |
+
+### Layer 1: Parameterization
+
+| Concept | TDA | QEC | Dynamical Systems | Neuroscience | Information Theory |
+|---------|-----|-----|-------------------|--------------|-------------------|
+| The parameter | Filtration scale ε | Error rate p | Coupling strength / bifurcation parameter | Stimulus / task condition | Channel capacity |
+| What changes | Which simplices exist | Which errors are correctable | Attractor topology | Neural representation geometry | Achievable rate |
+| Critical value | Persistent feature birth/death | Error threshold (~2.5%) | Bifurcation point | Perceptual switch | Capacity boundary |
+| The invariant that tracks it | Persistence diagram | Threshold curve | Bifurcation diagram | — | Rate-distortion curve |
+| Robustness of the invariant | Stability theorem (bottleneck ≤ Hausdorff) | Threshold theorem (exp. suppression) | Structural stability | — | Channel coding theorem |
+
+### Layer 2: Matching / Assignment
+
+| Concept | TDA | QEC | Dynamical Systems | Neuroscience | Information Theory |
+|---------|-----|-----|-------------------|--------------|-------------------|
+| What is matched | Diagram points (birth,death) | Syndrome defects | — | — | Source symbols to channel symbols |
+| Cost function | Bottleneck (L∞) or Wasserstein (Lp) | Edge weight in syndrome graph | — | — | Distortion measure |
+| Algorithm | Hungarian / auction | MWPM / Union-Find | — | — | Blahut-Arimoto |
+| What the solution means | Distance between topological signatures | Most likely error correction | — | — | Optimal code |
+
+### Layer 3: Composite Systems
+
+| Concept | TDA | QEC | Dynamical Systems | Neuroscience | Information Theory |
+|---------|-----|-----|-------------------|--------------|-------------------|
+| Components | Marginal point clouds | Subsystem Hilbert spaces | Uncoupled systems | Brain regions | Independent sources |
+| Joint object | Joint embedding | Tensor product space | Coupled system | Cross-region dynamics | Joint source |
+| Independence | I_joint ≈ combo of I_X, I_Y | Product state | No coupling | No functional connectivity | Independence |
+| Excess | Binding residual (R > 0) | Entanglement (non-separable) | Emergent attractor topology | Neural binding | Mutual information / synergy |
+| Detection method | PI subtraction + surrogate test | Entanglement witness | — | Coherence / Granger | I(X;Y) estimation |
+
+### Layer 4: Null Models
+
+| Concept | TDA | QEC | Dynamical Systems | Neuroscience | Information Theory |
+|---------|-----|-----|-------------------|--------------|-------------------|
+| What is destroyed | Phase coupling (surrogates) | Coherence (depolarizing channel) | Temporal structure (shuffle) | Neural correlation (trial shuffle) | Dependence (product distribution) |
+| What is preserved | Power spectrum | State space dimension | Marginal statistics | Firing rates | Marginal distributions |
+| Null distribution | Surrogate binding scores | Logical error rates under noise | — | Shuffled test statistics | — |
+| Significance | p < 0.05 (permutation) | Below threshold | — | p < 0.05 (permutation) | — |
+
+---
+
+## Notes on the Table
+
+Empty cells are as important as filled ones. Dynamical systems rarely use matching. Information theory rarely uses boundary operators. The emptiness marks where the domains genuinely diverge rather than merely using different words.
+
+Some filled cells are weaker than others. Calling a periodic orbit a "cycle" is a pun — it's a cycle in the flow, not in the chain complex. These false cognates are tracked in ANTISYNONYMS.md.
