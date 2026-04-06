@@ -12,6 +12,14 @@ Papers from or relevant to the neuroscience community, indexed by which abstract
 
 - **Chwilka & Karbowski (2024)** — "Explicit mutual information for simple networks and neurons with lognormal activities." Closed-form MI for lognormal neural firing rates; MI divergence at finite variance. Full annotation in `by-domain/information_theory.md`. Machines: joint-vs-marginal, stability (anti-stability).
 
+- **Zhang, Simeone, Cvetkovic, Abela, Richardson (2020)** — "ITENE: Intrinsic Transfer Entropy Neural Estimator." Neural estimator for intrinsic (non-synergistic) directional information flow; motivated by neural and gene-regulatory networks. Full annotation in `by-domain/information_theory.md`. Machines: joint-vs-marginal, matching, null hypothesis.
+
+- **Zhou, Xiao, Zhang, Xu, Cai (2014)** — "Granger Causality Network Reconstruction of Conductance-Based Integrate-and-Fire Neuronal Systems." Establishes quantitative mapping GC ∝ S² between functional (GC) and structural (synaptic) connectivity in I&F networks. Reconstruction works from voltage traces and spike rasters, insensitive to dynamical regime. Full annotation in `by-domain/information_theory.md`. Machines: joint-vs-marginal, stability, null hypothesis, parameterized homology.
+
+- **Wibral, Finn, Wollstadt, Lizier, Priesemann (2017)** — "Quantifying Information Modification in Developing Neural Networks via Partial Information Decomposition." PID applied to developing neural cultures: synergy (information modification) rises during maturation then collapses as redundancy dominates. Full annotation in `by-domain/information_theory.md`. Machines: joint-vs-marginal, null hypothesis, parameterized homology.
+
+- **Venkatesh, Dutta, Mehta, Grover (2021)** — "Can Information Flows Suggest Targets for Interventions in Neural Circuits?" M-information flow to identify intervention targets; fairness-in-ML as analogy for deep-brain stimulation. Full annotation in `by-domain/information_theory.md`. Machines: joint-vs-marginal, null hypothesis, matching.
+
 ---
 
 ## Papers to annotate (in inbox)

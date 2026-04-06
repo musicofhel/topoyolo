@@ -32,6 +32,69 @@ Surveys joint-vs-marginal (MI) estimation across architectures. Distinguishes ge
 ### Jónsson et al. (2020) — DNN Convergence with MI Regularization
 MINE-estimated I(X;T) as regularizer. Confirms compression phase in VGG-16. MI-based loss stabilizes training. Full annotation: `by-domain/information_theory.md`.
 
+### Kirkley (2025) — Transfer Entropy for Finite Data
+Reduced transfer entropy as debiased joint-vs-marginal excess with automatic MDL null. Combinatorial entropy avoids random-variable assumption. Full annotation: `by-domain/information_theory.md`.
+
+### Zhang, Simeone et al. (2020) — ITENE
+Intrinsic transfer entropy: refines joint-vs-marginal excess by subtracting synergistic information. Neural estimator via variational KL bounds. Also neuroscience. Full annotation: `by-domain/information_theory.md`.
+
+### Amornbunchornvej, Zheleva, Berger-Wolf (2020) — Variable-lag GC and TE
+Variable-lag Granger causality with DTW matching. Joint-vs-marginal excess computed after optimal temporal alignment. Full annotation: `by-domain/information_theory.md`.
+
+### Marinazzo, Pellicoro, Stramaglia (2008) — Kernel Granger Causality
+Granger causality as variance-ratio excess lifted to RKHS. Bonferroni-controlled eigenvector selection. Applied to gene regulatory and chaotic map networks. Full annotation: `by-domain/information_theory.md`.
+
+### Khanna & Tan (2020) — Economy SRU for Nonlinear GC
+Nonlinear Granger causality via sparse recurrent networks. Group-wise L1 regularization encodes null (no causal link) as zero input weights. Full annotation: `by-domain/information_theory.md`.
+
+### Marcinkevics & Vogt (2021) — GVAR (Self-explaining NNs for GC)
+Interpretable Granger causality with time-varying generalised coefficients. Signed effect detection + time-reversal stability. Full annotation: `by-domain/information_theory.md`.
+
+### Zhou, Xiao, Zhang, Xu, Cai (2014) — GC Network Reconstruction in I&F
+Quantitative mapping GC ∝ S² between functional and synaptic connectivity. Works across dynamical regimes. Also neuroscience. Full annotation: `by-domain/information_theory.md`.
+
+### Wibral, Finn et al. (2017) — PID in Developing Neural Networks
+PID synergy as information modification; developmental trajectory shows synergy rise then collapse. Also neuroscience. Full annotation: `by-domain/information_theory.md`.
+
+### Venkatesh, Dutta et al. (2021) — M-information Flow for Interventions
+Multi-message information flow (accuracy vs. bias) guides edge pruning. Observational flow predicts interventional effect. Also neuroscience. Full annotation: `by-domain/information_theory.md`.
+
+### PID Core Papers (8 papers)
+
+The PID programme is the information theory community's systematic treatment of joint-vs-marginal excess. All 8 papers decompose I(T; X1,...,Xn) into atoms. Synergy — the atom at the top of the redundancy lattice — is exactly the joint-vs-marginal excess: information present in the composite (X,Y) that is absent from X and Y individually.
+
+**PID-01 — Kolchinsky (2022)**: "A Novel Approach to the Partial Information Decomposition." Blackwell-order-based PID. Synergy defined via independent redundancy/union (no inclusion-exclusion). Also instantiates chain complex (lattice + Mobius), matching (optimization over channels), stability (data processing inequality). Full annotation: `by-domain/information_theory.md`.
+
+**PID-02 — Ince (2017)**: "The Partial Entropy Decomposition." Extends PID lattice to entropy (no target variable). Synergistic entropy = joint-vs-marginal excess in uncertainty. Reveals MI itself conflates redundant and synergistic entropy. Also instantiates chain complex, null hypothesis (diagnostic examples). Full annotation: `by-domain/information_theory.md`.
+
+**PID-03 — Venkatesh, Schamberg (2022)**: "PID via Deficiency for Multivariate Gaussians." Convex optimization for Gaussian PID in high dimensions. Counterexample: Barrett's scalar result breaks for vector messages. Also instantiates matching (convex optimization over covariance matrices), stability (approximation bounds). Full annotation: `by-domain/information_theory.md`.
+
+**PID-04 — Finn, Lizier (2018)**: "Pointwise PID Using Specificity and Ambiguity Lattices." Dual-lattice decomposition of unsigned pmi components. Satisfies target chain rule. Resolves two-bit-copy via Kelly gambling. Also instantiates chain complex (two parallel lattices), null hypothesis (canonical diagnostics). Full annotation: `by-domain/information_theory.md`.
+
+**PID-05 — Schick-Poland, Makkeh, Gutknecht, Wollstadt, Sturm, Wibral (2021)**: "PID for discrete and continuous variables." Measure-theoretic extension via shared exclusions. Differentiable, transformation-invariant, admits target chain rule. Also instantiates chain complex, stability (three perturbation-robustness results), null hypothesis (prior as reference). Full annotation: `by-domain/information_theory.md`.
+
+**PID-06 — Makkeh, Theis, Vicente (2018)**: "BROJA-2PID: A Robust Estimator." Exponential cone programming for BROJA PID. Proves strong duality. CI = I_joint - min_Q I_Q is literally excess of joint over marginal-preserving null. Also instantiates matching (optimal transport in distribution space), stability (solver robustness). Full annotation: `by-domain/information_theory.md`.
+
+**PID-07 — Makkeh, Theis, Vicente (2017)**: "Bivariate PID: The Optimization Perspective." Theoretical convex analysis of BROJA. Boundary non-smoothness = singularity at deterministic limit. Also instantiates matching (KKT on transportation polytope), stability (gradient divergence analysis). Full annotation: `by-domain/information_theory.md`.
+
+**PID-08 — Tian, Shamai (2025)**: "Broadcast Channel Cooperative Gain." First operational interpretation: BROJA synergy = cooperative gain (or lower bound) on broadcast channel sum-rate capacity. Cooperative gain IS joint-vs-marginal excess with a channel-coding interpretation. Also instantiates matching (channel optimization), null hypothesis (non-cooperative baseline), parameterized homology (capacity region deformation). Full annotation: `by-domain/information_theory.md`.
+
+#### PID structural parallels across domains
+
+The PID joint-vs-marginal pattern maps precisely to analogues in every other Rosetta domain:
+
+| Domain | Joint object | Components | Excess | Null model |
+|---|---|---|---|---|
+| **PID** | I(T; X,Y) | I(T;X), I(T;Y) | Synergy CI | min_Q I_Q (marginal-preserving) |
+| **QEC** | rho_AB | rho_A, rho_B | Entanglement | Product state rho_A tensor rho_B |
+| **TDA** | PH(joint cloud) | PH(proj_X), PH(proj_Y) | Binding residual | Surrogate (phase-shuffled) |
+| **Neuroscience** | Cross-region dynamics | Single-region activity | Neural binding | Trial-shuffled surrogates |
+| **Dynamical systems** | Coupled attractor | Uncoupled components | Emergent topology | Decoupled system |
+
+The BROJA null (min_Q preserving pairwise marginals) is the closest information-theoretic analogue to the TDA surrogate (destroy coupling, preserve marginal spectra). Both ask: "how much structure survives when we remove the joint dependence while keeping component-level statistics intact?"
+
+**Open problem**: PID lacks a general stability theorem. TDA has bottleneck stability (small perturbation to input yields bounded change in persistence diagram). QEC has the threshold theorem (below threshold, logical error rate is exponentially suppressed). There is no PID result of the form "small perturbation to the joint distribution yields bounded perturbation to all PID atoms." PID-05's differentiability and PID-07's convexity analysis are partial steps, but neither provides a global Lipschitz-type bound. This gap is a concrete research target for the Rosetta programme.
+
 ---
 
 ## TDA / Mathematical Physics

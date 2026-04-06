@@ -222,37 +222,6 @@ arXiv: 1307.2493
 
 ---
 
-## Cross-domain: Sugiyama, Nakahara, Tsuda (2016)
-**"Information Decomposition on Structured Space"**
-arXiv: 1601.05533
+## Cross-listed from Information Theory
 
-**Domain(s)**: Information theory, information geometry, neuroscience (application)
-
-**Abstract machines instantiated**:
-- **Chain complex**: The partially ordered set (poset) of event combinations forms a graded structure. The Mobius function on the poset plays the role of an inclusion-exclusion operator — it is the combinatorial analogue of a boundary operator. The theta-coordinate system decomposes log p(x) = sum_{s <= x} theta(s), where the sum runs over the lower set of x in the poset. The eta-coordinate system gives eta(s) = Pr(X >= s). These dual coordinates are analogous to chain and cochain representations.
-- **Joint-vs-marginal excess**: The orthogonal decomposition of KL divergence on the poset isolates the contribution of each event combination. Higher-order interactions (3-way, 4-way, ...) are the joint-vs-marginal excess: information present in the joint set of k events but absent from any (k-1)-subset. The paper provides efficient algorithms for computing these decompositions, even on incomplete hierarchies where some event combinations never occur.
-- **Null hypothesis**: The product distribution (independence model) is the null: theta(s) = 0 for all non-singleton s corresponds to statistical independence. The deviation of theta(s) from zero for higher-order s measures the statistical interaction — the structure destroyed by the independence assumption.
-
-**What is genuinely new (not reducible to shared abstraction)**:
-- Extension of Amari's hierarchical decomposition from complete to incomplete posets. Many real-world scenarios have forbidden event combinations (e.g., "male" AND "ovarian cancer"), and the paper handles these gracefully by defining dual coordinates on arbitrary finite posets.
-- The Pythagoras theorem for KL divergence on posets: D_KL(p||q) decomposes into orthogonal components corresponding to different levels of the hierarchy. This is a Hodge-like decomposition on a discrete structure — the information-theoretic analogue of the Hodge decomposition on simplicial complexes (cf. Mollers et al., 2023).
-- Efficient algorithms (O(|S|^2) rather than exponential) for computing the decomposition, making it practical for neuroscience applications with many neurons.
-- Application to isolating higher-order statistical interactions in neural spike train data.
-
-**Connections the authors acknowledge**: Cite Amari (2001) on information geometry and hierarchical decomposition. Cite neuroscience applications (Schneidman et al., 2006; Ganmor et al., 2011 on neural interactions). Cite order theory (Birkhoff, Davey & Priestley). No connections to TDA, QEC, or dynamical systems.
-
-**Vocabulary mapping**:
-| Paper term | Rosetta term |
-|---|---|
-| Poset of event combinations | Graded structure (analogous to simplicial complex) |
-| theta-coordinate theta(s) | Interaction parameter (log-linear coefficient) |
-| eta-coordinate eta(s) = Pr(X >= s) | Cumulative measure (dual coordinate) |
-| Mobius function mu | Inclusion-exclusion (combinatorial boundary operator) |
-| Orthogonal decomposition of D_KL | Hodge-like decomposition on discrete structure |
-| Higher-order interaction | Joint-vs-marginal excess at order k |
-| Independence model (theta = 0) | Null hypothesis (no interactions) |
-| Incomplete hierarchy | Poset with forbidden combinations (holes in the complex) |
-| Pythagoras theorem for D_KL | Orthogonality of components (analogous to Hodge orthogonality) |
-| Principal ideal, principal filter | Lower/upper sets in the poset (local neighborhoods) |
-
-**See also**: `by-structure/boundary_operators.md`, `by-structure/composite_systems.md`, `by-domain/information_theory.md`
+- **Sugiyama, Nakahara & Tsuda (2016)** — "Information Decomposition on Structured Space." Dual theta/eta coordinates on posets as chain complex; KL divergence Pythagoras theorem as Hodge-like decomposition; higher-order interactions as joint-vs-marginal excess. Full annotation in `by-domain/information_theory.md`. Machines: chain complex, joint-vs-marginal, null hypothesis. Notable Rosetta connection: the orthogonal decomposition of D_KL on posets is the information-theoretic analogue of the Hodge decomposition on simplicial complexes (cf. Mollers et al., 2023).
