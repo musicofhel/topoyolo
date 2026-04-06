@@ -156,3 +156,62 @@ GW distance captures relational structure invariant to ambient dimension/rotatio
 - **Fasoli et al. (2026)** — Attractor structure absent from individual regions, emerges from coupled system. `cross_domain_bridges.md`.
 - **Bennett et al. (2022)** — Lead-lag = joint predictive structure. `second_pass.md` SP-14.
 - **Bandt (2020)** — Up-down balance and turning rate as joint statistics absent from marginals. `second_pass.md` SP-13.
+
+---
+
+## Third Pass (2026-04-05)
+
+### Neuroscience
+
+**IPWT — Consciousness**: Synergistic information = joint-vs-marginal excess. IPWT criterion: whole-system information exceeds sum of subsystem information (binding residual). Replaces IIT's physical indivisibility with synergy. Full annotation: `third_pass_neuro_qec.md` (TP-01).
+
+**Neurophenomenology** (arXiv: 2409.20318): First-person beliefs and third-person measurements as two marginals. Free energy measures divergence. The explanatory gap IS the joint excess yet to be accounted for. Full annotation: `third_pass_neuro_qec.md` (TP-02).
+
+**Dabney Distributional Code** (Nature 2020): Population jointly encodes full reward distribution; no single neuron's marginal contains it. Quantile-indexed family. Full annotation: `third_pass_neuro_qec.md` (TP-03).
+
+**Opponent Striatal Circuit**: D1/D2 opponent encoding: each encodes half the distribution (optimistic/pessimistic tails). Neither alone suffices. Full annotation: `third_pass_neuro_qec.md` (TP-04).
+
+### QEC
+
+**Barandes Stochastic-Quantum**: Interference terms = joint-vs-marginal excess. Quantum phases encode information invisible in marginal (probability) distribution. Born rule = projection from joint to marginal. Full annotation: `third_pass_neuro_qec.md` (TP-06).
+
+**Quantum State Tomography**: Entanglement = joint structure absent from reduced density matrices. Separable state as null. Full annotation: `third_pass_neuro_qec.md` (TP-07).
+
+**Spin-Boson**: Non-Markovian corrections = joint (spin-bath) structure invisible in marginal (spin-only) dynamics. Full annotation: `third_pass_neuro_qec.md` (TP-10).
+
+### Information Theory
+
+**GMI — Graphical Mutual Information**: Graded joint excess — separate MI for 0-cells (nodes) and 1-cells (edges). Extending to simplicial complexes would create information-theoretic Betti numbers. Full annotation: `third_pass_infotheo_cross.md` (TP-02).
+
+**Multivariate Redundancy** (Chicharro 2017): Synergy = excess beyond any proper subset. Mechanistic vs source redundancy distinguished. Tree decomposition isolates atoms at each hierarchical level. Full annotation: `third_pass_infotheo_cross.md` (TP-04).
+
+**MI-NEE**: Triangulated joint-vs-marginal: compare both to a common null (uniform) rather than directly to each other. Full annotation: `third_pass_infotheo_cross.md` (TP-08).
+
+**HSIC Bottleneck Orthogonalization**: HSIC(Z,X) = marginal info retained; HSIC(Z,Y) = task-relevant joint info. Bottleneck minimizes former, maximizes latter. Full annotation: `third_pass_infotheo_cross.md` (TP-09).
+
+### Dynamical Systems
+
+**Cross-Correlation Integral**: Nonstationarity = gap between cross and auto correlation integrals. Cross < geometric mean of autos indicates structural change. Full annotation: `third_pass_dynamics_tda.md` (TP-03).
+
+**Entropic Symmetry Breaking**: After symmetry breaking, directed information flow emerges — some directions carry more information than others. This asymmetry is joint excess absent from the symmetric (marginal) description. Full annotation: `third_pass_dynamics_tda.md` (TP-04).
+
+**Specific Entropy Rate**: Variation h(x) - h_avg is joint-vs-marginal excess at state x. States with unexpectedly high/low unpredictability carry structure absent from the average. Full annotation: `third_pass_dynamics_tda.md` (TP-07).
+
+### TDA
+
+**Higher-Order Network Compression** (PRL): k-body interactions predictable from (k-1)-body = no excess. Genuinely new information = non-trivial homology. Information-theoretic criterion for chain complex truncation. Full annotation: `third_pass_dynamics_tda.md` (TP-10).
+
+### Cross-Domain Comparison (Expanded)
+
+| Domain | What's joint | What's marginal | Excess type | Detection |
+|--------|-------------|-----------------|-------------|-----------|
+| TDA | Joint embedding | Marginal point clouds | Binding residual | PI subtraction |
+| QEC | Tensor product state | Subsystem states | Entanglement | Witness / partial trace |
+| QEC (Barandes) | Quantum amplitude | Classical probability | Interference / phases | Born rule gap |
+| Dynamics | Coupled system | Uncoupled components | Emergent topology | Cross-correlation gap |
+| Dynamics | Symmetry-broken state | Symmetric state | Directed info flow | Entropy production |
+| Neuroscience | Population code | Single neuron | Distributional code | Quantile diversity |
+| Neuroscience | Whole brain | Subsystems | Synergistic info (Φ) | PID / IIT |
+| Neuroscience | Neurophenomenology | 1st/3rd person descriptions | Free energy gap | Variational inference |
+| Info theory | Joint distribution | Product of marginals | MI | MINE / MI-NEE |
+| Info theory | k-body interaction | (k-1)-body marginals | Higher-order info | PRL compression criterion |

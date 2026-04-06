@@ -253,3 +253,73 @@ arXiv: 1307.2493
 - **Gallicchio & Micheli (2020)** — "Fast and Deep Graph Neural Networks." Reservoir GNNs: Banach contraction guarantees convergence. Untrained random weights suffice — architecture carries topology. Layer depth = scale parameter. Full annotation: `cross_domain_bridges.md`. Machines: stability, parameterized homology, null hypothesis, chain complex. **Bridge: dynamics + TDA.**
 
 - **Chen et al. (2023)** — "ContiFormer: Continuous-Time Transformer." Neural ODE inside attention. Continuous-time matching. Subsumes existing methods as special cases. Full annotation: `cross_domain_bridges.md`. Machines: parameterized homology, stability, matching.
+
+---
+
+## Third Pass (2026-04-05)
+
+### Structure-Preserving Contrastive Learning for Spatial Time Series
+**Domain(s)**: TDA, dynamical systems, machine learning
+PH as regularizer for contrastive learning of time series. Dual-scale approach: global PH + local graph geometry. Wasserstein stability on persistence diagrams bounds topological distortion of learned mapping. Applied to traffic prediction.
+**Machines**: parameterized homology, joint-vs-marginal, stability.
+Full annotation: `third_pass_dynamics_tda.md` (TP-01).
+
+### Thai Stock Market de Rham Cohomology
+**Domain(s)**: TDA, dynamical systems (financial markets)
+de Rham cohomology on correlation matrices. Wilson loops detect non-trivial manifold topology. Market transitions through 8 states; non-trivial cohomology appears during crash. Gauge theory tools (Chern-Simons currents, Pauli matrices) imported from mathematical physics. Pre/post-crisis states as null.
+**Machines**: chain complex, parameterized homology, null hypothesis, stability.
+Full annotation: `third_pass_dynamics_tda.md` (TP-02).
+**See also**: `by-structure/boundary_operators.md`
+
+### Cross-Correlation Integral (DOI: 10.1134/1.1259701)
+**Domain(s)**: Dynamical systems, information theory
+Cross-correlation integral C(ε) extends Grassberger-Procaccia to compare two time windows at multiple scales. Nonstationarity = gap between cross and auto integrals (joint-vs-marginal excess applied to attractor measures). Link to wavelet transforms of attractor density.
+**Machines**: parameterized homology, joint-vs-marginal, stability.
+Full annotation: `third_pass_dynamics_tda.md` (TP-03).
+
+### Entropic Symmetry Breaking (arXiv: 2510.03572)
+**Domain(s)**: Dynamical systems, information theory
+Entropy/information-transfer framework for symmetry breaking. Symmetric state IS the null. Critical slowing down = loss of stability. Information transfer asymmetry after breaking = directed joint excess. Entropy diagnostics anticipate bifurcation before the critical point.
+**Machines**: parameterized homology, null hypothesis, stability, joint-vs-marginal.
+Full annotation: `third_pass_dynamics_tda.md` (TP-04).
+
+### Ordinal Networks for Time Series
+**Domain(s)**: Dynamical systems, information theory
+Directed graphs from temporal succession of ordinal (permutation) patterns. Exact analytical null for random series. Local network entropy robust to noise. Hurst exponent estimation via matching to parameterized family. Applied to seismological data.
+**Machines**: chain complex (weak), null hypothesis, parameterized homology, matching.
+Full annotation: `third_pass_dynamics_tda.md` (TP-05).
+
+### Visibility Graph Irreversibility (DOI: 10.3390/e27040402)
+**Domain(s)**: Dynamical systems, information theory
+Directed horizontal visibility graphs for time-series irreversibility detection. KL divergence between forward and reversed degree distributions as test statistic. Reversible (equilibrium) process as null. Applied to global financial markets 2004–2022.
+**Machines**: null hypothesis, parameterized homology, stability.
+Full annotation: `third_pass_dynamics_tda.md` (TP-06).
+
+### Specific Differential Entropy Rate
+**Domain(s)**: Information theory, dynamical systems
+State-dependent entropy rate h(x) — local unpredictability varies across the attractor. Extends Shannon entropy rate from a scalar to a function. Uniform h(x) as null. Applied to heart rate variability. Variation h(x) - h_avg is joint-vs-marginal excess at state x.
+**Machines**: parameterized homology, joint-vs-marginal, null hypothesis.
+Full annotation: `third_pass_dynamics_tda.md` (TP-07).
+
+### CP-PINNs: Changepoint Detection in PDEs
+**Domain(s)**: Dynamical systems, machine learning
+Physics-informed NNs with time-varying PDE parameters. Total Variation penalty enforces sparse changepoints. Constant-parameter PDE as null. Regret bounds provide algorithmic stability.
+**Machines**: parameterized homology, null hypothesis, stability.
+Full annotation: `third_pass_dynamics_tda.md` (TP-08).
+
+### Ensemble Control on Lie Groups
+**Domain(s)**: Dynamical systems (control theory)
+Cartan decomposition of semisimple Lie algebras as Z/2-graded chain complex. Ensemble controllability = single control steers all systems simultaneously (population-level matching). Individual controllability lifts to ensemble controllability (stability). Extends from SO(3) to all semisimple Lie groups.
+**Machines**: chain complex (algebraic), matching, stability.
+Full annotation: `third_pass_dynamics_tda.md` (TP-12).
+**See also**: `by-structure/boundary_operators.md`
+
+### Pointwise Ergodic Theorem for Fuchsian Groups
+**Domain(s)**: Dynamical systems (ergodic theory)
+Cesaro averages of spherical averages converge a.e. to the space average. Bowen-Series coding maps group action to symbolic dynamics with Markovian transition structure. Space average as null expectation. Proved via reduction to free semigroup case.
+**Machines**: chain complex (algebraic), stability, null hypothesis.
+Full annotation: `third_pass_dynamics_tda.md` (TP-16).
+
+### Barandes (2023) — Stochastic-Quantum Correspondence
+Cross-listed from QEC. Derives QM from stochastic axioms. Also a dynamical systems result: functorial correspondence between Markov chains (stochastic dynamics) and unitary evolution (quantum dynamics).
+Full annotation: `third_pass_neuro_qec.md` (TP-06).

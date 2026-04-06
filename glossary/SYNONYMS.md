@@ -23,7 +23,7 @@ Each row is a single abstract concept. Each column is a domain's name for it. Em
 
 | Concept | TDA | QEC | Dynamical Systems | Neuroscience | Information Theory |
 |---------|-----|-----|-------------------|--------------|-------------------|
-| The parameter | Filtration scale ε / energy threshold | Error rate p / correction rate κ / Chern number | Coupling strength / bifurcation parameter / criticality m (Hawkes) | Stimulus / task condition / connectivity strength | Channel capacity / training epoch / constraint density α / IB β |
+| The parameter | Filtration scale ε / energy threshold | Error rate p / correction rate κ / Chern number / filling fraction ν | Coupling strength / bifurcation parameter / criticality m (Hawkes) | Stimulus / task condition / connectivity strength / EEG frequency band / quantile index τ (Dabney) | Channel capacity / training epoch / constraint density α / IB β / observation window t (finite-time MI) |
 | What changes | Which simplices exist | Which errors are correctable | Attractor topology | Neural representation geometry | Achievable rate / MI / PID atoms |
 | Critical value | Persistent feature birth/death | Error threshold (~2.5%) / Zeno transition | Bifurcation point | Perceptual switch | Capacity boundary / compression onset / SAT/UNSAT α_c ≈ 4.267 |
 | The invariant that tracks it | Persistence diagram | Threshold curve | Bifurcation diagram | — | Rate-distortion curve / information plane trajectory |
@@ -33,7 +33,7 @@ Each row is a single abstract concept. Each column is a domain's name for it. Em
 
 | Concept | TDA | QEC | Dynamical Systems | Neuroscience | Information Theory |
 |---------|-----|-----|-------------------|--------------|-------------------|
-| What is matched | Diagram points (birth,death) | Syndrome defects | Latent space positions (Hawkes) / lead-lag clusters | — | Source symbols to channel symbols / query-key pairs (attention) |
+| What is matched | Diagram points (birth,death) | Syndrome defects / anyon pairs (fusion) | Latent space positions (Hawkes) / lead-lag clusters / coupling functions (IC-PINN) | D1/D2 opponent pairs (quantile τ ↔ 1-τ) / HD vectors to centroids (ConformalHDC) | Source symbols to channel symbols / query-key pairs (attention) |
 | Cost function | Bottleneck (L∞) or Wasserstein (Lp) | Edge weight in syndrome graph | Latent distance / cut imbalance | — | Distortion measure / Gromov-Wasserstein |
 | Algorithm | Hungarian / auction | MWPM / Union-Find | Spectral clustering / Neural ODE attention | — | Blahut-Arimoto / BP on factor graphs |
 | What the solution means | Distance between topological signatures | Most likely error correction | Temporal ordering / cluster assignment | — | Optimal code / martingale coupling |
@@ -45,17 +45,17 @@ Each row is a single abstract concept. Each column is a domain's name for it. Em
 | Components | Marginal point clouds | Subsystem Hilbert spaces | Uncoupled systems | Brain regions | Independent sources |
 | Joint object | Joint embedding | Tensor product space | Coupled system | Cross-region dynamics | Joint source |
 | Independence | I_joint ≈ combo of I_X, I_Y | Product state | No coupling | No functional connectivity | Independence |
-| Excess | Binding residual (R > 0) | Entanglement (non-separable) | Emergent attractor topology | Neural binding / synergistic PID | Mutual information / synergy / higher-order interaction |
-| Detection method | PI subtraction + surrogate test | Entanglement witness | — | Coherence / Granger / PID | I(X;Y) estimation / MINE / Pythagorean KL decomposition |
+| Excess | Binding residual (R > 0) | Entanglement (non-separable) / interference (Barandes) | Emergent attractor topology / info transfer asymmetry (symmetry breaking) | Neural binding / synergistic PID / distributional code (Dabney) / consciousness (IPWT) | Mutual information / synergy / higher-order interaction / k-body excess (PRL compression) |
+| Detection method | PI subtraction + surrogate test | Entanglement witness / Born rule gap | Cross-correlation gap / entropy production | Coherence / Granger / PID / quantile diversity | I(X;Y) estimation / MINE / MI-NEE (triangulated) / Pythagorean KL decomposition |
 
 ### Layer 4: Null Models
 
 | Concept | TDA | QEC | Dynamical Systems | Neuroscience | Information Theory |
 |---------|-----|-----|-------------------|--------------|-------------------|
-| What is destroyed | Phase coupling (surrogates) | Coherence (depolarizing channel) | Temporal structure (shuffle) / excitation (Poisson null) | Neural correlation (trial shuffle) / directionality (undirected null) | Dependence (product distribution) / higher-order interactions |
+| What is destroyed | Phase coupling (surrogates) | Coherence (depolarizing channel) / Markovian memory (Born approx) | Temporal structure (shuffle) / excitation (Poisson null) / symmetry (symmetry breaking) / stationarity (changepoints) | Neural correlation (trial shuffle) / directionality (undirected null) / mean-RPE assumption (Dabney) / alert state (fatigue GC) | Dependence (product distribution) / higher-order interactions / structure preservation (standard CL) |
 | What is preserved | Power spectrum | State space dimension | Marginal statistics / event rates | Firing rates / degree sequence | Marginal distributions / lower-order terms |
-| Null distribution | Surrogate binding scores | Logical error rates under noise | Brownian motion limit (Hawkes) / Erdős-Rényi | Shuffled test statistics / random networks | Random assignment energy / Poisson baseline |
-| Significance | p < 0.05 (permutation) | Below threshold | Departure from Brownian / Lyapunov exponent | p < 0.05 (permutation) / small-world excess | MI > 0 / IB compression degree |
+| Null distribution | Surrogate binding scores | Logical error rates under noise / integer QHE (Arovas-Zhang) | Brownian motion limit (Hawkes) / Erdős-Rényi / constant-parameter PDE (CP-PINNs) / IID ordinal patterns | Shuffled test statistics / random networks / mean-RPE (Schultz model) | Random assignment energy / Poisson baseline / uniform reference (MI-NEE) / max entropy (Chicharro) |
+| Significance | p < 0.05 (permutation) | Below threshold | Departure from Brownian / Lyapunov exponent / entropy production | p < 0.05 (permutation) / small-world excess / quantile asymmetry | MI > 0 / IB compression degree / exceed-average phenomenon |
 
 ---
 

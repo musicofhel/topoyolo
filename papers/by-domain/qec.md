@@ -58,3 +58,39 @@ arXiv: 1311.2485 | Chapter in *Quantum Error Correction* (Cambridge University P
 - **Tarnowski et al. (2019)** — "Chern number from linking number." Static topological invariant (Chern number) measured from post-quench dynamics. Integer-valued and topologically protected. Full annotation: `second_pass.md` (SP-12). Machines: chain complex, parameterized homology, null hypothesis, stability. **Also dynamical systems.**
 
 - **Garbaczewski (2005)** — "Differential entropy and time." Von Neumann entropy S(ρ)=0 for pure states while Shannon entropy of |ψ|² is dynamic — multi-level information decomposition. Full annotation: `cross_domain_bridges.md`. Machines: parameterized homology, joint-vs-marginal, stability, null hypothesis. **Bridge: info theory + dynamics + QEC.**
+
+---
+
+## Third Pass (2026-04-05)
+
+### Arovas & Zhang (1992) — Topological Aspects of FQHE
+**Domain(s)**: QEC (topological order), condensed matter
+The original FQHE-TQFT connection. Filling fraction nu parameterizes the family of topological phases. Ground state degeneracy on genus-g surface = dim(H₁(Σ_g, ℤ/n)) — directly a chain complex computation. Energy gap provides topological protection (strongest stability). Anyonic excitations come in particle-antiparticle pairs (matching constraint via fusion rules). Integer QHE as null (trivial topological order).
+**Machines**: chain complex, parameterized homology, stability, null hypothesis, matching (weak).
+Full annotation: `third_pass_neuro_qec.md` (TP-05).
+**See also**: `by-structure/boundary_operators.md`, `by-structure/filtrations.md`
+
+### Barandes (2023) — Stochastic-Quantum Correspondence (arXiv: 2309.03085)
+**Domain(s)**: Quantum foundations, dynamical systems
+Derives quantum mechanics from stochastic axioms. Interference terms = joint-vs-marginal excess. Complex Hilbert space encodes joint structure invisible in marginal (probability) distribution. Born rule = projection from joint to marginal. Functorial mapping between stochastic and quantum categories. Classical (real, positive) stochastic processes as null.
+**Machines**: chain complex, stability, parameterized homology, joint-vs-marginal.
+Full annotation: `third_pass_neuro_qec.md` (TP-06).
+**See also**: `by-structure/boundary_operators.md`, `by-structure/composite_systems.md`
+
+### Quantum State Tomography via Generative Models (arXiv: 1810.10584)
+**Domain(s)**: QEC (tomography), machine learning
+Tomography as inverse matching: given measurement outcomes, reconstruct the density matrix. Generative model learns mapping from latent to measurement probabilities. Entanglement = joint structure absent from reduced density matrices. Separable (unentangled) state as null.
+**Machines**: matching, parameterized homology, joint-vs-marginal, null hypothesis.
+Full annotation: `third_pass_neuro_qec.md` (TP-07).
+**See also**: `by-structure/optimal_transport.md`, `by-structure/composite_systems.md`
+
+### Spin-Boson Born Approximation
+**Domain(s)**: QEC (open quantum systems), dynamical systems
+Non-Markovian sqrt(alpha) prompt coherence loss — an anti-stability result. Standard perturbation theory (linear in alpha) underestimates decoherence. Non-Markovian corrections = joint (spin-bath) structure invisible in marginal (spin-only) dynamics. Markovian approximation as null.
+**Machines**: parameterized homology, stability (anti), null hypothesis, joint-vs-marginal.
+Full annotation: `third_pass_neuro_qec.md` (TP-10).
+**See also**: `by-structure/phase_transitions.md`
+
+### Mézard & Mora (2008) — QEC-relevant aspects
+Factor graph for LDPC decoding IS a chain complex (variable nodes = 0-cells, check nodes = 1-cells, H = boundary operator). BP on LDPC = soft matching. Phase transition threshold in CSP = error correction threshold. Already in info theory; this annotation captures QEC-specific content.
+Full annotation: `third_pass_neuro_qec.md` (TP-12).

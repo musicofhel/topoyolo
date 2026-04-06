@@ -39,3 +39,75 @@ Papers from or relevant to the neuroscience community, indexed by which abstract
 - **Fasoli et al. (2026)** — "Attractor dynamics of whole-cortex network model." Mouse cortex: directed connectivity essential for full attractor repertoire (Z vs Z/2 homology). Static fMRI constraints determine dynamic topology. Full annotation: `cross_domain_bridges.md`. Machines: parameterized homology, stability, null hypothesis, joint-vs-marginal. **Bridge: neuroscience + dynamical systems.**
 
 - **Tort et al. (2010)** — PAC modulation index. *(In inbox — not yet annotated.)*
+
+---
+
+## Third Pass (2026-04-05)
+
+### IPWT — Integrated Predictive Workspace Theory
+**Domain(s)**: Neuroscience (consciousness), information theory
+Fuses IIT + Predictive Coding + Global Workspace via synergistic information. Synergy IS joint-vs-marginal excess: the whole-system information exceeds the sum of subsystem information. Replaces IIT's controversial "physical indivisibility" with computationally tractable synergistic information. Predicts clinical conditions (schizophrenia, DID) as specific perturbation regimes.
+**Machines**: joint-vs-marginal, parameterized homology, null hypothesis, stability.
+Full annotation: `third_pass_neuro_qec.md` (TP-01).
+**See also**: `by-structure/composite_systems.md`
+
+### Neurophenomenology via Free Energy (arXiv: 2409.20318)
+**Domain(s)**: Neuroscience, dynamical systems (active inference)
+Formalizes Varela's neurophenomenology via free energy principle. First-person beliefs and third-person neural measurements are two marginals; free energy measures the divergence. The explanatory gap IS the joint-vs-marginal excess yet to be accounted for.
+**Machines**: joint-vs-marginal, parameterized homology, stability, null hypothesis.
+Full annotation: `third_pass_neuro_qec.md` (TP-02).
+
+### Dabney et al. (2020) — Distributional Code for Value (Nature)
+**Domain(s)**: Neuroscience (computational), information theory
+Dopamine neurons encode quantiles of the full reward distribution, not just the mean. The quantile index tau parameterizes the neuron family. Population jointly encodes the entire distribution; no single neuron's marginal contains it. Schultz mean-RPE model is the explicit null.
+**Machines**: joint-vs-marginal, parameterized homology, null hypothesis, stability.
+Full annotation: `third_pass_neuro_qec.md` (TP-03).
+**See also**: `by-structure/composite_systems.md`, `by-structure/filtrations.md`
+
+### Opponent Striatal Circuit (bioRxiv 2024)
+**Domain(s)**: Neuroscience (experimental)
+D1/D2 neurons encode opposite tails of reward distribution. Neither population alone captures the distribution; the full representation requires the joint opponent encoding. D1 encodes optimistic quantiles, D2 encodes pessimistic. Optogenetic manipulation provides causal evidence.
+**Machines**: joint-vs-marginal, matching, chain complex (weak), null hypothesis.
+Full annotation: `third_pass_neuro_qec.md` (TP-04).
+
+### ConformalHDC — Hippocampal Decoding (arXiv: 2602.21446)
+**Domain(s)**: Neuroscience (decoding), machine learning
+Conformal prediction + hyperdimensional computing for hippocampal place cell decoding. Non-conformity score as null-hypothesis test statistic, coverage guarantee as stability bound. Decodes FROM the same toroidal manifold that Gardner et al. showed IS a torus.
+**Machines**: null hypothesis, stability, matching, joint-vs-marginal (weak).
+Full annotation: `third_pass_neuro_qec.md` (TP-09).
+
+### Summary Statistics Link Neural Representations to Behavior (arXiv: 2504.16920)
+**Domain(s)**: Neuroscience (computational), dynamical systems, information theory
+Meta-review: summary statistics from statistical physics (order parameters, susceptibilities) track how neural representations change during learning. The tracked statistics are conserved across individuals, species, and artificial networks — stable invariants of the learning process.
+**Machines**: parameterized homology, joint-vs-marginal, null hypothesis, stability.
+Full annotation: `third_pass_neuro_qec.md` (TP-11).
+
+### FitzHugh-Nagumo Wave Patterns (DOI: 10.1142/s021797922450200x)
+**Domain(s)**: Dynamical systems, neuroscience
+FHN neural network under varying light illumination and magnetic flux — two-parameter space of pattern formation. Modulational instability analysis determines where small perturbations grow or decay. Uniform plane wave is the null; pattern formation is departure from null.
+**Machines**: parameterized homology, stability, null hypothesis.
+Full annotation: `third_pass_dynamics_tda.md` (TP-09).
+
+### IC-PINN Coupled Oscillators — Embryonic Clocks
+**Domain(s)**: Dynamical systems, neuroscience
+Physics-informed neural networks for basis-free inference of coupling functions between oscillators. Applied to embryonic segmentation clocks (somitogenesis) and spinning nanorods. Coupling function defined on the torus T².
+**Machines**: parameterized homology, matching, stability.
+Full annotation: `third_pass_dynamics_tda.md` (TP-11).
+
+### GC-STCL — EEG Emotion Recognition (Wang et al. 2024)
+**Domain(s)**: Neuroscience (EEG), information theory
+Granger causality graph + contrastive learning for EEG emotion recognition. Frequency-band-specific causal networks as filtration. GC graph reveals directed temporal dependencies absent from individual channel statistics.
+**Machines**: joint-vs-marginal, chain complex (weak), null hypothesis, parameterized homology.
+Full annotation: `third_pass_infotheo_cross.md` (TP-01).
+
+### Driver Fatigue via Granger Causality Network (Kong et al. 2015)
+**Domain(s)**: Neuroscience (EEG), information theory
+GC network topology distinguishes alert from drowsy states. Frequency-band-specific causal networks: different causal structures across alpha, theta, gamma. Alert state as baseline null.
+**Machines**: joint-vs-marginal, null hypothesis, parameterized homology, matching.
+Full annotation: `third_pass_infotheo_cross.md` (TP-05).
+
+### Nonparametric Granger Causality in Brain (Ding et al. 2009, PMC 2685256)
+**Domain(s)**: Neuroscience, information theory
+Nonparametric spectral Granger causality — no autoregressive model fitting. Frequency parameter defines continuous family of causal graphs. Applied to monkey sensorimotor cortex.
+**Machines**: joint-vs-marginal, parameterized homology, null hypothesis, stability.
+Full annotation: `third_pass_infotheo_cross.md` (TP-06).

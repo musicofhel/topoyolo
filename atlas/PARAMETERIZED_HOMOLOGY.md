@@ -46,8 +46,23 @@ Disconnectivity graphs (Niroomand & Wales, 2023) ARE H₀ persistence diagrams: 
 ### Neuroscience
 Stimulus or task condition as parameter, neural representation geometry as invariant. Inter-hemispheric connectivity strength parameterizes attractor count in cortical models (Fasoli et al., 2026). (See inbox for Tsuda on chaotic itinerancy.)
 
+### Third Pass Additions
+
+**Filling fraction** (Arovas-Zhang FQHE): nu = p/q parameterizes topological phases. At each rational filling, different anyonic excitations. Energy gap protects the phase — topological protection.
+
+**Frequency as filtration** (3 neuroscience papers): EEG frequency bands function as filtration parameter for brain causal networks. Different frequencies reveal different causal topologies. Structurally identical to persistence but NOT nested — alpha-band causal graph is not a subset of gamma-band graph. See ANTISYNONYMS.md.
+
+**Quantile index** (Dabney, Nature 2020): tau ∈ [0,1] indexes dopamine neurons. As tau varies, the full reward distribution is traced out. Each neuron's reversal point is a kind of "critical value." The population is the parameterized family.
+
+**Observation window** (Finite-time MI, Zhu et al.): I(t)/t as function of observation duration t. Discovers "exceed-average phenomenon" — instantaneous rate can exceed time-averaged capacity C. Shannon capacity is the stable infinite-time limit.
+
+**Twisting map** (Hom-Lie cohomology): α parameterizes family of algebraic structures. As α deviates from identity, cohomology changes — some classes persist, others born/die. Direct algebraic parallel to persistence.
+
+**State-dependent entropy** (Specific entropy rate): h(x) varies across the attractor. Stable manifold regions have low h(x); chaotic saddle regions have high h(x). The variation is a spatial "persistence diagram" of unpredictability.
+
 ## Key Divergences
 
 - **Multi-scale vs. single-scale**: Persistence diagrams encode the full birth-death spectrum. QEC thresholds and SAT phase transitions are single critical values. The ML information plane is a trajectory, not a diagram.
+- **Nested vs. non-nested**: TDA filtrations are nested (increasing ε adds simplices monotonically). Neuroscience frequency "filtrations" are NOT nested — different frequencies reveal genuinely different structures. Hawkes criticality is also non-nested (single transition, not progressive). See ANTISYNONYMS.md.
 - **Discrete vs. continuous**: TDA filtrations are typically discrete (finite number of simplices added). CTQEC parameterization is continuous (Lindblad). The ML case uses discrete epochs but treats the trajectory as continuous.
 - **Artifact sensitivity**: Information-plane trajectories depend on the MI estimator used (Geiger, 2021). Persistence diagrams are exactly computable. QEC thresholds are Monte Carlo estimated. The "parameterized invariant" has different reliability across domains.

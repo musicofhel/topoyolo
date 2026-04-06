@@ -1002,3 +1002,55 @@ arXiv: 2111.05299
 - **Liu et al. (2023)** — "FOCAL: Factorized Orthogonal Latent Space for Multimodal Time Series." Shared vs private feature decomposition = explicit joint-vs-marginal operationalization. Full annotation: `second_pass.md` (SP-16). Machines: joint-vs-marginal, null hypothesis, stability.
 
 - **Liu et al. (2020)** — "SNGP: Distance Awareness for Uncertainty." Spectral normalization = Lipschitz constraint identical to PH stability. GP posterior = distance from training manifold. Full annotation: `cross_domain_bridges.md` + `second_pass.md` (SP-17). Machines: stability, null hypothesis, parameterized homology.
+
+---
+
+## Third Pass (2026-04-05)
+
+### Graphical Mutual Information Maximization (Peng et al. 2020)
+**Domain(s)**: Information theory, machine learning
+GMI generalizes MI to graph-structured data: separate node-level (0-cell) and edge-level (1-cell) MI terms. Isomorphism invariant (stability under graph relabeling). Graded information measure — one MI per topological dimension.
+**Machines**: joint-vs-marginal, stability, null hypothesis, chain complex (weak).
+Full annotation: `third_pass_infotheo_cross.md` (TP-02).
+**See also**: `by-structure/composite_systems.md`
+
+### On Finite-Time Mutual Information (Zhu et al. 2024)
+**Domain(s)**: Information theory (communication theory)
+MI I(t) as function of observation window duration t. Discovers "exceed-average phenomenon": instantaneous rate can exceed time-averaged rate C. Shannon capacity recovered as stable infinite-time limit. Mercer expansion connects to functional analysis.
+**Machines**: parameterized homology, stability, null hypothesis.
+Full annotation: `third_pass_infotheo_cross.md` (TP-03).
+**See also**: `by-structure/filtrations.md`
+
+### Multivariate Redundancy via Max Entropy (Chicharro 2017)
+**Domain(s)**: Information theory (neuroscience adjacent)
+Rooted-tree decomposition of MI separating redundant, unique, synergistic atoms. Maximum entropy as null at each level. Distinguishes mechanistic redundancy (system function) from source redundancy (input dependencies). The tree IS a hierarchical chain.
+**Machines**: joint-vs-marginal, chain complex (tree structure), null hypothesis.
+Full annotation: `third_pass_infotheo_cross.md` (TP-04).
+**See also**: `by-structure/composite_systems.md`
+
+### Neural Entropic Estimation — MI-NEE (Chan et al. 2019)
+**Domain(s)**: Information theory (MI estimation)
+Estimates MI via triangulation through common uniform reference, not direct joint-vs-marginal comparison. Avoids MINE's initialization problem. Uniform distribution as common null for both joint and marginal.
+**Machines**: joint-vs-marginal, null hypothesis, stability.
+Full annotation: `third_pass_infotheo_cross.md` (TP-08).
+
+### HSIC-Bottleneck Orthogonalization (Li et al. 2024, AAAI)
+**Domain(s)**: Information theory, machine learning (continual learning)
+Prevents catastrophic forgetting by projecting gradients onto orthogonal complement of important subspace. Layer-wise HBO creates bigraded structure (layer × task). Structurally identical to Hodge decomposition: preserving harmonic component while modifying gradient/curl. ETF classifiers fix output geometry.
+**Machines**: stability, joint-vs-marginal, chain complex (graded), null hypothesis.
+Full annotation: `third_pass_infotheo_cross.md` (TP-09).
+**See also**: `by-structure/phase_transitions.md`
+
+### Cross-listed from Dynamical Systems (third pass):
+- **Cross-Correlation Integral** — Joint-vs-marginal excess applied to attractor measures. Full annotation: `third_pass_dynamics_tda.md` (TP-03).
+- **Entropic Symmetry Breaking** (arXiv: 2510.03572) — Entropy framework for bifurcation. Full annotation: `third_pass_dynamics_tda.md` (TP-04).
+- **Ordinal Networks** — Permutation entropy meets network theory. Full annotation: `third_pass_dynamics_tda.md` (TP-05).
+- **Visibility Graph Irreversibility** — KL divergence as irreversibility test. Full annotation: `third_pass_dynamics_tda.md` (TP-06).
+- **Specific Entropy Rate** — State-dependent unpredictability function. Full annotation: `third_pass_dynamics_tda.md` (TP-07).
+
+### Cross-listed from Neuroscience (third pass):
+- **GC-STCL** — Granger causality + contrastive learning for EEG. Full annotation: `third_pass_infotheo_cross.md` (TP-01).
+- **Driver Fatigue GC** — Frequency-band causal networks. Full annotation: `third_pass_infotheo_cross.md` (TP-05).
+- **Nonparametric Brain GC** — Spectral Granger causality. Full annotation: `third_pass_infotheo_cross.md` (TP-06).
+- **Dabney Distributional Code** — Quantile-indexed neuron family. Full annotation: `third_pass_neuro_qec.md` (TP-03).
+- **IPWT** — Synergistic information as consciousness criterion. Full annotation: `third_pass_neuro_qec.md` (TP-01).

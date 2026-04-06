@@ -72,3 +72,43 @@ The Hodge decomposition appears in both the TDA and information theory contexts 
 ### Algebraic Decomposition
 - **Napolitano (2026)** — gl(4,R) Lie algebra Casimir decomposition. Not boundary operators strictly but graded eigenspace decomposition. `second_pass.md` SP-11.
 - **Oladyshkin et al. (2023)** — Polynomial chaos orthogonal decomposition graded by interaction order. Parallel to Hodge decomposition. `cross_domain_bridges.md`.
+
+---
+
+## Third Pass (2026-04-05)
+
+### Condensed Matter / QEC
+
+**Arovas & Zhang (1992) — FQHE**: Chern-Simons gauge theory on genus-g surface. Ground state degeneracy = dim(H₁(Σ_g, ℤ/n)). Wilson loops as cycle evaluation. The original physical system where topological order was identified. Full annotation: `third_pass_neuro_qec.md` (TP-05).
+
+**Barandes (2023) — Stochastic-Quantum Correspondence**: Functorial mapping between stochastic (Markov chain) and quantum (unitary) categories. Tensor products preserved. The correspondence IS a chain-complex-level equivalence between two algebraic structures. Full annotation: `third_pass_neuro_qec.md` (TP-06).
+
+### Dynamical Systems
+
+**Thai Stock Market de Rham Cohomology**: de Rham cohomology on correlation matrices. Exterior derivative d as boundary operator, d²=0 as chain complex condition. Wilson loops detect non-trivial topology. Chern-Simons currents. Full annotation: `third_pass_dynamics_tda.md` (TP-02).
+
+**Ensemble Control on Lie Groups**: Cartan decomposition g = k + p as Z/2-graded chain complex. Bracket relations [k,k]⊂k, [k,p]⊂p, [p,p]⊂k define the grading. Covering method builds full group from graded pieces. Full annotation: `third_pass_dynamics_tda.md` (TP-12).
+
+**Pointwise Ergodic Theorem (Fuchsian Groups)**: Bowen-Series coding maps group action to symbolic dynamics. Irreducible transition matrix defines a directed 1-complex. Full annotation: `third_pass_dynamics_tda.md` (TP-16).
+
+### Pure Math / TDA
+
+**Hom-Lie Algebra Cochain Complexes**: Explicit construction of cochain complex C^n(g, M) with δ²=0 for hom-Lie algebras. Twisting map α parameterizes family; α=id recovers Chevalley-Eilenberg. H² controls deformations, H³ gives obstructions. Full annotation: `third_pass_dynamics_tda.md` (TP-14).
+
+**Higher-Order Network Compression (PRL)**: k-body interactions as k-simplices. Information-theoretic criterion for which orders carry genuinely new information vs being determined by lower orders (exact chains). Full annotation: `third_pass_dynamics_tda.md` (TP-10).
+
+### Information Theory
+
+**Multivariate Redundancy (Chicharro 2017)**: Rooted-tree decomposition of MI as hierarchical chain. Each node implements binary unfolding with maximum entropy constraints. The tree is a graded structure from total MI to individual atoms. Full annotation: `third_pass_infotheo_cross.md` (TP-04).
+
+**HSIC-Bottleneck Orthogonalization**: Layer-wise orthogonal projection creates bigraded (layer × task) structure. Gradient orthogonalization structurally identical to Hodge decomposition. Full annotation: `third_pass_infotheo_cross.md` (TP-09).
+
+### Cross-Domain Observation
+
+The third pass reveals **6 incarnations** of the chain complex (expanding from the 4 identified in second pass):
+1. **Geometric** (simplicial/cellular) — TDA, QEC toric codes
+2. **Algebraic** (Lie algebra cohomology, Cartan decomposition) — pure math, control theory
+3. **Categorified** (Khovanov) — knot theory
+4. **Combinatorial** (PID lattice, factor graphs) — information theory
+5. **Gauge-theoretic** (de Rham, Chern-Simons, Wilson loops) — financial topology, FQHE
+6. **Graded-informational** (k-body information, bigraded layers) — higher-order networks, continual learning

@@ -38,8 +38,26 @@ Shuffle trials to preserve firing rates but destroy inter-trial coupling. Permut
 ### Machine Learning
 **Geiger (2021)**: The geometric compression null — representations that cluster/shrink but preserve full MI. Distinguishes information-theoretic compression from geometric compression.
 
+### Third Pass Additions
+
+**Integer QHE as null** (Arovas-Zhang FQHE): Integer quantum Hall effect has trivial topological order — no anyons, no ground state degeneracy. Fractional states represent genuinely new structure beyond this null.
+
+**Mean-RPE as null** (Dabney distributional code): Schultz mean-RPE model predicts symmetric responses and uniform reversal points. Data decisively rejects this null with asymmetric responses and neuron-specific reversal points.
+
+**Exact analytical null** (Ordinal networks): Adjacency matrices for random (IID) series derived analytically. Principled null without simulation.
+
+**Constant-parameter null** (CP-PINNs): Single PDE with constant parameters. Each detected changepoint rejects this null for a specific time interval.
+
+**Common reference null** (MI-NEE): Uniform distribution as common reference for BOTH joint and marginal. Triangulated comparison rather than direct. Changes convergence properties.
+
+**Maximum entropy null** (Chicharro multivariate redundancy): Max entropy distribution at each decomposition level. Deviation quantifies unexpected structure. Nested hierarchy of nulls — one per tree level.
+
+**Symmetric state as null** (Entropic symmetry breaking): Symmetry = the null. Breaking = departure. Entropy production and information transfer quantify the departure magnitude.
+
 ## Key Divergences
 
 - **What is preserved**: Each domain preserves different properties in the null. TDA preserves power spectrum; information theory preserves marginals; QEC preserves state space dimension; dynamics preserves marginal statistics. The null model defines what counts as "structure" vs. "noise" in each domain.
 - **Parametric vs. non-parametric**: QEC noise models are parametric (depolarizing channel with known rate). TDA surrogates are non-parametric (phase randomization). Information theory uses both (product distribution is parametric; permutation is non-parametric).
 - **Constructive vs. destructive**: In information theory, the null is constructive (build the product distribution). In TDA, the null is destructive (randomize phases to destroy coupling). Same mathematical operation, different conceptual framing.
+- **Analytical vs. simulation**: Ordinal networks derive the null EXACTLY for random series. Most other domains require simulation or sampling to generate nulls. This affects statistical power and computational cost.
+- **Nested nulls**: Chicharro's tree decomposition has nulls at EVERY level — a hierarchy of null hypotheses. Most other uses are single-level (one null, one test). The nested structure mirrors the chain complex grading.

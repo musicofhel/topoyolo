@@ -169,3 +169,40 @@ DOI: 10.1016/j.physa.2019.122212 | Physica A 546:122212
 - **Niroomand & Wales (2023)** — "Physics-Inspired Interpretability." Disconnectivity graphs = H₀ persistence diagrams, independently invented by energy landscape theory. Conserved weights = persistent features. Full annotation: `cross_domain_bridges.md`. Machines: parameterized homology, stability, null hypothesis, joint-vs-marginal (weak). **KEY FINDING: same mathematical object, zero cross-citation.**
 
 - **Gallicchio & Micheli (2020)** — "Fast and Deep Graph Neural Networks." Layer depth = scale parameter (Rips-like). Banach contraction = stability. Untrained random weights suffice — topology carries the information. Full annotation: `cross_domain_bridges.md`. Machines: stability, parameterized homology, null hypothesis, chain complex. **Bridge: dynamics + TDA.**
+
+---
+
+## Third Pass (2026-04-05)
+
+### Structure-Preserving Contrastive Learning for Spatial Time Series
+**Domain(s)**: TDA, dynamical systems, machine learning
+First use of persistent homology as regularizer for contrastive learning of time series. Wasserstein metric on persistence diagrams bounds topological distortion. Dual-scale: global PH + local graph geometry.
+**Machines**: parameterized homology, joint-vs-marginal, stability.
+Full annotation: `third_pass_dynamics_tda.md` (TP-01).
+
+### Thai Stock Market de Rham Cohomology
+**Domain(s)**: TDA (algebraic topology), dynamical systems
+Full de Rham cohomology + gauge theory (Wilson loops, Chern-Simons currents) applied to financial correlation matrices. Novel import from mathematical physics — standard in gauge field theory, new in finance.
+**Machines**: chain complex, parameterized homology, null hypothesis, stability.
+Full annotation: `third_pass_dynamics_tda.md` (TP-02).
+**See also**: `by-structure/boundary_operators.md`
+
+### Higher-Order Network Compression (PRL) — Bravo Abad
+**Domain(s)**: TDA (higher-order networks), information theory
+Information-theoretic criterion for which interaction orders in a hypergraph carry genuinely new information. k-body interactions predictable from (k-1)-body = no excess → compress away. Genuinely new information at order k = non-trivial homology at grade k.
+**Machines**: chain complex, joint-vs-marginal, null hypothesis.
+Full annotation: `third_pass_dynamics_tda.md` (TP-10).
+**See also**: `by-structure/boundary_operators.md`, `by-structure/composite_systems.md`
+
+### Hom-Lie Algebra Cochain Complexes
+**Domain(s)**: Pure mathematics (algebra), TDA (cohomological structures)
+Cochain complexes for hom-Lie algebras with twisted Jacobi identity. δ²=0 explicitly constructed. Twisting map α parameterizes family of algebraic structures; α=id recovers Chevalley-Eilenberg cohomology. H² controls deformations, H³ gives obstructions.
+**Machines**: chain complex, parameterized homology, stability.
+Full annotation: `third_pass_dynamics_tda.md` (TP-14).
+**See also**: `by-structure/boundary_operators.md`
+
+### Deep Arbitrary Polynomial Chaos Neural Networks (DaPC NN)
+**Domain(s)**: Machine learning, dynamical systems (UQ)
+Reinterprets DNN layers via data-driven polynomial chaos expansion. Polynomial order p as filtration parameter. Layer-wise orthonormal bases create graded functional decomposition analogous to Hodge theory. Conventional DNN as null.
+**Machines**: chain complex (weak), parameterized homology, null hypothesis.
+Full annotation: `third_pass_dynamics_tda.md` (TP-13).

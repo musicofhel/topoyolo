@@ -52,7 +52,24 @@ A dynamical system is structurally stable if small perturbations of the vector f
 ### Statistical Physics
 Mézard & Mora (2008): BP convergence regimes. In the easy-SAT regime (α < α_d), the BP fixed point is stable. In the hard-SAT regime (α_d < α < α_c), BP oscillates but Survey Propagation works. Above α_c, all algorithms fail. Each transition marks a change in algorithmic stability.
 
+### Third Pass Additions
+
+**Topological protection** (Arovas-Zhang FQHE): Energy gap renders topological invariants immune to perturbations smaller than the gap. Strongest continuous stability: no change at all (not just bounded change).
+
+**Anti-stability** (Spin-Boson Born): sqrt(alpha) prompt coherence loss at weak coupling. The standard linear-in-alpha estimate is wrong — decoherence is WORSE than expected. This is a new stability category: the bound itself is wrong, not just violated.
+
+**Distribution-free stability** (ConformalHDC): Conformal prediction guarantees hold for ANY data distribution. Coverage guarantee adapts (prediction set grows/shrinks) but never fails. No distributional assumptions required.
+
+**Exact isomorphism** (Barandes stochastic-quantum): The correspondence is exact, not a bound. Every stochastic system has a unique quantum counterpart. The strongest possible stability — the map is an isomorphism.
+
+**Orthogonal projection stability** (HSIC-Bottleneck): Gradient updates constrained to orthogonal complement of important subspace. Structurally identical to Hodge decomposition: harmonic component preserved, gradient/curl components modified.
+
+**Ergodic convergence** (Fuchsian groups): Time averages converge to space averages a.e. Measurement robust to starting point.
+
+The stability taxonomy now has **5 flavors**: (1) Lipschitz (TDA), (2) exponential suppression (QEC threshold), (3) topological protection (FQHE gap), (4) anti-stability (spin-boson sqrt singularity), (5) distribution-free (conformal prediction).
+
 ## Key Divergences
 
-- **Lipschitz vs. exponential vs. generic**: The mathematical form of the guarantee differs across domains, even though the conceptual claim is similar. See ANTISYNONYMS.md.
+- **Lipschitz vs. exponential vs. topological vs. distribution-free**: The mathematical form of the guarantee differs across domains. See ANTISYNONYMS.md.
+- **Anti-stability is not instability**: Spin-boson anti-stability means the bound's functional form is wrong (sqrt not linear). The system may still be bounded — just worse than predicted. This differs from dynamical instability (positive Lyapunov) and topological instability (feature death).
 - **Continuous vs. discontinuous**: TDA stability is continuous (small input change → small output change). QEC threshold is discontinuous (below threshold → exponentially good; above → failure). The information-theory case has both (MINE is continuous; MI divergence is discontinuous).

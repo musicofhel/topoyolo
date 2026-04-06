@@ -99,3 +99,39 @@ The parameter takes different forms across domains, but the structure is isomorp
 - **Gallicchio & Micheli (2020)** — GNN layer depth = scale parameter. Receptive field grows with depth like Rips filtration. `cross_domain_bridges.md`.
 - **Fasoli et al. (2026)** — Inter-hemispheric connectivity strength as bifurcation parameter. Attractor count changes at critical values. `cross_domain_bridges.md`.
 - **Darmon (2018)** — Entropy rate lifted from scalar to function on state space — parameterized by position on attractor. `cross_domain_bridges.md`.
+
+---
+
+## Third Pass (2026-04-05)
+
+### Neuroscience
+
+**Dabney et al. (2020) — Distributional Code**: Quantile index tau parameterizes the dopamine neuron family (tau ∈ [0,1]). Each neuron has a different reversal point. As tau varies, the full reward distribution is traced out. Full annotation: `third_pass_neuro_qec.md` (TP-03).
+
+**Summary Statistics Review** (arXiv: 2504.16920): Training epoch as parameter. Summary statistics (representational similarity, dimensionality, alignment) tracked during learning. Conserved across individuals and species. Full annotation: `third_pass_neuro_qec.md` (TP-11).
+
+**EEG Frequency as Filtration**: Three papers (GC-STCL, Driver Fatigue GC, Nonparametric Brain GC) converge on the same pattern: EEG frequency bands function as a filtration parameter for brain causal networks. Different frequencies reveal different causal topologies. This is structurally identical to persistence: track causal network topology as the frequency "scale" varies. The neuroscience community has not connected this to TDA's filtration framework.
+
+### QEC / Condensed Matter
+
+**Arovas-Zhang FQHE (1992)**: Filling fraction nu = p/q parameterizes the family of topological phases. At each rational filling, different anyonic excitations. Energy gap protects the phase. Full annotation: `third_pass_neuro_qec.md` (TP-05).
+
+**Spin-Boson Born Approximation**: Coupling strength alpha as parameter. sqrt(alpha) prompt coherence loss — non-analytic singularity even at weak coupling. Anti-stability: system less stable than Markovian analysis suggests. Full annotation: `third_pass_neuro_qec.md` (TP-10).
+
+### Dynamical Systems
+
+**Cross-Correlation Integral**: Scale parameter epsilon in C(epsilon). Correlation dimension as fractal analogue of Betti number. Nonstationarity detected as gap between cross and auto integrals. Full annotation: `third_pass_dynamics_tda.md` (TP-03).
+
+**Entropic Symmetry Breaking** (arXiv: 2510.03572): Control parameter (temperature, coupling) parameterizes family. Entropy singularity at critical point. Critical slowing down = loss of stability diagnostic. Full annotation: `third_pass_dynamics_tda.md` (TP-04).
+
+**CP-PINNs**: PDE parameters θ(t) piecewise constant with unknown changepoints. Total Variation enforces sparsity of transitions. Full annotation: `third_pass_dynamics_tda.md` (TP-08).
+
+**Hom-Lie Cochain Complexes**: Twisting map α parameterizes family of algebraic structures. As α deviates from id, cohomology changes — some classes persist, others born/die. Full annotation: `third_pass_dynamics_tda.md` (TP-14).
+
+### Information Theory
+
+**Finite-Time MI** (Zhu et al. 2024): Observation window t as parameter. I(t)/t can exceed Shannon capacity C (exceed-average phenomenon). Mercer expansion connects to eigenvalue spectrum. Full annotation: `third_pass_infotheo_cross.md` (TP-03).
+
+### Cross-Domain Observation
+
+The third pass identifies a new filtration parameter class: **frequency** in brain networks. Combined with existing parameters (scale ε in TDA, error rate p in QEC, coupling strength in dynamics, training epoch in ML, constraint density in CSP), the filtration concept now spans 7 distinct parameter types across 5 domains. The neuroscience frequency-filtration is notable because 3 independent groups discovered it without connecting to the TDA framework.

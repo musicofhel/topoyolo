@@ -68,3 +68,27 @@ The cost function is always a metric or semi-metric, and the matching always res
 
 ### Convergence Rates
 - **Horst & Xu (2024)** — Wasserstein convergence bounds for rescaled Hawkes processes to their limits. `second_pass.md` SP-08.
+
+---
+
+## Third Pass (2026-04-05)
+
+### QEC
+
+**Quantum State Tomography (arXiv: 1810.10584)**: Tomography as inverse matching: given measurement outcomes, reconstruct the density matrix. Generative model matches model-generated statistics to empirical statistics. Informationally complete measurement basis as matching constraint. Full annotation: `third_pass_neuro_qec.md` (TP-07).
+
+**Arovas-Zhang FQHE (weak)**: Anyonic fusion rules define matching constraint — which particle-antiparticle pairs can annihilate to vacuum. Full annotation: `third_pass_neuro_qec.md` (TP-05).
+
+### Neuroscience
+
+**Opponent Striatal Circuit**: D1/D2 opponent pairing — each D1 neuron encoding quantile tau implicitly paired with D2 neuron encoding 1-tau. Full annotation: `third_pass_neuro_qec.md` (TP-04).
+
+**ConformalHDC**: Nearest-centroid matching in high-dimensional space for hippocampal decoding. Full annotation: `third_pass_neuro_qec.md` (TP-09).
+
+### Dynamical Systems
+
+**Ensemble Control on Lie Groups**: Single broadcast control must simultaneously steer ALL systems in population to respective targets. Infinite-dimensional matching reduced to finite-dimensional by covering decomposition. Full annotation: `third_pass_dynamics_tda.md` (TP-12).
+
+**IC-PINN Coupled Oscillators**: Basis-free inference = function-level matching. Assign a coupling function (from infinite-dimensional space) to observed dynamics. Full annotation: `third_pass_dynamics_tda.md` (TP-11).
+
+**Ordinal Networks**: Hurst exponent estimation = matching to parameterized family of fractional processes. Full annotation: `third_pass_dynamics_tda.md` (TP-05).

@@ -121,3 +121,46 @@ Stability takes three flavors across domains:
 - **Bandt (2020)** — Brownian motion as null for financial order patterns. `second_pass.md` SP-13.
 - **Simpson et al. (2013)** — Erdős-Rényi, configuration model, lattice as brain network nulls. `second_pass.md` SP-15.
 - **Fasoli et al. (2026)** — Undirected connectivity as structural null (removes directionality). `cross_domain_bridges.md`.
+
+---
+
+## Third Pass (2026-04-05)
+
+### Stability
+
+**Barandes Stochastic-Quantum**: Exact isomorphism — strongest possible stability. The correspondence is stable under composition. Full annotation: `third_pass_neuro_qec.md` (TP-06).
+
+**Arovas-Zhang FQHE**: Topological protection via energy gap. Perturbations smaller than gap leave invariants unchanged. Full annotation: `third_pass_neuro_qec.md` (TP-05).
+
+**Spin-Boson Born (ANTI-stability)**: sqrt(alpha) prompt coherence loss at weak coupling. Standard linear-in-alpha estimate underestimates decoherence. Non-Markovian effects invisible to Markovian analysis. Full annotation: `third_pass_neuro_qec.md` (TP-10).
+
+**ConformalHDC**: Conformal prediction provides distribution-free coverage guarantees: prediction set adjusts adaptively, guarantee holds for ANY distribution. Full annotation: `third_pass_neuro_qec.md` (TP-09).
+
+**GMI — Isomorphism Invariance**: MI measure invariant under graph relabeling. Full annotation: `third_pass_infotheo_cross.md` (TP-02).
+
+**HSIC-Bottleneck Orthogonalization**: Prevents catastrophic forgetting by orthogonal gradient projection. Updates for new tasks constrained to directions that don't interfere with old. Full annotation: `third_pass_infotheo_cross.md` (TP-09).
+
+**Entropic Symmetry Breaking**: Critical slowing down = loss of stability. Diverging relaxation time near bifurcation. Entropy diagnostics provide early warning. Full annotation: `third_pass_dynamics_tda.md` (TP-04).
+
+**Pointwise Ergodic Theorem**: Time averages = space averages almost everywhere. Measurement robust to starting point. Full annotation: `third_pass_dynamics_tda.md` (TP-16).
+
+### Null Hypothesis
+
+**Dabney Distributional Code**: Schultz mean-RPE model as null. Distributional hypothesis predicts asymmetric responses and neuron-specific reversal points; data decisively rejects null. Full annotation: `third_pass_neuro_qec.md` (TP-03).
+
+**Ordinal Networks**: Exact analytical null for random (IID) series — known adjacency matrix. Departures indicate temporal dependence. Full annotation: `third_pass_dynamics_tda.md` (TP-05).
+
+**Visibility Graph Irreversibility**: Reversible process as null. KL divergence between forward and reversed directed visibility graphs. Full annotation: `third_pass_dynamics_tda.md` (TP-06).
+
+**CP-PINNs**: Constant-parameter PDE as null. Each detected changepoint rejects the null for a specific time interval. TV penalty controls false positive rate. Full annotation: `third_pass_dynamics_tda.md` (TP-08).
+
+**MI-NEE**: Common uniform reference as null for both joint and marginal. Triangulation approach. Full annotation: `third_pass_infotheo_cross.md` (TP-08).
+
+### Stability Taxonomy (Expanded)
+
+The third pass extends the stability taxonomy from 3 to 5 flavors:
+1. **Lipschitz** (TDA) — bottleneck ≤ Hausdorff
+2. **Exponential suppression** (QEC) — threshold theorem
+3. **Topological protection** (FQHE) — energy gap makes invariants immune to small perturbations
+4. **Anti-stability** (Spin-Boson) — sqrt singularity means even infinitesimal perturbation produces finite effect
+5. **Distribution-free** (Conformal prediction) — guarantee holds regardless of data distribution

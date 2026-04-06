@@ -48,9 +48,24 @@ Periodic orbits correspond to 1-cycles in the attractor's topology, but this is 
 ### Neuroscience
 Clique complexes on correlation matrices (Giusti et al., 2015 — in inbox). Population topology on neural manifolds (Gardner et al., 2022 — in inbox). Brain network graph Laplacians (Simpson et al., 2013).
 
+### Third Pass Additions
+
+5. **Gauge-theoretic chain complexes**: Thai stock market cohomology uses de Rham cohomology on correlation matrices — exterior derivative d as boundary operator, Wilson loops as cycle evaluation, Chern-Simons currents. Same ∂²=0, different geometric context (differential forms on manifolds rather than simplicial chains).
+
+6. **FQHE / Chern-Simons** (Arovas & Zhang, 1992): The original topological order. Ground state degeneracy = dim(H₁(Σ_g, ℤ/n)). The chain complex is the Chern-Simons gauge theory on the surface. Predates toric codes by 5 years.
+
+7. **Stochastic-quantum correspondence** (Barandes, 2023): Functorial mapping between stochastic (Markov chain) and quantum (unitary) categories. Tensor products preserved across the correspondence. The mapping IS a chain-complex-level equivalence between two algebraic frameworks.
+
+8. **Lie algebra grading** (Ensemble Control on Lie Groups): Cartan decomposition g = k + p with bracket relations [k,k]⊂k, [k,p]⊂p, [p,p]⊂k defines Z/2-graded chain complex. Hom-Lie cochain complexes (δ²=0) generalize Chevalley-Eilenberg cohomology via twisting maps.
+
+9. **Graded information**: Higher-order network compression (PRL) treats k-body interactions as k-simplices; information-theoretic criterion determines which orders carry genuinely new information. HSIC-Bottleneck creates bigraded (layer × task) structure for continual learning.
+
+The chain complex now has **6 incarnations**: geometric (simplicial/cellular), algebraic (Lie algebra), categorified (Khovanov), combinatorial (PID lattice), gauge-theoretic (de Rham/Chern-Simons), and graded-informational (k-body info, bigraded layers).
+
 ## Key Divergences
 
 - **Coefficient fields**: TDA uses ℝ or ℤ/2; QEC uses ℤ/2 or ℤ/p; information theory uses ℝ. Same machine, different arithmetic.
 - **Factor graphs vs. chain complexes**: factor graphs lack ∂² = 0 in general.
 - **Möbius function vs. ∂**: works on posets (more general than simplicial complexes).
+- **Gauge-theoretic vs. simplicial**: de Rham cohomology works on smooth manifolds with differential forms; simplicial homology works on discrete combinatorial objects. De Rham theorem connects them, but the computational tools are different.
 - See `glossary/ANTISYNONYMS.md` for full list.

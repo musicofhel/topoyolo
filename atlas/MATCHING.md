@@ -29,11 +29,17 @@ Syndrome defects (endpoints of error chains) are matched to identify the most li
 2. **Blahut-Arimoto**: Optimal source-channel matching for rate-distortion.
 3. **Optimal transport**: Wasserstein distances between distributions (shared with TDA).
 
-### Dynamical Systems
-Rarely used. No standard matching problem in the dynamics literature. (This emptiness is informative — see SYNONYMS.md Layer 2.)
+### Dynamical Systems (updated — third pass fills the gap)
+Previously marked as "rarely used." Third pass found several instances:
+1. **Ensemble control on Lie groups**: Single broadcast control must simultaneously steer all systems to respective targets — infinite-dimensional matching reduced to finite-dimensional via Cartan covering.
+2. **IC-PINN coupling functions**: Basis-free inference = function-level matching from infinite-dimensional space to observed dynamics.
+3. **Ordinal networks**: Hurst exponent estimation = matching to parameterized family of fractional processes.
 
-### Neuroscience
-Rarely used directly. Some spike-sorting methods use matching, but not in the topological sense.
+### Neuroscience (updated — third pass fills the gap)
+Previously marked as "rarely used." Third pass found:
+1. **Opponent striatal circuit**: D1/D2 opponent pairing — each D1 neuron encoding quantile tau implicitly paired with D2 neuron encoding 1-tau.
+2. **ConformalHDC**: Nearest-centroid matching in high-dimensional space for hippocampal decoding.
+3. **Driver fatigue GC**: Assigning causal roles (driver vs driven) to EEG channels is an implicit matching problem.
 
 ## Key Divergences
 

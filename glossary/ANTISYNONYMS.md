@@ -70,6 +70,26 @@ Pati & Sanders (2005) prove quantum information cannot be partially erased — t
 
 Hodge decomposition (simplicial complexes), KL-Pythagoras (posets), and polynomial chaos expansion (stochastic spaces) all decompose signals into orthogonal graded components. But they operate on different mathematical spaces: Hodge on cochain complexes, KL on probability manifolds, PCE on L² function spaces. The orthogonality is with respect to different inner products (L² on cochains, Fisher metric, measure-theoretic). Calling them "the same" requires specifying a functor between the categories — which no one has done.
 
+### Anti-stability ≠ instability
+
+The spin-boson Born approximation reveals sqrt(alpha) prompt coherence loss at weak coupling — an anti-stability result. This is not the same as dynamical instability (positive Lyapunov exponent) or topological instability (feature death in persistence). Anti-stability means the standard stability estimate is wrong in a specific direction: the true decoherence is worse than the linearized bound predicts. A system can be dynamically stable (bounded trajectories) while exhibiting anti-stability (perturbation effects scale non-linearly). The TDA/dynamical-systems notion of stability is about bounded response; the quantum anti-stability is about the functional form of the bound being wrong.
+
+### Frequency filtration ≠ scale filtration
+
+Three independent neuroscience groups (GC-STCL, driver fatigue GC, nonparametric brain GC) use EEG frequency bands as a filtration parameter for causal networks. This looks like TDA's scale filtration but differs in a critical way: in TDA, increasing ε adds simplices monotonically (the filtration is nested). In neuroscience, changing frequency does NOT produce nested graphs — the alpha-band causal graph is not a subset of the gamma-band graph. Different frequencies reveal genuinely different structures, not progressively coarser views of the same structure. The "filtration" is parameterized but not nested. This matches the Hawkes criticality story (single-scale, not multi-scale) more than the persistence story.
+
+### Distributional code ≠ persistence diagram (despite parameterization)
+
+Dabney's dopamine neurons encode quantiles of a probability distribution parameterized by tau ∈ [0,1]. This looks like a persistence diagram parameterized by filtration scale. But persistence diagrams track topological features (born/die); distributional codes track probability mass (quantile levels). The "birth" and "death" events in persistence have no analogue in the distributional code — every quantile exists simultaneously. The parallel is in the parameterization structure, not in the tracked quantity.
+
+### Stochastic-quantum correspondence is exact; other correspondences are approximate
+
+Barandes's stochastic-quantum theorem is an isomorphism, not a bound. Every generalized stochastic system has a unique quantum counterpart and vice versa. By contrast, the TDA-QEC correspondence (chain complexes, parameterized homology) is an analogy — same abstract machine, different instantiations. The PH stability theorem and QEC threshold theorem have the same structure but different proofs and different constants. Treating an exact correspondence and a structural analogy as the same kind of bridge risks collapsing important distinctions.
+
+### Triangulated MI ≠ direct MI
+
+MI-NEE estimates MI by comparing both joint and marginal distributions to a common reference (uniform), then subtracting. MINE compares joint directly to product-of-marginals. Both measure the same quantity (MI) but the estimation paths differ. The triangulation approach has better convergence but introduces a dependence on the reference distribution. In TDA, there is no analogous choice — the bottleneck distance is computed directly, not via a reference. The lesson: joint-vs-marginal excess can be measured directly or via triangulation through a null, and the choice affects computational properties.
+
 ---
 
 ## Living Document
