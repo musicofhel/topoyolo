@@ -37,8 +37,14 @@ The parameter is a coupling strength, forcing amplitude, or system parameter. At
 
 4. **MI divergence** (Chwilka & Karbowski, 2024): parameter = variance σ², invariant = MI. Phase boundary where MI diverges at finite σ².
 
+### Hawkes Processes (discovered in second pass)
+The criticality parameter m = ||φ||_L1 (average offspring number) parameterizes a family of point processes. At m < 1 (subcritical), m = 1 (critical), m > 1 (supercritical), the long-run behavior changes qualitatively. Subcritical → Brownian motion limit; critical → CIR diffusion (Horst & Xu, 2024). The ephemeral excitation model (Daw & Pender, 2021) parameterizes a path from Poisson (null) to Hawkes (full structure) via activity duration.
+
+### Energy Landscapes
+Disconnectivity graphs (Niroomand & Wales, 2023) ARE H₀ persistence diagrams: energy threshold = filtration parameter, component mergers = deaths. Independently invented by physical chemistry with zero TDA cross-citation.
+
 ### Neuroscience
-Stimulus or task condition as parameter, neural representation geometry as invariant. (See inbox for Tsuda on chaotic itinerancy — attractor switching as topology change over time.)
+Stimulus or task condition as parameter, neural representation geometry as invariant. Inter-hemispheric connectivity strength parameterizes attractor count in cortical models (Fasoli et al., 2026). (See inbox for Tsuda on chaotic itinerancy.)
 
 ## Key Divergences
 

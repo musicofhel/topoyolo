@@ -23,7 +23,7 @@ Each row is a single abstract concept. Each column is a domain's name for it. Em
 
 | Concept | TDA | QEC | Dynamical Systems | Neuroscience | Information Theory |
 |---------|-----|-----|-------------------|--------------|-------------------|
-| The parameter | Filtration scale ε | Error rate p / correction rate κ | Coupling strength / bifurcation parameter | Stimulus / task condition | Channel capacity / training epoch / constraint density α |
+| The parameter | Filtration scale ε / energy threshold | Error rate p / correction rate κ / Chern number | Coupling strength / bifurcation parameter / criticality m (Hawkes) | Stimulus / task condition / connectivity strength | Channel capacity / training epoch / constraint density α / IB β |
 | What changes | Which simplices exist | Which errors are correctable | Attractor topology | Neural representation geometry | Achievable rate / MI / PID atoms |
 | Critical value | Persistent feature birth/death | Error threshold (~2.5%) / Zeno transition | Bifurcation point | Perceptual switch | Capacity boundary / compression onset / SAT/UNSAT α_c ≈ 4.267 |
 | The invariant that tracks it | Persistence diagram | Threshold curve | Bifurcation diagram | — | Rate-distortion curve / information plane trajectory |
@@ -33,10 +33,10 @@ Each row is a single abstract concept. Each column is a domain's name for it. Em
 
 | Concept | TDA | QEC | Dynamical Systems | Neuroscience | Information Theory |
 |---------|-----|-----|-------------------|--------------|-------------------|
-| What is matched | Diagram points (birth,death) | Syndrome defects | — | — | Source symbols to channel symbols |
-| Cost function | Bottleneck (L∞) or Wasserstein (Lp) | Edge weight in syndrome graph | — | — | Distortion measure |
-| Algorithm | Hungarian / auction | MWPM / Union-Find | — | — | Blahut-Arimoto |
-| What the solution means | Distance between topological signatures | Most likely error correction | — | — | Optimal code |
+| What is matched | Diagram points (birth,death) | Syndrome defects | Latent space positions (Hawkes) / lead-lag clusters | — | Source symbols to channel symbols / query-key pairs (attention) |
+| Cost function | Bottleneck (L∞) or Wasserstein (Lp) | Edge weight in syndrome graph | Latent distance / cut imbalance | — | Distortion measure / Gromov-Wasserstein |
+| Algorithm | Hungarian / auction | MWPM / Union-Find | Spectral clustering / Neural ODE attention | — | Blahut-Arimoto / BP on factor graphs |
+| What the solution means | Distance between topological signatures | Most likely error correction | Temporal ordering / cluster assignment | — | Optimal code / martingale coupling |
 
 ### Layer 3: Composite Systems
 
@@ -52,10 +52,10 @@ Each row is a single abstract concept. Each column is a domain's name for it. Em
 
 | Concept | TDA | QEC | Dynamical Systems | Neuroscience | Information Theory |
 |---------|-----|-----|-------------------|--------------|-------------------|
-| What is destroyed | Phase coupling (surrogates) | Coherence (depolarizing channel) | Temporal structure (shuffle) | Neural correlation (trial shuffle) | Dependence (product distribution) |
-| What is preserved | Power spectrum | State space dimension | Marginal statistics | Firing rates | Marginal distributions |
-| Null distribution | Surrogate binding scores | Logical error rates under noise | — | Shuffled test statistics | — |
-| Significance | p < 0.05 (permutation) | Below threshold | — | p < 0.05 (permutation) | — |
+| What is destroyed | Phase coupling (surrogates) | Coherence (depolarizing channel) | Temporal structure (shuffle) / excitation (Poisson null) | Neural correlation (trial shuffle) / directionality (undirected null) | Dependence (product distribution) / higher-order interactions |
+| What is preserved | Power spectrum | State space dimension | Marginal statistics / event rates | Firing rates / degree sequence | Marginal distributions / lower-order terms |
+| Null distribution | Surrogate binding scores | Logical error rates under noise | Brownian motion limit (Hawkes) / Erdős-Rényi | Shuffled test statistics / random networks | Random assignment energy / Poisson baseline |
+| Significance | p < 0.05 (permutation) | Below threshold | Departure from Brownian / Lyapunov exponent | p < 0.05 (permutation) / small-world excess | MI > 0 / IB compression degree |
 
 ---
 

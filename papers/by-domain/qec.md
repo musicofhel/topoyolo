@@ -48,3 +48,13 @@ arXiv: 1311.2485 | Chapter in *Quantum Error Correction* (Cambridge University P
 | Subsystem decomposition | Chain complex splitting |
 
 **See also**: `by-structure/boundary_operators.md`, `by-structure/filtrations.md`
+
+---
+
+## Cross-listed from Second Pass + Bridges
+
+- **Pati & Sanders (2005)** — "No partial erasure of quantum information." Topological dimension of Bloch sphere S² is absolute invariant under all CPTP maps. Strongest possible stability: impossibility, not a bound. Full annotation: `cross_domain_bridges.md`. Machines: stability (impossibility), chain complex (topological), joint-vs-marginal.
+
+- **Tarnowski et al. (2019)** — "Chern number from linking number." Static topological invariant (Chern number) measured from post-quench dynamics. Integer-valued and topologically protected. Full annotation: `second_pass.md` (SP-12). Machines: chain complex, parameterized homology, null hypothesis, stability. **Also dynamical systems.**
+
+- **Garbaczewski (2005)** — "Differential entropy and time." Von Neumann entropy S(ρ)=0 for pure states while Shannon entropy of |ψ|² is dynamic — multi-level information decomposition. Full annotation: `cross_domain_bridges.md`. Machines: parameterized homology, joint-vs-marginal, stability, null hypothesis. **Bridge: info theory + dynamics + QEC.**

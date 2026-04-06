@@ -79,3 +79,23 @@ The parameter takes different forms across domains, but the structure is isomorp
 | Dynamical systems | Embedding dimension m | Attractor topology | Takens faithful embedding |
 | Information theory | Training epoch | MI, PID atoms | Fitting/compression boundary |
 | Finance/TDA | Sliding window position | Persistence features | Regime transitions |
+
+---
+
+## From Second Pass + Bridges
+
+### Hawkes Processes (new domain for this machine)
+- **Horst & Xu (2024)** — Criticality m as filtration parameter. Phase transition at m=1: subcritical → Brownian, critical → CIR process. `second_pass.md` SP-08.
+- **Mei & Eisner (2017)** — Intensity λ_k(t) tracked continuously. Neural ODE-like interpolation between events. `second_pass.md` SP-05.
+- **Daw & Pender (2021)** — Activity duration parameterizes path from Poisson null to full Hawkes. `second_pass.md` SP-09.
+
+### Information Bottleneck
+- **Shwartz-Ziv & Tishby (2017)** — Training epoch as parameter. Fitting → compression phases. SGD drift → diffusion transition. `second_pass.md` SP-01.
+- **Kawaguchi et al. (2023)** — β (Lagrange multiplier) traces curve through representation space. `cross_domain_bridges.md`.
+
+### Other
+- **Bandt (2020)** — Lag parameter d as filtration. Pattern frequencies constant for small d (scale invariance). `second_pass.md` SP-13.
+- **Tarnowski et al. (2019)** — Post-quench time as parameter. Vortex trajectories encode Chern number. `second_pass.md` SP-12.
+- **Gallicchio & Micheli (2020)** — GNN layer depth = scale parameter. Receptive field grows with depth like Rips filtration. `cross_domain_bridges.md`.
+- **Fasoli et al. (2026)** — Inter-hemispheric connectivity strength as bifurcation parameter. Attractor count changes at critical values. `cross_domain_bridges.md`.
+- **Darmon (2018)** — Entropy rate lifted from scalar to function on state space — parameterized by position on attractor. `cross_domain_bridges.md`.

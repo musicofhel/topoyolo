@@ -966,3 +966,39 @@ arXiv: 2111.05299
 | Information flow magnitude | Coupling strength (edge weight) |
 
 **See also**: `by-structure/composite_systems.md`, `by-structure/phase_transitions.md`, `by-domain/neuroscience.md`
+
+---
+
+## Cross-listed from Second Pass + Bridges
+
+### Information Bottleneck Cluster
+
+- **Shwartz-Ziv & Tishby (2017)** — "Opening the Black Box of Deep Neural Networks via Information." The original information plane paper. Two-phase training (fitting + compression). SGD noise as null-model mechanism. Full annotation: `second_pass.md` (SP-01). Machines: parameterized homology, joint-vs-marginal, null hypothesis, stability.
+
+- **Kawaguchi, Deng, Ji, Huang (2023)** — "How Does Information Bottleneck Help Deep Learning?" First rigorous proof IB controls generalization. Bound sqrt(I(X;Z)/n) has same form as PH stability. Full annotation: `cross_domain_bridges.md` + `second_pass.md` (SP-02). Machines: stability, joint-vs-marginal, parameterized homology.
+
+- **Yu, Yu, Løkse, Jenssen, Principe (2024)** — "Cauchy-Schwarz Divergence Information Bottleneck for Regression." CS divergence makes IB tractable without Gaussian assumptions. Closed-form compression + adversarial robustness. Full annotation: `second_pass.md` (SP-03). Machines: joint-vs-marginal, stability, null hypothesis.
+
+- **Wang, Jian, Masoomi, Ioannidis, Dy (2021)** — "Revisiting HSIC Bottleneck for Adversarial Robustness." Proves HSIC bottleneck implies adversarial robustness. Layer-wise Lipschitz bounds. Full annotation: `second_pass.md` (SP-04). Machines: stability, chain complex (weak), joint-vs-marginal.
+
+- **Ma, Lewis, Kleijn (2020)** — "The HSIC Bottleneck: Deep Learning without Back-Propagation." Kernel independence replaces MI for IB. Stability by layer-wise decoupling. Emergent discrete structure. Full annotation: `cross_domain_bridges.md`. Machines: joint-vs-marginal, null hypothesis, stability, chain complex (weak).
+
+### Entropy Dynamics
+
+- **Garbaczewski (2005)** — "Differential entropy and time." Three entropy notions (Shannon, KL, von Neumann) on same system reveal different dynamics. Fisher information as power transfer. H-theorem as Lyapunov stability. Full annotation: `cross_domain_bridges.md`. Machines: parameterized homology, joint-vs-marginal, stability, null hypothesis. **Bridge: info theory + dynamical systems + QEC.**
+
+- **Darmon (2018)** — "Specific Differential Entropy Rate Estimation." Lifts entropy rate from scalar to function on state space — structurally parallel to lifting Betti numbers to persistence diagrams. Full annotation: `cross_domain_bridges.md`. Machines: parameterized homology, joint-vs-marginal, null hypothesis. **Bridge: info theory + dynamical systems.**
+
+### Factor Graphs + Decomposition
+
+- **Amizadeh, Matusevych, Weimer (2019)** — "PDP: A General Neural Framework for Learning CSP Solvers." Factor graph message passing as proto-chain complex. Neural search strategy beyond greedy decimation. Full annotation: `second_pass.md` (SP-10). Machines: chain complex, matching, null hypothesis.
+
+- **Oladyshkin et al. (2023)** — "Deep Arbitrary Polynomial Chaos Neural Network." Polynomial chaos expansion = orthogonal decomposition of neural signals. kth-order terms = joint excess beyond lower orders. Parallel to Hodge decomposition. Full annotation: `cross_domain_bridges.md`. Machines: chain complex, joint-vs-marginal, null hypothesis, stability.
+
+### Other
+
+- **Napolitano (2026)** — "Fiber Bundles in LLMs (gl(4,R) Lie Algebra)." Dark Casimir dimensions hidden by layer norm carry computation. Cross-architecture transfer as stability. **Preprint — extraordinary claims, requires verification.** Full annotation: `second_pass.md` (SP-11). Machines: chain complex, joint-vs-marginal, parameterized homology, stability.
+
+- **Liu et al. (2023)** — "FOCAL: Factorized Orthogonal Latent Space for Multimodal Time Series." Shared vs private feature decomposition = explicit joint-vs-marginal operationalization. Full annotation: `second_pass.md` (SP-16). Machines: joint-vs-marginal, null hypothesis, stability.
+
+- **Liu et al. (2020)** — "SNGP: Distance Awareness for Uncertainty." Spectral normalization = Lipschitz constraint identical to PH stability. GP posterior = distance from training manifold. Full annotation: `cross_domain_bridges.md` + `second_pass.md` (SP-17). Machines: stability, null hypothesis, parameterized homology.

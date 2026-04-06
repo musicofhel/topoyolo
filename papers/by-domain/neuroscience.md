@@ -29,3 +29,13 @@ Papers from or relevant to the neuroscience community, indexed by which abstract
 - **Xi et al.** — "TE + directed PH in spiking systems." Chain complex, parameterized homology, null model.
 - **Tsuda (2001)** — "Chaotic itinerancy." Parameterized homology (attractor switching = topology change over time).
 - **Tort et al. (2010)** — PAC modulation index. Joint-vs-marginal (cross-frequency coupling), null model.
+
+---
+
+## Cross-listed from Second Pass + Bridges
+
+- **Simpson, Bowman, Laurienti (2013)** — "Analyzing complex functional brain networks." Survey identifying exact gaps where TDA machines apply: threshold selection = filtration problem, higher-order structure needs simplicial methods. Full annotation: `second_pass.md` (SP-15). Machines: chain complex (weak), parameterized homology, joint-vs-marginal, null hypothesis.
+
+- **Fasoli et al. (2026)** — "Attractor dynamics of whole-cortex network model." Mouse cortex: directed connectivity essential for full attractor repertoire (Z vs Z/2 homology). Static fMRI constraints determine dynamic topology. Full annotation: `cross_domain_bridges.md`. Machines: parameterized homology, stability, null hypothesis, joint-vs-marginal. **Bridge: neuroscience + dynamical systems.**
+
+- **Tort et al. (2010)** — PAC modulation index. *(In inbox — not yet annotated.)*

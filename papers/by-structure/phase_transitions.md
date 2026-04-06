@@ -101,3 +101,23 @@ Stability takes three flavors across domains:
 2. **Spectral stability (dynamical systems)**: Perturbation in operator → bounded change in spectrum. Pseudospectra quantify this. Closely analogous to PH stability when eigenvalues are viewed as "features."
 
 3. **Information-theoretic stability (QEC, information theory)**: Perturbation in noise rate → bounded change in protected information. The Zeno regime (Oreshkov) provides super-linear stability gains from temporal correlations — a feature absent in the metric and spectral cases.
+
+---
+
+## From Second Pass + Bridges
+
+### Stability
+- **Kawaguchi et al. (2023)** — Generalization bound Δ ≤ sqrt(I(X;Z)/n). Same form as PH stability. `cross_domain_bridges.md`.
+- **Wang et al. (2021)** — HSIC bottleneck: layer-wise Lipschitz bounds as stability certificates. `second_pass.md` SP-04.
+- **Liu et al. (2020) SNGP** — Spectral normalization = Lipschitz constraint identical to PH stability form. `cross_domain_bridges.md`.
+- **Gallicchio & Micheli (2020)** — Banach contraction (ρ(W) < 1) guarantees fixed-point convergence. `cross_domain_bridges.md`.
+- **Pati & Sanders (2005)** — No partial erasure: absolute impossibility, not a bound. Strongest stability. `cross_domain_bridges.md`.
+- **Garbaczewski (2005)** — H-theorem: D_KL monotonically non-increasing as Lyapunov function. `cross_domain_bridges.md`.
+- **Tarnowski et al. (2019)** — Chern number: integer-valued, topologically protected, survives noisy dynamics. `second_pass.md` SP-12.
+
+### Null Hypothesis
+- **Horst & Xu (2024)** — Subcritical Hawkes → Brownian motion (same limit as Poisson null). `second_pass.md` SP-08.
+- **Daw & Pender (2021)** — Poisson process (activity duration = 0) as null. `second_pass.md` SP-09.
+- **Bandt (2020)** — Brownian motion as null for financial order patterns. `second_pass.md` SP-13.
+- **Simpson et al. (2013)** — Erdős-Rényi, configuration model, lattice as brain network nulls. `second_pass.md` SP-15.
+- **Fasoli et al. (2026)** — Undirected connectivity as structural null (removes directionality). `cross_domain_bridges.md`.

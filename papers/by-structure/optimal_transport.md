@@ -50,3 +50,21 @@ The matching machine appears in four incarnations:
 4. **Mathematical finance (Bayraktar & Zhou)**: Matching = martingale coupling between given marginals. Cost = exotic option payoff. The martingale constraint (no-arbitrage) restricts the feasible set of matchings.
 
 The cost function is always a metric or semi-metric, and the matching always respects structural constraints (normality in geometry, no-arbitrage in finance, Bellman consistency in RL).
+
+---
+
+## From Second Pass + Bridges
+
+### Hawkes / Point Processes
+- **Shang & Sun (2019)** — Geometric embedding matches processes to graph positions. Implicit optimal assignment. `second_pass.md` SP-06.
+- **Huang et al. (2022)** — Latent space distance as matching cost. Learns which processes should be neighbors. `second_pass.md` SP-07.
+
+### CSP / Assignment
+- **Amizadeh et al. (2019) PDP** — Decimation = assignment of variables to values. Neural search strategy. `second_pass.md` SP-10.
+- **Bennett et al. (2022)** — Lead-lag cluster pairing via Hermitian spectral clustering = directed matching. `second_pass.md` SP-14.
+
+### Continuous-Time
+- **Chen et al. (2023) ContiFormer** — Attention as continuous-time matching. Query-key pairing evolves via Neural ODE. `cross_domain_bridges.md`.
+
+### Convergence Rates
+- **Horst & Xu (2024)** — Wasserstein convergence bounds for rescaled Hawkes processes to their limits. `second_pass.md` SP-08.

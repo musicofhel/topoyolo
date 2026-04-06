@@ -125,3 +125,34 @@ GW distance captures relational structure invariant to ambient dimension/rotatio
 ## Dynamical Systems
 
 *(Emergent attractor topology from coupling — see inbox for Sugihara CCM)*
+
+---
+
+## From Second Pass + Bridges
+
+### Information Bottleneck Cluster
+- **Shwartz-Ziv & Tishby (2017)** — IB objective min I(X;T) - βI(T;Y) decomposes learning into joint (prediction) and marginal (compression). `second_pass.md` SP-01.
+- **Kawaguchi et al. (2023)** — Excess risk controlled by I(X;Z) gap. `cross_domain_bridges.md`.
+- **Yu et al. (2024)** — CS divergence: closed-form joint-vs-marginal. `second_pass.md` SP-03.
+- **Wang et al. (2021)** — HSIC as kernel dependence measure. `second_pass.md` SP-04.
+- **Ma et al. (2020)** — HSIC bottleneck without backpropagation. `cross_domain_bridges.md`.
+
+### Hawkes Processes
+- **Mei & Eisner (2017)** — Cross-excitation = positive joint excess; inhibition = negative. `second_pass.md` SP-05.
+- **Huang et al. (2022)** — Baseline (marginal) + mutual excitation (joint excess). Reciprocity and transitivity as higher-order joint. `second_pass.md` SP-07.
+- **Daw & Pender (2021)** — Epidemic/preferential attachment connections. Joint infection history > marginal. `second_pass.md` SP-09.
+
+### Decomposition / Factorization
+- **Liu et al. (2023) FOCAL** — Shared features = cross-modal joint excess; private features = modality-exclusive marginal. `second_pass.md` SP-16.
+- **Oladyshkin et al. (2023) DaPC NN** — kth-order polynomial chaos terms = k-way joint excess beyond lower orders. `cross_domain_bridges.md`.
+- **Napolitano (2026)** — Active (6-dim) vs dark (10-dim) Casimir modes. Dark dimensions = excess hidden by layer normalization. `second_pass.md` SP-11.
+
+### QEC / Quantum
+- **Pati & Sanders (2005)** — Quantum parameter space (Bloch sphere) not decomposable into marginal subspaces. Indivisibility IS joint-vs-marginal. `cross_domain_bridges.md`.
+- **Garbaczewski (2005)** — Multi-level: S(ρ)=0 but H(|ψ|²)>0. Different entropy functionals capture different joint layers. `cross_domain_bridges.md`.
+
+### Neuroscience / Networks
+- **Simpson et al. (2013)** — Functional connectivity = pairwise joint excess. Integration vs segregation = global vs local balance. `second_pass.md` SP-15.
+- **Fasoli et al. (2026)** — Attractor structure absent from individual regions, emerges from coupled system. `cross_domain_bridges.md`.
+- **Bennett et al. (2022)** — Lead-lag = joint predictive structure. `second_pass.md` SP-14.
+- **Bandt (2020)** — Up-down balance and turning rate as joint statistics absent from marginals. `second_pass.md` SP-13.

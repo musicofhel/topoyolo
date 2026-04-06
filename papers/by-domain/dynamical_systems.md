@@ -225,3 +225,31 @@ arXiv: 1307.2493
 ## Cross-listed from Information Theory
 
 - **Sugiyama, Nakahara & Tsuda (2016)** — "Information Decomposition on Structured Space." Dual theta/eta coordinates on posets as chain complex; KL divergence Pythagoras theorem as Hodge-like decomposition; higher-order interactions as joint-vs-marginal excess. Full annotation in `by-domain/information_theory.md`. Machines: chain complex, joint-vs-marginal, null hypothesis. Notable Rosetta connection: the orthogonal decomposition of D_KL on posets is the information-theoretic analogue of the Hodge decomposition on simplicial complexes (cf. Mollers et al., 2023).
+
+---
+
+## Cross-listed from Second Pass + Bridges
+
+### Hawkes Process Cluster
+
+- **Mei & Eisner (2017)** — "The Neural Hawkes Process." Continuous-time LSTM for event streams. Cross-excitation/inhibition as joint-vs-marginal. Exponential decay as stability mechanism. Full annotation: `second_pass.md` (SP-05). Machines: parameterized homology, joint-vs-marginal, stability.
+
+- **Shang & Sun (2019)** — "Geometric Hawkes Processes with Graph Convolutional RNNs." Graph Laplacian (0th Hodge Laplacian) for inter-process correlations. Spectral convolutions respect chain complex structure. Full annotation: `second_pass.md` (SP-06). Machines: chain complex (weak), matching, stability.
+
+- **Huang, Soliman, Paul, Xu (2022)** — "Latent Space Hawkes Process Model." Latent distance + mutual excitation decomposition = marginal + joint excess. Stationarity (spectral radius < 1) as stability. Full annotation: `second_pass.md` (SP-07). Machines: matching, joint-vs-marginal, stability.
+
+- **Horst & Xu (2024)** — "Functional Limit Theorems for Hawkes Processes." Criticality parameter m as filtration. Phase transition at m=1. Wasserstein convergence rates. Brownian motion as null. Full annotation: `second_pass.md` (SP-08). Machines: parameterized homology, stability, null hypothesis.
+
+- **Daw & Pender (2021)** — "An Ephemerally Self-Exciting Point Process." Activity duration parameterizes path from Poisson (null) to Hawkes (full structure). Batch scaling limit theorem. Full annotation: `second_pass.md` (SP-09). Machines: parameterized homology, null hypothesis, joint-vs-marginal.
+
+### Cross-Domain
+
+- **Tarnowski et al. (2019)** — "Measuring topology from dynamics: Chern number from linking number." Static topological invariant extracted from post-quench dynamics. Linking number = Chern number. Full annotation: `second_pass.md` (SP-12). Machines: chain complex, parameterized homology, null hypothesis, stability. **Also QEC.**
+
+- **Bandt (2020)** — "Order patterns, their variation and change points." Permutation entropy with lag as filtration parameter. Brownian motion as null. Up-down balance as joint excess. Full annotation: `second_pass.md` (SP-13). Machines: null hypothesis, parameterized homology, joint-vs-marginal.
+
+- **Bennett, Cucuringu, Reinert (2022)** — "Lead-lag detection and network clustering." Hermitian spectral clustering for directed networks. Lead-lag as directed matching. Full annotation: `second_pass.md` (SP-14). Machines: matching, chain complex (weak), null hypothesis, joint-vs-marginal.
+
+- **Gallicchio & Micheli (2020)** — "Fast and Deep Graph Neural Networks." Reservoir GNNs: Banach contraction guarantees convergence. Untrained random weights suffice — architecture carries topology. Layer depth = scale parameter. Full annotation: `cross_domain_bridges.md`. Machines: stability, parameterized homology, null hypothesis, chain complex. **Bridge: dynamics + TDA.**
+
+- **Chen et al. (2023)** — "ContiFormer: Continuous-Time Transformer." Neural ODE inside attention. Continuous-time matching. Subsumes existing methods as special cases. Full annotation: `cross_domain_bridges.md`. Machines: parameterized homology, stability, matching.

@@ -54,6 +54,22 @@ CTQEC (Oreshkov, 2013) models error correction as a continuous Lindblad master e
 
 Mézard & Mora (2008) treat factor graphs as generalized chain complexes. For LDPC codes, the mapping is exact (parity-check matrix = boundary operator). But for general constraint satisfaction (random k-SAT), factor graphs lack the grading and ∂² = 0 property. A factor graph has variable nodes and factor nodes connected by edges, but the composition of two "boundary-like" operations is not generally zero. The chain complex structure is a special case within the broader factor graph formalism.
 
+### Disconnectivity graphs ≈ but ≠ persistence diagrams
+
+Niroomand & Wales (2023) show that disconnectivity graphs from energy landscape theory are mathematically isomorphic to H₀ persistence diagrams (sub-level set persistence). Both track connected components merging as a threshold rises. But the energy landscape tradition computes additional structure: transition states (saddle points), conserved coordinates across minima, and reaction pathways. TDA persistence diagrams do not record what happens at the saddle — only that a merge occurred and at what threshold. The energy landscape version is richer for the specific case of H₀ on scalar functions, but persistence generalizes to all dimensions (H₁, H₂, ...) where energy landscapes have no analogue.
+
+### Hawkes criticality ≠ persistence criticality (exactly)
+
+The Hawkes criticality parameter m (offspring number) at m=1 looks like a birth/death event in persistence: the process transitions from subcritical (Brownian limit) to supercritical (explosive). But in persistence, features are born and die at specific scales; in Hawkes, m=1 is a single global phase transition affecting the entire process. Persistence is multi-scale (many births and deaths at different ε); Hawkes criticality is single-scale (one transition at m=1). The structural parallel is real but the multiplicity is different.
+
+### Quantum no-partial-erasure ≠ classical stability
+
+Pati & Sanders (2005) prove quantum information cannot be partially erased — the topological dimension of the Bloch sphere is absolutely invariant under all CPTP maps. Classical stability theorems (PH, IB generalization bounds) provide bounds that can be violated at cost; quantum no-partial-erasure is a hard impossibility. There is no "graceful degradation" in quantum information — you either preserve all of it or map to a fixed state. This is categorically stronger than any continuous stability guarantee.
+
+### Three orthogonal decompositions — same structure, different spaces
+
+Hodge decomposition (simplicial complexes), KL-Pythagoras (posets), and polynomial chaos expansion (stochastic spaces) all decompose signals into orthogonal graded components. But they operate on different mathematical spaces: Hodge on cochain complexes, KL on probability manifolds, PCE on L² function spaces. The orthogonality is with respect to different inner products (L² on cochains, Fisher metric, measure-theoretic). Calling them "the same" requires specifying a functor between the categories — which no one has done.
+
 ---
 
 ## Living Document

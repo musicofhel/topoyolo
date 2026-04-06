@@ -161,3 +161,11 @@ DOI: 10.1016/j.physa.2019.122212 | Physica A 546:122212
 ## Cross-listed from Machine Learning / Optimal Transport
 
 - **Bunne, Alvarez-Melis, Krause, Jegelka (2019)** — "Learning Generative Models across Incomparable Spaces." Gromov-Wasserstein GANs for cross-domain generative modeling. Full annotation in `by-domain/dynamical_systems.md` (cross-domain). Machines: matching, stability.
+
+---
+
+## Cross-listed from Second Pass + Bridges
+
+- **Niroomand & Wales (2023)** — "Physics-Inspired Interpretability." Disconnectivity graphs = H₀ persistence diagrams, independently invented by energy landscape theory. Conserved weights = persistent features. Full annotation: `cross_domain_bridges.md`. Machines: parameterized homology, stability, null hypothesis, joint-vs-marginal (weak). **KEY FINDING: same mathematical object, zero cross-citation.**
+
+- **Gallicchio & Micheli (2020)** — "Fast and Deep Graph Neural Networks." Layer depth = scale parameter (Rips-like). Banach contraction = stability. Untrained random weights suffice — topology carries the information. Full annotation: `cross_domain_bridges.md`. Machines: stability, parameterized homology, null hypothesis, chain complex. **Bridge: dynamics + TDA.**

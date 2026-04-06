@@ -52,3 +52,23 @@ The chain complex machine appears in four distinct incarnations across these pap
 4. **Combinatorial (Information theory — Sugiyama et al.)**: Mobius function on posets. ∂ is inclusion-exclusion. Orthogonal decomposition of D_KL mirrors Hodge orthogonality.
 
 The Hodge decomposition appears in both the TDA and information theory contexts with the same orthogonality structure.
+
+---
+
+## From Second Pass + Bridges
+
+### Factor Graphs / CSP
+- **Amizadeh et al. (2019) PDP** — Factor graph message passing as proto-chain complex. Variable→factor = forward boundary; factor→variable = adjoint. `second_pass.md` SP-10.
+
+### Spectral / Graph
+- **Shang & Sun (2019)** — Graph Laplacian as 0th Hodge Laplacian for Hawkes process networks. Spectral convolutions respect chain structure. `second_pass.md` SP-06.
+- **Bennett et al. (2022)** — Hermitian adjacency matrix for directed lead-lag networks. Oriented 0th Hodge operator. `second_pass.md` SP-14.
+- **Simpson et al. (2013)** — Brain network graph Laplacian, clustering, community structure as 0-skeleton invariants. `second_pass.md` SP-15.
+
+### Quantum / Topological
+- **Pati & Sanders (2005)** — Bloch sphere S² has H₂(S²)=Z. No CPTP map can reduce this. Topological dimension as absolute invariant. `cross_domain_bridges.md`.
+- **Tarnowski et al. (2019)** — Chern number as fiber bundle invariant. Ground-state band structure = chain complex of Bloch states over Brillouin zone. `second_pass.md` SP-12.
+
+### Algebraic Decomposition
+- **Napolitano (2026)** — gl(4,R) Lie algebra Casimir decomposition. Not boundary operators strictly but graded eigenspace decomposition. `second_pass.md` SP-11.
+- **Oladyshkin et al. (2023)** — Polynomial chaos orthogonal decomposition graded by interaction order. Parallel to Hodge decomposition. `cross_domain_bridges.md`.

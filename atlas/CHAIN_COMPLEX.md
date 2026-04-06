@@ -35,11 +35,18 @@ Two distinct instantiations discovered:
 
 2. **Posets** (Sugiyama et al., 2016): Information decomposition on partially ordered sets. Möbius function as boundary operator. Principal ideals and filters as ∂ and δ supports. The event hierarchy (1-way, 2-way, ..., n-way interactions) forms a graded structure where the Möbius inversion formula plays the role of ∂² = 0.
 
+3. **Polynomial chaos** (Oladyshkin et al., 2023): Orthogonal polynomial expansion of neural signals graded by interaction order. kth-order terms capture k-way interactions. The orthogonality condition parallels the Hodge decomposition — three independent mathematical traditions (Hodge, KL-Pythagoras on posets, polynomial chaos) have developed isomorphic orthogonal decomposition machinery with zero cross-citation.
+
+4. **PID lattice** (Williams-Beer, 2010; multiple PID papers): The redundancy lattice of source combinations, with Möbius inversion decomposing MI into atoms. The lattice structure + Möbius function creates a near-chain complex. See PID core annotations in `by-domain/information_theory.md`.
+
+### QEC (extended)
+**Papers**: Pati & Sanders (2005) — The Bloch sphere S² has H₂(S²) = ℤ, and no CPTP map can reduce this topological dimension. The no-partial-erasure theorem is a homological conservation law. Tarnowski et al. (2019) — Chern number as fiber bundle invariant measured dynamically via linking number.
+
 ### Dynamical Systems
-Periodic orbits correspond to 1-cycles in the attractor's topology, but this is a weaker instantiation — see ANTISYNONYMS.md on "cycle" as false cognate.
+Periodic orbits correspond to 1-cycles in the attractor's topology, but this is a weaker instantiation — see ANTISYNONYMS.md on "cycle" as false cognate. Graph Laplacians on Hawkes process networks (Shang & Sun, 2019) and lead-lag networks (Bennett et al., 2022) are 0th Hodge Laplacians. Reservoir GNN message-passing aggregation (Gallicchio & Micheli, 2020) acts as a boundary-like operator.
 
 ### Neuroscience
-Clique complexes on correlation matrices (Giusti et al., 2015 — in inbox). Population topology on neural manifolds (Gardner et al., 2022 — in inbox).
+Clique complexes on correlation matrices (Giusti et al., 2015 — in inbox). Population topology on neural manifolds (Gardner et al., 2022 — in inbox). Brain network graph Laplacians (Simpson et al., 2013).
 
 ## Key Divergences
 

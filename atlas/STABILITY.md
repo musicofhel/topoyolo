@@ -35,6 +35,20 @@ Below the error threshold, logical error probability is exponentially suppressed
 ### Dynamical Systems — Structural Stability
 A dynamical system is structurally stable if small perturbations of the vector field produce topologically conjugate flows. Generic systems (Morse-Smale) are structurally stable. Bifurcation points are where structural stability fails — the analogue of error thresholds.
 
+4. **IB generalization bound** (Kawaguchi et al., 2023): Δ ≤ sqrt(I(X;Z)/n). Same form as PH stability — controlling information content bounds generalization error.
+5. **HSIC Lipschitz bounds** (Wang et al., 2021): Layer-wise HSIC controls per-layer Lipschitz constant. Proves HSIC bottleneck implies adversarial robustness.
+6. **SNGP distance awareness** (Liu et al., 2020): Spectral normalization enforces bi-Lipschitz property. Identical mathematical structure to PH stability: ||h(x)-h(x')|| ≤ L||x-x'||.
+
+### Dynamical Systems — Structural Stability (extended)
+A dynamical system is structurally stable if small perturbations of the vector field produce topologically conjugate flows. Generic systems (Morse-Smale) are structurally stable. Bifurcation points are where structural stability fails — the analogue of error thresholds.
+
+**Banach contraction** (Gallicchio & Micheli, 2020): spectral radius ρ(W) < 1 guarantees fixed-point convergence for reservoir GNNs. Directly analogous to QEC correction rate exceeding noise rate.
+
+**Hawkes stationarity** (Huang et al., 2022): spectral radius of excitation matrix < 1 ensures bounded long-run intensity.
+
+### QEC (extended)
+**No partial erasure** (Pati & Sanders, 2005): The strongest stability theorem — absolute impossibility, not a bound. Topological dimension of quantum state space is invariant under ALL physical operations.
+
 ### Statistical Physics
 Mézard & Mora (2008): BP convergence regimes. In the easy-SAT regime (α < α_d), the BP fixed point is stable. In the hard-SAT regime (α_d < α < α_c), BP oscillates but Survey Propagation works. Above α_c, all algorithms fail. Each transition marks a change in algorithmic stability.
 
