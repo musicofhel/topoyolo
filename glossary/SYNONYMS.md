@@ -10,9 +10,9 @@ Each row is a single abstract concept. Each column is a domain's name for it. Em
 
 | Concept | TDA | QEC | Dynamical Systems | Neuroscience | Information Theory |
 |---------|-----|-----|-------------------|--------------|-------------------|
-| The space | Simplicial complex | Code complex / cellulation | State space / phase space | Neural manifold | Source alphabet |
+| The space | Simplicial complex | Code complex / cellulation | State space / phase space | Neural manifold | Source alphabet / Poset of event combinations |
 | Local constraint | Simplex inclusion | Stabilizer | Flow equation | Firing rate constraint | Entropy bound |
-| Boundary operator | ∂ (simplicial) | ∂ (cellular) | — | — | — |
+| Boundary operator | ∂ (simplicial) | ∂ (cellular) | — | — | Möbius function on poset (Sugiyama 2016) |
 | Cycle | Kernel of ∂ | Error syndrome pattern | Periodic orbit | Recurrent activity pattern | — |
 | Boundary | Image of ∂ | Trivial syndrome | Gradient flow | — | — |
 | Homology class | Persistent feature | Logical qubit | Attractor topology | Population topology (Giusti) | — |
@@ -23,11 +23,11 @@ Each row is a single abstract concept. Each column is a domain's name for it. Em
 
 | Concept | TDA | QEC | Dynamical Systems | Neuroscience | Information Theory |
 |---------|-----|-----|-------------------|--------------|-------------------|
-| The parameter | Filtration scale ε | Error rate p | Coupling strength / bifurcation parameter | Stimulus / task condition | Channel capacity |
-| What changes | Which simplices exist | Which errors are correctable | Attractor topology | Neural representation geometry | Achievable rate |
-| Critical value | Persistent feature birth/death | Error threshold (~2.5%) | Bifurcation point | Perceptual switch | Capacity boundary |
-| The invariant that tracks it | Persistence diagram | Threshold curve | Bifurcation diagram | — | Rate-distortion curve |
-| Robustness of the invariant | Stability theorem (bottleneck ≤ Hausdorff) | Threshold theorem (exp. suppression) | Structural stability | — | Channel coding theorem |
+| The parameter | Filtration scale ε | Error rate p / correction rate κ | Coupling strength / bifurcation parameter | Stimulus / task condition | Channel capacity / training epoch / constraint density α |
+| What changes | Which simplices exist | Which errors are correctable | Attractor topology | Neural representation geometry | Achievable rate / MI / PID atoms |
+| Critical value | Persistent feature birth/death | Error threshold (~2.5%) / Zeno transition | Bifurcation point | Perceptual switch | Capacity boundary / compression onset / SAT/UNSAT α_c ≈ 4.267 |
+| The invariant that tracks it | Persistence diagram | Threshold curve | Bifurcation diagram | — | Rate-distortion curve / information plane trajectory |
+| Robustness of the invariant | Stability theorem (bottleneck ≤ Hausdorff) | Threshold theorem (exp. suppression) / Zeno λ⁴/κ² | Structural stability | — | Channel coding theorem / MINE consistency |
 
 ### Layer 2: Matching / Assignment
 
@@ -45,8 +45,8 @@ Each row is a single abstract concept. Each column is a domain's name for it. Em
 | Components | Marginal point clouds | Subsystem Hilbert spaces | Uncoupled systems | Brain regions | Independent sources |
 | Joint object | Joint embedding | Tensor product space | Coupled system | Cross-region dynamics | Joint source |
 | Independence | I_joint ≈ combo of I_X, I_Y | Product state | No coupling | No functional connectivity | Independence |
-| Excess | Binding residual (R > 0) | Entanglement (non-separable) | Emergent attractor topology | Neural binding | Mutual information / synergy |
-| Detection method | PI subtraction + surrogate test | Entanglement witness | — | Coherence / Granger | I(X;Y) estimation |
+| Excess | Binding residual (R > 0) | Entanglement (non-separable) | Emergent attractor topology | Neural binding / synergistic PID | Mutual information / synergy / higher-order interaction |
+| Detection method | PI subtraction + surrogate test | Entanglement witness | — | Coherence / Granger / PID | I(X;Y) estimation / MINE / Pythagorean KL decomposition |
 
 ### Layer 4: Null Models
 

@@ -34,6 +34,26 @@ The JIT decoder must make corrections in real time with incomplete syndrome hist
 
 In algebraic topology, a cycle is an element of ker(∂). In dynamical systems, a cycle is a periodic orbit. These are different objects. A periodic orbit in phase space does correspond to a 1-cycle in the attractor's topology, but the dynamical-systems usage is broader (it includes unstable periodic orbits that don't appear as persistent H₁ features) and narrower (it doesn't include higher-dimensional cycles). Use with care.
 
+### MI divergence has no TDA analogue
+
+In information theory, mutual information between lognormal variables can diverge to infinity at finite variance (Chwilka & Karbowski, 2024). The joint-vs-marginal excess becomes infinite. In TDA, persistence diagrams are always finite (bounded number of birth-death pairs for finite complexes). In QEC, entanglement measures are bounded by the Hilbert space dimension. The possibility of an infinite excess is specific to continuous-variable information theory. When mapping "excess" across domains, the information-theoretic version can blow up where the topological version cannot.
+
+### Möbius function ≠ boundary operator (exactly)
+
+Sugiyama et al. (2016) build chain-complex-like structure on posets using the Möbius function. The analogy is strong: Möbius inversion (μ * ζ = δ) parallels ∂² = 0. But the Möbius function operates on a poset (partial order) while ∂ operates on a simplicial or cell complex (geometric object). A poset can be realized as the face lattice of a simplicial complex, but not every poset arises this way. The information-geometric "chain complex" is more general than the topological one — it works on arbitrary partial orders, not just those with geometric realization.
+
+### Information plane compression ≠ feature death
+
+The "compression phase" in the information plane (I(X;T) decreasing during training) looks like feature death in persistence (a bar ending at a death-time). But Geiger (2021) showed that observed compression is often geometric (representations cluster/shrink) rather than information-theoretic (MI genuinely decreases). The persistence-diagram analogy suggests that lost features are gone; the ML reality is that the "lost" information may still be recoverable from the representation, just harder to estimate. Persistence is exact; information-plane compression can be an artifact of the estimator.
+
+### Continuous vs. discrete error correction
+
+CTQEC (Oreshkov, 2013) models error correction as a continuous Lindblad master equation. Discrete QEC (surface codes, toric codes) uses syndrome measurement + conditional unitary at discrete time steps. TDA filtrations are typically discrete (finite simplicial complexes). The continuous-time formulation introduces the Zeno effect (λ⁴/κ² scaling from non-Markovian noise exploitation), which has no analogue in discrete QEC or discrete TDA. The distinction between continuous and discrete parameterization is not just technical — it changes what stability guarantees are available.
+
+### Factor graphs are looser than chain complexes
+
+Mézard & Mora (2008) treat factor graphs as generalized chain complexes. For LDPC codes, the mapping is exact (parity-check matrix = boundary operator). But for general constraint satisfaction (random k-SAT), factor graphs lack the grading and ∂² = 0 property. A factor graph has variable nodes and factor nodes connected by edges, but the composition of two "boundary-like" operations is not generally zero. The chain complex structure is a special case within the broader factor graph formalism.
+
 ---
 
 ## Living Document
