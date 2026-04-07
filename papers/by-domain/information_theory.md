@@ -969,6 +969,12 @@ arXiv: 2111.05299
 
 ---
 
+## Cross-listed from Neuroscience + TDA
+
+- **Peek, Pritam, Skerritt, Chalup (2025)** — "Time Series Analysis of Spiking Neural Systems via Transfer Entropy and Directed Persistent Homology." Transfer entropy as the information-theoretic measure driving directed flag complex construction. TE quantifies directed information flow between neuron pairs. Full annotation: `inbox.md` (arXiv: 2508.19048). Machines: chain complex, parameterized homology, null hypothesis.
+
+---
+
 ## Cross-listed from Second Pass + Bridges
 
 ### Information Bottleneck Cluster
@@ -1002,6 +1008,40 @@ arXiv: 2111.05299
 - **Liu et al. (2023)** — "FOCAL: Factorized Orthogonal Latent Space for Multimodal Time Series." Shared vs private feature decomposition = explicit joint-vs-marginal operationalization. Full annotation: `second_pass.md` (SP-16). Machines: joint-vs-marginal, null hypothesis, stability.
 
 - **Liu et al. (2020)** — "SNGP: Distance Awareness for Uncertainty." Spectral normalization = Lipschitz constraint identical to PH stability. GP posterior = distance from training manifold. Full annotation: `cross_domain_bridges.md` + `second_pass.md` (SP-17). Machines: stability, null hypothesis, parameterized homology.
+
+---
+
+## Wave 2 (2026-04-06) — Thin Cell Papers
+
+### Baudot & Bennequin (2015) — The Homological Nature of Entropy
+**"The Homological Nature of Entropy"**
+MDPI Entropy 17(5):3253
+Shannon entropy = cocycle in information cohomology. Chain rule = cocycle condition. Information structures as simplicial complexes. Foundational Chain×Info paper.
+**Machines**: chain complex, parameterized homology (weak). **See also**: `by-structure/boundary_operators.md`.
+
+### Bradley (2021) — Entropy as Topological Operad Derivation
+**"Entropy as a Topological Operad Derivation"**
+arXiv: 2107.09581
+Shannon entropy = unique derivation of simplicial operad. Strengthens Baudot-Bennequin. Category-theoretic.
+**Machines**: chain complex. **See also**: `by-structure/boundary_operators.md`.
+
+### Kolchinsky (2024) — PID Redundancy as Information Bottleneck
+**"Partial information decomposition: redundancy as information bottleneck"**
+arXiv: 2405.07665
+PID redundancy = IB compression-prediction tradeoff. RB curve as parameterized decomposition. Formally bridges Joint (PID) and Param (IB) machines.
+**Machines**: joint-vs-marginal, parameterized homology, matching. **See also**: `by-structure/composite_systems.md`, `by-structure/filtrations.md`.
+
+### Schreiber (2000) — Measuring Information Transfer (Transfer Entropy)
+**"Measuring information transfer"**
+PRL 85:461
+Transfer entropy T_{Y→X} = conditional MI measuring directed information flow. Asymmetric (unlike MI). Non-parametric (unlike Granger). Shuffled surrogates as null. Defined on state-space reconstructions (Takens link).
+**Machines**: joint-vs-marginal, null hypothesis, parameterized homology (weak). **See also**: `by-structure/composite_systems.md`, `by-structure/phase_transitions.md`. **Bridge: info theory + dynamical systems.**
+
+### Wong & Yang (2019) — Info Geometry Embeds in Optimal Transport
+**"Pseudo-Riemannian geometry embeds information geometry in optimal transport"**
+arXiv: 1906.00030
+Fisher metric / Bregman divergence EMBEDS into Wasserstein via pseudo-Riemannian framework. MTW condition ↔ info-geometric curvature. Exact functorial embedding.
+**Machines**: matching, stability. **See also**: `by-structure/optimal_transport.md`.
 
 ---
 
@@ -1041,6 +1081,14 @@ Prevents catastrophic forgetting by projecting gradients onto orthogonal complem
 Full annotation: `third_pass_infotheo_cross.md` (TP-09).
 **See also**: `by-structure/phase_transitions.md`
 
+### Shwartz-Ziv & Tishby (2017) — Opening the Black Box of DNNs via Information
+arXiv: 1703.00810
+**Domain(s)**: Information theory, machine learning
+Origin paper for the "information plane" trajectory analysis of deep learning. Training epoch parameterizes the information plane: each layer's (I(X;T), I(T;Y)) traces a path with two phases — fitting (both increase) then compression (I(X;T) decreases while I(T;Y) stays high). Converged layers lie on the IB bound. Drift-diffusion transition in SGD gradients at ~350 epochs. **Caveat**: Saxe et al. (2018) and Geiger (2021) showed compression may be an artifact of saturating activations + binning-based MI estimation; see ANTISYNONYMS.md.
+**Machines**: parameterized homology (primary), joint-vs-marginal, null hypothesis, stability.
+Full annotation: `inbox.md` (arXiv: 1703.00810).
+**See also**: `by-structure/filtrations.md`, `by-structure/composite_systems.md`
+
 ### Cross-listed from Dynamical Systems (third pass):
 - **Cross-Correlation Integral** — Joint-vs-marginal excess applied to attractor measures. Full annotation: `third_pass_dynamics_tda.md` (TP-03).
 - **Entropic Symmetry Breaking** (arXiv: 2510.03572) — Entropy framework for bifurcation. Full annotation: `third_pass_dynamics_tda.md` (TP-04).
@@ -1054,3 +1102,47 @@ Full annotation: `third_pass_infotheo_cross.md` (TP-09).
 - **Nonparametric Brain GC** — Spectral Granger causality. Full annotation: `third_pass_infotheo_cross.md` (TP-06).
 - **Dabney Distributional Code** — Quantile-indexed neuron family. Full annotation: `third_pass_neuro_qec.md` (TP-03).
 - **IPWT** — Synergistic information as consciousness criterion. Full annotation: `third_pass_neuro_qec.md` (TP-01).
+
+---
+
+## Joint x Neuro — Consciousness / Information Dynamics (Wave 5)
+
+### Mediano, Rosas, Carhart-Harris, Seth, Barrett (2019) — PhiID
+**"Beyond integrated information: A taxonomy of information dynamics phenomena"**
+arXiv: 1909.02297
+**Domain(s)**: Neuroscience (consciousness), information theory
+PhiID = Integrated Information Decomposition. Double-redundancy lattice (product of two PID lattices, 16 nodes) with Moebius inversion gives 16 atoms decomposing excess entropy. Six-category taxonomy: storage, copy, transfer, erasure, upward causation, downward causation. Unifies IIT and PID. Shows Phi_WMS, psi, Phi_G, CD each capture different atom subsets (Table I). Corrected Phi_WMS,c avoids negativity by adding back double-redundancy.
+**Machines**: joint-vs-marginal, chain complex, parameterized homology, null hypothesis, stability.
+Full annotation: `inbox.md` (arXiv: 1909.02297).
+**See also**: `by-structure/composite_systems.md`, `by-domain/neuroscience.md`
+
+### Barrett (2015) — PID for Gaussian Systems
+**"Exploration of synergistic and redundant information sharing in static and dynamical Gaussian systems"**
+arXiv: 1411.2832
+**Domain(s)**: Information theory, neuroscience
+First PID for continuous variables. For Gaussian with univariate target: all PIDs satisfying marginal-dependence collapse to MMI (R = min{I(X;Y), I(X;Z)}). Synergy = extra info from weaker source given stronger. Net synergy positive even when sources uncorrelated (log concavity effect). Dynamical MVAR analysis: synergy decreases with lag depth, increases with weaker connection, decreases with source correlation. Proposes synergistic complexity SC as alternative to Phi.
+**Machines**: joint-vs-marginal, parameterized homology, null hypothesis, stability.
+Full annotation: `inbox.md` (arXiv: 1411.2832).
+**See also**: `by-structure/composite_systems.md`, `by-domain/neuroscience.md`
+
+---
+
+## Wave 6 — Directed Information Flow in Neural Oscillations and Spike Trains (2026-04-07)
+
+### Lobier, Siebenhuhner, Palva, Palva (2014) — Phase Transfer Entropy
+**"Phase transfer entropy: A novel phase-based measure for directed connectivity in networks coupled by oscillatory interactions"**
+DOI: 10.1016/j.neuroimage.2013.08.056, NeuroImage 85(2):853-872. 281 citations.
+**Domain(s)**: Neuroscience, information theory
+Phase TE = transfer entropy applied to Morlet-filtered phase time series. Isolates directed oscillatory coupling: how much source phase history improves prediction of target phase updates beyond target's own history. Differential TE quantifies net directionality. Frequency band as discrete parameter yields band-specific directed connectivity graphs. Surrogate-based null hypothesis testing validated (no false positives under noise + mixing). Extends Schreiber (2000) TE to the phase domain.
+**Machines**: joint-vs-marginal, null hypothesis, parameterized homology.
+Full annotation: `inbox.md` (Wave 6).
+**See also**: `by-structure/composite_systems.md`, `by-structure/phase_transitions.md`, `by-domain/neuroscience.md`
+
+### Shorten, Spinney, Lizier (2021) — Continuous-Time Transfer Entropy for Spike Trains
+**"Estimating Transfer Entropy in Continuous Time Between Neural Spike Trains or Other Event-Based Data"**
+DOI: 10.1371/journal.pcbi.1008054, PLOS Computational Biology 17(4):e1008054. 58 citations.
+**Domain(s)**: Information theory, neuroscience
+Continuous-time TE formulated via Radon-Nikodym derivatives between path measures. kNN estimator in inter-event-interval space is provably consistent (discrete-time plug-in estimators converge to wrong value for event data). Local permutation surrogates provide correct null for point processes (source-time-shift surrogates demonstrated to fail). Pathwise TE decomposes into jump contributions (at target events) and continuous contributions (between events). Captures fine-and-coarse timescale relationships simultaneously. Validated on stomatogastric ganglion pyloric circuit where previous estimators failed.
+**Machines**: joint-vs-marginal, null hypothesis, parameterized homology.
+Full annotation: `inbox.md` (Wave 6).
+**See also**: `by-structure/composite_systems.md`, `by-structure/phase_transitions.md`, `by-domain/neuroscience.md`

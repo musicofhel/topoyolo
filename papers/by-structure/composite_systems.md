@@ -29,8 +29,22 @@ Pythagorean theorem for KL divergence on posets decomposes interactions by order
 ### Geiger (2021) — Information Plane Review
 Surveys joint-vs-marginal (MI) estimation across architectures. Distinguishes geometric from information-theoretic compression. Full annotation: `by-domain/information_theory.md`.
 
+### Shwartz-Ziv & Tishby (2017) — Opening the Black Box of DNNs via Information
+I(X;T) and I(T;Y) per hidden layer T — each is a joint-vs-marginal excess (D_KL of joint vs product of marginals). Each layer is a marginal (compressed) view of the input; the joint network's Markov chain captures dependencies across layers. Also primary instantiation of parameterized homology (training epoch as parameter). Full annotation: `inbox.md` (arXiv: 1703.00810).
+
+## TDA
+
+### Harrington, Otter, Schenck, Tillmann (2017) — Stratifying multiparameter persistent homology
+Multiparameter PH studies topological invariants as MULTIPLE parameters vary simultaneously. The joint bifiltration captures structure invisible to either single-parameter filtration alone — this IS joint-vs-marginal: joint persistent homology contains information absent from marginal (single-parameter) persistence diagrams. Three invariants from commutative algebra: multigraded associated primes, Hilbert series, local cohomology. Full annotation: `inbox.md` (arXiv: 1708.07390).
+
+### Barannikov, Trofimov, Sotnikov et al. (2021) — Cross-Barcode / Manifold Topology Divergence
+Cross-Barcode(P,Q) = pairwise topological comparison of two manifold-supported distributions. MTop-Divergence = 0 iff topologically equivalent. Detects mode-dropping, mode-collapse, mode-invention. Builds a SINGLE barcode from the pair — conceptually distinct from comparing two PDs via Wasserstein (which is Matching). Scales linearly with dimension. Full annotation: `inbox.md` (arXiv: 2106.04024).
+
 ### Jónsson et al. (2020) — DNN Convergence with MI Regularization
 MINE-estimated I(X;T) as regularizer. Confirms compression phase in VGG-16. MI-based loss stabilizes training. Full annotation: `by-domain/information_theory.md`.
+
+### Kolchinsky (2024) — PID Redundancy as Information Bottleneck
+Redundancy reformulated as IB compression-prediction tradeoff. "RB curve" = parameterized family of decompositions indexed by compression β. Bridges Joint (PID) and Param (IB) machines formally. Efficient iterative algorithm. Full annotation: `inbox.md` (arXiv: 2405.07665).
 
 ### Kirkley (2025) — Transfer Entropy for Finite Data
 Reduced transfer entropy as debiased joint-vs-marginal excess with automatic MDL null. Combinatorial entropy avoids random-variable assumption. Full annotation: `by-domain/information_theory.md`.
@@ -120,11 +134,21 @@ GW distance captures relational structure invariant to ambient dimension/rotatio
 
 ## Neuroscience
 
-*(Neural binding, cross-frequency coupling, integrated information — see inbox for Tort, Tononi)*
+### Tort, Komorowski, Eichenbaum, Kopell (2010) — PAC Modulation Index
+Phase-amplitude coupling: Modulation Index = D_KL(observed PAC distribution || uniform). Gamma amplitude modulated by theta phase = joint-vs-marginal excess. Time-shifted surrogates as null. Full annotation: `inbox.md`.
+
+### Oizumi, Albantakis, Tononi (2014) — Integrated Information Theory 3.0
+Φ = D(p(X^t|X^{t-1}) || Π_i p(X_i^t|X_i^{t-1})). THE foundational formalization of joint-vs-marginal excess for consciousness. Partitioned system as null. MICS = maximally irreducible conceptual structure. Exclusion postulate selects spatiotemporal grain maximizing Φ. Predicts simple systems can be conscious, complex feed-forward ones cannot. Full annotation: `inbox.md` (DOI: 10.1371/journal.pcbi.1003588).
+
+## Information Theory / Dynamical Systems
+
+### Schreiber (2000) — Transfer Entropy
+T_{Y→X} = H(X_{t+1}|X_t^(k)) - H(X_{t+1}|X_t^(k),Y_t^(l)). Directed joint-vs-marginal: how much does joint (X,Y) history improve prediction beyond marginal X history? Asymmetric (unlike MI). Shuffled surrogates as null. Full annotation: `inbox.md`.
 
 ## Dynamical Systems
 
-*(Emergent attractor topology from coupling — see inbox for Sugihara CCM)*
+### Sugihara, May, Ye, Hsieh, Deyle, Fogarty, Munch (2012) — Convergent Cross-Mapping
+Cross-prediction from Y's shadow manifold to X tests whether the joint (coupled) attractor contains more information than the marginal (single-variable) reconstruction. Convergence of cross-prediction skill with library size L = the excess is real and recoverable. Directional asymmetry (rho_{Y->X} != rho_{X->Y}) identifies causal direction. Surrogates as null. Full annotation: `inbox.md` (DOI: 10.1126/science.1227079). Machines: joint-vs-marginal, stability, null hypothesis, parameterized homology (weak).
 
 ---
 
@@ -215,3 +239,52 @@ GW distance captures relational structure invariant to ambient dimension/rotatio
 | Neuroscience | Neurophenomenology | 1st/3rd person descriptions | Free energy gap | Variational inference |
 | Info theory | Joint distribution | Product of marginals | MI | MINE / MI-NEE |
 | Info theory | k-body interaction | (k-1)-body marginals | Higher-order info | PRL compression criterion |
+
+---
+
+## Joint x Neuro — Consciousness / Information Dynamics (Wave 5)
+
+### Mediano, Rosas, Carhart-Harris, Seth, Barrett (2019) — PhiID
+arXiv: 1909.02297
+PhiID decomposes the total joint-vs-marginal excess (excess entropy E) into 16 atoms on a product lattice, distinguishing SIX modes of how joint information exceeds marginal: storage, copy, transfer, erasure, upward causation, downward causation. Synergistic atoms (source or target = {12}) are the pure joint-vs-marginal excess; redundant atoms are the "shared floor." The corrected Phi_WMS,c removes the confound of double-redundancy causing negative integration scores. Key contribution to the composite_systems programme: "integration" is not one thing --- it is a heterogeneous aggregate of qualitatively distinct excess types. Full annotation: `inbox.md`.
+
+### Barrett (2015) — PID for Gaussian Systems
+arXiv: 1411.2832
+WMS = I(X;Y,Z) - I(X;Y) - I(X;Z) = S - R is the net joint-vs-marginal excess. For Gaussians with univariate target, all PIDs collapse to MMI: R = min{I(X;Y), I(X;Z)}, S = I(X;Z|Y) when I(X;Y) >= I(X;Z). Net synergy positive even when sources uncorrelated (b=0) because log concavity creates excess absent from the linear variance measure. In dynamical (MVAR) systems, synergy decreases as more history is observed (infinite-lag vs 1-lag). Proposes synergistic complexity SC = average synergy per triplet as complexity measure. Full annotation: `inbox.md`.
+
+### Connection to existing PID cluster
+Both papers extend the PID programme (8 core PID papers already in composite_systems) into the **dynamical** regime. Mediano's PhiID is the temporal extension of PID to multivariate time series (source = past, target = future), while Barrett provides the first continuous-variable (Gaussian) instantiation. Together with IIT 3.0 (Oizumi et al. 2014, already indexed), they form a trio:
+- **IIT 3.0**: Phi as scalar joint-vs-marginal excess (partitioned null)
+- **Barrett (2015)**: PID atoms for Gaussians, synergy as the excess
+- **Mediano (2019)**: PhiID unifying IIT + PID into 16-atom taxonomy
+
+| Domain | Joint object | Components | Excess | Null model |
+|---|---|---|---|---|
+| **PhiID** | E = I(X1,X2; Y1,Y2) | I(Xi; Yi) per component | 16 PhiID atoms (6 modes) | Partitioned (independent subsystems) |
+| **Gaussian PID** | I(X; Y,Z) | I(X;Y), I(X;Z) | Synergy S (MMI) | Product of source-target marginals |
+
+---
+
+## Wave 6 — Directed Information Flow (2026-04-07)
+
+### Lobier, Siebenhuhner, Palva, Palva (2014) — Phase Transfer Entropy
+DOI: 10.1016/j.neuroimage.2013.08.056
+Phase TE is joint-vs-marginal at two levels: (1) directed TE measures how joint (source + target) phase history exceeds marginal (target-only) for prediction, and (2) phase extraction itself projects the full amplitude-phase signal to its phase marginal. Differential TE (dTE = TE(1->2) - TE(2->1)) isolates the asymmetric directional excess. Frequency-band-specific: directed coupling graphs differ across oscillatory bands, yielding a parameterized family of joint-vs-marginal measures. Surrogate nulls validated.
+**Machines**: joint-vs-marginal, null hypothesis, parameterized homology.
+Full annotation: `inbox.md` (Wave 6).
+
+### Shorten, Spinney, Lizier (2021) — Continuous-Time TE for Spike Trains
+DOI: 10.1371/journal.pcbi.1008054
+Continuous-time TE = KL divergence between true conditional measure (given full source + target history) and reduced conditional (target history only) on path space. The purest Radon-Nikodym formulation of directed joint-vs-marginal excess for event data. Local permutation surrogates generate correct null for conditional independence testing on point processes (source-time-shift surrogates fail). Pathwise TE decomposes into jump (at events) and continuous (between events) components.
+**Machines**: joint-vs-marginal, null hypothesis, parameterized homology.
+Full annotation: `inbox.md` (Wave 6).
+
+### Connection to existing TE cluster
+Together with Schreiber (2000, already indexed), Lobier (2014), and Peek et al. (2025, already indexed), these papers form a progression of the joint-vs-marginal machine in directed information flow:
+
+| Paper | Domain | Signal type | TE formulation | Null method | Key advance |
+|---|---|---|---|---|---|
+| **Schreiber (2000)** | Dynamical systems | Real-valued | Discrete-time, plug-in | Shuffled surrogates | Original TE definition |
+| **Lobier (2014)** | Neuroscience (MEG/EEG) | Phase (circular) | Discrete-time, phase-only | Surrogate data | Phase isolation, mixing robustness |
+| **Shorten (2021)** | Info theory + neuroscience | Point process | Continuous-time, kNN | Local permutation | Consistency, multi-timescale |
+| **Peek (2025)** | Neuroscience + TDA | Spike trains | Pairwise TE -> flag complex -> PH | Baseline epochs | TE as input to chain complex |

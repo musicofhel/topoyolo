@@ -118,6 +118,80 @@ DOI: 10.3390/electronics9050823 | Electronics 9(5):823
 
 ---
 
+## Theiler, Eubank, Longtin, Galdrikian, Farmer (1992)
+**"Testing for nonlinearity in time series: the method of surrogate data"**
+DOI: 10.1016/0167-2789(92)90102-S | Physica D, 58:77--94
+
+**Domain(s)**: Dynamical systems
+
+**Abstract machines instantiated**:
+- **Null hypothesis**: THE foundational surrogate data paper. Three algorithms define three null hypotheses: (0) random shuffle (destroys all temporal correlations, preserves amplitude distribution), (1) phase randomization (preserves power spectrum, destroys phase relationships -- null: linear Gaussian process), (2) AAFT (preserves power spectrum + amplitude distribution -- null: static nonlinear transformation of linear Gaussian process). Each surrogate type is a precise choice of what to destroy and what to preserve. Test statistic (correlation dimension, Lyapunov exponent, prediction error) computed on original vs. surrogate ensemble; significance by rank ordering.
+- **Stability**: Preserved quantities (power spectrum under Algorithm 1, amplitude distribution under Algorithm 2) are stability invariants -- they survive the surrogate transformation exactly by construction.
+- **Joint-vs-marginal excess** (weak): Phase relationships between Fourier components are joint structure; phase randomization destroys this while preserving marginal spectral properties. Significant test result = genuine joint phase structure.
+- **Parameterized homology** (weak): Surrogate ensemble parameterizes a distribution of the test statistic under the null. Original's rank in this distribution determines significance.
+
+**What is genuinely new**: The method itself -- the first rigorous statistical framework for testing nonlinearity claims in experimental time series. The graded hierarchy of nulls (Algorithm 0 < 1 < 2) has no analogue in other domains. AAFT specifically addresses nonlinear observation functions. Overturned many prior claims of low-dimensional chaos.
+
+Full annotation: `inbox.md` (DOI: 10.1016/0167-2789(92)90102-S).
+
+**See also**: `by-structure/phase_transitions.md`
+
+---
+
+## Takens (1981)
+**"Detecting strange attractors in turbulence"**
+Lecture Notes in Mathematics, vol. 898, Springer
+
+THE foundational delay embedding theorem. For generic (C^2-residual) pairs (diffeomorphism phi, observation function y) on a compact manifold M, the delay map F(x) = (y(x), y(phi(x)), ..., y(phi^{2d}(x))) is an embedding if d > dim(M). Reconstructed manifold has identical homology to original. Single scalar observable suffices to recover attractor topology. Full annotation: `inbox.md`.
+**Machines**: chain complex (implicit), stability (topological genericity), parameterized homology (weak -- embedding dimension as parameter).
+**See also**: `by-structure/filtrations.md`, `by-structure/phase_transitions.md`
+
+---
+
+## Sauer, Yorke, Casdagli (1991)
+**"Embedology"**
+Journal of Statistical Physics 65(3-4):579-616
+
+Extends Takens to PREVALENCE (measure-theoretic genericity). Works for fractal attractors with non-integer box-counting dimension d_B(A). Minimal embedding dimension 2*d_B(A)+1. Prevalence is strictly stronger than topological genericity. Full annotation: `inbox.md`.
+**Machines**: stability (prevalence = measure-theoretic robustness), parameterized homology (weak -- embedding dimension, now fractal-valued).
+**See also**: `by-structure/phase_transitions.md`
+
+---
+
+## Sugihara, May, Ye, Hsieh, Deyle, Fogarty, Munch (2012)
+**"Detecting Causality in Complex Ecosystems"**
+DOI: 10.1126/science.1227079 | Science 338:496–500
+
+**Domain(s)**: Dynamical systems, information theory (causal inference)
+
+**Abstract machines instantiated**:
+- **Joint-vs-marginal excess**: CCM tests whether Y's shadow manifold contains information about X beyond Y's marginal dynamics. Cross-prediction success = excess of joint over marginal. The dynamical systems analogue of transfer entropy, operating on reconstructed state spaces rather than probability distributions.
+- **Stability**: Convergence criterion — cross-prediction improves and stabilizes as library size L increases. Takens embedding theorem guarantees diffeomorphic reconstruction for generic parameters.
+- **Null hypothesis**: No causal coupling → no convergence (flat prediction skill). Surrogates destroy temporal coupling. Granger causality as alternative method null.
+- **Parameterized homology** (weak): Library size L parameterizes the convergence curve rho(L). Embedding dimension m and time delay tau as additional parameters from Takens' framework.
+
+**What is genuinely new**: Convergence as a causal test with directional asymmetry. Handles separability failure (strong causation + zero correlation). Distinguishes geometric (manifold) from statistical (conditional probability) causal inference. Mirage correlations demonstrated.
+
+**Connections the authors acknowledge**: Takens (1981), Granger causality (as foil). No TDA/QEC/information theory connections.
+
+**Vocabulary mapping**:
+| Paper term | Rosetta term |
+|---|---|
+| Convergent cross-mapping | Directed joint-vs-marginal test (manifold-based) |
+| Shadow manifold | Takens reconstruction (topology-preserving embedding) |
+| Cross-prediction skill rho | Joint-vs-marginal excess |
+| Library size L | Parameterization (filtration scale) |
+| Convergence with L | Stability (feature persistence) |
+| No convergence | Null hypothesis (no causal coupling) |
+| Granger causality | Alternative null method (linear assumption) |
+| Mirage correlation | Spurious structure destroyed by proper null |
+
+**See also**: `by-structure/composite_systems.md`, `by-structure/phase_transitions.md`
+
+Full annotation: `inbox.md` (DOI: 10.1126/science.1227079)
+
+---
+
 ## Cross-domain: Bunne, Alvarez-Melis, Krause, Jegelka (2019)
 **"Learning Generative Models across Incomparable Spaces"**
 arXiv: 1905.05461 | ICML 2019
@@ -253,6 +327,21 @@ arXiv: 1307.2493
 - **Gallicchio & Micheli (2020)** — "Fast and Deep Graph Neural Networks." Reservoir GNNs: Banach contraction guarantees convergence. Untrained random weights suffice — architecture carries topology. Layer depth = scale parameter. Full annotation: `cross_domain_bridges.md`. Machines: stability, parameterized homology, null hypothesis, chain complex. **Bridge: dynamics + TDA.**
 
 - **Chen et al. (2023)** — "ContiFormer: Continuous-Time Transformer." Neural ODE inside attention. Continuous-time matching. Subsumes existing methods as special cases. Full annotation: `cross_domain_bridges.md`. Machines: parameterized homology, stability, matching.
+
+---
+
+## Wave 4 (2026-04-06) — Bridge Papers
+
+### Perea & Harer (2013) — SW1PerS (cross-listed from TDA)
+Sliding window embedding of time series → Rips complex → PH. SW1PerS score (max H₁ persistence) quantifies periodicity. Formal bridge: Takens embedding (dynamics) → persistent homology (TDA). Convergence theorems.
+**Machines**: chain complex, parameterized homology, stability. Full annotation: `inbox.md` (arXiv: 1307.6188). **Bridge: dynamics + TDA.**
+
+### Tsuda (2001) — Chaotic Itinerancy (cross-listed from Neuroscience)
+**"Toward an interpretation of dynamic neural activity in terms of chaotic dynamical systems"**
+DOI: 10.1017/S0140525X01000097
+Chaotic itinerancy: trajectory wanders among attractor ruins (destroyed attractors that retain geometric influence). Each quasi-stable epoch has its own local topology; the itinerant trajectory traces a path through topology space parameterized by time. Milnor attractors formalize the intermediate stability status. Fixed-point/limit-cycle as non-itinerant null. Proposed as dynamical mechanism for cognitive flexibility (olfactory perception, episodic memory).
+**Machines**: parameterized homology, stability (anti-stability: attractors destroyed but ruins exploited), null hypothesis, chain complex (weak). Full annotation: `inbox.md`.
+**See also**: `by-structure/filtrations.md`, `by-structure/phase_transitions.md`, `by-domain/neuroscience.md`.
 
 ---
 

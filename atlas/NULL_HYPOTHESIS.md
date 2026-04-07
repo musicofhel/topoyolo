@@ -17,13 +17,17 @@ The null model defines what "no signal" looks like. The test statistic measures 
 ### TDA — Surrogate Testing
 Phase-randomized surrogates preserve power spectrum but destroy phase coupling. Compute persistence features on original vs. surrogates. The binding residual is significant iff it exceeds the surrogate distribution.
 
+**Papers**: Vejdemo-Johansson & Mukherjee (2018, arXiv: 1812.06491) — first principled statistical framework for PH significance. Universal empirical null distribution for persistent homology with FWER/FDR control via permutation testing. Domain-agnostic: works for any filtration type.
+
 ### QEC — Noise Channels
 The depolarizing channel destroys coherence while preserving the state space dimension. The noise channel is the null model against which the decoder is benchmarked. Performance below threshold means the code beats the null.
 
-**Papers**: de la Fuente et al. (2025) — phenomenological error model as null. Oreshkov (2013) — uncorrected Lindblad evolution (κ = 0) as null; the gap between corrected and uncorrected quantifies the value of error correction.
+**Papers**: Dennis et al. (2002, arXiv: quant-ph/0110143) — uncorrected noisy evolution as the explicit null; the gap between corrected and uncorrected error rates quantifies the value of error correction. Threshold maps to Z₂ gauge theory: below critical temperature = error correction beats the null. de la Fuente et al. (2025) — phenomenological error model as null. Oreshkov (2013) — uncorrected Lindblad evolution (κ = 0) as null; the gap between corrected and uncorrected quantifies the value of error correction. Hastings & Haah (2021) — static subsystem code with 0 logical qubits as the null for Floquet codes: the dynamical cycling through stabilizer configurations produces logical qubits that the time-independent version lacks. The null is "no time-dependence." Aharonov & Ben-Or (1999) — uncorrected evolution as explicit null; the threshold theorem quantifies how much concatenated correction beats the null (doubly-exponential improvement). Berry et al. (2023) — classical dequantization as null for quantum TDA: if classical algorithms can compute Betti numbers in comparable time, there is no quantum advantage. The null is "classically tractable."
 
 ### Dynamical Systems — Shuffled Surrogates
 Shuffle temporal order (preserve marginal statistics, destroy temporal dependence). Time-reversed surrogates preserve spectrum but destroy causal direction. AAFT surrogates preserve both marginal distribution and power spectrum.
+
+**Papers**: Theiler et al. (1992) — THE foundational surrogate paper. Three algorithms: (1) random shuffle (destroys all temporal structure, preserves marginal distribution), (2) phase randomization (preserves power spectrum, destroys phase coupling), (3) AAFT (preserves both marginal distribution and power spectrum, destroys nonlinear structure). Establishes the null-hypothesis testing framework that all subsequent surrogate methods build on. Tsuda (2001) — fixed-point or limit-cycle dynamics as the non-itinerant null: if the system converges to a stable attractor rather than wandering between attractor ruins, chaotic itinerancy is rejected. Sugihara et al. (2012) — no-coupling null for convergent cross-mapping: if cross-map correlation fails to converge with library length, the null of independent dynamics is not rejected.
 
 ### Information Theory — Product Distributions
 
@@ -37,6 +41,11 @@ Shuffle trials to preserve firing rates but destroy inter-trial coupling. Permut
 
 ### Machine Learning
 **Geiger (2021)**: The geometric compression null — representations that cluster/shrink but preserve full MI. Distinguishes information-theoretic compression from geometric compression.
+
+**Shwartz-Ziv & Tishby (2017)**: Random initialization as null — the initial network (before training) has high I(X;T) and low I(T;Y). Training moves the representation away from this null. The compression phase (decreasing I(X;T)) shows the network discarding input noise relative to the random-initialization null.
+
+### Neuroscience — Additional Nulls
+**Mediano et al. (2019)**: Independent subsystems as null for PhiID — if brain regions are informationally independent, all cross-region PhiID atoms (transfer, synergy) are zero. Non-zero atoms reject the independence null and quantify the nature of the integration (redundant vs. synergistic vs. transfer).
 
 ### Third Pass Additions
 

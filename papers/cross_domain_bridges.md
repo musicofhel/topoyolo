@@ -463,3 +463,68 @@ The vocabulary differs completely, but the objects are isomorphic. This is perha
 ### The information bottleneck IS a topological compression
 
 Kawaguchi et al. (2023) prove that controlling I(X;Z) bounds generalization error. In TDA terms, this means: representations with fewer persistent features (lower information content) generalize better. The information bottleneck kills unnecessary topological features, keeping only the ones relevant to the task. This is topological simplification — the same operation that persistence thresholding performs in TDA.
+
+---
+
+## Phase 2 Bridges (2026-04-06, session 2)
+
+### QEC ↔ Stat Mech (Bombin & Martin-Delgado, 2007)
+Color code state overlap with factorized state = 3-body Ising model partition function. Different universality classes of the associated classical spin models correspond to different computational capabilities of the QEC codes. This extends the Dennis et al. (2002) bridge (surface codes ↔ 3D Z₂ gauge theory) to a broader class of codes. arXiv: 0711.0468.
+
+### QEC ↔ Knot Theory / TQFT (Freedman, Kitaev, Larsen, Wang, 2001)
+Anyonic computation from unitary topological modular functors = Witten-Chern-Simons theory. The Jones polynomial — the same invariant underlying Khovanov homology in TDA — arises naturally in the QEC context as the computational substrate. Bridges QEC, pure math (knot invariants), and condensed matter (FQHE). arXiv: quant-ph/0101025.
+
+### Joint Machine ↔ Param Machine (Kolchinsky, 2024)
+PID redundancy = IB compression-prediction tradeoff. This is not merely an analogy: it is a formal equivalence between two abstract machines. The "RB curve" (indexed by compression β) is a parameterized family of joint-vs-marginal decompositions. Bridges information theory with itself at the machine level. arXiv: 2405.07665.
+
+### Info Geometry ↔ OT (Wong & Yang, 2019)
+Fisher-Rao metric embeds in Wasserstein space via pseudo-Riemannian framework. Statistical manifold of distributions has a natural optimal transport structure. Bridges information theory (divergences, Fisher information) with TDA (optimal transport on persistence diagrams). arXiv: 1906.00030.
+
+### TDA ↔ Dynamical Systems (Perea & Harer, 2013)
+SW1PerS: sliding window embedding of periodic time series → point cloud → Rips complex → PH. Formal bridge between Takens embedding (dynamical systems) and persistence (TDA). Maximum H₁ persistence = periodicity score. Convergence theorems. arXiv: 1307.6188.
+
+### Info Theory ↔ Algebraic Topology (Baudot & Bennequin, 2015; Bradley, 2021)
+Information cohomology: Shannon entropy is a 1-cocycle in the cochain complex of information structures. The chain rule IS the cocycle condition δH=0. Bradley strengthens: H is the UNIQUE derivation of the simplicial operad. This is the deepest bridge between information theory and algebraic topology — not analogy, but identification.
+
+### Neuroscience ↔ Info Theory ↔ Consciousness (Tononi/Oizumi et al., 2014)
+IIT 3.0: Φ = KL divergence between joint and product-of-parts transition probabilities. Connects consciousness research to formal joint-vs-marginal measures from information theory. MICS (maximally irreducible conceptual structure) is a topological invariant of the causal architecture. DOI: 10.1371/journal.pcbi.1003588.
+
+### Neuroscience ↔ QEC via shared T² (Gardner et al., 2022)
+**"Toroidal topology of population activity in grid cells"** — Nature, DOI: 10.1038/s41586-021-04268-7.
+**Domains bridged**: Neuroscience + QEC (+ TDA as method)
+
+The strongest neuro↔QEC bridge in the Rosetta. Gardner et al. use persistent cohomology on simultaneous Neuropixels recordings of hundreds of grid cells in medial entorhinal cortex and discover that the joint population activity lies on a torus T². The torus has H₁(T²,Z) = Z² — two independent 1-cycles, each encoding one periodic spatial dimension. In Kitaev's toric code (1997), the SAME torus T² serves as the base space: qubits on edges, stabilizers from ∂/δ, and logical qubits = H₁(T²,Z/2) = (Z/2)². The two independent 1-cycles in QEC encode two logical qubits; in neuroscience they encode two spatial coordinates.
+
+**What the bridge reveals**:
+- The torus T² is not an analogy — it is the SAME mathematical object arising independently in two domains. In QEC it is DESIGNED (Kitaev chose T² for its non-trivial H₁). In neuroscience it is DISCOVERED (the brain evolved it as a spatial representation).
+- The two 1-cycles serve isomorphic structural roles: they define the independent degrees of freedom of the code. In QEC: two logical qubits. In neuroscience: two spatial coordinates. Both are protected by the global topology of T².
+- Stability operates differently: in QEC, topological protection means errors must form non-trivial cycles (O(d) local errors) to corrupt logical information. In neuroscience, stability means the torus persists across environments and brain states. Both are robustness statements about the topological invariant, but the perturbation model differs (local quantum errors vs. environmental/state changes).
+- The authors do NOT cite or acknowledge any connection to QEC or toric codes. This bridge is invisible to both communities.
+
+**Machines in common**: Chain complex (T² with H₁), stability (topological robustness), null hypothesis (feedforward models in neuro; uncorrected noise in QEC).
+**Machines unique to Gardner**: Parameterized homology (PH as method), joint-vs-marginal (population-level torus invisible from single-cell marginals).
+**Machines unique to QEC**: Matching (anyon fusion/MWPM for error correction).
+
+Full annotation: `inbox.md`.
+
+---
+
+## Berry, Su, Gyurik, King, Basso, Del Toro Barba, Rajput, Wiebe, Dunjko, Babbush (2023)
+**"Analyzing Prospects for Quantum Advantage in Topological Data Analysis"**
+arXiv: 2209.13581 | PRX Quantum 4, 040349 (2023)
+
+**Domains bridged**: TDA + QEC (quantum algorithms)
+
+This is the most DIRECT TDA-QEC bridge in the Rosetta: a quantum algorithm that computes TDA invariants. The paper works with the exact same chain complex (simplicial boundary operators, combinatorial Laplacian, Betti numbers) that defines both persistent homology in TDA and the code complex in QEC. The Dirac operator BG = dG + dG^{dagger} unifies boundary and coboundary; its kernel on the k-chain subspace gives the k-th Betti number.
+
+**What the bridge reveals**:
+- The chain complex is not merely analogous between TDA and QEC --- it is the SAME mathematical object serving dual roles. In TDA, boundary operators define topological features of data. In QEC, boundary operators define the code structure (stabilizers, logical operators). This paper uses quantum error-corrected hardware to compute the TDA chain complex's kernel, making the shared structure operational.
+- The combinatorial Laplacian Delta = dG^{dagger} dG + dG dG^{dagger} IS the Hodge Laplacian from TDA, and its spectral properties (gap lambda_min) determine both the topological robustness of features (in TDA) and the computational complexity of the quantum algorithm (in QEC). The spectral gap serves as a stability parameter in both domains.
+- The dequantization result (classical Monte Carlo on k-simplices) connects TDA to computational complexity theory: computing Betti numbers of general chain complexes is DQC1-hard (one clean qubit model). This means the homological invariants that TDA uses for data analysis are, in general, computationally hard --- a fact rarely discussed in the TDA community.
+- The authors explicitly acknowledge the TDA-quantum computing connection (it IS the paper's subject). They cite both TDA literature (persistent homology, Betti numbers) and quantum algorithm literature. This is a rare acknowledged bridge.
+
+**Machines in common across the bridge**: Chain complex (the same boundary operators), parameterized homology (filtration scale epsilon in TDA; dimension k as computational parameter in quantum), stability (spectral gap controls both feature robustness and algorithmic efficiency).
+**Machine unique to the quantum side**: Null hypothesis (dequantization as classical competitor).
+**Machine unique to the TDA side**: Matching (persistence matching of birth-death pairs not addressed).
+
+Full annotation: `inbox.md`.

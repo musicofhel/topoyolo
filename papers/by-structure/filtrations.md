@@ -23,6 +23,9 @@ Parameter: training epoch. Reviews whether fitting → compression trajectory is
 ### Jónsson et al. (2020) — DNN Convergence with MI Regularization
 Parameter: training epoch. Confirms compression phase in VGG-16 via MINE. MI-based regularization stabilizes the trajectory. Full annotation: `by-domain/information_theory.md`.
 
+### Shwartz-Ziv & Tishby (2017) — Opening the Black Box of DNNs via Information
+Parameter: training epoch. Invariant: (I(X;T), I(T;Y)) per layer. Origin paper for the information plane. Two phases: fitting (drift, both MI increase) then compression (diffusion, I(X;T) decreases). Converged layers lie on the IB bound with layer-specific beta. DPI chain across layers creates monotonic information path = filtration. **Caveat**: compression phase contested — may require saturating activations + binning estimator (Saxe 2018, Geiger 2021). Full annotation: `inbox.md` (arXiv: 1703.00810).
+
 ## Statistical Physics
 
 ### Mézard & Mora (2008) — Constraint Satisfaction
@@ -38,13 +41,26 @@ Parameter: SCNN filter coefficients. Invariant: Hodge component proportions (gra
 ### de Jesus Jr., Fernandez-Navarro, Carbonero-Ruz (2025) — TDA for Financial Forecasting
 Parameter: sliding window position (time) and Vietoris-Rips scale (epsilon). Invariant: persistent entropy, amplitude, point count from persistence diagrams. Sliding-window PH on time-delay embedded financial time series. First application of TDA-derived features specifically for forecasting (vs. classification/detection). Tested on 32 datasets across crypto and traditional instruments. Full annotation: `by-domain/tda.md`.
 
+### Perea & Harer (2013) — SW1PerS
+Parameter: TWO — Rips scale ε AND window size/embedding dimension. Invariant: H₁ persistence (periodicity score). Sliding window embedding of time series → point cloud → Rips PH. Convergence theorems + dependency estimates. Bridge paper: Takens (dynamics) + persistence (TDA). Full annotation: `inbox.md` (arXiv: 1307.6188).
+
+### Harrington, Otter, Schenck, Tillmann (2017) — Stratifying Multiparameter PH
+Parameter: MULTIPLE simultaneous parameters (bifiltration). Invariant: multigraded module over polynomial ring. Three partial invariants: associated primes, Hilbert series, local cohomology. No complete discrete invariant (unlike 1-param barcode). Full annotation: `inbox.md` (arXiv: 1708.07390).
+
 ### Di Rocco, Eklund, Weinstein (2019) — Bottleneck Degree of Algebraic Varieties
 Parameter: scale at which topology is probed. Invariant: reach tau_X = min(rho, b). The reach determines the sample density needed for persistent homology to recover correct topology. Bottleneck degree bounds the number of critical parameter values where topology might change. Formula in terms of Chern classes and polar classes. Full annotation: `by-domain/tda.md`.
 
 ### Kanjamapornkul, Pincak, Bartos (2020) — Cohomology Theory for Financial Time Series
 Parameter: Wilson loop parameter (trader interaction strength). Invariant: cohomological classification (8 market states, 16 physiological cones). Market phase transitions parameterized by Yang-Mills field coupling. Full annotation: `by-domain/tda.md`.
 
-*(See also inbox for Cohen-Steiner stability, Bauer/Ripser, Adams persistence images)*
+### Adams et al. (2017) — Persistence Images
+Parameter: filtration scale epsilon (Vietoris-Rips or sublevel set). Invariant: persistence diagram vectorized into fixed-size R^n vector via weighted Gaussian sum + pixel grid integration. The persistence image IS a featurization of parameterized homology — it converts the birth-death pairs from any filtration into a form amenable to ML. Resolution and variance are secondary parameters controlling the vectorization itself. Stable w.r.t. W_1 (Theorems 1-4). Applications to dynamical systems parameter inference (linked twist map, Kuramoto-Sivashinsky PDE). Full annotation: `inbox.md` (arXiv: 1507.06217), `by-domain/tda.md`.
+
+### Bauer (2021) --- Ripser
+Parameter: Vietoris-Rips scale epsilon. Invariant: persistence barcode (birth-death intervals). THE standard computational implementation of parameterized homology for VR complexes. Apparent/emergent pair optimizations + clearing + implicit coboundary matrix. Full annotation: `inbox.md` (arXiv: 2108.03831).
+
+### Peek, Pritam, Skerritt, Chalup (2025) --- TE + Directed PH in Spiking Systems
+Parameter: inverted transfer entropy (strongest information transfer first). Invariant: directed Betti curves beta_d(epsilon), AUBC scalars, persistence diagrams. Higher-dimensional features (d=2,3) discriminate task complexity. Wasserstein distances between PDs recover graded task space geometry. Full annotation: `inbox.md` (arXiv: 2508.19048).
 
 ## QEC
 
@@ -54,6 +70,12 @@ Parameter: ratio kappa/lambda (error correction rate / decoherence rate). Invari
 *(See also inbox for de la Fuente error threshold at ~2.5%)*
 
 ## Dynamical Systems
+
+### Takens (1981) --- Detecting strange attractors in turbulence
+Parameter: embedding dimension d. Invariant: faithfulness of delay embedding (diffeomorphic vs non-injective). Critical value: d > 2*dim(M). Below threshold, reconstruction has self-intersections (wrong topology); above, it is diffeomorphic to the attractor (correct homology). Weak parameterized homology -- the parametric dependence is implicit, not tracked. Full annotation: `inbox.md`.
+
+### Sauer, Yorke, Casdagli (1991) --- Embedology
+Parameter: embedding dimension d. Invariant: faithful embedding (prevalent). Critical value: d > 2*d_B(A) where d_B is box-counting dimension (can be non-integer). Extends Takens' filtration to fractal attractors -- the critical embedding dimension is now any real number, not just twice an integer. Full annotation: `inbox.md`.
 
 ### Dogra & Redman (2020) — Koopman Training of Neural Networks
 Parameter: training step t. Invariant: Koopman eigenvalues (dynamical modes of weight evolution). Dominant eigenvalues = persistent modes; decaying eigenvalues = transient features. Weight trajectory in weight space treated as discrete dynamical system; Koopman operator lifts nonlinear dynamics to linear spectral analysis. Full annotation: `by-domain/dynamical_systems.md`.
@@ -79,6 +101,7 @@ The parameter takes different forms across domains, but the structure is isomorp
 | Dynamical systems | Embedding dimension m | Attractor topology | Takens faithful embedding |
 | Information theory | Training epoch | MI, PID atoms | Fitting/compression boundary |
 | Finance/TDA | Sliding window position | Persistence features | Regime transitions |
+| Neuroscience/dynamics | Time (itinerancy epoch) | Local attractor topology | Attractor ruin transitions (Tsuda CI) |
 
 ---
 
@@ -112,11 +135,17 @@ The parameter takes different forms across domains, but the structure is isomorp
 
 **EEG Frequency as Filtration**: Three papers (GC-STCL, Driver Fatigue GC, Nonparametric Brain GC) converge on the same pattern: EEG frequency bands function as a filtration parameter for brain causal networks. Different frequencies reveal different causal topologies. This is structurally identical to persistence: track causal network topology as the frequency "scale" varies. The neuroscience community has not connected this to TDA's filtration framework.
 
+**Tsuda (2001) — Chaotic Itinerancy** (DOI: 10.1017/S0140525X01000097): Time as parameter. The itinerant trajectory visits attractor ruins with different local topologies — each quasi-stable epoch has its own attractor geometry (dimension, basin structure, Lyapunov spectrum). The sequence of visited ruins IS a path through topology space, parameterized by time. Structurally analogous to a barcode where each bar is a quasi-stable epoch and transitions are births/deaths. This is a new filtration type: the parameter is time and the invariant is the LOCAL attractor topology (which changes discretely at transition events). Full annotation: `inbox.md`.
+
 ### QEC / Condensed Matter
 
 **Arovas-Zhang FQHE (1992)**: Filling fraction nu = p/q parameterizes the family of topological phases. At each rational filling, different anyonic excitations. Energy gap protects the phase. Full annotation: `third_pass_neuro_qec.md` (TP-05).
 
 **Spin-Boson Born Approximation**: Coupling strength alpha as parameter. sqrt(alpha) prompt coherence loss — non-analytic singularity even at weak coupling. Anti-stability: system less stable than Markovian analysis suggests. Full annotation: `third_pass_neuro_qec.md` (TP-10).
+
+**Berry et al. (2023) — Quantum Advantage in TDA**: TWO parameterizations. (1) Standard TDA: distance scale epsilon determines which simplices exist; Betti numbers tracked as epsilon varies (persistent homology). (2) Dimension k: classical complexity exponential in k, quantum polynomial. The quantum advantage IS the ability to probe high-dimensional homology efficiently. Super-quadratic speedup requires multiplicative error + growing Betti number. Full annotation: `inbox.md` (arXiv: 2209.13581).
+
+**Hastings & Haah (2021) — Floquet Code**: THE paradigm case of time-parameterized homology in QEC. Measurement round r parameterizes the ISG S(r) in period-3 cycle. Logical operator dynamics have period 6 (electric <-> magnetic exchange = monodromy). Logical qubits emerge from the PERIODIC ORBIT of the code, not from any snapshot (each snapshot has trivial homology as subsystem code). Structurally identical to Floquet theory in dynamical systems: stroboscopic map defines effective code, logical qubits are persistent eigenspace. Full annotation: `inbox.md` (arXiv: 2107.02194).
 
 ### Dynamical Systems
 

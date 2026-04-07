@@ -62,6 +62,10 @@ Niroomand & Wales (2023) show that disconnectivity graphs from energy landscape 
 
 The Hawkes criticality parameter m (offspring number) at m=1 looks like a birth/death event in persistence: the process transitions from subcritical (Brownian limit) to supercritical (explosive). But in persistence, features are born and die at specific scales; in Hawkes, m=1 is a single global phase transition affecting the entire process. Persistence is multi-scale (many births and deaths at different ε); Hawkes criticality is single-scale (one transition at m=1). The structural parallel is real but the multiplicity is different.
 
+### Phase (circular) TE ≠ real-valued TE
+
+Phase transfer entropy (Lobier et al., 2014) operates on S^1-valued phase time series extracted by Morlet filtering. Standard TE operates on real-valued (R-valued) signals. The circular variable structure means phase wraps around: 0 and 2π are the same state. Euclidean distance-based estimators (kNN, kernel) are not directly applicable without modification for circular topology. More importantly, phase extraction discards amplitude information by design — this is a feature for oscillatory neural systems (isolates coupling from power) but a loss for general information-theoretic analysis. The "same" TE computation gives different results depending on whether the input is real-valued or phase-valued, even for the same underlying signal. Similarly, continuous-time TE (Shorten et al., 2021) operates on point processes (discrete events in continuous time), where the estimand is fundamentally different from discrete-time binned TE — the latter does not even converge to the correct value.
+
 ### Quantum no-partial-erasure ≠ classical stability
 
 Pati & Sanders (2005) prove quantum information cannot be partially erased — the topological dimension of the Bloch sphere is absolutely invariant under all CPTP maps. Classical stability theorems (PH, IB generalization bounds) provide bounds that can be violated at cost; quantum no-partial-erasure is a hard impossibility. There is no "graceful degradation" in quantum information — you either preserve all of it or map to a fixed state. This is categorically stronger than any continuous stability guarantee.
@@ -89,6 +93,30 @@ Barandes's stochastic-quantum theorem is an isomorphism, not a bound. Every gene
 ### Triangulated MI ≠ direct MI
 
 MI-NEE estimates MI by comparing both joint and marginal distributions to a common reference (uniform), then subtracting. MINE compares joint directly to product-of-marginals. Both measure the same quantity (MI) but the estimation paths differ. The triangulation approach has better convergence but introduces a dependence on the reference distribution. In TDA, there is no analogous choice — the bottleneck distance is computed directly, not via a reference. The lesson: joint-vs-marginal excess can be measured directly or via triangulation through a null, and the choice affects computational properties.
+
+### Directed simplicial complexes ≠ undirected simplicial complexes
+
+Reimann et al. (2017) build DIRECTED simplicial complexes from synaptic connectivity, where each simplex has a single source and single sink neuron encoding information flow direction. Standard TDA (Giusti, Dabaghian, Curto & Itskov) builds UNDIRECTED clique/nerve complexes from symmetric co-firing data. The directed version is closer to oriented chain complexes in algebraic topology, but the orientation comes from biology (synaptic directionality), not from an arbitrary choice of orientation. Standard PH software (Ripser, etc.) does not compute homology of directed complexes — the Reimann construction requires specialized tools. The boundary operator is different: in the directed case, ∂ respects the source→sink ordering. This means "neuroscience uses chain complexes" is true but hides a genuine bifurcation within the domain.
+
+### Nerve Theorem guarantee ≠ empirical stability
+
+Curto & Itskov (2008) invoke the Nerve Theorem to provide an EXACT guarantee: if receptive fields are convex, then H_*(nerve complex) ≅ H_*(stimulus space). This is categorically stronger than PH stability (which gives bounded perturbation) or QEC threshold (which gives exponential suppression). The Nerve Theorem is an isomorphism, not a bound. But it depends on an assumption (convexity of receptive fields) that is empirically approximate at best. In practice, the guarantee degrades to an empirical observation that "it works anyway" — more like stability than like a theorem. The gap between the mathematical guarantee (exact, conditional on convexity) and the empirical reality (approximate, without convexity) is itself informative.
+
+### Transfer entropy direction ≠ persistence direction
+
+Schreiber's TE is inherently asymmetric: T_{Y→X} ≠ T_{X→Y}. MI and bottleneck/Wasserstein distances on persistence diagrams are symmetric. The directionality of TE aligns with the directed simplicial complexes (Reimann) more than with standard PH. This suggests a deeper alignment: directional information measures naturally pair with directed topological structures, while symmetric measures pair with undirected structures. The SYNONYMS table's "joint-vs-marginal excess" entry currently conflates directed (TE, Granger) and undirected (MI, binding) versions.
+
+### Cross-Barcode ≠ Wasserstein comparison of two PDs
+
+Barannikov et al.'s Cross-Barcode(P,Q) builds a SINGLE barcode from a pair of distributions, tracking topological discrepancies between their support manifolds. This is NOT the same as computing PD(P) and PD(Q) separately and then measuring their Wasserstein distance. The latter is a Matching operation (optimal assignment between birth-death points); the former is a Joint-vs-marginal operation (what features exist in the pair that don't exist in either alone). The distinction matters: Wasserstein comparison misses features that are topologically equivalent but spatially displaced, while Cross-Barcode detects them.
+
+### Color code Z₂×Z₂ ≠ toric code Z₂
+
+Bombin's color codes use Z₂×Z₂ gauge group on trivalent lattices; Kitaev's toric code uses Z₂ on square lattices. Both instantiate the chain complex machine, but the richer gauge group of color codes enables transversal Clifford gates (toric code cannot). This is a genuine structural difference, not just a vocabulary difference. Error thresholds are similar (~0.109 vs ~0.109), but computational power differs. The chain complex machine is the same; the ALGEBRA acting on it determines what you can compute.
+
+### Attractor ruins ≠ feature death ≠ error threshold crossing
+
+Tsuda's attractor ruins (destroyed attractors that retain geometric influence) look like dead features in a persistence diagram or crossed error thresholds in QEC, but the dynamics are fundamentally different. In TDA, when a feature dies at filtration scale ε, it is gone — no ghost persists. In QEC, when the error rate exceeds threshold, logical information is destroyed without residue. In chaotic itinerancy, the attractor is destroyed by bifurcation but its GHOST continues to trap trajectories transiently. The ruin has no topological "bar" (it is not a well-defined homology class) and no error correction analogue (there is no code protecting it). The quasi-stability of attractor ruins is a dynamical phenomenon — trajectory trapping by a non-existent invariant set — that has no parallel in the static/discrete frameworks of TDA or QEC. When mapping "stability" across domains, Tsuda's ghost stability is a sixth flavor distinct from Lipschitz bounds, exponential suppression, topological protection, anti-stability, and distribution-free guarantees.
 
 ---
 

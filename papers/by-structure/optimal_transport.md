@@ -18,7 +18,15 @@ Belief Propagation as approximate matching on factor graphs. For LDPC codes, red
 ### Di Rocco, Eklund, Weinstein (2019) — Bottleneck Degree of Algebraic Varieties
 Bottleneck pairs = critical points of squared distance ||x-y||^2 on the variety. This IS an optimal assignment problem: find pairs (x, y) where the line xy is normal to X at both points. Bottleneck degree counts solutions — algebraic complexity of the matching. Formula in Chern classes and polar classes. Controls the reach, which determines topological inference guarantees. Full annotation: `by-domain/tda.md`.
 
+### Divol & Lacombe (2019) — Understanding the Space of Persistence Diagrams via Optimal Partial Transport
+PD distances (Wasserstein, bottleneck) ARE optimal partial transport problems — exact identification, not analogy. Extends PDs to Radon measures on the upper half-plane. Provides geometric description of Fréchet means. Characterizes ALL continuous linear representations. Full annotation: `inbox.md` (arXiv: 1901.03048).
+
 *(See also inbox for Cohen-Steiner bottleneck distance, Adams persistence images)*
+
+## Information Geometry / Optimal Transport
+
+### Wong & Yang (2019) — Pseudo-Riemannian geometry embeds information geometry in optimal transport
+Information geometry (Fisher metric, Bregman divergence) EMBEDS into OT geometry (Wasserstein) via pseudo-Riemannian framework. Ma-Trudinger-Wang condition ↔ information-geometric curvature. Exact functorial embedding, not analogy. Full annotation: `inbox.md` (arXiv: 1906.00030).
 
 ## Optimal Transport / Machine Learning
 
@@ -33,7 +41,11 @@ Martingale optimal transport: given marginals mu_1, ..., mu_n (from call prices)
 
 ## QEC
 
-*(MWPM syndrome decoding, JIT decoder — see inbox for de la Fuente)*
+### Kitaev (1997) — Fault-tolerant quantum computation by anyons
+Matching: Anyonic excitations come in pairs. Error correction = fusing (matching) anyon pairs back to vacuum. Fusion rules define which pairs can annihilate. Full annotation: `inbox.md` (arXiv: quant-ph/9707021).
+
+### Dennis et al. (2002) — Topological quantum memory
+Matching: Recovery = identifying and matching syndrome defects via MWPM on syndrome graph. Full annotation: `inbox.md` (arXiv: quant-ph/0110143).
 
 ---
 
@@ -92,3 +104,11 @@ The cost function is always a metric or semi-metric, and the matching always res
 **IC-PINN Coupled Oscillators**: Basis-free inference = function-level matching. Assign a coupling function (from infinite-dimensional space) to observed dynamics. Full annotation: `third_pass_dynamics_tda.md` (TP-11).
 
 **Ordinal Networks**: Hurst exponent estimation = matching to parameterized family of fractional processes. Full annotation: `third_pass_dynamics_tda.md` (TP-05).
+
+### Neuroscience (Wave 5, 2026-04-06)
+
+**Thual et al. (2022) — FUGW Brain Alignment**: Fused Unbalanced Gromov-Wasserstein for whole-brain inter-subject fMRI alignment. Transport plan P in R^{n x p} between cortical vertices. Combines Wasserstein (feature) + Gromov-Wasserstein (geometry) + unbalanced marginals. NeurIPS 2022, 46 citations. Full annotation: `inbox.md` (Wave 5).
+
+**Janati et al. (2019) — Minimum Wasserstein Estimates**: Unbalanced OT regularizer for multi-subject MEG/EEG source imaging. Wasserstein barycenter as group-level source estimate. Cost = cortical geodesic distance. Generalized Sinkhorn solver. Full annotation: `inbox.md` (Wave 5).
+
+**Lee, Dabagia, Dyer, Rozell (2019) — Hierarchical OT for Neural Decoding**: Two-level Wasserstein alignment (cluster + point) for cross-session neural population decoding in macaque motor cortex. ADMM + Sinkhorn. NeurIPS 2019, 78 citations. Full annotation: `inbox.md` (Wave 5).

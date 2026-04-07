@@ -61,6 +61,34 @@ arXiv: 1311.2485 | Chapter in *Quantum Error Correction* (Cambridge University P
 
 ---
 
+## Wave 4 (2026-04-06) — "To Find" Papers
+
+### Kitaev (1997) — Fault-tolerant quantum computation by anyons
+**"Fault-tolerant quantum computation by anyons"**
+arXiv: quant-ph/9707021
+THE foundational toric code paper. Chain complex on T² (qubits on edges, stabilizers from ∂/δ). Logical qubits = H₁(T², ℤ/2). Anyonic excitations matched by fusion. Computation via braid group on fusion space. Topological fault tolerance: errors must create non-trivial homology cycle.
+**Machines**: chain complex, matching, stability. **See also**: `by-structure/boundary_operators.md`, `by-structure/optimal_transport.md`.
+
+### Dennis, Kitaev, Landahl, Preskill (2002) — Topological quantum memory
+**"Topological quantum memory"**
+arXiv: quant-ph/0110143
+Explicit surface code construction with recovery protocols. Threshold theorem: below p_c, exponential suppression. Phase transition maps EXACTLY to 3D Z₂ lattice gauge theory (cross-domain bridge to stat mech). MWPM syndrome matching. 4D procedure without measurement.
+**Machines**: chain complex, parameterized homology, matching, stability, null hypothesis. **See also**: `by-structure/boundary_operators.md`, `by-structure/phase_transitions.md`, `by-structure/optimal_transport.md`.
+
+### Freedman, Kitaev, Larsen, Wang (2001) — Topological Quantum Computation
+**"Topological Quantum Computation"**
+arXiv: quant-ph/0101025
+Quantum computation from anyonic systems = unitary topological modular functors (Witten-Chern-Simons). Braiding computes gates; fusion rules generalize boundary operators. Error rate e^{-αℓ} — topological protection by length scale. Abelian anyons as null (trivial computation). Connection to Jones polynomial and knot invariants.
+**Machines**: chain complex, stability, matching, null hypothesis. **See also**: `by-structure/boundary_operators.md`, `by-structure/phase_transitions.md`.
+
+### Bombin & Martin-Delgado (2007) — Statistical Mechanical Models and Topological Color Codes
+**"Statistical Mechanical Models and Topological Color Codes"**
+arXiv: 0711.0468
+Color codes on trivalent lattices with Z₂×Z₂ gauge group. Overlap with factorized state = 3-body Ising partition function. Different universality classes = different computational capabilities. Error threshold p_c ≈ 0.109 (close to toric code). Direct transversal Clifford gates.
+**Machines**: chain complex, stability, null hypothesis, joint-vs-marginal. **See also**: `by-structure/boundary_operators.md`, `by-structure/phase_transitions.md`.
+
+---
+
 ## Third Pass (2026-04-05)
 
 ### Arovas & Zhang (1992) — Topological Aspects of FQHE
@@ -94,3 +122,55 @@ Full annotation: `third_pass_neuro_qec.md` (TP-10).
 ### Mézard & Mora (2008) — QEC-relevant aspects
 Factor graph for LDPC decoding IS a chain complex (variable nodes = 0-cells, check nodes = 1-cells, H = boundary operator). BP on LDPC = soft matching. Phase transition threshold in CSP = error correction threshold. Already in info theory; this annotation captures QEC-specific content.
 Full annotation: `third_pass_neuro_qec.md` (TP-12).
+
+---
+
+## Wave 5 (2026-04-06) — Quantum TDA Bridge + Floquet Codes
+
+### Berry, Su, Gyurik, King, Basso, Del Toro Barba, Rajput, Wiebe, Dunjko, Babbush (2023) — Quantum Advantage in TDA
+**"Analyzing Prospects for Quantum Advantage in Topological Data Analysis"**
+arXiv: 2209.13581 | PRX Quantum 4, 040349 (2023)
+
+**Domain(s)**: TDA, QEC (quantum algorithms) — DIRECT BRIDGE PAPER
+
+The paper that asks: can quantum computers speed up TDA? Works directly with the chain complex of the clique complex of a graph G: boundary operators dG_k, combinatorial Laplacian Delta^G_{k-1}, Dirac operator BG = dG + dG^{dagger}. Betti number = dim(ker(Delta)). Quantum algorithm projects onto ker(BG) via Chebyshev polynomial eigenvalue filtering + amplitude estimation. Key finding: super-quadratic quantum speedup requires multiplicative error AND asymptotically growing Betti number. Dequantization via classical random walk on k-simplices shows exponentially large dimension + Betti number are necessary but INSUFFICIENT for super-polynomial advantage. Tens of billions of Toffoli gates sufficient for classically intractable instances.
+**Machines**: chain complex (the computation IS the chain complex), parameterized homology (epsilon-filtration + dimension k), matching (weak — random walk on simplices), stability (robustness of quantum advantage to parameter regime), null hypothesis (dequantization as classical null).
+Full annotation: `inbox.md`.
+**See also**: `by-structure/boundary_operators.md`, `by-structure/filtrations.md`, `cross_domain_bridges.md`
+
+### Hastings & Haah (2021) — Dynamically Generated Logical Qubits (Honeycomb/Floquet Code)
+**"Dynamically Generated Logical Qubits"**
+arXiv: 2107.02194
+
+**Domain(s)**: QEC
+
+The foundational Floquet code paper. Honeycomb lattice with 2-qubit Pauli checks measured in period-3 rounds. As a subsystem code: ZERO logical qubits. With periodic measurement schedule: TWO logical qubits with distance proportional to system size. The ISG S(r) changes every round; logical operators have period-6 dynamics (electric <-> magnetic exchange). Fault tolerance via MWPM on 2+1D spacetime syndrome lattice (bipartite simple cubic structure). Maps to Kitaev's honeycomb model via Majorana fermions; inner logical operators transport fermions, outer transport bosons (e/m anyons).
+**Machines**: chain complex (honeycomb cellular complex on T^2, stabilizers from cycles), parameterized homology (THE key machine — time parameterizes the code, logical qubits emerge from periodic orbit not any snapshot), stability (error threshold despite time-varying code), null hypothesis (static subsystem code with 0 logical qubits), matching (MWPM on spacetime syndrome lattice).
+Full annotation: `inbox.md`.
+**See also**: `by-structure/boundary_operators.md`, `by-structure/filtrations.md`
+
+## Wave 4c (2026-04-06) — Foundational Threshold Theorems
+
+### Aharonov & Ben-Or (1997/1999) — Fault-Tolerant Quantum Computation with Constant Error Rate
+**"Fault-Tolerant Quantum Computation with Constant Error Rate"**
+arXiv: quant-ph/9906129 (originally STOC 1997, full version 1999)
+THE original threshold theorem (with Knill-Laflamme-Zurek independently). Proves that if error rate eta < eta_c (a constant), arbitrarily long quantum computation can be performed at polylogarithmic overhead. Uses concatenated CSS codes including novel polynomial codes over F_p. Effective error after r levels: (c*eta)^{2^r} — doubly-exponential suppression. General noise model: probabilistic, decoherence, amplitude damping, depolarization, correlations. Threshold ~10^{-6}. No measurements needed.
+**Machines**: chain complex (CSS/polynomial codes), parameterized homology (eta parameterizes family), stability (THE threshold theorem), null hypothesis (uncorrected circuit).
+Full annotation: `papers/inbox.md`.
+**See also**: `by-structure/phase_transitions.md`
+
+### Knill, Laflamme, Zurek (1998) — Resilient Quantum Computation
+**"Resilient Quantum Computation: Error Models and Thresholds"**
+arXiv: quant-ph/9702058
+Independent proof of the threshold theorem. Uses 7-qubit Steane code (Hamming-based). Concatenation maps p to cp^2; after h levels: c^{2^h-1} p^{2^h}. Explicit threshold calculation from counting minimal failure sets in recovery network (~190K pairs for operational, ~416K for total). Threshold ~3 x 10^{-6} for stochastic errors. Detailed error model taxonomy: independent stochastic, quasi-independent stochastic/monotone. Complete fault-tolerant procedure set via normalizer group.
+**Machines**: chain complex (Steane code), parameterized homology (p parameterizes family), stability (threshold theorem), null hypothesis (unencoded network).
+Full annotation: `papers/inbox.md`.
+**See also**: `by-structure/phase_transitions.md`
+
+### Breuckmann & Eberhardt (2021) — Quantum LDPC Codes
+**"Quantum Low-Density Parity-Check Codes"**
+arXiv: 2103.06309 | PRX Quantum review
+Comprehensive review placing quantum LDPC codes in their homological context. CSS codes ARE chain complexes (partial^2 = 0). Surveys geometric constructions (hyperbolic manifolds, Gauss-Bonnet-Chern), product constructions (hypergraph, tensor, fiber bundle, lifted, balanced — all chain complex operations with Kunneth formula). Gottesman's constant overhead theorem. Systolic geometry: code distance = systole of underlying manifold. Bridge to quantum gravity (holographic codes). The most cross-disciplinary QEC paper.
+**Machines**: chain complex (PRIMARY — CSS = chain complex), parameterized homology (code families, systole), stability (Gottesman constant overhead, individual thresholds), null hypothesis (surface code as baseline).
+Full annotation: `papers/inbox.md`.
+**See also**: `by-structure/boundary_operators.md`, `by-structure/phase_transitions.md`

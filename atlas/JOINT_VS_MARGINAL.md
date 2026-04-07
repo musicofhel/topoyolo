@@ -21,6 +21,11 @@ This machine originates here. Mutual information I(X;Y) = D_KL(P_XY || P_X ⊗ P
 - Sugiyama et al. (2016) — Pythagorean KL decomposition on posets (orthogonal isolation of higher-order interactions)
 - Geiger (2021) — review of MI estimation artifacts
 - Jónsson et al. (2020) — MI-based regularization
+- Kolchinsky (2024, arXiv: 2405.07665) — PID redundancy = information bottleneck; formally proves the compression-prediction tradeoff in IB IS the redundancy-synergy decomposition in PID. Bridges Joint and Param machines.
+- Schreiber (2000, PRL 85:461) — transfer entropy T_{Y→X} = I(X_{t+1}; Y^(k)_t | X^(l)_t) as DIRECTED joint-vs-marginal excess. Asymmetric: T_{Y→X} ≠ T_{X→Y}. Bridges info theory and dynamical systems.
+- Barrett (2015) — PID for Gaussians: closed-form decomposition showing synergy can be nonzero even when sources are uncorrelated (zero MI between them). The joint excess exists in the relationship to the target, not between the sources themselves. A precise characterization of when joint structure transcends marginal structure.
+- Shwartz-Ziv & Tishby (2017) — MI between layers I(T_l; Y) as joint information: each layer's representation captures joint structure between input and output. The information plane trajectory tracks how much joint excess each layer preserves.
+- Mediano et al. (2019) — PhiID 6-mode taxonomy of integration: decomposes the joint excess into redundancy, synergy, unique-X, unique-Y, transfer X→Y, and transfer Y→X. The most fine-grained decomposition of joint-vs-marginal in the literature.
 
 ### QEC — Entanglement
 A quantum state ρ_AB is entangled iff it cannot be written as a mixture of product states. Entanglement measures (entropy of entanglement, concurrence, negativity) quantify how much the joint state exceeds what separable states can achieve. The excess is always non-negative (separable states form a convex set) and bounded by the Hilbert space dimension.
@@ -30,11 +35,15 @@ A quantum state ρ_AB is entangled iff it cannot be written as a mixture of prod
 ### TDA — Binding
 The binding residual R = ||PI_joint - f(PI_X, PI_Y)|| measures whether the joint persistence image contains topological structure absent from marginal persistence images. Tested against surrogate null distributions.
 
+**Papers**: Harrington et al. (2017, arXiv: 1708.07390) — multiparameter bifiltration as joint object. Stratifying multiparameter PH reveals topological features visible in the joint bifiltration but invisible in either marginal (single-parameter) filtration. The excess IS the genuinely multi-scale structure. Barannikov et al. (2021, arXiv: 2106.04024) — Cross-Barcode(P,Q) tracks multiscale topological discrepancies between two manifold-supported distributions; MTop-Divergence = 0 iff topologically equivalent; builds a SINGLE barcode from the pair, conceptually distinct from comparing two PDs via Wasserstein.
+
 ### Dynamical Systems — Emergent Topology
 When two uncoupled systems are coupled, the joint attractor may have topology (e.g., torus) absent from either component (e.g., two limit cycles). Convergent cross-mapping (Sugihara et al.) detects this as cross-predictability.
 
+**Papers**: Sugihara et al. (2012) — CCM cross-prediction as joint excess: if species X and Y are causally coupled, the shadow manifold M_X contains information about Y that is absent from M_Y's own marginal. Cross-map correlation increasing with library length is the signature of genuine joint structure, distinguishing causation from correlation.
+
 ### Neuroscience — Neural Binding
-Cross-frequency coupling (Tort et al., 2010 — in inbox), integrated information (Tononi — in inbox), and synergistic coding (Tax et al., 2017 applied to neural codes).
+Cross-frequency coupling: Tort et al. (2010, J Neurophysiol 104:1195) — phase-amplitude coupling modulation index = D_KL(observed amplitude distribution || uniform), measuring how much the joint (phase, amplitude) distribution exceeds the product of marginals. Oizumi, Albantakis & Tononi (2014, DOI: 10.1371/journal.pcbi.1003588) — IIT 3.0: Φ = D(p(X^t|X^{t-1}) || Π_i p(X_i^t|X_i^{t-1})), THE foundational formalization of joint-vs-marginal for consciousness; MICS specifies quality of experience. Synergistic coding (Tax et al., 2017 applied to neural codes). Peek et al. (2025) — TE-based directed coupling as joint excess: transfer entropy from neuron Y to neuron X measures the information in the joint (X-future, Y-past) that exceeds the marginal (X-future, X-past). The directed flag complex built from significant TE links encodes the topological structure of this directed joint excess. Thual et al. (2022) — fused OT reveals joint brain alignment: the Gromov-Wasserstein component captures joint geometric structure (spatial relationships between regions) that is absent from either subject's marginal anatomy alone. Weak instantiation — the "joint" is across subjects, not within a single system.
 
 ### Statistical Physics — Phase Transitions
 Mézard & Mora (2008): solution-space structure in coupled constraint systems exceeds what individual constraints predict. The SAT/UNSAT transition is a collective (composite-system) phenomenon.

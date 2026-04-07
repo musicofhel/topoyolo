@@ -152,6 +152,55 @@ DOI: 10.1016/j.physa.2019.122212 | Physica A 546:122212
 
 ---
 
+## Adams, Chepushtanova, Emerson, Hanson, Kirby, Motta, Neville, Peterson, Shipman, Ziegelmeier (2017)
+**"Persistence Images: A Stable Vector Representation of Persistent Homology"**
+arXiv: 1507.06217
+
+**Domain(s)**: TDA
+
+**Abstract machines instantiated**:
+- **Parameterized homology**: Persistence images vectorize the output of parameterized homology. Pipeline: PD -> birth-persistence coordinates -> weighted Gaussian sum (persistence surface) -> pixel grid integration -> R^n vector. Concatenation across homological dimensions (H_0, H_1, ...) into a single vector. Three user choices: resolution, distribution variance, weighting function.
+- **Stability**: Central contribution. Persistence surface is Lipschitz w.r.t. 1-Wasserstein: ||rho_B - rho_{B'}||_inf <= C * W_1(B, B'). Extends to discretized PI vectors (L_inf, L_1, L_2 bounds). Tighter constants for Gaussians (Theorems 3-4). Impossibility: PI kernel NOT stable for W_p with p > 1.
+- **Matching**: The Wasserstein distance used in stability bounds IS an optimal matching (bijection between diagram points minimizing total displacement). Stability proofs bound PI differences via the matching that achieves the Wasserstein infimum.
+- **Chain complex**: Implicit. Input PDs come from Vietoris-Rips (simplicial) or sublevel set (cubical) chain complexes. Appendix A defines the full chain complex machinery (C_k, partial_k, Z_k, B_k, H_k).
+
+**What is genuinely new (not reducible to shared abstraction)**:
+- The vectorization pipeline itself: weighting function + Gaussian smoothing + grid integration simultaneously achieves stability, interpretability, and fixed-dimensionality.
+- Domain-adaptable weighting function f (zero on diagonal, continuous, piecewise differentiable) — standard choice weights by persistence, but non-standard weightings also covered.
+- Impossibility result: stability only achievable for W_1, not W_p (p > 1).
+- Dynamical systems applications: linked twist map (82.5%) and anisotropic Kuramoto-Sivashinsky PDE (97.3%) parameter classification via PIs.
+- Sparse SVM pixel selection: 10 out of 400 pixels achieve 100% accuracy, with interpretable correspondence to PD regions.
+
+**Connections the authors acknowledge**: Persistence landscapes (Bubenik 2015), kernel methods (Reininghaus et al. 2015), PH stability (Cohen-Steiner et al. 2007). No connections to QEC, information theory, or neuroscience.
+
+**Vocabulary mapping**:
+| Paper term | Rosetta term |
+|---|---|
+| Persistence diagram | Output of parameterized homology |
+| Persistence image | Fixed-size vector featurization of parameterized homology |
+| Persistence surface rho_B | Continuous featurization (pre-discretization) |
+| Weighting function f | Importance modulation on diagram features |
+| 1-Wasserstein distance W_1 | Optimal matching cost (L1 transport) |
+| Bottleneck distance W_inf | Optimal matching cost (minimax transport) |
+| Gaussian phi_u | Smoothing kernel (localization in feature space) |
+| Vietoris-Rips complex | Chain complex from point cloud |
+| Sublevel set filtration | Chain complex from function |
+| SSVM pixel selection | Discriminatory feature identification |
+
+**See also**: `by-structure/filtrations.md`, `by-structure/phase_transitions.md`
+
+---
+
+## Bauer (2021)
+**"Ripser: efficient computation of Vietoris-Rips persistence barcodes"**
+arXiv: 2108.03831 | Journal of Applied and Computational Topology 5:391-423
+
+THE standard computational tool for PH. Implicit coboundary matrix representation (never materializes full matrix). Three optimizations: apparent pairs, emergent pairs, clearing -- identify most persistence pairs without full column reduction. 40-1000x speedups over GUDHI/Dionysus/DIPHA. De facto standard for VR persistent homology. Full annotation: `inbox.md`.
+**Machines**: chain complex (VR complex with coboundary matrix), parameterized homology (persistence algorithm computes birth-death pairs across filtration).
+**See also**: `by-structure/boundary_operators.md`, `by-structure/filtrations.md`
+
+---
+
 ## Cross-listed from Dynamical Systems
 
 - **Zhou, Chu, Xu, Liu, Yu (2020)** — "Detecting Predictable Segments of Chaotic Financial Time Series via Neural Network." Phase space reconstruction + SOM clustering to detect predictable vs. chaotic segments. Full annotation in `by-domain/dynamical_systems.md`. Machines: parameterized homology, null hypothesis.
@@ -169,6 +218,52 @@ DOI: 10.1016/j.physa.2019.122212 | Physica A 546:122212
 - **Niroomand & Wales (2023)** — "Physics-Inspired Interpretability." Disconnectivity graphs = H₀ persistence diagrams, independently invented by energy landscape theory. Conserved weights = persistent features. Full annotation: `cross_domain_bridges.md`. Machines: parameterized homology, stability, null hypothesis, joint-vs-marginal (weak). **KEY FINDING: same mathematical object, zero cross-citation.**
 
 - **Gallicchio & Micheli (2020)** — "Fast and Deep Graph Neural Networks." Layer depth = scale parameter (Rips-like). Banach contraction = stability. Untrained random weights suffice — topology carries the information. Full annotation: `cross_domain_bridges.md`. Machines: stability, parameterized homology, null hypothesis, chain complex. **Bridge: dynamics + TDA.**
+
+---
+
+## Wave 2 (2026-04-06) — Thin Cell Papers
+
+### Divol & Lacombe (2019) — OT for Persistence Diagrams
+**"Understanding the Topology and the Geometry of the Space of Persistence Diagrams via Optimal Partial Transport"**
+arXiv: 1901.03048
+PD distances = optimal partial transport (exact theorem). Radon measure extension. Fréchet means. All continuous linear representations characterized.
+**Machines**: matching, stability. **See also**: `by-structure/optimal_transport.md`.
+
+### Vejdemo-Johansson & Mukherjee (2018) — Multiple Testing with PH
+**"Multiple testing with persistent homology"**
+arXiv: 1812.06491
+Universal empirical null distribution for PH features. FWER and FDR control for rejecting acyclicity. Grounded in limit theorems for PH of point processes.
+**Machines**: null hypothesis, stability. **See also**: `by-structure/phase_transitions.md`.
+
+### Harrington, Otter, Schenck, Tillmann (2017) — Stratifying Multiparameter PH
+**"Stratifying multiparameter persistent homology"**
+arXiv: 1708.07390
+Joint bifiltration captures structure invisible to single-parameter PH. Multigraded associated primes, Hilbert series, local cohomology as partial invariants. No complete discrete invariant exists (unlike 1-parameter barcode).
+**Machines**: joint-vs-marginal, parameterized homology, chain complex. **See also**: `by-structure/composite_systems.md`, `by-structure/filtrations.md`.
+
+### Perea & Harer (2013) — Sliding Windows and Persistence (SW1PerS)
+**"Sliding Windows and Persistence: An Application of Topological Methods to Signal Analysis"**
+arXiv: 1307.6188
+Sliding window embedding → point cloud → Rips complex → PH. Maximum H₁ persistence = periodicity score. Convergence theorems + dependency estimates for window size / embedding dimension. Formal bridge between Takens (dynamical systems) and persistence (TDA).
+**Machines**: chain complex, parameterized homology, stability. **See also**: `by-structure/boundary_operators.md`, `by-structure/filtrations.md`. **Bridge: TDA + dynamical systems.**
+
+### Cohen-Steiner, Edelsbrunner, Harer (2007) — Stability of Persistence Diagrams
+**"Stability of Persistence Diagrams"**
+arXiv: math/0604068
+THE foundational stability theorem. d_B(Dgm(f), Dgm(g)) ≤ ||f - g||∞. Bottleneck distance = optimal matching between diagram points. Made TDA rigorous. Proof via interleaving of filtrations — template for all subsequent stability results.
+**Machines**: stability, matching, parameterized homology. **See also**: `by-structure/phase_transitions.md`, `by-structure/optimal_transport.md`.
+
+### Barannikov, Trofimov, Sotnikov et al. (2021) — Manifold Topology Divergence (Cross-Barcode)
+**"Manifold Topology Divergence: a Framework for Comparing Data Manifolds"**
+arXiv: 2106.04024
+Cross-Barcode(P,Q) tracks multiscale topological discrepancies between two manifold-supported distributions. MTop-Divergence detects mode-dropping, mode-collapse, mode-invention. Scales linearly with dimension. Domain-agnostic (images, 3D shapes, time series). Conceptually distinct from comparing two PDs via Wasserstein — builds a SINGLE barcode from the pair.
+**Machines**: joint-vs-marginal, parameterized homology, matching, null hypothesis. **See also**: `by-structure/composite_systems.md`.
+
+---
+
+## Cross-listed from Neuroscience + Information Theory
+
+- **Peek, Pritam, Skerritt, Chalup (2025)** — "Time Series Analysis of Spiking Neural Systems via Transfer Entropy and Directed Persistent Homology." Directed flag complexes from TE-derived weighted directed graphs, analyzed via Flagser. Inverted TE filtration. Applied to synthetic SNNs and mouse cortical recordings. Triple-domain bridge. Full annotation: `inbox.md` (arXiv: 2508.19048). Machines: chain complex, parameterized homology, null hypothesis.
 
 ---
 
@@ -206,3 +301,9 @@ Full annotation: `third_pass_dynamics_tda.md` (TP-14).
 Reinterprets DNN layers via data-driven polynomial chaos expansion. Polynomial order p as filtration parameter. Layer-wise orthonormal bases create graded functional decomposition analogous to Hodge theory. Conventional DNN as null.
 **Machines**: chain complex (weak), parameterized homology, null hypothesis.
 Full annotation: `third_pass_dynamics_tda.md` (TP-13).
+
+---
+
+## Cross-listed from QEC (Wave 5)
+
+- **Berry et al. (2023)** — "Analyzing Prospects for Quantum Advantage in Topological Data Analysis." PRX Quantum 4, 040349. Quantum algorithm for Betti number estimation via chain complex (boundary operators, combinatorial Laplacian, Dirac operator). Super-quadratic speedup requires growing Betti number + multiplicative error. Dequantization via Monte Carlo on k-simplices. DIRECT TDA-QEC bridge. Full annotation: `inbox.md`. Machines: chain complex, parameterized homology, stability, null hypothesis. **See also**: `cross_domain_bridges.md`, `by-domain/qec.md`.
