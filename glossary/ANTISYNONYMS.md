@@ -118,6 +118,14 @@ Bombin's color codes use Z₂×Z₂ gauge group on trivalent lattices; Kitaev's 
 
 Tsuda's attractor ruins (destroyed attractors that retain geometric influence) look like dead features in a persistence diagram or crossed error thresholds in QEC, but the dynamics are fundamentally different. In TDA, when a feature dies at filtration scale ε, it is gone — no ghost persists. In QEC, when the error rate exceeds threshold, logical information is destroyed without residue. In chaotic itinerancy, the attractor is destroyed by bifurcation but its GHOST continues to trap trajectories transiently. The ruin has no topological "bar" (it is not a well-defined homology class) and no error correction analogue (there is no code protecting it). The quasi-stability of attractor ruins is a dynamical phenomenon — trajectory trapping by a non-existent invariant set — that has no parallel in the static/discrete frameworks of TDA or QEC. When mapping "stability" across domains, Tsuda's ghost stability is a sixth flavor distinct from Lipschitz bounds, exponential suppression, topological protection, anti-stability, and distribution-free guarantees.
 
+### Topology is rotation-invariant; information is not
+
+Varley et al. (2025) show that rotating a point cloud with PCA does not change its persistent homology (the Rips complex is invariant to isometries) but DOES change its information-theoretic properties (O-information, TC, DTC). A rotated plane has O = -2.819 nat; after PCA rotation, O = 0. The topology is unchanged but the information vanishes. This creates a split: "intrinsic" higher-order information (survives rotation, tied to topology like H2 cavities) vs. "contextual" higher-order information (destroyed by rotation, tied to embedding orientation). TDA sees both the same; information theory sees them as different. The H2-synergy correspondence (rho = -0.55 to -0.65) weakens but does not vanish after PCA rotation -- meaning the correspondence is partially intrinsic but not fully. When we say "TDA and information theory both detect higher-order structure," we must qualify: they agree on the intrinsic part (cavities, knots) but diverge on the contextual part (embedding-dependent correlations).
+
+### O-information sign ≠ PH dimension
+
+Synergy (O < 0) corresponds to H2 cavities; redundancy (O > 0) corresponds to knots (H1 features in 3D). But O-information is a single signed scalar, while persistent homology provides a diagram per dimension. There is no information-theoretic measure that maps to H1 vs. H2 separately -- O-information conflates dimension. A point cloud could have both H1 and H2 features with opposite information-theoretic character (synergistic cavities AND redundant loops), and O-information would report only the balance. The TDA side has finer resolution; the IT side has finer decomposition (TC, DTC, S). Neither subsumes the other.
+
 ---
 
 ## Living Document

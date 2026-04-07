@@ -163,4 +163,12 @@ The parameter takes different forms across domains, but the structure is isomorp
 
 ### Cross-Domain Observation
 
+### Varley, Mediano, Patania & Bongard (2025) — The Topology of Synergy
+PLoS Comput. Biol., DOI: 10.1371/journal.pcbi.1013649. arXiv: 2504.10140.
+Parameter: Rips filtration scale epsilon (Chebyshev distance). Invariants tracked: H2 average persistence and void count. Key finding: these topological summaries correlate with O-information (joint-vs-marginal excess). Synergy-dominated triads have more numerous, longer-lived H2 features. PCA rotation weakens but does not eliminate the correlation for O-bar (intrinsic synergy persists).
+**Machines**: parameterized homology, chain complex, joint-vs-marginal, null hypothesis, stability.
+Full annotation: `inbox.md` (Wave 7).
+
+### Cross-Domain Observation
+
 The third pass identifies a new filtration parameter class: **frequency** in brain networks. Combined with existing parameters (scale ε in TDA, error rate p in QEC, coupling strength in dynamics, training epoch in ML, constraint density in CSP), the filtration concept now spans 7 distinct parameter types across 5 domains. The neuroscience frequency-filtration is notable because 3 independent groups discovered it without connecting to the TDA framework.

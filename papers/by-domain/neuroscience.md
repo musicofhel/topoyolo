@@ -192,6 +192,15 @@ Phase TE computes transfer entropy on Morlet-filtered phase time series, isolati
 Full annotation: `inbox.md` (Wave 6).
 **See also**: `by-structure/composite_systems.md`, `by-structure/phase_transitions.md`, `by-domain/information_theory.md`
 
+### Rosas, Mediano et al. (2020) — Causal Emergence via PID
+**"Reconciling emergences: An information-theoretic approach to identify causal emergence in multivariate data"**
+PLoS Computational Biology, 16(12), e1008289. arXiv: 2004.08220. 143 citations.
+**Domain(s)**: Information theory, neuroscience, dynamical systems
+Inverted joint-vs-marginal: macro coarse-grained feature has causal power exceeding sum of micro parts. Applied to 64-channel macaque ECoG during reaching: Ψ^(1) = 1.275 > 0 at 8ms timescale, motor representation emergent up to ~0.2s. Emergence decomposes into downward causation D^(k) and causal decoupling G^(k) ("statistical ghosts"). Extends Mediano PhiID.
+**Machines**: joint-vs-marginal (inverted), parameterized homology, null hypothesis, chain complex (inherited).
+Full annotation: `inbox.md` (Wave 7).
+**See also**: `by-structure/composite_systems.md`, `by-domain/information_theory.md`, `atlas/JOINT_VS_MARGINAL.md`
+
 ### Shorten, Spinney, Lizier (2021) — Continuous-Time Transfer Entropy for Spike Trains
 **"Estimating Transfer Entropy in Continuous Time Between Neural Spike Trains or Other Event-Based Data"**
 DOI: 10.1371/journal.pcbi.1008054, PLOS Computational Biology 17(4):e1008054. 58 citations.
@@ -200,3 +209,12 @@ Continuous-time TE via Radon-Nikodym derivatives on path space, estimated with k
 **Machines**: joint-vs-marginal, null hypothesis, parameterized homology.
 Full annotation: `inbox.md` (Wave 6).
 **See also**: `by-structure/composite_systems.md`, `by-structure/phase_transitions.md`, `by-domain/information_theory.md`
+
+### Varley, Mediano, Patania & Bongard (2025) — The Topology of Synergy
+**"The topology of synergy: Linking topological and information-theoretic approaches to higher-order interactions in complex systems"**
+PLoS Computational Biology, DOI: 10.1371/journal.pcbi.1013649. arXiv: 2504.10140. 4 citations.
+**Domain(s)**: TDA, information theory, neuroscience
+Applied to HCP resting-state fMRI (200-node Schaefer parcellation, 100 subjects). 1,313,400 triads tested; 30,100 significantly redundant, 6,200 significantly synergistic (circular-shift null). H2 persistent homology features (3D cavities) correlate with synergistic information: avg persistence vs normalized O-bar rho = -0.55 to -0.65. PCA fails to preserve synergy or topology: most synergistic triads look random to PCA (PC1 variance near 33%). Neural manifold learning systematically misses synergistic structure.
+**Machines**: chain complex, parameterized homology, joint-vs-marginal, null hypothesis, stability.
+Full annotation: `inbox.md` (Wave 7).
+**See also**: `cross_domain_bridges.md`, `by-domain/tda.md`, `by-domain/information_theory.md`, `by-structure/composite_systems.md`, `by-structure/filtrations.md`

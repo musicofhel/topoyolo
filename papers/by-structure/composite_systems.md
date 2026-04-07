@@ -281,6 +281,12 @@ Continuous-time TE = KL divergence between true conditional measure (given full 
 **Machines**: joint-vs-marginal, null hypothesis, parameterized homology.
 Full annotation: `inbox.md` (Wave 6).
 
+### Rosas, Mediano et al. (2020) — Causal Emergence
+PLoS Computational Biology, 16(12), e1008289. arXiv: 2004.08220. 143 citations.
+Inverted joint-vs-marginal: macro Ψ = I(V_t; V_{t'}) - Σ_j I(X^j_t; V_{t'}) > 0 means coarse-grained macro has causal power exceeding sum of micro parts. Ψ iff dynamical synergy Syn^(k) > 0 (Theorem 1). Decomposition: downward causation D^(k) + causal decoupling G^(k) = "statistical ghosts" (emergent features with no micro-level causal trace). Three parameters: order k, time lag, partition. Game of Life particles decoupled from cells, flocking emergence at critical regime, macaque ECoG motor decoding emergent.
+**Machines**: joint-vs-marginal (inverted), parameterized homology, null hypothesis, chain complex (inherited).
+Full annotation: `inbox.md` (Wave 7).
+
 ### Connection to existing TE cluster
 Together with Schreiber (2000, already indexed), Lobier (2014), and Peek et al. (2025, already indexed), these papers form a progression of the joint-vs-marginal machine in directed information flow:
 
@@ -290,3 +296,21 @@ Together with Schreiber (2000, already indexed), Lobier (2014), and Peek et al. 
 | **Lobier (2014)** | Neuroscience (MEG/EEG) | Phase (circular) | Discrete-time, phase-only | Surrogate data | Phase isolation, mixing robustness |
 | **Shorten (2021)** | Info theory + neuroscience | Point process | Continuous-time, kNN | Local permutation | Consistency, multi-timescale |
 | **Peek (2025)** | Neuroscience + TDA | Spike trains | Pairwise TE -> flag complex -> PH | Baseline epochs | TE as input to chain complex |
+
+### Varley, Mediano, Patania & Bongard (2025) — The Topology of Synergy
+PLoS Comput. Biol., DOI: 10.1371/journal.pcbi.1013649. arXiv: 2504.10140. 4 citations.
+O-information (TC - DTC) as signed joint-vs-marginal excess: synergy = information in joint absent from all proper subsets. H2 cavities in Rips filtration correlate with synergy dominance. Normalized O-bar vs avg H2 persistence: rho = -0.55 to -0.65 in fMRI. PCA preferentially preserves redundancy (marginal-preserving) and destroys synergy (joint-only). Connects to Rosas (2020): O-information is the O(X) = TC - DTC family that Rosas used to define causal emergence; this paper gives it a topological interpretation.
+**Machines**: joint-vs-marginal, parameterized homology, chain complex, null hypothesis, stability.
+Full annotation: `inbox.md` (Wave 7).
+
+### Hamilton & Leditzky (2023/2024) — PH of Multipartite Entanglement
+Commun. Math. Phys. 405, art. 125. arXiv: 2307.07492. 8 citations.
+PH with multipartite filtration: q-deformed total correlation C_q(J) as sublevel set functional on the simplex of n parties. Integrated Euler characteristic = n-tangle (entanglement monotone) at q=2. Barcodes strictly finer than n-tangle — distinguish SLOCC orbits. Relative PH gives -I(A:B|R) ≤ 0 by strong subadditivity. Entanglement IS joint-vs-marginal excess; PH captures its multiscale structure.
+**Machines**: joint-vs-marginal, chain complex, parameterized homology, stability, matching, null hypothesis.
+Full annotation: `inbox.md` (Wave 7).
+
+### Natarajan, Chaplin, Bull et al. (2026) — Multi-species Topology
+arXiv: 2603.03237.
+Kernel/image/cokernel persistence of k-chromatic gluing map yields four categories: (i) common features, (ii) features destroyed by composition (kernel), (iii) features ONLY in the joint (cokernel = pure joint-vs-marginal excess), (iv) features formed by some, persisting with others (image). Cokernel captures topological structure invisible in all k-species marginals. Applied to tumor microenvironment: recovers immunoediting regimes, detects trichromatic spatial interactions.
+**Machines**: joint-vs-marginal, chain complex, parameterized homology, null hypothesis, stability.
+Full annotation: `inbox.md` (Wave 7).

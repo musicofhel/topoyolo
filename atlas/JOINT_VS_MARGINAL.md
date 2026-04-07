@@ -32,10 +32,10 @@ A quantum state ρ_AB is entangled iff it cannot be written as a mixture of prod
 
 **Papers**: Oreshkov (2013) — subsystem decomposition H_A ⊗ H_B; code subsystem preserves joint structure that gauge subsystem absorbs.
 
-### TDA — Binding
+### TDA — Binding and Higher-Order Structure
 The binding residual R = ||PI_joint - f(PI_X, PI_Y)|| measures whether the joint persistence image contains topological structure absent from marginal persistence images. Tested against surrogate null distributions.
 
-**Papers**: Harrington et al. (2017, arXiv: 1708.07390) — multiparameter bifiltration as joint object. Stratifying multiparameter PH reveals topological features visible in the joint bifiltration but invisible in either marginal (single-parameter) filtration. The excess IS the genuinely multi-scale structure. Barannikov et al. (2021, arXiv: 2106.04024) — Cross-Barcode(P,Q) tracks multiscale topological discrepancies between two manifold-supported distributions; MTop-Divergence = 0 iff topologically equivalent; builds a SINGLE barcode from the pair, conceptually distinct from comparing two PDs via Wasserstein.
+**Papers**: Harrington et al. (2017, arXiv: 1708.07390) — multiparameter bifiltration as joint object. Stratifying multiparameter PH reveals topological features visible in the joint bifiltration but invisible in either marginal (single-parameter) filtration. The excess IS the genuinely multi-scale structure. Barannikov et al. (2021, arXiv: 2106.04024) — Cross-Barcode(P,Q) tracks multiscale topological discrepancies between two manifold-supported distributions; MTop-Divergence = 0 iff topologically equivalent; builds a SINGLE barcode from the pair, conceptually distinct from comparing two PDs via Wasserstein. Varley et al. (2025, arXiv: 2504.10140) — H2 cavities in Rips filtration correlate with PID synergy (O < 0) in fMRI (ρ = −0.55 to −0.65); THE empirical bridge proving TDA cavities and info-theoretic synergy detect the same joint structure. Hamilton & Leditzky (2024, arXiv: 2307.07492) — PH of multipartite entanglement; integrated Euler characteristic = n-tangle; barcodes strictly finer than scalar entanglement measures; relative PH connects to strong subadditivity. Natarajan et al. (2026, arXiv: 2603.03237) — kernel/image/cokernel persistence of multi-species point clouds; cokernel = features ONLY visible in the joint (pure topological joint-vs-marginal excess); four-way decomposition richer than binary excess test.
 
 ### Dynamical Systems — Emergent Topology
 When two uncoupled systems are coupled, the joint attractor may have topology (e.g., torus) absent from either component (e.g., two limit cycles). Convergent cross-mapping (Sugihara et al.) detects this as cross-predictability.
@@ -59,6 +59,8 @@ Mézard & Mora (2008): solution-space structure in coupled constraint systems ex
 **Opponent encoding** (Striatal circuit): D1/D2 neurons encode opposite distribution tails. Neither half-population captures the full distribution. A matched-pair version of joint excess.
 
 **Non-Markovian memory** (Spin-boson): Non-Markovian corrections are joint (spin-bath) structure invisible in marginal (spin-only) dynamics. The bath "remembers" the system's history.
+
+**Causal emergence as inverted excess** (Rosas et al. 2020): Standard joint-vs-marginal asks "does the joint exceed the marginals?" Causal emergence inverts this: "does the coarse-grained MACRO exceed the sum of the MICRO parts?" Ψ = I(V_t; V_{t'}) - Σ_j I(X^j_t; V_{t'}) > 0 measures excess macro causal power. Theorem: emergence iff dynamical synergy > 0. Key decomposition: Syn = downward causation D + causal decoupling G, where G > 0 implies "statistical ghosts" — emergent features predicting their own future without micro-level causal trace. Applied to Game of Life (particles decoupled from cells), flocking (emergence at critical regime), macaque ECoG (motor representation emergent). A new direction for the machine: not just detecting excess, but decomposing it into qualitatively distinct modes.
 
 **Graded information excess** (GMI): Separate MI for 0-cells (nodes) and 1-cells (edges) of a graph. Extending to simplicial complexes would create information-theoretic Betti numbers — one MI per dimension.
 

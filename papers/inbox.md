@@ -972,7 +972,7 @@ arXiv: 2508.19048
 
 - ~~Ay, Polani — information decomposition (PID).~~ **Resolved**: The reference was never specific (could be Ay 2015 "Information Geometry" or Polani 2009 "Information Flows in Causal Networks"). PID coverage is now thorough with 8 core PID papers + Kolchinsky 2024 (PID=IB) + Barrett 2015 (Gaussian PID) + Mediano 2019 (PhiID). Any Ay/Polani contribution is subsumed.
 - ~~Riehl — "Category Theory in Context."~~ **Skipped**: Textbook, not paper. The abstract machines (functors, natural transformations) are the meta-level formalism that could describe the Rosetta's cross-domain correspondences, but formalizing this would require a dedicated categorical framework beyond the scope of paper annotation.
-- **Rosas, Mediano, Jensen, Seth, Barrett, Carhart-Harris, Bor (2020)** — "Reconciling emergences: An information-theoretic approach to identify causal emergence in multivariate data." PLoS Comp Bio, 143 citations. **Identified but not yet annotated.** Introduces causal emergence (Ψ) and causal decoupling — genuinely new for the Rosetta: inverted joint-vs-marginal where coarse-graining INCREASES causal power (macro > micro). Extends Mediano PhiID programme. Machines: joint-vs-marginal (inverted), parameterized homology (coarse-graining level), null hypothesis (non-emergent baseline). Applied to Game of Life, flocking, neural ECoG.
+- ~~Rosas, Mediano, Jensen, Seth, Barrett, Carhart-Harris, Bor (2020)~~ **Annotated** — Full annotation below (Wave 7). Filed in `by-domain/information_theory.md`, `by-domain/neuroscience.md`, `by-structure/composite_systems.md`, `atlas/JOINT_VS_MARGINAL.md`.
 
 ---
 
@@ -1514,3 +1514,218 @@ Papers filling the weakest cell in the 6x5 coverage matrix: Matching machine ins
 | Spike train | Neural event sequence |
 
 **See also**: `by-domain/information_theory.md`, `by-domain/neuroscience.md`, `by-structure/composite_systems.md`, `by-structure/phase_transitions.md`
+
+---
+
+## Wave 7: Session 5 — Causal Emergence + Joint×TDA Gap-Fill (2026-04-07)
+
+---
+
+## Rosas, Mediano, Jensen, Seth, Barrett, Carhart-Harris, Bor (2020)
+**"Reconciling emergences: An information-theoretic approach to identify causal emergence in multivariate data"**
+PLoS Computational Biology, 16(12), e1008289.
+arXiv: 2004.08220 (q-bio.NC, nlin.AO)
+DOI: 10.1371/journal.pcbi.1008289
+143 citations.
+
+**Domain(s)**: Information theory, neuroscience, dynamical systems (complex systems)
+
+**Abstract machines instantiated**:
+
+- **Joint-vs-marginal excess (PRIMARY — inverted direction)**: The core of the paper, but with an inversion. Standard joint-vs-marginal asks "does the composite have structure absent from components?" Rosas et al. ask "does the coarse-grained macro have causal power absent from the fine-grained micro parts?" Formally: Ψ^(1)_{t,t'}(V) = I(V_t; V_{t'}) - Σ_j I(X^j_t; V_{t'}) > 0. This is whole-minus-sum: the emergent feature V's predictive power exceeds the sum of individual micro-parts' predictive power. Same mathematical structure (information in the joint exceeding sum of marginals) but applied at a different level of description — the "joint" is the COARSE-GRAINED macro feature, not the full system. Theorem 1 establishes that causal emergence exists iff Syn^(k)(X_t; X_{t'}) > 0, i.e., iff there is dynamical synergy among the parts. Total emergence capacity decomposes as Syn^(k) = D^(k) + G^(k): downward causation (macro affects micro) plus causal decoupling (macro affects only macro — "statistical ghosts").
+
+- **Parameterized homology**: Three distinct parameters. (1) The order k of the emergence analysis: at k=1, test whether features emerge beyond individual parts; at general k, test beyond k-plet information. Critical values of k mark where emergence switches from present to absent — directly analogous to a filtration parameter. Lemma 2 gives exact decomposition I(X;Y) = Red^(k) + Syn^(k) + ΣUn^(k) for every k. (2) Time lag t'-t: the ECoG results show Ψ as a function of timescale, with emergence detectable up to ~0.2s then decaying. (3) The microscopic partition itself: emergence depends on how you carve the system into parts, and different partitions yield different emergence capacities.
+
+- **Null hypothesis**: Multiple null constructions. (1) Formal: Syn^(k)(X_t; X_{t'}) = 0 means no emergent features exist. (2) Practical: Ψ^(k) ≤ 0 as sufficient condition (but not necessary — false negatives possible due to redundancy double-counting). (3) Perfect decoupling: D^(k) = 0 (no downward causation) as null for top-down effects. (4) Application-level: low-avoidance and high-avoidance regimes in boids model serve as no-emergence controls.
+
+- **Chain complex (inherited)**: Inherits from PID lattice (antichain collections ordered by refinement with Moebius inversion) and PhiID double lattice A × A (Mediano 2019). The k-order coarse-graining (grouping atoms by order into Syn^(k), Red^(k), Un^(k)) is a novel quotient of the PID lattice creating a graded family of simpler decompositions.
+
+**What is genuinely new (not reducible to shared abstraction)**:
+1. **The inversion of direction**: Not "joint vs. product of marginals" but "macro vs. sum of micro." Could be formalized as a new pattern: "upward excess" (standard MI) vs. "downward excess" (causal emergence). The Rosetta doesn't currently capture this directionality.
+2. **The D^(k) + G^(k) decomposition**: Total emergence = downward causation + causal decoupling. No analogue in TDA, QEC, or dynamical systems. You can't "decompose entanglement into downward causation plus decoupling."
+3. **Statistical ghosts**: Perfectly decoupled emergent features — patterns that predict their own future without any individual part influencing or being influenced by them. The parity example: parity of a binary system propagates in time, but no individual bit affects or is affected by it. Emergence without micro-level causal trace. No other Rosetta domain has this concept.
+4. **Reconciliation of strong/weak emergence**: Supervenient features CAN have irreducible causal power without violating physical laws — irreducibility is in the PID sense (information synergy), not metaphysical. A meta-result about levels of description.
+5. **Practical sufficiency criteria** (Eqs. 10a-c): Require only pairwise MI, scale linearly with system size. PID-agnostic data-efficient emergence tests.
+
+**Key results**:
+- **Game of Life**: 15×15 cells, particle collider initial conditions. Feature V_t = particle type (still lifes, oscillators, gliders, etc.). Ψ^(1) = 0.58 ± 0.02 > 0. Γ^(1) = 0.009 ± 0.0002, orders of magnitude smaller than I(V_t; V_{t'}) = 0.99 ± 0.02. Particle dynamics are causally decoupled from substrate — "their own collision rules."
+- **Reynolds flocking**: N=10 boids, avoidance parameter a2 swept. Ψ > 0 only in intermediate a2 range ("edge of chaos" where flocks form and disintegrate). At low a2 (ordered), individual boids predict center of mass (high redundancy). At high a2 (repulsive), no flocks. Emergence detected at the critical regime.
+- **Neural ECoG**: 64-channel macaque ECoG during reaching (Neurotycho). Feature V_t = PLS+SVM decoder for 3D wrist position. Ψ^(1) = 1.275 ± 0.002 > 0 at 8ms timescale. Γ^(1) = 0.049 ± 0.002. Motor representation has irreducible causal power decoupled from individual electrodes. Emergence holds up to ~0.2s timescale.
+
+**Connections the authors acknowledge**: Extensive comparison with Hoel et al. (2013) do-calculus emergence, Seth (2010) G-emergence, Chang et al. (2019) NTIC, IIT (Tononi). Deep engagement with philosophy (Bedau, Chalmers, Anderson). Cite Takens for future extension. **NO acknowledgment of TDA, QEC, or topological parallels** — despite k-order coarse-graining being structurally similar to a filtration.
+
+**Vocabulary mapping**:
+| Paper term | Rosetta term |
+|---|---|
+| Causal emergence (Ψ > 0) | Joint-vs-marginal excess (inverted: macro over micro) |
+| Downward causation (D^(k) > 0) | Directed joint excess (macro-to-micro flow) |
+| Causal decoupling (G^(k) > 0) | Self-sustaining joint excess ("statistical ghost") |
+| Emergence capacity Syn^(k) | Synergy (PID synergy, applied temporally) |
+| Supervenient feature V_t | Coarse-grained observable / macro feature |
+| Coarse-graining (V = F(X)) | Projection / quotient map (micro to macro) |
+| k-synergistic channel C_k | Channel carrying only k-th order synergy |
+| Statistical ghost | Perfectly decoupled emergent feature |
+| Emergence order k | Filtration parameter |
+| PhiID lattice | Double redundancy lattice (Mediano 2019) |
+| Whole-minus-sum (Ψ) | Interaction information / O-information family |
+| Granger causality | Directed information (time-lagged predictive power) |
+
+---
+
+## 2504.10140 --- Varley, Mediano, Patania & Bongard (2025)
+**"The topology of synergy: Linking topological and information-theoretic approaches to higher-order interactions in complex systems"**
+PLoS Computational Biology, DOI: 10.1371/journal.pcbi.1013649 | arXiv: 2504.10140
+Citations: 4 (Semantic Scholar, April 2025)
+
+**Domain(s)**: TDA, information theory, neuroscience
+
+**Abstract machines instantiated**:
+- **Chain complex**: The Vietoris-Rips filtration constructs a simplicial complex from the point cloud of multivariate time series data. Ripser computes persistent homology up to dimension 2 (H2 features = three-dimensional cavities/voids). The chain complex is implicit in the standard VR construction with Chebyshev distance. Crucially, the same distance metric (Chebyshev) is used for both the TDA (Rips filtration) and the information-theoretic analysis (KNN-based entropy estimation via JIDT), ensuring the two frameworks see the same geometry.
+- **Parameterized homology**: The Rips filtration scale epsilon is the parameter. As epsilon grows, simplices are added to the complex. The paper tracks two H2 summary statistics: (1) average persistence time of three-dimensional voids and (2) total number of three-dimensional voids. These are scalar summaries of the persistence diagram, parameterized by the filtration. The key finding is that these topological invariants correlate with information-theoretic measures: more negative normalized O-information (greater synergy dominance) is associated with more numerous and longer-lived H2 cavities.
+- **Joint-vs-marginal excess**: This is the paper's central conceptual object. The O-information O(X) = TC(X) - DTC(X) decomposes the balance between "collective constraints" (TC, information in marginals exceeding the joint) and "shared information" (DTC, information in the joint exceeding marginals). Synergy is defined precisely as joint-vs-marginal excess: information present in the joint state of X1 AND X2 AND X3 that cannot be learned from any proper subset. The normalized O-information O-bar = O/S provides a scale-free redundancy-synergy balance in [-1,1]. The paper finds this quantity tracks H2 topology: O-bar vs average H2 persistence gives rho = -0.65 (p < 10^-100) for synergy-dominated triads and rho = -0.55 (p < 10^-100) for redundancy-dominated triads.
+- **Null hypothesis**: Autocorrelation-preserving null model via circular time-shift: each time series is shifted to come from a different fMRI scan (recorded hours apart), destroying genuine higher-order dependencies while preserving first-order autocorrelation. A triad is significantly synergistic/redundant only if its O-information deviates by > 3 standard deviations from this null distribution. Result: 30,100 significantly redundant triads and 6,200 significantly synergistic triads out of 1,313,400 unique triads.
+- **Stability**: Implicit. The paper relies on the stability of persistent homology (persistence diagram robust to small perturbations of the point cloud) and the consistency of KNN-based information estimators (Kraskov estimator converges to true MI). The common use of Chebyshev distance for both analyses ensures metric consistency. The rotation-invariance experiments (PCA rotation) test a form of stability: intrinsic topological features (H2 cavities) are preserved under rotation, while contextual information-theoretic quantities are not.
+
+**What is genuinely new (not reducible to shared abstraction)**:
+- **The synergy-cavity correspondence**: Three-dimensional cavities (H2 persistent homology features) correspond to synergistic information, while knots correspond to redundancy. This is the first empirical demonstration that PH features at a specific homological dimension have a defined information-theoretic character. This is NOT just "both detect higher-order structure" -- the correspondence is specific: H2 cavities <-> synergy, 1D curves <-> redundancy. No prior work established this mapping.
+- **Intrinsic vs. contextual higher-order information**: The paper introduces a novel distinction. Intrinsic higher-order information persists under rotation (PCA); contextual information depends on embedding orientation. Spheres have purely intrinsic synergy (rotationally symmetric cavity). Rotated planes have purely contextual synergy (vanishes after PCA). Toroids have a mixture. This distinction has no prior formalization.
+- **PCA systematically destroys synergy**: The paper shows that PCA (and by extension manifold learning) preferentially preserves redundancy and is blind to synergy. The correlation between normalized O-information and variance explained by PC1 is rho = 0.91-0.95 (p < 10^-100). The most synergistic triads look random to PCA (variance explained by PC1 near 33%, the expected value for independent variables). This implies that the entire neural manifold learning literature is systematically missing synergistic structure.
+- **Gauss Theorema Egregium intuition**: The authors conjecture that the synergy-cavity link follows from the impossibility of projecting a sphere onto a plane without distortion. The information lost in projection is precisely synergistic. This is a conceptual bridge, not a proof, but it suggests a formal theorem may be derivable.
+- **No formal proof of the TDA-IT correspondence**: The authors explicitly state this is "experimental mathematics" -- correlational, not proven. A formal theorem linking H2 Betti numbers to O-information remains open.
+
+**Key quantitative results (fMRI, HCP data, 200-node Schaefer parcellation)**:
+- **Avg H2 persistence vs TC**: rho = -0.76 (redundant triads), -0.66 (synergistic triads), all p < 10^-100
+- **Avg H2 persistence vs DTC**: rho = -0.74 (redundant), -0.66 (synergistic), all p < 10^-100
+- **Avg H2 persistence vs normalized O-bar**: rho = -0.55 (redundant), -0.65 (synergistic), all p < 10^-100
+- **Number H2 voids vs normalized O-bar**: rho = -0.30 (redundant), -0.32 (synergistic), all p < 10^-100
+- **Normalized O-bar vs PC1 variance explained**: rho = 0.91 (redundant), 0.95 (synergistic), all p < 10^-100
+- After PCA rotation: correlations between O-bar and H2 features remain significant but weaker (rho = -0.12 to -0.17); direction does NOT reverse (unlike TC/DTC which reverse sign after PCA)
+- Toy examples: Sphere O = -1.384 nat (invariant under PCA); Hollow torus O = -1.554 nat (-> -1.096 after PCA); Plane O = -2.819 nat (-> 0 after PCA); Trefoil knot O = +3.246 nat (-> +1.893 after PCA)
+
+**Methods**:
+- **Filtration**: Vietoris-Rips, computed via Ripser
+- **Distance metric**: Chebyshev (L-infinity), used consistently for both TDA and KNN-based information estimation
+- **Information estimator**: KNN-based O-information estimator (Eq. 14, derived from Gomez-Herrero et al. 2015 entropy combination framework), single neighbor search to minimize bias. Implemented in JIDT (Lizier 2014). Uses k-nearest neighbor distances in joint space, range counts in marginal and (N-1)-dimensional marginal spaces.
+- **Cohomology dimension**: max_dim = 2 (computes H0, H1, H2)
+- **Sample size**: 1,100 frames per triad (subsampled from 4,400 concatenated fMRI frames)
+- **Data**: HCP resting-state fMRI, 100 unrelated subjects, 200-node Schaefer parcellation, 4 concatenated scans, TR = 720ms
+
+**Connections the authors acknowledge**: Cite Rosas et al. (2019) on O-information, Varley et al. (2023) on synergistic subsystems, Kraskov et al. (2004) on KNN estimators, Petri et al. (2014) on homological scaffolds in brain networks, Reimann et al. (2017) on cliques/cavities. Cite the link between synergy and causal colliders (Rosas et al. 2024), synergy and chaos in Boolean networks. **EXPLICITLY a cross-domain bridge between TDA and information theory**, applied to neuroscience data. The authors note the two fields developed "largely in parallel with limited interdisciplinary cross-talk."
+
+**Vocabulary mapping**:
+| Paper term | Rosetta term |
+|---|---|
+| O-information O(X) | Joint-vs-marginal excess (signed: synergy vs redundancy balance) |
+| Normalized O-information O-bar | Scale-free joint-vs-marginal balance |
+| Total correlation TC | Collective constraint (deviation from independence) |
+| Dual total correlation DTC | Shared information (multipartite dependency) |
+| S-information S = TC + DTC | Total higher-order information (normalizer) |
+| Three-dimensional cavity (H2 void) | Persistent homology class (Betti-2 feature) |
+| Average persistence | Parameterized homology summary (mean lifetime) |
+| Number of voids | Betti number count (H2) |
+| Rips filtration | Parameterization (scale parameter epsilon) |
+| Chebyshev distance | L-infinity metric (used for both TDA and KNN estimation) |
+| KNN-based estimator | Non-parametric joint-vs-marginal estimator (Kraskov/Kozachenko-Leonenko) |
+| Intrinsic higher-order information | Rotation-invariant joint-vs-marginal excess |
+| Contextual higher-order information | Embedding-dependent joint-vs-marginal excess |
+| Circular shift null | Autocorrelation-preserving null hypothesis |
+| Synergy-dominated (O < 0) | Cavity-bearing topology (H2 features present) |
+| Redundancy-dominated (O > 0) | Low-dimensional / knot-like topology (H2 features absent) |
+| PCA rotation | Dimensionality reduction (destroys synergy, preserves redundancy) |
+
+**See also**: `by-domain/information_theory.md`, `by-domain/neuroscience.md`, `by-structure/composite_systems.md`, `atlas/JOINT_VS_MARGINAL.md`
+
+---
+
+## 2307.07492 --- Hamilton & Leditzky (2023/2024)
+**"Probing Multipartite Entanglement Through Persistent Homology"**
+Communications in Mathematical Physics, vol. 405, article 125 (2024).
+arXiv: 2307.07492 | DOI: 10.1007/s00220-024-04953-4
+8 citations.
+
+**Domain(s)**: QEC (quantum entanglement), TDA
+
+**Abstract machines instantiated**:
+
+- **Joint-vs-marginal excess**: The paper uses persistent homology to probe multipartite entanglement — the canonical joint-vs-marginal excess in quantum mechanics. The q-deformed total correlation C_q(J) = Σ_{v∈J} S_q(v) - S_q(J) measures how much the joint entropy of subsystem J falls below the sum of marginal entropies. This is exactly the joint-vs-marginal gap: entanglement means the composite system has correlations absent from individual parts. The main theorem: the reduced integrated Euler characteristic of the persistence complex equals the q-deformed interaction information, which for q=2 and n qubits (n even) equals the **n-tangle** τ_n — a standard entanglement monotone. Barcodes provide FINER discrimination than the n-tangle: two 6-qubit graph states with identical τ_n = 1 have visibly different barcodes, detecting different SLOCC orbits. Two states with τ_n = 0 also distinguished by barcodes.
+
+- **Chain complex**: Treats the n parties as vertices of the full simplex Δ = 2^{A_1,...,A_n}. The sublevel set filtration G(ε) = {J ∈ Δ : C_q(J) ≤ ε} adds simplices as the total correlation threshold grows. Persistent homology is computed on this filtered simplicial complex. The algebraic structure is the standard chain complex of the simplex, with the filtration driven by the quantum correlation measure.
+
+- **Parameterized homology**: The filtration parameter ε (total correlation threshold) parameterizes a family of simplicial complexes. Birth-death pairs in the persistence barcode track when multipartite correlations appear and when they are filled in by higher-order correlations. The barcode encodes the full multiscale entanglement structure.
+
+- **Stability**: Implicit via standard PH stability. The paper also connects to entropy inequalities: relative persistent homology with respect to a subcomplex Δ_{A,B} yields the negative conditional mutual information -I(A:B|R) ≤ 0, with non-positivity following from strong subadditivity (Lieb-Ruskai 1973). This connects topological invariants to fundamental quantum information constraints.
+
+- **Matching**: Barcode comparison between different quantum states is an implicit matching problem (comparing persistence diagrams).
+
+- **Null hypothesis**: Separable (product) states serve as the baseline — for product states, all C_q(J) decompose into sums of bipartite correlations and higher-order entanglement vanishes.
+
+**What is genuinely new (not reducible to shared abstraction)**:
+1. The filtration is driven by a MULTIPARTITE correlation measure (total correlation over all subsets), not a pairwise distance. This captures k-body correlations directly in k-simplices — a departure from standard Vietoris-Rips (pairwise distance → simplicial complex).
+2. The IEC = n-tangle theorem connects a topological summary (integrated Euler characteristic) to a standard entanglement measure (n-tangle), answering an open question of Eltschka & Siewert (2018).
+3. Barcodes are strictly finer than scalar entanglement measures: states with identical n-tangle are distinguished. This suggests persistence diagrams as a new tool for SLOCC classification.
+4. Relative PH connects to strong subadditivity — entropy inequalities become topological constraints.
+5. The paper proposes generalization to arbitrary resource theories via generalized divergences satisfying the data processing inequality.
+
+**Connections the authors acknowledge**: Cite prior work using bipartite measures for PH (Di Pierro, Mengoni — inverse MI as pairwise distance). Explicitly contrast their multipartite approach. Connection to entanglement theory (SLOCC, entanglement monotones, n-tangle). No awareness of PID, dynamical systems, or neuroscience parallels. The bridge to strong subadditivity via relative PH is the most surprising cross-domain connection.
+
+**Vocabulary mapping**:
+| Paper term | Rosetta term |
+|---|---|
+| q-deformed total correlation C_q(J) | Joint-vs-marginal excess (entropic) |
+| Sublevel set filtration G(ε) | Parameterized homology (correlation threshold) |
+| Integrated Euler characteristic X̃_q(∞) | Topological summary of persistence |
+| n-tangle τ_n | Scalar entanglement measure = IEC at q=2 |
+| Persistence barcode | Birth-death pairs across filtration |
+| SLOCC equivalence | Equivalence under local operations |
+| Relative PH | Persistent homology of pair (space, subspace) |
+| Conditional mutual information I(A:B|R) | Tripartite correlation conditioned on reference |
+| Strong subadditivity | Fundamental entropy inequality → topological constraint |
+| Product state | Null hypothesis (no entanglement) |
+| Graph state | Quantum state from graph structure |
+
+**See also**: `by-domain/qec.md`, `by-domain/tda.md`, `by-structure/composite_systems.md`, `by-structure/boundary_operators.md`, `atlas/JOINT_VS_MARGINAL.md`
+
+---
+
+## 2603.03237 --- Natarajan, Chaplin, Bull, Mulholland-Illingworth, Leedham, Byrne, Jimenez & Harrington (2026)
+**"Topology of Multi-species Localization"**
+arXiv: 2603.03237 [math.AT]. March 2026.
+0 citations (preprint, 1 month old).
+
+**Domain(s)**: TDA, computational biology
+
+**Abstract machines instantiated**:
+
+- **Joint-vs-marginal excess (PRIMARY)**: The M2S2 (Multiscale Multi-species Spatial Signatures) framework decomposes the persistent homology of a multi-species point cloud into four categories via the k-chromatic gluing map q_{k,*}: ⊔_{|A|=k} F_r(X_A) → F_r(X). The **cokernel** of this map identifies features that are NOT k-chromatic — they appear ONLY when more than k species are considered together. This is the pure topological joint-vs-marginal excess: structure visible in the joint (multi-species) space that is absent from all k-species marginals. The **kernel** captures the reverse: features destroyed by composition (present in some k-tuple but filled in or merged when other species are added). The **image** captures features formed by some species that persist in the joint. This four-way decomposition (image / kernel / cokernel / domain) is richer than a binary excess/no-excess test.
+
+- **Chain complex**: Built on chromatic Delaunay-Cech filtrations. The k-chromatic gluing map induces maps between chain complexes at each filtration level, and functoriality of homology gives maps of persistence modules. Kernel, image, and cokernel persistence computed via Cohen-Steiner et al. (2009) algorithm (phimaker package). Z/2 coefficients throughout.
+
+- **Parameterized homology**: The filtration parameter r (spatial scale) and the chromatic parameter k (number of species) jointly parameterize a family of persistence diagrams. At each k, the four persistence diagrams (image, kernel, cokernel, domain) capture different aspects of multi-species spatial structure across scales.
+
+- **Null hypothesis**: Single-species persistence diagrams (domain diagrams) serve as the baseline. The cokernel measures what the joint adds beyond all k-species subsets. In applications: the ABM model provides parameter-controlled ground truth for validating that the topological signatures recover known biological regimes.
+
+- **Stability**: Uses chromatic Delaunay-Cech filtration (homotopy-equivalent to Cech) with discrete Morse theory for efficiency. Standard PH stability applies to each persistence module.
+
+**What is genuinely new (not reducible to shared abstraction)**:
+1. The four-way decomposition (image / kernel / cokernel / domain) goes beyond binary joint-vs-marginal. Kernel features (destroyed by composition) have no analogue in PID — you can't have "information present in component A that vanishes in the joint."
+2. The chromatic Delaunay-Cech filtration solves a fundamental technical problem: standard alpha filtrations do NOT respect inclusions of point clouds (adding points can remove simplices), breaking functoriality. This filtration is both homotopy-correct and inclusion-respecting.
+3. Application to spatial biology: the framework recovers immunoediting regimes (elimination / equilibrium / escape) from cell-type point clouds, and identifies biologically meaningful multi-species interactions (periostin-macrophage, cytotoxic T cell-macrophage-neutrophil triples) in colorectal cancer tissue.
+4. Three-way interactions detected by cokernel persistence that are invisible to all pairwise analyses — a concrete demonstration that TDA can detect genuinely higher-order spatial structure.
+
+**Connections the authors acknowledge**: Cite Stolz (2024, Dowker persistence for pairs), Wagner (2024, mixup barcodes), Montesano (2024/2026, chromatic TDA). Contrast with pairwise-only methods. Cite Cohen-Steiner et al. for kernel/image/cokernel persistence theory. No connections to QEC, information theory, or dynamical systems — despite the kernel/cokernel decomposition being structurally analogous to PID's redundancy/synergy.
+
+**Vocabulary mapping**:
+| Paper term | Rosetta term |
+|---|---|
+| Cokernel persistence | Joint-vs-marginal excess (topological features only in joint) |
+| Kernel persistence | Features destroyed by composition (no PID analogue) |
+| Image persistence | Features formed by subset, persisting in joint |
+| k-chromatic gluing map | Inclusion from k-species subsets to full system |
+| Chromatic Delaunay-Cech filtration | Functorial filtration (scale parameter) |
+| M2S2 signatures | Feature vector from persistence diagrams |
+| Species labels | Component identities in composite system |
+| Elimination / equilibrium / escape | Biological regimes recovered by topology |
+| Persistent statistics | 34-dimensional vectorization of persistence diagram |
+| phimaker | Software for kernel/image/cokernel PH |
+
+**See also**: `by-domain/tda.md`, `by-structure/composite_systems.md`, `by-structure/boundary_operators.md`, `atlas/JOINT_VS_MARGINAL.md`

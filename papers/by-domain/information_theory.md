@@ -1146,3 +1146,25 @@ Continuous-time TE formulated via Radon-Nikodym derivatives between path measure
 **Machines**: joint-vs-marginal, null hypothesis, parameterized homology.
 Full annotation: `inbox.md` (Wave 6).
 **See also**: `by-structure/composite_systems.md`, `by-structure/phase_transitions.md`, `by-domain/neuroscience.md`
+
+---
+
+## Wave 7 — Causal Emergence (2026-04-07)
+
+### Rosas, Mediano, Jensen, Seth, Barrett, Carhart-Harris, Bor (2020) — Causal Emergence via PID
+**"Reconciling emergences: An information-theoretic approach to identify causal emergence in multivariate data"**
+PLoS Computational Biology, 16(12), e1008289. arXiv: 2004.08220. 143 citations.
+**Domain(s)**: Information theory, neuroscience, dynamical systems (complex systems)
+Inverted joint-vs-marginal: macro feature V has causal power exceeding sum of micro parts. Ψ^(1) = I(V_t; V_{t'}) - Σ_j I(X^j_t; V_{t'}) > 0. Theorem 1: causal emergence iff dynamical synergy Syn^(k) > 0. Decomposition: Syn^(k) = D^(k) (downward causation) + G^(k) (causal decoupling / "statistical ghosts"). Three parameters: order k, time lag, partition choice. Practical sufficiency criteria using only pairwise MI. Applied to Game of Life (Ψ=0.58, particles decoupled from cells), Reynolds flocking (emergence at edge of chaos), macaque ECoG (Ψ=1.275, motor decoding emergent up to ~0.2s). Extends Mediano PhiID; no TDA/QEC awareness.
+**Machines**: joint-vs-marginal (inverted), parameterized homology, null hypothesis, chain complex (inherited from PID/PhiID).
+Full annotation: `inbox.md` (Wave 7).
+**See also**: `by-structure/composite_systems.md`, `by-domain/neuroscience.md`, `atlas/JOINT_VS_MARGINAL.md`
+
+### Varley, Mediano, Patania & Bongard (2025) — The Topology of Synergy
+**"The topology of synergy: Linking topological and information-theoretic approaches to higher-order interactions in complex systems"**
+PLoS Computational Biology, DOI: 10.1371/journal.pcbi.1013649. arXiv: 2504.10140. 4 citations.
+**Domain(s)**: TDA, information theory, neuroscience
+Head-to-head comparison of O-information (TC, DTC, O, S) with H2 persistent homology (Rips/Chebyshev/Ripser) on toy manifolds and fMRI. H2 cavities <-> synergy (O < 0), knots <-> redundancy (O > 0). Normalized O-bar vs avg H2 persistence: rho = -0.55 to -0.65 in fMRI. PCA destroys synergy (rho(O-bar, PC1 variance) = 0.91-0.95) while preserving redundancy. KNN-based O-information estimator with single neighbor search (Eq. 14). Intrinsic vs. contextual higher-order information distinction. Circular-shift null model. EXPLICIT cross-domain bridge: TDA + information theory.
+**Machines**: chain complex, parameterized homology, joint-vs-marginal, null hypothesis, stability.
+Full annotation: `inbox.md` (Wave 7).
+**See also**: `cross_domain_bridges.md`, `by-domain/tda.md`, `by-domain/neuroscience.md`, `by-structure/composite_systems.md`, `by-structure/filtrations.md`

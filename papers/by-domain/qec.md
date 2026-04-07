@@ -174,3 +174,9 @@ Comprehensive review placing quantum LDPC codes in their homological context. CS
 **Machines**: chain complex (PRIMARY — CSS = chain complex), parameterized homology (code families, systole), stability (Gottesman constant overhead, individual thresholds), null hypothesis (surface code as baseline).
 Full annotation: `papers/inbox.md`.
 **See also**: `by-structure/boundary_operators.md`, `by-structure/phase_transitions.md`
+
+---
+
+## Cross-listed from TDA (Wave 7)
+
+- **Hamilton & Leditzky (2023/2024)** — "Probing Multipartite Entanglement Through Persistent Homology." Commun. Math. Phys. 405, article 125. arXiv: 2307.07492. 8 citations. PH applied to multipartite entanglement. Sublevel set filtration by q-deformed total correlation C_q(J) = Σ S_q(v) - S_q(J). Integrated Euler characteristic = n-tangle τ_n at q=2 (resolves Eltschka-Siewert conjecture). Barcodes distinguish SLOCC orbits with identical τ_n (strictly finer). Relative PH gives -I(A:B|R) ≤ 0 by strong subadditivity. Proposes generalization to arbitrary resource theories. Full annotation: `inbox.md` (Wave 7). Machines: joint-vs-marginal, chain complex, parameterized homology, stability, matching, null hypothesis. **See also**: `by-domain/tda.md`, `by-structure/composite_systems.md`.

@@ -528,3 +528,34 @@ This is the most DIRECT TDA-QEC bridge in the Rosetta: a quantum algorithm that 
 **Machine unique to the TDA side**: Matching (persistence matching of birth-death pairs not addressed).
 
 Full annotation: `inbox.md`.
+
+---
+
+## Varley, Mediano, Patania & Bongard (2025)
+**"The topology of synergy: Linking topological and information-theoretic approaches to higher-order interactions in complex systems"**
+PLoS Computational Biology, DOI: 10.1371/journal.pcbi.1013649 | arXiv: 2504.10140 | 4 citations
+
+**Domains bridged**: TDA + Information Theory + Neuroscience
+
+This is an EXPLICIT, acknowledged cross-domain bridge. The authors set out to compare TDA (persistent homology) and information theory (O-information family) head-to-head, noting the two fields developed "largely in parallel with limited interdisciplinary cross-talk."
+
+**What the bridge reveals**:
+- **H2 cavities ARE synergy, topologically**: Three-dimensional voids in the Vietoris-Rips filtration correspond to synergistic information (O < 0). Hollow spheres and toroids are synergy-dominated; filled versions are not. Knots (locally 1D curves requiring 3D embedding) are redundancy-dominated. This is the first result connecting a specific homological dimension to a specific information-theoretic character.
+- **Common metric makes the bridge tight**: Both analyses use Chebyshev (L-infinity) distance -- the KNN information estimator and the Rips filtration see identical geometry. This is not a loose analogy; the same distance matrix feeds both machines.
+- **PCA destroys the bridge's content**: Dimensionality reduction (PCA) preferentially preserves redundancy and is blind to synergy. The most synergistic fMRI triads have PC1 variance near 33% (indistinguishable from independent data). This means neural manifold learning is systematically missing the topological features that carry synergistic information -- a finding with major implications for computational neuroscience.
+- **Intrinsic vs. contextual**: The paper introduces a distinction between rotation-invariant "intrinsic" higher-order information (tied to topology: cavities, knots) and rotation-dependent "contextual" information (tied to embedding orientation). Intrinsic synergy persists after PCA; contextual synergy vanishes. This distinction has no prior formalization in either field.
+- **No formal proof yet**: The correspondence is empirical (correlational). The authors explicitly call this "experimental mathematics." A theorem linking H2 Betti numbers to O-information remains open -- this is a gap the Rosetta should track.
+
+**Machines in common across the bridge**:
+- Chain complex (VR simplicial complex feeds both PH and the geometric basis for KNN estimation)
+- Parameterized homology (Rips filtration scale as parameter; H2 features tracked)
+- Joint-vs-marginal excess (O-information = TC - DTC; synergy = information in joint absent from all proper subsets)
+- Null hypothesis (circular-shift null preserving autocorrelation; both PH features and information measures tested against it)
+- Stability (persistence stability for TDA; KNN estimator consistency for information theory; Chebyshev metric consistency across both)
+
+**Machine unique to the IT side**: The O-information decomposition (TC, DTC, S-information) and the PID-adjacent interpretation of synergy vs. redundancy -- TDA has no intrinsic way to distinguish synergy from redundancy.
+**Machine unique to the TDA side**: The full persistence diagram (birth-death pairs, barcodes) -- the paper only uses scalar summaries (avg persistence, void count), but the full diagram is richer than any single information measure.
+
+**Connection to Rosas (2020)**: Same family of measures. Rosas uses O-information/PhiID to define causal emergence (Psi > 0 iff synergy at the macro level). Varley now shows that the synergy Rosas cares about has a topological interpretation: it corresponds to H2 cavities. This chain -- causal emergence via PID synergy (Rosas) -> synergy as H2 topology (Varley) -- is a two-hop bridge from information-theoretic emergence to persistent homology.
+
+Full annotation: `inbox.md` (Wave 7).

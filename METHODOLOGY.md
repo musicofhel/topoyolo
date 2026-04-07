@@ -41,3 +41,7 @@ This is not a literature review. We do not summarize results, evaluate quality, 
 Each annotated paper is referenced in both a `by-domain/` file and a `by-structure/` file. The domain file groups papers by disciplinary home. The structure file groups papers by which machine they use, regardless of domain. Reading down a domain file shows one community's trajectory. Reading down a structure file shows the same idea recurring across communities that don't cite each other.
 
 The cross-references are the point. When `by-structure/filtrations.md` lists a TDA persistence paper next to a QEC threshold paper next to a bifurcation theory paper, the repetition becomes visible.
+
+### Why Papers Appear in Multiple Files
+
+A paper like Kitaev (1997) appears in 6–7 files: `by-domain/qec.md`, `by-structure/boundary_operators.md`, `atlas/CHAIN_COMPLEX.md`, `glossary/SYNONYMS.md`, etc. This duplication is intentional. Each file provides a different lens on the same paper: the domain file shows its disciplinary context, the structure file shows which abstract machine it instantiates, the atlas file synthesizes how it fits the cross-domain pattern. The full annotation lives in one place (`inbox.md`); all other appearances are cross-reference entries pointing back to it. If a paper appears in only one file, it hasn't been fully integrated into the Rosetta.
