@@ -1168,3 +1168,17 @@ Head-to-head comparison of O-information (TC, DTC, O, S) with H2 persistent homo
 **Machines**: chain complex, parameterized homology, joint-vs-marginal, null hypothesis, stability.
 Full annotation: `inbox.md` (Wave 7).
 **See also**: `cross_domain_bridges.md`, `by-domain/tda.md`, `by-domain/neuroscience.md`, `by-structure/composite_systems.md`, `by-structure/filtrations.md`
+
+---
+
+## Wave 8 — Matching in Information Theory (2026-04-07)
+
+### Blahut (1972) + Arimoto (1972) — Channel Capacity and Rate-Distortion via Alternating Minimization
+**Blahut: "Computation of channel capacity and rate-distortion functions" (IEEE Trans. IT, 18(4):460–473)**
+**Arimoto: "An algorithm for computing the capacity of arbitrary discrete memoryless channels" (IEEE Trans. IT, 18(1):14–20)**
+Combined citations: 3000+.
+**Domain(s)**: Information theory (foundational)
+Optimal assignment between source and channel/reproduction alphabets. Channel capacity: find P(x) maximizing I(X;Y) = optimal matching of source symbols to channel inputs. Rate-distortion R(D): find test channel P(y|x) minimizing I(X;Y) at distortion ≤ D = minimum-cost soft assignment. Alternating minimization predates EM (1977): fix one marginal, optimize the other. Each step is a matching update. R(D) curve parameterized by distortion D; slope = -s (Lagrange multiplier). Converges to global optimum by convexity.
+**Machines**: matching, parameterized homology, null hypothesis (weak).
+Full annotation: `inbox.md` (Wave 8).
+**See also**: `by-structure/optimal_transport.md`, `atlas/MATCHING.md`

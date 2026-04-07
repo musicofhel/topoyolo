@@ -112,3 +112,15 @@ The cost function is always a metric or semi-metric, and the matching always res
 **Janati et al. (2019) — Minimum Wasserstein Estimates**: Unbalanced OT regularizer for multi-subject MEG/EEG source imaging. Wasserstein barycenter as group-level source estimate. Cost = cortical geodesic distance. Generalized Sinkhorn solver. Full annotation: `inbox.md` (Wave 5).
 
 **Lee, Dabagia, Dyer, Rozell (2019) — Hierarchical OT for Neural Decoding**: Two-level Wasserstein alignment (cluster + point) for cross-session neural population decoding in macaque motor cortex. ADMM + Sinkhorn. NeurIPS 2019, 78 citations. Full annotation: `inbox.md` (Wave 5).
+
+---
+
+### Wave 8: TDA Matching Foundations (2026-04-07)
+
+**Bubenik & Elchesen (2019) — Universality of PD Distances**: Proves bottleneck and Wasserstein distances on persistence diagrams are universal constructions — THE canonical optimal matching metrics. 1-Wasserstein satisfies Kantorovich-Rubinstein duality. Any distance on PDs factors through these. Extends to multiparameter persistence. arXiv: 1912.02563, 15 citations. Full annotation: `inbox.md` (Wave 8).
+
+**Chen & Wang (2021) — Near-Linear Wasserstein on PDs**: Approximation algorithms for 1-Wasserstein distance between PDs via randomly shifted quadtrees. Near-linear time O(n log n / ε^d). Key technical challenge: diagonal as infinite reservoir. 100-1000x speedup over Hungarian/auction. arXiv: 2104.07710, 9 citations. Full annotation: `inbox.md` (Wave 8).
+
+### Wave 8: Information Theory Matching Foundations (2026-04-07)
+
+**Blahut (1972) + Arimoto (1972) — Channel Capacity and Rate-Distortion**: THE foundational IT matching algorithms. Channel capacity = optimal matching of source to channel inputs. Rate-distortion R(D) = minimum-cost soft assignment between source and reproduction alphabets. Alternating minimization: fix one marginal, optimize the other (predates EM by 5 years). R(D) curve parameterized by D with slope -s. 3000+ combined citations. Full annotation: `inbox.md` (Wave 8).
