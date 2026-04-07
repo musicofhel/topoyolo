@@ -1,6 +1,6 @@
 # Inbox
 
-Papers to be sorted into the dual index (by-domain + by-structure).
+Full-depth annotations of papers in the topo-rosetta corpus. Each paper is cross-referenced in the dual index (by-domain + by-structure) and relevant atlas files.
 
 ---
 
@@ -970,8 +970,9 @@ arXiv: 2508.19048
 
 ## Still to find
 
-- Ay, Polani — information decomposition (PID). Synergy/redundancy as joint-vs-marginal. (May overlap with Kolchinsky 2024 already annotated.)
-- Riehl — "Category Theory in Context." The abstract machines here are functors. Worth formalizing? (Low priority — textbook, not paper.)
+- ~~Ay, Polani — information decomposition (PID).~~ **Resolved**: The reference was never specific (could be Ay 2015 "Information Geometry" or Polani 2009 "Information Flows in Causal Networks"). PID coverage is now thorough with 8 core PID papers + Kolchinsky 2024 (PID=IB) + Barrett 2015 (Gaussian PID) + Mediano 2019 (PhiID). Any Ay/Polani contribution is subsumed.
+- ~~Riehl — "Category Theory in Context."~~ **Skipped**: Textbook, not paper. The abstract machines (functors, natural transformations) are the meta-level formalism that could describe the Rosetta's cross-domain correspondences, but formalizing this would require a dedicated categorical framework beyond the scope of paper annotation.
+- **Rosas, Mediano, Jensen, Seth, Barrett, Carhart-Harris, Bor (2020)** — "Reconciling emergences: An information-theoretic approach to identify causal emergence in multivariate data." PLoS Comp Bio, 143 citations. **Identified but not yet annotated.** Introduces causal emergence (Ψ) and causal decoupling — genuinely new for the Rosetta: inverted joint-vs-marginal where coarse-graining INCREASES causal power (macro > micro). Extends Mediano PhiID programme. Machines: joint-vs-marginal (inverted), parameterized homology (coarse-graining level), null hypothesis (non-emergent baseline). Applied to Game of Life, flocking, neural ECoG.
 
 ---
 

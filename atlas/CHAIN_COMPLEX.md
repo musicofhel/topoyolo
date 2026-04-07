@@ -35,11 +35,11 @@ Two distinct instantiations discovered:
 
 2. **Posets** (Sugiyama et al., 2016): Information decomposition on partially ordered sets. Möbius function as boundary operator. Principal ideals and filters as ∂ and δ supports. The event hierarchy (1-way, 2-way, ..., n-way interactions) forms a graded structure where the Möbius inversion formula plays the role of ∂² = 0.
 
-5. **Information cohomology** (Baudot & Bennequin, 2015): Information structures as simplicial complexes where k-simplices = k-tuples of random variables. Coboundary δ maps (k-1)-information functions to k-information functions, δ²=0. Shannon entropy H is a 1-COCYCLE: the chain rule H(X,Y) = H(X) + H(Y|X) IS the cocycle condition δH=0. Exact identification, not analogy. Bradley (2021, arXiv: 2107.09581) strengthens this: H is the UNIQUE derivation (up to scalar) of the operad of topological simplices, making the cocycle characterization canonical.
-
-3. **Polynomial chaos** (Oladyshkin et al., 2023): Orthogonal polynomial expansion of neural signals graded by interaction order. kth-order terms capture k-way interactions. The orthogonality condition parallels the Hodge decomposition — three independent mathematical traditions (Hodge, KL-Pythagoras on posets, polynomial chaos) have developed isomorphic orthogonal decomposition machinery with zero cross-citation.
+3. **Information cohomology** (Baudot & Bennequin, 2015): Information structures as simplicial complexes where k-simplices = k-tuples of random variables. Coboundary δ maps (k-1)-information functions to k-information functions, δ²=0. Shannon entropy H is a 1-COCYCLE: the chain rule H(X,Y) = H(X) + H(Y|X) IS the cocycle condition δH=0. Exact identification, not analogy. Bradley (2021, arXiv: 2107.09581) strengthens this: H is the UNIQUE derivation (up to scalar) of the operad of topological simplices, making the cocycle characterization canonical.
 
 4. **PID lattice** (Williams-Beer, 2010; multiple PID papers): The redundancy lattice of source combinations, with Möbius inversion decomposing MI into atoms. The lattice structure + Möbius function creates a near-chain complex. See PID core annotations in `by-domain/information_theory.md`.
+
+5. **Polynomial chaos** (Oladyshkin et al., 2023): Orthogonal polynomial expansion of neural signals graded by interaction order. kth-order terms capture k-way interactions. The orthogonality condition parallels the Hodge decomposition — three independent mathematical traditions (Hodge, KL-Pythagoras on posets, polynomial chaos) have developed isomorphic orthogonal decomposition machinery with zero cross-citation.
 
 6. **PhiID product lattice** (Mediano et al., 2019): PhiID decomposes integrated information into atoms on a product lattice of source/target pairs, using Möbius inversion to isolate each atom. The product lattice has graded structure analogous to a chain complex, though the ∂² = 0 condition holds only weakly through the Möbius inversion identity.
 

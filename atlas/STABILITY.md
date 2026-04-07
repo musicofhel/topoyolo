@@ -31,20 +31,18 @@ Below the error threshold, logical error probability is exponentially suppressed
 1. **MINE consistency** (Belghazi et al., 2018): MINE estimate → true MI as sample size → ∞. Lipschitz bound on estimator w.r.t. network parameters.
 2. **MI-based regularization** (Jónsson et al., 2020): MI penalty stabilizes test accuracy, reducing variance across training epochs.
 3. **Anti-stability** (Chwilka & Karbowski, 2024): MI divergence at finite variance — the invariant can blow up. This is a stability *failure* that marks a phase boundary.
+4. **Redundancy stability** (Barrett, 2015): PID redundancy for Gaussian sources is independent of the correlation between sources — a stability result showing that the redundancy atom is robust to perturbations of the source dependence structure.
 
-7. **Redundancy stability** (Barrett, 2015): PID redundancy for Gaussian sources is independent of the correlation between sources — a stability result showing that the redundancy atom is robust to perturbations of the source dependence structure.
+### Machine Learning — Lipschitz and Generalization Bounds
+
+5. **IB generalization bound** (Kawaguchi et al., 2023): Δ ≤ sqrt(I(X;Z)/n). Same form as PH stability — controlling information content bounds generalization error.
+6. **HSIC Lipschitz bounds** (Wang et al., 2021): Layer-wise HSIC controls per-layer Lipschitz constant. Proves HSIC bottleneck implies adversarial robustness.
+7. **SNGP distance awareness** (Liu et al., 2020): Spectral normalization enforces bi-Lipschitz property. Identical mathematical structure to PH stability: ||h(x)-h(x')|| ≤ L||x-x'||.
 
 ### Dynamical Systems — Structural Stability
 A dynamical system is structurally stable if small perturbations of the vector field produce topologically conjugate flows. Generic systems (Morse-Smale) are structurally stable. Bifurcation points are where structural stability fails — the analogue of error thresholds.
 
 **Papers**: Takens (1981) — C² genericity of the delay embedding: for a generic (residual set) pair of observable and delay, the embedding is a diffeomorphism on the attractor. This is stability in the topological sense — the property holds for "almost all" choices, and small perturbations of the observable don't break it. Sauer, Yorke & Casdagli (1991) — prevalence, strictly stronger than Takens' genericity: the set of observables yielding correct embeddings has full measure (not just residual). Prevalence is the measure-theoretic analogue of genericity, closing the gap between "topologically generic" and "probability-one." Theiler (1992) — preserved quantities (integrals of motion, Lyapunov exponents, correlation dimension) as stability invariants: these quantities are robust to measurement noise and serve as the dynamical systems analogue of persistent homology features. Tsuda (2001) — ghost stability (6th flavor): the system visits ruins of destroyed attractors, spending long times near each before transitioning. The attractor is unstable but its ghost persists as a quasi-stable structure, a weaker form of stability than structural but stronger than none.
-
-4. **IB generalization bound** (Kawaguchi et al., 2023): Δ ≤ sqrt(I(X;Z)/n). Same form as PH stability — controlling information content bounds generalization error.
-5. **HSIC Lipschitz bounds** (Wang et al., 2021): Layer-wise HSIC controls per-layer Lipschitz constant. Proves HSIC bottleneck implies adversarial robustness.
-6. **SNGP distance awareness** (Liu et al., 2020): Spectral normalization enforces bi-Lipschitz property. Identical mathematical structure to PH stability: ||h(x)-h(x')|| ≤ L||x-x'||.
-
-### Dynamical Systems — Structural Stability (extended)
-A dynamical system is structurally stable if small perturbations of the vector field produce topologically conjugate flows. Generic systems (Morse-Smale) are structurally stable. Bifurcation points are where structural stability fails — the analogue of error thresholds.
 
 **Banach contraction** (Gallicchio & Micheli, 2020): spectral radius ρ(W) < 1 guarantees fixed-point convergence for reservoir GNNs. Directly analogous to QEC correction rate exceeding noise rate.
 

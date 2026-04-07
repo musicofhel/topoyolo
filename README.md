@@ -33,7 +33,7 @@ topo-rosetta/
 │   │   ├── optimal_transport.md
 │   │   ├── phase_transitions.md
 │   │   └── composite_systems.md
-│   └── inbox.md            # Unsorted papers to be placed
+│   └── inbox.md            # Full-depth annotations (primary store)
 │
 ├── glossary/
 │   ├── SYNONYMS.md         # The core translation table
