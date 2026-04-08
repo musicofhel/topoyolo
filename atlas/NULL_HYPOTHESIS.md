@@ -63,6 +63,8 @@ Shuffle trials to preserve firing rates but destroy inter-trial coupling. Permut
 
 **Symmetric state as null** (Entropic symmetry breaking): Symmetry = the null. Breaking = departure. Entropy production and information transfer quantify the departure magnitude.
 
+**Random-diffusion null** (Wang grokking, 2026): Synthetic i.i.d. Gaussian gradients (g_i ~ N(0, 0.5²)) yield D_synth = 0.99 ± 0.01 across 5 network topologies (CV < 0.3%). This is the null for gradient geometry: if gradients have no learned structure, effective dimensionality equals 1 regardless of architecture. Real training deviates in both directions — sub-diffusive (D ≈ 0.90) before grokking, super-diffusive (D ≈ 1.20) after. The D(t) crossing through D = 1 at the grokking epoch rejects the null. Topology invariance of the null is the key finding: D reflects gradient field geometry, not network architecture.
+
 ## Key Divergences
 
 - **What is preserved**: Each domain preserves different properties in the null. TDA preserves power spectrum; information theory preserves marginals; QEC preserves state space dimension; dynamics preserves marginal statistics. The null model defines what counts as "structure" vs. "noise" in each domain.

@@ -68,7 +68,11 @@ Mézard & Mora (2008): BP convergence regimes. In the easy-SAT regime (α < α_d
 
 **Ergodic convergence** (Fuchsian groups): Time averages converge to space averages a.e. Measurement robust to starting point.
 
-The stability taxonomy now has **6 flavors**: (1) Lipschitz (TDA, Adams persistence images), (2) exponential suppression (QEC threshold, Aharonov-Ben-Or concatenation), (3) topological protection (FQHE gap), (4) anti-stability (spin-boson sqrt singularity), (5) distribution-free (conformal prediction), (6) ghost stability (Tsuda chaotic itinerancy — quasi-stable visits to destroyed attractor ruins).
+**Spectral Wasserstein metric equivalence** (Peyré 2026): √c_γ · W2 ≤ W_γ ≤ √C_γ · W2 for all monotone norms γ. The entire parameterized family of Spectral Wasserstein distances is metrically equivalent to W2 — topology-preserving stability across the Schatten interpolation. Geodesic convexity gives a second form: interpolations in the geometry don't create pathological states.
+
+**Dimensional phase transition** (Wang 2026): Grokking = stability boundary crossing. Effective dimensionality D crosses from sub-diffusive (D ≈ 0.90, stable/confined cascades) through D = 1 to super-diffusive (D ≈ 1.20, amplifying cascades). Three non-overlapping bootstrap distributions validate: D_pre = 0.90 ± 0.02, D_post = 1.20 ± 0.02, D_synth = 0.99 ± 0.01. This is a 7th flavor of stability: **dimensional** — the stability boundary is defined by whether gradient perturbations are confined (D < 1) or amplify (D > 1), measured by finite-size scaling across system sizes.
+
+The stability taxonomy now has **7 flavors**: (1) Lipschitz (TDA, Adams persistence images), (2) exponential suppression (QEC threshold, Aharonov-Ben-Or concatenation), (3) topological protection (FQHE gap), (4) anti-stability (spin-boson sqrt singularity), (5) distribution-free (conformal prediction), (6) ghost stability (Tsuda chaotic itinerancy — quasi-stable visits to destroyed attractor ruins), (7) dimensional (Wang grokking — sub-/super-diffusive phase transition at D = 1).
 
 ## Key Divergences
 

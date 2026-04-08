@@ -412,3 +412,21 @@ Full annotation: `third_pass_dynamics_tda.md` (TP-16).
 ### Barandes (2023) — Stochastic-Quantum Correspondence
 Cross-listed from QEC. Derives QM from stochastic axioms. Also a dynamical systems result: functorial correspondence between Markov chains (stochastic dynamics) and unitary evolution (quantum dynamics).
 Full annotation: `third_pass_neuro_qec.md` (TP-06).
+
+---
+
+## Wave 9 — Spectral Wasserstein and Phase Transitions (2026-04-07)
+
+### Peyré (2026) — Muon Dynamics as a Spectral Wasserstein Flow
+**Domain(s)**: Dynamical systems (gradient flows, mean-field optimization), TDA/Optimal Transport
+Muon optimizer = gradient flow on Spectral Wasserstein geometry. Family of W_γ distances parameterized by Schatten norm p: trace (p=1) → W2, operator (p=∞) → Muon. Kantorovich static matching equals Benamou-Brenier dynamic formulation for monotone norms. Continuity equation ∂_t ρ + div(ρv) = 0 is the chain complex condition. Metric equivalence with W2. Geodesic convexity. Applied to two-layer MLPs with spherical reduction.
+**Machines**: matching, parameterized homology, stability, chain complex (weak).
+Full annotation: `inbox.md` (Wave 9).
+**See also**: `by-domain/tda.md`, `by-structure/optimal_transport.md`, `atlas/MATCHING.md`, `atlas/STABILITY.md`
+
+### Wang (2026) — Grokking as Dimensional Phase Transition in Neural Networks
+**Domain(s)**: Dynamical systems (self-organized criticality, gradient dynamics)
+Grokking = dimensional phase transition. Effective dimensionality D, from FSS of gradient avalanche dynamics (s_max ~ N^D across 8 model scales, N = 81–2001), crosses from sub-diffusive (D ≈ 0.90) through random-diffusion baseline (D = 1) to super-diffusive (D ≈ 1.20) at generalization. Three non-overlapping bootstrap distributions: D_pre = 0.90 ± 0.02, D_post = 1.20 ± 0.02, D_synth = 0.99 ± 0.01. Topology-invariant (5 architectures, CV < 0.3%) — D reflects gradient field geometry, not network architecture. SOC with Barabási-Albert network and TDU-OFC threshold diffusion. Companion study confirms on Transformer/ModAdd-59.
+**Machines**: stability, null hypothesis, parameterized homology, chain complex (weak).
+Full annotation: `inbox.md` (Wave 9).
+**See also**: `atlas/STABILITY.md`, `atlas/NULL_HYPOTHESIS.md`

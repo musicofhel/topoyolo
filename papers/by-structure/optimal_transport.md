@@ -124,3 +124,7 @@ The cost function is always a metric or semi-metric, and the matching always res
 ### Wave 8: Information Theory Matching Foundations (2026-04-07)
 
 **Blahut (1972) + Arimoto (1972) — Channel Capacity and Rate-Distortion**: THE foundational IT matching algorithms. Channel capacity = optimal matching of source to channel inputs. Rate-distortion R(D) = minimum-cost soft assignment between source and reproduction alphabets. Alternating minimization: fix one marginal, optimize the other (predates EM by 5 years). R(D) curve parameterized by D with slope -s. 3000+ combined citations. Full annotation: `inbox.md` (Wave 8).
+
+### Wave 9: Spectral Wasserstein (2026-04-07)
+
+**Peyré (2026) — Muon Dynamics as a Spectral Wasserstein Flow**: Family of Spectral Wasserstein distances W_γ parameterized by Schatten norm index p. Cost acts on global displacement covariance matrix, not per-particle scalar costs. Trace norm (p=1) → classical W2; operator norm (p=∞) → Muon geometry. Kantorovich (couplings = matchings) equals Benamou-Brenier (gradient flows) for monotone norms. Max-min representation: W_γ² = max over anisotropic quadratic transports. Metric equivalence with W2: √c_γ · W2 ≤ W_γ ≤ √C_γ · W2. Geodesic convexity. Gaussian case: closed-form metric extending Bures-Wasserstein. arXiv: 2604.04891. Full annotation: `inbox.md` (Wave 9).

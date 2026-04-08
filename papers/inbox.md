@@ -877,3 +877,92 @@ Combined citations: 3000+.
 | Distortion constraint E[d] ≤ D | Matching quality bound |
 
 **See also**: `by-domain/information_theory.md`, `by-structure/optimal_transport.md`, `atlas/MATCHING.md`
+
+---
+
+## Wave 9: Paper Drop Folder — Topo-Rosetta Relevant (2026-04-07)
+
+---
+
+## arXiv: 2604.04891 --- Peyré (2026)
+**"Muon Dynamics as a Spectral Wasserstein Flow"**
+Gabriel Peyré, CNRS and ENS, PSL Université. April 2026.
+
+**Domain(s)**: TDA / Optimal Transport, Dynamical Systems
+
+**Abstract machines instantiated**:
+
+- **Matching**: THE central object. The paper introduces a family of Spectral Wasserstein costs W_γ(μ,ν)² := inf_{π ∈ Π(μ,ν)} γ(∫ (y-x)(y-x)^T dπ(x,y)), where the infimum is over transport couplings (matchings between source and target measures) and γ is a norm on the positive semidefinite cone. This is the Kantorovich formulation — every coupling π IS a matching between μ and ν. The key novelty: instead of summing individual transport costs (as in classical W2), the cost depends on the global displacement covariance matrix, penalizing correlated displacements. The max-min representation (Theorem 2.10) W_γ(μ,ν)² = max_{Q ∈ K_γ} W^Q(μ,ν)² shows the Spectral Wasserstein cost as a worst-case matching over anisotropic quadratic transport problems.
+
+- **Parameterized homology**: The Schatten norm index p parameterizes the entire family of geometries. At p=1 (trace norm), γ₁(S) = tr(S), recovering the classical quadratic Wasserstein W2. At p=∞ (operator norm), γ_∞(S) = λ_max(S), recovering the Muon optimizer geometry. Intermediate p interpolates continuously between these extremes. The comparison constants c_{γ_p} = d^{1/p - 1} and C_{γ_p} = 1 (Proposition 2.8) quantify exactly how the geometry deforms as p varies. This is a one-parameter family of transport geometries, directly analogous to parameterized filtrations in TDA.
+
+- **Stability**: The paper proves that for monotone norms γ (including all Schatten norms), the Spectral Wasserstein cost is a genuine metric (Corollary 3.4): √c_γ · W2(μ,ν) ≤ W_γ(μ,ν) ≤ √C_γ · W2(μ,ν). This is a Lipschitz stability result — the Spectral Wasserstein distance is metrically equivalent to W2, so all topological properties (convergence, compactness) are preserved. The geodesic convexity results (Section 5) give a second form of stability: interpolations in the Spectral Wasserstein geometry don't create pathological intermediate states.
+
+- **Chain complex (weak)**: The Benamou-Brenier dynamic formulation (Section 3) expresses the transport cost as an infimum over paths (velocity fields) satisfying the continuity equation ∂_t ρ + div(ρv) = 0. The continuity equation IS the chain complex condition — it encodes conservation of mass, the dynamical analogue of ∂² = 0. For monotone norms, the static (Kantorovich) and dynamic (Benamou-Brenier) formulations coincide (Theorem 3.3).
+
+**What is genuinely new (not reducible to shared abstraction)**:
+1. The MATRIX-AWARENESS of the transport cost. Classical W2 sums scalar displacement costs independently per particle. Spectral Wasserstein penalizes the global matrix norm of the displacement covariance — particles are forced to interact collectively. This is the geometric insight behind the Muon optimizer: spectral normalization of gradients respects the matrix structure of weight parameters.
+2. The identification of Muon dynamics as a gradient flow on Spectral Wasserstein space. The continuous-time Muon step X_{k+1} = X_k - τ ||G_k||_{S_1} Proj_O(G_k) is EXACTLY the gradient flow of the loss functional F in the W_{γ_∞} geometry. This connects an empirically successful optimizer to rigorous transport theory.
+3. The Gaussian case admits a closed form (Corollary 2.13): the Spectral Wasserstein distance between Gaussians defines a genuine metric on covariance matrices that extends the Bures-Wasserstein metric. For commuting covariances in the Schatten family, the formula is explicit.
+
+**Connections the authors acknowledge**: Villani (optimal transport theory), Benamou-Brenier (dynamic OT), Peyré-Cuturi (computational OT), Chizat-Bach (mean-field training), Gozlan et al. (generalized transport costs), Paty-Cuturi (subspace robust Wasserstein). No connections to QEC, neuroscience, or information theory (beyond general entropy/convexity). Code: https://github.com/gpeyre/spectral-wasserstein.
+
+**Vocabulary mapping**:
+| Paper term | Rosetta term |
+|---|---|
+| Transport coupling π | Matching (assignment between source and target) |
+| Kantorovich formulation | Static matching (couplings) |
+| Monge restriction | Deterministic matching (transport maps) |
+| Benamou-Brenier formulation | Dynamic matching (velocity fields + continuity equation) |
+| Spectral Wasserstein distance W_γ | Parameterized family of matching costs |
+| Schatten norm index p | Parameter controlling matching geometry |
+| Displacement covariance | Global coupling structure of the matching |
+| Muon geometry (p=∞) | Operator-norm matching = max-eigenvalue cost |
+| Classical W2 (p=1) | Trace-norm matching = sum-of-eigenvalues cost |
+| Geodesic convexity | Stability of interpolations in matching geometry |
+| Mean-field gradient flow | Continuous dynamics on the space of matchings |
+
+**See also**: `by-domain/tda.md`, `by-domain/dynamical_systems.md`, `by-structure/optimal_transport.md`, `atlas/MATCHING.md`, `atlas/STABILITY.md`
+
+---
+
+## arXiv: 2604.04655 --- Wang (2026)
+**"Grokking as Dimensional Phase Transition in Neural Networks"**
+Ping Wang, Institute of High Energy Physics, Chinese Academy of Science, Beijing. April 2026.
+
+**Domain(s)**: Dynamical Systems (self-organized criticality, gradient dynamics)
+
+**Abstract machines instantiated**:
+
+- **Stability**: THE central machine. The paper identifies grokking — the abrupt memorization-to-generalization transition — as a dimensional phase transition. The effective dimensionality D, extracted via finite-size scaling of gradient avalanche dynamics, crosses from sub-diffusive (D ≈ 0.90, pre-grokking) through the random-diffusion baseline (D = 1) to super-diffusive (D ≈ 1.20, post-grokking). This crossing IS a stability boundary: below D = 1, gradient perturbations are spatially confined (sub-extensive cascades); above D = 1, perturbations amplify collectively (super-extensive cascades). The phase transition is validated by three non-overlapping bootstrap distributions (10,000 resamples each) with D_pre = 0.90 ± 0.02, D_post = 1.20 ± 0.02, D_synth = 0.99 ± 0.01.
+
+- **Null hypothesis**: Synthetic i.i.d. Gaussian gradients (g_i ~ N(0, 0.5²)) serve as the explicit null model. Under this null, D_synth = 0.99 ± 0.01 across all network topologies (5 types × 6 seeds, CV < 0.3%). This is the random-diffusion baseline: if gradients have no learned structure, the effective dimensionality is exactly 1 regardless of network architecture. Real training deviates from this null in both directions — sub-diffusive before grokking, super-diffusive after. The D(t) crossing through D = 1 at the grokking epoch is the signature that rejects the null.
+
+- **Parameterized homology**: D(t) evolves continuously during training (Fig. 1b), tracing a trajectory from D ≈ 0.90 through a multi-scale critical window to D ≈ 1.20. The effective dimensionality is extracted at each epoch via finite-size scaling of s_max ~ N^D across 8 model scales (N = 81–2001, spanning 1.4 decades). This is a parameterized observable: the training epoch t parameterizes a family of gradient geometries, and D(t) tracks the topological/geometric phase of the system.
+
+- **Chain complex (weak)**: Parameters are mapped onto a Barabási-Albert scale-free network (m=2, ⟨k⟩=4). The Threshold-based Diffusion Update (TDU-OFC) propagates gradients along edges when |g_i| > τ (90th percentile threshold). The network Laplacian governs diffusion, and the cascade structure — which nodes fire, in what order — encodes the combinatorial topology of the gradient flow. The avalanche size s (total triggered updates) is the 0-dimensional analogue of a persistent feature.
+
+**What is genuinely new (not reducible to shared abstraction)**:
+1. First identification of grokking as a DIMENSIONAL phase transition governed by self-organized criticality. Previous explanations (circuit formation, representation learning, phase-transition-like dynamics) were qualitative. This is quantitative: D crosses from 0.90 to 1.20 with R² > 0.99 across 1.4 decades of system size.
+2. The key finding that D reflects gradient field geometry, NOT network architecture. Five different network topologies (Ring, SW p=0.05, SW p=0.2, Scale-Free, Random) all produce D_synth ≈ 0.99 for synthetic Gaussian gradients (CV < 0.3%). The topology-invariance rules out architecture as the cause of the dimensional crossing.
+3. Companion study [11] independently confirms the identical D(t) signature in canonical grokking (Transformer on ModAdd-59, 80/20 train/test split), establishing that the gradient mechanism generalizes beyond XOR to standard grokking settings.
+
+**Connections the authors acknowledge**: Bak-Tang-Wiesenfeld (SOC, sandpile models), Olami-Feder-Christensen (earthquake model, threshold dynamics), Beggs & Plenz (neuronal avalanches), Chialvo (brain criticality), Sethna-Dahmen-Myers (crackling noise), Onsager (phase transitions), Goldenfeld (renormalization group). The connection to neuronal avalanches [9,10] is explicit — gradient avalanches in NNs are directly analogous to neuronal avalanches in cortex. No connections to TDA, QEC, or information theory.
+
+**Vocabulary mapping**:
+| Paper term | Rosetta term |
+|---|---|
+| Effective dimensionality D | Parameterized observable tracking geometric phase |
+| Finite-size scaling (FSS) | System-size parameterized analysis (N = 81–2001) |
+| Gradient avalanche | Cascade = topological event in gradient flow |
+| s_max ~ N^D | Scaling relation = stability diagnostic |
+| D = 1 crossing | Phase transition = stability boundary |
+| Sub-diffusive (D < 1) | Confined cascades = stable regime |
+| Super-diffusive (D > 1) | Amplifying cascades = unstable/generalized regime |
+| Synthetic Gaussian gradients | Null model (D_synth = 0.99 ± 0.01) |
+| TDU-OFC | Threshold diffusion = discrete dynamical system on network |
+| Barabási-Albert graph | Combinatorial substrate for gradient propagation |
+| Grokking epoch | Critical time at which D(t) crosses the null |
+| Topology invariance (CV < 0.3%) | Universality of the null across architectures |
+
+**See also**: `by-domain/dynamical_systems.md`, `atlas/STABILITY.md`, `atlas/NULL_HYPOTHESIS.md`
