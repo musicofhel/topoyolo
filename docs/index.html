@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>topo-rosetta — Cross-Domain Topological Structure Atlas</title>
+  <meta name="description" content="A cartography of shared algebraic structure across five disciplines that independently discovered the same six abstract machines.">
+  <meta property="og:title" content="topo-rosetta">
+  <meta property="og:description" content="Mapping 6 abstract machines across TDA, quantum error correction, dynamical systems, neuroscience, and information theory. 200+ annotated papers.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;600&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero">
+    <div class="container">
+      <h1>topo-rosetta</h1>
+      <p class="subtitle">A cartography of shared algebraic structure across five disciplines that independently discovered the same six abstract machines.</p>
+      <hr>
+      <p class="stats">
+        <span>5</span> domains &middot;
+        <span>6</span> machines &middot;
+        <span>200+</span> papers &middot;
+        <span>30</span> cells, all &ge; 4
+      </p>
+    </div>
+  </header>
+
+  <!-- ============ THE PLANE ============ -->
+  <section>
+    <div class="container">
+      <h2>The Plane</h2>
+      <p class="secondary">Six abstract machines recur across five domains. These are not metaphors &mdash; they share definitions, theorems, and algorithms.</p>
+
+      <div class="two-col">
+        <div>
+          <div class="col-heading">Machines</div>
+
+          <div class="machine-card">
+            <h3>Chain Complex</h3>
+            <p class="formal">ker(&part;<sub>n</sub>) / im(&part;<sub>n+1</sub>)</p>
+            <p>Boundary operators satisfying &part;&sup2;=0. Cycles mod boundaries. Homology classes.</p>
+          </div>
+
+          <div class="machine-card">
+            <h3>Parameterized Homology</h3>
+            <p class="formal">H<sub>n</sub>(&epsilon;) as &epsilon; varies</p>
+            <p>Track topological invariants as a parameter varies &mdash; persistence diagrams, error thresholds, bifurcation.</p>
+          </div>
+
+          <div class="machine-card">
+            <h3>Optimal Matching</h3>
+            <p class="formal">min<sub>&sigma;</sub> &Sigma; c(x<sub>i</sub>, y<sub>&sigma;(i)</sub>)</p>
+            <p>Assign features to features at minimum cost &mdash; decoding, diagram distance, transport.</p>
+          </div>
+
+          <div class="machine-card">
+            <h3>Stability</h3>
+            <p class="formal">d(f, g) &le; &epsilon; &rArr; d(H(f), H(g)) &le; C&middot;&epsilon;</p>
+            <p>Small input perturbation &rarr; bounded output change. Robustness of topological invariants.</p>
+          </div>
+
+          <div class="machine-card">
+            <h3>Joint-vs-Marginal</h3>
+            <p class="formal">I(X<sub>joint</sub>) &minus; &Sigma; I(X<sub>i</sub>) &gt; 0</p>
+            <p>Composite system has structure absent from components &mdash; binding, entanglement, synergy.</p>
+          </div>
+
+          <div class="machine-card">
+            <h3>Null Hypothesis</h3>
+            <p class="formal">H<sub>0</sub>: destroy structure, measure residual</p>
+            <p>Reference distribution by destroying specific structure while preserving other properties &mdash; surrogates, noise channels.</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="col-heading">Domains</div>
+
+          <div class="domain-card">
+            <h3>TDA</h3>
+            <p>Topological Data Analysis. Multi-scale filtration; the only domain where persistence diagrams are native objects.</p>
+          </div>
+
+          <div class="domain-card">
+            <h3>QEC</h3>
+            <p>Quantum Error Correction. Finite fields; error thresholds as phase transitions. The richest chain complex instantiation (15+ papers).</p>
+          </div>
+
+          <div class="domain-card">
+            <h3>Dynamical Systems</h3>
+            <p>Temporal structure, delay embedding, attractor reconstruction from partial observation. Takens embedding has no QEC analogue.</p>
+          </div>
+
+          <div class="domain-card">
+            <h3>Neuroscience</h3>
+            <p>Population-level topology. Both undirected co-firing complexes and directed synaptic complexes. Where the chain complex bifurcates.</p>
+          </div>
+
+          <div class="domain-card">
+            <h3>Information Theory</h3>
+            <p>The home of joint-vs-marginal excess. PID decomposition, information cohomology, Shannon entropy as 1-cocycle.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COVERAGE MATRIX ============ -->
+  <!-- Coverage data synced with diagrams/coverage-matrix.md and README.md -->
+  <section>
+    <div class="container">
+      <h2>Coverage Matrix</h2>
+      <p class="secondary">Paper counts per cell. All 30 intersections documented with &ge; 4 papers.</p>
+
+      <div class="matrix-wrap">
+        <table class="matrix">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Chain<br>Complex</th>
+              <th>Param.<br>Homology</th>
+              <th>Matching</th>
+              <th>Stability</th>
+              <th>Joint vs<br>Marginal</th>
+              <th>Null<br>Hypothesis</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="row-header">TDA</th>
+              <td class="cell-mid" data-label="TDA &times; Chain Complex">6+</td>
+              <td class="cell-mid" data-label="TDA &times; Param. Homology">7+</td>
+              <td class="cell-low" data-label="TDA &times; Matching">5+</td>
+              <td class="cell-mid" data-label="TDA &times; Stability">7+</td>
+              <td class="cell-low" data-label="TDA &times; Joint vs Marginal">5+</td>
+              <td class="cell-low" data-label="TDA &times; Null Hypothesis">4+</td>
+            </tr>
+            <tr>
+              <th class="row-header">QEC</th>
+              <td class="cell-high" data-label="QEC &times; Chain Complex">15+</td>
+              <td class="cell-mid" data-label="QEC &times; Param. Homology">8+</td>
+              <td class="cell-mid" data-label="QEC &times; Matching">8+</td>
+              <td class="cell-high" data-label="QEC &times; Stability">10+</td>
+              <td class="cell-mid" data-label="QEC &times; Joint vs Marginal">6+</td>
+              <td class="cell-mid" data-label="QEC &times; Null Hypothesis">9+</td>
+            </tr>
+            <tr>
+              <th class="row-header">Dynamics</th>
+              <td class="cell-mid" data-label="Dynamics &times; Chain Complex">8+</td>
+              <td class="cell-high" data-label="Dynamics &times; Param. Homology">11+</td>
+              <td class="cell-high" data-label="Dynamics &times; Matching">10+</td>
+              <td class="cell-mid" data-label="Dynamics &times; Stability">8+</td>
+              <td class="cell-mid" data-label="Dynamics &times; Joint vs Marginal">6+</td>
+              <td class="cell-mid" data-label="Dynamics &times; Null Hypothesis">7+</td>
+            </tr>
+            <tr>
+              <th class="row-header">Neuro</th>
+              <td class="cell-mid" data-label="Neuro &times; Chain Complex">6+</td>
+              <td class="cell-high" data-label="Neuro &times; Param. Homology">10+</td>
+              <td class="cell-mid" data-label="Neuro &times; Matching">8+</td>
+              <td class="cell-mid" data-label="Neuro &times; Stability">7+</td>
+              <td class="cell-high" data-label="Neuro &times; Joint vs Marginal">13+</td>
+              <td class="cell-high" data-label="Neuro &times; Null Hypothesis">10+</td>
+            </tr>
+            <tr>
+              <th class="row-header">InfoTheo</th>
+              <td class="cell-mid" data-label="InfoTheo &times; Chain Complex">9+</td>
+              <td class="cell-mid" data-label="InfoTheo &times; Param. Homology">9+</td>
+              <td class="cell-low" data-label="InfoTheo &times; Matching">4+</td>
+              <td class="cell-mid" data-label="InfoTheo &times; Stability">6+</td>
+              <td class="cell-high" data-label="InfoTheo &times; Joint vs Marginal">12+</td>
+              <td class="cell-mid" data-label="InfoTheo &times; Null Hypothesis">8+</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="legend">
+        <span><span class="legend-swatch" style="background:#2a3a5c"></span>4&ndash;6</span>
+        <span><span class="legend-swatch" style="background:#3d5a80"></span>7&ndash;9</span>
+        <span><span class="legend-swatch" style="background:#c9a96e"></span>10+</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ THE ATLAS ============ -->
+  <section>
+    <div class="container">
+      <h2>The Atlas</h2>
+      <p class="secondary">One deep essay per machine, tracing its instantiation across all five domains.</p>
+
+      <details>
+        <summary>Chain Complex</summary>
+        <div class="detail-body">
+          <p>The prototypical shared structure: boundary operators satisfying &part;&sup2;=0, from simplicial complexes in TDA to code complexes in QEC to Möbius functions on information-theoretic posets. Seven incarnations documented: geometric, algebraic, categorified, combinatorial, gauge-theoretic, graded-informational, and neural (with directed and undirected sub-flavors).</p>
+          <a href="https://github.com/musicofhel/topoyolo/blob/master/atlas/CHAIN_COMPLEX.md">Read the full map &rarr;</a>
+        </div>
+      </details>
+
+      <details>
+        <summary>Parameterized Homology</summary>
+        <div class="detail-body">
+          <p>Tracking how topological invariants change as a parameter varies: filtration scale in TDA, error rate in QEC, coupling strength in dynamics, stimulus condition in neuroscience, channel capacity in information theory. The parameter is different; the tracking machinery is the same.</p>
+          <a href="https://github.com/musicofhel/topoyolo/blob/master/atlas/PARAMETERIZED_HOMOLOGY.md">Read the full map &rarr;</a>
+        </div>
+      </details>
+
+      <details>
+        <summary>Optimal Matching</summary>
+        <div class="detail-body">
+          <p>Optimal assignment of features to features at minimum cost. Bottleneck and Wasserstein distances in TDA, minimum-weight perfect matching for syndrome decoding in QEC, spectral clustering in dynamics, Sinkhorn-based cortical alignment in neuroscience, Blahut-Arimoto in information theory.</p>
+          <a href="https://github.com/musicofhel/topoyolo/blob/master/atlas/MATCHING.md">Read the full map &rarr;</a>
+        </div>
+      </details>
+
+      <details>
+        <summary>Stability</summary>
+        <div class="detail-body">
+          <p>Bounded perturbation response. The PH stability theorem (Lipschitz bound), the QEC threshold theorem (exponential suppression), structural stability in dynamics, the Nerve Theorem guarantee in neuroscience. Same conceptual claim, different mathematical guarantees.</p>
+          <a href="https://github.com/musicofhel/topoyolo/blob/master/atlas/STABILITY.md">Read the full map &rarr;</a>
+        </div>
+      </details>
+
+      <details>
+        <summary>Joint-vs-Marginal Excess</summary>
+        <div class="detail-body">
+          <p>Structure in composite systems that is absent from components. Binding residuals in TDA, entanglement in QEC, emergent attractor topology in dynamics, neural binding and consciousness (&Phi;) in neuroscience, mutual information and synergy in information theory. The richest vein: neuroscience and information theory each contribute 12&ndash;13 papers.</p>
+          <a href="https://github.com/musicofhel/topoyolo/blob/master/atlas/JOINT_VS_MARGINAL.md">Read the full map &rarr;</a>
+        </div>
+      </details>
+
+      <details>
+        <summary>Null Hypothesis</summary>
+        <div class="detail-body">
+          <p>Destroy specific structure, preserve everything else, measure the residual. Phase-randomized surrogates in TDA, depolarizing channels in QEC, Theiler surrogates in dynamics, trial-shuffled null models in neuroscience, product distributions in information theory. What gets destroyed defines what gets measured.</p>
+          <a href="https://github.com/musicofhel/topoyolo/blob/master/atlas/NULL_HYPOTHESIS.md">Read the full map &rarr;</a>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- ============ GLOSSARY ============ -->
+  <section>
+    <div class="container">
+      <h2>The Glossary</h2>
+
+      <div class="two-col">
+        <div>
+          <h3>Synonyms <span class="secondary" style="font-weight:400; font-size:0.85rem">&mdash; where the vocabulary maps</span></h3>
+          <p class="secondary" style="font-size:0.9rem; margin-bottom:1rem">Five layers of translation, from algebraic objects to null models. One row from Layer 0:</p>
+
+          <table class="glossary-table">
+            <thead>
+              <tr>
+                <th>TDA</th>
+                <th>QEC</th>
+                <th>Dynamics</th>
+                <th>Neuro</th>
+                <th>InfoTheo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>&part; (simplicial)</td>
+                <td>&part; (cellular)</td>
+                <td>&mdash;</td>
+                <td>&part; on clique complex</td>
+                <td>Möbius function</td>
+              </tr>
+            </tbody>
+          </table>
+          <p style="font-size:0.85rem; color:#a0a0b0; margin-top:0.5rem">
+            <em>Row: Boundary operator.</em> Empty cells are data &mdash; dynamical systems rarely use boundary operators directly.
+          </p>
+          <a href="https://github.com/musicofhel/topoyolo/blob/master/glossary/SYNONYMS.md" style="font-size:0.85rem">Full translation table &rarr;</a>
+        </div>
+
+        <div>
+          <h3>Antisynonyms <span class="secondary" style="font-weight:400; font-size:0.85rem">&mdash; where the analogy breaks</span></h3>
+          <p class="secondary" style="font-size:0.9rem; margin-bottom:1rem">30 documented divergences. The boundaries of the mapping are as informative as the mapping itself.</p>
+
+          <ul class="antisynonym-list">
+            <li>Persistence is multi-scale; code distance is single-scale</li>
+            <li>&ldquo;Cycle&rdquo; is a false cognate across algebra and dynamics</li>
+            <li>Entanglement is richer than binding &mdash; full theory vs. scalar score</li>
+            <li>Attractor ruins have no topological &ldquo;bar&rdquo; and no error-correction analogue</li>
+            <li>Topology is rotation-invariant; information is not</li>
+          </ul>
+          <a href="https://github.com/musicofhel/topoyolo/blob/master/glossary/ANTISYNONYMS.md" style="font-size:0.85rem">All 30 divergences &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ANTI-SYNTHESIS ============ -->
+  <section>
+    <div class="container">
+      <h2>Anti-Synthesis</h2>
+
+      <div class="antisynthesis">
+        <blockquote>
+          The goal is not synthesis or unification. It is differentiation &mdash; in the Deleuzian sense. The same abstract machine is actualized differently in each domain. By cataloguing the repetitions and the genuine divergences, we make visible the plane that connects them.
+        </blockquote>
+
+        <p>The domains diverge in ways that matter:</p>
+        <ul>
+          <li>QEC operates over finite fields (&#8484;/2); persistent homology typically over the reals. Same machine, different arithmetic, different answers.</li>
+          <li>Takens delay embedding reconstructs a manifold from a single observable. QEC starts with the complex already given. The shared structure begins only after construction.</li>
+          <li>Code distance is a single number; a persistence diagram encodes the full birth-death spectrum. Related but structurally different objects.</li>
+          <li>Tsuda's attractor ruins &mdash; destroyed attractors that retain geometric influence &mdash; have no persistence bar and no error-correction analogue. A sixth flavor of stability.</li>
+        </ul>
+        <p class="secondary" style="font-size:0.9rem; margin-top:1rem; margin-bottom:0">The divergences are as informative as the repetitions. <a href="https://github.com/musicofhel/topoyolo/blob/master/glossary/ANTISYNONYMS.md">ANTISYNONYMS.md</a> tracks all 30.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ METHODOLOGY ============ -->
+  <section>
+    <div class="container">
+      <h2>Methodology</h2>
+      <p>Each paper is annotated along four axes: <strong>which abstract machine</strong> it instantiates, its <strong>domain-specific vocabulary</strong> mapped to shared terms, what is <strong>genuinely new</strong> (structure that does not reduce to the shared abstraction), and whether the paper <strong>acknowledges</strong> the cross-domain parallel or is blind to it.</p>
+      <p>Papers are dual-indexed under both <code>by-domain/</code> and <code>by-structure/</code>. The same paper appears in two places, revealing which disciplinary silo it sits in and which abstract machine it instantiates. The cross-references are the point.</p>
+      <p class="secondary" style="font-size:0.9rem"><a href="https://github.com/musicofhel/topoyolo/blob/master/METHODOLOGY.md">Full methodology &rarr;</a></p>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="container">
+      <a href="https://github.com/musicofhel/topoyolo">GitHub Repository</a>
+      <span class="separator">|</span>
+      <span>Last updated April 2026</span>
+    </div>
+  </footer>
+
+</body>
+</html>

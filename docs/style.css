@@ -1,0 +1,500 @@
+/* === Reset & Base === */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #1a1a2e;
+  color: #e8e8e8;
+  font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+  line-height: 1.65;
+}
+
+/* === Typography === */
+
+h1, h2, h3, h4 {
+  font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #f0f0f0;
+}
+
+h2 {
+  font-size: 1.75rem;
+  letter-spacing: 0.02em;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #7b8ea0;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+a:hover {
+  border-bottom-color: #7b8ea0;
+}
+
+code, .mono {
+  font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+  font-size: 0.9em;
+}
+
+.secondary {
+  color: #a0a0b0;
+}
+
+.accent {
+  color: #c9a96e;
+}
+
+/* === Layout === */
+
+.container {
+  max-width: 54rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+section {
+  padding: 4rem 0;
+}
+
+section + section {
+  border-top: 1px solid #2a2a4a;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+/* === Hero === */
+
+.hero {
+  padding: 5rem 0 3rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3.25rem;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+  margin-bottom: 1.25rem;
+}
+
+.hero .subtitle {
+  font-style: italic;
+  font-size: 1.15rem;
+  color: #a0a0b0;
+  max-width: 38rem;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.hero hr {
+  border: none;
+  height: 1px;
+  background: #c9a96e;
+  max-width: 6rem;
+  margin: 0 auto 1.5rem;
+}
+
+.hero .stats {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  color: #a0a0b0;
+  letter-spacing: 0.04em;
+}
+
+.hero .stats span {
+  color: #c9a96e;
+}
+
+/* === The Plane (Machines & Domains) === */
+
+.machine-card,
+.domain-card {
+  margin-bottom: 1.75rem;
+  padding-left: 1rem;
+  border-left: 2px solid #c9a96e;
+}
+
+.machine-card h3,
+.domain-card h3 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.95rem;
+  color: #c9a96e;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.25rem;
+}
+
+.machine-card .formal {
+  font-style: italic;
+  color: #a0a0b0;
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.machine-card p,
+.domain-card p {
+  font-size: 0.95rem;
+  margin-bottom: 0;
+  color: #d0d0d8;
+}
+
+.col-heading {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #a0a0b0;
+  margin-bottom: 1.5rem;
+}
+
+/* === Coverage Matrix === */
+
+.matrix-wrap {
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.matrix {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 3px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+  min-width: 36rem;
+}
+
+.matrix th {
+  padding: 0.6rem 0.75rem;
+  text-align: center;
+  font-weight: 400;
+  color: #a0a0b0;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  vertical-align: bottom;
+}
+
+.matrix th.row-header {
+  text-align: right;
+  padding-right: 1rem;
+  color: #c9a96e;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.matrix td {
+  padding: 0.65rem 0.75rem;
+  text-align: center;
+  border-radius: 3px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  position: relative;
+  cursor: default;
+}
+
+.matrix td:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 12px rgba(201, 169, 110, 0.25);
+  z-index: 2;
+}
+
+.cell-low {
+  background-color: #2a3a5c;
+  color: #b0b8c8;
+}
+
+.cell-mid {
+  background-color: #3d5a80;
+  color: #e0e4ea;
+}
+
+.cell-high {
+  background-color: #c9a96e;
+  color: #1a1a2e;
+  font-weight: 600;
+}
+
+/* Tooltips via data-label attribute */
+.matrix td::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #16213e;
+  color: #e8e8e8;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+  border: 1px solid #2a2a4a;
+}
+
+.matrix td:hover::after {
+  opacity: 1;
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #a0a0b0;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.legend-swatch {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 2px;
+  vertical-align: middle;
+  margin-right: 0.35rem;
+}
+
+/* === Atlas === */
+
+details {
+  margin-bottom: 0.75rem;
+  border-left: 2px solid #2a2a4a;
+  padding-left: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+details[open] {
+  border-left-color: #c9a96e;
+}
+
+summary {
+  cursor: pointer;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9rem;
+  color: #c9a96e;
+  padding: 0.5rem 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+summary::before {
+  content: '\25B8';
+  font-size: 0.7rem;
+  transition: transform 0.2s ease;
+}
+
+details[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details .detail-body {
+  padding: 0.5rem 0 0.75rem;
+  font-size: 0.95rem;
+  color: #d0d0d8;
+}
+
+details .detail-body a {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+}
+
+/* === Glossary === */
+
+.glossary-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  margin: 1rem 0;
+}
+
+.glossary-table th {
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  color: #c9a96e;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 400;
+  border-bottom: 1px solid #2a2a4a;
+}
+
+.glossary-table td {
+  padding: 0.5rem 0.75rem;
+  color: #d0d0d8;
+  border-bottom: 1px solid #1e1e36;
+  vertical-align: top;
+}
+
+.antisynonym-list {
+  list-style: none;
+  padding: 0;
+}
+
+.antisynonym-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #1e1e36;
+  font-size: 0.95rem;
+}
+
+.antisynonym-list li::before {
+  content: '\2260';
+  color: #c9a96e;
+  margin-right: 0.5rem;
+  font-weight: 600;
+}
+
+/* === Anti-Synthesis === */
+
+.antisynthesis {
+  background-color: #16213e;
+  border-radius: 6px;
+  padding: 2.5rem;
+  margin: 1rem 0;
+}
+
+.antisynthesis blockquote {
+  border-left: 3px solid #c9a96e;
+  padding-left: 1.25rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #d8d8e0;
+  line-height: 1.7;
+}
+
+.antisynthesis ul {
+  list-style: none;
+  padding: 0;
+}
+
+.antisynthesis ul li {
+  padding: 0.4rem 0;
+  padding-left: 1.25rem;
+  position: relative;
+  color: #d0d0d8;
+  font-size: 0.95rem;
+}
+
+.antisynthesis ul li::before {
+  content: '\2014';
+  position: absolute;
+  left: 0;
+  color: #c9a96e;
+}
+
+/* === Footer === */
+
+footer {
+  padding: 3rem 0;
+  text-align: center;
+  border-top: 1px solid #2a2a4a;
+  color: #a0a0b0;
+  font-size: 0.85rem;
+}
+
+footer a {
+  color: #c9a96e;
+}
+
+footer .separator {
+  margin: 0 0.75rem;
+  color: #2a2a4a;
+}
+
+/* === Responsive === */
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 0 2rem;
+  }
+
+  .hero h1 {
+    font-size: 2.25rem;
+  }
+
+  .hero .subtitle {
+    font-size: 1rem;
+  }
+
+  .two-col {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  section {
+    padding: 2.5rem 0;
+  }
+
+  .container {
+    padding: 0 1.25rem;
+  }
+
+  .antisynthesis {
+    padding: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .matrix {
+    font-size: 0.78rem;
+  }
+
+  .matrix th,
+  .matrix td {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.85rem;
+    letter-spacing: 0.04em;
+  }
+
+  .hero .stats {
+    font-size: 0.75rem;
+  }
+
+  .legend {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+}
