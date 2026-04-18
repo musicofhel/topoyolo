@@ -12,21 +12,21 @@ Each row is a single abstract concept. Each column is a domain's name for it. Em
 |---------|-----|-----|-------------------|--------------|-------------------|
 | The space | Simplicial complex | Code complex / cellulation | State space / phase space | Neural manifold | Source alphabet / Poset of event combinations |
 | Local constraint | Simplex inclusion | Stabilizer | Flow equation | Firing rate constraint | Entropy bound |
-| Boundary operator | ∂ (simplicial); coboundary δ (Ripser/Bauer 2021) | ∂ (cellular) | — | ∂ on clique/nerve complex (Giusti, Curto & Itskov); directed ∂ on oriented simplices (Reimann); directed ∂ on TE-derived flag complex (Peek 2025) | Möbius function on poset (Sugiyama 2016) |
+| Boundary operator | ∂ (simplicial); coboundary δ (Ripser/Bauer 2021) | ∂ (cellular) | Hodge Laplacian L_k = B^T B + BB^T (Ghorbanchian) / ∂ on index pairs → Conley index (Dey/Batko) | ∂ on clique/nerve complex (Giusti, Curto & Itskov); directed ∂ on oriented simplices (Reimann); directed ∂ on TE-derived flag complex (Peek 2025) | Möbius function on poset (Sugiyama 2016) |
 | Cycle | Kernel of ∂ | Error syndrome pattern | Periodic orbit | Co-firing pattern forming closed loop (Dabaghian) | — |
 | Boundary | Image of ∂ | Trivial syndrome | Gradient flow | Trivial co-firing pattern (contractible) | — |
-| Homology class | Persistent feature | Logical qubit / dynamically generated logical qubit (Floquet: emerges from periodic orbit, not any snapshot) | Attractor topology | Population topology (Giusti) / Cavity (Reimann) / Environment topology (Curto & Itskov) | — |
-| Betti number | Feature count per dim | Logical qubit count | — | Obstacle count b₁ (Dabaghian) / Cavity count (Reimann) | — |
+| Homology class | Persistent feature | Logical qubit / dynamically generated logical qubit (Floquet: emerges from periodic orbit, not any snapshot) | Attractor topology / Conley index H_k(P,E) (Dey/Batko) | Population topology (Giusti) / Cavity (Reimann) / Environment topology (Curto & Itskov) / Homological scaffold (Petri/Lord) / Topological template (Dabaghian) | — |
+| Betti number | Feature count per dim | Logical qubit count | Poincaré polynomial coefficients (Conley index, Dey) | Obstacle count b₁ (Dabaghian) / Cavity count (Reimann) | — |
 | Coefficient field | Usually ℝ or ℤ/2 | ℤ/2 or ℤ/p | ℝ (continuous) | ℝ | ℝ |
 
 ### Layer 1: Parameterization
 
 | Concept | TDA | QEC | Dynamical Systems | Neuroscience | Information Theory |
 |---------|-----|-----|-------------------|--------------|-------------------|
-| The parameter | Filtration scale ε / energy threshold / dimension k (Berry et al. 2023) | Error rate p / correction rate κ / Chern number / filling fraction ν / measurement round r mod 3 (Floquet, Hastings-Haah 2021) | Coupling strength / bifurcation parameter / criticality m (Hawkes) / time (itinerancy epoch, Tsuda) | Stimulus / task condition / connectivity strength / EEG frequency band / quantile index τ (Dabney) / itinerancy epoch (Tsuda CI) | Channel capacity / training epoch / constraint density α / IB β / observation window t (finite-time MI) |
+| The parameter | Filtration scale ε / energy threshold / dimension k (Berry et al. 2023) | Error rate p / correction rate κ / Chern number / filling fraction ν / measurement round r mod 3 (Floquet, Hastings-Haah 2021) | Coupling strength / bifurcation parameter / criticality m (Hawkes) / time (itinerancy epoch, Tsuda) / binning scale δ (Batko) | Stimulus / task condition / connectivity strength / EEG frequency band / quantile index τ (Dabney) / itinerancy epoch (Tsuda CI) | Channel capacity / training epoch / constraint density α / IB β / observation window t (finite-time MI) |
 | What changes | Which simplices exist | Which errors are correctable / ISG S(r) (Floquet: instantaneous code changes each round) | Attractor topology | Neural representation geometry | Achievable rate / MI / PID atoms |
-| Critical value | Persistent feature birth/death | Error threshold (~2.5%) / Zeno transition | Bifurcation point / attractor ruin transition (Tsuda CI) | Perceptual switch / cognitive state transition (Tsuda CI) | Capacity boundary / compression onset / SAT/UNSAT α_c ≈ 4.267 |
-| The invariant that tracks it | Persistence diagram | Threshold curve | Bifurcation diagram | Betti number trajectory during learning (Dabaghian) / Cavity formation sequence (Reimann) | Rate-distortion curve / information plane trajectory |
+| Critical value | Persistent feature birth/death | Error threshold (~2.5%) / Zeno transition | Bifurcation point / attractor ruin transition (Tsuda CI) / explosive synchronization σ_c (Ghorbanchian) | Perceptual switch / cognitive state transition (Tsuda CI) | Capacity boundary / compression onset / SAT/UNSAT α_c ≈ 4.267 |
+| The invariant that tracks it | Persistence diagram | Threshold curve | Bifurcation diagram / Conley-Morse graph (Dey) | Betti number trajectory during learning (Dabaghian) / Cavity formation sequence (Reimann) | Rate-distortion curve / information plane trajectory |
 | Robustness of the invariant | Stability theorem (bottleneck ≤ Hausdorff) | Threshold theorem (exp. suppression) / Zeno λ⁴/κ² | Structural stability | — | Channel coding theorem / MINE consistency |
 
 ### Layer 2: Matching / Assignment

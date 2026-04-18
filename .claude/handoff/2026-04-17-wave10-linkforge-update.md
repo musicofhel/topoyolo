@@ -36,7 +36,7 @@ Neuro          6→11+  10→12+    8+    7→9+   13→14+  10→12+
 InfoTheo       9→10+   9→10+   4→5+   6→8+   12→13+   8→9+
 ```
 
-14 cells now ≥10+ (was 8). ~219 papers total.
+16 cells now ≥10+ (was 8). ~219 papers total.
 
 ## Files modified (16 files, +906 lines)
 - `papers/inbox.md` — 15 full-depth annotations under Wave 10a/b/c headers

@@ -45,8 +45,6 @@ block-beta
   style IT_CC fill:#9f9,stroke:#333
   style IT_PH fill:#9f9,stroke:#333
   style IT_JM fill:#9f9,stroke:#333
-  style IT_NH fill:#9f9,stroke:#333
-  style QEC_NH fill:#9f9,stroke:#333
 ```
 
 ## Legend
@@ -60,10 +58,10 @@ block-beta
 - **Wave 10a** (5 papers): Baudot TIDA, Ghorbanchian sync, Dey Conley-Morse, Petri scaffolds, Chaudhuri ring attractor
 - **Wave 10b** (5 papers): Chung density-void, Dabaghian template, Donato phase transitions, Batko Conley sampled, Panaretos Wasserstein
 - **Wave 10c** (5 papers): Lord scaffolds (neuro), Jost-Zhang Cheeger (TDA), Trinca n-D toric (QEC), Curry DMT (TDA), Méndez directed PH (TDA)
-- 18 new green cells (≥10) — up from 8 in Session 7
+- 16 green cells (≥10) — up from 8 in Session 7
 - Chain Complex now ≥10 in ALL 5 domains; Param Homology ≥10 in 4/5
 - Stability taxonomy expanded to 7 flavors (added: dimensional)
 
 ## Coverage Status
 
-All 30 cells ≥ 4. 18 cells ≥ 10. ~219 unique papers.
+All 30 cells ≥ 4. 16 cells ≥ 10. ~219 unique papers.
