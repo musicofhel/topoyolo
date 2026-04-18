@@ -252,3 +252,43 @@ DOI: 10.1371/journal.pcbi.1008054
 **Stability (implicit)**: kNN estimator is provably consistent (converges to true TE). Discrete-time estimator converges to the WRONG VALUE --- an anti-stability result for the standard approach. The continuous-time estimator converges orders of magnitude faster, a practical stability advantage.
 **Parameterized homology**: Continuous timescale as parameter. Pathwise TE decomposes into jump contributions (at spikes) and continuous contributions (between spikes), parameterizing information flow by event type and inter-event interval.
 Full annotation: `inbox.md` (Wave 6).
+
+---
+
+## Wave 10 — link-forge update (2026-04-17)
+
+### Baudot, Tapia, Bennequin & Goaillard (2019) — Topological Information Data Analysis
+arXiv: 1907.04242. Stability: H_k, I_k have linearly independent gradients on open dense set of probability simplex — structural stability under perturbation. Information paths empirically robust across sample sizes and graining. Null: shuffling destroys dependences, I_k = 0 as null reference. Full annotation: `inbox.md` (Wave 10a).
+
+### Ghorbanchian et al. (2020) — Higher-order simplicial synchronization
+DOI: 10.1038/s42005-021-00605-4. Stability: hysteresis region = bistability. Synchronized state persists under decreasing σ until lower critical value. Full annotation: `inbox.md` (Wave 10a).
+
+### Dey, Mrozek & Slechta (2021) — Conley-Morse graph persistence
+arXiv: 2107.02115. Stability: Conley index invariant under choice of index pair. Intersection property guarantees zigzag intermediates are genuine. Noise-resilient thickened index pairs. Full annotation: `inbox.md` (Wave 10a).
+
+### Petri et al. (2014) — Homological scaffolds
+DOI: 10.1098/rsif.2014.0873. Null: placebo condition as experimental null. Psilocybin produces many transient structures + few highly persistent ones not seen under placebo. Gap quantifies drug's effect on brain topology. Full annotation: `inbox.md` (Wave 10a).
+
+### Chaudhuri et al. (2019) — Head direction ring attractor
+DOI: 10.1038/s41593-019-0460-x. Stability: ring manifold isometric and invariant across waking and REM sleep. S^1 topology robust to perturbation of brain state, sensory input, neuromodulatory context. Geometric stability (isometry) stronger than topological invariance. Full annotation: `inbox.md` (Wave 10a).
+
+### Chung, El-Yaagoubi, Qiu & Ombao (2025) — From Density to Void
+arXiv: 2503.14700. Anti-stability: higher-order topological features not reproducible across subjects. Overlap probability decays exponentially with simplex dimension. Null: FDR-corrected testing shows no significant higher-order interactions. Full annotation: `inbox.md` (Wave 10b).
+
+### Dabaghian, Brandt & Frank (2014) — Hippocampal map as topological template
+eLife 03476. Stability: topological representation invariant under geometric deformation (track morphing) and direction reversal. Null: geometric coding hypothesis rejected — place fields do not track metric features. Full annotation: `inbox.md` (Wave 10b).
+
+### Donato et al. (2016) — PH analysis of Phase Transitions
+arXiv: 1601.03641. Stability: PH detects phase transition despite extremely sparse sampling (300 landmarks from 6K snapshots). Robust to metric approximation and subsampling. Null: φ^4 model as negative control — no topological signal at phase transition, validating PH specificity. Full annotation: `inbox.md` (Wave 10b).
+
+### Batko, Mischaikow, Mrozek & Przybylski (2019) — Conley Index from Sampled Dynamics
+arXiv: 1904.03757. Stability: isolating neighborhoods persist under ε-perturbations (Theorem 3.2). Continuous ε-approximations inherit same Conley index via continuation/homotopy argument. Quantitative ε bounds from data to dynamics. Full annotation: `inbox.md` (Wave 10b).
+
+### Jost & Zhang (2023) — Cheeger inequalities on simplicial complexes
+arXiv: 2302.01069. Stability: spectral gap of Hodge Laplacian bounded from below by Cheeger constant — spectral stability from combinatorial topology. Perturbations preserving simplicial structure cannot collapse spectral gap below Cheeger bound. Full annotation: `inbox.md` (Wave 10c).
+
+### Trinca, Bollauf & Zamir (2024) — n-Dimensional Toric Codes from Lattice Codes
+arXiv: 2410.20233. Stability: interleaving distance between n-D toric codes inherits lattice geometry. Burst error correction from lattice structure — code distance scales with systole of T^n. Full annotation: `inbox.md` (Wave 10c).
+
+### Curry, DeSha, Hoff, Limberger, Luo & Qin (2022) — Decorated merge trees for persistent topology
+DOI: s41468-022-00089-3. Stability: DMT metric is stable — bounded by interleaving distance of underlying PH modules. Gromov-Wasserstein coupling provides computable stable metric on merge trees. Full annotation: `inbox.md` (Wave 10c).

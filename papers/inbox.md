@@ -966,3 +966,540 @@ Ping Wang, Institute of High Energy Physics, Chinese Academy of Science, Beijing
 | Topology invariance (CV < 0.3%) | Universality of the null across architectures |
 
 **See also**: `by-domain/dynamical_systems.md`, `atlas/STABILITY.md`, `atlas/NULL_HYPOTHESIS.md`
+
+---
+
+## Wave 10a: link-forge update — Cross-Domain Bridges (2026-04-17)
+
+---
+
+## 1907.04242 --- Baudot, Tapia, Bennequin & Goaillard (2019)
+**"Topological Information Data Analysis"**
+
+**Domain(s)**: information theory, TDA
+
+**Abstract machines instantiated**:
+- **Chain complex**: Constructs an explicit simplicial complex Δ([n]) whose vertices are random variables X_1,...,X_n and whose k-faces are k-tuples of joint variables. Entropy H_k and mutual information I_k are defined as co-chains of degree k on this simplex. The pairwise mutual information I_2 is shown to be a simplicial co-boundary of the entropy H (δH = I_2). Odd-degree functions I_{2m+1} are information co-boundaries in the topos-theoretic cohomology of Baudot & Bennequin (2015). The Möbius inversion formula on the face lattice decomposes all information quantities into the basis functions η_I. The Bethe free energy approximation writes free energy as an alternating sum over faces of a simplicial complex K, with coefficients (-1)^{d-|I|} on entropy terms — the chain-complex structure is load-bearing in the variational calculus.
+- **Joint-vs-marginal excess**: The k-multivariate mutual information I_k(X_1;...;X_k) = Σ_{j=1}^{k} (-1)^{j-1} H_j measures exactly the excess statistical structure present in the k-variable joint distribution absent from all lower-order marginals. Theorem 2.2: vanishing of ALL I_k for k ≥ 2 is necessary and sufficient for statistical independence. Total correlation G_k (Watanabe) is shown to be a weaker measure that fails to discriminate population subtypes, while I_k succeeds because it isolates genuinely k-th-order excess. Negative I_k (synergy) detects emergent collective interactions invisible to pairwise analysis — the minimum of I_3 for binary variables corresponds precisely to Borromean links (pairwise independent but collectively dependent).
+- **Null hypothesis**: The null is uniformity + independence of all variables, predicting H_k = k·log₂(r) linearly and I_k = 0 for all k ≥ 2. A shuffling procedure randomly permutes values within each variable to destroy all dependences while preserving marginal distributions. The shuffled I_k distribution provides the null reference with significance level p = 0.05. The undersampling dimension k_u provides an additional null boundary: above k_u, entropy saturates at H_k = log₂(m) and information estimates become artifacts of finite sample size.
+- **Parameterized homology**: The "information landscape" tracks all I_k values across the full simplicial lattice as a function of dimension k. Iso-graining landscapes add a second parameter: discretization granularity N, creating a 2D parameter space (k, N) where critical points (phase transitions between disordered and condensed regimes) emerge at N_c = 3. Maximum-length positive information paths select variables with strongest k-th-order dependence; maximum-length negative paths select the most synergistic clusters.
+- **Stability**: Theorem 2.3: pure entropy functions H_k characterize probability laws up to finite ambiguity for binary variables. Theorem 2.4: H_k, I_k, and η_I have linearly independent gradients on an open dense set of the probability simplex, ensuring analytic independence and structural stability under perturbation of the probability law. Information paths of maximal length are empirically robust across variations in sample size and graining.
+
+**What is genuinely new (not reducible to shared abstraction)**:
+- Systematic construction of I_k as information co-chains on the full simplicial complex of variables, with explicit cohomological grading (odd I_{2m+1} are coboundaries, even I_{2m} are convex-type), building on Baudot-Bennequin topos-theoretic foundations
+- Proof that vanishing of ALL I_k for k ≥ 2 is necessary and sufficient for independence — no equation can be dropped
+- Information coordinates: the 2^n − 1 pure H_k functions characterize probability laws up to finite ambiguity (binary) and are analytically independent on the probability simplex (arbitrary finite)
+- Hu Kuo Ting theorem as isomorphism between Boolean set algebra and information algebra: set union → joint, intersection → juxtaposition, difference → conditioning
+- I_k negativity as Borromean-link structure with exact extremal characterization
+- Information landscape and path methodology: exhaustive I_k computation over all faces, extraction of maximal/minimal paths for unsupervised classification (cell-type detection recovering pre-identified subtypes)
+- Connection between Bethe free energy and alternating sum of I_k over faces of a simplicial complex
+
+**Connections the authors acknowledge**: Cite persistent homology (Epstein, Carlsson, Edelsbrunner 2011) as complementary TDA approach. Cite Reimann et al. (2017) on simplicial complexes in neuroscience. Bridge information theory and algebraic topology through topos-cohomological framework. Application domain: neuroscience/genomics (gene expression).
+
+**Vocabulary mapping**:
+| Paper term | Rosetta term |
+|---|---|
+| n-simplex Δ([n]) of variables | Simplicial complex (chain complex domain) |
+| Information co-chain of degree k | k-cochain in the information cohomology |
+| I_2 as coboundary of H | Coboundary operator (δH = I_2) |
+| I_k (k-mutual information) | k-th-order joint-vs-marginal excess |
+| I_k negativity (synergy) | Emergent joint structure absent from all lower-order marginals |
+| Borromean link configuration | Maximally synergistic state |
+| Total correlation G_k (Watanabe) | Cumulative divergence from independence (weaker than I_k) |
+| Information landscape | Parameterized invariant landscape over faces |
+| Shuffling test | Null hypothesis by structure destruction |
+| Undersampling dimension k_u | Reliability boundary for parameterized invariant |
+| η_I (Möbius-inverted basis) | Atomic information content of face I |
+| Bethe free energy on complex K | Variational approximation via simplicial information decomposition |
+
+**See also**: `by-domain/information_theory.md`, `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/composite_systems.md`, `by-structure/phase_transitions.md`, `papers/cross_domain_bridges.md`
+
+---
+
+## s42005-021-00605-4 --- Ghorbanchian, Restrepo, Torres & Bianconi (2020)
+**"Higher-order simplicial synchronization of coupled topological signals"**
+
+**Domain(s)**: dynamical systems, TDA
+
+**Abstract machines instantiated**:
+- **Chain complex**: The simplicial complex provides the algebraic structure. Boundary operators B_k map k-simplices to (k-1)-simplices, with B_{k-1} B_k = 0. The Hodge Laplacian L_k = B_k^T B_k + B_{k+1} B_{k+1}^T operates on k-chains and governs diffusion of topological signals. Coupling between 0-signals (node phases θ_i) and 1-signals (link phases φ_{ij}) is mediated by B_1: link phase dynamics depend on the difference of node phases along each edge's boundary. This is dynamics ON a chain complex — the boundary operator structures the coupling.
+- **Parameterized homology**: Coupling strength σ parameterizes the system. Below critical σ, signals are desynchronized. At σ_c, explosive (discontinuous) topological synchronization occurs — both node and link phases synchronize simultaneously. The order parameter undergoes a discontinuous birth at the critical coupling. Hysteresis: forward and backward critical values differ, creating a bistable region whose width depends on the Hodge spectral gap.
+- **Stability**: The hysteresis region represents bistability — both synchronized and desynchronized states are locally stable within a parameter range. The synchronized state, once formed, persists under perturbation (decreasing σ) until a lower critical value.
+
+**What is genuinely new (not reducible to shared abstraction)**:
+- *Topological signals*: dynamical variables (phases) defined on simplices of arbitrary dimension, not just nodes. The chain complex determines which dimensions carry independent dynamical degrees of freedom.
+- *Explosive topological synchronization*: simultaneous, discontinuous synchronization of signals across different simplex dimensions. Node and link phases lock at the same critical coupling — no analogue in standard network synchronization.
+- The Hodge Laplacian's spectral gap determines the synchronization threshold — a direct link between chain complex algebra and the dynamical phase transition.
+- The coupling term involves the boundary operator explicitly: link dynamics depend on ∂(edge) = node_j − node_i. Topology dictates dynamics.
+
+**Connections the authors acknowledge**: Explicitly bridge TDA (simplicial complexes, Hodge Laplacian) and dynamical systems (Kuramoto model, synchronization). Cite network neuroscience (connectomes as test cases). Do NOT cite QEC or information theory.
+
+**Vocabulary mapping**:
+| Paper term | Rosetta term |
+|---|---|
+| Simplicial complex | Chain complex (graded, with boundary maps) |
+| Hodge Laplacian L_k | Operator from boundary operators (∂^T∂ + ∂∂^T) |
+| Topological signal on k-simplices | k-cochain (function on k-cells) |
+| Boundary operator B_k | ∂_k (maps k-chains to (k-1)-chains) |
+| Coupling strength σ | Parameter (filtration-like) |
+| Explosive synchronization | Discontinuous phase transition |
+| Hysteresis loop | Bistability region (parameterized) |
+| Order parameter r | Synchronization measure (Kuramoto-type) |
+| Spectral gap of L_k | Algebraic connectivity of k-dimensional complex |
+
+**See also**: `by-domain/dynamical_systems.md`, `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/filtrations.md`, `by-structure/phase_transitions.md`, `papers/cross_domain_bridges.md`
+
+---
+
+## 2107.02115 --- Dey, Mrozek & Slechta (2021)
+**"Persistence of Conley-Morse Graphs in Combinatorial Dynamical Systems"**
+
+**Domain(s)**: TDA, dynamical systems
+
+**Abstract machines instantiated**:
+- **Chain complex**: The Conley index is defined as relative homology H_k(P, E) of an index pair (P, E) for an isolated invariant set S. The construction is explicitly chain-level: simplicial complexes with face relations induce boundary operators, and critical multivectors are detected via nontrivial relative homology. The Conley-Morse graph annotates each vertex (Morse set) with its Poincaré polynomial summarizing ranks of the Conley index across dimensions — a graded homological fingerprint.
+- **Parameterized homology**: The central contribution. A sequence of multivector fields V_1,...,V_n (the parameter) yields a sequence of Conley-Morse graphs G_1,...,G_n. Zigzag persistence tracks how the Conley index changes across this sequence. Two kinds of parameterized filtrations: (1) Conley-Morse filtrations — relative zigzag filtrations of index pairs tracking how the Conley index at individual Morse sets evolves; (2) graph filtrations — zigzag filtrations of the graph structure itself, tracking how the Morse decomposition topology changes. Barcodes from both types are collated after redundancy elimination to produce a composite barcode.
+- **Stability**: The Conley index is invariant under choice of index pair (any two index pairs for the same isolated invariant set yield the same relative homology). Index pairs "in N" have the intersection property: intersections of index pairs remain valid, guaranteeing zigzag intermediates are genuine Conley indices. "Thickened" index pairs provide noise resilience by expanding P while preserving the invariant set — a stability-under-perturbation result ensuring small geometric changes don't destroy persistent features.
+
+**What is genuinely new (not reducible to shared abstraction)**:
+- The Conley-Morse graph itself as the object of persistence: persistence applied to an annotated graph whose vertices carry graded homological data. Neither chain complex nor parameterized homology alone captures persisting an annotated graph.
+- The "relevant" Conley-Morse graph: when two multivector fields are intersected, spurious Morse sets appear. The paper filters these via "relevant" Morse sets — specific to the dynamics of combinatorial vector fields, no analogue in standard TDA.
+- Redundancy elimination across overlapping subfiltrations: partial order on bars via subset inclusion, retaining only maximal bars. A deduplication step specific to multi-filtration Conley-Morse setting.
+- Noise-resilient index pair construction: conditions under which multivectors can be added to P without changing S, "thickening" the pair to preserve features through intersections. Geometric stability technique specific to combinatorial dynamics.
+- The entire framework is combinatorial (multivector fields on simplicial complexes), not smooth. Bridge to classical continuous Conley theory is noted as an open problem.
+
+**Connections the authors acknowledge**: Deeply embedded in Conley theory tradition (Conley 1978, Mischaikow & Mrozek). Builds on zigzag persistence (Carlsson & de Silva 2010). No connections to QEC, neuroscience, or information theory. Stays entirely within the TDA-dynamics intersection.
+
+**Vocabulary mapping**:
+| Paper term | Rosetta term |
+|---|---|
+| Multivector field V | Combinatorial dynamical system (discrete flow) |
+| Conley index H_k(P, E) | Relative homology of index pair (topological invariant) |
+| Index pair (P, E) | Chain pair whose relative homology is the invariant |
+| Morse decomposition | Graded decomposition of invariant set |
+| Morse set M_p | Irreducible dynamical component |
+| Conley-Morse graph G | Annotated Hasse diagram: vertices = Morse sets, labels = Conley indices |
+| Zigzag filtration | Parameterized sequence with forward and backward inclusions |
+| Barcode | Birth-death summary of persistent features |
+| Critical multivector | Multivector with nontrivial relative homology |
+| Isolated invariant set S | Maximal invariant subset (robust under perturbation) |
+| Relevant Morse set | Non-spurious Morse set in intersection field |
+| Noise-resilient index pair | Thickened (P, E) preserving S with better intersection behavior |
+| Poincaré polynomial | Generating function of graded Conley index ranks |
+
+**See also**: `by-domain/dynamical_systems.md`, `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/filtrations.md`, `by-structure/phase_transitions.md`, `papers/cross_domain_bridges.md`
+
+---
+
+## rsif.2014.0873 --- Petri, Expert, Turkheimer, Carhart-Harris, Nutt, Hellyer & Vaccarino (2014)
+**"Homological scaffolds of brain functional networks"**
+
+**Domain(s)**: neuroscience, TDA
+
+**Abstract machines instantiated**:
+- **Chain complex**: The weighted functional brain network (from fMRI correlations) is converted to a weighted clique complex. Boundary operators on this simplicial complex define homology groups. The key construction is the *homological scaffold*: a new graph whose edges are those that participate in persistent homological cycles. This extracts chain-level information (which specific simplices carry cycles) and re-encodes it as a network amenable to standard graph-theoretic analysis.
+- **Parameterized homology**: The weight filtration on the correlation network creates a persistence diagram. As the threshold parameter decreases (admitting weaker correlations), cycles appear and disappear. The scaffold captures the entire persistence history — each scaffold edge is weighted by the persistence (death − birth) of the cycle it participates in. Short-lived vs long-lived homological features are distinguished.
+- **Null hypothesis**: The placebo condition serves as the experimental null. Psilocybin vs placebo comparison reveals that the drug dramatically alters the homological scaffold: psilocybin produces many transient structures of low stability alongside a small number of highly persistent ones not seen under placebo. The gap between conditions quantifies the drug's effect on brain topology.
+
+**What is genuinely new (not reducible to shared abstraction)**:
+- The *homological scaffold* is a genuinely novel construction: it transforms PH output (persistence diagrams, which discard spatial information) back into a network that retains WHICH edges carry cycles. Bridges PH and network science — two communities that typically do not share tools.
+- Psilocybin increases topological complexity (more short-lived cycles) while creating a few highly persistent structures. Not just "more disorder" — a restructuring of the homological landscape.
+- The scaffold enables standard network metrics (degree, modularity, clustering) to be computed on homological features. Operationalizes TDA for the neuroscience community.
+- Correlation between scaffold structure and subjective drug experience provides empirical validation that homological features are behaviorally relevant.
+
+**Connections the authors acknowledge**: Explicitly bridge TDA (persistent homology, simplicial complexes — cite Edelsbrunner, Harer, Carlsson) and neuroscience (brain functional networks — cite Bullmore & Sporns). This paper IS a cross-domain bridge — the authors are fully aware of bridging these communities.
+
+**Vocabulary mapping**:
+| Paper term | Rosetta term |
+|---|---|
+| Weighted clique complex | Chain complex from correlation data |
+| Homological cycle | Element of ker ∂ (kernel of boundary operator) |
+| Homological scaffold | Network encoding which edges carry persistent cycles |
+| Persistence (death − birth) | Lifetime in parameterized homology |
+| Weight filtration | Parameterization by correlation threshold |
+| Placebo condition | Null model (no drug = structure-preserving reference) |
+| Transient structure | Short-lived cycle (low persistence) |
+| Persistent structure | Long-lived cycle (high persistence) |
+
+**See also**: `by-domain/neuroscience.md`, `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/filtrations.md`, `by-structure/phase_transitions.md`, `papers/cross_domain_bridges.md`
+
+---
+
+## s41593-019-0460-x --- Chaudhuri, Gerçek, Pandey, Peyrache & Fiete (2019)
+**"The intrinsic attractor manifold and population dynamics of a canonical cognitive circuit across waking and sleep"**
+
+**Domain(s)**: neuroscience
+
+**Abstract machines instantiated**:
+- **Chain complex**: The head direction circuit's population activity traces a one-dimensional ring manifold — topologically S^1. This is a 1-cycle: H_1(S^1) = ℤ, meaning the manifold has exactly one independent loop. The ring topology is extracted from population activity via dimensionality reduction (Isomap), revealing that the high-dimensional neural state space collapses onto a topologically nontrivial 1-manifold. The S^1 structure IS the chain complex invariant in the data.
+- **Stability**: The ring manifold is isometric (same geometry) and invariant (same topology) across waking and REM sleep — two dramatically different brain states. During waking, ring position encodes head direction; during REM sleep, the ring persists even without head movement, drifting smoothly. The S^1 topology is robust to the perturbation of transitioning between conscious and unconscious states — topological stability under changes in behavioral state, sensory input, and neuromodulatory context.
+- **Joint-vs-marginal excess**: The ring manifold is a population-level phenomenon — individual neurons show noisy, idiosyncratic tuning curves. The S^1 structure emerges only from the joint activity of the full population, not from any single neuron's firing pattern. The ring topology IS excess structure in the composite (population) absent from the marginals (individual neurons).
+
+**What is genuinely new (not reducible to shared abstraction)**:
+- *Isometry* across states, not just topology: the ring during sleep has the same metric structure (distances between points) as during waking. Stronger than topological invariance — implies the attractor's geometry is intrinsic to the circuit, not imposed by external inputs.
+- *Blind decoding*: The ring manifold allows decoding the represented variable (head direction) from population activity without prior knowledge of the stimulus. The topology itself reveals the computation.
+- Persistence of the ring during REM sleep (no movement) suggests the attractor is a property of the recurrent circuit architecture, not of sensory-motor loops. A circuit-intrinsic topological invariant.
+- Complements Gardner et al. 2022 (already in the Rosetta as the T^2 toroidal attractor for grid cells). Together: S^1 for head direction, T^2 for grid cells — mammalian navigation circuits encode topology at the circuit level.
+
+**Connections the authors acknowledge**: Cite continuous attractor network theory (Skaggs, Zhang, Burak & Fiete). Do NOT cite TDA, QEC, or information theory — entirely within systems neuroscience.
+
+**Vocabulary mapping**:
+| Paper term | Rosetta term |
+|---|---|
+| Ring attractor manifold | S^1 = 1-cycle (H_1 = ℤ) |
+| Isomap embedding | Dimensionality reduction revealing topology |
+| Head direction encoding | Represented variable on the manifold |
+| Isometric across states | Geometric stability (stronger than topological) |
+| Population activity | Joint signal (composite of individual neurons) |
+| Individual tuning curves | Marginal signals (components) |
+| Waking vs REM sleep | Perturbation of brain state |
+| Blind decoding | Topology-based inference without labels |
+
+**See also**: `by-domain/neuroscience.md`, `by-structure/boundary_operators.md`, `by-structure/phase_transitions.md`, `by-structure/composite_systems.md`
+
+---
+
+## Wave 10b: link-forge update — Weak Cell Strengthening (2026-04-17)
+
+---
+
+## annurev-statistics-030718-104938 --- Panaretos & Zemel (2019)
+**"Statistical Aspects of Wasserstein Distances"**
+
+**Domain(s)**: information theory (statistics), TDA
+
+**Abstract machines instantiated**:
+- **Matching**: Wasserstein distances ARE optimal transport — the metric measures the minimal cost of reassigning probability mass from one distribution to another. W_p(μ,ν) = inf_{γ ∈ Γ(μ,ν)} (∫ c(x,y)^p dγ)^{1/p}, where the infimum is over all couplings (joint distributions with correct marginals). The review covers: Monge (deterministic) vs Kantorovich (probabilistic) formulations, dual formulations via Lipschitz functions, Brenier's theorem (optimal map = gradient of convex function), and computational methods (Sinkhorn, linear programming). Every Wasserstein computation IS a matching problem.
+- **Stability**: Wasserstein distances metrize weak convergence AND convergence of moments — stronger than weak convergence alone. They are "well-adapted to quantify a natural notion of perturbation of a probability distribution." Key stability results: sample complexity bounds (convergence rates of empirical Wasserstein distances), central limit theorems for W_p, and dimension-dependent convergence rates (curse of dimensionality for d ≥ 3).
+- **Parameterized homology**: The order p parameterizes the family of Wasserstein distances W_p. Different p values emphasize different aspects of distributional difference: W_1 (Earth mover's distance) captures location, W_2 (quadratic cost) connects to Riemannian geometry of the Wasserstein space, W_∞ (bottleneck) connects to PH stability theorems. The Wasserstein barycenter problem parameterizes a family of "average" distributions. Rate-distortion and channel capacity problems are OT problems parameterized by distortion/rate.
+
+**What is genuinely new (not reducible to shared abstraction)**:
+- The comprehensive unification of OT as a statistical tool: convergence rates, CLTs, minimax estimation, goodness-of-fit testing, all through the Wasserstein lens. This connects OT to the full statistical inference toolkit.
+- The geometric perspective: Wasserstein space as an infinite-dimensional Riemannian manifold (Otto calculus), connecting OT to differential geometry. Displacement interpolation (McCann) provides geodesics.
+- Statistical challenges unique to Wasserstein: the curse of dimensionality (convergence rate O(n^{-1/d}) for d ≥ 3), regularization strategies (entropic, sliced, projection), and the distinction between estimation and testing.
+- The paper notes Wasserstein's deep connection to PH stability: the bottleneck distance on persistence diagrams IS a W_∞ distance. This bridge to TDA is acknowledged but not elaborated.
+
+**Connections the authors acknowledge**: Cite Villani, Rachev-Rüschendorf for OT foundations. Note connection to PH stability (bottleneck = W_∞). Cite applications in Bayesian computation, generative models (Wasserstein GANs), and causal inference. Bridge statistics and OT theory. Do NOT cite QEC, dynamical systems, or neuroscience.
+
+**Vocabulary mapping**:
+| Paper term | Rosetta term |
+|---|---|
+| Wasserstein distance W_p | Optimal matching cost (p-th order) |
+| Coupling γ ∈ Γ(μ,ν) | Joint distribution with correct marginals |
+| Optimal transport map T | Deterministic matching (Monge) |
+| Kantorovich relaxation | Probabilistic matching |
+| Brenier's theorem | Optimal map = gradient of convex function |
+| Wasserstein barycenter | Fréchet mean in matching-metric space |
+| Entropic regularization (Sinkhorn) | Smoothed matching (computational approximation) |
+| Convergence rate O(n^{-1/d}) | Sample complexity of the matching metric |
+| Displacement interpolation | Geodesic in matching space |
+| Bottleneck distance | W_∞ (PH stability distance) |
+
+**See also**: `by-domain/information_theory.md`, `by-domain/tda.md`, `by-structure/optimal_transport.md`, `by-structure/phase_transitions.md`
+
+---
+
+## 2503.14700 --- Chung, El-Yaagoubi, Qiu & Ombao (2025)
+**"From Density to Void: Why Brain Networks Fail to Reveal Complex Higher-Order Structures"**
+
+**Domain(s)**: neuroscience, TDA
+
+**Abstract machines instantiated**:
+- **Chain complex**: Constructs simplicial complexes from fMRI correlation matrices with explicit boundary operators ∂_k. The boundary matrices are built iteratively using the Intersecting Neighbor Sets algorithm. The paper provides the full chain complex formalism: ∂_k maps k-simplices to (k-1)-faces with alternating signs, ∂_{k-1} ∘ ∂_k = 0. The framework IS the chain complex machinery — but the paper's conclusion is that this machinery reveals very little meaningful higher-order structure in brain data.
+- **Null hypothesis**: The central finding is a null result. The ratio λ_k = N_k / C(p,k) of observed to possible k-simplices drops drastically after dimension 3 (λ_3 = 4.54 × 10^{-4}, λ_4 = 4.71 × 10^{-5}). None of these pass FDR correction at 0.05. The overlap probability across subjects decays exponentially: 1-simplices survive 100 subjects, 2-simplices ~20 subjects, 3-simplices vanish beyond 10 subjects. This is a rigorously demonstrated null — higher-order brain interactions are not statistically detectable with current methods.
+- **Stability (anti-stability)**: Higher-order features are NOT robust across subjects. This is an explicit anti-stability result: the topological features that should be present (if genuine higher-order interactions exist) fail the reproducibility test. The paper argues the problem is methodological (dense/fragmented networks obscure features), not necessarily that higher-order interactions are absent.
+
+**What is genuinely new (not reducible to shared abstraction)**:
+- **ANTISYNONYM material**: This paper directly contradicts the optimistic view from Petri (2014), Reimann (2017), and Santoro (2024). Those papers found meaningful higher-order topology; this paper shows that such findings don't survive multiple comparisons correction and cross-subject replication.
+- The density-void dilemma: correlation networks are either too dense (masking gaps needed for holes) or too sparse (destroying higher-order simplices). This is a fundamental limitation of thresholded correlation-based approaches.
+- The combinatorial explosion argument: with C(116,k) possible k-subsets, the multiple comparisons burden makes detecting genuine higher-order interactions practically impossible at significance level 0.05.
+- The proposal that "higher-order dynamics" may emerge from persistent interplay of lower-dimensional (pairwise, triplet) interactions over time, rather than from simultaneous multi-node events. This reframes the question from spatial to temporal higher-order structure.
+
+**Connections the authors acknowledge**: Cite TDA (Carlsson, Edelsbrunner), Hodge Laplacian (Anand & Chung 2023), and brain network science. Cite Petri et al. (2014), Santoro et al. (2024), and Lucas et al. (2020) as prior higher-order brain network studies. Explicitly positioned as a methodological critique of TDA applied to brain networks.
+
+**Vocabulary mapping**:
+| Paper term | Rosetta term |
+|---|---|
+| Boundary matrix ∂_k | Boundary operator (maps k-chains to (k-1)-chains) |
+| k-simplex | k-face of the simplicial complex |
+| λ_k = N_k / C(p,k) | Ratio of observed to possible k-interactions |
+| FDR correction | Multiple comparisons null (Benjamini-Hochberg) |
+| Overlap probability | Cross-subject reproducibility (stability diagnostic) |
+| Dense network | Overly connected complex (masks topological features) |
+| Fragmented network | Overly sparse complex (destroys higher-order simplices) |
+| Thresholding parameter τ | Filtration parameter |
+
+**See also**: `by-domain/neuroscience.md`, `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/phase_transitions.md`, `glossary/ANTISYNONYMS.md`
+
+---
+
+## eLife.03476 --- Dabaghian, Brandt & Frank (2014)
+**"Reconceiving the hippocampal map as a topological template"**
+
+**Domain(s)**: neuroscience
+
+**Abstract machines instantiated**:
+- **Chain complex**: Place cell activity is analyzed via the simplicial complex / nerve theorem framework established in Dabaghian et al. (2012). Place fields form a cover of the environment; co-firing defines simplices. The topological invariants of this complex (connectivity, loops = H_0, H_1) encode the environment's topology. The key experimental finding: these invariants are preserved when the track geometry changes but topology is held constant.
+- **Stability**: Place fields preserve the relative sequence of places visited (topology) but do NOT vary with metrical features of the track or direction of movement. The topological representation is stable under geometric deformations — morphing the track (changing distances, angles, curvature) does not change the place cell representation. This is a strong stability result: the topological invariant (spatial ordering) survives arbitrary smooth deformations.
+- **Null hypothesis**: The geometric hypothesis — that place cells encode distances and angles — is the null that is rejected. If place cells were geometric, their fields should change when the track is morphed. They don't. The place cell representation is topological (invariant under homeomorphism), not geometric (invariant only under isometry).
+
+**What is genuinely new (not reducible to shared abstraction)**:
+- The experimental dissociation of topology from geometry in place cell coding. Morphing linear tracks allowed independent manipulation of topology (connectivity of the path) and geometry (distances, curvatures), revealing that place cells track the former, not the latter.
+- The reinterpretation of place cells: not "location-specifiers" but "topology-encoders." This challenges decades of place cell research that assumed geometric coding.
+- Direction-independence: place fields do not vary with direction of movement on the track, further supporting a topological (not geometric) representation.
+- Extends Dabaghian et al. 2012 (already in Rosetta) from computational model to experimental validation. The 2012 paper showed topology CAN be recovered from place cells; this 2014 paper shows topology IS what place cells encode.
+
+**Connections the authors acknowledge**: Cite Dabaghian et al. 2012 (their own computational model), O'Keefe & Dostrovsky (1971) for place cells. Do NOT cite TDA formalism directly (though the underlying framework is PH via nerve complexes). Entirely within systems/computational neuroscience.
+
+**Vocabulary mapping**:
+| Paper term | Rosetta term |
+|---|---|
+| Place field | Cover element (nerve complex vertex) |
+| Co-firing | Simplex (nerve construction) |
+| Topological template | Chain complex invariant of the environment |
+| Track morphing | Geometric perturbation (homeomorphism) |
+| Preserved sequence | Topological invariant (stable under deformation) |
+| Direction-independence | Additional stability (invariant under orientation reversal) |
+| Geometric coding (rejected) | Null hypothesis (metric structure without topological content) |
+
+**See also**: `by-domain/neuroscience.md`, `by-structure/boundary_operators.md`, `by-structure/phase_transitions.md`
+
+---
+
+## 1601.03641 --- Donato, Gori, Pettini, Petri, De Nigris, Franzosi & Vaccarino (2016)
+**"Persistent Homology analysis of Phase Transitions"**
+
+**Domain(s)**: dynamical systems, TDA
+
+**Abstract machines instantiated**:
+- **Chain complex**: Rips-Vietoris simplicial complex constructed from sampled points in configuration space. Boundary operators ∂_n with ∂_{n-1} ∘ ∂_n = 0 define cycles Z_n = ker ∂_n, boundaries B_n = im ∂_{n+1}, and homology H_n = Z_n/B_n. Betti numbers β_0 (connected components) and β_1 (loops/voids) tracked through the filtration. The paper provides a complete formal treatment of the chain complex in the appendix.
+- **Parameterized homology**: Energy density ε parameterizes the submanifolds M_v = V_N^{-1}((-∞, v]) of configuration space. PH applied to dynamically sampled point clouds at different energies (below, at, above critical energy ε_c). The persistence diagrams change qualitatively at the phase transition: for the MFXY model, the H_1 persistence distribution shows a long tail below ε_c that disappears above. This tail = persistent cycles = nontrivial topology. The Rips filtration radius ρ is the second parameter (scale), creating a 2D parameterization (energy × scale).
+- **Stability**: PH correctly detects the known phase transition in the MFXY model despite extremely sparse sampling of high-dimensional manifolds (300 landmark points from 6000 snapshots of N-torus). The topological information is robust to: (1) sparse sampling, (2) metric approximation (Jacobi metric → simplified distance), (3) bootstrap-like subsampling (20 iterations). The persistence landscape (Bubenik's technique) provides statistical confidence bands.
+- **Null hypothesis**: The φ^4 lattice model serves as a negative control: its phase transition has no topological origin (no critical points of the potential at the transition), and PH correctly produces NO topological signal. This validates PH as a detector — it doesn't produce false positives. The φ^4 null is structurally different from the MFXY positive: same class of models, same methodology, opposite topological signatures.
+
+**What is genuinely new (not reducible to shared abstraction)**:
+- The first application of PH to detect phase transitions in statistical mechanics via configuration space topology. Previous work established the theoretical connection (Pettini 2007); this paper provides the computational evidence.
+- The benchmarking on a positive (MFXY) and negative (φ^4) model simultaneously. This two-model comparison is methodologically strong: PH succeeds where it should and stays silent where it shouldn't.
+- The use of Jacobi metric (energy-dependent Riemannian metric) rather than Euclidean distance for the Rips complex. The topological robustness under this metric approximation is itself a stability result.
+- Persistence landscape statistics (Bubenik 2015) applied to physics: averaging H_1 landscapes across subsamples with 95% confidence bands. This imports the statistical TDA machinery into the physics of phase transitions.
+- The observation that configuration space sampling is analogous to Monte Carlo importance sampling — suggesting that the sparse sampling actually captures topologically important regions.
+
+**Connections the authors acknowledge**: Cite PH foundations (Edelsbrunner, Carlsson, Zomorodian). Cite Petri et al. 2014 (homological scaffolds — same Petri is a coauthor). Cite Pettini 2007 for the topological theory of phase transitions. Explicitly bridge TDA and statistical mechanics. Do NOT cite QEC, neuroscience, or information theory.
+
+**Vocabulary mapping**:
+| Paper term | Rosetta term |
+|---|---|
+| Configuration space submanifold M_v | Level set parameterized by energy density v |
+| Rips-Vietoris filtration | Scale-parameterized simplicial complex |
+| Boundary operator ∂_n | Chain complex map (∂² = 0) |
+| Betti number β_k | Rank of k-th homology (topological invariant) |
+| Persistence diagram | Birth-death summary of parameterized features |
+| Persistence landscape | Statistical summary of PH (function-valued) |
+| Critical energy ε_c | Phase transition = critical value of parameter |
+| MFXY model (positive) | Topological phase transition (detected by PH) |
+| φ^4 model (negative) | Non-topological phase transition (null for PH) |
+| Jacobi metric | Energy-dependent Riemannian distance |
+| Morse index μ_k | Index of critical point (topological change generator) |
+| Euler characteristic χ(M_v) | Alternating sum of Betti numbers |
+
+**See also**: `by-domain/dynamical_systems.md`, `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/filtrations.md`, `by-structure/phase_transitions.md`, `papers/cross_domain_bridges.md`
+
+---
+
+## 1904.03757 --- Batko, Mischaikow, Mrozek & Przybylski (2019)
+**"Conley Index Approach to Sampled Dynamics"**
+
+**Domain(s)**: TDA, dynamical systems
+
+**Abstract machines instantiated**:
+- **Chain complex**: Constructs the cohomological Conley index from weak index pairs. Given an isolating neighborhood N for a multivalued map F, the index map I_{FP} is an endomorphism of the Alexander-Spanier cohomology H*(P_1/P_2, [P_2]). The Leray functor extracts the essential algebraic information. The computational pipeline is chain-level: cubical homology on binned phase space, induced maps on cohomology from the multivalued map. In the main theorems, H^1(P_1, P_2) = ℤ^5 (or ℤ^7), giving explicit matrix representations of the index map encoding symbolic dynamics.
+- **Parameterized homology**: The binning scale δ is the key parameter. As δ varies, the multivalued map representation changes. The authors explicitly acknowledge the parameterized homology viewpoint: understanding results under varying δ "in the spirit of persistent homology" is left for future work. The ε-approximation neighborhood also parametrizes a family of continuous maps sharing the same Conley index.
+- **Stability**: Central to the paper. Theorem 3.2: isolating neighborhoods persist under ε-perturbations of the multivalued map. Theorem 4.1: every continuous ε-approximation f ∈ a_ε(F) inherits the same isolating neighborhood and Conley index via the continuation property. The homotopy argument (convex combination connecting F to f through a family sharing N as isolating neighborhood) is the mechanism. Guarantees that formal computations on the multivalued map yield valid conclusions about all nearby continuous dynamics.
+
+**What is genuinely new (not reducible to shared abstraction)**:
+- The sunflower enclosure construction: sampled data + map → upper semicontinuous cubical map with acyclic values. Canonical way to pass from finite time series to a multivalued map amenable to Conley index computation.
+- Eliminates the continuous selector requirement of prior work (Mischaikow-Mrozek-Reiss-Szymczak 1999), dramatically expanding applicability to sparse/noisy data.
+- Semiconjugacy to symbolic dynamics from sampled data: if the index map is Lefschetz-complete, there exists a semiconjugacy onto a subshift of finite type. Extends Szymczak's classical result to weak index pairs.
+- Explicit ε bounds: ANY continuous map within δ/2 of the multivalued representation generates dynamics at least as complex as the symbolic system. Rigorous, quantitative bridge from data to dynamics.
+- Demonstrated on Hénon map time series: proved positive topological entropy from 30,000 data points with explicit transition matrices.
+
+**Connections the authors acknowledge**: Cite Niyogi-Smale-Weinberger (probabilistic homology from samples), persistent homology (Edelsbrunner, Dey, Bauer), and computational homology of maps (Harker-Kokubu-Mischaikow-Pilarczyk). Explicitly position relative to TDA community. No connections to QEC, neuroscience, or information theory.
+
+**Vocabulary mapping**:
+| Paper term | Rosetta term |
+|---|---|
+| Conley index C(Inv(N,F), F) | Cohomological invariant of isolated invariant set |
+| Weak index pair P = (P_1, P_2) | Relative chain pair |
+| Isolating neighborhood N | Compact region containing all recurrence |
+| Index map I_{FP} | Endomorphism on cohomology (dynamical boundary operator) |
+| Leray functor L | Algebraic reduction (kills nilpotent part) |
+| Sunflower enclosure F_{g,δ}^s | Data-to-multivalued-map construction |
+| Cubical set / elementary cube | Chain complex basis element |
+| Continuous ε-approximation a_ε(F) | Stability neighborhood in function space |
+| Semiconjugacy ρ | Structure-preserving surjection onto symbolic dynamics |
+| Transition matrix A | Adjacency encoding from index map decomposition |
+| Binning scale δ | Filtration parameter |
+| Topological entropy | Complexity measure (lower-bounded via symbolic dynamics) |
+
+**See also**: `by-domain/dynamical_systems.md`, `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/filtrations.md`, `by-structure/phase_transitions.md`
+
+---
+
+## Wave 10c: link-forge update — Strategic Deepening (2026-04-17)
+
+---
+
+## fnsys.2016.00085 --- Lord, Expert, Fernandes, Petri, van Hartevelt, Vaccarino, Deco, Turkheimer & Kringelbach (2016)
+**"Insights into Brain Architectures from the Homological Scaffolds of Functional Connectivity Networks"**
+
+**Domain(s)**: neuroscience, TDA
+
+**Abstract machines instantiated**:
+- **Chain complex**: Extends Petri et al. (2014) scaffold approach. Weighted functional network → simplicial complex → persistent homology → homological scaffold. The scaffold summarizes persistent homology structure without ad hoc thresholding — uses all edge weights. Simplicial structures (not just dyadic interactions) contribute to the organization.
+- **Parameterized homology**: Weight filtration across all edge weights produces persistence diagrams. The scaffold is a summary of this persistence structure. Node strength in the scaffold measures the aggregate persistence contribution of each brain region — a parameterized invariant.
+
+**What is genuinely new (not reducible to shared abstraction)**:
+- Systematic comparison of scaffold metrics to standard graph metrics (degree, clustering, betweenness). The scaffold captures information that graph-theoretic measures miss — specifically, the role of each node in supporting functional integration across distributed networks.
+- Uses all edge weights without thresholding (unlike standard graph approaches), avoiding the arbitrary threshold problem.
+- Identifies network elements supporting functional integration — a higher-order structural role invisible to standard network analysis.
+- Companion to Petri 2014: Petri showed scaffold changes under psilocybin; this paper characterizes what scaffold metrics capture in healthy resting-state data.
+
+**Connections the authors acknowledge**: Directly extend Petri et al. (2014). Cite TDA (persistent homology, simplicial complexes) and network neuroscience (graph-theoretic metrics). Same Petri and Vaccarino as A4. Explicit cross-domain bridge.
+
+**Vocabulary mapping**:
+| Paper term | Rosetta term |
+|---|---|
+| Persistence homological scaffold | Network encoding persistent cycles |
+| Node strength in scaffold | Aggregate persistence contribution |
+| Weight filtration (no threshold) | Continuous parameterization |
+| Simplicial structure | Higher-order interaction (beyond dyadic) |
+| Functional integration | Distributed joint structure |
+
+**See also**: `by-domain/neuroscience.md`, `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/filtrations.md`
+
+---
+
+## 2302.01069 --- Jost & Zhang (2023)
+**"Cheeger inequalities on simplicial complexes"**
+
+**Domain(s)**: TDA
+
+**Abstract machines instantiated**:
+- **Chain complex**: The paper works with the full chain complex structure of simplicial complexes. The k-dimensional Laplacian Δ_k = ∂_{k+1} ∂_{k+1}^* + ∂_k^* ∂_k operates on k-chains, built from boundary operators with ∂² = 0. The Cheeger-type constants generalize the graph Cheeger constant to higher dimensions, measuring how "decomposable" the k-skeleton is. The spectral gap of Δ_k controls this decomposability — connecting chain complex algebra to spectral geometry.
+- **Stability**: The Cheeger inequality is fundamentally a stability result: it provides a lower bound on the spectral gap in terms of a combinatorial constant (and vice versa). A large spectral gap means the chain complex is robust — small perturbations cannot decompose the k-skeleton. This extends the graph-theoretic notion of expansion to higher-dimensional simplicial complexes. Spectral gaps for k-Laplacians characterize the mixing/expansion properties of k-dimensional cycles.
+
+**What is genuinely new (not reducible to shared abstraction)**:
+- Extension of Cheeger inequalities from graphs (0-Laplacian / 1-Laplacian) to arbitrary simplicial complexes (k-Laplacians). This is nontrivial because higher-dimensional boundary operators create a richer algebraic structure than graph adjacency.
+- The higher-dimensional Cheeger constants capture different aspects of "connectivity" — a simplicial complex can be 0-connected (graph-connected) but have poor higher-dimensional expansion (many k-dimensional holes).
+- Implications for higher-order network analysis: spectral gaps of k-Laplacians provide quantitative measures of topological robustness at each dimension.
+
+**Connections the authors acknowledge**: Cite Cheeger (1970), Alon-Milman, and Dodziuk for classical graph Cheeger inequalities. Cite Hodge theory on simplicial complexes. Purely within TDA/spectral geometry. No connections to QEC, dynamics, neuroscience, or information theory.
+
+**Vocabulary mapping**:
+| Paper term | Rosetta term |
+|---|---|
+| k-Laplacian Δ_k | Operator from boundary operators (∂^*∂ + ∂∂^*) |
+| Cheeger constant h_k | Combinatorial expansion measure (k-dimensional) |
+| Spectral gap λ_1(Δ_k) | Algebraic connectivity of k-skeleton |
+| Cheeger inequality λ_1 ≥ h_k²/2 | Stability bound (spectral gap controls decomposability) |
+| k-expansion | Robustness of k-dimensional cycles under removal |
+
+**See also**: `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/phase_transitions.md`
+
+---
+
+## 2410.20233 --- Trinca, Palazzo Jr., Interlando, Watanabe, de Albuquerque, de Carvalho & de Andrade (2024)
+**"Characterization of n-Dimensional Toric and Burst-Error-Correcting Quantum Codes from Lattice Codes"**
+
+**Domain(s)**: QEC
+
+**Abstract machines instantiated**:
+- **Chain complex**: Extends Kitaev's toric code to n dimensions (n ≥ 5). Qubits live on faces (2-cells) of the q^n hypercubic lattice on T^n. Vertex operators A_v use σ_x on incident edges; face operators B_f use σ_z on boundary edges — directly instantiating the chain complex: C_2 → C_1 → C_0 with ∂² = 0. The CSS structure is preserved: X-checks on cubes, Z-checks on edges. Code parameters [[N = C(n,2)·q, k = C(n,2), d_M = 3]]. The nested lattice chain ℤ^n ⊃ Aℤ^n ⊃ qℤ^n encodes the coset structure as a quotient chain complex.
+- **Stability**: The quantum interleaving method spreads adjacent qubits across the lattice, enabling correction of burst errors (clusters shaped as Lee spheres of radius 1). Error correction capability t_i = q² for the interleaved code — a quadratic improvement over the base code (t = 1). The coding gain increases with dimension n: larger n → larger q = 2n+1 → more burst errors correctable.
+
+**What is genuinely new (not reducible to shared abstraction)**:
+- Generalization to arbitrary n ≥ 5 dimensions. Prior work (de Albuquerque, Trinca) handled n = 2, 3, 4 only. The paper shows that if the Golomb-Welch conjecture holds, these are the ONLY possible toric codes from lattice codes in each dimension.
+- Quantum interleaving for burst error correction: a spreading technique that distributes adjacent qubits across the lattice, converting burst errors into distributed single errors correctable by the base code.
+- Code rate R = 1/q remains constant while coding gain G_i = q + 1/q grows with dimension. The interleaving preserves rate while dramatically improving burst correction.
+- Lee sphere geometry as the error cluster shape — connecting lattice theory to quantum error models.
+
+**Connections the authors acknowledge**: Cite Kitaev (1997, 2003), Dennis et al. (2002), Bombin & Martin-Delgado (2007). Purely within QEC/lattice theory. No connections to TDA, dynamics, neuroscience, or information theory.
+
+**Vocabulary mapping**:
+| Paper term | Rosetta term |
+|---|---|
+| n-dimensional toric code | CSS chain complex on T^n |
+| Vertex operator A_v (σ_x) | X-stabilizer (coboundary check) |
+| Face operator B_f (σ_z) | Z-stabilizer (boundary check) |
+| Hypercubic lattice q^n | Cellulation of T^n |
+| Nested lattice chain | Quotient chain complex (ℤ^n/Aℤ^n/qℤ^n) |
+| Lee sphere of radius 1 | Error cluster shape (fundamental region) |
+| Quantum interleaving | Burst-to-distributed error spreading |
+| Mannheim distance d_M | Code distance (minimum weight nontrivial cycle) |
+| Golomb-Welch conjecture | Uniqueness of close-packing ↔ uniqueness of code |
+
+**See also**: `by-domain/qec.md`, `by-structure/boundary_operators.md`, `by-structure/phase_transitions.md`
+
+---
+
+## s41468-022-00089-3 --- Curry, Hang, Mio, Needham & Okutan (2022)
+**"Decorated merge trees for persistent topology"**
+
+**Domain(s)**: TDA
+
+**Abstract machines instantiated**:
+- **Chain complex**: Decorated merge trees (DMTs) combine π_0 (connected components) and H_n (higher homology) information into a single data structure. The merge tree tracks how connected components merge as the filtration parameter increases; the "decoration" attaches homology groups at each node and tracks how they map under the merging. This is a richer invariant than standard PH because it preserves how homological features interact with component merging — genuinely chain-level information.
+- **Matching**: Two distance metrics defined: (1) interleaving distance (category-theoretic), measuring the minimal ε such that the DMTs become indistinguishable at resolution ε; (2) bottleneck distance, measuring the worst-case cost of an optimal matching between features. The Gromov-Wasserstein coupling is used to compute optimal merge tree alignments — directly solving an optimal assignment problem between tree structures.
+- **Stability**: Both the interleaving and bottleneck distances satisfy stability theorems: small changes in the input data produce bounded changes in the DMT. The stability results refine AND generalize existing PH stability (DMT distance ≤ existing PH distance, so the new invariant is at least as stable). The hierarchy of stability results relates DMT stability to merge tree stability to barcode stability.
+
+**What is genuinely new (not reducible to shared abstraction)**:
+- DMTs distinguish filtrations that merge trees and persistent homology CANNOT distinguish alone. Neither invariant individually captures the interaction between π_0 and H_n — DMTs fill this gap.
+- Three variants emphasizing different mathematical perspectives: category theory, representation theory, and barcodes. Each offers different computational/theoretical tradeoffs.
+- Gromov-Wasserstein couplings for merge tree alignment — a novel computational technique for optimal tree matching.
+- Applications to sliding window embeddings of time series (topological signal processing), brain tumor imaging, and graph alignment.
+
+**Connections the authors acknowledge**: Cite Edelsbrunner-Harer (PH), Morozov (merge trees), Bauer-Lesnick (interleaving distance), and Patel (generalized persistence). Purely within TDA/computational topology. No connections to QEC, dynamics, neuroscience (beyond application), or information theory.
+
+**Vocabulary mapping**:
+| Paper term | Rosetta term |
+|---|---|
+| Decorated merge tree (DMT) | π_0 + H_n combined invariant |
+| Merge tree | π_0 persistence (component tracking) |
+| Decoration | Homology groups attached to tree nodes |
+| Interleaving distance | Category-theoretic stability metric |
+| Bottleneck distance on DMTs | Optimal matching cost (worst-case) |
+| Gromov-Wasserstein coupling | Optimal tree alignment (matching) |
+| Sliding window embedding | Time series → point cloud (Takens-like) |
+
+**See also**: `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/optimal_transport.md`, `by-structure/phase_transitions.md`
+
+---
+
+## 2008.00711 --- Méndez & Sánchez-García (2020)
+**"A Directed Persistent Homology Theory for Dissimilarity Functions"**
+
+**Domain(s)**: TDA
+
+**Abstract machines instantiated**:
+- **Chain complex**: Develops persistent homology for directed simplicial complexes. In odd dimensions, the directed boundary operator detects directed cycles — closed paths that respect edge orientation. The theory constructs directed Rips complexes from asymmetric dissimilarity functions (where d(x,y) ≠ d(y,x)), producing chain complexes where the boundary operator encodes directionality. This is the foundational theory underpinning Peek (2025, already in the Rosetta), which applied directed PH to transfer entropy networks.
+- **Parameterized homology**: The filtration is parameterized by the dissimilarity threshold ε. As ε varies, directed simplices are added, and directed persistent homology tracks the birth and death of directed cycles across the filtration. The persistence diagram distinguishes between cycles that are genuine (long-lived) and noise (short-lived), just as in standard PH but now for directed structures.
+
+**What is genuinely new (not reducible to shared abstraction)**:
+- The theoretical foundation for PH on asymmetric data. Standard PH assumes symmetric distances (metric spaces); directed PH handles asymmetric dissimilarities, opening TDA to directed networks, causal relationships, and non-reciprocal interactions.
+- Directed cycles as the key topological feature: in odd dimensions, directed homology detects cycles that respect orientation. This has no analogue in undirected PH, where orientation is a conventional choice.
+- Relationship to classical PH: the paper proves when directed and undirected PH agree and when they diverge, providing a precise characterization of the additional information captured by directionality.
+- Direct relevance to neuroscience (synaptic directionality, as in Reimann 2017) and information theory (transfer entropy is inherently directed, as in Peek 2025).
+
+**Connections the authors acknowledge**: Cite standard PH (Edelsbrunner, Zomorodian-Carlsson), directed simplicial homology (Grigor'yan, Lin, Muranov, Yau). Position as filling a gap in TDA theory. Do NOT cite QEC, neuroscience, or information theory directly, though the applications are implicit.
+
+**Vocabulary mapping**:
+| Paper term | Rosetta term |
+|---|---|
+| Directed simplicial complex | Oriented chain complex (orientation from data, not convention) |
+| Asymmetric dissimilarity d(x,y) ≠ d(y,x) | Non-reciprocal relationship (directed) |
+| Directed Rips complex | Filtration respecting asymmetry |
+| Directed cycle | Oriented k-cycle (ker ∂ in directed complex) |
+| Directed persistent homology | Birth-death of directed features across filtration |
+| Odd-dimensional detection | Directed cycles appear only in odd dimensions |
+
+**See also**: `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/filtrations.md`

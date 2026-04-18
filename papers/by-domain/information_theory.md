@@ -1182,3 +1182,19 @@ Optimal assignment between source and channel/reproduction alphabets. Channel ca
 **Machines**: matching, parameterized homology, null hypothesis (weak).
 Full annotation: `inbox.md` (Wave 8).
 **See also**: `by-structure/optimal_transport.md`, `atlas/MATCHING.md`
+
+---
+
+## Wave 10 — link-forge update (2026-04-17)
+
+### Baudot, Tapia, Bennequin & Goaillard (2019) — Topological Information Data Analysis
+arXiv: 1907.04242. k-multivariate MI I_k defined as co-chains on simplicial complex Δ([n]) of random variables. I_2 = coboundary of H (δH = I_2). Negative I_k = synergy (Borromean links). Information landscape tracks I_k across all faces. Shuffling null. Bethe free energy as alternating sum over simplicial faces. Application: unsupervised cell-type classification.
+**Machines**: chain complex, joint-vs-marginal, null hypothesis, parameterized homology, stability.
+Full annotation: `inbox.md` (Wave 10a).
+**See also**: `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/composite_systems.md`, `by-structure/phase_transitions.md`, `papers/cross_domain_bridges.md`
+
+### Panaretos & Zemel (2019) — Statistical Aspects of Wasserstein Distances
+DOI: annurev-statistics-030718-104938. 913 citations. Comprehensive review of Wasserstein distances as statistical tools: convergence rates, CLTs, minimax estimation, goodness-of-fit testing. W_p family parameterized by order p. Bottleneck distance on PDs IS W_∞. Otto calculus gives Riemannian geometry of Wasserstein space.
+**Machines**: matching, stability, parameterized homology.
+Full annotation: `inbox.md` (Wave 10b).
+**See also**: `by-structure/optimal_transport.md`

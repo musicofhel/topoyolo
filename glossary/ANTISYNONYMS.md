@@ -126,6 +126,10 @@ Varley et al. (2025) show that rotating a point cloud with PCA does not change i
 
 Synergy (O < 0) corresponds to H2 cavities; redundancy (O > 0) corresponds to knots (H1 features in 3D). But O-information is a single signed scalar, while persistent homology provides a diagram per dimension. There is no information-theoretic measure that maps to H1 vs. H2 separately -- O-information conflates dimension. A point cloud could have both H1 and H2 features with opposite information-theoretic character (synergistic cavities AND redundant loops), and O-information would report only the balance. The TDA side has finer resolution; the IT side has finer decomposition (TC, DTC, S). Neither subsumes the other.
 
+### Higher-order brain topology: robust (Petri 2014, Reimann 2017) ≠ non-reproducible (Chung 2025)
+
+Petri et al. (2014) found dramatic homological scaffold changes under psilocybin; Reimann et al. (2017) found directed simplices up to dimension 6-7 in Blue Brain. Both suggest rich higher-order structure. Chung et al. (2025, arXiv: 2503.14700) show the opposite: in HCP fMRI data (116 regions, 100 subjects), the ratio λ_k of observed to possible k-simplices drops below FDR significance after dimension 3 (λ_3 = 4.54 × 10^{-4}). Overlap probability across subjects decays exponentially: 3-simplices vanish beyond 10 subjects. The divergence has three possible explanations: (1) methodological — correlation-based networks are either too dense (masking gaps) or too sparse (destroying simplices), creating a density-void dilemma that Rips filtrations on point clouds don't face; (2) statistical — none of the prior studies controlled for multiple comparisons across C(p,k) possible k-subsets; (3) scale — Reimann uses simulated high-resolution connectivity (31K neurons), while Chung uses parcellated fMRI (116 regions). The resolution may determine whether higher-order structure is detectable. When claiming "brain networks have higher-order topology," specify: which data type, which construction, and whether it survives cross-subject replication.
+
 ---
 
 ## Living Document

@@ -218,3 +218,37 @@ Applied to HCP resting-state fMRI (200-node Schaefer parcellation, 100 subjects)
 **Machines**: chain complex, parameterized homology, joint-vs-marginal, null hypothesis, stability.
 Full annotation: `inbox.md` (Wave 7).
 **See also**: `cross_domain_bridges.md`, `by-domain/tda.md`, `by-domain/information_theory.md`, `by-structure/composite_systems.md`, `by-structure/filtrations.md`
+
+---
+
+## Wave 10 — link-forge update (2026-04-17)
+
+### Petri, Expert, Turkheimer, Carhart-Harris, Nutt, Hellyer & Vaccarino (2014) — Homological scaffolds
+J. R. Soc. Interface, DOI: 10.1098/rsif.2014.0873. 657 citations. PH applied to weighted clique complex from fMRI correlations. Homological scaffold = network encoding which edges carry persistent cycles. Psilocybin dramatically restructures scaffold: many transient + few highly persistent structures not seen under placebo. Bridges TDA and network neuroscience.
+**Machines**: chain complex, parameterized homology, null hypothesis.
+Full annotation: `inbox.md` (Wave 10a).
+**See also**: `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/filtrations.md`, `by-structure/phase_transitions.md`, `papers/cross_domain_bridges.md`
+
+### Chaudhuri, Gerçek, Pandey, Peyrache & Fiete (2019) — Head direction ring attractor
+Nature Neuroscience, DOI: 10.1038/s41593-019-0460-x. 339 citations. Head direction circuit population activity traces S^1 ring manifold (H_1 = ℤ). Isometric and invariant across waking and REM sleep. Blind decoding from topology alone. Ring is population-level (absent from individual neurons). Complements Gardner 2022 T^2 grid cell toroid.
+**Machines**: chain complex, stability, joint-vs-marginal.
+Full annotation: `inbox.md` (Wave 10a).
+**See also**: `by-structure/boundary_operators.md`, `by-structure/phase_transitions.md`, `by-structure/composite_systems.md`
+
+### Chung, El-Yaagoubi, Qiu & Ombao (2025) — From Density to Void
+arXiv: 2503.14700. Simplicial complexes from fMRI correlations with explicit boundary operators. Central finding is a null result: higher-order brain interactions (k > 3) fail FDR correction and cross-subject replication. Anti-stability: topological features not robust across subjects. Density-void dilemma as fundamental methodological limitation.
+**Machines**: chain complex, null hypothesis, stability (anti).
+Full annotation: `inbox.md` (Wave 10b).
+**See also**: `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/phase_transitions.md`
+
+### Dabaghian, Brandt & Frank (2014) — Reconceiving the hippocampal map as a topological template
+eLife 03476. 136 citations. Place cells encode topology, not geometry. Morphing linear tracks dissociates topology from geometry; place fields preserve spatial ordering but not metric features. Direction-independent. Extends Dabaghian et al. 2012 from computation to experiment.
+**Machines**: chain complex, stability, null hypothesis.
+Full annotation: `inbox.md` (Wave 10b).
+**See also**: `by-structure/boundary_operators.md`, `by-structure/phase_transitions.md`
+
+### Lord, Expert, Fernandes, Petri, Van Hartevelt, Vaccarino, Deco, Turkheimer & Kringelbach (2016) — Insights into Brain Architectures from the Homological Scaffolds
+Frontiers in Systems Neuroscience, DOI: fnsys.2016.00085. Extends Petri et al. 2014 homological scaffold method to resting-state fMRI across multiple subjects. Scaffold encodes which edges carry persistent cycles in the weighted clique complex. Reveals hierarchical modular organization invisible to standard graph metrics. Chain complex from correlation-weighted clique filtration; parameterized homology across weight threshold.
+**Machines**: chain complex, parameterized homology.
+Full annotation: `inbox.md` (Wave 10c).
+**See also**: `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/filtrations.md`

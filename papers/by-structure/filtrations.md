@@ -172,3 +172,31 @@ Full annotation: `inbox.md` (Wave 7).
 ### Cross-Domain Observation
 
 The third pass identifies a new filtration parameter class: **frequency** in brain networks. Combined with existing parameters (scale ε in TDA, error rate p in QEC, coupling strength in dynamics, training epoch in ML, constraint density in CSP), the filtration concept now spans 7 distinct parameter types across 5 domains. The neuroscience frequency-filtration is notable because 3 independent groups discovered it without connecting to the TDA framework.
+
+---
+
+## Wave 10 — link-forge update (2026-04-17)
+
+### Baudot, Tapia, Bennequin & Goaillard (2019) — Topological Information Data Analysis
+arXiv: 1907.04242. Information landscape tracks I_k across dimension k. Iso-graining landscapes add second parameter: granularity N, creating 2D (k, N) space with phase transitions at N_c = 3. Full annotation: `inbox.md` (Wave 10a).
+
+### Ghorbanchian et al. (2020) — Higher-order simplicial synchronization
+DOI: 10.1038/s42005-021-00605-4. Coupling strength σ parameterizes the system. Explosive synchronization at critical σ_c — discontinuous phase transition. Hysteresis creates bistable region. Width depends on Hodge spectral gap. Full annotation: `inbox.md` (Wave 10a).
+
+### Dey, Mrozek & Slechta (2021) — Conley-Morse graph persistence
+arXiv: 2107.02115. Central contribution is parameterized persistence: sequence of multivector fields yields sequence of Conley-Morse graphs. Zigzag persistence tracks both Conley index evolution and Morse decomposition topology across parameter. Composite barcode after redundancy elimination. Full annotation: `inbox.md` (Wave 10a).
+
+### Petri et al. (2014) — Homological scaffolds of brain networks
+DOI: 10.1098/rsif.2014.0873. Weight filtration on correlation network creates persistence diagram. Scaffold captures entire persistence history — each edge weighted by persistence of the cycle it participates in. Full annotation: `inbox.md` (Wave 10a).
+
+### Donato et al. (2016) — PH analysis of Phase Transitions
+arXiv: 1601.03641. Two-parameter filtration: energy density ε (physical) × Rips scale ρ (topological). H_1 persistence distribution qualitatively changes at critical energy ε_c. Persistence landscapes provide statistical summaries with confidence bands. Full annotation: `inbox.md` (Wave 10b).
+
+### Batko, Mischaikow, Mrozek & Przybylski (2019) — Conley Index from Sampled Dynamics
+arXiv: 1904.03757. Binning scale δ as filtration parameter. Authors explicitly acknowledge the connection to persistent homology: understanding results under varying δ "in the spirit of persistent homology." ε-approximation neighborhood also parameterizes a family of continuous maps. Full annotation: `inbox.md` (Wave 10b).
+
+### Lord et al. (2016) — Insights into Brain Architectures from the Homological Scaffolds
+DOI: fnsys.2016.00085. Weight threshold on correlation network as filtration parameter. Persistent cycles tracked across weight filtration — scaffold summarizes entire persistence history. Second parameterization: granularity of brain parcellation. Full annotation: `inbox.md` (Wave 10c).
+
+### Méndez & Sánchez-García (2020) — Directed Persistent Homology for Dissimilarity Functions
+arXiv: 2008.00711. Directed filtration from asymmetric dissimilarity function. Scale parameter ε determines which directed simplices exist. Tracks directed Betti numbers as ε varies — a new filtration type for non-symmetric data. Full annotation: `inbox.md` (Wave 10c).

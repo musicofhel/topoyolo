@@ -559,3 +559,57 @@ This is an EXPLICIT, acknowledged cross-domain bridge. The authors set out to co
 **Connection to Rosas (2020)**: Same family of measures. Rosas uses O-information/PhiID to define causal emergence (Psi > 0 iff synergy at the macro level). Varley now shows that the synergy Rosas cares about has a topological interpretation: it corresponds to H2 cavities. This chain -- causal emergence via PID synergy (Rosas) -> synergy as H2 topology (Varley) -- is a two-hop bridge from information-theoretic emergence to persistent homology.
 
 Full annotation: `inbox.md` (Wave 7).
+
+---
+
+## Wave 10a — link-forge Cross-Domain Bridges (2026-04-17)
+
+### Baudot, Tapia, Bennequin & Goaillard (2019)
+**"Topological Information Data Analysis"**
+arXiv: 1907.04242
+
+**Domains bridged**: Information theory + TDA
+
+The paper constructs an explicit simplicial complex of random variables where entropy and MI are co-chains with cohomological structure (δH = I_2). The Borromean link interpretation of synergy connects combinatorial topology to information decomposition. Bethe free energy as alternating sum over simplicial faces bridges variational inference and algebraic topology. Authors explicitly cite PH (Edelsbrunner, Carlsson) and neural simplicial complexes (Reimann 2017). Application to gene expression (neuroscience/genomics).
+
+**Bridge quality**: Explicit. Authors fully aware of bridging TDA and information theory. The topos-cohomological framework of Baudot-Bennequin (2015) is the theoretical foundation connecting these communities.
+
+### Ghorbanchian, Restrepo, Torres & Bianconi (2020)
+**"Higher-order simplicial synchronization of coupled topological signals"**
+Nature Comms Physics, DOI: 10.1038/s42005-021-00605-4
+
+**Domains bridged**: Dynamical systems + TDA
+
+Hodge Laplacian from TDA drives synchronization dynamics on simplicial complexes. The chain complex structure (boundary operators, spectral gap) determines the phase transition. Topological signals on k-simplices are a genuinely new dynamical concept. Tested on real connectomes (neuroscience data). Authors cite both TDA foundations and Kuramoto synchronization.
+
+**Bridge quality**: Explicit and structural. The boundary operator IS the coupling mechanism — topology dictates dynamics.
+
+### Dey, Mrozek & Slechta (2021)
+**"Persistence of Conley-Morse Graphs in Combinatorial Dynamical Systems"**
+arXiv: 2107.02115
+
+**Domains bridged**: TDA + Dynamical systems
+
+Zigzag persistence (TDA tool) applied to Conley-Morse graphs (dynamical systems object). The Conley index (relative homology) is a chain complex invariant; persistence tracks it parametrically. Noise-resilient index pairs are a stability construction bridging computational topology and dynamical systems.
+
+**Bridge quality**: Deep structural bridge. The paper is situated squarely at the TDA-dynamics intersection, building on zigzag persistence (Carlsson-de Silva) and Conley theory (Mischaikow-Mrozek).
+
+### Petri, Expert, Turkheimer, Carhart-Harris, Nutt, Hellyer & Vaccarino (2014)
+**"Homological scaffolds of brain functional networks"**
+J. R. Soc. Interface, DOI: 10.1098/rsif.2014.0873. 657 citations.
+
+**Domains bridged**: Neuroscience + TDA
+
+PH applied to brain fMRI correlation networks. The homological scaffold is a novel construction that transforms PH output back into a network, bridging the TDA and network science communities. Psilocybin experiments provide empirical validation. Authors explicitly cite both Edelsbrunner/Harer/Carlsson (TDA) and Bullmore/Sporns (brain networks).
+
+**Bridge quality**: Explicit and methodologically innovative. One of the most-cited papers bridging TDA and neuroscience. The scaffold construction operationalizes TDA for network science.
+
+### Donato, Gori, Pettini, Petri, De Nigris, Franzosi & Vaccarino (2016)
+**"Persistent Homology analysis of Phase Transitions"**
+arXiv: 1601.03641
+
+**Domains bridged**: Dynamical systems (statistical mechanics) + TDA
+
+First application of PH to detect phase transitions via configuration space topology. Rips complex on dynamically sampled points; energy density parameterizes submanifolds. MFXY model shows H_1 topological signal at phase transition; φ^4 model serves as negative control with no signal. Persistence landscapes with statistical confidence bands. Petri (homological scaffolds) is coauthor, connecting to the neuroscience-TDA bridge. Authors cite both TDA foundations (Edelsbrunner, Carlsson) and topological theory of phase transitions (Pettini 2007).
+
+**Bridge quality**: Explicit. Bridges computational topology and statistical mechanics at the methodological level. The dual positive/negative model benchmark is methodologically exemplary.

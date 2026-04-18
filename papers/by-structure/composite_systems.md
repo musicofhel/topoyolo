@@ -314,3 +314,13 @@ arXiv: 2603.03237.
 Kernel/image/cokernel persistence of k-chromatic gluing map yields four categories: (i) common features, (ii) features destroyed by composition (kernel), (iii) features ONLY in the joint (cokernel = pure joint-vs-marginal excess), (iv) features formed by some, persisting with others (image). Cokernel captures topological structure invisible in all k-species marginals. Applied to tumor microenvironment: recovers immunoediting regimes, detects trichromatic spatial interactions.
 **Machines**: joint-vs-marginal, chain complex, parameterized homology, null hypothesis, stability.
 Full annotation: `inbox.md` (Wave 7).
+
+---
+
+## Wave 10 — link-forge update (2026-04-17)
+
+### Baudot, Tapia, Bennequin & Goaillard (2019) — Topological Information Data Analysis
+arXiv: 1907.04242. I_k measures k-th-order excess structure in joint absent from lower-order marginals. I_k = 0 for all k ≥ 2 iff independence (necessary and sufficient). Negative I_k = synergy = Borromean-link structure (pairwise independent, collectively dependent). Total correlation G_k is weaker — fails to discriminate subtypes. Full annotation: `inbox.md` (Wave 10a).
+
+### Chaudhuri et al. (2019) — Head direction ring attractor
+DOI: 10.1038/s41593-019-0460-x. Ring (S^1) manifold is a population-level phenomenon — individual neurons show noisy tuning curves. The topology emerges only from joint activity, not from any single neuron. Pure joint-vs-marginal excess. Full annotation: `inbox.md` (Wave 10a).

@@ -430,3 +430,31 @@ Grokking = dimensional phase transition. Effective dimensionality D, from FSS of
 **Machines**: stability, null hypothesis, parameterized homology, chain complex (weak).
 Full annotation: `inbox.md` (Wave 9).
 **See also**: `atlas/STABILITY.md`, `atlas/NULL_HYPOTHESIS.md`
+
+---
+
+## Wave 10 — link-forge update (2026-04-17)
+
+### Ghorbanchian, Restrepo, Torres & Bianconi (2020) — Higher-order simplicial synchronization
+Nature Comms Physics, DOI: 10.1038/s42005-021-00605-4. 113 citations. Hodge Laplacian L_k = B_k^T B_k + B_{k+1} B_{k+1}^T governs dynamics of topological signals on k-simplices. Coupling between node and link phases mediated by boundary operator B_1. Explosive (discontinuous) synchronization at critical coupling σ_c. Hysteresis loop width depends on Hodge spectral gap. Tested on connectomes.
+**Machines**: chain complex, parameterized homology, stability.
+Full annotation: `inbox.md` (Wave 10a).
+**See also**: `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/filtrations.md`, `by-structure/phase_transitions.md`, `papers/cross_domain_bridges.md`
+
+### Dey, Mrozek & Slechta (2021) — Conley-Morse graph persistence
+arXiv: 2107.02115. Zigzag persistence applied to sequences of Conley-Morse graphs from combinatorial multivector fields. Conley index = relative homology H_k(P,E). Two filtration types: Conley-Morse (index pair) and graph (Morse decomposition topology). Redundancy elimination across subfiltrations. Noise-resilient "thickened" index pairs. Entirely combinatorial framework.
+**Machines**: chain complex, parameterized homology, stability.
+Full annotation: `inbox.md` (Wave 10a).
+**See also**: `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/filtrations.md`, `by-structure/phase_transitions.md`, `papers/cross_domain_bridges.md`
+
+### Donato et al. (2016) — Persistent Homology analysis of Phase Transitions
+arXiv: 1601.03641. PH on Rips complex from configuration space samples. Energy density ε parameterizes submanifolds; PH detects topological phase transition in MFXY model (H_1 long tail below ε_c). φ^4 lattice as negative control (no topological signal). Persistence landscapes with 95% confidence bands. Jacobi metric for Rips construction.
+**Machines**: chain complex, parameterized homology, stability, null hypothesis.
+Full annotation: `inbox.md` (Wave 10b).
+**See also**: `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/filtrations.md`, `by-structure/phase_transitions.md`, `papers/cross_domain_bridges.md`
+
+### Batko, Mischaikow, Mrozek & Przybylski (2019) — Conley Index Approach to Sampled Dynamics
+arXiv: 1904.03757. Cohomological Conley index from weak index pairs on cubical complexes. Sunflower enclosure constructs multivalued map from time series. Isolating neighborhoods persist under ε-perturbation (Theorem 3.2). Semiconjugacy to symbolic dynamics from sampled data. Proved positive topological entropy from 30K Henon map points.
+**Machines**: chain complex, parameterized homology, stability.
+Full annotation: `inbox.md` (Wave 10b).
+**See also**: `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/filtrations.md`, `by-structure/phase_transitions.md`

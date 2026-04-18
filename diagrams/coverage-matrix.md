@@ -1,6 +1,6 @@
 # Coverage Matrix — 6 Machines × 5 Domains
 
-Updated: 2026-04-07 (Session 7)
+Updated: 2026-04-17 (Wave 10)
 
 ## Paper Counts
 
@@ -8,11 +8,11 @@ Updated: 2026-04-07 (Session 7)
               Chain    Param   Match   Stabil  Joint   Null
               Complex  Homol           ity     v Marg  Hyp
 ─────────────────────────────────────────────────────────────
-TDA            6+       8+      6+     8+      5+      4+
-QEC           15+       8+      8+    10+      6+      9+
-Dynamics       9+      12+     11+     9+      6+      8+
-Neuro          6+      10+      8+     7+     13+     10+
-InfoTheo       9+       9+      4+     6+     12+      8+
+TDA           10+      11+      7+    11+      5+      4+
+QEC           16+       8+      8+    11+      6+      9+
+Dynamics      13+      16+     11+    13+      6+      9+
+Neuro         11+      12+      8+     9+     14+     12+
+InfoTheo      10+      10+      5+     8+     13+      9+
 ```
 
 ## Mermaid Heatmap
@@ -24,18 +24,28 @@ block-beta
 
   space:1 CC["Chain\nComplex"] PH["Param\nHomology"] MA["Matching"] ST["Stability"] JM["Joint vs\nMarginal"] NH["Null\nHypothesis"]
 
-  TDA["TDA"] TDA_CC["6+"] TDA_PH["8+"] TDA_MA["6+"] TDA_ST["8+"] TDA_JM["5+"] TDA_NH["4+"]
-  QEC["QEC"] QEC_CC["15+"] QEC_PH["8+"] QEC_MA["8+"] QEC_ST["10+"] QEC_JM["6+"] QEC_NH["9+"]
-  DYN["Dynamics"] DYN_CC["9+"] DYN_PH["12+"] DYN_MA["11+"] DYN_ST["9+"] DYN_JM["6+"] DYN_NH["8+"]
-  NEU["Neuro"] NEU_CC["6+"] NEU_PH["10+"] NEU_MA["8+"] NEU_ST["7+"] NEU_JM["13+"] NEU_NH["10+"]
-  IT["InfoTheo"] IT_CC["9+"] IT_PH["9+"] IT_MA["4+"] IT_ST["6+"] IT_JM["12+"] IT_NH["8+"]
+  TDA["TDA"] TDA_CC["10+"] TDA_PH["11+"] TDA_MA["7+"] TDA_ST["11+"] TDA_JM["5+"] TDA_NH["4+"]
+  QEC["QEC"] QEC_CC["16+"] QEC_PH["8+"] QEC_MA["8+"] QEC_ST["11+"] QEC_JM["6+"] QEC_NH["9+"]
+  DYN["Dynamics"] DYN_CC["13+"] DYN_PH["16+"] DYN_MA["11+"] DYN_ST["13+"] DYN_JM["6+"] DYN_NH["9+"]
+  NEU["Neuro"] NEU_CC["11+"] NEU_PH["12+"] NEU_MA["8+"] NEU_ST["9+"] NEU_JM["14+"] NEU_NH["12+"]
+  IT["InfoTheo"] IT_CC["10+"] IT_PH["10+"] IT_MA["5+"] IT_ST["8+"] IT_JM["13+"] IT_NH["9+"]
+  style TDA_CC fill:#9f9,stroke:#333
+  style TDA_PH fill:#9f9,stroke:#333
+  style TDA_ST fill:#9f9,stroke:#333
   style QEC_CC fill:#9f9,stroke:#333
-  style NEU_JM fill:#9f9,stroke:#333
-  style IT_JM fill:#9f9,stroke:#333
+  style QEC_ST fill:#9f9,stroke:#333
+  style DYN_CC fill:#9f9,stroke:#333
   style DYN_PH fill:#9f9,stroke:#333
   style DYN_MA fill:#9f9,stroke:#333
-  style QEC_ST fill:#9f9,stroke:#333
+  style DYN_ST fill:#9f9,stroke:#333
+  style NEU_CC fill:#9f9,stroke:#333
+  style NEU_PH fill:#9f9,stroke:#333
+  style NEU_JM fill:#9f9,stroke:#333
   style NEU_NH fill:#9f9,stroke:#333
+  style IT_CC fill:#9f9,stroke:#333
+  style IT_PH fill:#9f9,stroke:#333
+  style IT_JM fill:#9f9,stroke:#333
+  style IT_NH fill:#9f9,stroke:#333
   style QEC_NH fill:#9f9,stroke:#333
 ```
 
@@ -45,12 +55,15 @@ block-beta
 - **All other cells** (4–9): Adequate coverage
 - All 30 cells now ≥ 4 (no thin cells remain)
 
-## Key Changes (Session 7)
+## Key Changes (Wave 10)
 
-- **Peyré 2026** (Spectral Wasserstein): +1 to Match×TDA, Param×TDA, Stab×TDA, Chain×Dyn, Param×Dyn, Match×Dyn, Stab×Dyn
-- **Wang 2026** (Grokking phase transition): +1 to Stab×Dyn, Null×Dyn, Param×Dyn, Chain×Dyn (weak)
+- **Wave 10a** (5 papers): Baudot TIDA, Ghorbanchian sync, Dey Conley-Morse, Petri scaffolds, Chaudhuri ring attractor
+- **Wave 10b** (5 papers): Chung density-void, Dabaghian template, Donato phase transitions, Batko Conley sampled, Panaretos Wasserstein
+- **Wave 10c** (5 papers): Lord scaffolds (neuro), Jost-Zhang Cheeger (TDA), Trinca n-D toric (QEC), Curry DMT (TDA), Méndez directed PH (TDA)
+- 18 new green cells (≥10) — up from 8 in Session 7
+- Chain Complex now ≥10 in ALL 5 domains; Param Homology ≥10 in 4/5
 - Stability taxonomy expanded to 7 flavors (added: dimensional)
 
 ## Coverage Status
 
-All 30 cells ≥ 4. Dynamics column strengthened across all machines. ~204 unique papers.
+All 30 cells ≥ 4. 18 cells ≥ 10. ~219 unique papers.

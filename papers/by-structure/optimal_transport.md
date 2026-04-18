@@ -128,3 +128,11 @@ The cost function is always a metric or semi-metric, and the matching always res
 ### Wave 9: Spectral Wasserstein (2026-04-07)
 
 **Peyré (2026) — Muon Dynamics as a Spectral Wasserstein Flow**: Family of Spectral Wasserstein distances W_γ parameterized by Schatten norm index p. Cost acts on global displacement covariance matrix, not per-particle scalar costs. Trace norm (p=1) → classical W2; operator norm (p=∞) → Muon geometry. Kantorovich (couplings = matchings) equals Benamou-Brenier (gradient flows) for monotone norms. Max-min representation: W_γ² = max over anisotropic quadratic transports. Metric equivalence with W2: √c_γ · W2 ≤ W_γ ≤ √C_γ · W2. Geodesic convexity. Gaussian case: closed-form metric extending Bures-Wasserstein. arXiv: 2604.04891. Full annotation: `inbox.md` (Wave 9).
+
+### Wave 10: Statistical Wasserstein (2026-04-17)
+
+**Panaretos & Zemel (2019) — Statistical Aspects of Wasserstein Distances**: Comprehensive review unifying OT as statistical inference tool. W_p family parameterized by order p: W_1 (location), W_2 (Riemannian geometry via Otto calculus), W_∞ (bottleneck = PH stability). Convergence rates, CLTs, minimax estimation, goodness-of-fit testing. Curse of dimensionality O(n^{-1/d}) for d ≥ 3. Entropic/sliced regularization. DOI: annurev-statistics-030718-104938, 913 citations. Full annotation: `inbox.md` (Wave 10b).
+
+### Wave 10c: DMT Matching (2026-04-17)
+
+**Curry, DeSha, Hoff, Limberger, Luo & Qin (2022) — Decorated merge trees for persistent topology**: DOI: s41468-022-00089-3. Gromov-Wasserstein coupling between decorated merge trees defines a stable metric for comparing persistent homology modules. The matching is between tree edge sets with costs determined by interleaving distance. DMT metric provides a computable alternative to interleaving distance that preserves the full tree structure (not just the barcode). Full annotation: `inbox.md` (Wave 10c). **See also**: `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/phase_transitions.md`.
