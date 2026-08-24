@@ -65,7 +65,14 @@ the pass report as pre-existing baseline debt.
   Done = `check_structure.py` exits 0.
 - **A3 [done 2026-08-24: slices 1-4 (1c96d87, 5771173, 4b6db24, aa06188+9d5be1d+dec8b5f)] Per-paper annotation files.** All full annotations now live one-per-file in `papers/annotations/` (68 files verbatim-migrated from inbox.md + inbox-archive.md; content conservation proven per slice). `papers/inbox.md` reshaped to contract + leads + wave index; inbox-archive.md pointer-lists only; ~170 crossrefs in by-domain/by-structure/atlas/glossary repointed to per-paper files; METHODOLOGY/SKILL/README canonical refs updated; check_structure.py extended to fail if any full annotation remains in an inbox file. Lint: 0 errors, 1 warning (claimed 219 vs 68 parsed — count-source drift, resolves at A4).
   - carried to later A-tasks (orchestrator): Blahut+Arimoto kept as ONE shared file blahut-arimoto-1972.md (splitting would require rewriting shared prose — deferred); tighten lint author-year fallback (Wang/Tran spurious-match classes from A2).
-- **A4 [open] Stats from data, not by hand.** `scripts/gen_stats.py`: derive
+- **A4 [done 2026-08-24 a49e738+db97bca] Stats from data, not by hand.** `scripts/gen_stats.py`
+  derives paper/cell counts from papers/annotations/*.md and regenerates
+  diagrams/coverage-matrix.md; README + docs/index.html patched to derived truth
+  (68 fully annotated papers — NOT the old 219 claim; min cell 1, 18/30 cells ≥10);
+  `check_structure.py --check` fails lint on matrix-regen or headline-count drift.
+  Lint: 0 errors, 0 warnings (--check: 0 errors, 18 informational domain-alias notes).
+  Report: `research/2026-08-24-0840.md`.
+  Original: `scripts/gen_stats.py`: derive
   paper count, per-cell coverage counts, and the domain×machine matrix from
   the annotation files; emit `diagrams/coverage-matrix.md` and print the
   headline numbers (papers, cells, min cell). Patch README.md +
