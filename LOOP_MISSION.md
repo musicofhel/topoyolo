@@ -53,7 +53,13 @@ the pass report as pre-existing baseline debt.
   Output: human-readable violation list, exit 0/1. Done = tool committed +
   full baseline violation census in the pass report (do NOT fix violations in
   this task).
-- **A2 [open] Cross-ref + link debt paydown.** Fix what A1 found: broken
+- **A2 [done 2026-08-24 6f10501+b673c24] Cross-ref + link debt paydown.** 9 prose-only
+  crossrefs tightened to carry ids (one was a spurious match — Wang 2026 had no
+  genuine by-structure entry; added one under phase_transitions.md); 6 archive
+  `###` headers promoted to `##`, Rosas (2020) header given its arXiv id.
+  Lint: 0 errors, 1 warning (219-vs-60 count — deferred to A3/A4).
+  Report: `research/2026-08-24-0701.md`.
+  Original: Fix what A1 found: broken
   links, orphan annotations (in inbox but missing from one side of the dual
   index), stale counts. Mechanical fixes only — no annotation content changes.
   Done = `check_structure.py` exits 0.
