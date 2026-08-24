@@ -63,7 +63,7 @@ the pass report as pre-existing baseline debt.
   links, orphan annotations (in inbox but missing from one side of the dual
   index), stale counts. Mechanical fixes only — no annotation content changes.
   Done = `check_structure.py` exits 0.
-- **A3 [open] Per-paper annotation files.** The monolithic inbox does not
+- **A3 [in_progress: slice 1 done 2026-08-24 1c96d87 — inbox-archive Waves 1-2 (15 papers) migrated to papers/annotations/, lint extended + green; remaining: Wave 4b, Wave 3, Phase 2 sections of archive, then inbox.md Waves 4+] Per-paper annotation files.** The monolithic inbox does not
   scale for ingestion. Migrate: one file per paper at
   `papers/annotations/<slug>.md` (slug = arXiv id with `/`→`-`, else
   first-author-year), each holding the full annotation verbatim (content
@@ -75,6 +75,9 @@ the pass report as pre-existing baseline debt.
   freely (e.g. one wave per pass), committing incrementally; the lint must be
   green at every commit. Done = zero full annotations left in
   inbox.md/inbox-archive.md, lint green.
+  - queued (orchestrator, later A-task): split Blahut+Arimoto's shared
+    annotation block into two per-paper files; tighten the lint's
+    author-year fallback (Wang/Tran spurious-match classes found in A2).
 - **A4 [open] Stats from data, not by hand.** `scripts/gen_stats.py`: derive
   paper count, per-cell coverage counts, and the domain×machine matrix from
   the annotation files; emit `diagrams/coverage-matrix.md` and print the
