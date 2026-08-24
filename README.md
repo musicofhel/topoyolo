@@ -87,7 +87,8 @@ topo-rosetta/
 │   └── NULL_HYPOTHESIS.md
 │
 ├── papers/                     # Annotated bibliography (219+ papers)
-│   ├── inbox.md                # Full-depth annotations (primary store)
+│   ├── annotations/            # Full-depth per-paper annotations (primary store)
+│   ├── inbox.md                # Intake ledger: contract + leads + wave index
 │   ├── inbox-archive.md        # Archived earlier waves
 │   ├── annotations/            # Per-paper annotation files (one file per paper)
 │   ├── by-domain/              # Papers indexed by discipline
@@ -122,4 +123,4 @@ Every paper is annotated along four axes: which abstract machine it instantiates
 
 ## Contributing
 
-Add papers to `papers/inbox.md` with a full annotation following the methodology. Periodically they get sorted into the dual index and integrated into the atlas and glossary.
+Annotate new papers as per-paper files under `papers/annotations/` following the methodology; log them in the `papers/inbox.md` wave index. They are then sorted into the dual index and integrated into the atlas and glossary.

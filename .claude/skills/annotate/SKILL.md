@@ -39,7 +39,7 @@ For each paper, produce exactly this structure:
 
 ## Filing Rules
 
-1. Add the annotation to `papers/inbox.md` under a `---` separator
+1. Write the annotation to its own file `papers/annotations/<slug>.md` (slug = arXiv id with `/`→`-`, else first-author-year), header `## <id> --- <authors>`
 2. Add a reference line to the appropriate `papers/by-domain/<domain>.md` file(s)
 3. Add a reference line to the appropriate `papers/by-structure/<structure>.md` file(s)
 4. If the paper introduces a new vocabulary mapping, add it to `glossary/SYNONYMS.md`

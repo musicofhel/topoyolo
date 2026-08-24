@@ -262,10 +262,29 @@ def check_counts(n_ann, v):
             )
 
 
+def check_inbox_empty(v):
+    """A3 layout: inbox files are pointer-lists only — zero full annotations."""
+    n_total = 0
+    for p in INBOX_FILES:
+        if not p.exists():
+            continue
+        n = 0
+        for i, line in enumerate(p.read_text().splitlines(), 1):
+            m = HEADER_RE.match(line)
+            if m and not WAVE_RE.match(m.group(1)) and not WAVE_RE.match(m.group(2)):
+                n += 1
+                if n == 1:
+                    v.err(f"{p.relative_to(ROOT)}:{i}: full annotation still in inbox "
+                          f"(migrate to papers/annotations/): {line.lstrip('# ')[:60]}")
+        n_total += n
+    return n_total
+
+
 def main():
     v = Violations()
 
     annotations = collect_annotations(v)
+    n_inbox = check_inbox_empty(v)
     texts = index_texts()
     n_ann = check_coverage(annotations, texts, v)
     n_md, n_broken = check_links(v)
