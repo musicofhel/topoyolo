@@ -1180,6 +1180,7 @@ Combined citations: 3000+.
 **Domain(s)**: Information theory (foundational)
 Optimal assignment between source and channel/reproduction alphabets. Channel capacity: find P(x) maximizing I(X;Y) = optimal matching of source symbols to channel inputs. Rate-distortion R(D): find test channel P(y|x) minimizing I(X;Y) at distortion ≤ D = minimum-cost soft assignment. Alternating minimization predates EM (1977): fix one marginal, optimize the other. Each step is a matching update. R(D) curve parameterized by distortion D; slope = -s (Lagrange multiplier). Converges to global optimum by convexity.
 **Machines**: matching, parameterized homology, null hypothesis (weak).
+Full annotation: `annotations/blahut-arimoto-1972.md` (slug: blahut-arimoto-1972).
 Full annotation: `inbox.md` (Wave 8).
 **See also**: `by-structure/optimal_transport.md`, `atlas/MATCHING.md`
 
