@@ -193,7 +193,7 @@ DOI: 10.1038/s41593-019-0460-x. Population activity traces S^1 ring manifold (H_
 arXiv: 2503.14700. Explicit ∂_k boundary matrices from Intersecting Neighbor Sets algorithm on fMRI correlations. λ_k = N_k / C(p,k) ratio drops to ~10^{-5} for k ≥ 4. Chain complex machinery reveals absence of higher-order structure. Full annotation: `inbox.md` (Wave 10b).
 
 ### Dabaghian, Brandt & Frank (2014) — Hippocampal map as topological template
-eLife 03476. Nerve complex from place cell co-firing. Topological invariants (H_0, H_1) of the complex encode environment topology. Geometric deformations (track morphing) do not change the chain complex invariants. Full annotation: `inbox.md` (Wave 10b).
+eLife.03476. Nerve complex from place cell co-firing. Topological invariants (H_0, H_1) of the complex encode environment topology. Geometric deformations (track morphing) do not change the chain complex invariants. Full annotation: `inbox.md` (Wave 10b).
 
 ### Donato et al. (2016) — PH analysis of Phase Transitions
 arXiv: 1601.03641. Rips-Vietoris complex with full ∂_n boundary operators in appendix. Betti numbers β_0, β_1 tracked through filtration. Chain complex formalism applied to configuration space samples from MFXY and φ^4 models. Full annotation: `inbox.md` (Wave 10b).

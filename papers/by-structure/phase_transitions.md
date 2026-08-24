@@ -144,6 +144,7 @@ Stability takes three flavors across domains:
 ### Stability
 - **Kawaguchi et al. (2023)** — Generalization bound Δ ≤ sqrt(I(X;Z)/n). Same form as PH stability. `cross_domain_bridges.md`.
 - **Wang et al. (2021)** — HSIC bottleneck: layer-wise Lipschitz bounds as stability certificates. `second_pass.md` SP-04.
+- **Wang (2026)** — Grokking as dimensional phase transition: effective dimensionality D (from FSS of gradient avalanche dynamics) crosses sub-diffusive → super-diffusive regimes at generalization, architecture-invariant. arXiv: 2604.04655. Full annotation: `inbox.md` (Wave 9).
 - **Liu et al. (2020) SNGP** — Spectral normalization = Lipschitz constraint identical to PH stability form. `cross_domain_bridges.md`.
 - **Gallicchio & Micheli (2020)** — Banach contraction (ρ(W) < 1) guarantees fixed-point convergence. `cross_domain_bridges.md`.
 - **Pati & Sanders (2005)** — No partial erasure: absolute impossibility, not a bound. Strongest stability. `cross_domain_bridges.md`.
@@ -276,7 +277,7 @@ DOI: 10.1038/s41593-019-0460-x. Stability: ring manifold isometric and invariant
 arXiv: 2503.14700. Anti-stability: higher-order topological features not reproducible across subjects. Overlap probability decays exponentially with simplex dimension. Null: FDR-corrected testing shows no significant higher-order interactions. Full annotation: `inbox.md` (Wave 10b).
 
 ### Dabaghian, Brandt & Frank (2014) — Hippocampal map as topological template
-eLife 03476. Stability: topological representation invariant under geometric deformation (track morphing) and direction reversal. Null: geometric coding hypothesis rejected — place fields do not track metric features. Full annotation: `inbox.md` (Wave 10b).
+eLife.03476. Stability: topological representation invariant under geometric deformation (track morphing) and direction reversal. Null: geometric coding hypothesis rejected — place fields do not track metric features. Full annotation: `inbox.md` (Wave 10b).
 
 ### Donato et al. (2016) — PH analysis of Phase Transitions
 arXiv: 1601.03641. Stability: PH detects phase transition despite extremely sparse sampling (300 landmarks from 6K snapshots). Robust to metric approximation and subsampling. Null: φ^4 model as negative control — no topological signal at phase transition, validating PH specificity. Full annotation: `inbox.md` (Wave 10b).

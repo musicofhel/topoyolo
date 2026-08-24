@@ -67,7 +67,7 @@ Parameter: inverted transfer entropy (strongest information transfer first). Inv
 ### Oreshkov (2013) — Continuous-time quantum error correction
 Parameter: ratio kappa/lambda (error correction rate / decoherence rate). Invariant: protected quantum information (fidelity). Regimes: kappa >> lambda (Zeno, information frozen), kappa ~ lambda (partial protection), kappa << lambda (information lost). Non-Markovian regime shows quadratic improvement (lambda^4/kappa^2 vs. lambda^2/kappa). Full annotation: `by-domain/qec.md`.
 
-*(See also inbox for de la Fuente error threshold at ~2.5%)*
+*(See also inbox for de la Fuente et al. 2025, arXiv: 2604.02033 — error threshold at ~2.5%)*
 
 ## Dynamical Systems
 

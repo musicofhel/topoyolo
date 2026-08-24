@@ -242,7 +242,7 @@ Full annotation: `inbox.md` (Wave 10b).
 **See also**: `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/phase_transitions.md`
 
 ### Dabaghian, Brandt & Frank (2014) — Reconceiving the hippocampal map as a topological template
-eLife 03476. 136 citations. Place cells encode topology, not geometry. Morphing linear tracks dissociates topology from geometry; place fields preserve spatial ordering but not metric features. Direction-independent. Extends Dabaghian et al. 2012 from computation to experiment.
+eLife.03476. 136 citations. Place cells encode topology, not geometry. Morphing linear tracks dissociates topology from geometry; place fields preserve spatial ordering but not metric features. Direction-independent. Extends Dabaghian et al. 2012 from computation to experiment.
 **Machines**: chain complex, stability, null hypothesis.
 Full annotation: `inbox.md` (Wave 10b).
 **See also**: `by-structure/boundary_operators.md`, `by-structure/phase_transitions.md`

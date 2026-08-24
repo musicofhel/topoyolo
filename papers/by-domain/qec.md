@@ -6,7 +6,7 @@ Papers from the QEC community, indexed by which abstract machines they instantia
 
 ## Cross-listed from Inbox
 
-- **de la Fuente, Feldman, Eisert, Bauer (2025)** — "High-threshold decoding of non-Pauli codes for 2D universality." Toric/surface code as cellular homology, JIT matching decoder, error threshold as parameterized phase transition. Full annotation in `papers/inbox.md`. Machines: chain complex, matching, parameterized homology, stability, null hypothesis.
+- **de la Fuente, Feldman, Eisert, Bauer (2025)** — arXiv: 2604.02033. "High-threshold decoding of non-Pauli codes for 2D universality." Toric/surface code as cellular homology, JIT matching decoder, error threshold as parameterized phase transition. Full annotation in `papers/inbox.md`. Machines: chain complex, matching, parameterized homology, stability, null hypothesis.
 
 ---
 

@@ -107,11 +107,11 @@ The cost function is always a metric or semi-metric, and the matching always res
 
 ### Neuroscience (Wave 5, 2026-04-06)
 
-**Thual et al. (2022) — FUGW Brain Alignment**: Fused Unbalanced Gromov-Wasserstein for whole-brain inter-subject fMRI alignment. Transport plan P in R^{n x p} between cortical vertices. Combines Wasserstein (feature) + Gromov-Wasserstein (geometry) + unbalanced marginals. NeurIPS 2022, 46 citations. Full annotation: `inbox.md` (Wave 5).
+**Thual et al. (2022) — FUGW Brain Alignment**: arXiv: 2206.09398. Fused Unbalanced Gromov-Wasserstein for whole-brain inter-subject fMRI alignment. Transport plan P in R^{n x p} between cortical vertices. Combines Wasserstein (feature) + Gromov-Wasserstein (geometry) + unbalanced marginals. NeurIPS 2022, 46 citations. Full annotation: `inbox.md` (Wave 5).
 
-**Janati et al. (2019) — Minimum Wasserstein Estimates**: Unbalanced OT regularizer for multi-subject MEG/EEG source imaging. Wasserstein barycenter as group-level source estimate. Cost = cortical geodesic distance. Generalized Sinkhorn solver. Full annotation: `inbox.md` (Wave 5).
+**Janati et al. (2019) — Minimum Wasserstein Estimates**: arXiv: 1902.04812. Unbalanced OT regularizer for multi-subject MEG/EEG source imaging. Wasserstein barycenter as group-level source estimate. Cost = cortical geodesic distance. Generalized Sinkhorn solver. Full annotation: `inbox.md` (Wave 5).
 
-**Lee, Dabagia, Dyer, Rozell (2019) — Hierarchical OT for Neural Decoding**: Two-level Wasserstein alignment (cluster + point) for cross-session neural population decoding in macaque motor cortex. ADMM + Sinkhorn. NeurIPS 2019, 78 citations. Full annotation: `inbox.md` (Wave 5).
+**Lee, Dabagia, Dyer, Rozell (2019) — Hierarchical OT for Neural Decoding**: arXiv: 1906.11768. Two-level Wasserstein alignment (cluster + point) for cross-session neural population decoding in macaque motor cortex. ADMM + Sinkhorn. NeurIPS 2019, 78 citations. Full annotation: `inbox.md` (Wave 5).
 
 ---
 
