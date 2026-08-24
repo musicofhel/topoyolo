@@ -38,7 +38,11 @@ the pass report as pre-existing baseline debt.
 
 ## Phase A — structure: make the atlas machine-checkable and ingestion-ready
 
-- **A1 [open] Structure lint tool.** Write `scripts/check_structure.py`
+- **A1 [done 2026-08-24 e6d03df] Structure lint tool.** Baseline: 0 errors, 2 warnings
+  (9 prose-only crossrefs; claimed 219 vs 53 parseable headers — most Wave 1-3
+  annotations live as prose inside by-domain files, resolves at A3/A4).
+  Report: `research/2026-08-24-0650.md`.
+  Original: Write `scripts/check_structure.py`
   (stdlib only, no deps). Checks: (1) every full annotation (header pattern
   `## <id> --- <authors>` in inbox.md + inbox-archive.md) is referenced in ≥1
   `by-domain/` file AND ≥1 `by-structure/` file; (2) every relative markdown
