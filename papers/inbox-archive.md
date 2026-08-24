@@ -29,7 +29,7 @@ Each annotation below is verbatim-migrated to `papers/annotations/` (A3 slice 1)
 ## Core ATT papers (annotated)
 
 ### Cohen-Steiner, Edelsbrunner, Harer (2007) — "Stability of persistence diagrams"
-**Domain**: TDA. **Machines**: Stability (bottleneck ≤ Hausdorff), parameterized homology. **Full annotation below** (arXiv: math/0604068).
+**Domain**: TDA. **Machines**: Stability (bottleneck ≤ Hausdorff), parameterized homology. **Full annotation**: [annotations/math-0604068.md](annotations/math-0604068.md).
 
 ### Adams et al. (2017) — "Persistence images"
 **Domain**: TDA. **Machines**: Parameterized homology (vectorized), stability (W_1 Lipschitz bounds, Theorems 1-4), matching (implicit via Wasserstein optimal bijection), chain complex (implicit, Appendix A). **Full annotation below** (arXiv: 1507.06217).
@@ -48,182 +48,20 @@ Each annotation below is verbatim-migrated to `papers/annotations/` (A3 slice 1)
 
 ## Found and annotated (Wave 4b)
 
-## quant-ph/9707021 — Kitaev (1997)
-**"Fault-tolerant quantum computation by anyons"**
+Each annotation below is verbatim-migrated to `papers/annotations/` (A3 slice 2):
 
-**Domain(s)**: QEC
-
-**Abstract machines instantiated**:
-- **Chain complex**: The toric code IS a chain complex on a 2D lattice (cellulation of a torus). Qubits live on edges (1-cells). X-stabilizers = ∂ (boundary of faces/2-cells). Z-stabilizers = δ (coboundary of vertices/0-cells). Logical operators = non-trivial homology classes of H₁(T², ℤ/2). The number of logical qubits = rank H₁ = 2 for the torus.
-- **Matching**: Anyonic excitations come in pairs. Error correction = fusing (matching) anyon pairs back to vacuum. The fusion rules define which pairs can annihilate.
-- **Stability**: Fault tolerance is TOPOLOGICAL — errors must create a non-trivial homology cycle to cause a logical error. This requires O(d) local errors where d = code distance = min-weight non-trivial cycle. Exponential suppression below threshold.
-
-**What is genuinely new**: Computation via anyon braiding — the computational gate set comes from the braid group acting on the fusion space. This is computation FROM topology, not computation ON topology.
-
-**Vocabulary mapping**:
-| Paper term | Rosetta term |
-|---|---|
-| Toric code lattice | Chain complex on T² |
-| Anyon | Localized homology defect |
-| Fusion | Matching (annihilation of defect pairs) |
-| Braid group | Computational gate set from topology |
-| Code distance | Min-weight non-trivial cycle |
-| Logical qubit | Non-trivial homology class |
-
----
-
-## quant-ph/0110143 — Dennis, Kitaev, Landahl, Preskill (2002)
-**"Topological quantum memory"**
-
-**Domain(s)**: QEC, statistical physics
-
-**Abstract machines instantiated**:
-- **Chain complex**: Surface codes on surfaces of nontrivial topology. Qubits on edges, stabilizers from ∂ and δ. Encoded operations = non-trivial homology cycles. Explicit construction with recovery protocols.
-- **Parameterized homology**: Error rate p parameterizes the family. Below threshold p_c: encoded information preserved. Above: destroyed. The threshold IS a phase transition.
-- **Stability**: Threshold theorem: below p_c, logical error rate suppressed exponentially in code distance. The phase transition maps EXACTLY to a 3D Z₂ lattice gauge theory with quenched disorder — the accuracy threshold = critical temperature of the gauge theory.
-- **Null hypothesis**: Uncorrected system (no recovery) as baseline. The gap between corrected and uncorrected logical error rates quantifies the value of error correction.
-- **Matching**: Recovery = identifying and matching syndrome defects. MWPM on syndrome graph.
-
-**What is genuinely new**: The mapping to statistical mechanics (random-bond Ising / Z₂ gauge theory) is a genuine cross-domain bridge. The threshold IS a thermodynamic phase transition, not merely analogous to one. Also: the 4D procedure that doesn't require measurement — a qualitatively different computational model.
-
-**Connections the authors acknowledge**: Explicit bridge to statistical mechanics (Z₂ gauge theory). This is one of the rare cross-domain connections.
-
-**Vocabulary mapping**:
-| Paper term | Rosetta term |
-|---|---|
-| Surface code | Chain complex on surface |
-| Accuracy threshold | Critical parameter (phase transition) |
-| Z₂ gauge theory | Statistical mechanics null model |
-| Recovery protocol | Matching/correction |
-| Code distance | Min-weight non-trivial cycle |
-| Encoded operation | Non-trivial homology class |
-
----
-
-## 1307.6188 — Perea, Harer (2013)
-**"Sliding Windows and Persistence: An Application of Topological Methods to Signal Analysis" (SW1PerS)**
-
-**Domain(s)**: TDA, dynamical systems
-
-**Abstract machines instantiated**:
-- **Chain complex**: Sliding window embedding of a time series produces a point cloud in ℝ^d. Rips/Čech complex on this point cloud. Standard simplicial ∂.
-- **Parameterized homology**: TWO parameters: (1) the Rips scale ε, (2) the window size/embedding dimension. Persistence diagrams track homology as ε varies. Maximum 1-dimensional persistence quantifies PERIODICITY of the original signal.
-- **Stability**: Structural and convergence theorems for the persistence diagrams. Estimates for dependency on window size and embedding dimension. Connects to Takens embedding theorem guarantees.
-
-**What is genuinely new**: The bridge between signal-level properties (periodicity) and point-cloud-level topology (persistent H₁). This is a FORMAL connection between dynamical systems (Takens) and TDA (persistence), not just an application. The SW1PerS score is a topological periodicity measure.
-
-**Connections the authors acknowledge**: Explicit bridge between TDA and dynamical systems (Takens embedding). Cross-domain by construction.
-
-**Vocabulary mapping**:
-| Paper term | Rosetta term |
-|---|---|
-| Sliding window embedding | Takens embedding → point cloud |
-| SW1PerS score | Maximum persistence in H₁ |
-| Window size | Embedding parameter (Takens dimension) |
-| Periodicity | Non-trivial H₁ (loop in embedding) |
-| Convergence theorem | Stability of persistence under sampling |
-
----
-
-## math/0604068 — Cohen-Steiner, Edelsbrunner, Harer (2007)
-**"Stability of Persistence Diagrams"**
-
-**Domain(s)**: TDA
-
-**Abstract machines instantiated**:
-- **Stability**: THE foundational stability theorem for TDA. Bottleneck distance between persistence diagrams ≤ L∞ distance between the functions inducing the filtrations. d_B(Dgm(f), Dgm(g)) ≤ ||f - g||∞. Small perturbation in input → bounded change in topological output. This is the Lipschitz stability that all downstream TDA applications rely on.
-- **Matching**: The bottleneck distance IS a matching: optimal bijection between diagram points (including the diagonal) minimizing the maximum displacement. The stability theorem says this matching cost is bounded by the input perturbation.
-- **Parameterized homology**: Persistence diagrams ARE the output of parameterized homology. The theorem says this output is stable.
-
-**What is genuinely new**: This is the FOUNDATIONAL result. Before this theorem, persistent homology was a computational tool without robustness guarantees. The stability theorem made TDA a rigorous statistical methodology. The proof technique (interleaving of filtrations) became a template for all subsequent stability results.
-
-**Vocabulary mapping**:
-| Paper term | Rosetta term |
-|---|---|
-| Bottleneck distance | Matching cost (L∞) |
-| Persistence diagram | Parameterized homology output |
-| ||f - g||∞ | Input perturbation |
-| d_B ≤ ||f - g||∞ | Lipschitz stability bound |
-| Interleaving | Approximate isomorphism of filtrations |
-
----
+- [Kitaev (1997) — fault-tolerant quantum computation by anyons](annotations/quant-ph-9707021.md)
+- [Dennis, Kitaev, Landahl, Preskill (2002) — topological quantum memory](annotations/quant-ph-0110143.md)
+- [Perea & Harer (2013) — SW1PerS sliding-window persistence](annotations/1307.6188.md)
+- [Cohen-Steiner, Edelsbrunner, Harer (2007) — stability of persistence diagrams](annotations/math-0604068.md)
 
 ## Wave 3 triage annotations
 
-### MDPI Entropy 17(5):3253 — Baudot, Bennequin (2015)
-**"The Homological Nature of Entropy"**
+Migrated verbatim to `papers/annotations/` (A3 slice 2):
 
-**Domain(s)**: Information theory, TDA (algebraic topology)
-
-**Abstract machines instantiated**:
-- **Chain complex**: Defines information structures as simplicial complexes where k-simplices correspond to k-tuples of random variables. The coboundary operator δ maps (k-1)-information functions to k-information functions. δ² = 0 holds by construction. Shannon entropy H and mutual information I emerge as COCYCLES in this complex — they satisfy the cocycle condition δH = 0 (the chain rule of entropy). Information quantities that satisfy the chain rule ARE cohomology classes.
-- **Parameterized homology** (weak): The lattice of random variable subsets parameterizes the information functions. Moving up the lattice reveals higher-order interactions.
-
-**What is genuinely new (not reducible to shared abstraction)**:
-- The identification entropy = cocycle is EXACT, not analogical. Shannon's chain rule IS the cocycle condition. This is the most rigorous Chain×Info result in the literature.
-- Extends to Tsallis and Rényi entropies as deformed cocycles — the deformation parameter parameterizes a family of cohomology theories.
-- Negative information quantities (conditional MI can be negative) correspond to non-trivial cohomology classes — they cannot be "explained away" by lower-order terms.
-
-**Vocabulary mapping**:
-| Paper term | Rosetta term |
-|---|---|
-| Information structure | Simplicial complex of random variables |
-| k-tuple of variables | k-simplex |
-| Shannon entropy | 1-cocycle |
-| Chain rule | Cocycle condition (δH = 0) |
-| Mutual information | Derived quantity from cocycle |
-| Information cohomology | Homology of information complex |
-
----
-
-## 2107.09581 — Bradley (2021)
-**"Entropy as a Topological Operad Derivation"**
-
-**Domain(s)**: Information theory, TDA (category theory)
-
-**Abstract machines instantiated**:
-- **Chain complex**: The operad of topological simplices provides the algebraic structure. Shannon entropy is characterized as the unique derivation (up to scalar) of this operad. The simplicial structure IS the chain complex — the operad composition maps correspond to boundary/face maps. Faddeev's 1956 characterization of entropy (via functional equations) is shown to be equivalent to the derivation property in the operad.
-
-**What is genuinely new (not reducible to shared abstraction)**:
-- Uniqueness: Shannon entropy is the ONLY derivation of the simplicial operad (up to constant). This is a characterization theorem, not just an embedding.
-- Category-theoretic framing connects to Riehl's functorial perspective (on the "to find" list).
-- Strengthens Baudot-Bennequin: not only is entropy a cocycle, it is the unique one satisfying the operad derivation axioms.
-
-**Vocabulary mapping**:
-| Paper term | Rosetta term |
-|---|---|
-| Operad of simplices | Chain complex (categorified) |
-| Derivation | Cocycle satisfying Leibniz rule |
-| Shannon entropy | Unique derivation |
-| Faddeev axioms | Cocycle conditions |
-
----
-
-## 2405.07665 — Kolchinsky (2024)
-**"Partial information decomposition: redundancy as information bottleneck"**
-
-**Domain(s)**: Information theory
-
-**Abstract machines instantiated**:
-- **Joint-vs-marginal excess**: PID IS the joint-vs-marginal machine: synergy = information in the joint that exceeds the sum of unique + redundant contributions. This paper reformulates redundancy itself as an IB problem: compress the sources while preserving target prediction but obscuring source identity.
-- **Parameterized homology**: The "RB curve" traces redundancy as a function of compression level — a one-parameter family of decompositions. At different compression levels, different redundant subsets emerge. This IS parameterized homology: a parameter (compression β) indexes a family of information decompositions.
-- **Matching**: The IB framework involves optimal assignment between source representations and target predictions. The redundancy bottleneck optimizes this assignment.
-
-**What is genuinely new (not reducible to shared abstraction)**:
-- The bridge PID ↔ IB is the key contribution. Redundancy (Joint machine) = compression-prediction tradeoff (Param machine). This formally connects two abstract machines that were previously instantiated independently.
-- Efficient iterative algorithm replaces combinatorial PID computation — practical scalability.
-- Generalizes "Blackwell redundancy" — provides operational semantics for PID atoms.
-
-**Vocabulary mapping**:
-| Paper term | Rosetta term |
-|---|---|
-| Redundancy | Joint-vs-marginal (shared component) |
-| Synergy | Joint-vs-marginal (excess component) |
-| RB curve | Parameterized decomposition |
-| Compression β | Filtration parameter |
-| Source identity obscuring | Null construction (destroy source labels) |
-
----
+- [Baudot & Bennequin (2015) — the homological nature of entropy](annotations/baudot-2015.md)
+- [Bradley (2021) — entropy as a topological operad derivation](annotations/2107.09581.md)
+- [Kolchinsky (2024) — PID redundancy as information bottleneck](annotations/2405.07665.md)
 
 ## Phase 2 Annotations (2026-04-06, session 2)
 

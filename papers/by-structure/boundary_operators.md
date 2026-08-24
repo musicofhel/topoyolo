@@ -12,10 +12,10 @@ The shared pattern: there is a graded algebraic object (simplicial complex, code
 LDPC parity-check matrix H as boundary operator over GF(2). Codewords are ker(H), syndromes are im(H). Factor graphs generalize the chain complex structure. Full annotation: `by-domain/information_theory.md`.
 
 ### Baudot & Bennequin (2015) — The Homological Nature of Entropy
-Information structures as simplicial complexes. k-simplices = k-tuples of random variables. Coboundary δ maps (k-1)-information functions to k-information functions, δ²=0. Shannon entropy H is a 1-COCYCLE: the chain rule IS the cocycle condition δH=0. Exact identification, not analogy. Extends to Tsallis/Rényi as deformed cocycles. Full annotation: `inbox.md`.
+Information structures as simplicial complexes. k-simplices = k-tuples of random variables. Coboundary δ maps (k-1)-information functions to k-information functions, δ²=0. Shannon entropy H is a 1-COCYCLE: the chain rule IS the cocycle condition δH=0. Exact identification, not analogy. Extends to Tsallis/Rényi as deformed cocycles. Full annotation: `annotations/baudot-2015.md` (MDPI Entropy 17(5):3253).
 
 ### Bradley (2021) — Entropy as a Topological Operad Derivation
-Shannon entropy = unique derivation (up to scalar) of the operad of topological simplices. Strengthens Baudot-Bennequin: not only is H a cocycle, it's the ONLY one satisfying operad derivation axioms. Category-theoretic chain complex perspective. Full annotation: `inbox.md` (arXiv: 2107.09581).
+Shannon entropy = unique derivation (up to scalar) of the operad of topological simplices. Strengthens Baudot-Bennequin: not only is H a cocycle, it's the ONLY one satisfying operad derivation axioms. Category-theoretic chain complex perspective. Full annotation: `annotations/2107.09581.md` (arXiv: 2107.09581).
 
 ### Sugiyama, Nakahara & Tsuda (2016) — Information Decomposition on Structured Space
 Dual θ/η coordinates on posets as order-theoretic chain complex. Möbius function as boundary operator. Principal ideals (↓x) and filters (↑x) as ∂ and δ supports. Pythagorean theorem for KL divergence decomposes interactions by level. Full annotation: `by-domain/information_theory.md`.
@@ -42,10 +42,10 @@ Directed flag complex from transfer entropy adjacency matrix. Directed k-simplic
 Subsystem decomposition H_S = H_A ⊗ H_B ⊕ K as Hilbert-space chain complex. Code subsystem H_A = protected information (cycles); gauge subsystem H_B = correctable errors (boundaries); K = uncorrectable states. Error-correcting map R projects onto code space (projection to ker/im). Correctability condition = functional ∂^2 = 0. Full annotation: `by-domain/qec.md`.
 
 ### Kitaev (1997) — Fault-tolerant quantum computation by anyons
-Toric code IS a chain complex on T². Qubits on edges (1-cells), X-stabilizers = ∂ (boundary of faces), Z-stabilizers = δ (coboundary of vertices). Logical qubits = H₁(T², ℤ/2). Computation via anyon braiding on the fusion space. Full annotation: `inbox.md` (arXiv: quant-ph/9707021).
+Toric code IS a chain complex on T². Qubits on edges (1-cells), X-stabilizers = ∂ (boundary of faces), Z-stabilizers = δ (coboundary of vertices). Logical qubits = H₁(T², ℤ/2). Computation via anyon braiding on the fusion space. Full annotation: `annotations/quant-ph-9707021.md` (arXiv: quant-ph/9707021).
 
 ### Dennis, Kitaev, Landahl, Preskill (2002) — Topological quantum memory
-Surface codes with explicit recovery protocols. Qubits on edges, stabilizers from ∂ and δ. Threshold maps to 3D Z₂ lattice gauge theory. Full annotation: `inbox.md` (arXiv: quant-ph/0110143).
+Surface codes with explicit recovery protocols. Qubits on edges, stabilizers from ∂ and δ. Threshold maps to 3D Z₂ lattice gauge theory. Full annotation: `annotations/quant-ph-0110143.md` (arXiv: quant-ph/0110143).
 
 ## Neuroscience
 

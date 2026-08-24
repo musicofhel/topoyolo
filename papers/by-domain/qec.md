@@ -65,13 +65,13 @@ arXiv: 1311.2485 | Chapter in *Quantum Error Correction* (Cambridge University P
 
 ### Kitaev (1997) — Fault-tolerant quantum computation by anyons
 **"Fault-tolerant quantum computation by anyons"**
-arXiv: quant-ph/9707021
+arXiv: quant-ph/9707021. Full annotation: `annotations/quant-ph-9707021.md`.
 THE foundational toric code paper. Chain complex on T² (qubits on edges, stabilizers from ∂/δ). Logical qubits = H₁(T², ℤ/2). Anyonic excitations matched by fusion. Computation via braid group on fusion space. Topological fault tolerance: errors must create non-trivial homology cycle.
 **Machines**: chain complex, matching, stability. **See also**: `by-structure/boundary_operators.md`, `by-structure/optimal_transport.md`.
 
 ### Dennis, Kitaev, Landahl, Preskill (2002) — Topological quantum memory
 **"Topological quantum memory"**
-arXiv: quant-ph/0110143
+arXiv: quant-ph/0110143. Full annotation: `annotations/quant-ph-0110143.md`.
 Explicit surface code construction with recovery protocols. Threshold theorem: below p_c, exponential suppression. Phase transition maps EXACTLY to 3D Z₂ lattice gauge theory (cross-domain bridge to stat mech). MWPM syndrome matching. 4D procedure without measurement.
 **Machines**: chain complex, parameterized homology, matching, stability, null hypothesis. **See also**: `by-structure/boundary_operators.md`, `by-structure/phase_transitions.md`, `by-structure/optimal_transport.md`.
 

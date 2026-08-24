@@ -42,10 +42,10 @@ Martingale optimal transport: given marginals mu_1, ..., mu_n (from call prices)
 ## QEC
 
 ### Kitaev (1997) — Fault-tolerant quantum computation by anyons
-Matching: Anyonic excitations come in pairs. Error correction = fusing (matching) anyon pairs back to vacuum. Fusion rules define which pairs can annihilate. Full annotation: `inbox.md` (arXiv: quant-ph/9707021).
+Matching: Anyonic excitations come in pairs. Error correction = fusing (matching) anyon pairs back to vacuum. Fusion rules define which pairs can annihilate. Full annotation: `annotations/quant-ph-9707021.md` (arXiv: quant-ph/9707021).
 
 ### Dennis et al. (2002) — Topological quantum memory
-Matching: Recovery = identifying and matching syndrome defects via MWPM on syndrome graph. Full annotation: `inbox.md` (arXiv: quant-ph/0110143).
+Matching: Recovery = identifying and matching syndrome defects via MWPM on syndrome graph. Full annotation: `annotations/quant-ph-0110143.md` (arXiv: quant-ph/0110143).
 
 ---
 

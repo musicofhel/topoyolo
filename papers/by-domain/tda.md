@@ -243,13 +243,13 @@ Joint bifiltration captures structure invisible to single-parameter PH. Multigra
 
 ### Perea & Harer (2013) — Sliding Windows and Persistence (SW1PerS)
 **"Sliding Windows and Persistence: An Application of Topological Methods to Signal Analysis"**
-arXiv: 1307.6188
+arXiv: 1307.6188. Full annotation: `annotations/1307.6188.md`.
 Sliding window embedding → point cloud → Rips complex → PH. Maximum H₁ persistence = periodicity score. Convergence theorems + dependency estimates for window size / embedding dimension. Formal bridge between Takens (dynamical systems) and persistence (TDA).
 **Machines**: chain complex, parameterized homology, stability. **See also**: `by-structure/boundary_operators.md`, `by-structure/filtrations.md`. **Bridge: TDA + dynamical systems.**
 
 ### Cohen-Steiner, Edelsbrunner, Harer (2007) — Stability of Persistence Diagrams
 **"Stability of Persistence Diagrams"**
-arXiv: math/0604068
+arXiv: math/0604068. Full annotation: `annotations/math-0604068.md`.
 THE foundational stability theorem. d_B(Dgm(f), Dgm(g)) ≤ ||f - g||∞. Bottleneck distance = optimal matching between diagram points. Made TDA rigorous. Proof via interleaving of filtrations — template for all subsequent stability results.
 **Machines**: stability, matching, parameterized homology. **See also**: `by-structure/phase_transitions.md`, `by-structure/optimal_transport.md`.
 

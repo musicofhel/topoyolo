@@ -1015,19 +1015,19 @@ arXiv: 2111.05299
 
 ### Baudot & Bennequin (2015) — The Homological Nature of Entropy
 **"The Homological Nature of Entropy"**
-MDPI Entropy 17(5):3253
+MDPI Entropy 17(5):3253. Full annotation: `annotations/baudot-2015.md`.
 Shannon entropy = cocycle in information cohomology. Chain rule = cocycle condition. Information structures as simplicial complexes. Foundational Chain×Info paper.
 **Machines**: chain complex, parameterized homology (weak). **See also**: `by-structure/boundary_operators.md`.
 
 ### Bradley (2021) — Entropy as Topological Operad Derivation
 **"Entropy as a Topological Operad Derivation"**
-arXiv: 2107.09581
+arXiv: 2107.09581. Full annotation: `annotations/2107.09581.md`.
 Shannon entropy = unique derivation of simplicial operad. Strengthens Baudot-Bennequin. Category-theoretic.
 **Machines**: chain complex. **See also**: `by-structure/boundary_operators.md`.
 
 ### Kolchinsky (2024) — PID Redundancy as Information Bottleneck
 **"Partial information decomposition: redundancy as information bottleneck"**
-arXiv: 2405.07665
+arXiv: 2405.07665. Full annotation: `annotations/2405.07665.md`.
 PID redundancy = IB compression-prediction tradeoff. RB curve as parameterized decomposition. Formally bridges Joint (PID) and Param (IB) machines.
 **Machines**: joint-vs-marginal, parameterized homology, matching. **See also**: `by-structure/composite_systems.md`, `by-structure/filtrations.md`.
 

@@ -46,7 +46,7 @@ Cross-Barcode(P,Q) = pairwise topological comparison of two manifold-supported d
 MINE-estimated I(X;T) as regularizer. Confirms compression phase in VGG-16. MI-based loss stabilizes training. Full annotation: `by-domain/information_theory.md`.
 
 ### Kolchinsky (2024) — PID Redundancy as Information Bottleneck
-Redundancy reformulated as IB compression-prediction tradeoff. "RB curve" = parameterized family of decompositions indexed by compression β. Bridges Joint (PID) and Param (IB) machines formally. Efficient iterative algorithm. Full annotation: `inbox.md` (arXiv: 2405.07665).
+Redundancy reformulated as IB compression-prediction tradeoff. "RB curve" = parameterized family of decompositions indexed by compression β. Bridges Joint (PID) and Param (IB) machines formally. Efficient iterative algorithm. Full annotation: `annotations/2405.07665.md` (arXiv: 2405.07665).
 
 ### Kirkley (2025) — Transfer Entropy for Finite Data
 Reduced transfer entropy as debiased joint-vs-marginal excess with automatic MDL null. Combinatorial entropy avoids random-variable assumption. Full annotation: `by-domain/information_theory.md`.

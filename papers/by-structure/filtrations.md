@@ -42,7 +42,7 @@ Parameter: SCNN filter coefficients. Invariant: Hodge component proportions (gra
 Parameter: sliding window position (time) and Vietoris-Rips scale (epsilon). Invariant: persistent entropy, amplitude, point count from persistence diagrams. Sliding-window PH on time-delay embedded financial time series. First application of TDA-derived features specifically for forecasting (vs. classification/detection). Tested on 32 datasets across crypto and traditional instruments. Full annotation: `by-domain/tda.md`.
 
 ### Perea & Harer (2013) — SW1PerS
-Parameter: TWO — Rips scale ε AND window size/embedding dimension. Invariant: H₁ persistence (periodicity score). Sliding window embedding of time series → point cloud → Rips PH. Convergence theorems + dependency estimates. Bridge paper: Takens (dynamics) + persistence (TDA). Full annotation: `inbox.md` (arXiv: 1307.6188).
+Parameter: TWO — Rips scale ε AND window size/embedding dimension. Invariant: H₁ persistence (periodicity score). Sliding window embedding of time series → point cloud → Rips PH. Convergence theorems + dependency estimates. Bridge paper: Takens (dynamics) + persistence (TDA). Full annotation: `annotations/1307.6188.md` (arXiv: 1307.6188).
 
 ### Harrington, Otter, Schenck, Tillmann (2017) — Stratifying Multiparameter PH
 Parameter: MULTIPLE simultaneous parameters (bifiltration). Invariant: multigraded module over polynomial ring. Three partial invariants: associated primes, Hilbert series, local cohomology. No complete discrete invariant (unlike 1-param barcode). Full annotation: `annotations/1708.07390.md` (arXiv: 1708.07390).

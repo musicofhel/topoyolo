@@ -334,7 +334,7 @@ arXiv: 1307.2493
 
 ### Perea & Harer (2013) — SW1PerS (cross-listed from TDA)
 Sliding window embedding of time series → Rips complex → PH. SW1PerS score (max H₁ persistence) quantifies periodicity. Formal bridge: Takens embedding (dynamics) → persistent homology (TDA). Convergence theorems.
-**Machines**: chain complex, parameterized homology, stability. Full annotation: `inbox.md` (arXiv: 1307.6188). **Bridge: dynamics + TDA.**
+**Machines**: chain complex, parameterized homology, stability. Full annotation: `annotations/1307.6188.md` (arXiv: 1307.6188). **Bridge: dynamics + TDA.**
 
 ### Tsuda (2001) — Chaotic Itinerancy (cross-listed from Neuroscience)
 **"Toward an interpretation of dynamic neural activity in terms of chaotic dynamical systems"**

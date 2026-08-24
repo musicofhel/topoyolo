@@ -78,7 +78,7 @@ Stability: Two regimes. Markovian: error rate ~ lambda^2/kappa (quadratic suppre
 Null hypothesis: Uncorrected evolution (kappa = 0) = pure Lindblad decoherence. The gap between corrected and uncorrected evolution quantifies the value of error correction. Full annotation: `by-domain/qec.md`.
 
 ### Dennis, Kitaev, Landahl, Preskill (2002) — Topological quantum memory
-Stability: Threshold theorem — below p_c, logical error rate exponentially suppressed in code distance. Phase transition maps EXACTLY to 3D Z₂ lattice gauge theory with quenched disorder. Accuracy threshold = critical temperature. Null: uncorrected system as baseline. Full annotation: `inbox.md` (arXiv: quant-ph/0110143).
+Stability: Threshold theorem — below p_c, logical error rate exponentially suppressed in code distance. Phase transition maps EXACTLY to 3D Z₂ lattice gauge theory with quenched disorder. Accuracy threshold = critical temperature. Null: uncorrected system as baseline. Full annotation: `annotations/quant-ph-0110143.md` (arXiv: quant-ph/0110143).
 
 ### Freedman, Kitaev, Larsen, Wang (2001) — Topological Quantum Computation
 Stability: Error rate e^{-αℓ} — topological protection by geometric length scale, strongest continuous stability. Abelian anyons as null (trivial braiding = no computational power). Non-Abelian anyons required for universal quantum computation. Full annotation: `inbox.md` (arXiv: quant-ph/0101025).
@@ -87,7 +87,7 @@ Stability: Error rate e^{-αℓ} — topological protection by geometric length 
 Stability: Error threshold p_c = 0.109(2), close to toric code — enhanced computational capabilities do NOT imply lower noise resistance. Null: factorized state of qubits; overlap with color code state = 3-body Ising partition function. Different universality classes = different computational capabilities. Full annotation: `inbox.md` (arXiv: 0711.0468).
 
 ### Cohen-Steiner, Edelsbrunner, Harer (2007) — Stability of Persistence Diagrams
-Stability: THE foundational result. d_B(Dgm(f), Dgm(g)) ≤ ||f - g||∞. Lipschitz bound. Made TDA rigorous as statistical methodology. Matching: bottleneck distance IS optimal matching between diagram points. Full annotation: `inbox.md` (arXiv: math/0604068).
+Stability: THE foundational result. d_B(Dgm(f), Dgm(g)) ≤ ||f - g||∞. Lipschitz bound. Made TDA rigorous as statistical methodology. Matching: bottleneck distance IS optimal matching between diagram points. Full annotation: `annotations/math-0604068.md` (arXiv: math/0604068).
 
 ## Dynamical Systems
 
