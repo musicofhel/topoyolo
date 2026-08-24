@@ -14,6 +14,11 @@ Checks:
      "<id> --- <authors>" annotation header at the top of its body
 
 Errors -> exit 1. Warnings are printed but do not fail the run.
+
+  --check   also derive stats via scripts/gen_stats.py and FAIL if
+            diagrams/coverage-matrix.md or the headline counts in
+            README.md / docs/index.html drift from the annotations.
+
 Run from anywhere: paths are resolved relative to the repo root.
 """
 
@@ -30,8 +35,8 @@ STRUCTURE_DIR = ROOT / "papers/by-structure"
 COUNT_FILES = [
     ROOT / "README.md",
     ROOT / "docs/index.html",
-    ROOT / "diagrams/coverage-matrix.md",
 ]
+MATRIX_FILE = ROOT / "diagrams/coverage-matrix.md"
 
 # Annotation header: "## <id> --- <authors>" (inbox) or "## <id> — <authors>"
 # (archive). Either dash style separates id from authors.
@@ -230,7 +235,10 @@ def extract_counts(text):
     return claims
 
 
-def check_counts(n_ann, v):
+def check_counts(v):
+    """Cross-file agreement of the headline paper-count claims (README vs
+    docs/index.html). The corpus-truth comparison lives in
+    check_stats_drift, which derives the real number from the annotations."""
     per_file = {}
     for p in COUNT_FILES:
         if not p.exists():
@@ -249,17 +257,53 @@ def check_counts(n_ann, v):
         for i in range(len(names)):
             for j in range(i + 1, len(names)):
                 if vals[names[i]] != vals[names[j]]:
-                    detail = ", ".join(f"{k}: {sorted(v)}" for k, v in vals.items())
+                    detail = ", ".join(f"{k}: {sorted(x)}" for k, x in vals.items())
                     v.err(f"{metric} count disagreement across sources -> {detail}")
+    return per_file
 
-    # corpus truth vs claims (warning only)
-    claimed = set().union(*[c["papers"] for c in per_file.values()]) if per_file else set()
-    for c in sorted(claimed):
-        if c != n_ann:
-            v.warn(
-                f"claimed count {c} papers != {n_ann} annotation headers found in "
-                f"inbox.md + inbox-archive.md"
-            )
+
+def strip_tags(s):
+    return re.sub(r"<[^>]+>", "", s)
+
+
+def derived_stats():
+    """Import gen_stats (scripts/, stdlib only) and derive corpus truth."""
+    sys.path.insert(0, str(ROOT / "scripts"))
+    from gen_stats import derive, render_matrix
+
+    papers, matrix, notes = derive()
+    machines = sorted(next(iter(matrix.values())).keys()) if matrix else []
+    min_cell = min(matrix[d][c] for d in matrix for c in machines) if matrix else 0
+    n_deep = sum(1 for d in matrix for c in machines if matrix[d][c] >= 10)
+    return papers, n_deep, min_cell, render_matrix(papers, matrix), notes
+
+
+def check_stats_drift(v):
+    """A4: claimed stats must equal the numbers derived from
+    papers/annotations/ by scripts/gen_stats.py."""
+    try:
+        papers, n_deep, min_cell, rendered, notes = derived_stats()
+    except ImportError as e:
+        v.warn(f"cannot import scripts/gen_stats.py — stats drift unchecked ({e})")
+        return None
+    for note in notes:
+        v.warn(f"gen_stats: {note}")
+
+    if MATRIX_FILE.exists():
+        current = MATRIX_FILE.read_text()
+        if current.strip() != rendered.strip():
+            v.err("diagrams/coverage-matrix.md is out of date with "
+                  "papers/annotations/ — run: python3 scripts/gen_stats.py")
+    else:
+        v.err("diagrams/coverage-matrix.md missing (gen_stats.py should emit it)")
+
+    # each prose surface must carry the derived headline paper count
+    for p in COUNT_FILES:
+        txt = strip_tags(p.read_text())
+        if not re.search(rf"\b{papers}\b\s+fully annotated papers|\b{papers}\s+papers\b", txt):
+            v.err(f"{p.relative_to(ROOT)}: does not state the derived count "
+                  f"({papers} fully annotated papers)")
+    return papers, n_deep, min_cell
 
 
 def check_inbox_empty(v):
@@ -280,7 +324,8 @@ def check_inbox_empty(v):
     return n_total
 
 
-def main():
+def main(argv):
+    check = "--check" in argv
     v = Violations()
 
     annotations = collect_annotations(v)
@@ -288,12 +333,17 @@ def main():
     texts = index_texts()
     n_ann = check_coverage(annotations, texts, v)
     n_md, n_broken = check_links(v)
-    check_counts(n_ann, v)
+    check_counts(v)
+    stats = check_stats_drift(v) if check else None
 
     print(f"topo-rosetta structure lint")
     print(f"  annotations parsed : {n_ann}")
     print(f"  index files scanned: {len(texts)}")
     print(f"  markdown files     : {n_md}")
+    if stats:
+        papers, n_deep, min_cell = stats
+        print(f"  derived stats      : {papers} papers, {n_deep}/30 cells >=10, "
+              f"min cell {min_cell} (--check)")
     print()
     for w in v.warnings:
         print(f"WARN  {w}")
@@ -305,4 +355,4 @@ def main():
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    sys.exit(main(sys.argv[1:]))

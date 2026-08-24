@@ -2,11 +2,11 @@
 
 *A cartography of shared algebraic structure across five disciplines that independently discovered the same six abstract machines.*
 
-Persistent homology, quantum error correction, dynamical systems, neural coding, information theory — these fields use different vocabularies to describe the same algebraic objects. This repo collects 219+ papers, maps the repetitions, and makes the synonyms explicit. It also maps the divergences — where the analogy breaks, which is equally informative.
+Persistent homology, quantum error correction, dynamical systems, neural coding, information theory — these fields use different vocabularies to describe the same algebraic objects. This repo collects annotated papers (68 full annotations), maps the repetitions, and makes the synonyms explicit. It also maps the divergences — where the analogy breaks, which is equally informative.
 
 The goal is not synthesis or unification. It is *differentiation* — in the Deleuzian sense. The same abstract machine is actualized differently in each domain. By cataloguing the repetitions and the genuine divergences, we make visible the plane that connects them.
 
-`5 domains · 6 machines · 219 papers · 30 cells, all ≥ 4 · 16 cells ≥ 10`
+`5 domains · 6 machines · 68 fully annotated papers · 30 cells, min cell 1 · 18 cells ≥ 10`
 
 ---
 
@@ -24,7 +24,7 @@ The goal is not synthesis or unification. It is *differentiation* — in the Del
 ## The Five Domains
 
 - **TDA** — Topological Data Analysis. Multi-scale filtration; the only domain where persistence diagrams are native objects.
-- **QEC** — Quantum Error Correction. Finite fields; error thresholds as phase transitions. The richest chain complex instantiation (16+ papers).
+- **QEC** — Quantum Error Correction. Finite fields; error thresholds as phase transitions. Rich chain complex instantiation (12 annotated papers).
 - **Dynamical Systems** — Temporal structure, delay embedding, attractor reconstruction from partial observation. Takens embedding has no QEC analogue.
 - **Neuroscience** — Population-level topology. Both undirected co-firing complexes and directed synaptic complexes — where the chain complex bifurcates.
 - **Information Theory** — The home of joint-vs-marginal excess. PID decomposition, information cohomology, Shannon entropy as 1-cocycle.
@@ -37,13 +37,15 @@ The goal is not synthesis or unification. It is *differentiation* — in the Del
 
 | | Chain Complex | Param. Homology | Matching | Stability | Joint vs Marginal | Null Hypothesis |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| **TDA** | **10+** | **11+** | 7+ | **11+** | 5+ | 4+ |
-| **QEC** | **16+** | 8+ | 8+ | **11+** | 6+ | 9+ |
-| **Dynamics** | **13+** | **16+** | **11+** | **13+** | 6+ | 9+ |
-| **Neuro** | **11+** | **12+** | 8+ | 9+ | **14+** | **12+** |
-| **InfoTheo** | **10+** | **10+** | 5+ | 8+ | **13+** | 9+ |
+| **TDA** | **29** | **29** | **16** | **28** | 7 | **17** |
+| **QEC** | **12** | 8 | 7 | **12** | 2 | 9 |
+| **Dynamics** | **10** | **13** | 1 | **11** | 3 | 7 |
+| **Neuro** | **15** | **19** | 4 | **14** | **10** | **19** |
+| **InfoTheo** | 7 | **16** | 4 | 9 | **12** | **13** |
 
-**Bold** = 10+ papers (deep coverage). All 30 cells ≥ 4. 16 cells ≥ 10.
+**Bold** = 10+ papers (deep coverage). Counts are derived from the 68 per-paper
+annotations in [`papers/annotations/`](papers/annotations/) by `scripts/gen_stats.py`
+(min cell = 1; 18 of 30 cells ≥ 10).
 
 ---
 
@@ -86,7 +88,7 @@ topo-rosetta/
 │   ├── JOINT_VS_MARGINAL.md
 │   └── NULL_HYPOTHESIS.md
 │
-├── papers/                     # Annotated bibliography (219+ papers)
+├── papers/                     # Annotated bibliography (68 full annotations + index stubs)
 │   ├── annotations/            # Full-depth per-paper annotations (primary store)
 │   ├── inbox.md                # Intake ledger: contract + leads + wave index
 │   ├── inbox-archive.md        # Archived earlier waves
