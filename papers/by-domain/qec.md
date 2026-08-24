@@ -135,7 +135,7 @@ arXiv: 2209.13581 | PRX Quantum 4, 040349 (2023)
 
 The paper that asks: can quantum computers speed up TDA? Works directly with the chain complex of the clique complex of a graph G: boundary operators dG_k, combinatorial Laplacian Delta^G_{k-1}, Dirac operator BG = dG + dG^{dagger}. Betti number = dim(ker(Delta)). Quantum algorithm projects onto ker(BG) via Chebyshev polynomial eigenvalue filtering + amplitude estimation. Key finding: super-quadratic quantum speedup requires multiplicative error AND asymptotically growing Betti number. Dequantization via classical random walk on k-simplices shows exponentially large dimension + Betti number are necessary but INSUFFICIENT for super-polynomial advantage. Tens of billions of Toffoli gates sufficient for classically intractable instances.
 **Machines**: chain complex (the computation IS the chain complex), parameterized homology (epsilon-filtration + dimension k), matching (weak — random walk on simplices), stability (robustness of quantum advantage to parameter regime), null hypothesis (dequantization as classical null).
-Full annotation: `inbox.md`.
+Full annotation: `annotations/0711.0468.md`.
 **See also**: `by-structure/boundary_operators.md`, `by-structure/filtrations.md`, `cross_domain_bridges.md`
 
 ### Hastings & Haah (2021) — Dynamically Generated Logical Qubits (Honeycomb/Floquet Code)
@@ -146,7 +146,7 @@ arXiv: 2107.02194
 
 The foundational Floquet code paper. Honeycomb lattice with 2-qubit Pauli checks measured in period-3 rounds. As a subsystem code: ZERO logical qubits. With periodic measurement schedule: TWO logical qubits with distance proportional to system size. The ISG S(r) changes every round; logical operators have period-6 dynamics (electric <-> magnetic exchange). Fault tolerance via MWPM on 2+1D spacetime syndrome lattice (bipartite simple cubic structure). Maps to Kitaev's honeycomb model via Majorana fermions; inner logical operators transport fermions, outer transport bosons (e/m anyons).
 **Machines**: chain complex (honeycomb cellular complex on T^2, stabilizers from cycles), parameterized homology (THE key machine — time parameterizes the code, logical qubits emerge from periodic orbit not any snapshot), stability (error threshold despite time-varying code), null hypothesis (static subsystem code with 0 logical qubits), matching (MWPM on spacetime syndrome lattice).
-Full annotation: `inbox.md`.
+Full annotation: `annotations/0711.0468.md`.
 **See also**: `by-structure/boundary_operators.md`, `by-structure/filtrations.md`
 
 ## Wave 4c (2026-04-06) — Foundational Threshold Theorems
@@ -156,7 +156,7 @@ Full annotation: `inbox.md`.
 arXiv: quant-ph/9906129 (originally STOC 1997, full version 1999)
 THE original threshold theorem (with Knill-Laflamme-Zurek independently). Proves that if error rate eta < eta_c (a constant), arbitrarily long quantum computation can be performed at polylogarithmic overhead. Uses concatenated CSS codes including novel polynomial codes over F_p. Effective error after r levels: (c*eta)^{2^r} — doubly-exponential suppression. General noise model: probabilistic, decoherence, amplitude damping, depolarization, correlations. Threshold ~10^{-6}. No measurements needed.
 **Machines**: chain complex (CSS/polynomial codes), parameterized homology (eta parameterizes family), stability (THE threshold theorem), null hypothesis (uncorrected circuit).
-Full annotation: `papers/inbox.md`.
+Full annotation: `annotations/0711.0468.md`.
 **See also**: `by-structure/phase_transitions.md`
 
 ### Knill, Laflamme, Zurek (1998) — Resilient Quantum Computation
@@ -164,7 +164,7 @@ Full annotation: `papers/inbox.md`.
 arXiv: quant-ph/9702058
 Independent proof of the threshold theorem. Uses 7-qubit Steane code (Hamming-based). Concatenation maps p to cp^2; after h levels: c^{2^h-1} p^{2^h}. Explicit threshold calculation from counting minimal failure sets in recovery network (~190K pairs for operational, ~416K for total). Threshold ~3 x 10^{-6} for stochastic errors. Detailed error model taxonomy: independent stochastic, quasi-independent stochastic/monotone. Complete fault-tolerant procedure set via normalizer group.
 **Machines**: chain complex (Steane code), parameterized homology (p parameterizes family), stability (threshold theorem), null hypothesis (unencoded network).
-Full annotation: `papers/inbox.md`.
+Full annotation: `annotations/0711.0468.md`.
 **See also**: `by-structure/phase_transitions.md`
 
 ### Breuckmann & Eberhardt (2021) — Quantum LDPC Codes
@@ -172,14 +172,14 @@ Full annotation: `papers/inbox.md`.
 arXiv: 2103.06309 | PRX Quantum review
 Comprehensive review placing quantum LDPC codes in their homological context. CSS codes ARE chain complexes (partial^2 = 0). Surveys geometric constructions (hyperbolic manifolds, Gauss-Bonnet-Chern), product constructions (hypergraph, tensor, fiber bundle, lifted, balanced — all chain complex operations with Kunneth formula). Gottesman's constant overhead theorem. Systolic geometry: code distance = systole of underlying manifold. Bridge to quantum gravity (holographic codes). The most cross-disciplinary QEC paper.
 **Machines**: chain complex (PRIMARY — CSS = chain complex), parameterized homology (code families, systole), stability (Gottesman constant overhead, individual thresholds), null hypothesis (surface code as baseline).
-Full annotation: `papers/inbox.md`.
+Full annotation: `annotations/0711.0468.md`.
 **See also**: `by-structure/boundary_operators.md`, `by-structure/phase_transitions.md`
 
 ---
 
 ## Cross-listed from TDA (Wave 7)
 
-- **Hamilton & Leditzky (2023/2024)** — "Probing Multipartite Entanglement Through Persistent Homology." Commun. Math. Phys. 405, article 125. arXiv: 2307.07492. 8 citations. PH applied to multipartite entanglement. Sublevel set filtration by q-deformed total correlation C_q(J) = Σ S_q(v) - S_q(J). Integrated Euler characteristic = n-tangle τ_n at q=2 (resolves Eltschka-Siewert conjecture). Barcodes distinguish SLOCC orbits with identical τ_n (strictly finer). Relative PH gives -I(A:B|R) ≤ 0 by strong subadditivity. Proposes generalization to arbitrary resource theories. Full annotation: `inbox.md` (Wave 7). Machines: joint-vs-marginal, chain complex, parameterized homology, stability, matching, null hypothesis. **See also**: `by-domain/tda.md`, `by-structure/composite_systems.md`.
+- **Hamilton & Leditzky (2023/2024)** — "Probing Multipartite Entanglement Through Persistent Homology." Commun. Math. Phys. 405, article 125. arXiv: 2307.07492. 8 citations. PH applied to multipartite entanglement. Sublevel set filtration by q-deformed total correlation C_q(J) = Σ S_q(v) - S_q(J). Integrated Euler characteristic = n-tangle τ_n at q=2 (resolves Eltschka-Siewert conjecture). Barcodes distinguish SLOCC orbits with identical τ_n (strictly finer). Relative PH gives -I(A:B|R) ≤ 0 by strong subadditivity. Proposes generalization to arbitrary resource theories. Full annotation: `annotations/0711.0468.md` (Wave 7). Machines: joint-vs-marginal, chain complex, parameterized homology, stability, matching, null hypothesis. **See also**: `by-domain/tda.md`, `by-structure/composite_systems.md`.
 
 ---
 
@@ -188,5 +188,5 @@ Full annotation: `papers/inbox.md`.
 ### Trinca, Bollauf & Zamir (2024) — n-Dimensional Toric Codes from Lattice Codes
 arXiv: 2410.20233. Constructs n-dimensional toric codes from lattice codes via chain complex on n-torus T^n. Generalizes Kitaev's 2D toric code to arbitrary dimension. Qubits on k-cells, stabilizers from ∂_k and δ_k. Logical qubits = H_k(T^n, Z/2). Lattice geometry provides code distance bounds via systole. Burst error correction from interleaving structure. Connects algebraic coding theory (lattice codes) with homological QEC.
 **Machines**: chain complex, stability.
-Full annotation: `inbox.md` (Wave 10c).
+Full annotation: `annotations/0711.0468.md` (Wave 10c).
 **See also**: `by-structure/boundary_operators.md`, `by-structure/phase_transitions.md`

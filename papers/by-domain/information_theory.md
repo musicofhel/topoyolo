@@ -1086,7 +1086,7 @@ arXiv: 1703.00810
 **Domain(s)**: Information theory, machine learning
 Origin paper for the "information plane" trajectory analysis of deep learning. Training epoch parameterizes the information plane: each layer's (I(X;T), I(T;Y)) traces a path with two phases — fitting (both increase) then compression (I(X;T) decreases while I(T;Y) stays high). Converged layers lie on the IB bound. Drift-diffusion transition in SGD gradients at ~350 epochs. **Caveat**: Saxe et al. (2018) and Geiger (2021) showed compression may be an artifact of saturating activations + binning-based MI estimation; see ANTISYNONYMS.md.
 **Machines**: parameterized homology (primary), joint-vs-marginal, null hypothesis, stability.
-Full annotation: `inbox.md` (arXiv: 1703.00810).
+Full annotation: `annotations/1703.00810.md` (arXiv: 1703.00810).
 **See also**: `by-structure/filtrations.md`, `by-structure/composite_systems.md`
 
 ### Cross-listed from Dynamical Systems (third pass):
@@ -1113,7 +1113,7 @@ arXiv: 1909.02297
 **Domain(s)**: Neuroscience (consciousness), information theory
 PhiID = Integrated Information Decomposition. Double-redundancy lattice (product of two PID lattices, 16 nodes) with Moebius inversion gives 16 atoms decomposing excess entropy. Six-category taxonomy: storage, copy, transfer, erasure, upward causation, downward causation. Unifies IIT and PID. Shows Phi_WMS, psi, Phi_G, CD each capture different atom subsets (Table I). Corrected Phi_WMS,c avoids negativity by adding back double-redundancy.
 **Machines**: joint-vs-marginal, chain complex, parameterized homology, null hypothesis, stability.
-Full annotation: `inbox.md` (arXiv: 1909.02297).
+Full annotation: `annotations/1703.00810.md` (arXiv: 1909.02297).
 **See also**: `by-structure/composite_systems.md`, `by-domain/neuroscience.md`
 
 ### Barrett (2015) — PID for Gaussian Systems
@@ -1122,7 +1122,7 @@ arXiv: 1411.2832
 **Domain(s)**: Information theory, neuroscience
 First PID for continuous variables. For Gaussian with univariate target: all PIDs satisfying marginal-dependence collapse to MMI (R = min{I(X;Y), I(X;Z)}). Synergy = extra info from weaker source given stronger. Net synergy positive even when sources uncorrelated (log concavity effect). Dynamical MVAR analysis: synergy decreases with lag depth, increases with weaker connection, decreases with source correlation. Proposes synergistic complexity SC as alternative to Phi.
 **Machines**: joint-vs-marginal, parameterized homology, null hypothesis, stability.
-Full annotation: `inbox.md` (arXiv: 1411.2832).
+Full annotation: `annotations/1703.00810.md` (arXiv: 1411.2832).
 **See also**: `by-structure/composite_systems.md`, `by-domain/neuroscience.md`
 
 ---
@@ -1135,7 +1135,7 @@ DOI: 10.1016/j.neuroimage.2013.08.056, NeuroImage 85(2):853-872. 281 citations.
 **Domain(s)**: Neuroscience, information theory
 Phase TE = transfer entropy applied to Morlet-filtered phase time series. Isolates directed oscillatory coupling: how much source phase history improves prediction of target phase updates beyond target's own history. Differential TE quantifies net directionality. Frequency band as discrete parameter yields band-specific directed connectivity graphs. Surrogate-based null hypothesis testing validated (no false positives under noise + mixing). Extends Schreiber (2000) TE to the phase domain.
 **Machines**: joint-vs-marginal, null hypothesis, parameterized homology.
-Full annotation: `inbox.md` (Wave 6).
+Full annotation: `annotations/1703.00810.md` (Wave 6).
 **See also**: `by-structure/composite_systems.md`, `by-structure/phase_transitions.md`, `by-domain/neuroscience.md`
 
 ### Shorten, Spinney, Lizier (2021) — Continuous-Time Transfer Entropy for Spike Trains
@@ -1144,7 +1144,7 @@ DOI: 10.1371/journal.pcbi.1008054, PLOS Computational Biology 17(4):e1008054. 58
 **Domain(s)**: Information theory, neuroscience
 Continuous-time TE formulated via Radon-Nikodym derivatives between path measures. kNN estimator in inter-event-interval space is provably consistent (discrete-time plug-in estimators converge to wrong value for event data). Local permutation surrogates provide correct null for point processes (source-time-shift surrogates demonstrated to fail). Pathwise TE decomposes into jump contributions (at target events) and continuous contributions (between events). Captures fine-and-coarse timescale relationships simultaneously. Validated on stomatogastric ganglion pyloric circuit where previous estimators failed.
 **Machines**: joint-vs-marginal, null hypothesis, parameterized homology.
-Full annotation: `inbox.md` (Wave 6).
+Full annotation: `annotations/1703.00810.md` (Wave 6).
 **See also**: `by-structure/composite_systems.md`, `by-structure/phase_transitions.md`, `by-domain/neuroscience.md`
 
 ---
@@ -1157,7 +1157,7 @@ PLoS Computational Biology, 16(12), e1008289. arXiv: 2004.08220. 143 citations.
 **Domain(s)**: Information theory, neuroscience, dynamical systems (complex systems)
 Inverted joint-vs-marginal: macro feature V has causal power exceeding sum of micro parts. Ψ^(1) = I(V_t; V_{t'}) - Σ_j I(X^j_t; V_{t'}) > 0. Theorem 1: causal emergence iff dynamical synergy Syn^(k) > 0. Decomposition: Syn^(k) = D^(k) (downward causation) + G^(k) (causal decoupling / "statistical ghosts"). Three parameters: order k, time lag, partition choice. Practical sufficiency criteria using only pairwise MI. Applied to Game of Life (Ψ=0.58, particles decoupled from cells), Reynolds flocking (emergence at edge of chaos), macaque ECoG (Ψ=1.275, motor decoding emergent up to ~0.2s). Extends Mediano PhiID; no TDA/QEC awareness.
 **Machines**: joint-vs-marginal (inverted), parameterized homology, null hypothesis, chain complex (inherited from PID/PhiID).
-Full annotation: `inbox.md` (Wave 7).
+Full annotation: `annotations/1703.00810.md` (Wave 7).
 **See also**: `by-structure/composite_systems.md`, `by-domain/neuroscience.md`, `atlas/JOINT_VS_MARGINAL.md`
 
 ### Varley, Mediano, Patania & Bongard (2025) — The Topology of Synergy
@@ -1166,7 +1166,7 @@ PLoS Computational Biology, DOI: 10.1371/journal.pcbi.1013649. arXiv: 2504.10140
 **Domain(s)**: TDA, information theory, neuroscience
 Head-to-head comparison of O-information (TC, DTC, O, S) with H2 persistent homology (Rips/Chebyshev/Ripser) on toy manifolds and fMRI. H2 cavities <-> synergy (O < 0), knots <-> redundancy (O > 0). Normalized O-bar vs avg H2 persistence: rho = -0.55 to -0.65 in fMRI. PCA destroys synergy (rho(O-bar, PC1 variance) = 0.91-0.95) while preserving redundancy. KNN-based O-information estimator with single neighbor search (Eq. 14). Intrinsic vs. contextual higher-order information distinction. Circular-shift null model. EXPLICIT cross-domain bridge: TDA + information theory.
 **Machines**: chain complex, parameterized homology, joint-vs-marginal, null hypothesis, stability.
-Full annotation: `inbox.md` (Wave 7).
+Full annotation: `annotations/1703.00810.md` (Wave 7).
 **See also**: `cross_domain_bridges.md`, `by-domain/tda.md`, `by-domain/neuroscience.md`, `by-structure/composite_systems.md`, `by-structure/filtrations.md`
 
 ---
@@ -1181,7 +1181,7 @@ Combined citations: 3000+.
 Optimal assignment between source and channel/reproduction alphabets. Channel capacity: find P(x) maximizing I(X;Y) = optimal matching of source symbols to channel inputs. Rate-distortion R(D): find test channel P(y|x) minimizing I(X;Y) at distortion ≤ D = minimum-cost soft assignment. Alternating minimization predates EM (1977): fix one marginal, optimize the other. Each step is a matching update. R(D) curve parameterized by distortion D; slope = -s (Lagrange multiplier). Converges to global optimum by convexity.
 **Machines**: matching, parameterized homology, null hypothesis (weak).
 Full annotation: `annotations/blahut-arimoto-1972.md` (slug: blahut-arimoto-1972).
-Full annotation: `inbox.md` (Wave 8).
+Full annotation: `annotations/blahut-arimoto-1972.md` (Wave 8).
 **See also**: `by-structure/optimal_transport.md`, `atlas/MATCHING.md`
 
 ---
@@ -1191,11 +1191,11 @@ Full annotation: `inbox.md` (Wave 8).
 ### Baudot, Tapia, Bennequin & Goaillard (2019) — Topological Information Data Analysis
 arXiv: 1907.04242. k-multivariate MI I_k defined as co-chains on simplicial complex Δ([n]) of random variables. I_2 = coboundary of H (δH = I_2). Negative I_k = synergy (Borromean links). Information landscape tracks I_k across all faces. Shuffling null. Bethe free energy as alternating sum over simplicial faces. Application: unsupervised cell-type classification.
 **Machines**: chain complex, joint-vs-marginal, null hypothesis, parameterized homology, stability.
-Full annotation: `inbox.md` (Wave 10a).
+Full annotation: `annotations/blahut-arimoto-1972.md` (Wave 10a).
 **See also**: `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/composite_systems.md`, `by-structure/phase_transitions.md`, `papers/cross_domain_bridges.md`
 
 ### Panaretos & Zemel (2019) — Statistical Aspects of Wasserstein Distances
 DOI: annurev-statistics-030718-104938. 913 citations. Comprehensive review of Wasserstein distances as statistical tools: convergence rates, CLTs, minimax estimation, goodness-of-fit testing. W_p family parameterized by order p. Bottleneck distance on PDs IS W_∞. Otto calculus gives Riemannian geometry of Wasserstein space.
 **Machines**: matching, stability, parameterized homology.
-Full annotation: `inbox.md` (Wave 10b).
+Full annotation: `annotations/blahut-arimoto-1972.md` (Wave 10b).
 **See also**: `by-structure/optimal_transport.md`

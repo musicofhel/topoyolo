@@ -132,7 +132,7 @@ DOI: 10.1016/0167-2789(92)90102-S | Physica D, 58:77--94
 
 **What is genuinely new**: The method itself -- the first rigorous statistical framework for testing nonlinearity claims in experimental time series. The graded hierarchy of nulls (Algorithm 0 < 1 < 2) has no analogue in other domains. AAFT specifically addresses nonlinear observation functions. Overturned many prior claims of low-dimensional chaos.
 
-Full annotation: `inbox.md` (DOI: 10.1016/0167-2789(92)90102-S).
+Full annotation: `annotations/10.1016-0167-2789(92)90102-S.md` (DOI: 10.1016/0167-2789(92)90102-S).
 
 **See also**: `by-structure/phase_transitions.md`
 
@@ -188,7 +188,7 @@ DOI: 10.1126/science.1227079 | Science 338:496–500
 
 **See also**: `by-structure/composite_systems.md`, `by-structure/phase_transitions.md`
 
-Full annotation: `inbox.md` (DOI: 10.1126/science.1227079)
+Full annotation: `annotations/10.1126-science.1227079.md` (DOI: 10.1126/science.1227079)
 
 ---
 
@@ -340,7 +340,7 @@ Sliding window embedding of time series → Rips complex → PH. SW1PerS score (
 **"Toward an interpretation of dynamic neural activity in terms of chaotic dynamical systems"**
 DOI: 10.1017/S0140525X01000097
 Chaotic itinerancy: trajectory wanders among attractor ruins (destroyed attractors that retain geometric influence). Each quasi-stable epoch has its own local topology; the itinerant trajectory traces a path through topology space parameterized by time. Milnor attractors formalize the intermediate stability status. Fixed-point/limit-cycle as non-itinerant null. Proposed as dynamical mechanism for cognitive flexibility (olfactory perception, episodic memory).
-**Machines**: parameterized homology, stability (anti-stability: attractors destroyed but ruins exploited), null hypothesis, chain complex (weak). Full annotation: `inbox.md`.
+**Machines**: parameterized homology, stability (anti-stability: attractors destroyed but ruins exploited), null hypothesis, chain complex (weak). Full annotation: `annotations/10.1017-S0140525X01000097.md`.
 **See also**: `by-structure/filtrations.md`, `by-structure/phase_transitions.md`, `by-domain/neuroscience.md`.
 
 ---
@@ -421,7 +421,7 @@ Full annotation: `third_pass_neuro_qec.md` (TP-06).
 **Domain(s)**: Dynamical systems (gradient flows, mean-field optimization), TDA/Optimal Transport
 Muon optimizer = gradient flow on Spectral Wasserstein geometry. Family of W_γ distances parameterized by Schatten norm p: trace (p=1) → W2, operator (p=∞) → Muon. Kantorovich static matching equals Benamou-Brenier dynamic formulation for monotone norms. Continuity equation ∂_t ρ + div(ρv) = 0 is the chain complex condition. Metric equivalence with W2. Geodesic convexity. Applied to two-layer MLPs with spherical reduction.
 **Machines**: matching, parameterized homology, stability, chain complex (weak).
-Full annotation: `inbox.md` (Wave 9).
+Full annotation: `annotations/10.1017-S0140525X01000097.md` (Wave 9).
 **See also**: `by-domain/tda.md`, `by-structure/optimal_transport.md`, `atlas/MATCHING.md`, `atlas/STABILITY.md`
 
 ### Wang (2026) — Grokking as Dimensional Phase Transition in Neural Networks
@@ -429,7 +429,7 @@ arXiv: 2604.04655.
 **Domain(s)**: Dynamical systems (self-organized criticality, gradient dynamics)
 Grokking = dimensional phase transition. Effective dimensionality D, from FSS of gradient avalanche dynamics (s_max ~ N^D across 8 model scales, N = 81–2001), crosses from sub-diffusive (D ≈ 0.90) through random-diffusion baseline (D = 1) to super-diffusive (D ≈ 1.20) at generalization. Three non-overlapping bootstrap distributions: D_pre = 0.90 ± 0.02, D_post = 1.20 ± 0.02, D_synth = 0.99 ± 0.01. Topology-invariant (5 architectures, CV < 0.3%) — D reflects gradient field geometry, not network architecture. SOC with Barabási-Albert network and TDU-OFC threshold diffusion. Companion study confirms on Transformer/ModAdd-59.
 **Machines**: stability, null hypothesis, parameterized homology, chain complex (weak).
-Full annotation: `inbox.md` (Wave 9).
+Full annotation: `annotations/10.1017-S0140525X01000097.md` (Wave 9).
 **See also**: `atlas/STABILITY.md`, `atlas/NULL_HYPOTHESIS.md`
 
 ---
@@ -439,23 +439,23 @@ Full annotation: `inbox.md` (Wave 9).
 ### Ghorbanchian, Restrepo, Torres & Bianconi (2020) — Higher-order simplicial synchronization
 Nature Comms Physics, DOI: 10.1038/s42005-021-00605-4. 113 citations. Hodge Laplacian L_k = B_k^T B_k + B_{k+1} B_{k+1}^T governs dynamics of topological signals on k-simplices. Coupling between node and link phases mediated by boundary operator B_1. Explosive (discontinuous) synchronization at critical coupling σ_c. Hysteresis loop width depends on Hodge spectral gap. Tested on connectomes.
 **Machines**: chain complex, parameterized homology, stability.
-Full annotation: `inbox.md` (Wave 10a).
+Full annotation: `annotations/10.1017-S0140525X01000097.md` (Wave 10a).
 **See also**: `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/filtrations.md`, `by-structure/phase_transitions.md`, `papers/cross_domain_bridges.md`
 
 ### Dey, Mrozek & Slechta (2021) — Conley-Morse graph persistence
 arXiv: 2107.02115. Zigzag persistence applied to sequences of Conley-Morse graphs from combinatorial multivector fields. Conley index = relative homology H_k(P,E). Two filtration types: Conley-Morse (index pair) and graph (Morse decomposition topology). Redundancy elimination across subfiltrations. Noise-resilient "thickened" index pairs. Entirely combinatorial framework.
 **Machines**: chain complex, parameterized homology, stability.
-Full annotation: `inbox.md` (Wave 10a).
+Full annotation: `annotations/10.1017-S0140525X01000097.md` (Wave 10a).
 **See also**: `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/filtrations.md`, `by-structure/phase_transitions.md`, `papers/cross_domain_bridges.md`
 
 ### Donato et al. (2016) — Persistent Homology analysis of Phase Transitions
 arXiv: 1601.03641. PH on Rips complex from configuration space samples. Energy density ε parameterizes submanifolds; PH detects topological phase transition in MFXY model (H_1 long tail below ε_c). φ^4 lattice as negative control (no topological signal). Persistence landscapes with 95% confidence bands. Jacobi metric for Rips construction.
 **Machines**: chain complex, parameterized homology, stability, null hypothesis.
-Full annotation: `inbox.md` (Wave 10b).
+Full annotation: `annotations/10.1017-S0140525X01000097.md` (Wave 10b).
 **See also**: `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/filtrations.md`, `by-structure/phase_transitions.md`, `papers/cross_domain_bridges.md`
 
 ### Batko, Mischaikow, Mrozek & Przybylski (2019) — Conley Index Approach to Sampled Dynamics
 arXiv: 1904.03757. Cohomological Conley index from weak index pairs on cubical complexes. Sunflower enclosure constructs multivalued map from time series. Isolating neighborhoods persist under ε-perturbation (Theorem 3.2). Semiconjugacy to symbolic dynamics from sampled data. Proved positive topological entropy from 30K Henon map points.
 **Machines**: chain complex, parameterized homology, stability.
-Full annotation: `inbox.md` (Wave 10b).
+Full annotation: `annotations/10.1017-S0140525X01000097.md` (Wave 10b).
 **See also**: `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/filtrations.md`, `by-structure/phase_transitions.md`

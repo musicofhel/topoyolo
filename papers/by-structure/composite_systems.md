@@ -30,7 +30,7 @@ Pythagorean theorem for KL divergence on posets decomposes interactions by order
 Surveys joint-vs-marginal (MI) estimation across architectures. Distinguishes geometric from information-theoretic compression. Full annotation: `by-domain/information_theory.md`.
 
 ### Shwartz-Ziv & Tishby (2017) — Opening the Black Box of DNNs via Information
-I(X;T) and I(T;Y) per hidden layer T — each is a joint-vs-marginal excess (D_KL of joint vs product of marginals). Each layer is a marginal (compressed) view of the input; the joint network's Markov chain captures dependencies across layers. Also primary instantiation of parameterized homology (training epoch as parameter). Full annotation: `inbox.md` (arXiv: 1703.00810).
+I(X;T) and I(T;Y) per hidden layer T — each is a joint-vs-marginal excess (D_KL of joint vs product of marginals). Each layer is a marginal (compressed) view of the input; the joint network's Markov chain captures dependencies across layers. Also primary instantiation of parameterized homology (training epoch as parameter). Full annotation: `annotations/1703.00810.md` (arXiv: 1703.00810).
 
 ## TDA
 
@@ -38,7 +38,7 @@ I(X;T) and I(T;Y) per hidden layer T — each is a joint-vs-marginal excess (D_K
 Multiparameter PH studies topological invariants as MULTIPLE parameters vary simultaneously. The joint bifiltration captures structure invisible to either single-parameter filtration alone — this IS joint-vs-marginal: joint persistent homology contains information absent from marginal (single-parameter) persistence diagrams. Three invariants from commutative algebra: multigraded associated primes, Hilbert series, local cohomology. Full annotation: `annotations/1708.07390.md` (arXiv: 1708.07390).
 
 ### Barannikov, Trofimov, Sotnikov et al. (2021) — Cross-Barcode / Manifold Topology Divergence
-Cross-Barcode(P,Q) = pairwise topological comparison of two manifold-supported distributions. MTop-Divergence = 0 iff topologically equivalent. Detects mode-dropping, mode-collapse, mode-invention. Builds a SINGLE barcode from the pair — conceptually distinct from comparing two PDs via Wasserstein (which is Matching). Scales linearly with dimension. Full annotation: `inbox.md` (arXiv: 2106.04024).
+Cross-Barcode(P,Q) = pairwise topological comparison of two manifold-supported distributions. MTop-Divergence = 0 iff topologically equivalent. Detects mode-dropping, mode-collapse, mode-invention. Builds a SINGLE barcode from the pair — conceptually distinct from comparing two PDs via Wasserstein (which is Matching). Scales linearly with dimension. Full annotation: `annotations/2106.04024.md` (arXiv: 2106.04024).
 
 ## Information Theory — Causal Inference & PID
 
@@ -140,7 +140,7 @@ GW distance captures relational structure invariant to ambient dimension/rotatio
 Phase-amplitude coupling: Modulation Index = D_KL(observed PAC distribution || uniform). Gamma amplitude modulated by theta phase = joint-vs-marginal excess. Time-shifted surrogates as null. Full annotation: `annotations/tort-2010.md`.
 
 ### Oizumi, Albantakis, Tononi (2014) — Integrated Information Theory 3.0
-Φ = D(p(X^t|X^{t-1}) || Π_i p(X_i^t|X_i^{t-1})). THE foundational formalization of joint-vs-marginal excess for consciousness. Partitioned system as null. MICS = maximally irreducible conceptual structure. Exclusion postulate selects spatiotemporal grain maximizing Φ. Predicts simple systems can be conscious, complex feed-forward ones cannot. Full annotation: `inbox.md` (DOI: 10.1371/journal.pcbi.1003588).
+Φ = D(p(X^t|X^{t-1}) || Π_i p(X_i^t|X_i^{t-1})). THE foundational formalization of joint-vs-marginal excess for consciousness. Partitioned system as null. MICS = maximally irreducible conceptual structure. Exclusion postulate selects spatiotemporal grain maximizing Φ. Predicts simple systems can be conscious, complex feed-forward ones cannot. Full annotation: `annotations/10.1371-journal.pcbi.1003588.md` (DOI: 10.1371/journal.pcbi.1003588).
 
 ## Information Theory / Dynamical Systems
 
@@ -150,7 +150,7 @@ T_{Y→X} = H(X_{t+1}|X_t^(k)) - H(X_{t+1}|X_t^(k),Y_t^(l)). Directed joint-vs-m
 ## Dynamical Systems
 
 ### Sugihara, May, Ye, Hsieh, Deyle, Fogarty, Munch (2012) — Convergent Cross-Mapping
-Cross-prediction from Y's shadow manifold to X tests whether the joint (coupled) attractor contains more information than the marginal (single-variable) reconstruction. Convergence of cross-prediction skill with library size L = the excess is real and recoverable. Directional asymmetry (rho_{Y->X} != rho_{X->Y}) identifies causal direction. Surrogates as null. Full annotation: `inbox.md` (DOI: 10.1126/science.1227079). Machines: joint-vs-marginal, stability, null hypothesis, parameterized homology (weak).
+Cross-prediction from Y's shadow manifold to X tests whether the joint (coupled) attractor contains more information than the marginal (single-variable) reconstruction. Convergence of cross-prediction skill with library size L = the excess is real and recoverable. Directional asymmetry (rho_{Y->X} != rho_{X->Y}) identifies causal direction. Surrogates as null. Full annotation: `annotations/10.1126-science.1227079.md` (DOI: 10.1126/science.1227079). Machines: joint-vs-marginal, stability, null hypothesis, parameterized homology (weak).
 
 ---
 
@@ -248,11 +248,11 @@ Cross-prediction from Y's shadow manifold to X tests whether the joint (coupled)
 
 ### Mediano, Rosas, Carhart-Harris, Seth, Barrett (2019) — PhiID
 arXiv: 1909.02297
-PhiID decomposes the total joint-vs-marginal excess (excess entropy E) into 16 atoms on a product lattice, distinguishing SIX modes of how joint information exceeds marginal: storage, copy, transfer, erasure, upward causation, downward causation. Synergistic atoms (source or target = {12}) are the pure joint-vs-marginal excess; redundant atoms are the "shared floor." The corrected Phi_WMS,c removes the confound of double-redundancy causing negative integration scores. Key contribution to the composite_systems programme: "integration" is not one thing --- it is a heterogeneous aggregate of qualitatively distinct excess types. Full annotation: `inbox.md`.
+PhiID decomposes the total joint-vs-marginal excess (excess entropy E) into 16 atoms on a product lattice, distinguishing SIX modes of how joint information exceeds marginal: storage, copy, transfer, erasure, upward causation, downward causation. Synergistic atoms (source or target = {12}) are the pure joint-vs-marginal excess; redundant atoms are the "shared floor." The corrected Phi_WMS,c removes the confound of double-redundancy causing negative integration scores. Key contribution to the composite_systems programme: "integration" is not one thing --- it is a heterogeneous aggregate of qualitatively distinct excess types. Full annotation: `annotations/1703.00810.md`.
 
 ### Barrett (2015) — PID for Gaussian Systems
 arXiv: 1411.2832
-WMS = I(X;Y,Z) - I(X;Y) - I(X;Z) = S - R is the net joint-vs-marginal excess. For Gaussians with univariate target, all PIDs collapse to MMI: R = min{I(X;Y), I(X;Z)}, S = I(X;Z|Y) when I(X;Y) >= I(X;Z). Net synergy positive even when sources uncorrelated (b=0) because log concavity creates excess absent from the linear variance measure. In dynamical (MVAR) systems, synergy decreases as more history is observed (infinite-lag vs 1-lag). Proposes synergistic complexity SC = average synergy per triplet as complexity measure. Full annotation: `inbox.md`.
+WMS = I(X;Y,Z) - I(X;Y) - I(X;Z) = S - R is the net joint-vs-marginal excess. For Gaussians with univariate target, all PIDs collapse to MMI: R = min{I(X;Y), I(X;Z)}, S = I(X;Z|Y) when I(X;Y) >= I(X;Z). Net synergy positive even when sources uncorrelated (b=0) because log concavity creates excess absent from the linear variance measure. In dynamical (MVAR) systems, synergy decreases as more history is observed (infinite-lag vs 1-lag). Proposes synergistic complexity SC = average synergy per triplet as complexity measure. Full annotation: `annotations/1703.00810.md`.
 
 ### Connection to existing PID cluster
 Both papers extend the PID programme (8 core PID papers already in composite_systems) into the **dynamical** regime. Mediano's PhiID is the temporal extension of PID to multivariate time series (source = past, target = future), while Barrett provides the first continuous-variable (Gaussian) instantiation. Together with IIT 3.0 (Oizumi et al. 2014, already indexed), they form a trio:
@@ -273,19 +273,19 @@ Both papers extend the PID programme (8 core PID papers already in composite_sys
 DOI: 10.1016/j.neuroimage.2013.08.056
 Phase TE is joint-vs-marginal at two levels: (1) directed TE measures how joint (source + target) phase history exceeds marginal (target-only) for prediction, and (2) phase extraction itself projects the full amplitude-phase signal to its phase marginal. Differential TE (dTE = TE(1->2) - TE(2->1)) isolates the asymmetric directional excess. Frequency-band-specific: directed coupling graphs differ across oscillatory bands, yielding a parameterized family of joint-vs-marginal measures. Surrogate nulls validated.
 **Machines**: joint-vs-marginal, null hypothesis, parameterized homology.
-Full annotation: `inbox.md` (Wave 6).
+Full annotation: `annotations/1703.00810.md` (Wave 6).
 
 ### Shorten, Spinney, Lizier (2021) — Continuous-Time TE for Spike Trains
 DOI: 10.1371/journal.pcbi.1008054
 Continuous-time TE = KL divergence between true conditional measure (given full source + target history) and reduced conditional (target history only) on path space. The purest Radon-Nikodym formulation of directed joint-vs-marginal excess for event data. Local permutation surrogates generate correct null for conditional independence testing on point processes (source-time-shift surrogates fail). Pathwise TE decomposes into jump (at events) and continuous (between events) components.
 **Machines**: joint-vs-marginal, null hypothesis, parameterized homology.
-Full annotation: `inbox.md` (Wave 6).
+Full annotation: `annotations/1703.00810.md` (Wave 6).
 
 ### Rosas, Mediano et al. (2020) — Causal Emergence
 PLoS Computational Biology, 16(12), e1008289. arXiv: 2004.08220. 143 citations.
 Inverted joint-vs-marginal: macro Ψ = I(V_t; V_{t'}) - Σ_j I(X^j_t; V_{t'}) > 0 means coarse-grained macro has causal power exceeding sum of micro parts. Ψ iff dynamical synergy Syn^(k) > 0 (Theorem 1). Decomposition: downward causation D^(k) + causal decoupling G^(k) = "statistical ghosts" (emergent features with no micro-level causal trace). Three parameters: order k, time lag, partition. Game of Life particles decoupled from cells, flocking emergence at critical regime, macaque ECoG motor decoding emergent.
 **Machines**: joint-vs-marginal (inverted), parameterized homology, null hypothesis, chain complex (inherited).
-Full annotation: `inbox.md` (Wave 7).
+Full annotation: `annotations/1703.00810.md` (Wave 7).
 
 ### Connection to existing TE cluster
 Together with Schreiber (2000, already indexed), Lobier (2014), and Peek et al. (2025, already indexed), these papers form a progression of the joint-vs-marginal machine in directed information flow:
@@ -301,26 +301,26 @@ Together with Schreiber (2000, already indexed), Lobier (2014), and Peek et al. 
 PLoS Comput. Biol., DOI: 10.1371/journal.pcbi.1013649. arXiv: 2504.10140. 4 citations.
 O-information (TC - DTC) as signed joint-vs-marginal excess: synergy = information in joint absent from all proper subsets. H2 cavities in Rips filtration correlate with synergy dominance. Normalized O-bar vs avg H2 persistence: rho = -0.55 to -0.65 in fMRI. PCA preferentially preserves redundancy (marginal-preserving) and destroys synergy (joint-only). Connects to Rosas (2020): O-information is the O(X) = TC - DTC family that Rosas used to define causal emergence; this paper gives it a topological interpretation.
 **Machines**: joint-vs-marginal, parameterized homology, chain complex, null hypothesis, stability.
-Full annotation: `inbox.md` (Wave 7).
+Full annotation: `annotations/1703.00810.md` (Wave 7).
 
 ### Hamilton & Leditzky (2023/2024) — PH of Multipartite Entanglement
 Commun. Math. Phys. 405, art. 125. arXiv: 2307.07492. 8 citations.
 PH with multipartite filtration: q-deformed total correlation C_q(J) as sublevel set functional on the simplex of n parties. Integrated Euler characteristic = n-tangle (entanglement monotone) at q=2. Barcodes strictly finer than n-tangle — distinguish SLOCC orbits. Relative PH gives -I(A:B|R) ≤ 0 by strong subadditivity. Entanglement IS joint-vs-marginal excess; PH captures its multiscale structure.
 **Machines**: joint-vs-marginal, chain complex, parameterized homology, stability, matching, null hypothesis.
-Full annotation: `inbox.md` (Wave 7).
+Full annotation: `annotations/1703.00810.md` (Wave 7).
 
 ### Natarajan, Chaplin, Bull et al. (2026) — Multi-species Topology
 arXiv: 2603.03237.
 Kernel/image/cokernel persistence of k-chromatic gluing map yields four categories: (i) common features, (ii) features destroyed by composition (kernel), (iii) features ONLY in the joint (cokernel = pure joint-vs-marginal excess), (iv) features formed by some, persisting with others (image). Cokernel captures topological structure invisible in all k-species marginals. Applied to tumor microenvironment: recovers immunoediting regimes, detects trichromatic spatial interactions.
 **Machines**: joint-vs-marginal, chain complex, parameterized homology, null hypothesis, stability.
-Full annotation: `inbox.md` (Wave 7).
+Full annotation: `annotations/1703.00810.md` (Wave 7).
 
 ---
 
 ## Wave 10 — link-forge update (2026-04-17)
 
 ### Baudot, Tapia, Bennequin & Goaillard (2019) — Topological Information Data Analysis
-arXiv: 1907.04242. I_k measures k-th-order excess structure in joint absent from lower-order marginals. I_k = 0 for all k ≥ 2 iff independence (necessary and sufficient). Negative I_k = synergy = Borromean-link structure (pairwise independent, collectively dependent). Total correlation G_k is weaker — fails to discriminate subtypes. Full annotation: `inbox.md` (Wave 10a).
+arXiv: 1907.04242. I_k measures k-th-order excess structure in joint absent from lower-order marginals. I_k = 0 for all k ≥ 2 iff independence (necessary and sufficient). Negative I_k = synergy = Borromean-link structure (pairwise independent, collectively dependent). Total correlation G_k is weaker — fails to discriminate subtypes. Full annotation: `annotations/1703.00810.md` (Wave 10a).
 
 ### Chaudhuri et al. (2019) — Head direction ring attractor
-DOI: 10.1038/s41593-019-0460-x. Ring (S^1) manifold is a population-level phenomenon — individual neurons show noisy tuning curves. The topology emerges only from joint activity, not from any single neuron. Pure joint-vs-marginal excess. Full annotation: `inbox.md` (Wave 10a).
+DOI: 10.1038/s41593-019-0460-x. Ring (S^1) manifold is a population-level phenomenon — individual neurons show noisy tuning curves. The topology emerges only from joint activity, not from any single neuron. Pure joint-vs-marginal excess. Full annotation: `annotations/1703.00810.md` (Wave 10a).
