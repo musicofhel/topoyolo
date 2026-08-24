@@ -60,7 +60,21 @@ class H(http.server.BaseHTTPRequestHandler):
             with open(REQDIR + "/" + fn, "wb") as bf:
                 bf.write(body)
         for attempt in range(1, attempts + 1):
-            ok, meta = self.forward(body, deliver=(attempt == attempts) or None)
+            # Stealth/ox-alpha (observed 2026-08-24) buckets requests by a hash
+            # of the tools block; ~half the buckets deterministically return
+            # EMPTY, so identical retries are wasted. Appending whitespace to a
+            # tool description reflips the upstream tool-hash bucket per
+            # attempt without changing semantics.
+            send_body = body
+            if is_messages and attempt > 1:
+                try:
+                    bd = json.loads(body)
+                    if bd.get("tools"):
+                        bd["tools"][0]["description"] = bd["tools"][0].get("description", "") + " " * (attempt - 1)
+                        send_body = json.dumps(bd).encode()
+                except Exception as e:
+                    logj({"perturb_err": repr(e)})
+            ok, meta = self.forward(send_body, deliver=(attempt == attempts) or None)
             meta.update({"path": self.path, "attempt": attempt, "req_bytes": length})
             logj(meta)
             if ok or not is_messages:
