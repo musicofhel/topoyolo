@@ -63,21 +63,8 @@ the pass report as pre-existing baseline debt.
   links, orphan annotations (in inbox but missing from one side of the dual
   index), stale counts. Mechanical fixes only — no annotation content changes.
   Done = `check_structure.py` exits 0.
-- **A3 [in_progress: slices 1-3 done 2026-08-24 (1c96d87, 5771173, 4b6db24) — entire inbox-archive.md now pointer-lists only (31 papers in papers/annotations/, incl. all Phase 2 + Core ATT full annotations); lint green; remaining: inbox.md Waves 4+] Per-paper annotation files.** The monolithic inbox does not
-  scale for ingestion. Migrate: one file per paper at
-  `papers/annotations/<slug>.md` (slug = arXiv id with `/`→`-`, else
-  first-author-year), each holding the full annotation verbatim (content
-  unchanged — this is a MOVE, not a rewrite). `papers/inbox.md` shrinks to:
-  the ingestion queue contract + "Still to find" leads + an index of
-  annotation files by wave. Update every by-domain/by-structure/atlas
-  cross-ref to point at the per-paper file. Extend `check_structure.py` to
-  enforce the new layout. This is the largest A task — split across passes
-  freely (e.g. one wave per pass), committing incrementally; the lint must be
-  green at every commit. Done = zero full annotations left in
-  inbox.md/inbox-archive.md, lint green.
-  - queued (orchestrator, later A-task): split Blahut+Arimoto's shared
-    annotation block into two per-paper files; tighten the lint's
-    author-year fallback (Wang/Tran spurious-match classes found in A2).
+- **A3 [done 2026-08-24: slices 1-4 (1c96d87, 5771173, 4b6db24, aa06188+9d5be1d+dec8b5f)] Per-paper annotation files.** All full annotations now live one-per-file in `papers/annotations/` (68 files verbatim-migrated from inbox.md + inbox-archive.md; content conservation proven per slice). `papers/inbox.md` reshaped to contract + leads + wave index; inbox-archive.md pointer-lists only; ~170 crossrefs in by-domain/by-structure/atlas/glossary repointed to per-paper files; METHODOLOGY/SKILL/README canonical refs updated; check_structure.py extended to fail if any full annotation remains in an inbox file. Lint: 0 errors, 1 warning (claimed 219 vs 68 parsed — count-source drift, resolves at A4).
+  - carried to later A-tasks (orchestrator): Blahut+Arimoto kept as ONE shared file blahut-arimoto-1972.md (splitting would require rewriting shared prose — deferred); tighten lint author-year fallback (Wang/Tran spurious-match classes from A2).
 - **A4 [open] Stats from data, not by hand.** `scripts/gen_stats.py`: derive
   paper count, per-cell coverage counts, and the domain×machine matrix from
   the annotation files; emit `diagrams/coverage-matrix.md` and print the
