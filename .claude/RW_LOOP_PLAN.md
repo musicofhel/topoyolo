@@ -23,7 +23,7 @@ Two processes, strict separation:
 
 ## Files
 
-- `.claude/LOOP_MISSION.md` — mission + task ledger (pass owns status lines)
+- `LOOP_MISSION.md` — mission + task ledger (pass owns status lines)
 - `.claude/commands/topoyolo-pass.md` — the pass prompt
 - `.claude/hooks/rw-loop-guard.sh` + `.claude/rw-loop-settings.json` — guard
 - `.claude/run-topoyolo-pass.sh` — launcher (branch check, proxy env, model)

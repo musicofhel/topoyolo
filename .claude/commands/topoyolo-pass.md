@@ -52,7 +52,7 @@ deaths cluster past ~120k accumulated context. Protect the pass:
 
 ## Step 1 — orient (cheap)
 
-1. Read `.claude/LOOP_MISSION.md` — the mission, ground truth, and task ledger.
+1. Read `LOOP_MISSION.md` — the mission, ground truth, and task ledger.
 2. `git log --oneline -8` and `git status` — what prior passes landed; confirm
    you are on `loop/atlas-structure-v1`.
 3. Read `research/INDEX.md` if it exists (INDEX only — open a prior pass
@@ -104,7 +104,7 @@ One report per pass: `research/YYYY-MM-DD-HHMM.md` (stamp from `date
 <the single next step, concrete enough for a fresh session>
 ```
 
-Then: update the task's status line in `.claude/LOOP_MISSION.md`, and rewrite
+Then: update the task's status line in `LOOP_MISSION.md`, and rewrite
 `research/INDEX.md` (full overwrite): per-task one-line status + latest lint
 state + a `Reports:` list (newest first). INDEX is what Aaron and the
 orchestrator read; keep it under ~40 lines.
