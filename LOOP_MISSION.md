@@ -63,7 +63,7 @@ the pass report as pre-existing baseline debt.
   links, orphan annotations (in inbox but missing from one side of the dual
   index), stale counts. Mechanical fixes only — no annotation content changes.
   Done = `check_structure.py` exits 0.
-- **A3 [in_progress: slice 1 done 2026-08-24 1c96d87 — inbox-archive Waves 1-2 (15 papers) migrated to papers/annotations/, lint extended + green; remaining: Wave 4b, Wave 3, Phase 2 sections of archive, then inbox.md Waves 4+] Per-paper annotation files.** The monolithic inbox does not
+- **A3 [in_progress: slices 1-2 done 2026-08-24 (1c96d87, 5771173) — inbox-archive Waves 1-2 + Wave 4b + Wave 3 triage (22 papers total) migrated to papers/annotations/, lint green; remaining: Phase 2 section of archive (12 papers), then inbox.md Waves 4+] Per-paper annotation files.** The monolithic inbox does not
   scale for ingestion. Migrate: one file per paper at
   `papers/annotations/<slug>.md` (slug = arXiv id with `/`→`-`, else
   first-author-year), each holding the full annotation verbatim (content
