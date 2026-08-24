@@ -560,7 +560,7 @@ Papers filling the weakest cell in the 6x5 coverage matrix: Matching machine ins
 
 ---
 
-## Rosas, Mediano, Jensen, Seth, Barrett, Carhart-Harris, Bor (2020)
+## 2004.08220 --- Rosas, Mediano, Jensen, Seth, Barrett, Carhart-Harris, Bor (2020)
 **"Reconciling emergences: An information-theoretic approach to identify causal emergence in multivariate data"**
 PLoS Computational Biology, 16(12), e1008289.
 arXiv: 2004.08220 (q-bio.NC, nlin.AO)

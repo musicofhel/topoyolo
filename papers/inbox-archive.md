@@ -470,7 +470,7 @@ arXiv: 2508.19048
 
 ## Found and annotated (Wave 4b)
 
-### quant-ph/9707021 — Kitaev (1997)
+## quant-ph/9707021 — Kitaev (1997)
 **"Fault-tolerant quantum computation by anyons"**
 
 **Domain(s)**: QEC
@@ -494,7 +494,7 @@ arXiv: 2508.19048
 
 ---
 
-### quant-ph/0110143 — Dennis, Kitaev, Landahl, Preskill (2002)
+## quant-ph/0110143 — Dennis, Kitaev, Landahl, Preskill (2002)
 **"Topological quantum memory"**
 
 **Domain(s)**: QEC, statistical physics
@@ -522,7 +522,7 @@ arXiv: 2508.19048
 
 ---
 
-### 1307.6188 — Perea, Harer (2013)
+## 1307.6188 — Perea, Harer (2013)
 **"Sliding Windows and Persistence: An Application of Topological Methods to Signal Analysis" (SW1PerS)**
 
 **Domain(s)**: TDA, dynamical systems
@@ -547,7 +547,7 @@ arXiv: 2508.19048
 
 ---
 
-### math/0604068 — Cohen-Steiner, Edelsbrunner, Harer (2007)
+## math/0604068 — Cohen-Steiner, Edelsbrunner, Harer (2007)
 **"Stability of Persistence Diagrams"**
 
 **Domain(s)**: TDA
@@ -598,7 +598,7 @@ arXiv: 2508.19048
 
 ---
 
-### 2107.09581 — Bradley (2021)
+## 2107.09581 — Bradley (2021)
 **"Entropy as a Topological Operad Derivation"**
 
 **Domain(s)**: Information theory, TDA (category theory)
@@ -621,7 +621,7 @@ arXiv: 2508.19048
 
 ---
 
-### 2405.07665 — Kolchinsky (2024)
+## 2405.07665 — Kolchinsky (2024)
 **"Partial information decomposition: redundancy as information bottleneck"**
 
 **Domain(s)**: Information theory
