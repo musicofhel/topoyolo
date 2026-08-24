@@ -263,7 +263,7 @@ Cross-Barcode(P,Q) tracks multiscale topological discrepancies between two manif
 
 ## Cross-listed from Neuroscience + Information Theory
 
-- **Peek, Pritam, Skerritt, Chalup (2025)** — "Time Series Analysis of Spiking Neural Systems via Transfer Entropy and Directed Persistent Homology." Directed flag complexes from TE-derived weighted directed graphs, analyzed via Flagser. Inverted TE filtration. Applied to synthetic SNNs and mouse cortical recordings. Triple-domain bridge. Full annotation: `inbox.md` (arXiv: 2508.19048). Machines: chain complex, parameterized homology, null hypothesis.
+- **Peek, Pritam, Skerritt, Chalup (2025)** — "Time Series Analysis of Spiking Neural Systems via Transfer Entropy and Directed Persistent Homology." Directed flag complexes from TE-derived weighted directed graphs, analyzed via Flagser. Inverted TE filtration. Applied to synthetic SNNs and mouse cortical recordings. Triple-domain bridge. Full annotation: `annotations/2508.19048.md` (arXiv: 2508.19048). Machines: chain complex, parameterized homology, null hypothesis.
 
 ---
 

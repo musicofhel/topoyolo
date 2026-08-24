@@ -142,7 +142,7 @@ Full annotation: `inbox.md` (DOI: 10.1016/0167-2789(92)90102-S).
 **"Detecting strange attractors in turbulence"**
 Lecture Notes in Mathematics, vol. 898, Springer
 
-THE foundational delay embedding theorem. For generic (C^2-residual) pairs (diffeomorphism phi, observation function y) on a compact manifold M, the delay map F(x) = (y(x), y(phi(x)), ..., y(phi^{2d}(x))) is an embedding if d > dim(M). Reconstructed manifold has identical homology to original. Single scalar observable suffices to recover attractor topology. Full annotation: `inbox.md`.
+THE foundational delay embedding theorem. For generic (C^2-residual) pairs (diffeomorphism phi, observation function y) on a compact manifold M, the delay map F(x) = (y(x), y(phi(x)), ..., y(phi^{2d}(x))) is an embedding if d > dim(M). Reconstructed manifold has identical homology to original. Single scalar observable suffices to recover attractor topology. Full annotation: `annotations/takens-1981.md`.
 **Machines**: chain complex (implicit), stability (topological genericity), parameterized homology (weak -- embedding dimension as parameter).
 **See also**: `by-structure/filtrations.md`, `by-structure/phase_transitions.md`
 
@@ -152,7 +152,7 @@ THE foundational delay embedding theorem. For generic (C^2-residual) pairs (diff
 **"Embedology"**
 Journal of Statistical Physics 65(3-4):579-616
 
-Extends Takens to PREVALENCE (measure-theoretic genericity). Works for fractal attractors with non-integer box-counting dimension d_B(A). Minimal embedding dimension 2*d_B(A)+1. Prevalence is strictly stronger than topological genericity. Full annotation: `inbox.md`.
+Extends Takens to PREVALENCE (measure-theoretic genericity). Works for fractal attractors with non-integer box-counting dimension d_B(A). Minimal embedding dimension 2*d_B(A)+1. Prevalence is strictly stronger than topological genericity. Full annotation: `annotations/sauer-1991.md`.
 **Machines**: stability (prevalence = measure-theoretic robustness), parameterized homology (weak -- embedding dimension, now fractal-valued).
 **See also**: `by-structure/phase_transitions.md`
 

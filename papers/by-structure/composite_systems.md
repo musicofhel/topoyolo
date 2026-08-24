@@ -35,7 +35,7 @@ I(X;T) and I(T;Y) per hidden layer T — each is a joint-vs-marginal excess (D_K
 ## TDA
 
 ### Harrington, Otter, Schenck, Tillmann (2017) — Stratifying multiparameter persistent homology
-Multiparameter PH studies topological invariants as MULTIPLE parameters vary simultaneously. The joint bifiltration captures structure invisible to either single-parameter filtration alone — this IS joint-vs-marginal: joint persistent homology contains information absent from marginal (single-parameter) persistence diagrams. Three invariants from commutative algebra: multigraded associated primes, Hilbert series, local cohomology. Full annotation: `inbox.md` (arXiv: 1708.07390).
+Multiparameter PH studies topological invariants as MULTIPLE parameters vary simultaneously. The joint bifiltration captures structure invisible to either single-parameter filtration alone — this IS joint-vs-marginal: joint persistent homology contains information absent from marginal (single-parameter) persistence diagrams. Three invariants from commutative algebra: multigraded associated primes, Hilbert series, local cohomology. Full annotation: `annotations/1708.07390.md` (arXiv: 1708.07390).
 
 ### Barannikov, Trofimov, Sotnikov et al. (2021) — Cross-Barcode / Manifold Topology Divergence
 Cross-Barcode(P,Q) = pairwise topological comparison of two manifold-supported distributions. MTop-Divergence = 0 iff topologically equivalent. Detects mode-dropping, mode-collapse, mode-invention. Builds a SINGLE barcode from the pair — conceptually distinct from comparing two PDs via Wasserstein (which is Matching). Scales linearly with dimension. Full annotation: `inbox.md` (arXiv: 2106.04024).
@@ -137,7 +137,7 @@ GW distance captures relational structure invariant to ambient dimension/rotatio
 ## Neuroscience
 
 ### Tort, Komorowski, Eichenbaum, Kopell (2010) — PAC Modulation Index
-Phase-amplitude coupling: Modulation Index = D_KL(observed PAC distribution || uniform). Gamma amplitude modulated by theta phase = joint-vs-marginal excess. Time-shifted surrogates as null. Full annotation: `inbox.md`.
+Phase-amplitude coupling: Modulation Index = D_KL(observed PAC distribution || uniform). Gamma amplitude modulated by theta phase = joint-vs-marginal excess. Time-shifted surrogates as null. Full annotation: `annotations/tort-2010.md`.
 
 ### Oizumi, Albantakis, Tononi (2014) — Integrated Information Theory 3.0
 Φ = D(p(X^t|X^{t-1}) || Π_i p(X_i^t|X_i^{t-1})). THE foundational formalization of joint-vs-marginal excess for consciousness. Partitioned system as null. MICS = maximally irreducible conceptual structure. Exclusion postulate selects spatiotemporal grain maximizing Φ. Predicts simple systems can be conscious, complex feed-forward ones cannot. Full annotation: `inbox.md` (DOI: 10.1371/journal.pcbi.1003588).
@@ -145,7 +145,7 @@ Phase-amplitude coupling: Modulation Index = D_KL(observed PAC distribution || u
 ## Information Theory / Dynamical Systems
 
 ### Schreiber (2000) — Transfer Entropy
-T_{Y→X} = H(X_{t+1}|X_t^(k)) - H(X_{t+1}|X_t^(k),Y_t^(l)). Directed joint-vs-marginal: how much does joint (X,Y) history improve prediction beyond marginal X history? Asymmetric (unlike MI). Shuffled surrogates as null. Full annotation: `inbox.md`.
+T_{Y→X} = H(X_{t+1}|X_t^(k)) - H(X_{t+1}|X_t^(k),Y_t^(l)). Directed joint-vs-marginal: how much does joint (X,Y) history improve prediction beyond marginal X history? Asymmetric (unlike MI). Shuffled surrogates as null. Full annotation: `annotations/schreiber-2000.md`.
 
 ## Dynamical Systems
 

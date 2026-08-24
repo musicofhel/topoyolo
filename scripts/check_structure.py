@@ -2,13 +2,16 @@
 """Structure lint for topo-rosetta (stdlib only).
 
 Checks:
-  1. every full annotation in papers/inbox.md / inbox-archive.md is
-     referenced in >=1 papers/by-domain/ file AND >=1 papers/by-structure/ file
+  1. every full annotation in papers/annotations/*.md, papers/inbox.md and
+     papers/inbox-archive.md is referenced in >=1 papers/by-domain/ file AND
+     >=1 papers/by-structure/ file
   2. every relative markdown link in the repo resolves to an existing file
   3. claimed counts (papers / cells) agree across README.md, docs/index.html,
      diagrams/coverage-matrix.md (exact agreement with the real corpus count
      is a warning, not an error)
   4. no annotation header appears twice
+  5. per-paper layout (A3): each file in papers/annotations/ holds exactly one
+     "<id> --- <authors>" annotation header at the top of its body
 
 Errors -> exit 1. Warnings are printed but do not fail the run.
 Run from anywhere: paths are resolved relative to the repo root.
@@ -21,6 +24,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 
 INBOX_FILES = [ROOT / "papers/inbox.md", ROOT / "papers/inbox-archive.md"]
+ANNOTATION_DIR = ROOT / "papers/annotations"
 DOMAIN_DIR = ROOT / "papers/by-domain"
 STRUCTURE_DIR = ROOT / "papers/by-structure"
 COUNT_FILES = [
@@ -81,13 +85,15 @@ def paper_key(header_text):
 
 
 def collect_annotations(v):
-    """Parse annotation headers out of the two inbox files."""
+    """Parse annotation headers out of the per-paper files + the two inboxes."""
     annotations = []          # (loc, body, hard_key, soft_key)
     seen_headers = {}         # normalized header -> first location
-    for path in INBOX_FILES:
+    per_paper = sorted(ANNOTATION_DIR.glob("*.md")) if ANNOTATION_DIR.exists() else []
+    for path in per_paper + INBOX_FILES:
         if not path.exists():
             v.warn(f"inbox file missing: {path.relative_to(ROOT)}")
             continue
+        n_here = 0
         for i, line in enumerate(path.read_text().splitlines(), 1):
             s = line.rstrip()
             if not s.startswith("##"):
@@ -118,6 +124,13 @@ def collect_annotations(v):
                 seen_headers[norm] = loc
             hard = paper_key(m.group(1))
             annotations.append((loc, body, hard or ("none", ""), soft_key(m.group(2) or "")))
+            n_here += 1
+        if path in per_paper:
+            rel = path.relative_to(ROOT)
+            if n_here == 0:
+                v.err(f"{rel}: per-paper annotation file has no '<id> --- <authors>' header")
+            elif n_here > 1:
+                v.err(f"{rel}: per-paper annotation file holds {n_here} annotations (expected 1)")
     return annotations
 
 

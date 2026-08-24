@@ -971,7 +971,7 @@ arXiv: 2111.05299
 
 ## Cross-listed from Neuroscience + TDA
 
-- **Peek, Pritam, Skerritt, Chalup (2025)** — "Time Series Analysis of Spiking Neural Systems via Transfer Entropy and Directed Persistent Homology." Transfer entropy as the information-theoretic measure driving directed flag complex construction. TE quantifies directed information flow between neuron pairs. Full annotation: `inbox.md` (arXiv: 2508.19048). Machines: chain complex, parameterized homology, null hypothesis.
+- **Peek, Pritam, Skerritt, Chalup (2025)** — "Time Series Analysis of Spiking Neural Systems via Transfer Entropy and Directed Persistent Homology." Transfer entropy as the information-theoretic measure driving directed flag complex construction. TE quantifies directed information flow between neuron pairs. Full annotation: `annotations/2508.19048.md` (arXiv: 2508.19048). Machines: chain complex, parameterized homology, null hypothesis.
 
 ---
 

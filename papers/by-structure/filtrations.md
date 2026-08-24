@@ -45,7 +45,7 @@ Parameter: sliding window position (time) and Vietoris-Rips scale (epsilon). Inv
 Parameter: TWO — Rips scale ε AND window size/embedding dimension. Invariant: H₁ persistence (periodicity score). Sliding window embedding of time series → point cloud → Rips PH. Convergence theorems + dependency estimates. Bridge paper: Takens (dynamics) + persistence (TDA). Full annotation: `inbox.md` (arXiv: 1307.6188).
 
 ### Harrington, Otter, Schenck, Tillmann (2017) — Stratifying Multiparameter PH
-Parameter: MULTIPLE simultaneous parameters (bifiltration). Invariant: multigraded module over polynomial ring. Three partial invariants: associated primes, Hilbert series, local cohomology. No complete discrete invariant (unlike 1-param barcode). Full annotation: `inbox.md` (arXiv: 1708.07390).
+Parameter: MULTIPLE simultaneous parameters (bifiltration). Invariant: multigraded module over polynomial ring. Three partial invariants: associated primes, Hilbert series, local cohomology. No complete discrete invariant (unlike 1-param barcode). Full annotation: `annotations/1708.07390.md` (arXiv: 1708.07390).
 
 ### Di Rocco, Eklund, Weinstein (2019) — Bottleneck Degree of Algebraic Varieties
 Parameter: scale at which topology is probed. Invariant: reach tau_X = min(rho, b). The reach determines the sample density needed for persistent homology to recover correct topology. Bottleneck degree bounds the number of critical parameter values where topology might change. Formula in terms of Chern classes and polar classes. Full annotation: `by-domain/tda.md`.
@@ -57,10 +57,10 @@ Parameter: Wilson loop parameter (trader interaction strength). Invariant: cohom
 Parameter: filtration scale epsilon (Vietoris-Rips or sublevel set). Invariant: persistence diagram vectorized into fixed-size R^n vector via weighted Gaussian sum + pixel grid integration. The persistence image IS a featurization of parameterized homology — it converts the birth-death pairs from any filtration into a form amenable to ML. Resolution and variance are secondary parameters controlling the vectorization itself. Stable w.r.t. W_1 (Theorems 1-4). Applications to dynamical systems parameter inference (linked twist map, Kuramoto-Sivashinsky PDE). Full annotation: `inbox.md` (arXiv: 1507.06217), `by-domain/tda.md`.
 
 ### Bauer (2021) --- Ripser
-Parameter: Vietoris-Rips scale epsilon. Invariant: persistence barcode (birth-death intervals). THE standard computational implementation of parameterized homology for VR complexes. Apparent/emergent pair optimizations + clearing + implicit coboundary matrix. Full annotation: `inbox.md` (arXiv: 2108.03831).
+Parameter: Vietoris-Rips scale epsilon. Invariant: persistence barcode (birth-death intervals). THE standard computational implementation of parameterized homology for VR complexes. Apparent/emergent pair optimizations + clearing + implicit coboundary matrix. Full annotation: `annotations/2108.03831.md` (arXiv: 2108.03831).
 
 ### Peek, Pritam, Skerritt, Chalup (2025) --- TE + Directed PH in Spiking Systems
-Parameter: inverted transfer entropy (strongest information transfer first). Invariant: directed Betti curves beta_d(epsilon), AUBC scalars, persistence diagrams. Higher-dimensional features (d=2,3) discriminate task complexity. Wasserstein distances between PDs recover graded task space geometry. Full annotation: `inbox.md` (arXiv: 2508.19048).
+Parameter: inverted transfer entropy (strongest information transfer first). Invariant: directed Betti curves beta_d(epsilon), AUBC scalars, persistence diagrams. Higher-dimensional features (d=2,3) discriminate task complexity. Wasserstein distances between PDs recover graded task space geometry. Full annotation: `annotations/2508.19048.md` (arXiv: 2508.19048).
 
 ## QEC
 

@@ -89,6 +89,7 @@ topo-rosetta/
 ├── papers/                     # Annotated bibliography (219+ papers)
 │   ├── inbox.md                # Full-depth annotations (primary store)
 │   ├── inbox-archive.md        # Archived earlier waves
+│   ├── annotations/            # Per-paper annotation files (one file per paper)
 │   ├── by-domain/              # Papers indexed by discipline
 │   │   ├── tda.md
 │   │   ├── qec.md

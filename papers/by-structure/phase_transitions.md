@@ -64,7 +64,7 @@ Stability: Relies implicitly on PH stability (Cohen-Steiner et al., 2007) — sm
 Null hypothesis: Baselines without TDA features (univariate N-BEATS, temporal decomposition, time-delay embedding) serve as nulls that lack topological information. The gap measures TDA's contribution. Full annotation: `by-domain/tda.md`.
 
 ### Vejdemo-Johansson & Mukherjee (2018) — Multiple testing with persistent homology
-Null hypothesis: Universal empirical null distribution for PH features — analogous to chi-squared tables for classical stats. Two multiple testing procedures: FWER and FDR control for rejecting acyclicity. Grounded in limit theorems for PH of point processes. Full annotation: `inbox.md` (arXiv: 1812.06491).
+Null hypothesis: Universal empirical null distribution for PH features — analogous to chi-squared tables for classical stats. Two multiple testing procedures: FWER and FDR control for rejecting acyclicity. Grounded in limit theorems for PH of point processes. Full annotation: `annotations/1812.06491.md` (arXiv: 1812.06491).
 
 ### Adams et al. (2017) — Persistence Images
 Stability: Lipschitz w.r.t. 1-Wasserstein distance. ||rho_B - rho_{B'}||_inf <= C * W_1(B, B') for persistence surfaces; extends to discretized PI vectors with L_inf, L_1, L_2 bounds. Tighter constants for Gaussian distributions (Theorems 3-4). The weighting function f (zero on diagonal, continuous, piecewise differentiable) is essential -- without it, points emerging from the diagonal create discontinuities. Impossibility: PI inner product kernel NOT stable for W_p with p > 1 (Remark 1). Builds directly on Cohen-Steiner et al. (2007) stability foundation. Full annotation: `inbox.md` (arXiv: 1507.06217), `by-domain/tda.md`.
@@ -92,10 +92,10 @@ Stability: THE foundational result. d_B(Dgm(f), Dgm(g)) ≤ ||f - g||∞. Lipsch
 ## Dynamical Systems
 
 ### Takens (1981) --- Detecting strange attractors in turbulence
-Stability: Embedding is GENERIC (residual set in C^2 topology). The set of pairs (phi, y) where the delay map fails to be an embedding is meager (first Baire category). Topology of the reconstructed attractor is robust to small perturbations of both dynamics and observation function. Full annotation: `inbox.md`.
+Stability: Embedding is GENERIC (residual set in C^2 topology). The set of pairs (phi, y) where the delay map fails to be an embedding is meager (first Baire category). Topology of the reconstructed attractor is robust to small perturbations of both dynamics and observation function. Full annotation: `annotations/takens-1981.md`.
 
 ### Sauer, Yorke, Casdagli (1991) --- Embedology
-Stability: PREVALENT embeddings (measure-theoretic genericity, strictly stronger than topological genericity). The set of pairs where embedding fails has measure zero in the probe sense. Works for fractal attractors (non-integer box-counting dimension). Prevalence later became a standard robustness tool across dynamical systems. Full annotation: `inbox.md`.
+Stability: PREVALENT embeddings (measure-theoretic genericity, strictly stronger than topological genericity). The set of pairs where embedding fails has measure zero in the probe sense. Works for fractal attractors (non-integer box-counting dimension). Prevalence later became a standard robustness tool across dynamical systems. Full annotation: `annotations/sauer-1991.md`.
 
 ### Dogra & Redman (2020) — Koopman Training of Neural Networks
 Stability: Koopman predictions accurate over a non-trivial training window before diverging. Complexity analysis shows when partitioned Koopman training provides speedup (small partitions). Stability degrades as loss landscape becomes increasingly nonlinear. Full annotation: `by-domain/dynamical_systems.md`.
@@ -164,7 +164,7 @@ Stability takes three flavors across domains:
 Null: partitioned system (parts operating independently) as explicit null for consciousness. Φ quantifies departure from this null via minimum information partition (MIP). Stability: exclusion postulate — the complex with maximal Φ persists; perturbations not changing which complex is maximal don't change the experience. Full annotation: `inbox.md` (DOI: 10.1371/journal.pcbi.1003588).
 
 ### Peek, Pritam, Skerritt, Chalup (2025) --- TE + Directed PH in Spiking Systems
-Null hypothesis (implicit/structural): Three levels. (1) Simple logic gate tasks (AND, OR) as baseline against which XOR's richer topology is measured. (2) Clean images as baseline; noise perturbations systematically degrade structure. Bit-moving controls for spike energy. (3) Pre-stimulus baseline epochs vs stimulus/feedback epochs in mouse cortical recordings, with Cohen's d effect sizes. Full annotation: `inbox.md` (arXiv: 2508.19048).
+Null hypothesis (implicit/structural): Three levels. (1) Simple logic gate tasks (AND, OR) as baseline against which XOR's richer topology is measured. (2) Clean images as baseline; noise perturbations systematically degrade structure. Bit-moving controls for spike energy. (3) Pre-stimulus baseline epochs vs stimulus/feedback epochs in mouse cortical recordings, with Cohen's d effect sizes. Full annotation: `annotations/2508.19048.md` (arXiv: 2508.19048).
 
 ---
 

@@ -19,14 +19,14 @@ Belief Propagation as approximate matching on factor graphs. For LDPC codes, red
 Bottleneck pairs = critical points of squared distance ||x-y||^2 on the variety. This IS an optimal assignment problem: find pairs (x, y) where the line xy is normal to X at both points. Bottleneck degree counts solutions — algebraic complexity of the matching. Formula in Chern classes and polar classes. Controls the reach, which determines topological inference guarantees. Full annotation: `by-domain/tda.md`.
 
 ### Divol & Lacombe (2019) — Understanding the Space of Persistence Diagrams via Optimal Partial Transport
-PD distances (Wasserstein, bottleneck) ARE optimal partial transport problems — exact identification, not analogy. Extends PDs to Radon measures on the upper half-plane. Provides geometric description of Fréchet means. Characterizes ALL continuous linear representations. Full annotation: `inbox.md` (arXiv: 1901.03048).
+PD distances (Wasserstein, bottleneck) ARE optimal partial transport problems — exact identification, not analogy. Extends PDs to Radon measures on the upper half-plane. Provides geometric description of Fréchet means. Characterizes ALL continuous linear representations. Full annotation: `annotations/1901.03048.md` (arXiv: 1901.03048).
 
 *(See also inbox for Cohen-Steiner bottleneck distance, Adams persistence images)*
 
 ## Information Geometry / Optimal Transport
 
 ### Wong & Yang (2019) — Pseudo-Riemannian geometry embeds information geometry in optimal transport
-Information geometry (Fisher metric, Bregman divergence) EMBEDS into OT geometry (Wasserstein) via pseudo-Riemannian framework. Ma-Trudinger-Wang condition ↔ information-geometric curvature. Exact functorial embedding, not analogy. Full annotation: `inbox.md` (arXiv: 1906.00030).
+Information geometry (Fisher metric, Bregman divergence) EMBEDS into OT geometry (Wasserstein) via pseudo-Riemannian framework. Ma-Trudinger-Wang condition ↔ information-geometric curvature. Exact functorial embedding, not analogy. Full annotation: `annotations/1906.00030.md` (arXiv: 1906.00030).
 
 ## Optimal Transport / Machine Learning
 
