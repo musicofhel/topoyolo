@@ -136,6 +136,60 @@ arXiv: comp-gas/9507004
 
 ---
 
+## Guarin, Delgado, Orozco (2011)
+**"Band-phase-randomized Surrogates to assess nonlinearity in non-stationary time series"**
+arXiv: 1101.6063
+
+**Domain(s)**: Dynamical systems
+
+**Abstract machines instantiated**:
+- **Null hypothesis**: Partially-destructive constrained null for non-stationary data — only Fourier phases in a high frequency band are randomized, so the constructed null is "linear with the observed low-band (non-stationarity-carrying) structure"; a rejection licenses "nonlinear beyond what low-band linear drift explains", narrowing the Timmer (2000) gap.
+- **Stability**: The preserved low band is a stability invariant of the surrogate ensemble by construction, isolating the verdict from drift-induced rejections (the power-loss failure mode of chao-dyn/9807039).
+
+**What is genuinely new**: The band-splitting design decision — which spectral region carries preserved vs destroyed structure is outside what the machines dictate; validated on HRV with spikes/artefacts where existing surrogates cannot reproduce linear correlations.
+
+**Connections the authors acknowledge**: Linear surrogate data methods (Theiler et al. 1992 lineage) and their stationarity dependence. Abstract-only provenance — depth-limited.
+
+**See also**: `by-structure/phase_transitions.md`
+
+---
+
+## Donges, Donner, Kurths (2012)
+**"Testing time series irreversibility using complex network methods"**
+arXiv: 1211.1162
+
+**Domain(s)**: Dynamical systems
+
+**Abstract machines instantiated**:
+- **Null hypothesis**: Time-reversal symmetry as the null reached WITHOUT surrogate generation — direct statistical comparison of time-directed variants of visibility-graph statistics (degree, local clustering); an explicit surrogate-free branch of the lineage.
+- **Joint-vs-marginal excess**: The statistic lives on the directed graph encoding; marginal amplitude statistics (histograms, spectra) are reversal-symmetric and blind to the excess time-directed structure.
+
+**What is genuinely new**: The nonlinear-map step (irreversible dynamics → asymmetric graph statistics via visibility graphs), plus applicability to short series where surrogate ensembles are too thin to rank against.
+
+**Connections the authors acknowledge**: Explicitly positions against surrogate data testing as the incumbent; visibility-graph literature (Lacasa et al.). Abstract-only provenance — depth-limited.
+
+**See also**: `by-structure/phase_transitions.md`, Third Pass "Visibility Graph Irreversibility" entry below
+
+---
+
+## Small, Judd, Stemler (2013)
+**"A surrogate for networks -- How scale-free is my scale-free network?"**
+arXiv: 1306.4064
+
+**Domain(s)**: Dynamical systems
+
+**Abstract machines instantiated**:
+- **Null hypothesis**: Surrogate machine transplanted from time series to complex networks — generate "statistically likely" networks consistent with both the observed data and a chosen null (e.g. a degree distribution); typical-vs-peculiar verdicts license only the constructed null's negation.
+- **Stability**: Typical = property stable under null-preserving regeneration of the network; peculiar = unstable under it.
+
+**What is genuinely new**: The carrier change (series → graph): what plays the role of phase randomization for a network is a new generator-design problem; directly interrogates the scale-free claim itself.
+
+**Connections the authors acknowledge**: THE rare explicit bridge in this group — abstract states "a direct analogy between the approach we propose here and the surrogate data methods applied to nonlinear time series data." Abstract-only provenance — depth-limited.
+
+**See also**: `by-structure/phase_transitions.md`
+
+---
+
 ## Takens (1981)
 **"Detecting strange attractors in turbulence"**
 Lecture Notes in Mathematics, vol. 898, Springer

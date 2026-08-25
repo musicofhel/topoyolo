@@ -135,6 +135,20 @@ Null hypothesis: Surrogate null extended to multivariate linear stochastic proce
 Joint-vs-marginal: Test statistic separates general redundancy (joint dependence) from linear redundancy (marginal/Gaussian-level), so spurious rejections from imperfect surrogates are caught at the linear level before being read as nonlinearity. An early joint-vs-marginal protocol inside the null machinery, predating the permutation-consistency lineage (2005.06573).
 Full annotation: `annotations/comp-gas-9507004.md` (arXiv: comp-gas/9507004).
 
+### Guarin, Delgado, Orozco (2011) --- Band-phase-randomized surrogates
+Null hypothesis: Band-split null generation — randomize only high-band phases so the constructed null retains the non-stationarity carrier; partially destructive by design.
+Stability: Preserved low band = stability invariant holding drift fixed while phase structure is perturbed.
+Full annotation: `annotations/1101.6063.md` (arXiv: 1101.6063).
+
+### Donges, Donner, Kurths (2012) --- Visibility-graph irreversibility without surrogates
+Null hypothesis: Reversibility null tested surrogate-free via two-sample comparison of time-directed degree/clustering distributions on standard and horizontal visibility graphs; viable on short series where surrogate ensembles are too thin.
+Joint-vs-marginal: Excess structure visible only at the directed-graph encoding level — all reversal-symmetric marginals are blind to it.
+Full annotation: `annotations/1211.1162.md` (arXiv: 1211.1162).
+
+### Small, Judd, Stemler (2013) --- Surrogates for networks
+Null hypothesis: Null-machine transplant to graphs — sample networks consistent with observed data + explicit null (degree distribution); asks which measured properties are typical vs peculiar. Rare explicit authorial acknowledgment of the analogy to time-series surrogate methods.
+Full annotation: `annotations/1306.4064.md` (arXiv: 1306.4064).
+
 ## Reinforcement Learning
 
 ### Dabney, Rowland, Bellemare, Munos (2018) — QR-DQN

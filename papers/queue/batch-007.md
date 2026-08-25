@@ -138,7 +138,7 @@ Surrogate data testing is a method frequently applied to evaluate the results of
 We propose an extension to time series with several simultaneously measured variables of the nonlinearity test, which combines the redundancy -- linear redundancy approach with the surrogate data technique. For several variables various types of the redundancies can be defined, in order to test specific dependence structures between/among (groups of) variables. The null hypothesis of a multivariate linear stochastic process is tested using the multivariate surrogate data. The linear redundancies are used in order to avoid spurious results due to imperfect surrogates. The method is demonstrated using two types of numerically generated multivariate series (linear and nonlinear) and experimental multivariate data from meteorology and physiology.
 ```
 
-## candidate-10 [null-surrogate] — UNCONSUMED
+## candidate-10 [null-surrogate] — ANNOTATED as 1101.6063 (pass 43)
 
 **Title:** Band-phase-randomized Surrogates to assess nonlinearity in non-stationary time series
 
@@ -152,7 +152,7 @@ We propose an extension to time series with several simultaneously measured vari
 Testing for nonlinearity is one of the most important preprocessing steps in nonlinear time series analysis. Typically, this is done by means of the linear surrogate data methods. But it is a known fact that the validity of the results heavily depends on the stationarity of the time series. Since most physiological signals are non-stationary, it is easy to falsely detect nonlinearity using the linear surrogate data methods. In this document, we propose a methodology to extend the procedure for generating constrained surrogate time series in order to assess nonlinearity in non-stationary data. The method is based on the band-phase-randomized surrogates, which consists (contrary to the linear surrogate data methods) in randomizing only a portion of the Fourier phases in the high frequency band. Analysis of simulated time series showed that in comparison to the linear surrogate data method, our method is able to discriminate between linear stationarity, linear non-stationary and nonlinear time series. When applying our methodology to heart rate variability (HRV) time series that present spikes and other kinds of nonstationarities, we where able to obtain surrogate time series that look like the data and preserves linear correlations, something that is not possible to do with the existing surrogate data methods.
 ```
 
-## candidate-11 [null-surrogate] — UNCONSUMED
+## candidate-11 [null-surrogate] — ANNOTATED as 1211.1162 (pass 43)
 
 **Title:** Testing time series irreversibility using complex network methods
 
@@ -166,7 +166,7 @@ Testing for nonlinearity is one of the most important preprocessing steps in non
 The absence of time-reversal symmetry is a fundamental property of many nonlinear time series. Here, we propose a new set of statistical tests for time series irreversibility based on standard and horizontal visibility graphs. Specifically, we statistically compare the distributions of time-directed variants of the common complex network measures degree and local clustering coefficient. Our approach does not involve surrogate data and is applicable to relatively short time series. We demonstrate its performance for paradigmatic model systems with known time-reversal properties as well as for picking up signatures of nonlinearity in neuro-physiological data.
 ```
 
-## candidate-12 [null-surrogate] — UNCONSUMED
+## candidate-12 [null-surrogate] — ANNOTATED as 1306.4064 (pass 43)
 
 **Title:** A surrogate for networks -- How scale-free is my scale-free network?
 
