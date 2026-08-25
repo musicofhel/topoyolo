@@ -306,6 +306,31 @@ def check_stats_drift(v):
     return papers, n_deep, min_cell
 
 
+LAYOUT_CONTRACT = ROOT / "papers/README.md"
+
+
+def check_papers_layout(v):
+    """A5 layout contract: every entry directly under papers/ must be named
+    in papers/README.md (backtick-quoted), so no file can become
+    undocumented."""
+    if not LAYOUT_CONTRACT.exists():
+        v.warn("papers/README.md missing — papers/ layout contract unchecked")
+        return 0
+    readme = LAYOUT_CONTRACT.read_text()
+    n = 0
+    for entry in sorted((ROOT / "papers").iterdir()):
+        name = entry.name
+        if name.startswith(".") or entry == LAYOUT_CONTRACT:
+            continue  # the contract documents itself by existing
+        # directories may be documented with or without the trailing slash
+        if f"`{name}`" not in readme and f"`{name}/`" not in readme:
+            v.err(f"papers/{name} is not documented in papers/README.md "
+                  f"(papers/ layout contract)")
+        else:
+            n += 1
+    return n
+
+
 def check_inbox_empty(v):
     """A3 layout: inbox files are pointer-lists only — zero full annotations."""
     n_total = 0
@@ -329,6 +354,7 @@ def main(argv):
     v = Violations()
 
     annotations = collect_annotations(v)
+    n_layout = check_papers_layout(v)
     n_inbox = check_inbox_empty(v)
     texts = index_texts()
     n_ann = check_coverage(annotations, texts, v)
@@ -338,6 +364,7 @@ def main(argv):
 
     print(f"topo-rosetta structure lint")
     print(f"  annotations parsed : {n_ann}")
+    print(f"  papers/ entries    : {n_layout} documented in layout contract")
     print(f"  index files scanned: {len(texts)}")
     print(f"  markdown files     : {n_md}")
     if stats:
