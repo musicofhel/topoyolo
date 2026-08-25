@@ -181,6 +181,20 @@ The Rosetta rules this forces: (1) any criticality entry must record which stati
 
 ---
 
+### GIT semistability ≠ persistence stability (2605.11178 vs math/0604068 lineage)
+
+STABILITY.md now carries three incarnations of the stability claim; incarnations 1 and 3 are the pair most at risk of collapsing into one word, because both are called "stability of the representation." They differ in kind on every axis that matters:
+
+- **What is stabilized.** Persistence stability (Cohen-Steiner–Edelsbrunner–Harer; interleavings per 1205.3669) protects an *invariant computed from data* against perturbation of the input. GIT semistability (Dönmez et al., 2605.11178) is a property of *the learned structure itself* — a point in a representation space judged non-degenerate relative to a group action and a linearization.
+- **Quantifier shape.** The TDA theorem is a for-all-perturbations *inequality*: ‖diagram−diagram′‖ ≤ f(‖cloud−cloud′‖), quantitative and graded — diagrams can be more or less stable. Semistability is a *dichotomy*: a point is semistable or it is not; there is no distance-to-instability in the statement, only orbit-closure membership. Two non-isomorphic sheaf geometries can even be S-equivalent — indistinguishable at the invariant level while distinct as points.
+- **Failure mode.** TDA instability = the bound is exceeded (perturbation moved the invariant too much). GIT instability = *degeneration*: the geometry flows to the orbit closure of a direct-sum-decomposable, low-complexity summand whose global sections lose discriminative information. Oversmoothing is not "too much perturbation"; it is falling INTO an attractor of the algebraic action.
+
+The apparent synonym — "the stable configuration resists change" — fails at direction of implication. In TDA, stability is something you *prove about a pipeline after the fact*. In GIT, semistability is something you *bias learning toward beforehand* (moment-map-inspired regularizers), precisely because nothing downstream certifies it. That is also why the three incarnations compose rather than substitute (see STABILITY.md): a level-3 certificate (non-degenerate boundary data) says nothing about level-1 robustness (persistence diagram movement), and vice versa — each is blind to the other's failure mode.
+
+The structural null is also native to incarnation 3 and has no TDA analogue: Dönmez et al.'s equal-stalk "stability wall," where every admissible stability functional forces the trivial summand and adaptive stability is vacuous. A Lipschitz bound cannot be vacuous this way — it degrades continuously with constants. The Rosetta rule this forces: when a corpus entry says "stable," record whether the claim is (a) a metric inequality over inputs (incarnation 1), (b) a contraction rate of dynamics (2), or (c) an orbit-closure membership test on the structure (3) — and never read a certificate across levels.
+
+---
+
 ## Living Document
 
 Add divergences as they are discovered. Each entry should specify: which two domains are being compared, what the apparent synonym is, and precisely where the correspondence fails.
