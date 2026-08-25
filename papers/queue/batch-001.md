@@ -6,7 +6,8 @@ Consume per papers/INGESTION.md (B1 defines it; ≤3 papers/pass; triage-reject 
 
 ---
 
-## candidate-01 [neuroscience] — UNCONSUMED
+## candidate-01 [neuroscience] — REJECTED
+Walsh-matrix CNN engineering; instantiates zero of the six machines.
 
 **Title:** Strengthening the Training of Convolutional Neural Networks By Using Walsh Matri
 
@@ -1078,7 +1079,7 @@ fer Granger causality. Nauta
 
 ---
 
-## candidate-13 [matching-infotheo] — UNCONSUMED
+## candidate-13 [matching-infotheo] — ANNOTATED as 2604.08539 (pass 11): 1D-OT advantage matching in RL → Matching+Stability
 
 **Title:** OpenVLThinkerV2 A Generalist Multimodal Reasoning Model for Multi domain Visual
 
@@ -1194,7 +1195,8 @@ optimizatio
 
 ---
 
-## candidate-14 [dynamics-matching] — UNCONSUMED
+## candidate-14 [dynamics-matching] — REJECTED
+DTW motif discovery is a single machine (alignment matching) and duplicates the DTW-matching coverage of 2002.00208.
 
 **Title:** 2009.07907v1
 

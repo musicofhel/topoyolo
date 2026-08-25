@@ -36,6 +36,9 @@ Gromov-Wasserstein distance: second-order optimal transport matching pairwise in
 ### Dabney, Rowland, Bellemare, Munos (2018) — QR-DQN (Distributional RL)
 Wasserstein-1 distance W_1(F,G) = integral |F^{-1}(tau) - G^{-1}(tau)| d(tau) minimized via quantile regression. Distributional Bellman operator contracts in W_infinity. QR-DQN uses N adjustable quantile locations with fixed uniform probabilities. Closes the theory-practice gap from C51 by operating end-to-end under Wasserstein. 33% median improvement on Atari. Full annotation: `by-domain/dynamical_systems.md`.
 
+### Hu et al. (2026) — OpenVLThinkerV2 / Gaussian GRPO (G²RPO)
+1D optimal transport as an RL objective: a non-linear coupling forces each task's advantage distribution onto the fixed reference measure N(0,1), replacing moment-matching standardization. Equalizes gradient updates across tasks with different reward topologies (sparse binary vs dense IoU); tail compression gives outlier robustness (stability), entropy shaping bounds exploration two-sidedly. Moment-matching cannot fix distributional shape — same W_1-vs-shape gap QR-DQN sits on. Full annotation: `annotations/2604.08539.md` (arXiv: 2604.08539).
+
 ### Bayraktar & Zhou (2017) — Model-Independent Pricing via Optimal Transport
 Martingale optimal transport: given marginals mu_1, ..., mu_n (from call prices), optimize over all martingale couplings. Super-hedging price = worst-case matching cost. Duality: min hedging cost = sup_{Q in M} E_Q[Phi] + U^{-1}(alpha). Shortfall hedging reduces to super-hedging of knockout options. Full annotation: `by-domain/dynamical_systems.md`.
 

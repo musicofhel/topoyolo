@@ -1170,3 +1170,11 @@ DOI: annurev-statistics-030718-104938. 913 citations. Comprehensive review of Wa
 **Machines**: matching, stability, parameterized homology.
 Full annotation: `annotations/blahut-arimoto-1972.md` (Wave 10b).
 **See also**: `by-structure/optimal_transport.md`
+
+## Wave 11 — link-forge batch-001 (2026-08-25)
+
+### Hu et al. (2026) — OpenVLThinkerV2 / Gaussian GRPO
+arXiv: 2604.08539. G²RPO replaces linear advantage standardization with non-linear distributional matching: a 1D optimal transport coupling forces each task's advantage distribution onto N(0,1), equalizing gradient updates across tasks with heterogeneous reward topologies; outlier robustness and entropy shaping bound the update two-sidedly. The moment-matching-vs-measure-matching gap is stated as RL engineering but is the W_1-vs-shape distinction of the optimal-transport cell.
+**Machines**: matching, stability (null hypothesis marginal).
+Full annotation: `annotations/2604.08539.md` (batch-001 candidate-13).
+**See also**: `by-structure/optimal_transport.md`
