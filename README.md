@@ -2,11 +2,11 @@
 
 *A cartography of shared algebraic structure across six disciplines that independently discovered the same six abstract machines.*
 
-Persistent homology, quantum error correction, dynamical systems, neural coding, information theory — these fields use different vocabularies to describe the same algebraic objects. This repo collects annotated papers (99 full annotations), maps the repetitions, and makes the synonyms explicit. It also maps the divergences — where the analogy breaks, which is equally informative.
+Persistent homology, quantum error correction, dynamical systems, neural coding, information theory — these fields use different vocabularies to describe the same algebraic objects. This repo collects annotated papers (101 full annotations), maps the repetitions, and makes the synonyms explicit. It also maps the divergences — where the analogy breaks, which is equally informative.
 
 The goal is not synthesis or unification. It is *differentiation* — in the Deleuzian sense. The same abstract machine is actualized differently in each domain. By cataloguing the repetitions and the genuine divergences, we make visible the plane that connects them.
 
-`6 domains · 6 machines · 99 fully annotated papers · 36 cells, min cell 2 · 23 cells ≥ 10`
+`6 domains · 6 machines · 101 fully annotated papers · 36 cells, min cell 2 · 23 cells ≥ 10`
 
 ---
 
@@ -44,7 +44,7 @@ The goal is not synthesis or unification. It is *differentiation* — in the Del
 | **Neuro** | **15** | **19** | 4 | **14** | **10** | **19** |
 | **InfoTheo** | 7 | **16** | 4 | 9 | **12** | **13** |
 
-**Bold** = 10+ papers (deep coverage). Counts are derived from the 99 per-paper
+**Bold** = 10+ papers (deep coverage). Counts are derived from the 101 per-paper
 annotations in [`papers/annotations/`](papers/annotations/) by `scripts/gen_stats.py`
 (min cell = 2; 23 of 36 cells ≥ 10).
 
@@ -89,7 +89,7 @@ topo-rosetta/
 │   ├── JOINT_VS_MARGINAL.md
 │   └── NULL_HYPOTHESIS.md
 │
-├── papers/                     # Annotated bibliography (99 full annotations + index stubs)
+├── papers/                     # Annotated bibliography (101 full annotations + index stubs)
 │   ├── annotations/            # Full-depth per-paper annotations (primary store)
 │   ├── inbox.md                # Intake ledger: contract + leads + wave index
 │   ├── inbox-archive.md        # Archived earlier waves

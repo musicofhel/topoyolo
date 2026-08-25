@@ -1085,13 +1085,13 @@ Full annotation: `annotations/blahut-arimoto-1972.md` (Wave 8).
 arXiv: 1907.04242. k-multivariate MI I_k defined as co-chains on simplicial complex Δ([n]) of random variables. I_2 = coboundary of H (δH = I_2). Negative I_k = synergy (Borromean links). Information landscape tracks I_k across all faces. Shuffling null. Bethe free energy as alternating sum over simplicial faces. Application: unsupervised cell-type classification.
 - **Battiston et al. (2020)** — "Networks beyond pairwise interactions." Physics Reports 874 survey: simplicial-complex chain apparatus (boundary operators, higher-order Laplacians, Betti numbers) plus max-ent/random generative nulls for higher-order structure. Full annotation: `annotations/10.1016-j.physrep.2020.05.004.md`. Machines: chain complex, null hypothesis, parameterized homology (weak).
 **Machines**: chain complex, joint-vs-marginal, null hypothesis, parameterized homology, stability.
-Full annotation: `annotations/blahut-arimoto-1972.md` (Wave 10a).
+Full annotation: `annotations/1907.04242.md` (Wave 10a).
 **See also**: `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/composite_systems.md`, `by-structure/phase_transitions.md`, `papers/cross_domain_bridges.md`
 
 ### Panaretos & Zemel (2019) — Statistical Aspects of Wasserstein Distances
 DOI: annurev-statistics-030718-104938. 913 citations. Comprehensive review of Wasserstein distances as statistical tools: convergence rates, CLTs, minimax estimation, goodness-of-fit testing. W_p family parameterized by order p. Bottleneck distance on PDs IS W_∞. Otto calculus gives Riemannian geometry of Wasserstein space.
 **Machines**: matching, stability, parameterized homology.
-Full annotation: `annotations/blahut-arimoto-1972.md` (Wave 10b).
+Full annotation: `annotations/annurev-statistics-030718-104938.md` (Wave 10b).
 **See also**: `by-structure/optimal_transport.md`
 
 ## Wave 11 — link-forge batch-001 (2026-08-25)
@@ -1112,3 +1112,15 @@ KAN-based nonlinear Granger causality; conditional-prediction excess as per-edge
 
 ### Brüsch, Schmidt, Alstrøm (2023) — Multi-view SSL for variable-channel time series
 Cross-channel MPNN aggregation vs marginal single-channel encodings under a contrastive objective; negatives define the no-shared-origin null. Full annotation: `annotations/brusch-2023.md` (B2 pass 13).
+
+### B2 batch-004: rate-distortion lineage — neural estimation + operational perception (2026-08-25)
+
+**Lei, Hassani & Saeedi Bidokhti (2022) — NERD**: arXiv: 2204.01612. Neural re-formulation of the Blahut–Arimoto functional optimization for regimes where alternating minimization is infeasible; returns the optimal test channel (soft assignment) and the R(D) curve itself, then converts it via reverse channel coding into an operational one-shot lossy code. R(D) serves as the computable null against which DNN codecs are benchmarked (within several bits on real images).
+**Machines**: matching, null hypothesis, parameterized homology (weak).
+Full annotation: `annotations/2204.01612.md` (B2 pass 27). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/optimal_transport.md`, `annotations/blahut-arimoto-1972.md`
+
+**Theis & Wagner (2021) — Coding theorem for the rate-distortion-perception function**: arXiv: 2104.13662. Adds a marginal-agreement constraint (reconstruction distribution ≡ source distribution) to the constrained soft-matching problem; proves the Blau–Michaeli variational function is achievable by stochastic variable-length codes and lower-bounds their rate — realism made operational rather than adversarial-proxy.
+**Machines**: matching, null hypothesis (weak).
+Full annotation: `annotations/2104.13662.md` (B2 pass 27). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/optimal_transport.md`, `annotations/2204.01612.md`

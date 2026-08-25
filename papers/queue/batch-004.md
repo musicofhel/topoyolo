@@ -138,7 +138,7 @@ We generalize stochastic thermodynamics to include information reservoirs. Such 
 Recent developments in stochastic thermodynamics have elucidated various relations between the entropy production rate (thermodynamic dissipation) and the physical limits of information processing in nonequilibrium dynamical systems. These findings have opened new perspectives in analyzing real biological systems. In neuroscience, the importance of quantifying entropy production has attracted attention for understanding information processing in the brain. However, the relationship between the entropy production rate and oscillations, which are common in many biological systems, remains unclear. For instance, neural oscillations like delta, theta, and alpha waves play crucial roles in brain information processing. Here, we derive a novel decomposition of the entropy production rate of linear Langevin systems. We show that one component of the entropy production rate, called the housekeeping entropy production rate, can be decomposed into independent positive contributions from oscillatory modes. Our decomposition enables us to calculate the contribution of oscillatory modes to the housekeeping entropy production rate. In addition, when the noise matrix is diagonal, the contribution of each oscillatory mode can be further decomposed into the contribution of each system element. To demonstrate the utility of our decomposition, we applied it to an electrocorticography (ECoG) dataset recorded during awake and anesthetized conditions in monkeys, where the oscillatory properties change drastically. We showed consistent trends across different monkeys: the contribution of delta band was larger in the anesthetized condition than in the awake condition, while those from higher frequency bands, such as the theta band, were smaller. These results allow us to interpret the changes in neural oscillation in terms of stochastic thermodynamics and the physical limits of information processing.
 ```
 
-## candidate-10 [rate-distortion] — UNCONSUMED
+## candidate-10 [rate-distortion] — ANNOTATED as 2204.01612 (B2 pass 27 → annotations/2204.01612.md)
 
 **Title:** Neural Estimation of the Rate-Distortion Function With Applications to Operational Source Coding
 
@@ -152,7 +152,7 @@ Recent developments in stochastic thermodynamics have elucidated various relatio
 A fundamental question in designing lossy data compression schemes is how well one can do in comparison with the rate-distortion function, which describes the known theoretical limits of lossy compression. Motivated by the empirical success of deep neural network (DNN) compressors on large, real-world data, we investigate methods to estimate the rate-distortion function on such data, which would allow comparison of DNN compressors with optimality. While one could use the empirical distribution of the data and apply the Blahut-Arimoto algorithm, this approach presents several computational challenges and inaccuracies when the datasets are large and high-dimensional, such as the case of modern image datasets. Instead, we re-formulate the rate-distortion objective, and solve the resulting functional optimization problem using neural networks. We apply the resulting rate-distortion estimator, called NERD, on popular image datasets, and provide evidence that NERD can accurately estimate the rate-distortion function. Using our estimate, we show that the rate-distortion achievable by DNN compressors are within several bits of the rate-distortion function for real-world datasets. Additionally, NERD provides access to the rate-distortion achieving channel, as well as samples from its output marginal. Therefore, using recent results in reverse channel coding, we describe how NERD can be used to construct an operational one-shot lossy compression scheme with guarantees on the achievable rate and distortion. Experimental results demonstrate competitive performance with DNN compressors.
 ```
 
-## candidate-11 [rate-distortion] — UNCONSUMED
+## candidate-11 [rate-distortion] — ANNOTATED as 2104.13662 (B2 pass 27 → annotations/2104.13662.md)
 
 **Title:** A coding theorem for the rate-distortion-perception function
 
@@ -166,7 +166,8 @@ A fundamental question in designing lossy data compression schemes is how well o
 The rate-distortion-perception function (RDPF; Blau and Michaeli, 2019) has emerged as a useful tool for thinking about realism and distortion of reconstructions in lossy compression. Unlike the rate-distortion function, however, it is unknown whether encoders and decoders exist that achieve the rate suggested by the RDPF. Building on results by Li and El Gamal (2018), we show that the RDPF can indeed be achieved using stochastic, variable-length codes. For this class of codes, we also prove that the RDPF lower-bounds the achievable rate.
 ```
 
-## candidate-12 [rate-distortion] — UNCONSUMED
+## candidate-12 [rate-distortion] — REJECTED (B2 pass 27)
+Shannon-machinery bounds paper: the conditional-independence decomposition instantiates no machine beyond the already-covered RD/matching lineage (BA 1972, NERD, RDPF); <2 genuine machines.
 
 **Title:** Information-Theoretic Limits on Compression of Semantic Information
 

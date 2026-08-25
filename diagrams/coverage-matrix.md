@@ -11,7 +11,7 @@ TDA                   *30*        *31*        *22*        *33*           9      
 QEC                   *12*           8           7        *12*           2           9
 Dynamics              *13*        *20*           8        *20*        *10*        *16*
 Neuro                 *18*        *22*           5        *15*        *16*        *24*
-InfoTheo              *11*        *22*        *10*        *17*        *28*        *29*
+InfoTheo              *11*        *23*        *12*        *17*        *28*        *31*
 StatPhys                 2           2           4           2           5           4
 ```
 
@@ -30,7 +30,7 @@ block-beta
   QEC["QEC"] QEC_CC["12"] QEC_PH["8"] QEC_MA["7"] QEC_ST["12"] QEC_JM["2"] QEC_NH["9"]
   DYN["Dynamics"] DYN_CC["13"] DYN_PH["20"] DYN_MA["8"] DYN_ST["20"] DYN_JM["10"] DYN_NH["16"]
   NEU["Neuro"] NEU_CC["18"] NEU_PH["22"] NEU_MA["5"] NEU_ST["15"] NEU_JM["16"] NEU_NH["24"]
-  IT["InfoTheo"] IT_CC["11"] IT_PH["22"] IT_MA["10"] IT_ST["17"] IT_JM["28"] IT_NH["29"]
+  IT["InfoTheo"] IT_CC["11"] IT_PH["23"] IT_MA["12"] IT_ST["17"] IT_JM["28"] IT_NH["31"]
   SP["StatPhys"] SP_CC["2"] SP_PH["2"] SP_MA["4"] SP_ST["2"] SP_JM["5"] SP_NH["4"]
   style TDA_CC fill:#9f9,stroke:#333
   style TDA_PH fill:#9f9,stroke:#333
@@ -69,4 +69,4 @@ fails if these numbers drift from the claims in README.md / docs/index.html.
 
 ## Coverage Status
 
-99 fully annotated papers. 23 of 36 cells ≥10 (deep); min cell = 2.
+101 fully annotated papers. 23 of 36 cells ≥10 (deep); min cell = 2.
