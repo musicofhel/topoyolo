@@ -1,21 +1,25 @@
 # research/INDEX.md — pass reports + task status (newest first)
 
-**Lint state:** check_structure.py exit 0; 2 warnings = pre-existing baseline
-(2 author-year-prose crossrefs; 2505.23993 "mathematics" domain-alias note);
-`--check` 0 errors. Derived corpus: **170 fully annotated papers** (+3 pass 54),
-**36 cells (6 machines × 6 domains)**, min cell 2, **32 cells ≥10**. Standing
-policy (pass 43): README/docs count patches land in the SAME commit as the
-gen_stats regen.
+**Lint state:** check_structure.py exit 0; 1 warning = pre-existing baseline
+(2 author-year-prose crossrefs; the 2505.23993 "mathematics" domain-alias note
+was cleared pass 55); `--check` 0 errors. Derived corpus: **170 fully annotated
+papers** (+3 pass 54), **36 cells (6 machines × 6 domains)**, min cell 2,
+**32 cells ≥10**. Standing policy (pass 43): README/docs count patches land in
+the SAME commit as the gen_stats regen.
 Machine-vocabulary translation (pass 50, for consistent filing): by-structure
 file names → six machines: boundary_operators→chain complex; filtrations→
 parameterized homology; matching/optimal_transport→matching; phase_transitions→
 stability; composite_systems→joint-vs-marginal excess; null hypothesis has no
-structure file. Sheaf entries file under boundary_operators + tda. NEW (pass
-53): GIT/quiver stability is a third "stability" incarnation (after
-persistence-module robustness and bifurcation instability) — STABILITY.md
-tri-incarnation section queued as B3 sub-slice 8.
+structure file. Sheaf entries file under boundary_operators + tda. GIT/quiver
+stability is a third "stability" incarnation — STABILITY.md tri-incarnation
+section landed pass 55 (sub-slice 8).
 
 ## Reports
+- `2026-08-25-0923.md` — Pass 55: B3 sub-slice 8 — STABILITY.md "Three
+  Incarnations of the Stability Claim" (invariant: TDA bottleneck/interleaving;
+  trajectory correspondence: Lyapunov/GS + ESP; structure itself: GIT
+  moment-map semistability from 2605.11178) + composition note + sanctioned
+  one-line domain fix ('mathematics' → KNOWN_QUALIFIERS). Lint warnings 2→1.
 - `2026-08-25-0915.md` — Pass 54: **batch-010 CLOSED 9/9** (07: 2502.03802
   MXMap/multiPCM multivariate partial cross mapping; 08: 1909.00731 Barraquand
   et al. GC-vs-CCM empirical null over the method-selection heuristic; 09:
@@ -53,12 +57,11 @@ tri-incarnation section queued as B3 sub-slice 8.
 
 ## Task status (LOOP_MISSION.md ledger is canonical)
 - **A1–A6:** all [done]. **B1 ingestion contract:** [done] (6ebfcf2).
-- **B2 queue consumption:** [in_progress] — **batch-010 CLOSED 9/9** (passes
+- **B2 queue consumption:** [in_progress] — batch-010 CLOSED 9/9 (passes
   52–54); IDLE until batch-011 lands in papers/queue/. Residual Wave-era
   catch-all pointer debt (~100, ≤5/pass).
-- **B3 atlas synthesis:** [in_progress] — sub-slices 1–7 done (7 = pass 54:
-  CHAIN_COMPLEX.md cellular-sheaf section). NEXT: sub-slice 8 STABILITY.md
-  tri-incarnation section (GIT moment-map semistability from 2605.11178 along
-  TDA bottleneck/interleaving and dynamical Lyapunov/GS). Open hooks: possible
-  ANTISYNONYMS note from 1910.05979; dynamical_systems.md atlas re-read
-  post-batch-008.
+- **B3 atlas synthesis:** [in_progress] — sub-slices 1–8 done (8 = pass 55:
+  STABILITY.md tri-incarnation section + domain-line warning cleanup). Open
+  hooks: possible ANTISYNONYMS "GIT semistability ≠ persistence stability";
+  possible ANTISYNONYMS from 1910.05979 (positivity+identity lattice property);
+  dynamical_systems.md atlas re-read post-batch-008.
