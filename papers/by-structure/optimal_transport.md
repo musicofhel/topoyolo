@@ -183,6 +183,17 @@ Two cautions sharpen the claim (see also the ANTISYNONYMS entry "Matching metric
 
 **See also**: `by-domain/statistical_physics.md`, `by-structure/composite_systems.md`.
 
+## B3 synthesis: the Monge–Kantorovich split inside this file (2026-08-25)
+
+The entries above quietly span a split *internal* to the matching machine that Mémoli & Needham (`annotations/2212.14123.md`) made precise: **Kantorovich form** = optimize over couplings/soft assignments; **Monge form** = optimize over deterministic maps/hard assignments. The corpus carries both:
+
+- **Coupling-side (Kantorovich)**: GW distances themselves (Bunne et al., Chambers–Meng 2507.01171, Yachimura–Zou 2608.09265), unbalanced/fused variants where mass may leak (FUGW 2206.09398, Janati et al. 1902.04812), and partial transport on persistence diagrams (Divol–Lacombe 1901.03048). Soft assignment is essential wherever correspondence is genuinely one-to-many or mass-varying.
+- **Map-side (Monge)**: transport-map identification (Moosmüller et al. 1907.08260), MWPM syndrome decoding (a hard pairing by construction — Kitaev quant-ph/9707021, Dennis et al.), DTW's monotone warping path as a deterministic assignment (ying-2016, silva-2018), and martingale optimal transport's coupling-with-map structure (Bayraktar–Zhou).
+
+The theorem that makes this an atlas-level fact rather than a notational one: for non-atomic mm-spaces, GM = GW **exactly** — once atoms vanish, restricting soft matching to hard matching costs nothing, and GM is bi-Hölder equivalent to the isometry-invariant Monge OT used in shape analysis. So the corpus's mixed usage is principled: continuous-measure applications may freely read couplings as maps, while discrete/atomic instances (finite diagrams, syndrome graphs, alphabets) are exactly where the split bites and the two formulations diverge.
+
+**See also**: `atlas/MATCHING.md`, `annotations/2212.14123.md`.
+
 ## B2 batch-006 — GW-theory core (2026-08-25)
 
 Three foundations papers for the relational-matching instantiation itself (abstract-only provenance; all depth-limited).
