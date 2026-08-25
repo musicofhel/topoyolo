@@ -174,7 +174,8 @@ are proposed as follows:
 for L index cannot label the predictable range of time series precisely
 ```
 
-## candidate-03 [filtration-ph] — UNCONSUMED
+## candidate-03 [filtration-ph] — REJECTED
+CHIRPS precipitation dataset paper; zero atlas machines — the 'filtration' hit is a text-filter artifact, no persistent homology or filtration construction in the atlas sense (pass 20).
 
 **Title:** The climate hazards infrared precipitation with stationsa new environmental reco
 
@@ -259,7 +260,7 @@ has been explicitly designed to fi ll this gap, providing blended gauge-satellit
 cover most globa
 ```
 
-## candidate-04 [filtration-ph] — UNCONSUMED
+## candidate-04 [filtration-ph] — ANNOTATED as 10.1007-s00521-024-10787-x (promote-on-encounter: already covered as a full prose block in by-domain/tda.md plus summary rows in by-structure/filtrations.md + phase_transitions.md — the dedup gap again, queue checked only annotations/; block migrated verbatim to annotations/, crossrefs repointed, pass 20)
 
 **Title:** s00521 024 10787 x
 
@@ -339,7 +340,8 @@ series analysis, statistical models, and machine learning of financial time seri
 techniques [8–10]. However, these methods may fail to beha
 ```
 
-## candidate-05 [filtration-ph] — UNCONSUMED
+## candidate-05 [filtration-ph] — REJECTED
+TopP-S element-specific PH molecular descriptors + multitask DNN for logP/logS; one machine (parameterized homology only), a PH-as-descriptor application wrapper with no stability bound, null model, matching, or joint-vs-marginal content (pass 20).
 
 **Title:** J Comput Chem   2018   Wu   TopP S  Persistent homology‐based multi‐task deep neural networks for simultaneous predictions
 

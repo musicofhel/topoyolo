@@ -39,7 +39,7 @@ Parameter: constraint density α = M/N. Invariant: solution space topology. Phas
 Parameter: SCNN filter coefficients. Invariant: Hodge component proportions (gradient, curl, harmonic). The learned representations are parameterized by spectral weights on the three Hodge subspaces. The harmonic space ker(L_1) IS the first homology — the Hodge theorem made computational. Full annotation: `by-domain/tda.md`.
 
 ### de Jesus Jr., Fernandez-Navarro, Carbonero-Ruz (2025) — TDA for Financial Forecasting
-Parameter: sliding window position (time) and Vietoris-Rips scale (epsilon). Invariant: persistent entropy, amplitude, point count from persistence diagrams. Sliding-window PH on time-delay embedded financial time series. First application of TDA-derived features specifically for forecasting (vs. classification/detection). Tested on 32 datasets across crypto and traditional instruments. Full annotation: `by-domain/tda.md`.
+Parameter: sliding window position (time) and Vietoris-Rips scale (epsilon). Invariant: persistent entropy, amplitude, point count from persistence diagrams. Sliding-window PH on time-delay embedded financial time series. First application of TDA-derived features specifically for forecasting (vs. classification/detection). Tested on 32 datasets across crypto and traditional instruments. Full annotation: `annotations/10.1007-s00521-024-10787-x.md` (B2 pass 20).
 
 ### Perea & Harer (2013) — SW1PerS
 Parameter: TWO — Rips scale ε AND window size/embedding dimension. Invariant: H₁ persistence (periodicity score). Sliding window embedding of time series → point cloud → Rips PH. Convergence theorems + dependency estimates. Bridge paper: Takens (dynamics) + persistence (TDA). Full annotation: `annotations/1307.6188.md` (arXiv: 1307.6188).

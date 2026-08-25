@@ -61,7 +61,7 @@ Stability: The reach tau_X = min(rho, b) controls PH stability — it determines
 
 ### de Jesus Jr., Fernandez-Navarro, Carbonero-Ruz (2025) — TDA for Financial Forecasting
 Stability: Relies implicitly on PH stability (Cohen-Steiner et al., 2007) — small time series perturbations produce bounded changes in persistence diagrams and hence in TDA features (entropy, amplitude, point count).
-Null hypothesis: Baselines without TDA features (univariate N-BEATS, temporal decomposition, time-delay embedding) serve as nulls that lack topological information. The gap measures TDA's contribution. Full annotation: `by-domain/tda.md`.
+Null hypothesis: Baselines without TDA features (univariate N-BEATS, temporal decomposition, time-delay embedding) serve as nulls that lack topological information. The gap measures TDA's contribution. Full annotation: `annotations/10.1007-s00521-024-10787-x.md` (B2 pass 20).
 
 ### Vejdemo-Johansson & Mukherjee (2018) — Multiple testing with persistent homology
 Null hypothesis: Universal empirical null distribution for PH features — analogous to chi-squared tables for classical stats. Two multiple testing procedures: FWER and FDR control for rejecting acyclicity. Grounded in limit theorems for PH of point processes. Full annotation: `annotations/1812.06491.md` (arXiv: 1812.06491).
