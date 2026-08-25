@@ -422,3 +422,15 @@ Prunes provably non-optimal cells of the DTW assignment grid; exactness preserve
 **Machines**: matching, stability, null hypothesis (weak).
 Full annotation: `annotations/silva-2018.md` (B2 pass 13).
 **See also**: `by-domain/information_theory.md`, `by-structure/optimal_transport.md`, `by-structure/composite_systems.md`
+
+### Botvinick-Greenhouse, Oprea, Maulik & Yang (2024) — Measure-Theoretic Time-Delay Embedding
+Generalizes Takens measure-theoretically: Eulerian description of the dynamics, delay embedding as a pushforward Φ_# between spaces of probability measures, built on optimal transport; reconstruction robust to sparse/noisy observations (Lorenz-63, NOAA SST, ERA5).
+**Machines**: matching (measure-valued assignment), stability.
+Full annotation: `annotations/2409.08768.md` (B2 pass 24). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/optimal_transport.md`, `annotations/1907.08260.md`
+
+### Moosmüller, Dietrich & Kevrekidis (2019) — Geometric Transport of Discontinuous Densities
+Reverse-direction bridge: short observation histories (delay-vector side information from an observation process) disambiguate OT map identification when source-target densities are non-bijective (folds, marginalization); smooth-manifold hypothesis restores well-posedness.
+**Machines**: matching, stability (weak), parameterized homology (weak).
+Full annotation: `annotations/1907.08260.md` (B2 pass 24). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/optimal_transport.md`, `annotations/2409.08768.md`

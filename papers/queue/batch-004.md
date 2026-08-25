@@ -11,7 +11,7 @@ Consume per papers/INGESTION.md (≤3 papers/pass; triage-reject with one senten
 
 ---
 
-## candidate-01 [dyn-matching] — UNCONSUMED
+## candidate-01 [dyn-matching] — ANNOTATED as 2409.08768 (B2 pass 24 → annotations/2409.08768.md)
 
 **Title:** Measure-Theoretic Time-Delay Embedding
 
@@ -25,7 +25,7 @@ Consume per papers/INGESTION.md (≤3 papers/pass; triage-reject with one senten
 The celebrated Takens' embedding theorem provides a theoretical foundation for reconstructing the full state of a dynamical system from partial observations. However, the classical theorem assumes that the underlying system is deterministic and that observations are noise-free, limiting its applicability in real-world scenarios. Motivated by these limitations, we formulate a measure-theoretic generalization that adopts an Eulerian description of the dynamics and recasts the embedding as a pushforward map between spaces of probability measures. Our mathematical results leverage recent advances in optimal transport. Building on the proposed measure-theoretic time-delay embedding theory, we develop a computational procedure that aims to reconstruct the full state of a dynamical system from time-lagged partial observations, engineered with robustness to handle sparse and noisy data. We evaluate our measure-based approach across several numerical examples, ranging from the classic Lorenz-63 system to real-world applications such as NOAA sea surface temperature reconstruction and ERA5 wind field reconstruction.
 ```
 
-## candidate-02 [dyn-matching] — UNCONSUMED
+## candidate-02 [dyn-matching] — ANNOTATED as 1907.08260 (B2 pass 24 → annotations/1907.08260.md)
 
 **Title:** A geometric approach to the transport of discontinuous densities
 
@@ -39,7 +39,8 @@ The celebrated Takens' embedding theorem provides a theoretical foundation for r
 Different observations of a relation between inputs ("sources") and outputs ("targets") are often reported in terms of histograms (discretizations of the source and the target densities). Transporting these densities to each other provides insight regarding the underlying relation. In (forward) uncertainty quantification, one typically studies how the distribution of inputs to a system affects the distribution of the system responses. Here, we focus on the identification of the system (the transport map) itself, once the input and output distributions are determined, and suggest a modification of current practice by including data from what we call "an observation process". We hypothesize that there exists a smooth manifold underlying the relation; the sources and the targets are then partial observations (possibly projections) of this manifold. Knowledge of such a manifold implies knowledge of the relation, and thus of "the right" transport between source and target observations. When the source-target observations are not bijective (when the manifold is not the graph of a function over both observation spaces, either because folds over them give rise to density singularities, or because it marginalizes over several observables), recovery of the manifold is obscured. Using ideas from attractor reconstruction in dynamical systems, we demonstrate how additional information in the form of short histories of an observation process can help us recover the underlying manifold. The types of additional information employed and the relation to optimal transport based solely on density observations is illustrated and discussed, along with limitations in the recovery of the true underlying relation.
 ```
 
-## candidate-03 [dyn-matching] — UNCONSUMED
+## candidate-03 [dyn-matching] — REJECTED
+REJECT (one sentence): single-machine dynamic-OT application wrapper (CNF↔dynamic-OT link in service of scRNA-seq trajectory interpolation) — same class as the GWGAN rejection in pass 17, and superseded within this very batch by candidate-04 MIOFlow.
 
 **Title:** TrajectoryNet: A Dynamic Optimal Transport Network for Modeling Cellular Dynamics
 

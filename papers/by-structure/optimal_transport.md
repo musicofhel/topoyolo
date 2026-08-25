@@ -147,3 +147,9 @@ DTW as minimum-cost monotone correspondence assignment; (1+ε) stability bound o
 
 ### Silva, Giusti, Keogh, Batista (2018) — Pruning unpromising DTW alignments
 Exact monotone assignment with zero-error pruning inside the DP grid; lower-bound certificates bound the matching value. Complements ying-2016's (1+ε) approximation. Full annotation: `annotations/silva-2018.md` (B2 pass 13).
+
+### B2 batch-004: Dynamics×Matching bridges (2026-08-25)
+
+**Botvinick-Greenhouse, Oprea, Maulik & Yang (2024) — Measure-Theoretic Time-Delay Embedding**: arXiv: 2409.08768. Delay embedding as pushforward between probability-measure spaces (Eulerian dynamics); OT machinery supplies the coupling; robustness to sparse/noisy data. Machines: matching, stability. Full annotation: `annotations/2409.08768.md` (B2 pass 24). **See also**: `by-domain/dynamical_systems.md`.
+
+**Moosmüller, Dietrich & Kevrekidis (2019) — Transport of Discontinuous Densities**: arXiv: 1907.08260. Attractor-reconstruction side information (short histories) disambiguates non-bijective transport-map identification. Machines: matching, stability (weak). Full annotation: `annotations/1907.08260.md` (B2 pass 24). **See also**: `by-domain/dynamical_systems.md`.
