@@ -54,7 +54,7 @@ REJECT (one sentence): single-machine dynamic-OT application wrapper (CNF↔dyna
 It is increasingly common to encounter data from dynamic processes captured by static cross-sectional measurements over time, particularly in biomedical settings. Recent attempts to model individual trajectories from this data use optimal transport to create pairwise matchings between time points. However, these methods cannot model continuous dynamics and non-linear paths that entities can take in these systems. To address this issue, we establish a link between continuous normalizing flows and dynamic optimal transport, that allows us to model the expected paths of points over time. Continuous normalizing flows are generally under constrained, as they are allowed to take an arbitrary path from the source to the target distribution. We present TrajectoryNet, which controls the continuous paths taken between distributions to produce dynamic optimal transport. We show how this is particularly applicable for studying cellular dynamics in data from single-cell RNA sequencing (scRNA-seq) technologies, and that TrajectoryNet improves upon recently proposed static optimal transport-based models that can be used for interpolating cellular distributions.
 ```
 
-## candidate-04 [dyn-matching] — UNCONSUMED
+## candidate-04 [dyn-matching] — ANNOTATED as 2206.14928 (B2 pass 25 → annotations/2206.14928.md)
 
 **Title:** Manifold Interpolating Optimal-Transport Flows for Trajectory Inference
 
@@ -68,7 +68,7 @@ It is increasingly common to encounter data from dynamic processes captured by s
 We present a method called Manifold Interpolating Optimal-Transport Flow (MIOFlow) that learns stochastic, continuous population dynamics from static snapshot samples taken at sporadic timepoints. MIOFlow combines dynamic models, manifold learning, and optimal transport by training neural ordinary differential equations (Neural ODE) to interpolate between static population snapshots as penalized by optimal transport with manifold ground distance. Further, we ensure that the flow follows the geometry by operating in the latent space of an autoencoder that we call a geodesic autoencoder (GAE). In GAE the latent space distance between points is regularized to match a novel multiscale geodesic distance on the data manifold that we define. We show that this method is superior to normalizing flows, Schrödinger bridges and other generative models that are designed to flow from noise to data in terms of interpolating between populations. Theoretically, we link these trajectories with dynamic optimal transport. We evaluate our method on simulated data with bifurcations and merges, as well as scRNA-seq data from embryoid body differentiation, and acute myeloid leukemia treatment.
 ```
 
-## candidate-05 [stoch-thermo] — UNCONSUMED
+## candidate-05 [stoch-thermo] — ANNOTATED as 2103.00503 (B2 pass 25 → annotations/2103.00503.md; new by-domain/statistical_physics.md opened)
 
 **Title:** Geometrical aspects of entropy production in stochastic thermodynamics based on Wasserstein distance
 
