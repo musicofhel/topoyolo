@@ -630,3 +630,18 @@ Full annotation: `annotations/1305.1742.md` (B2 pass 47). Abstract-only provenan
 **Machines**: matching (function-fit replaces neighbor retrieval), joint-vs-marginal excess (synchronization as composite-only structure), null hypothesis (lower wrong-alternative rate vs CCM on benchmarks).
 Full annotation: `annotations/2410.23499.md` (B2 pass 53). Abstract-only provenance — depth-limited.
 **See also**: `annotations/1601.00716.md`, `by-structure/composite_systems.md`
+
+**Zhang, Mirallès, Rousseau-Rizzi, Zinflou, Wu & Boulet (2025) — MXMap**: arXiv: 2502.03802. Multivariate extension of Partial Cross Mapping: multiPCM runs the conditioning test for indirect links inside multivariate delay embeddings, and MXMap wraps it in a two-phase causal-graph workflow — pairwise CCM to over-generate edges, then per-edge pruning against the mediation null; validated on simulated systems and ERA5 reanalysis.
+**Machines**: matching (multivariate library cross mapping), joint-vs-marginal excess (direct-vs-indirect as conditioned-vs-marginal mapping quality), null hypothesis (per-edge "fully mediated" pruning test).
+Full annotation: `annotations/2502.03802.md` (B2 pass 54). Abstract-only provenance — depth-limited.
+**See also**: `annotations/2410.23499.md`, `by-structure/optimal_transport.md`
+
+**Barraquand, Picoche, Detto & Hartig (2019) — GC vs CCM on ecological networks**: arXiv: 1909.00731. Empirical null over the method-selection heuristic itself: across predator–prey cycles, chaotic/stochastic competition, and 10–20-species networks there is no correspondence between dynamics nonlinearity and whether linear Granger or CCM performs better — the folklore "nonlinearity ⇒ use CCM" rule fails its own null test, and linear MAR(p) Granger is declared valid for nonlinear ecological networks.
+**Machines**: null hypothesis (core — wrong-alternative study of a method-choice rule rather than of either method).
+Full annotation: `annotations/1909.00731.md` (B2 pass 54). Abstract-only provenance — depth-limited.
+**See also**: `annotations/1601.00716.md`, `by-structure/phase_transitions.md` (null-surrogate section)
+
+**Glad & Woolf (2021) — Path-signature area causal discovery**: arXiv: 2110.12288. Signed areas of path signatures as a model-free coupling statistic: the antisymmetric degree-2 iterated integral of two series' increments, maximized over time shifts to locate lag/lead relationships, with confidence sequences giving anytime-valid significance — rough-path algebra imported onto the CCM shelf alongside Granger/CCM/PCMCI.
+**Machines**: matching (pairing over the lag axis), stability (anytime-valid confidence certificates converging with sample length), null hypothesis (no-directed-coupling boundary crossing).
+Full annotation: `annotations/2110.12288.md` (B2 pass 54). Abstract-only provenance — depth-limited.
+**See also**: `annotations/2502.03802.md`, `by-structure/optimal_transport.md`

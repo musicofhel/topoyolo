@@ -154,6 +154,10 @@ Null hypothesis: Power/limits study of CCM — wrong-alternative firing quantifi
 Stability: Verdicts unstable under process noise, attractor drift, and reconstruction quality — perturbation directions unmeasurable in natural systems.
 Full annotation: `annotations/1601.00716.md` (arXiv: 1601.00716).
 
+### Barraquand, Picoche, Detto & Hartig (2019) --- GC vs CCM on ecological networks (arXiv: 1909.00731)
+Null hypothesis: Wrong-alternative study of the method-selection heuristic rather than of either method — across predator–prey, chaotic/stochastic competition, and 10–20-species networks there is no correspondence between dynamics nonlinearity and whether linear Granger or CCM wins; the "nonlinearity ⇒ use CCM" rule fails its own null test.
+Full annotation: `annotations/1909.00731.md` (arXiv: 1909.00731).
+
 ## Reinforcement Learning
 
 ### Dabney, Rowland, Bellemare, Munos (2018) — QR-DQN

@@ -1,5 +1,7 @@
 # Queue batch-010 — arXiv foraging export, 2026-08-25
 
+**CLOSED (pass 54): 9/9 annotated** (sheaf 4/4 passes 52–53; ccm 5/5 passes 52–54).
+
 Seventh foraged batch (abstract-only provenance). Two groups:
 **sheaf** — cellular sheaf theory as the chain-complex machine's modern working
 form (foundational SNNs, predictive-coding cohomology — a Hodge/neuro bridge,
@@ -97,7 +99,7 @@ Causal discovery with time series data remains a challenging yet increasingly im
 Infectious diseases are notorious for their complex dynamics, which make it difficult to fit models to test hypotheses. Methods based on state-space reconstruction have been proposed to infer causal interactions in noisy, nonlinear dynamical systems. These "model-free" methods are collectively known as convergent cross-mapping (CCM). Although CCM has theoretical support, natural systems routinely violate its assumptions. To identify the practical limits of causal inference under CCM, we simulated the dynamics of two pathogen strains with varying interaction strengths. The original method of CCM is extremely sensitive to periodic fluctuations, inferring interactions between independent strains that oscillate with similar frequencies. This sensitivity vanishes with alternative criteria for inferring causality. However, CCM remains sensitive to high levels of process noise and changes to the deterministic attractor. This sensitivity is problematic because it remains challenging to gauge noise and dynamical changes in natural systems, including the quality of reconstructed attractors that underlie cross-mapping. We illustrate these challenges by analyzing time series of reportable childhood infections in New York City and Chicago during the pre-vaccine era. We comment on the statistical and conceptual challenges that currently limit the use of state-space reconstruction in causal inference.
 ```
 
-## candidate-07 [ccm] — UNCONSUMED
+## candidate-07 [ccm] — ANNOTATED as 2502.03802
 
 **Title:** MXMap: A Multivariate Cross Mapping Framework for Causal Discovery in Dynamical Systems
 
@@ -111,7 +113,7 @@ Infectious diseases are notorious for their complex dynamics, which make it diff
 Convergent Cross Mapping (CCM) is a powerful method for detecting causality in coupled nonlinear dynamical systems, providing a model-free approach to capture dynamic causal interactions. Partial Cross Mapping (PCM) was introduced as an extension of CCM to address indirect causality in three-variable systems by comparing cross-mapping quality between direct cause-effect mapping and indirect mapping through an intermediate conditioning variable. However, PCM remains limited to univariate delay embeddings in its cross-mapping processes. In this work, we extend PCM to the multivariate setting, introducing multiPCM, which leverages multivariate embeddings to more effectively distinguish indirect causal relationships. We further propose a multivariate cross-mapping framework (MXMap) for causal discovery in dynamical systems. This two-phase framework combines (1) pairwise CCM tests to establish an initial causal graph and (2) multiPCM to refine the graph by pruning indirect causal connections. Through experiments on simulated data and the ERA5 Reanalysis weather dataset, we demonstrate the effectiveness of MXMap. Additionally, MXMap is compared against several baseline methods, showing advantages in accuracy and causal graph refinement.
 ```
 
-## candidate-08 [ccm] — UNCONSUMED
+## candidate-08 [ccm] — ANNOTATED as 1909.00731
 
 **Title:** Inferring species interactions using Granger causality and convergent cross mapping
 
@@ -125,7 +127,7 @@ Convergent Cross Mapping (CCM) is a powerful method for detecting causality in c
 Identifying directed interactions between species from time series of their population densities has many uses in ecology. This key statistical task is equivalent to causal time series inference, which connects to the Granger causality (GC) concept: x causes y if x improves the prediction of y in a dynamic model. However, the entangled nature of nonlinear ecological systems has led to question the appropriateness of Granger causality, especially in its classical linear Multivariate AutoRegressive (MAR) model form. Convergent-cross mapping (CCM), a nonparametric method developed for deterministic dynamical systems, has been suggested as an alternative. Here, we show that linear GC and CCM are able to uncover interactions with surprisingly similar performance, for predator-prey cycles, 2-species deterministic (chaotic) or stochastic competition, as well as 10- and 20-species interaction networks. There is no correspondence between the degree of nonlinearity of the dynamics and which method performs best. Our results therefore imply that Granger causality, even in its linear MAR(p) formulation, is a valid method for inferring interactions in nonlinear ecological networks; using GC or CCM (or both) can instead be decided based on the aims and specifics of the analysis.
 ```
 
-## candidate-09 [ccm] — UNCONSUMED
+## candidate-09 [ccm] — ANNOTATED as 2110.12288
 
 **Title:** Path Signature Area-Based Causal Discovery in Coupled Time Series
 
