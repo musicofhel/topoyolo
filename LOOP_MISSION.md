@@ -137,8 +137,12 @@ skill, dual-index filing, glossary/atlas updates, matrix regen via A4's tool.
   candidate-19 → silva-2018; pass-13 rejections 02/06/07/09/10/11/15/16/17/20
   (zero machines / off-mission / DTW-as-tool). **batch-002 started (pass 14:
   candidates 01–03 REJECTED — geometric-dl application wrappers, zero
-  machines); 37 queued.** Also pass 14: fixed 5 wrong-pointer crossrefs in
-  by-structure/optimal_transport.md; README/docs counts patched to derived 77.
+  machines). Pass 15 (slice-6): candidate-04 REJECTED (GNN text-class
+  wrapper), candidate-07 REJECTED (Mézard-Mora duplicate — already annotated
+  as 0803.3061), candidate-09 REJECTED (Hodge-Aware CL duplicate, already in
+  tda.md), candidate-10 ANNOTATED → TPCC `annotations/2303.16716.md`;
+  batch-002 now 7/40 consumed, 33 queued.** Also pass 14: fixed 5 wrong-pointer
+  crossrefs in by-structure/optimal_transport.md; counts now at derived 78.
   Lint --check 0 errors.]
   Consume queue batches.** Repeatable task — each pass takes ≤3
   papers from the oldest unconsumed batch. Prioritize (from Wave-10 state):

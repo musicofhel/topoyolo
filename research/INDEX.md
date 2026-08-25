@@ -3,7 +3,7 @@
 **Branch:** `loop/atlas-structure-v1` (never pushed; Aaron reviews/merges)
 **Lint:** `python3 scripts/check_structure.py --check` → **0 errors**, 25
 warnings (gen_stats domain-alias notes — pre-existing debt class).
-Derived truth: **77 fully annotated papers**.
+Derived truth: **78 fully annotated papers**.
 
 ## Task status
 - A1 structure lint tool — **done 2026-08-24 (e6d03df)**
@@ -11,22 +11,24 @@ Derived truth: **77 fully annotated papers**.
 - A3 per-paper annotation files — **done 2026-08-24**. Carried debt: ~51 full
   annotations live as prose blocks in by-domain/by-structure index files;
   B2 promotes-on-encounter. Wrong-pointer instances in
-  `by-structure/optimal_transport.md` FIXED pass 14 (5 repointed to their own
-  annotation files); prose-block debt itself remains.
+  `by-structure/optimal_transport.md` FIXED pass 14; prose-block debt remains.
 - A4 stats from data — **done 2026-08-24 (a49e738+db97bca)**. Thin cells:
-  Dynamics×Matching (=4), QEC×JointMarg (=2) → B2 targets. README/docs count
-  drift fixed pass 14 (77 / 20 cells ≥10, min cell 2).
+  Dynamics×Matching (=4), QEC×JointMarg (=2) → B2 targets. Counts at derived
+  78 / 20 cells ≥10, min cell 2 (re-patched pass 15).
 - A5 loose-file adjudication — **done 2026-08-24 (61fee02)**.
 - A6 SEPARATRIX review — **done 2026-08-24** (accept-directionally, gates G1–G3).
 - **Phase A COMPLETE. Phase B UNLOCKED.**
 - B1 ingestion contract — **done 2026-08-24 (6ebfcf2)**.
-- B2 consume queue batches — **in_progress: slices 1–5 done.**
-  batch-001 FULLY CONSUMED 21/21 (8 annotated, 13 rejected). **batch-002
-  STARTED pass 14: candidates 01–03 REJECTED (geometric-dl wrappers, zero
-  machines); 37 of 40 queued.** Lint --check 0 errors.
+- B2 consume queue batches — **in_progress: slices 1–6 done.**
+  batch-001 FULLY CONSUMED 21/21 (8 annotated, 13 rejected). batch-002:
+  7/40 consumed — candidates 01–04 REJECTED (geometric-dl wrappers),
+  07 & 09 REJECTED (duplicates of existing annotations), **10 ANNOTATED →
+  TPCC `annotations/2303.16716.md` (pass 15)**; 33 queued. Next: candidate-05,
+  then hodge/spin-glass tranche (11, 12). Lint --check 0 errors.
 - B3 atlas synthesis touch-ups — open (after ~15 new papers).
 
 ## Reports (newest first)
+- [2026-08-25-0244](2026-08-25-0244.md) — Pass 15 / B2 slice-6: TPCC annotated (2303.16716); candidates 04/07/09 rejected (wrapper + two duplicates already in corpus); counts 77→78.
 - [2026-08-25-0235](2026-08-25-0235.md) — Pass 14 / B2 slice-5: batch-002 opened, candidates 01–03 rejected; 5 blahut-class wrong-pointers fixed; README/docs counts patched to 77; Dynamics×Matching still thin at 4.
 - [2026-08-25-0221](2026-08-25-0221.md) — Pass 13 / B2 slice-4: batch-001 emptied (21/21); fresh annotations ying-2016, liu-2025, brusch-2023, silva-2018; 10 triage-rejections; Dynamics×Matching strengthened.
 - [2026-08-25-0205](2026-08-25-0205.md) — Pass 12 / B2 slice-3: candidates 08, 04, 05 promoted from hidden prose (Fasoli pcbi.1013995, GC-STCL wang-2024, Simpson simpson-2013); content conserved; lint to 0 warnings.
