@@ -157,8 +157,13 @@ skill, dual-index filing, glossary/atlas updates, matrix regen via A4's tool.
   01+02 were both already prose blocks in the indices (queue dedup checked only
   annotations/) → promote-on-encounter: migrated verbatim to
   annotations/2510.22002.md + annotations/10.3390-electronics9050823.md,
-  crossrefs repointed, counts to derived 80. Next: batch-003 candidates 03–05
-  [filtration-ph].** Also pass 14: fixed 5 wrong-pointer
+  crossrefs repointed, counts to derived 80. **Pass 20/slice-11: candidate-04
+  also a prose block (by-domain/tda.md) → promote-on-encounter to
+  annotations/10.1007-s00521-024-10787-x.md (dedup-gap fix adopted and
+  confirmed); candidates 03 REJECTED (CHIRPS, zero machines — filter artifact),
+  05 REJECTED (TopP-S, one-machine PH-descriptor wrapper); counts to derived
+  81; Dynamics×Matching unchanged at 5. Next: batch-003 candidate-06
+  [filtration-ph], then transport group.]** Also pass 14: fixed 5 wrong-pointer
   crossrefs in by-structure/optimal_transport.md; counts now at derived 78.
   Lint --check 0 errors.]
   Consume queue batches.** Repeatable task — each pass takes ≤3

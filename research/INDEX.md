@@ -3,32 +3,36 @@
 **Branch:** `loop/atlas-structure-v1` (never pushed; Aaron reviews/merges)
 **Lint:** `python3 scripts/check_structure.py --check` → **0 errors**, 27
 warnings (gen_stats domain-alias + unrecognized-domain notes — pre-existing debt class).
-Derived truth: **80 fully annotated papers**.
+Derived truth: **81 fully annotated papers**.
 
 ## Task status
 - A1 structure lint tool — **done 2026-08-24 (e6d03df)**
 - A2 cross-ref/link debt paydown — **done 2026-08-24 (6f10501+b673c24)**
-- A3 per-paper annotation files — **done 2026-08-24**. Carried debt: ~49 full
+- A3 per-paper annotation files — **done 2026-08-24**. Carried debt: ~48 full
   annotations still live as prose blocks in by-domain/by-structure index files;
-  B2 promotes-on-encounter (2 more promoted pass 19).
+  B2 promotes-on-encounter (3 promoted so far, latest pass 20).
 - A4 stats from data — **done 2026-08-24 (a49e738+db97bca)**. Counts at derived
-  80 / 20 cells ≥10, min cell 2.
+  81 / 20 cells ≥10, min cell 2.
 - A5 loose-file adjudication — **done 2026-08-24 (61fee02)**.
 - A6 SEPARATRIX review — **done 2026-08-24** (accept-directionally, gates G1–G3).
 - **Phase A COMPLETE. Phase B UNLOCKED.**
-- B1 ingestion contract — **done 2026-08-24 (6ebfcf2)**. Orchestrator dedup
-  widened? NOT yet — batch-003 candidates 01+02 slipped through as prose-block
-  duplicates; title-grep should also cover by-domain/by-structure files.
-- B2 consume queue batches — **in_progress: slices 1–10 done.** batch-001 FULLY
+- B1 ingestion contract — **done 2026-08-24 (6ebfc2)**. Orchestrator dedup
+  widened (adopted pass 19/20): queue dedup + triage must grep by-domain/
+  by-structure prose too — candidate-04 was a third prose-block duplicate,
+  caught this pass.
+- B2 consume queue batches — **in_progress: slices 1–11 done.** batch-001 FULLY
   CONSUMED 21/21 (8 annotated, 13 rejected). batch-002: 18/40 consumed, then
   **HALT adopted early — remaining 22 HELD-by-orchestrator** (not rejected;
-  may return under machines-first re-triage). **batch-003 started (pass 19):
-  candidates 01+02 promote-on-encounter → `annotations/2510.22002.md` +
-  `annotations/10.3390-electronics9050823.md`; counts 78→80.** Next:
-  candidates 03–05 [filtration-ph]. Lint --check 0 errors.
+  may return under machines-first re-triage). **batch-003: candidates 01+02+04
+  promote-on-encounter (all three were hidden prose blocks; 04 →
+  `annotations/10.1007-s00521-024-10787-x.md`, counts 80→81); 03+05 REJECTED
+  (CHIRPS zero machines; TopP-S one-machine PH-descriptor wrapper).**
+  Dynamics×Matching still 5. Next: candidate-06 [filtration-ph], then
+  transport group (6). Lint --check 0 errors.
 - B3 atlas synthesis touch-ups — open (after ~15 new papers).
 
 ## Reports (newest first)
+- [2026-08-25-0335](2026-08-25-0335.md) — Pass 20 / B2 slice-11: batch-003 filtration-ph group consumed — candidate-04 promote-on-encounter (N-BEATS+TDA finance paper, third hidden-prose duplicate found via adopted dedup fix), candidates 03+05 rejected; counts to 81; Dynamics×Matching unchanged at 5.
 - [2026-08-25-0313](2026-08-25-0313.md) — Pass 19 / B2 slice-10: batch-003 opens; dyn-matching pair were already prose-block annotations → promoted verbatim (2510.22002 Koopman guide, Zhou electronics-823); counts to 80; batch-002 formally HELD-by-orchestrator; queue dedup gap flagged.
 - [2026-08-25-0307](2026-08-25-0307.md) — Pass 18 / B2 slice-9: all-reject pass — candidates 16 (zero-machine alg-geom), 17 (SNGP one-machine), 18 (Dean SSRN draft) rejected; batch-002 at 18/40, atlas-general tranche 6/6 rejects; halt-criterion proposed for candidates 19–21.
 - [2026-08-25-0258](2026-08-25-0258.md) — Pass 17 / B2 slice-8: three triage-rejections in atlas-general tranche open (13 KMM Fano zero machines, 14 Osher–Sethian numerics, 15 Barandes one-machine); batch-002 at 15/40; previews of 16–18 recorded for slice-9; orchestrator flagged on tranche quality.
