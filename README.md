@@ -6,7 +6,7 @@ Persistent homology, quantum error correction, dynamical systems, neural coding,
 
 The goal is not synthesis or unification. It is *differentiation* — in the Deleuzian sense. The same abstract machine is actualized differently in each domain. By cataloguing the repetitions and the genuine divergences, we make visible the plane that connects them.
 
-`5 domains · 6 machines · 89 fully annotated papers · 30 cells, min cell 2 · 21 cells ≥ 10`
+`5 domains · 6 machines · 90 fully annotated papers · 30 cells, min cell 2 · 21 cells ≥ 10`
 
 ---
 

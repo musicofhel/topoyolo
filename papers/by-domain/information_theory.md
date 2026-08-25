@@ -1083,6 +1083,7 @@ Full annotation: `annotations/blahut-arimoto-1972.md` (Wave 8).
 
 ### Baudot, Tapia, Bennequin & Goaillard (2019) — Topological Information Data Analysis
 arXiv: 1907.04242. k-multivariate MI I_k defined as co-chains on simplicial complex Δ([n]) of random variables. I_2 = coboundary of H (δH = I_2). Negative I_k = synergy (Borromean links). Information landscape tracks I_k across all faces. Shuffling null. Bethe free energy as alternating sum over simplicial faces. Application: unsupervised cell-type classification.
+- **Battiston et al. (2020)** — "Networks beyond pairwise interactions." Physics Reports 874 survey: simplicial-complex chain apparatus (boundary operators, higher-order Laplacians, Betti numbers) plus max-ent/random generative nulls for higher-order structure. Full annotation: `annotations/10.1016-j.physrep.2020.05.004.md`. Machines: chain complex, null hypothesis, parameterized homology (weak).
 **Machines**: chain complex, joint-vs-marginal, null hypothesis, parameterized homology, stability.
 Full annotation: `annotations/blahut-arimoto-1972.md` (Wave 10a).
 **See also**: `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/composite_systems.md`, `by-structure/phase_transitions.md`, `papers/cross_domain_bridges.md`

@@ -218,3 +218,6 @@ arXiv: 2008.00711. Directed boundary operators on oriented simplices of pre-orde
 
 ### Grande & Schaub (2023) — Topological Point Cloud Clustering
 arXiv: 2303.16716. Simplicial complex from kNN graph over the point cloud; clustering reads the full set of Hodge Laplacians L_k = B_{k+1} B_{k+1}^T + B_k^T B_k rather than only the graph Laplacian L_0 = B_1 B_1^T. Points are assigned to the homology class (component / cycle / cavity) they contribute to. Full annotation: `annotations/2303.16716.md` (pass 15, batch-002).
+
+### Battiston et al. (2020) — Networks Beyond Pairwise Interactions
+Physics Reports 874 survey: incidence/boundary matrices, simplicial homology, higher-order Laplacians as the graded chain apparatus of higher-order networks; random hypergraph ensembles as nulls. Full annotation: `annotations/10.1016-j.physrep.2020.05.004.md` (DOI: 10.1016/j.physrep.2020.05.004).

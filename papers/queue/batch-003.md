@@ -2120,7 +2120,7 @@ Ecological networks such as plant–pollinator systems and food webs vary in spa
 TL;DR: It is clarified how this approach can be used by experimental ecologists to detect non‐random patterns with null models that not only rewire, but also redistribute interaction strengths by allowing fluctuations in the enforced constraints.
 ```
 
-## candidate-27 [chain-complex] — UNCONSUMED
+## candidate-27 [chain-complex] — ANNOTATED as 10.1016-j.physrep.2020.05.004 (new full-depth annotation; Battiston et al. Physics Reports survey, higher-order networks; machines chain complex + null hypothesis + parameterized homology (weak)); filed in dynamical_systems + information_theory domains and boundary_operators + composite_systems structures, pass 23)
 
 **Title:** 1 s2.0 S0370157320302489 main
 
