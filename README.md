@@ -2,11 +2,11 @@
 
 *A cartography of shared algebraic structure across six disciplines that independently discovered the same six abstract machines.*
 
-Persistent homology, quantum error correction, dynamical systems, neural coding, information theory — these fields use different vocabularies to describe the same algebraic objects. This repo collects annotated papers (112 full annotations), maps the repetitions, and makes the synonyms explicit. It also maps the divergences — where the analogy breaks, which is equally informative.
+Persistent homology, quantum error correction, dynamical systems, neural coding, information theory — these fields use different vocabularies to describe the same algebraic objects. This repo collects annotated papers (115 full annotations), maps the repetitions, and makes the synonyms explicit. It also maps the divergences — where the analogy breaks, which is equally informative.
 
 The goal is not synthesis or unification. It is *differentiation* — in the Deleuzian sense. The same abstract machine is actualized differently in each domain. By cataloguing the repetitions and the genuine divergences, we make visible the plane that connects them.
 
-`6 domains · 6 machines · 112 fully annotated papers · 36 cells, min cell 2 · 23 cells ≥ 10`
+`6 domains · 6 machines · 115 fully annotated papers · 36 cells, min cell 2 · 27 cells ≥ 10`
 
 ---
 

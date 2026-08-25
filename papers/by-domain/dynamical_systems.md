@@ -441,3 +441,10 @@ Full annotation: `annotations/1907.08260.md` (B2 pass 24). Abstract-only provena
 **Machines**: matching, stability (weak).
 Full annotation: `annotations/2206.14928.md` (B2 pass 25). Abstract-only provenance — depth-limited.
 **See also**: `by-structure/optimal_transport.md`, `annotations/2409.08768.md`, `annotations/1907.08260.md`
+
+### B2 batch-005: capacity as spatial order-disorder predictor (2026-08-25)
+
+**Ashikaga & Asgari-Targhi (2017) — Locating Order-Disorder Phase Transition in a Cardiac System**: arXiv: 1708.03990. Channel capacity / MI / transfer entropy computed as a spatially-resolved invariant field over the components of a driven cardiac system; wavebreak sites initiating fibrillation are the loci where the invariant changes character — order parameter located by information profile, not by topology. Closes the batch-005 channel-capacity group on the applied-dynamics side.
+**Machines**: parameterized homology, null hypothesis, stability (weak).
+Full annotation: `annotations/1708.03990.md` (B2 pass 32). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/neuroscience.md`, `by-structure/phase_transitions.md`

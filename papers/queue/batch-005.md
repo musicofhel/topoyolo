@@ -95,7 +95,7 @@ The coherent superposition of quantum states is an important resource for quantu
 In most studies of the channel capacity of quantum channels, it is assumed that the errors in each use of the channel are independent. However, recent work has begun to investigate the effects of memory or correlations in the error. This work has led to speculation that interesting non-analytic behaviour may occur in the capacity. Motivated by these observations, we connect the study of channel capacities under correlated error to the study of critical behaviour in many-body physics. This connection enables us the techniques of many-body physics to either completely solve or understand qualitatively a number of interesting models of correlated error. The models can display analogous behaviour to associated many-body systems, including 'phase transitions'.
 ```
 
-## candidate-07 [channel-capacity] — UNCONSUMED
+## candidate-07 [channel-capacity] — ANNOTATED as 1708.03990 (pass 32)
 
 **Title:** Locating Order-Disorder Phase Transition in a Cardiac System
 
@@ -109,7 +109,7 @@ In most studies of the channel capacity of quantum channels, it is assumed that 
 To prevent sudden cardiac death, predicting where in the cardiac system an order-disorder phase transition into ventricular fibrillation begins is as important as when it begins. We present a computationally efficient, information-theoretic approach to predicting the locations of wavebreaks that initiate fibrillation in a cardiac system where the order-disorder behavior is controlled by a single driving component, mimicking electrical misfiring from the pulmonary veins or the Purkinje fibers. Communication analysis between the driving component and each component of the system reveals that channel capacity, mutual information and transfer entropy can locate the wavebreaks. This approach is applicable to interventional therapies to prevent sudden death, as well as to a wide range of systems to mitigate or prevent imminent phase transitions.
 ```
 
-## candidate-08 [ph-stability] — UNCONSUMED
+## candidate-08 [ph-stability] — ANNOTATED as 1205.3669 (pass 32)
 
 **Title:** Categorification of persistent homology
 
@@ -123,7 +123,7 @@ To prevent sudden cardiac death, predicting where in the cardiac system an order
 We redevelop persistent homology (topological persistence) from a categorical point of view. The main objects of study are diagrams, indexed by the poset of real numbers, in some target category. The set of such diagrams has an interleaving distance, which we show generalizes the previously-studied bottleneck distance. To illustrate the utility of this approach, we greatly generalize previous stability results for persistence, extended persistence, and kernel, image and cokernel persistence. We give a natural construction of a category of interleavings of these diagrams, and show that if the target category is abelian, so is this category of interleavings.
 ```
 
-## candidate-09 [ph-stability] — UNCONSUMED
+## candidate-09 [ph-stability] — ANNOTATED as 2201.06650 (pass 32)
 
 **Title:** Galois Connections in Persistent Homology
 

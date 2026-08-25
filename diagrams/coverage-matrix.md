@@ -7,11 +7,11 @@ Updated: 2026-08-25 (derived by scripts/gen_stats.py from papers/annotations/)
 ```
                 ChainCmplx    ParamHom    Matching   Stability   JointMarg     NullHyp
 ──────────────────────────────────────────────────────────────────────────────────────
-TDA                   *30*        *31*        *22*        *33*           9        *18*
+TDA                   *30*        *33*        *24*        *35*           9        *18*
 QEC                   *12*        *11*           7        *15*           3        *12*
-Dynamics              *13*        *20*           8        *20*        *10*        *16*
-Neuro                 *18*        *22*           5        *15*        *16*        *24*
-InfoTheo              *11*        *29*        *18*        *25*        *32*        *42*
+Dynamics              *13*        *21*           8        *21*        *10*        *17*
+Neuro                 *18*        *23*           5        *16*        *16*        *25*
+InfoTheo              *11*        *30*        *18*        *26*        *32*        *43*
 StatPhys                 2           8           9        *10*           9        *14*
 ```
 
@@ -26,11 +26,11 @@ block-beta
 
   space:1 CC["ChainCmplx"] PH["ParamHom"] MA["Matching"] ST["Stability"] JM["JointMarg"] NH["NullHyp"]
 
-  TDA["TDA"] TDA_CC["30"] TDA_PH["31"] TDA_MA["22"] TDA_ST["33"] TDA_JM["9"] TDA_NH["18"]
+  TDA["TDA"] TDA_CC["30"] TDA_PH["33"] TDA_MA["24"] TDA_ST["35"] TDA_JM["9"] TDA_NH["18"]
   QEC["QEC"] QEC_CC["12"] QEC_PH["11"] QEC_MA["7"] QEC_ST["15"] QEC_JM["3"] QEC_NH["12"]
-  DYN["Dynamics"] DYN_CC["13"] DYN_PH["20"] DYN_MA["8"] DYN_ST["20"] DYN_JM["10"] DYN_NH["16"]
-  NEU["Neuro"] NEU_CC["18"] NEU_PH["22"] NEU_MA["5"] NEU_ST["15"] NEU_JM["16"] NEU_NH["24"]
-  IT["InfoTheo"] IT_CC["11"] IT_PH["29"] IT_MA["18"] IT_ST["25"] IT_JM["32"] IT_NH["42"]
+  DYN["Dynamics"] DYN_CC["13"] DYN_PH["21"] DYN_MA["8"] DYN_ST["21"] DYN_JM["10"] DYN_NH["17"]
+  NEU["Neuro"] NEU_CC["18"] NEU_PH["23"] NEU_MA["5"] NEU_ST["16"] NEU_JM["16"] NEU_NH["25"]
+  IT["InfoTheo"] IT_CC["11"] IT_PH["30"] IT_MA["18"] IT_ST["26"] IT_JM["32"] IT_NH["43"]
   SP["StatPhys"] SP_CC["2"] SP_PH["8"] SP_MA["9"] SP_ST["10"] SP_JM["9"] SP_NH["14"]
   style TDA_CC fill:#9f9,stroke:#333
   style TDA_PH fill:#9f9,stroke:#333
@@ -73,4 +73,4 @@ fails if these numbers drift from the claims in README.md / docs/index.html.
 
 ## Coverage Status
 
-112 fully annotated papers. 27 of 36 cells ≥10 (deep); min cell = 2.
+115 fully annotated papers. 27 of 36 cells ≥10 (deep); min cell = 2.

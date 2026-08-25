@@ -281,3 +281,9 @@ Channel-agnostic shared encoder + MPNN fusion for EEG sleep staging; cross-chann
 **Machines**: joint-vs-marginal, null hypothesis, matching (weak).
 Full annotation: `annotations/brusch-2023.md` (B2 pass 13).
 **See also**: `by-domain/information_theory.md`, `by-structure/composite_systems.md`
+
+### Ashikaga & Asgari-Targhi (2017) — Locating Order-Disorder Phase Transition in a Cardiac System
+Channel capacity, mutual information and transfer entropy between a single driving component and each tissue component locate the wavebreaks that initiate ventricular fibrillation — an information-theoretic invariant profile whose spatial structure predicts where an order-disorder transition nucleates; interventional target selection.
+**Machines**: parameterized homology, null hypothesis, stability (weak).
+Full annotation: `annotations/1708.03990.md` (B2 pass 32). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/dynamical_systems.md`, `by-structure/phase_transitions.md`

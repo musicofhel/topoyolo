@@ -62,6 +62,12 @@ Parameter: Vietoris-Rips scale epsilon. Invariant: persistence barcode (birth-de
 ### Peek, Pritam, Skerritt, Chalup (2025) --- TE + Directed PH in Spiking Systems
 Parameter: inverted transfer entropy (strongest information transfer first). Invariant: directed Betti curves beta_d(epsilon), AUBC scalars, persistence diagrams. Higher-dimensional features (d=2,3) discriminate task complexity. Wasserstein distances between PDs recover graded task space geometry. Full annotation: `annotations/2508.19048.md` (arXiv: 2508.19048).
 
+### Bubenik & Scott (2012) --- Categorification of Persistent Homology
+Parameter: the poset index itself — persistence modules as diagrams (ℝ, ≤) → target category; any such diagram IS a parameterized homology object, detaching PH from simplicial complexes entirely. Invariant: interleaving distance, proven to generalize the bottleneck distance; stability for extended/kernel/image/cokernel persistence falls out categorically. Full annotation: `annotations/1205.3669.md` (B2 pass 32), `by-domain/tda.md`.
+
+### Gulen & McCleary (2022) --- Galois Connections in Persistent Homology
+PH re-expressed via Galois connections between posets: interleavings, matchings and multiparameter persistence diagrams as instances of one adjoint-pair formalism; Rota's theorem gives a substantially easier bottleneck-stability proof. Full annotation: `annotations/2201.06650.md` (B2 pass 32), `by-domain/tda.md`.
+
 ## QEC
 
 ### Oreshkov (2013) — Continuous-time quantum error correction

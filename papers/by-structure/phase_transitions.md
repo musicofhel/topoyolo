@@ -319,3 +319,11 @@ DOI: s41468-022-00089-3. Stability: DMT metric is stable — bounded by interlea
 **Kabashima, Murayama & Saad (1999)** — arXiv: cond-mat/9908104. Typical-case performance of Gallager-type codes across sparse-matrix-density families: capacity-saturating vs sub-capacity classes; TAP ≡ BP decoding identity. Full annotation: `annotations/cond-mat-9908104.md` (B2 pass 31). **See also**: `by-domain/statistical_physics.md`.
 
 **Kelly, Poschinger, Schmidt-Kaler, Fisher & Marino (2022)** — arXiv: 2210.11547. Coherence-tuned phase transition in entanglement and quantum channel capacity under adversarial measurement pressure; coherence bounds stabilizer code distance. Full annotation: `annotations/2210.11547.md` (B2 pass 31). **See also**: `by-domain/qec.md`.
+
+**Ashikaga & Asgari-Targhi (2017)** — arXiv: 1708.03990. Channel capacity / MI / transfer entropy as a spatially-resolved invariant field over a driven cardiac system; wavebreak sites initiating ventricular fibrillation are the loci of invariant character change — order parameter located by information profile. Closes the channel-capacity group 7/7. Full annotation: `annotations/1708.03990.md` (B2 pass 32). **See also**: `by-domain/dynamical_systems.md`, `by-domain/neuroscience.md`.
+
+### B2 batch-005: ph-stability foundations (2026-08-25)
+
+**Bubenik & Scott (2012)** — arXiv: 1205.3669. Persistence modules as diagrams indexed by (ℝ, ≤) in an arbitrary target category; interleaving distance generalizes bottleneck distance and stability theorems are greatly generalized; category of interleavings is abelian when the target is. Stability as categorical property rather than per-construction inequality. Full annotation: `annotations/1205.3669.md` (B2 pass 32). **See also**: `by-domain/tda.md`, `by-structure/filtrations.md`.
+
+**Gulen & McCleary (2022)** — arXiv: 2201.06650. Galois connections unify interleavings and matchings; Rota's theorem yields an easier proof of bottleneck stability; multiparameter persistence notions related. Second, order-theoretic route to the stability guarantee. Full annotation: `annotations/2201.06650.md` (B2 pass 32). **See also**: `by-domain/tda.md`, `by-structure/filtrations.md`, `by-structure/optimal_transport.md`.
