@@ -1,12 +1,22 @@
 # research/INDEX.md — pass reports + task status (newest first)
 
 **Lint state:** check_structure.py exit 0; 1 warning = pre-existing baseline
-(2 author-year-prose crossrefs); `--check` 0 errors. Derived corpus: **137
-fully annotated papers** (+3 pass 42), **36 cells (6 machines × 6 domains)**,
+(2 author-year-prose crossrefs); `--check` 0 errors. Derived corpus: **140
+fully annotated papers** (+3 pass 43), **36 cells (6 machines × 6 domains)**,
 min cell 2, 28 cells ≥10. Domain-alias table landed in gen_stats.py (pass 27);
-ML→InfoTheo and OT→TDA mappings await Aaron's ratification.
+ML→InfoTheo and OT→TDA mappings await Aaron's ratification. Standing policy
+(pass 43, sanctioned): README/docs count patches land in the SAME commit as
+the gen_stats regen.
 
 ## Reports
+- `2026-08-25-0813.md` — Pass 43: B2 — **batch-007 CLOSED 12/12**: null-surrogate
+  candidates 10–12 all ANNOTATED: 10 Guarin et al 1101.6063 (band-phase randomized
+  surrogates — partially-destructive null for non-stationarity); 11 Donges et al
+  1211.1162 (surrogate-free visibility-graph irreversibility; origin of the
+  e27040402 Third-Pass entry); 12 Small/Judd/Stemler 1306.4064 (surrogates for
+  networks — explicit authorial cross-domain bridge). Counts to derived 140;
+  README/docs patched same commit. B3 flag: batch-008 reservoir-gs candidate-01
+  pairs with 2409.08768.
 - `2026-08-25-0808.md` — Pass 42: B2 — batch-007 null-surrogate slice 3/3 all
   ANNOTATED: 07 Timmer nlin/0009032 (surrogate-null epistemics anchor);
   08 Timmer chao-dyn/9807039 (power vs non-stationarity); 09 Palus
@@ -47,12 +57,12 @@ ML→InfoTheo and OT→TDA mappings await Aaron's ratification.
 ## Task status (LOOP_MISSION.md ledger is canonical)
 - **A1–A6:** all [done].
 - **B1 ingestion contract:** [done] (6ebfcf2).
-- **B2 queue consumption:** [in_progress] — batch-007 open: qec-mwpm CLOSED
-  6/6 (passes 40–41); null-surrogate 3/6 done (pass 42: candidates 07–09);
-  candidates 10–12 remain (next default slice closes batch-007). Residual
-  Wave-era catch-all pointer debt (~100, ≤5/pass sanctioned).
+- **B2 queue consumption:** [in_progress] — batch-007 CLOSED 12/12 (passes
+  40–43). Next default slice opens batch-008: reservoir-gs candidates 01–03
+  (candidate-01 is a flagged B3 bridge pair with 2409.08768); kuramoto
+  transition theory group follows. Residual Wave-era catch-all pointer debt
+  (~100, ≤5/pass sanctioned).
 - **B3 atlas synthesis:** [in_progress] — sub-slices 1–4 done (passes 33, 34,
-  37, 38); queued hooks exhausted. Open hook: null-surrogate triangle
-  (Theiler/Palus/Timmer) once batch-007 closes. Orchestrator alternative:
-  two-parameter refinement under PARAMETERIZED_HOMOLOGY; may alternate with
-  batch-007 slices at pass judgment. Batch-008 foraging in progress.
+  37, 38). Open hooks: null-surrogate triangle (Theiler/Palus/Timmer + the new
+  surrogate-free/network branches) now that batch-007 closed; reservoir-gs ↔
+  2409.08768 bridge pair when batch-008 reaches it.
