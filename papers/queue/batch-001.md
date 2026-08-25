@@ -619,7 +619,7 @@ Meanwhile, Soleymani et al. [
 
 ---
 
-## candidate-08 [neuroscience] — UNCONSUMED
+## candidate-08 [neuroscience] — ANNOTATED as 10.1371-journal.pcbi.1013995 (pass 12): Fasoli et al. whole-cortex attractor model; prose promoted from cross_domain_bridges.md
 
 **Title:** journal.pcbi.1013995
 

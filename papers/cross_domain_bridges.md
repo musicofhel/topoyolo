@@ -12,38 +12,8 @@ DOI: 10.1371/journal.pcbi.1013995 | PLoS Computational Biology 22(2)
 
 **Domains bridged**: Neuroscience + Dynamical systems
 
-**Domain(s)**: Computational neuroscience, dynamical systems theory
+Full annotation promoted to `annotations/10.1371-journal.pcbi.1013995.md` (B2 pass 12, content conserved). Machines: parameterized homology, stability, null hypothesis, joint-vs-marginal.
 
-**Abstract machines instantiated**:
-- **Parameterized homology**: The model's attractor landscape is parameterized by inter-hemispheric connectivity strength. As this parameter is varied (decreased or increased from real anatomical values), the number of attractors changes — fewer attractors emerge, and their ability to predict empirical co-activation patterns (CAPs) degrades. This is a bifurcation diagram: a parameterized family of dynamical systems whose invariants (number and type of attractors: stationary vs. oscillatory) change at critical parameter values. The attractor count IS the topological invariant being tracked.
-- **Stability**: The model parameters are fitted only to static fMRI properties (mean, variance, covariance on the timescale of minutes), yet the model predicts rich frame-by-frame dynamics on the timescale of seconds. This is a stability result: the dynamical structure (attractor topology) is robust — it emerges from the fitted static properties without being explicitly optimized for. The attractors recapitulate empirical CAPs, meaning the topological organization of the attractor landscape is stable under the perturbation of going from fitted static constraints to emergent dynamics.
-- **Null hypothesis**: Neglecting fiber directionality (replacing directed anatomical connectivity with undirected) serves as the structural null. This null severely reduces the number of attractors and their explanatory power for CAPs. The gap between directed and undirected connectivity models quantifies the contribution of directionality to the dynamical repertoire — a structure-removal null.
-- **Joint-vs-marginal excess**: The model reveals that CAPs are not independent patterns but emerge from the joint interaction of excitatory-inhibitory populations across cortical regions via directed connectivity. The attractor structure is absent from any individual region's dynamics and emerges only from the coupled system — genuine composite structure.
-
-**What is genuinely new (not reducible to shared abstraction)**:
-- The key finding is that a model fitted only to static correlations spontaneously generates the correct dynamic repertoire (CAPs). This means the attractor topology is fully determined by the static statistical structure — a striking constraint that has no direct analogue in TDA (where persistence diagrams require explicit scale parameterization) or QEC (where dynamic error correction requires explicit decoder design).
-- Directionality of anatomical connectivity is essential: undirected connectivity produces far fewer attractors. This shows that the boundary operator's orientation matters — not just whether connections exist, but their direction. Analogous to the difference between chain complexes over Z (which track orientation) vs. Z/2 (which do not).
-- The excitatory-inhibitory balance within regions creates the nonlinearity needed for multiple attractors. Without this balance (e.g., purely excitatory networks), the system has only one attractor. This is a domain-specific mechanism with no direct analogue in TDA or information theory.
-
-**Connections the authors acknowledge**: Cite dynamical systems theory (bifurcation, attractor landscapes) and computational neuroscience (CAPs, resting-state fMRI). Explicitly note the connection between attractor dynamics and neural manifold geometry. Do NOT cite TDA, QEC, or information theory — the bridge to dynamical systems is acknowledged, but not to other Rosetta domains.
-
-**Vocabulary mapping**:
-| Paper term | Rosetta term |
-|---|---|
-| Attractor (stationary/oscillatory) | Topological invariant (fixed point/limit cycle) |
-| Co-activation pattern (CAP) | Empirical signature of an attractor basin |
-| Inter-hemispheric connectivity strength | Parameterization variable |
-| Number of attractors | Betti-like count (topological complexity of the landscape) |
-| Directed anatomical connectivity | Oriented boundary operator (chain complex over Z) |
-| Undirected connectivity null | Chain complex over Z/2 (orientation removed) |
-| Excitatory-inhibitory balance | Nonlinearity enabling multiple invariants |
-| Static fMRI properties | Constraints that determine the filtration |
-| Frame-by-frame dynamics | Emergent trajectory in the parameterized space |
-| Allen mouse brain atlas | Ground-truth chain complex (the anatomical wiring) |
-
-**Rosetta significance**: This paper demonstrates that attractor topology (dynamical systems) predicts neural activity patterns (neuroscience) and that the topological complexity depends on the oriented structure of the connectivity graph. The analogy to chain complexes over Z vs. Z/2 is structural and deep: directed vs. undirected connectivity is exactly the difference between tracking orientation or not in homology. The paper does not make this connection.
-
----
 
 ## Niroomand & Wales (2023)
 **"Physics-Inspired Interpretability of Machine Learning Models"**

@@ -252,3 +252,9 @@ Frontiers in Systems Neuroscience, DOI: fnsys.2016.00085. Extends Petri et al. 2
 **Machines**: chain complex, parameterized homology.
 Full annotation: `annotations/tort-2010.md` (Wave 10c).
 **See also**: `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/filtrations.md`
+
+### Fasoli, Coletta, Gutierrez-Barragan, Gini, Gozzi, Panzeri (2026) — Attractor Dynamics of a Whole-Cortex Network Model
+PLoS Comput Biol 22(2), DOI: 10.1371/journal.pcbi.1013995. Whole-cortex network fitted only to static fMRI statistics (mean/variance/covariance) spontaneously reproduces empirical co-activation patterns; attractor count tracks inter-hemispheric connectivity strength as a bifurcation parameter. Directed-vs-undirected connectivity null = orientation-tracking chain complex over Z vs Z/2.
+**Machines**: parameterized homology, stability, null hypothesis, joint-vs-marginal.
+Full annotation: `annotations/10.1371-journal.pcbi.1013995.md` (B2 pass 12).
+**See also**: `by-domain/dynamical_systems.md`, `by-structure/phase_transitions.md`

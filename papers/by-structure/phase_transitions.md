@@ -156,7 +156,7 @@ Stability takes three flavors across domains:
 - **Daw & Pender (2021)** — Poisson process (activity duration = 0) as null. `second_pass.md` SP-09.
 - **Bandt (2020)** — Brownian motion as null for financial order patterns. `second_pass.md` SP-13.
 - **Simpson et al. (2013)** — Erdős-Rényi, configuration model, lattice as brain network nulls. `second_pass.md` SP-15.
-- **Fasoli et al. (2026)** — Undirected connectivity as structural null (removes directionality). `cross_domain_bridges.md`.
+- **Fasoli et al. (2026)** — Undirected connectivity as structural null (removes directionality). Full annotation: `annotations/10.1371-journal.pcbi.1013995.md`.
 
 ## Neuroscience
 

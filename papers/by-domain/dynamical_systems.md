@@ -459,3 +459,9 @@ arXiv: 1904.03757. Cohomological Conley index from weak index pairs on cubical c
 **Machines**: chain complex, parameterized homology, stability.
 Full annotation: `annotations/10.1017-S0140525X01000097.md` (Wave 10b).
 **See also**: `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/filtrations.md`, `by-structure/phase_transitions.md`
+
+### Fasoli, Coletta, Gutierrez-Barragan, Gini, Gozzi, Panzeri (2026) — Attractor Dynamics of a Whole-Cortex Network Model
+PLoS Comput Biol 22(2), DOI: 10.1371/journal.pcbi.1013995. Attractor landscape of a spiking whole-cortex model as a parameterized family over inter-hemispheric connectivity; attractor count is the tracked invariant. Static-fit → emergent-dynamics stability result; undirected-connectivity structural null.
+**Machines**: parameterized homology, stability, null hypothesis, joint-vs-marginal.
+Full annotation: `annotations/10.1371-journal.pcbi.1013995.md` (B2 pass 12).
+**See also**: `by-domain/neuroscience.md`, `by-structure/phase_transitions.md`
