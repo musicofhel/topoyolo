@@ -8,10 +8,10 @@ Updated: 2026-08-25 (derived by scripts/gen_stats.py from papers/annotations/)
                 ChainCmplx    ParamHom    Matching   Stability   JointMarg     NullHyp
 ──────────────────────────────────────────────────────────────────────────────────────
 TDA                   *33*        *40*        *34*        *46*           9        *23*
-QEC                   *13*        *11*        *14*        *19*           5        *14*
+QEC                   *14*        *11*        *14*        *19*           6        *14*
 Dynamics              *13*        *21*        *15*        *35*        *13*        *27*
 Neuro                 *18*        *23*           6        *16*        *17*        *26*
-InfoTheo              *14*        *30*        *21*        *27*        *36*        *43*
+InfoTheo              *16*        *30*        *22*        *27*        *38*        *43*
 StatPhys                 2           9        *10*        *14*        *12*        *14*
 ```
 
@@ -27,10 +27,10 @@ block-beta
   space:1 CC["ChainCmplx"] PH["ParamHom"] MA["Matching"] ST["Stability"] JM["JointMarg"] NH["NullHyp"]
 
   TDA["TDA"] TDA_CC["33"] TDA_PH["40"] TDA_MA["34"] TDA_ST["46"] TDA_JM["9"] TDA_NH["23"]
-  QEC["QEC"] QEC_CC["13"] QEC_PH["11"] QEC_MA["14"] QEC_ST["19"] QEC_JM["5"] QEC_NH["14"]
+  QEC["QEC"] QEC_CC["14"] QEC_PH["11"] QEC_MA["14"] QEC_ST["19"] QEC_JM["6"] QEC_NH["14"]
   DYN["Dynamics"] DYN_CC["13"] DYN_PH["21"] DYN_MA["15"] DYN_ST["35"] DYN_JM["13"] DYN_NH["27"]
   NEU["Neuro"] NEU_CC["18"] NEU_PH["23"] NEU_MA["6"] NEU_ST["16"] NEU_JM["17"] NEU_NH["26"]
-  IT["InfoTheo"] IT_CC["14"] IT_PH["30"] IT_MA["21"] IT_ST["27"] IT_JM["36"] IT_NH["43"]
+  IT["InfoTheo"] IT_CC["16"] IT_PH["30"] IT_MA["22"] IT_ST["27"] IT_JM["38"] IT_NH["43"]
   SP["StatPhys"] SP_CC["2"] SP_PH["9"] SP_MA["10"] SP_ST["14"] SP_JM["12"] SP_NH["14"]
   style TDA_CC fill:#9f9,stroke:#333
   style TDA_PH fill:#9f9,stroke:#333
@@ -77,4 +77,4 @@ fails if these numbers drift from the claims in README.md / docs/index.html.
 
 ## Coverage Status
 
-154 fully annotated papers. 31 of 36 cells ≥10 (deep); min cell = 2.
+156 fully annotated papers. 31 of 36 cells ≥10 (deep); min cell = 2.

@@ -252,3 +252,11 @@ arXiv: 1202.5602. Empirical O(n²) average time per correction round for exact M
 **Machines**: matching (core), stability.
 Full annotation: `annotations/1202.5602.md` (B2 pass 41). Abstract-only provenance — depth-limited.
 
+
+## B2 batch-009 — pid-theory × fault tolerance (2026-08-25)
+
+### Milzman (2024) — Redundancy from a source failure perspective
+arXiv: 2404.01470. Defines I_ft on the presupposition that redundant information is exactly what survives individual source failures; an order-reversing correspondence links collections of source-fallible instantiations to the Williams-Beer PID lattice, and I_ft satisfies the common PID axioms. First corpus bridge from axiomatic redundancy to engineering fault tolerance — generic component failures, QEC-adjacent rather than stabilizer-specific (cf. 1903.05124's MIPT-as-QEC).
+**Machines**: chain complex (dual graded posets), boundary operators, joint-vs-marginal excess.
+Full annotation: `annotations/2404.01470.md` (B2 pass 49). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/information_theory.md`, `by-structure/boundary_operators.md`.

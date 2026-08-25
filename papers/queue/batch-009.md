@@ -55,7 +55,7 @@ The conventional approach to the general Partial Information Decomposition (PID)
 We offer a new approach to the information decomposition problem in information theory: given a 'target' random variable co-distributed with multiple 'source' variables, how can we decompose the mutual information into a sum of non-negative terms that quantify the contributions of each random variable, not only individually but also in combination? We derive our composition from cooperative game theory. It can be seen as assigning a "fair share" of the mutual information to each combination of the source variables. Our decomposition is based on a different lattice from the usual 'partial information decomposition' (PID) approach, and as a consequence our decomposition has a smaller number of terms: it has analogs of the synergy and unique information terms, but lacks terms corresponding to redundancy. Because of this, it is able to obey equivalents of the axioms known as 'local positivity' and 'identity', which cannot be simultaneously satisfied by a PID measure.
 ```
 
-## candidate-04 [pid-theory] — UNCONSUMED
+## candidate-04 [pid-theory] — ANNOTATED as 2404.01470 (pass 49)
 
 **Title:** Measuring the Redundancy of Information from a Source Failure Perspective
 
@@ -69,7 +69,7 @@ We offer a new approach to the information decomposition problem in information 
 In this paper, we define a new measure of the redundancy of information from a fault tolerance perspective. The partial information decomposition (PID) emerged last decade as a framework for decomposing the multi-source mutual information I(T;X_1,...,X_n) into atoms of redundant, synergistic, and unique information. It built upon the notion of redundancy/synergy from McGill's interaction information (McGill 1954). Separately, the redundancy of system components has served as a principle of fault tolerant engineering, for sensing, routing, and control applications. Here, redundancy is understood as the level of duplication necessary for the fault tolerant performance of a system. With these two perspectives in mind, we propose a new PID-based measure of redundancy I_ft, based upon the presupposition that redundant information is robust to individual source failures. We demonstrate that this new measure satisfies the common PID axioms from (Williams 2010). In order to do so, we establish an order-reversing correspondence between collections of source-fallible instantiations of a system, on the one hand, and the PID lattice from (Williams 2010), on the other.
 ```
 
-## candidate-05 [pid-theory] — UNCONSUMED
+## candidate-05 [pid-theory] — ANNOTATED as 1303.3440 (pass 49)
 
 **Title:** Towards a Synergy-based Approach to Measuring Information Modification
 
