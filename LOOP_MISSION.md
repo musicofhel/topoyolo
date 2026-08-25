@@ -147,9 +147,12 @@ skill, dual-index filing, glossary/atlas updates, matrix regen via A4's tool.
   (Cheeger refinement duplicate of Jost & Zhang 2302.01069), 12 REJECTED
   (cavity-as-tool), 13 REJECTED (KMM Fano, zero machines), 14 REJECTED
   (Osher–Sethian level-set numerics <2 machines), 15 REJECTED (Barandes
-  stochastic-quantum: one machine only); batch-002 now 15/40 consumed,
-  25 queued. Next tranche: candidates 16+ [atlas-general — weak start,
-  see pass-17 report].** Also pass 14: fixed 5 wrong-pointer
+  stochastic-quantum: one machine only); batch-002 now 18/40 consumed
+  (pass 18/slice-9: candidates 16 REJECTED — Seshadri constants, zero machines;
+  17 REJECTED — SNGP, one-machine Stability-only, OOD is separatrix-class per A6;
+  18 REJECTED — Dean BSM info-geometry single-author draft); atlas-general
+  tranche running 6/6 rejects; 22 queued. Next: candidates 19–21; consider
+  halting batch-002 if that slice also all-rejects.** Also pass 14: fixed 5 wrong-pointer
   crossrefs in by-structure/optimal_transport.md; counts now at derived 78.
   Lint --check 0 errors.]
   Consume queue batches.** Repeatable task — each pass takes ≤3
