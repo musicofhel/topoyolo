@@ -131,7 +131,7 @@ skill, dual-index filing, glossary/atlas updates, matrix regen via A4's tool.
     blocks in by-domain/by-structure index files** (em-dash headers evade the
     lint). Promote to per-paper files; extend lint to fail on the class.
     B2 passes promote-on-encounter until then.
-- **B2 [in_progress: batch-005 CLOSED 12/12 (pass 33) — channel-capacity 7/7, ph-stability 5/5 (10 Perez 2012.02634, 11 Broomhead-Pirashvili 2506.02999, 12 Carlsson 2004.00738 annotated pass 33). No unconsumed queue remains; awaiting orchestrator batch-006 drop. See history below for batches 001–004.]** History: batch-001 21/21, batch-002 18/40 (22 HELD-by-orchestrator),
+- **B2 [in_progress: batch-006 opened (pass 35) — gw-theory core 3/8 consumed (01 Weitkamp 2006.12287, 02 Mémoli–Needham 2212.14123, 03 Lim–Mémoli 2201.09385); candidates 04–08 remain. batch-005 CLOSED 12/12 (pass 33). See history below for batches 001–004.]** History: batch-001 21/21, batch-002 18/40 (22 HELD-by-orchestrator),
   **batch-003 28/28 FULLY CONSUMED (pass 23)** — (8 annotated, 13 rejected): pass-13 added
   candidate-18 → ying-2016, candidate-12 → liu-2025, candidate-03 → brusch-2023,
   candidate-19 → silva-2018; pass-13 rejections 02/06/07/09/10/11/15/16/17/20

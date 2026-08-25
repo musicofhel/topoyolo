@@ -1,12 +1,16 @@
 # research/INDEX.md — pass reports + task status (newest first)
 
 **Lint state:** check_structure.py exit 0; 1 warning = pre-existing baseline
-(2 author-year-prose crossrefs); `--check` 0 errors. Derived corpus: **118
+(2 author-year-prose crossrefs); `--check` 0 errors. Derived corpus: **121
 fully annotated papers**, **36 cells (6 machines × 6 domains)**, min cell 2,
 27 cells ≥10. Domain-alias table landed in gen_stats.py (pass 27); ML→InfoTheo
 and OT→TDA mappings await Aaron's ratification.
 
 ## Reports
+- `2026-08-25-0726.md` — Pass 35: B2 slice-35 — batch-006 opened 3/8
+  (gw-theory core: 2006.12287 trimmed-GW asymptotic inference;
+  2212.14123 GW=GM on non-atomic mm-spaces; 2201.09385 generalized cMDS +
+  non-flatness invariant + GW-stability). Counts to derived 121.
 - `2026-08-25-0723.md` — Pass 34: B3 sub-slice 2 — thermodynamic-instantiation
   subsections on optimal_transport.md (matching=dissipation, equality) +
   composite_systems.md (joint-vs-marginal priced in work, inequality:
@@ -35,14 +39,16 @@ and OT→TDA mappings await Aaron's ratification.
 ## Task status (LOOP_MISSION.md ledger is canonical)
 - **A1–A6:** all [done].
 - **B1 ingestion contract:** [done] (6ebfcf2).
-- **B2 queue consumption:** [in_progress] — batches 001–005 all consumed
-  (21; 18 with 22 HELD; 28; 17; **12 — batch-005 CLOSED pass 33**). Queue is
-  EMPTY; orchestrator foraging batch-006. Residual Wave-era catch-all
-  pointer debt (~103, ≤5/pass sanctioned).
-- **B3 atlas synthesis:** [in_progress] — trigger met (+45 new annotations
+- **B2 queue consumption:** [in_progress] — batches 001–004 fully consumed
+  (21; 18 with 22 HELD; 28; 17); batch-005 CLOSED 12/12 (pass 33);
+  **batch-006 opened pass 35: gw-theory core 3/8** (04–08 remain:
+  Reeb-graph-GW stability, then 05–07 + neuro-pid candidate-08).
+  Residual Wave-era catch-all pointer debt (~103, ≤5/pass sanctioned).
+- **B3 atlas synthesis:** [in_progress] — trigger met (+48 new annotations
   since Wave-10). Sub-slice 1 (pass 33): ANTISYNONYMS sharpening of the
   Matching↔Stability duality. Sub-slice 2 (pass 34): thermodynamic-instantiation
   sections on optimal_transport.md + composite_systems.md — equality vs
-  inequality duality articulated. Next: OT-as-proof-technology inbound to
-  statphys; cond-mat/9908104 as ldpc-bp ancestor lineage note. One atlas file
-  per pass max.
+  inequality duality articulated. Next hooks: OT-as-proof-technology inbound to
+  statphys; cond-mat/9908104 as ldpc-bp ancestor lineage note; new from
+  batch-006: Monge-vs-Kantorovich internal split (Mémoli–Needham) as a
+  Matching-machine atlas note. One atlas file per pass max.
