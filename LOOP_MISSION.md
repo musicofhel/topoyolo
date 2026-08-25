@@ -187,7 +187,12 @@ skill, dual-index filing, glossary/atlas updates, matrix regen via A4's tool.
   2409.08768 (measure-theoretic Takens: delay embedding as pushforward between measure spaces, OT machinery) + 02 ANNOTATED as
   1907.08260 (reverse direction: attractor-reconstruction histories disambiguate OT map identification); 03 TrajectoryNet REJECTED
   (one-machine dynamic-OT wrapper, superseded by MIOFlow candidate-04). Dynamics×Matching 5→7; counts at derived 92. Abstract-only
-  provenance — both entries depth-limited.]** Also pass 14: fixed 5 wrong-pointer
+  provenance — both entries depth-limited.] **Pass 25 (slice-24): dyn-matching CLOSED 4/4 + stoch-thermo opened —
+  04 MIOFlow ANNOTATED as 2206.14928 (neural-ODE flow realizing dynamic-OT coupling; geodesic autoencoder couples learned latent metric to the OT ground cost; matching + stability weak);
+  NEW DOMAIN by-domain/statistical_physics.md opened for the stoch-thermo group;
+  05 Nakazato-Ito ANNOTATED as 2103.00503 (entropy production ≥ L2-Wasserstein path length; thermodynamic speed limits; matching-as-dissipation semantic divergence flagged);
+  07 Ito-Oizumi-Amari ANNOTATED as 1810.09545 (additivity violation of partial EP = stochastic interaction/IIT — joint-vs-marginal excess in dissipation units; Neuroscience↔StatPhys bridge).
+  Counts at derived 95. Lint 0 errors, crossref debt back to baseline 2. Abstract-only provenance — all depth-limited.]** Also pass 14: fixed 5 wrong-pointer
   crossrefs in by-structure/optimal_transport.md; counts now at derived 78.
   Lint --check 0 errors.]
   Consume queue batches.** Repeatable task — each pass takes ≤3
