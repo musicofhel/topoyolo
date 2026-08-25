@@ -225,3 +225,7 @@ Physics Reports 874 survey: incidence/boundary matrices, simplicial homology, hi
 ### B2 batch-007: boundary sensitivity of tailored codes (2026-08-25)
 
 **Higgott, Bohdanowicz, Kubica, Flammia & Campbell (2022)** — arXiv: 2203.04948. Fragile boundaries: boundary tailoring that raises threshold near it becomes a resource liability well below threshold — boundary-operator modification's effect on code cost flips sign across the noise regime. Full annotation: `annotations/2203.04948.md` (B2 pass 40). **See also**: `by-domain/qec.md`, `by-structure/phase_transitions.md`.
+
+### B2 batch-009: pid-theory — combinatorial incarnation deepened (2026-08-25)
+
+**Williams & Beer (2010)**: arXiv: 1004.2515. Origin of the combinatorial chain-complex incarnation (#4): sources organized into an antichain poset ordered by subset-superset relations; partial information atoms recovered from cumulative I_min by Möbius inversion over that lattice — graded poset + inversion formula, the same skeleton homology uses. Full annotation: `annotations/1004.2515.md` (B2 pass 48). **See also**: `by-domain/information_theory.md`, `by-structure/composite_systems.md`.

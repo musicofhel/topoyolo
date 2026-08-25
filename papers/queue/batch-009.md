@@ -13,7 +13,7 @@ Consume per papers/INGESTION.md (<=3 papers/pass; triage-reject with one sentenc
 
 ---
 
-## candidate-01 [pid-theory] — UNCONSUMED
+## candidate-01 [pid-theory] — ANNOTATED as 1004.2515 (pass 48; founding lattice; no prior per-paper file despite heavy prose references — fresh annotation, not promote-on-encounter)
 
 **Title:** Nonnegative Decomposition of Multivariate Information
 
@@ -27,7 +27,7 @@ Consume per papers/INGESTION.md (<=3 papers/pass; triage-reject with one sentenc
 Of the various attempts to generalize information theory to multiple variables, the most widely utilized, interaction information, suffers from the problem that it is sometimes negative. Here we reconsider from first principles the general structure of the information that a set of sources provides about a given variable. We begin with a new definition of redundancy as the minimum information that any source provides about each possible outcome of the variable, averaged over all possible outcomes. We then show how this measure of redundancy induces a lattice over sets of sources that clarifies the general structure of multivariate information. Finally, we use this redundancy lattice to propose a definition of partial information atoms that exhaustively decompose the Shannon information in a multivariate system in terms of the redundancy between synergies of subsets of the sources. Unlike interaction information, the atoms of our partial information decomposition are never negative and always support a clear interpretation as informational quantities. Our analysis also demonstrates how the negativity of interaction information can be explained by its confounding of redundancy and synergy.
 ```
 
-## candidate-02 [pid-theory] — UNCONSUMED
+## candidate-02 [pid-theory] — ANNOTATED as 2306.00734 (pass 48)
 
 **Title:** From Babel to Boole: The Logical Organization of Information Decompositions
 
@@ -41,7 +41,7 @@ Of the various attempts to generalize information theory to multiple variables, 
 The conventional approach to the general Partial Information Decomposition (PID) problem has been redundancy-based: specifying a measure of redundant information between collections of source variables induces a PID via Moebius-Inversion over the so called redundancy lattice. Despite the prevalence of this method, there has been ongoing interest in examining the problem through the lens of different base-concepts of information, such as synergy, unique information, or union information. Yet, a comprehensive understanding of the logical organization of these different based-concepts and their associated PIDs remains elusive. In this work, we apply the mereological formulation of PID that we introduced in a recent paper to shed light on this problem. Within the mereological approach base-concepts can be expressed in terms of conditions phrased in formal logic on the specific parthood relations between the PID components and the different mutual information terms. We set forth a general pattern of these logical conditions of which all PID base-concepts in the literature are special cases and that also reveals novel base-concepts, in particular a concept we call "vulnerable information".
 ```
 
-## candidate-03 [pid-theory] — UNCONSUMED
+## candidate-03 [pid-theory] — ANNOTATED as 1910.05979 (pass 48)
 
 **Title:** Information Decomposition based on Cooperative Game Theory
 

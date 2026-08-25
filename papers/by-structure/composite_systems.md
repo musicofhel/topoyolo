@@ -393,3 +393,13 @@ Decoder-side joint-vs-marginal gain: an RNN beats MWPM precisely because it dete
 **Buendía (2024)**: arXiv: 2407.02416. Mesoscopic theory of stochastic coupled oscillators: the finite-N ensemble carries multiplicative fluctuations present in neither the individual oscillator nor the Ott–Antonsen thermodynamic-limit reduction — first closed expressions for the stochastic order parameter quantify exactly the composite's excess over its marginals and its N→∞ limit. Machines: joint-vs-marginal excess (core), stability (weak). Full annotation: `annotations/2407.02416.md` (B2 pass 46). **See also**: `by-domain/statistical_physics.md`.
 
 **Witthaut & Timme (2013)**: arXiv: 1305.1742. Kuramoto dynamics in Hamiltonian systems — a 2N-variable conservative system whose invariant manifolds carry exact Kuramoto dynamics as a marginal; the transverse dynamics is composite-level structure absent from the marginal, and it alone decides where synchrony sets in. Machines: joint-vs-marginal excess (core), stability (transition as transverse instability). Full annotation: `annotations/1305.1742.md` (B2 pass 47). **See also**: `by-domain/dynamical_systems.md`.
+
+### B2 batch-009: pid-theory — axiomatic core (2026-08-25)
+
+The PID programme's own founding and axiom papers, filed alongside the 8-paper prose block above.
+
+**Williams & Beer (2010)**: arXiv: 1004.2515. Founding PID: redundancy lattice over source antichains, Möbius-inverted into nonnegative atoms; synergy = top-of-lattice joint-vs-marginal excess; interaction information's negativity = redundancy/synergy confounding — the first explicit statement that naive joint-minus-marginal bookkeeping mixes two distinct structures. Machines: chain complex, joint-vs-marginal excess (core), matching (weak). Full annotation: `annotations/1004.2515.md` (B2 pass 48). **See also**: `by-domain/information_theory.md`.
+
+**Gutknecht, Makkeh & Wibral (2023)**: arXiv: 2306.00734. All PID base-concepts are special cases of one logical pattern on parthood relations; base-concept choice = which joint-vs-marginal direction is primitive. Machines: joint-vs-marginal excess (core), chain complex (meta-level). Full annotation: `annotations/2306.00734.md` (B2 pass 48). **See also**: `by-domain/information_theory.md`.
+
+**Ay, Polani & Virgo (2019)**: arXiv: 1910.05979. Game-theoretic fair-share decomposition on a second lattice: synergy/unique analogues without a redundancy node; positivity + identity jointly satisfiable only off the standard lattice. Machines: joint-vs-marginal excess (core), matching (coalition value allocation), stability (axiom feasibility). Full annotation: `annotations/1910.05979.md` (B2 pass 48). **See also**: `by-domain/information_theory.md`.

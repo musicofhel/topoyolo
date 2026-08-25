@@ -1187,3 +1187,14 @@ arXiv: 2210.11547. Unitary-vs-measurement information game between Alice and Eve
 **Machines**: parameterized homology (core), stability, null hypothesis.
 Full annotation: `annotations/2210.11547.md` (B2 pass 31). Abstract-only provenance — depth-limited.
 **See also**: `by-domain/qec.md`, `by-structure/phase_transitions.md`
+
+### B2 batch-009: pid-theory — axiomatic core (2026-08-25)
+
+**Williams & Beer (2010)**: arXiv: 1004.2515. THE founding PID paper: redundancy as minimum per-outcome information induces the antichain redundancy lattice; atoms nonnegative by construction via Möbius inversion; interaction information's negativity diagnosed as redundancy/synergy confounding. The lattice every annotated PID paper consumes as given. Machines: chain complex (core), joint-vs-marginal excess (core), matching (I_min worst-case aggregation). Full annotation: `annotations/1004.2515.md` (B2 pass 48). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/composite_systems.md`, `by-structure/boundary_operators.md`, `annotations/10.3390-e24030403.md`
+
+**Gutknecht, Makkeh & Wibral (2023)**: arXiv: 2306.00734. Mereological formulation: PID base-concepts as logical conditions on parthood relations; one general pattern of which all literature base-concepts are special cases, plus a novel one ("vulnerable information"). Choosing a base-concept = choosing which joint-vs-marginal direction is primitive. Machines: chain complex (meta-level unification), joint-vs-marginal excess (core). Full annotation: `annotations/2306.00734.md` (B2 pass 48). Abstract-only provenance — depth-limited.
+**See also**: `annotations/1004.2515.md`
+
+**Ay, Polani & Virgo (2019)**: arXiv: 1910.05979. Cooperative-game-theory decomposition: fair-share allocation of MI to source coalitions on a DIFFERENT lattice from Williams-Beer — no redundancy term, but local positivity + identity hold simultaneously, which no PID measure can achieve. The lattice is a design parameter, not a given. Machines: joint-vs-marginal excess (core), matching (value allocation), chain complex (alternative order structure), stability (axiomatic feasibility). Full annotation: `annotations/1910.05979.md` (B2 pass 48). Abstract-only provenance — depth-limited.
+**See also**: `annotations/1004.2515.md`
