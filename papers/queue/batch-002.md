@@ -8,7 +8,8 @@ Consume per papers/INGESTION.md (≤3 papers/pass; triage-reject with one senten
 
 ---
 
-## candidate-01 [geometric-dl] — UNCONSUMED
+## candidate-01 [geometric-dl] — REJECTED
+Soft-equivariance weight projection with error bounds; a vision-engineering method instantiating zero of the six machines.
 
 **Title:** Tunable Soft Equivariance with Guarantees
 
@@ -87,7 +88,8 @@ associative, has an identity element e , and every element has
 2. Related Work an i
 ```
 
-## candidate-02 [geometric-dl] — UNCONSUMED
+## candidate-02 [geometric-dl] — REJECTED
+Geometric Hawkes processes via graph-conv RNNs; Hawkes excitation is already covered and this is an application wrapper, not new machine structure.
 
 **Title:** Geometric Hawkes Processes with Graph Convolutional Recurrent Neural Networks
 
@@ -166,7 +168,8 @@ real-world datasets demonstrate the predicting performance
 process and the realization of the process consists
 ```
 
-## candidate-03 [geometric-dl] — UNCONSUMED
+## candidate-03 [geometric-dl] — REJECTED
+Allegro local-equivariant interatomic potentials; equivariant-network engineering with no matching/stability/etc. atlas object.
 
 **Title:** www.nature.com
 
