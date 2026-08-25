@@ -1995,7 +1995,7 @@ Let X be a measurable space and H k be an RKHS on X with kernel k . Let P be a
 probability measure on X . If E P k ( X, X ) < ∞
 ```
 
-## candidate-25 [null-surrogate] — UNCONSUMED
+## candidate-25 [null-surrogate] — ANNOTATED as 10.1007-s00362-020-01171-7 (promote-on-encounter: duplicate — full annotation already in historical ledger second_pass.md (SP-13) plus summary rows in dynamical_systems/composite_systems/filtrations/phase_transitions indices; block migrated verbatim to annotations/, crossrefs repointed, pass 23)
 
 **Title:** Order patterns their variation and change points in financial time series and Br
 

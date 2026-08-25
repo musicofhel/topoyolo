@@ -154,7 +154,7 @@ Stability takes three flavors across domains:
 ### Null Hypothesis
 - **Horst & Xu (2024)** — Subcritical Hawkes → Brownian motion (same limit as Poisson null). `second_pass.md` SP-08.
 - **Daw & Pender (2021)** — Poisson process (activity duration = 0) as null. `second_pass.md` SP-09.
-- **Bandt (2020)** — Brownian motion as null for financial order patterns. `second_pass.md` SP-13.
+- **Bandt (2020)** — Brownian motion as null for financial order patterns. `annotations/10.1007-s00362-020-01171-7.md`.
 - **Simpson et al. (2013)** — Erdős-Rényi, configuration model, lattice as brain network nulls. `second_pass.md` SP-15.
 - **Fasoli et al. (2026)** — Undirected connectivity as structural null (removes directionality). Full annotation: `annotations/10.1371-journal.pcbi.1013995.md` (DOI: 10.1371/journal.pcbi.1013995).
 

@@ -117,7 +117,7 @@ The parameter takes different forms across domains, but the structure is isomorp
 - **Kawaguchi et al. (2023)** — β (Lagrange multiplier) traces curve through representation space. `annotations/2305.18887.md`.
 
 ### Other
-- **Bandt (2020)** — Lag parameter d as filtration. Pattern frequencies constant for small d (scale invariance). `second_pass.md` SP-13.
+- **Bandt (2020)** — Lag parameter d as filtration. Pattern frequencies constant for small d (scale invariance). `annotations/10.1007-s00362-020-01171-7.md`.
 - **Tarnowski et al. (2019)** — Post-quench time as parameter. Vortex trajectories encode Chern number. `second_pass.md` SP-12.
 - **Gallicchio & Micheli (2020)** — GNN layer depth = scale parameter. Receptive field grows with depth like Rips filtration. `cross_domain_bridges.md`.
 - **Fasoli et al. (2026)** — Inter-hemispheric connectivity strength as bifurcation parameter. Attractor count changes at critical values. `cross_domain_bridges.md`.

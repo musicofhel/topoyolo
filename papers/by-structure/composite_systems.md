@@ -196,7 +196,7 @@ Cross-prediction from Y's shadow manifold to X tests whether the joint (coupled)
 - **Simpson et al. (2013)** — Functional connectivity = pairwise joint excess. Integration vs segregation = global vs local balance. `second_pass.md` SP-15.
 - **Fasoli et al. (2026)** — Attractor structure absent from individual regions, emerges from coupled system. `cross_domain_bridges.md`.
 - **Bennett et al. (2022)** — Lead-lag = joint predictive structure. `second_pass.md` SP-14.
-- **Bandt (2020)** — Up-down balance and turning rate as joint statistics absent from marginals. `second_pass.md` SP-13.
+- **Bandt (2020)** — Up-down balance and turning rate as joint statistics absent from marginals. `annotations/10.1007-s00362-020-01171-7.md`.
 
 ---
 
