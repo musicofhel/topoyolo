@@ -1124,3 +1124,8 @@ Full annotation: `annotations/2204.01612.md` (B2 pass 27). Abstract-only provena
 **Machines**: matching, null hypothesis (weak).
 Full annotation: `annotations/2104.13662.md` (B2 pass 27). Abstract-only provenance — depth-limited.
 **See also**: `by-structure/optimal_transport.md`, `annotations/2204.01612.md`
+
+**Yadav, Song, Shkel & Özgür (2026) — Log-likelihood loss for semantic compression**: arXiv: 2601.16461. Rate-distortion with the distortion measure itself a negative log-likelihood under a prescribed generative channel P_{X|U}: reconstruction as a semantic latent from which the source is probabilistically generated. Unifies log-loss RD, arbitrary-distortion RD, and perfect-perception RD (the Theis–Wagner marginal-agreement constraint appears as a boundary case). Closes the batch-004 rate-distortion group 4/4.
+**Machines**: matching, null hypothesis (weak).
+Full annotation: `annotations/2601.16461.md` (B2 pass 28). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/optimal_transport.md`, `annotations/2104.13662.md`

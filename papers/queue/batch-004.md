@@ -181,7 +181,7 @@ Shannon-machinery bounds paper: the conditional-independence decomposition insta
 As conventional communication systems based on classic information theory have closely approached the limits of Shannon channel capacity, semantic communication has been recognized as a key enabling technology for the further improvement of communication performance. However, it is still unsettled on how to represent semantic information and characterise the theoretical limits. In this paper, we consider a semantic source which consists of a set of correlated random variables whose joint probabilistic distribution can be described by a Bayesian network. Then we give the information-theoretic limit on the lossless compression of the semantic source and introduce a low complexity encoding method by exploiting the conditional independence. We further characterise the limits on lossy compression of the semantic source and the corresponding upper and lower bounds of the rate-distortion function. We also investigate the lossy compression of the semantic source with side information at both the encoder and decoder, and obtain the rate distortion function. We prove that the optimal code of the semantic source is the combination of the optimal codes of each conditional independent set given the side information.
 ```
 
-## candidate-13 [rate-distortion] — UNCONSUMED
+## candidate-13 [rate-distortion] — ANNOTATED as 2601.16461 (B2 pass 28 → annotations/2601.16461.md; rate-distortion group CLOSED 4/4)
 
 **Title:** Log-Likelihood Loss for Semantic Compression
 
