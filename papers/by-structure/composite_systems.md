@@ -345,3 +345,5 @@ Max-ent null models with soft constraints: marginals enforced in expectation rat
 
 ### Chaudhuri et al. (2019) — Head direction ring attractor
 DOI: 10.1038/s41593-019-0460-x. Ring (S^1) manifold is a population-level phenomenon — individual neurons show noisy tuning curves. The topology emerges only from joint activity, not from any single neuron. Pure joint-vs-marginal excess. Full annotation: `annotations/1703.00810.md` (Wave 10a).
+
+**Ito, Oizumi & Amari (2018) — Unified Framework for Entropy Production and Stochastic Interaction**: arXiv: 1810.09545. Violation of additivity of partial entropy productions = stochastic interaction (IIT): the joint-vs-marginal excess measured in dissipation units, grounding IIT thermodynamically. Machines: joint-vs-marginal (core), matching (weak), null hypothesis (implicit). Full annotation: `annotations/1810.09545.md` (B2 pass 25). Abstract-only provenance — depth-limited. **See also**: `by-domain/statistical_physics.md`.
