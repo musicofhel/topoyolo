@@ -1068,7 +1068,9 @@ The terms ‘divisible’ and ‘indivisible’ for dynamical • Without any im
 laws are remarkably new. The terminology appears to of t
 ```
 
-## candidate-16 [atlas-general] — UNCONSUMED
+## candidate-16 [atlas-general] — REJECTED
+
+Ein–Küchle–Lazarsfeld 1995 (Seshadri constants / local positivity of ample line bundles) is pure algebraic geometry with zero atlas machines — no ML, information, or algorithmic content in the extract.
 
 **Title:** Local positivity of ample line bundles
 
@@ -1199,7 +1201,9 @@ tiplicities at x. Unfortunately it does not seem to be immediate that
 one can do so. Instead, we use a gap construction to show
 ```
 
-## candidate-17 [atlas-general] — UNCONSUMED
+## candidate-17 [atlas-general] — REJECTED
+
+SNGP (Liu et al., NeurIPS 2020) instantiates only ONE machine on strict reading — the spectral-normalization Lipschitz bound is a Stability instantiation; distance-awareness/OOD detection is separatrix-class (not a machine per A6), and the GP/Laplace output layer adds no second machine.
 
 **Title:** Simple and Principled Uncertainty Estimation with Deterministic Deepn Learning v
 
@@ -1284,7 +1288,9 @@ on CIFAR-10 and CIFAR-100) and conversational intent understanding (using a BERT
 CLINC out-of-scope (OOS) intent dataset), we show that the SNGP method attains an uncerta
 ```
 
-## candidate-18 [atlas-general] — UNCONSUMED
+## candidate-18 [atlas-general] — REJECTED
+
+Dean, "BSM as the Flat Limit of Information Geometry" (SSRN 6630259, draft v0.18): single-author unpublished draft; on strict reading instantiates at most ONE machine (Stability attractor in the (ν/σ₀,ρ) phase plane) with no chain complex, matching, or surrogate/null-test machinery.
 
 **Title:** ssrn 6630259
 
