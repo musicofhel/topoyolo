@@ -1,15 +1,24 @@
 # research/INDEX.md — pass reports + task status (newest first)
 
 **Lint state:** check_structure.py exit 0; 1 warning = pre-existing baseline
-(2 author-year-prose crossrefs); `--check` 0 errors. Derived corpus: **143
-fully annotated papers** (+3 pass 44), **36 cells (6 machines × 6 domains)**,
+(2 author-year-prose crossrefs); `--check` 0 errors. Derived corpus: **146
+fully annotated papers** (+3 pass 45), **36 cells (6 machines × 6 domains)**,
 min cell 2, 29 cells ≥10. Domain-alias table landed in gen_stats.py (pass 27);
 ML→InfoTheo and OT→TDA mappings await Aaron's ratification. Standing policy
 (pass 43, sanctioned): README/docs count patches land in the SAME commit as
 the gen_stats regen.
 
 ## Reports
-- `2026-08-25-0818.md` — Pass 44: B2 — batch-008 reservoir-gs slice 3/6 all
+## Reports
+- `2026-08-25-0823.md` — Pass 45: B2 — batch-008 reservoir-gs group CLOSED 6/6:
+  candidates 04–06 all ANNOTATED: 04 Smith–Kim–Lu–Bassett 2110.08631 (abstraction
+  = continuum of attractors, zero-Lyapunov spectral certificate); 05 Röhm–Gauthier–Fischer
+  2108.04074 (unseen-attractor inference beyond training support); 06 Ahmed–Tennie–Magri
+  2506.22335 (quantum RC GS=ESP; noise-dissipation robustness). Filed dynamical_systems +
+  composite_systems (drive-response side, not OT this time). Counts to derived 146,
+  deep cells 29; README/docs patched same commit.
+- `2026-08-25-0818.md`
+ — Pass 44: B2 — batch-008 reservoir-gs slice 3/6 all
   ANNOTATED: 01 Grigoryeva–Hart–Ortega 2108.05024 (Takens AS generalized
   synchronization — flagged B3 bridge pair with 2409.08768 recorded in
   annotation + both index entries); 02 Hart 2401.00885 (conditional-Lyapunov
@@ -51,9 +60,9 @@ the gen_stats regen.
 ## Task status (LOOP_MISSION.md ledger is canonical)
 - **A1–A6:** all [done].
 - **B1 ingestion contract:** [done] (6ebfcf2).
-- **B2 queue consumption:** [in_progress] — batch-008 reservoir-gs 3/6 done
-  (pass 44); next default slice takes candidates 04–06, then kuramoto group
-  07–11. Residual Wave-era catch-all pointer debt (~100, ≤5/pass sanctioned).
+- **B2 queue consumption:** [in_progress] — batch-008 reservoir-gs CLOSED 6/6
+  (pass 45); next default slice takes kuramoto candidates 07–09, then 10–11 close
+  the batch, then the queued B3 dynamical_systems bridge-pair slice. Residual Wave-era catch-all pointer debt (~100, ≤5/pass sanctioned).
 - **B3 atlas synthesis:** [in_progress] — sub-slices 1–4 done (passes 33–38).
   Open hooks: null-surrogate triangle (batch-007 closed); reservoir-gs ↔
   2409.08768 bridge pair now DOCUMENTED in annotations/2108.05024.md +
