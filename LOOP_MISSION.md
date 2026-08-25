@@ -131,8 +131,8 @@ skill, dual-index filing, glossary/atlas updates, matrix regen via A4's tool.
     blocks in by-domain/by-structure index files** (em-dash headers evade the
     lint). Promote to per-paper files; extend lint to fail on the class.
     B2 passes promote-on-encounter until then.
-- **B2 [in_progress: slices 1–8 done —
-  **batch-001 FULLY CONSUMED 21/21** (8 annotated, 13 rejected): pass-13 added
+- **B2 [in_progress: batch-001 21/21, batch-002 18/40 (22 HELD-by-orchestrator),
+  **batch-003 28/28 FULLY CONSUMED (pass 23)** — (8 annotated, 13 rejected): pass-13 added
   candidate-18 → ying-2016, candidate-12 → liu-2025, candidate-03 → brusch-2023,
   candidate-19 → silva-2018; pass-13 rejections 02/06/07/09/10/11/15/16/17/20
   (zero machines / off-mission / DTW-as-tool). **batch-002 started (pass 14:
@@ -173,10 +173,17 @@ skill, dual-index filing, glossary/atlas updates, matrix regen via A4's tool.
   6/6 consumed — 5 were dedup artifacts (promote-on-encounter: 15 Kawaguchi from
   cross_domain_bridges ledger, 16 Kolchinsky PID-01 prose block, 17 Belghazi MINE
   prose block, 20 Wickstrøm prose block, 19 CS-IB from second_pass SP-03 ledger);
-  only 18 CCMI was genuinely new (annotated as 1906.01824). batch-003 now 20/28;
-  counts at derived 86; remaining groups: stability-bounds (21–22),
-  null-surrogate (23–26), chain-complex (27–28); check historical ledgers for
-  dedup BEFORE annotating.]** Also pass 14: fixed 5 wrong-pointer
+  only 18 CCMI was genuinely new (annotated as 1906.01824). **Pass 23
+  (slices 18–22): batch-003 FULLY CONSUMED 28/28 — stability-bounds group:
+  21+22 REJECTED (one-machine Stability-class; 22 Raginsky–Recht flagged
+  notable for re-triage); null-surrogate group: 23 REJECTED (filter artifact),
+  24 ANNOTATED → annotations/2005.06573.md (dHSIC permutation consistency,
+  machines null hypothesis + joint-vs-marginal), 25 promote-on-encounter
+  (Bandt SP-13 → annotations/10.1007-s00362-020-01171-7.md), 26 ANNOTATED →
+  annotations/10.1111-2041-210X.13985.md (max-ent soft-constraint nulls);
+  chain-complex group: 27 ANNOTATED → annotations/10.1016-j.physrep.2020.05.004.md
+  (Battiston higher-order networks survey), 28 REJECTED (PH-as-tool pruning
+  wrapper). Counts at derived 90.]** Also pass 14: fixed 5 wrong-pointer
   crossrefs in by-structure/optimal_transport.md; counts now at derived 78.
   Lint --check 0 errors.]
   Consume queue batches.** Repeatable task — each pass takes ≤3
