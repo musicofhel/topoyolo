@@ -2,7 +2,7 @@
 
 **Branch:** `loop/atlas-structure-v1` (never pushed; Aaron reviews/merges)
 **Lint:** `python3 scripts/check_structure.py --check` → exit 0, **0 errors,
-18 warnings** (pre-existing gen_stats domain-alias notes). Derived truth: 69
+19 warnings** (pre-existing gen_stats domain-alias notes). Derived truth: 70
 fully annotated papers, 19/30 cells ≥10, min cell 2.
 
 ## Task status
@@ -16,19 +16,22 @@ fully annotated papers, 19/30 cells ≥10, min cell 2.
 - A4 stats from data — **done 2026-08-24 (a49e738+db97bca)**. Thin cells:
   Dynamics×Matching, QEC×JointMarg → B2 targets.
 - A5 loose-file adjudication — **done 2026-08-24 (61fee02)**. Layout contract;
-  ledgers documented not folded; promotion-not-deletion rule lint-enforced.
+  ledgers documented not folded.
 - A6 SEPARATRIX review — **done 2026-08-24**. ACCEPT DIRECTIONALLY, gates
   G1–G3; merge is Aaron's. research/2026-08-24-2353.md.
 - **Phase A COMPLETE. Phase B UNLOCKED.**
 - B1 ingestion contract — **done 2026-08-24 (6ebfcf2)**. papers/INGESTION.md
   (queue format, ≤3/pass, triage-reject w/ one sentence); check_queue_hygiene()
-  in lint, negative-tested.
-- B2 consume queue batches — **in_progress**: slice-1 done (faf7f4f) — batch-001
-  candidate-21 promoted to `annotations/2002.00208.md` (421 words conserved),
-  dual-indexed, matrix regen (69 papers). **20 queued in batch-001.**
+  in lint, negative-tested. Note: rejection reason must sit on the line *under*
+  the header (lint-enforced).
+- B2 consume queue batches — **in_progress**: slices 1–2 done (faf7f4f, fe9443d).
+  batch-001: candidate-21 promoted as 2002.00208; candidate-13 annotated as
+  2604.08539 (G²RPO 1D-OT advantage matching); candidates 01+14 triage-rejected.
+  **18 queued in batch-001; batch-002 (40 candidates) waiting.**
 - B3 atlas synthesis touch-ups — open (after ~15 new papers).
 
 ## Reports (newest first)
+- [2026-08-25-0007](2026-08-25-0007.md) — Pass 11 / B2 slice-2: candidate-13 annotated (2604.08539, Matching+Stability), 01+14 rejected; stats 70 papers; neuroscience-tag mis-filtering noted to orchestrator.
 - [2026-08-24-2358](2026-08-24-2358.md) — Pass 10 / B1 DONE + B2 slice-1: INGESTION.md + queue-hygiene lint; candidate-21 = promotion of existing prose annotation (2002.00208); 51-block prose-annotation debt quantified.
 - [2026-08-24-2353](2026-08-24-2353.md) — Pass 9 / A6 DONE: SEPARATRIX PR #1 review; accept-directionally with three gates; gen_stats 7-column follow-up flagged.
 - [2026-08-24-2345](2026-08-24-2345.md) — Pass 8 / A5 DONE: papers/README.md layout contract + lint enforcement; new debt class found (index→annotation gap).
