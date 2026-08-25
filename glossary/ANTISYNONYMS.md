@@ -130,6 +130,19 @@ Synergy (O < 0) corresponds to H2 cavities; redundancy (O > 0) corresponds to kn
 
 Petri et al. (2014) found dramatic homological scaffold changes under psilocybin; Reimann et al. (2017) found directed simplices up to dimension 6-7 in Blue Brain. Both suggest rich higher-order structure. Chung et al. (2025, arXiv: 2503.14700) show the opposite: in HCP fMRI data (116 regions, 100 subjects), the ratio λ_k of observed to possible k-simplices drops below FDR significance after dimension 3 (λ_3 = 4.54 × 10^{-4}). Overlap probability across subjects decays exponentially: 3-simplices vanish beyond 10 subjects. The divergence has three possible explanations: (1) methodological — correlation-based networks are either too dense (masking gaps) or too sparse (destroying simplices), creating a density-void dilemma that Rips filtrations on point clouds don't face; (2) statistical — none of the prior studies controlled for multiple comparisons across C(p,k) possible k-subsets; (3) scale — Reimann uses simulated high-resolution connectivity (31K neurons), while Chung uses parcellated fMRI (116 regions). The resolution may determine whether higher-order structure is detectable. When claiming "brain networks have higher-order topology," specify: which data type, which construction, and whether it survives cross-subject replication.
 
+### Matching metric ≠ stability guarantee (the duality is proven, not definitional)
+
+The atlas pairs Matching and Stability wherever barcodes appear: the bottleneck/Wasserstein distance between diagrams IS the quantity the stability theorem bounds. Three batch-005 papers sharpen what that pairing actually is — and where it breaks.
+
+**Where it holds — and how tightly.** Bubenik & Scott (1205.3669) categorify: interleavings generalize bottleneck matchings, so stability becomes a property of the indexing category rather than a per-construction inequality. Gulen & McCleary (2201.06650) unify interleavings and matchings under one Galois-connection formalism (Rota's theorem ⇒ easier bottleneck-stability proof). Broomhead & Pirashvili (2506.02999) go furthest: for circle-valued persistence modules, the interleaving distance and the bottleneck distance are not merely comparable — they are ISOMETRIC. So within TDA's parameterized-homology setting, "Matching = Stability" is a theorem with exact content, not a loose analogy.
+
+**Why it still cannot be read across domains.** The equality lives inside one machine instantiation. Outside it, the two words diverge in kind:
+
+- **QEC**: the matching (MWPM on syndrome defects) is a *computational procedure* whose success the threshold theorem guarantees probabilistically; stability there is exponential suppression, not a metric identity. No isometry-type statement connects decoder cost to protection strength.
+- **Statistical physics**: Nakazato–Ito (2103.00503) prove entropy production ≥ L2-Wasserstein path length — the matching cost between time-marginals appears as *dissipated heat*, a lower bound on irreversibility, not a robustness certificate. Same mathematical object (an optimal-coupling cost), opposite semantic role: in TDA it measures how little the invariant moved; in stochastic thermodynamics it measures how much was necessarily burned.
+
+**The rule this forces:** when the table says "bottleneck distance" in the TDA column and something coupling-shaped elsewhere, check whether the quantity is (a) a metric on invariants bounded by a perturbation of inputs (Stability sense), (b) an assignment problem solved by an algorithm (Matching sense), or (c) a transport cost equated with physical dissipation (thermodynamic sense). TDA is currently the only domain where all three coincide exactly — which is itself the finding: the Matching↔Stability duality is a special structure of parameterized homology, not a general property of matchings or of stability.
+
 ---
 
 ## Living Document
