@@ -199,7 +199,7 @@ skill, dual-index filing, glossary/atlas updates, matrix regen via A4's tool.
   --check. gen_stats grid question answered in report: alias/6th-column follow-up should precede domain confirmation.]** **Pass 27 (orchestrator-directed
   grid/alias follow-up, 4fb71b9): statistical_physics added as 6th domain column in gen_stats (36 cells); full DOMAIN_ALIASES + KNOWN_QUALIFIERS table landed,
   unrecognized-domain warnings 28→0; parser now accepts the short `Joint-vs-marginal` bullet label and 2404.17951 got its missing Domain(s) metadata line → counts
-  at derived 99, min cell 2, 23/36 deep; README/docs/matrix repointed, lint --check 0 errors. Awaiting Aaron ratification of ML→InfoTheo and OT→TDA alias calls.]** Also pass 14: fixed 5 wrong-pointer
+  at derived 99, min cell 2, 23/36 deep; README/docs/matrix repointed, lint --check 0 errors. Awaiting Aaron ratification of ML→InfoTheo and OT→TDA alias calls.] **Pass 27 cont. (slice-27): batch-004 rate-distortion 10 NERD ANNOTATED as 2204.01612 (neural amortization of the BA soft-matching functional; RD as computable null for DNN codecs) + 11 Theis–Wagner ANNOTATED as 2104.13662 (RDPF achievability/converse; perception = marginal-agreement constraint on the coupling); 12 REJECTED (<2 machines beyond covered RD lineage). 5 Wave-9/10-era wrong-pointer crossrefs fixed (optimal_transport ×3, information_theory Wave-10a/10b). Counts at derived 101; lint --check 0 errors.]** Also pass 14: fixed 5 wrong-pointer
   crossrefs in by-structure/optimal_transport.md; counts now at derived 78.
   Lint --check 0 errors.]
   Consume queue batches.** Repeatable task — each pass takes ≤3

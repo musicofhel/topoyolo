@@ -2,16 +2,17 @@
 
 **Lint state:** check_structure.py exit 0; 1 warning = pre-existing baseline
 (2 author-year-prose crossrefs); `--check` 0 errors, zero gen_stats notes.
-Derived corpus: **99 fully annotated papers**, **36 cells (6 machines × 6
+Derived corpus: **101 fully annotated papers**, **36 cells (6 machines × 6
 domains — statistical_physics is now the 6th grid column)**, min cell 2,
 23 cells ≥10. Domain-alias table landed in gen_stats.py (pass 27); ML→InfoTheo
 and OT→TDA mappings await Aaron's ratification.
 
 ## Reports
-- `2026-08-25-0636.md` — Pass 27: gen_stats grid+alias follow-up — StatPhys as
-  6th domain column; full alias + qualifier table (28 warnings → 0); parser
-  fixes (short Joint-vs-marginal label; missing Domain line in 2404.17951);
-  counts to derived 99, 23/36 deep; README/docs/matrix repointed.
+- `2026-08-25-0636.md` — Pass 27: gen_stats grid+alias follow-up (StatPhys 6th
+  column, alias table, 28 warnings→0) + B2 slice-27: batch-004 rate-distortion
+  10 NERD (2204.01612) + 11 Theis–Wagner RDPF (2104.13662) ANNOTATED, 12
+  REJECTED; 5 more Wave-9/10 wrong-pointer crossrefs fixed; counts to derived
+  101.
 - `2026-08-25-0630.md` — Pass 26: B2 slice-25, **stoch-thermo group CLOSED 4/4**
   — 06 Ito annotated (2209.00527, info geometry ↔ OT via excess EP), 08
   Barato–Seifert annotated (1408.1224, information reservoirs), 09
@@ -37,8 +38,9 @@ and OT→TDA mappings await Aaron's ratification.
 - **B1 ingestion contract:** [done] (6ebfcf2).
 - **B2 queue consumption:** [in_progress] — batch-001 21/21, batch-002 18/40
   (22 HELD-by-orchestrator), batch-003 28/28 CLOSED,
-  **batch-004 9/17 consumed (pass 26)**: dyn-matching 4/4 DONE; stoch-thermo
-  4/4 DONE; rate-distortion (10–13) and ldpc-bp (14–17) untouched.
-  Pass 27 did the orchestrator-directed gen_stats grid/alias follow-up
-  (StatPhys 6th column, alias table, counts → derived 99).
+  **batch-004 12/17 consumed (pass 27)**: dyn-matching 4/4 DONE; stoch-thermo
+  4/4 DONE; rate-distortion 3/4 (10 NERD + 11 Theis–Wagner annotated, 12
+  rejected, 13 unconsumed); ldpc-bp (14–17) untouched.
+  Pass 27 also did the orchestrator-directed gen_stats grid/alias follow-up
+  (StatPhys 6th column, alias table, counts → derived 99 before the slice).
 - **B3 atlas synthesis:** [open] — trigger ~15 new papers since Wave-10 baseline; currently +28 new annotations. Candidate first target: thermodynamic-instantiation subsections on optimal_transport.md / composite_systems.md (the Ito-lineage cluster).
