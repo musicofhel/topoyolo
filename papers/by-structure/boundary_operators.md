@@ -215,3 +215,6 @@ DOI: s41468-022-00089-3. Boundary operators on merge tree edge complex. DMT func
 
 ### Méndez & Sánchez-García (2020) — Directed Persistent Homology for Dissimilarity Functions
 arXiv: 2008.00711. Directed boundary operators on oriented simplices of pre-ordered Rips complex. Asymmetric dissimilarity function drives directed filtration. ∂²=0 on directed chains — same algebraic condition, new geometric content capturing asymmetry. Full annotation: `annotations/0711.0468.md` (Wave 10c).
+
+### Grande & Schaub (2023) — Topological Point Cloud Clustering
+arXiv: 2303.16716. Simplicial complex from kNN graph over the point cloud; clustering reads the full set of Hodge Laplacians L_k = B_{k+1} B_{k+1}^T + B_k^T B_k rather than only the graph Laplacian L_0 = B_1 B_1^T. Points are assigned to the homology class (component / cycle / cavity) they contribute to. Full annotation: `annotations/2303.16716.md` (pass 15, batch-002).

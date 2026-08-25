@@ -364,7 +364,8 @@ endobj
                                                                             
 ```
 
-## candidate-04 [geometric-dl] — UNCONSUMED
+## candidate-04 [geometric-dl] — REJECTED
+GNN document-classification application wrapper (clinical-trial protocols): zero atlas machines instantiated — fewer than 2, triage rule §4.
 
 **Title:** Classification of hierarchical text using geometric deep learning: the case of clinical trials corpus
 
@@ -430,7 +431,8 @@ Abstract:
 Sparse autoencoders (SAEs) have proven useful in disentangling the opaque activations of neural networks, primarily large language models, into sets of interpretable features. However, adapting them to domains beyond language, such as scientific data with group symmetries, introduces challenges that can hinder their effectiveness. We show that incorporating such group symmetries into the SAEs yields features more useful in downstream tasks. More specifically, we train autoencoders on synthetic images and find that a single matrix can explain how their activations transform as the images are rotated. Building on this, we develop adaptively equivariant SAEs that can adapt to the base model's level of equivariance. These adaptive SAEs discover features that lead to superior probing performance compared to regular SAEs, demonstrating the value of incorporating symmetries in mechanistic interpretability tools.
 ```
 
-## candidate-07 [ldpc-coding] — UNCONSUMED
+## candidate-07 [ldpc-coding] — REJECTED
+Duplicate coverage: Mézard & Mora (2008), arXiv 0803.3061, is already fully annotated in `papers/by-domain/information_theory.md` — triage rule §4.
 
 **Title:** Constraint satisfaction problems and neural networks a statistical physics persp
 
@@ -624,7 +626,8 @@ tasks . While keeping prior observations demonstrates supe- spherical distance o
 rior ability in combating forgetting, reliance on re
 ```
 
-## candidate-09 [hodge] — UNCONSUMED
+## candidate-09 [hodge] — REJECTED
+Duplicate coverage: Hodge-Aware Contrastive Learning (Mollers et al. 2023) is already fully annotated (`by-domain/tda.md`, cross-indexed in `by-structure/boundary_operators.md` / `phase_transitions.md` / `filtrations.md`) — triage rule §4.
 
 **Title:** Hodge Aware Contrastive Learning
 
@@ -690,7 +693,7 @@ land. ‡ Helmholtz AI, Munich, Germany. EI is supported by the TU Delft AI Neig
 Labs Programme. AI is supported by a Max Planck ETH Center for Learning ci
 ```
 
-## candidate-10 [hodge] — UNCONSUMED
+## candidate-10 [hodge] — ANNOTATED as 2303.16716
 
 **Title:** Topological Point Cloud Clustering
 
