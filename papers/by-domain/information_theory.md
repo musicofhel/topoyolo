@@ -1184,3 +1184,8 @@ Granger causality (directed information flow) supplies the graph prior for a con
 **Machines**: joint-vs-marginal, parameterized homology.
 Full annotation: `annotations/wang-2024.md` (B2 pass 12).
 **See also**: `by-domain/neuroscience.md`
+### Liu, Xu, Li, Si, Yang, Yang, Zhao (2025) — KANGCI
+KAN-based nonlinear Granger causality; conditional-prediction excess as per-edge learned quantity; group sparsity null + time-reversal falsification of spurious edges. Full annotation: `annotations/liu-2025.md` (B2 pass 13).
+
+### Brüsch, Schmidt, Alstrøm (2023) — Multi-view SSL for variable-channel time series
+Cross-channel MPNN aggregation vs marginal single-channel encodings under a contrastive objective; negatives define the no-shared-origin null. Full annotation: `annotations/brusch-2023.md` (B2 pass 13).

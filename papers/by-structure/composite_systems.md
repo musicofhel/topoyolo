@@ -60,6 +60,12 @@ Variable-lag Granger causality with DTW matching. Joint-vs-marginal excess compu
 ### Wang, Wang, Jin, Wei (2024) — GC-STCL (EEG emotion recognition)
 Granger causality graph over EEG channels as oriented composite structure; band-parameterized causal topology. Full annotation: `annotations/wang-2024.md`.
 
+### Liu, Xu, Li, Si, Yang, Yang, Zhao (2025) — KANGCI (KAN Granger causality)
+Causal adjacency graph learned via KAN edge functions; group sparsity as no-link null; time-reversal agreement filters spurious edges. Full annotation: `annotations/liu-2025.md` (B2 pass 13).
+
+### Brüsch, Schmidt, Alstrøm (2023) — Multi-view SSL for variable-channel time series
+Cross-channel MPNN aggregation vs per-channel marginal encodings; contrastive negatives as null. Full annotation: `annotations/brusch-2023.md` (B2 pass 13).
+
 ### Marinazzo, Pellicoro, Stramaglia (2008) — Kernel Granger Causality
 Granger causality as variance-ratio excess lifted to RKHS. Bonferroni-controlled eigenvector selection. Applied to gene regulatory and chaotic map networks. Full annotation: `by-domain/information_theory.md`.
 

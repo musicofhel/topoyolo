@@ -190,7 +190,7 @@ preventing overfitting. Tsuji et al. [20] propose
 
 ---
 
-## candidate-03 [neuroscience] — UNCONSUMED
+## candidate-03 [neuroscience] — ANNOTATED as brusch-2023 (pass 13): multi-view variable-channel SSL → Neuroscience+InfoTheory/CompositeSystems
 
 **Title:** Multi View Self Supervised Learning For Multivariate Variable Channel Time Serie
 
@@ -982,7 +982,7 @@ Int. J.
 
 ---
 
-## candidate-12 [neuroscience] — UNCONSUMED
+## candidate-12 [neuroscience] — ANNOTATED as liu-2025 (pass 13): KANGCI KAN Granger causality → Neuroscience+InfoTheory/CompositeSystems
 
 **Title:** Kolmogorov Arnold Networks for Time Series Granger Causality Inference
 
@@ -1571,7 +1571,7 @@ data are fairly inexpensive and domain expert esti
 
 ---
 
-## candidate-18 [dynamics-matching] — UNCONSUMED
+## candidate-18 [dynamics-matching] — ANNOTATED as ying-2016 (pass 13): fast approximate DTW as monotone matching → Dynamics/OptimalTransport
 
 **Title:** dtw gis
 

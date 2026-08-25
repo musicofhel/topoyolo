@@ -141,3 +141,6 @@ The cost function is always a metric or semi-metric, and the matching always res
 ### Wave 10c: DMT Matching (2026-04-17)
 
 **Curry, DeSha, Hoff, Limberger, Luo & Qin (2022) — Decorated merge trees for persistent topology**: DOI: s41468-022-00089-3. Gromov-Wasserstein coupling between decorated merge trees defines a stable metric for comparing persistent homology modules. The matching is between tree edge sets with costs determined by interleaving distance. DMT metric provides a computable alternative to interleaving distance that preserves the full tree structure (not just the barcode). Full annotation: `annotations/blahut-arimoto-1972.md` (Wave 10c). **See also**: `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/phase_transitions.md`.
+
+### Ying, Pan, Fox, Agarwal (2016) — Fast Approximate DTW (κ-packed curves)
+DTW as minimum-cost monotone correspondence assignment; (1+ε) stability bound on matching value; packing constant κ as the structure condition enabling fast matching. Also dynamical systems. Full annotation: `annotations/ying-2016.md` (B2 pass 13).

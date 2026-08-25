@@ -465,3 +465,9 @@ PLoS Comput Biol 22(2), DOI: 10.1371/journal.pcbi.1013995. Attractor landscape o
 **Machines**: parameterized homology, stability, null hypothesis, joint-vs-marginal.
 Full annotation: `annotations/10.1371-journal.pcbi.1013995.md` (B2 pass 12).
 **See also**: `by-domain/neuroscience.md`, `by-structure/phase_transitions.md`
+
+### Ying, Pan, Fox, Agarwal (2016) — Fast Approximate Dynamic Time Warping
+(1+ε)-approximation of the monotone correspondence assignment in O(κ²/ε · n log σ) for κ-packed curves; stability bound on matching value under bounded-complexity structure conditions.
+**Machines**: matching, stability.
+Full annotation: `annotations/ying-2016.md` (B2 pass 13).
+**See also**: `by-domain/information_theory.md`, `by-structure/optimal_transport.md`, `by-structure/composite_systems.md`

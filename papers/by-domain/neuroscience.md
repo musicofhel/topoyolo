@@ -270,3 +270,14 @@ Survey mapping where TDA machines apply to functional brain networks: correlatio
 **Machines**: parameterized homology, joint-vs-marginal, null hypothesis.
 Full annotation: `annotations/simpson-2013.md` (B2 pass 12).
 **See also**: `by-structure/filtrations.md`, `by-structure/composite_systems.md`
+### Liu, Xu, Li, Si, Yang, Yang, Zhao (2025) — KANGCI: Kolmogorov-Arnold Networks for Granger Causality Inference
+KAN-based nonlinear GC on fMRI BOLD, VAR and EEG; group sparsity encodes the no-link null; time-reversed GC agreement filters spurious edges.
+**Machines**: joint-vs-marginal, null hypothesis, chain complex (weak).
+Full annotation: `annotations/liu-2025.md` (B2 pass 13).
+**See also**: `by-domain/information_theory.md`, `by-structure/composite_systems.md`
+
+### Brüsch, Schmidt, Alstrøm (2023) — Multi-View Self-Supervised Learning for Variable-Channel Time Series
+Channel-agnostic shared encoder + MPNN fusion for EEG sleep staging; cross-channel aggregation beats marginal per-channel embeddings; contrastive negatives as null.
+**Machines**: joint-vs-marginal, null hypothesis, matching (weak).
+Full annotation: `annotations/brusch-2023.md` (B2 pass 13).
+**See also**: `by-domain/information_theory.md`, `by-structure/composite_systems.md`
