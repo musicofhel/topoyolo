@@ -11,7 +11,7 @@ Consume per papers/INGESTION.md (≤3 papers/pass; triage-reject with one senten
 
 ---
 
-## candidate-01 [gw-theory] — UNCONSUMED
+## candidate-01 [gw-theory] — ANNOTATED as 2006.12287 (pass 35)
 
 **Title:** Gromov-Wasserstein Distance based Object Matching: Asymptotic Inference
 
@@ -25,7 +25,7 @@ Consume per papers/INGESTION.md (≤3 papers/pass; triage-reject with one senten
 In this paper, we aim to provide a statistical theory for object matching based on the Gromov-Wasserstein distance. To this end, we model general objects as metric measure spaces. Based on this, we propose a simple and efficiently computable asymptotic statistical test for pose invariant object discrimination. This is based on an empirical version of a beta-trimmed lower bound of the Gromov-Wasserstein distance. We derive for beta in [0,1/2) distributional limits of this test statistic. To this end, we introduce a novel U-type process indexed in beta and show its weak convergence. Finally, the theory developed is investigated in Monte Carlo simulations and applied to structural protein comparisons.
 ```
 
-## candidate-02 [gw-theory] — UNCONSUMED
+## candidate-02 [gw-theory] — ANNOTATED as 2212.14123 (pass 35)
 
 **Title:** Comparison Results for Gromov-Wasserstein and Gromov-Monge Distances
 
@@ -39,7 +39,7 @@ In this paper, we aim to provide a statistical theory for object matching based 
 Inspired by the Kantorovich formulation of optimal transport distance between probability measures on a metric space, Gromov-Wasserstein (GW) distances comprise a family of metrics on the space of isomorphism classes of metric measure spaces. In previous work, the authors introduced a variant of this construction which was inspired by the original Monge formulation of optimal transport; elements of the resulting family are referred to Gromov-Monge (GM) distances. These GM distances, and related ideas, have since become a subject of interest from both theoretical and applications-oriented perspectives. In this note, we establish several theoretical properties of GM distances, focusing on comparisons between GM and GW distances. In particular, we show that GM and GW distances are equal for non-atomic metric measure spaces. We also consider variants of GM distance, such as a Monge version of Sturm's Lp-transportion distance, and give precise comparisons to GW distance. Finally, we establish bi-Hölder equivalence between GM distance and an isometry-invariant Monge optimal transport distance between Euclidean metric measure spaces that has been utilized in shape and image analysis applications.
 ```
 
-## candidate-03 [gw-theory] — UNCONSUMED
+## candidate-03 [gw-theory] — ANNOTATED as 2201.09385 (pass 35)
 
 **Title:** Classical Multidimensional Scaling on Metric Measure Spaces
 

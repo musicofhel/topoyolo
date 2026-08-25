@@ -182,3 +182,13 @@ Batch-004's stoch-thermo group showed the matching machine acquiring a *physical
 Two cautions sharpen the claim (see also the ANTISYNONYMS entry "Matching metric ≠ stability guarantee" in this corpus): (1) the equality direction is dynamics-specific — Nakazato–Ito's bound uses the L²/Wasserstein cost *because* the Fokker–Planck current supplies it; a bare matching metric on arbitrary measures carries no thermodynamic reading (the TDA isometry theorem `annotations/2506.02999.md`, by contrast, makes matching=stability exact with no physics at all). (2) The thermodynamic instantiation prices the *coupling*, while the joint-vs-marginal machine prices the *excess* — see the composite-systems side in `by-structure/composite_systems.md`.
 
 **See also**: `by-domain/statistical_physics.md`, `by-structure/composite_systems.md`.
+
+## B2 batch-006 — GW-theory core (2026-08-25)
+
+Three foundations papers for the relational-matching instantiation itself (abstract-only provenance; all depth-limited).
+
+**Weitkamp, Proksch, Tameling & Munk (2020)** — arXiv: 2006.12287. Asymptotic inference for GW-based object matching: trimmed GW lower bound → pose-invariant discrimination test with derived distributional limits (U-process weak convergence). First corpus entry supplying the matching functional's *sampling theory*. Machines: matching, null hypothesis, stability (distributional). Full annotation: `annotations/2006.12287.md` (B2 pass 35). **See also**: `by-domain/tda.md`, `by-structure/phase_transitions.md`.
+
+**Mémoli & Needham (2022)** — arXiv: 2212.14123. Gromov-Monge (map) vs Gromov-Wasserstein (coupling): equal for non-atomic mm-spaces; bi-Hölder equivalence with isometry-invariant Monge OT. The Kantorovich/Monge duality carried into relational matching — internal foundations for when deterministic assignment is free. Machines: matching, stability. Full annotation: `annotations/2212.14123.md` (B2 pass 35). **See also**: `by-domain/tda.md`.
+
+**Lim & Mémoli (2022)** — arXiv: 2201.09385. Generalized cMDS on metric measure spaces: spectral theory, negative-eigenvalue-sum non-flatness invariant, and stability of the embedding w.r.t. GW distance — cross-instantiation robustness control within the matching family. Machines: matching, stability, null hypothesis (weak). Full annotation: `annotations/2201.09385.md` (B2 pass 35). **See also**: `by-domain/tda.md`, `by-structure/phase_transitions.md`.

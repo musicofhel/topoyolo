@@ -7,7 +7,7 @@ Updated: 2026-08-25 (derived by scripts/gen_stats.py from papers/annotations/)
 ```
                 ChainCmplx    ParamHom    Matching   Stability   JointMarg     NullHyp
 ──────────────────────────────────────────────────────────────────────────────────────
-TDA                   *31*        *36*        *27*        *38*           9        *18*
+TDA                   *31*        *36*        *30*        *41*           9        *20*
 QEC                   *12*        *11*           7        *15*           3        *12*
 Dynamics              *13*        *21*           8        *21*        *10*        *17*
 Neuro                 *18*        *23*           5        *16*        *16*        *25*
@@ -26,7 +26,7 @@ block-beta
 
   space:1 CC["ChainCmplx"] PH["ParamHom"] MA["Matching"] ST["Stability"] JM["JointMarg"] NH["NullHyp"]
 
-  TDA["TDA"] TDA_CC["31"] TDA_PH["36"] TDA_MA["27"] TDA_ST["38"] TDA_JM["9"] TDA_NH["18"]
+  TDA["TDA"] TDA_CC["31"] TDA_PH["36"] TDA_MA["30"] TDA_ST["41"] TDA_JM["9"] TDA_NH["20"]
   QEC["QEC"] QEC_CC["12"] QEC_PH["11"] QEC_MA["7"] QEC_ST["15"] QEC_JM["3"] QEC_NH["12"]
   DYN["Dynamics"] DYN_CC["13"] DYN_PH["21"] DYN_MA["8"] DYN_ST["21"] DYN_JM["10"] DYN_NH["17"]
   NEU["Neuro"] NEU_CC["18"] NEU_PH["23"] NEU_MA["5"] NEU_ST["16"] NEU_JM["16"] NEU_NH["25"]
@@ -73,4 +73,4 @@ fails if these numbers drift from the claims in README.md / docs/index.html.
 
 ## Coverage Status
 
-118 fully annotated papers. 27 of 36 cells ≥10 (deep); min cell = 2.
+121 fully annotated papers. 27 of 36 cells ≥10 (deep); min cell = 2.

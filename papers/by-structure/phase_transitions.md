@@ -327,3 +327,9 @@ DOI: s41468-022-00089-3. Stability: DMT metric is stable — bounded by interlea
 **Bubenik & Scott (2012)** — arXiv: 1205.3669. Persistence modules as diagrams indexed by (ℝ, ≤) in an arbitrary target category; interleaving distance generalizes bottleneck distance and stability theorems are greatly generalized; category of interleavings is abelian when the target is. Stability as categorical property rather than per-construction inequality. Full annotation: `annotations/1205.3669.md` (B2 pass 32). **See also**: `by-domain/tda.md`, `by-structure/filtrations.md`.
 
 **Gulen & McCleary (2022)** — arXiv: 2201.06650. Galois connections unify interleavings and matchings; Rota's theorem yields an easier proof of bottleneck stability; multiparameter persistence notions related. Second, order-theoretic route to the stability guarantee. Full annotation: `annotations/2201.06650.md` (B2 pass 32). **See also**: `by-domain/tda.md`, `by-structure/filtrations.md`, `by-structure/optimal_transport.md`.
+
+### B2 batch-006: GW-theory core (2026-08-25)
+
+**Weitkamp, Proksch, Tameling & Munk (2020)** — arXiv: 2006.12287. Null-hypothesis side: the beta-trimmed GW lower bound becomes a pose-invariant discrimination test with proven distributional limits under the isomorphism null; trimming adds outlier mass robustness inside the statistic itself. Full annotation: `annotations/2006.12287.md` (B2 pass 35). **See also**: `by-domain/tda.md`, `by-structure/optimal_transport.md`.
+
+**Lim & Mémoli (2022)** — arXiv: 2201.09385. Stability side: generalized cMDS output stable w.r.t. Gromov-Wasserstein perturbation of the input mm-space; negative-eigenvalue sum vanishes exactly on Euclidean-flat reference structure (weak null-hypothesis reading). Full annotation: `annotations/2201.09385.md` (B2 pass 35). **See also**: `by-domain/tda.md`, `by-structure/optimal_transport.md`.
