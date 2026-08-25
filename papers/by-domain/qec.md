@@ -179,7 +179,7 @@ Full annotation: `annotations/0711.0468.md`.
 
 ## Cross-listed from TDA (Wave 7)
 
-- **Hamilton & Leditzky (2023/2024)** — "Probing Multipartite Entanglement Through Persistent Homology." Commun. Math. Phys. 405, article 125. arXiv: 2307.07492. 8 citations. PH applied to multipartite entanglement. Sublevel set filtration by q-deformed total correlation C_q(J) = Σ S_q(v) - S_q(J). Integrated Euler characteristic = n-tangle τ_n at q=2 (resolves Eltschka-Siewert conjecture). Barcodes distinguish SLOCC orbits with identical τ_n (strictly finer). Relative PH gives -I(A:B|R) ≤ 0 by strong subadditivity. Proposes generalization to arbitrary resource theories. Full annotation: `annotations/0711.0468.md` (Wave 7). Machines: joint-vs-marginal, chain complex, parameterized homology, stability, matching, null hypothesis. **See also**: `by-domain/tda.md`, `by-structure/composite_systems.md`.
+- **Hamilton & Leditzky (2023/2024)** — "Probing Multipartite Entanglement Through Persistent Homology." Commun. Math. Phys. 405, article 125. arXiv: 2307.07492. 8 citations. PH applied to multipartite entanglement. Sublevel set filtration by q-deformed total correlation C_q(J) = Σ S_q(v) - S_q(J). Integrated Euler characteristic = n-tangle τ_n at q=2 (resolves Eltschka-Siewert conjecture). Barcodes distinguish SLOCC orbits with identical τ_n (strictly finer). Relative PH gives -I(A:B|R) ≤ 0 by strong subadditivity. Proposes generalization to arbitrary resource theories. Full annotation: `annotations/2307.07492.md` (Wave 7). Machines: joint-vs-marginal, chain complex, parameterized homology, stability, matching, null hypothesis. **See also**: `by-domain/tda.md`, `by-structure/composite_systems.md`.
 
 ---
 
@@ -188,7 +188,7 @@ Full annotation: `annotations/0711.0468.md`.
 ### Trinca, Bollauf & Zamir (2024) — n-Dimensional Toric Codes from Lattice Codes
 arXiv: 2410.20233. Constructs n-dimensional toric codes from lattice codes via chain complex on n-torus T^n. Generalizes Kitaev's 2D toric code to arbitrary dimension. Qubits on k-cells, stabilizers from ∂_k and δ_k. Logical qubits = H_k(T^n, Z/2). Lattice geometry provides code distance bounds via systole. Burst error correction from interleaving structure. Connects algebraic coding theory (lattice codes) with homological QEC.
 **Machines**: chain complex, stability.
-Full annotation: `annotations/0711.0468.md` (Wave 10c).
+Full annotation: `annotations/2410.20233.md` (Wave 10c).
 **See also**: `by-structure/boundary_operators.md`, `by-structure/phase_transitions.md`
 
 ---
