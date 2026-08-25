@@ -112,3 +112,21 @@ arXiv: 1903.05124. Random unitary circuits with intermittent measurements: volum
 **Machines**: joint-vs-marginal excess (core), stability, parameterized homology.
 Full annotation: `annotations/1903.05124.md` (B2 pass 30). Abstract-only provenance — depth-limited.
 **See also**: `by-domain/qec.md`, `by-structure/phase_transitions.md`
+
+### Bereyhi, Loureiro, Krzakala, Müller & Schulz-Baldes (2022) — Secure coding via Gaussian random fields
+arXiv: 2205.08782. All-or-nothing transition of nonlinear Gaussian random fields: below the critical rate Bayesian recovery is perfect, above it uncorrelated; replica computation identifies the critical rate exactly with the channel capacity.
+**Machines**: parameterized homology, null hypothesis, joint-vs-marginal excess.
+Full annotation: `annotations/2205.08782.md` (B2 pass 31). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/information_theory.md`, `by-structure/phase_transitions.md`
+
+### Kabashima, Murayama & Saad (1999) — Typical performance of Gallager-type codes
+arXiv: cond-mat/9908104. Spin-glass analysis of Gallager codes: capacity saturation across code families indexed by sparse-matrix density; TAP ≡ belief-propagation decoding identification makes cavity results transferable verbatim to practical decoders.
+**Machines**: null hypothesis, stability, parameterized homology.
+Full annotation: `annotations/cond-mat-9908104.md` (B2 pass 31). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/information_theory.md`, `annotations/1307.5210.md`
+
+### Kelly, Poschinger, Schmidt-Kaler, Fisher & Marino (2022) — Coherence requirements for quantum communication
+arXiv: 2210.11547. Monitored-dynamics/QEC unified as an adversarial unitary-vs-measurement game; coherence itself is the order parameter of a capacity/entanglement phase transition.
+**Machines**: parameterized homology, stability, null hypothesis.
+Full annotation: `annotations/2210.11547.md` (B2 pass 31). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/qec.md`, `by-domain/information_theory.md`

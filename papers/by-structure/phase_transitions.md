@@ -313,3 +313,9 @@ DOI: s41468-022-00089-3. Stability: DMT metric is stable — bounded by interlea
 **Qian & Roy (2011)** — arXiv: 1112.4589. Channel capacity tracked along the free-energy-expenditure parameter; zero exactly at the equilibrium (detailed-balance) null. Full annotation: `annotations/1112.4589.md` (B2 pass 30). **See also**: `by-domain/information_theory.md`.
 
 **Plenio & Virmani (2007)** — arXiv: quant-ph/0702059. Capacity-under-correlated-error as a function of memory strength with genuine non-analytic points; dictionary to spin-chain criticality. Full annotation: `annotations/quant-ph-0702059.md` (B2 pass 30). **See also**: `by-domain/qec.md`.
+
+**Bereyhi, Loureiro, Krzakala, Müller & Schulz-Baldes (2022)** — arXiv: 2205.08782. All-or-nothing inference transition of nonlinear Gaussian random fields; replica proof that the critical rate equals the channel capacity (and wiretap secrecy capacity under binning). Null: above-critical reconstruction uncorrelated with data. Full annotation: `annotations/2205.08782.md` (B2 pass 31). **See also**: `by-domain/information_theory.md`.
+
+**Kabashima, Murayama & Saad (1999)** — arXiv: cond-mat/9908104. Typical-case performance of Gallager-type codes across sparse-matrix-density families: capacity-saturating vs sub-capacity classes; TAP ≡ BP decoding identity. Full annotation: `annotations/cond-mat-9908104.md` (B2 pass 31). **See also**: `by-domain/statistical_physics.md`.
+
+**Kelly, Poschinger, Schmidt-Kaler, Fisher & Marino (2022)** — arXiv: 2210.11547. Coherence-tuned phase transition in entanglement and quantum channel capacity under adversarial measurement pressure; coherence bounds stabilizer code distance. Full annotation: `annotations/2210.11547.md` (B2 pass 31). **See also**: `by-domain/qec.md`.

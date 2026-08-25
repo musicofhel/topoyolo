@@ -1169,3 +1169,21 @@ arXiv: quant-ph/0702059. Correlated-error channel capacities mapped to critical 
 **Machines**: parameterized homology (core), null hypothesis, stability.
 Full annotation: `annotations/quant-ph-0702059.md` (B2 pass 30). Abstract-only provenance — depth-limited.
 **See also**: `by-domain/qec.md`, `by-structure/phase_transitions.md`
+
+### Bereyhi, Loureiro, Krzakala, Müller & Schulz-Baldes (2022) — Secure coding via Gaussian random fields
+arXiv: 2205.08782. Replica method shows the all-or-nothing inference transition's critical rate IS the channel capacity; the same Gaussian-random-field model plus random binning asymptotically achieves the Gaussian wiretap secrecy capacity — secrecy as a joint-vs-marginal excess threshold.
+**Machines**: parameterized homology (core), null hypothesis, joint-vs-marginal excess.
+Full annotation: `annotations/2205.08782.md` (B2 pass 31). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/statistical_physics.md`, `by-structure/phase_transitions.md`, `by-domain/qec.md`
+
+### Kabashima, Murayama & Saad (1999) — Typical performance of Gallager-type codes
+arXiv: cond-mat/9908104. Statistical-physics analysis of Gallager's product-of-bits codes: many sparse-matrix families saturate Shannon capacity typical-case; TAP decoding shown identical to belief-propagation decoding. Early ancestor of the ldpc-bp cavity group.
+**Machines**: null hypothesis (core), stability, parameterized homology.
+Full annotation: `annotations/cond-mat-9908104.md` (B2 pass 31). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/statistical_physics.md`, `by-structure/phase_transitions.md`, `annotations/cond-mat-9908358.md`
+
+### Kelly, Poschinger, Schmidt-Kaler, Fisher & Marino (2022) — Coherence requirements for quantum communication
+arXiv: 2210.11547. Unitary-vs-measurement information game between Alice and Eve over hybrid circuits: coherence-tuned phase transitions in entanglement and quantum channel capacity; theorem bounding stabilizer code distance by available coherence.
+**Machines**: parameterized homology (core), stability, null hypothesis.
+Full annotation: `annotations/2210.11547.md` (B2 pass 31). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/qec.md`, `by-structure/phase_transitions.md`

@@ -206,3 +206,9 @@ arXiv: quant-ph/0702059. Channel capacity under correlated error mapped onto cri
 **Machines**: parameterized homology (core), null hypothesis, stability.
 Full annotation: `annotations/quant-ph-0702059.md` (B2 pass 30). Abstract-only provenance — depth-limited.
 **See also**: `by-domain/information_theory.md`, `by-structure/phase_transitions.md`
+
+### Kelly, Poschinger, Schmidt-Kaler, Fisher & Marino (2022) — Coherence requirements for quantum communication
+arXiv: 2210.11547. Error correction recast as one side of an adversarial game: Eve's measurements attack channel capacity, Alice's unitaries defend it; minimum-coherence theorem caps achievable stabilizer code distance. Second feed into the thin QEC×Joint-vs-Marginal cell alongside Choi et al.
+**Machines**: stability (core), parameterized homology, null hypothesis.
+Full annotation: `annotations/2210.11547.md` (B2 pass 31). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/statistical_physics.md`, `by-structure/phase_transitions.md`, `annotations/1903.05124.md`
