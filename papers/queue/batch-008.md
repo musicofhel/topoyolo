@@ -14,7 +14,7 @@ Consume per papers/INGESTION.md (<=3 papers/pass; triage-reject with one sentenc
 
 ---
 
-## candidate-01 [reservoir-gs] — UNCONSUMED
+## candidate-01 [reservoir-gs] — ANNOTATED as 2108.05024
 
 **Title:** Learning strange attractors with reservoir systems
 
@@ -28,7 +28,7 @@ Consume per papers/INGESTION.md (<=3 papers/pass; triage-reject with one sentenc
 This paper shows that the celebrated Embedding Theorem of Takens is a particular case of a much more general statement according to which, randomly generated linear state-space representations of generic observations of an invertible dynamical system carry in their wake an embedding of the phase space dynamics into the chosen Euclidean state space. This embedding coincides with a natural generalized synchronization that arises in this setup and that yields a topological conjugacy between the state-space dynamics driven by the generic observations of the dynamical system and the dynamical system itself. This result provides additional tools for the representation, learning, and analysis of chaotic attractors and sheds additional light on the reservoir computing phenomenon that appears in the context of recurrent neural networks.
 ```
 
-## candidate-02 [reservoir-gs] — UNCONSUMED
+## candidate-02 [reservoir-gs] — ANNOTATED as 2401.00885
 
 **Title:** Attractor reconstruction with reservoir computers: The effect of the reservoir's conditional Lyapunov exponents on faithful attractor reconstruction
 
@@ -42,7 +42,7 @@ This paper shows that the celebrated Embedding Theorem of Takens is a particular
 Reservoir computing is a machine learning framework that has been shown to be able to replicate the chaotic attractor, including the fractal dimension and the entire Lyapunov spectrum, of the dynamical system on which it is trained. We quantitatively relate the generalized synchronization dynamics of a driven reservoir during the training stage to the performance of the trained reservoir computer at the attractor reconstruction task. We show that, in order to obtain successful attractor reconstruction and Lyapunov spectrum estimation, the largest conditional Lyapunov exponent of the driven reservoir must be significantly more negative than the most negative Lyapunov exponent of the target system. We also find that the maximal conditional Lyapunov exponent of the reservoir depends strongly on the spectral radius of the reservoir adjacency matrix, and therefore, for attractor reconstruction and Lyapunov spectrum estimation, small spectral radius reservoir computers perform better in general. Our arguments are supported by numerical examples on well-known chaotic systems.
 ```
 
-## candidate-03 [reservoir-gs] — UNCONSUMED
+## candidate-03 [reservoir-gs] — ANNOTATED as 2501.11357
 
 **Title:** On the dimension of pullback attractors in recurrent neural networks
 

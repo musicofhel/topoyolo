@@ -557,3 +557,20 @@ Full annotation: `annotations/2206.14928.md` (B2 pass 25). Abstract-only provena
 **Machines**: parameterized homology, null hypothesis, stability (weak).
 Full annotation: `annotations/1708.03990.md` (B2 pass 32). Abstract-only provenance — depth-limited.
 **See also**: `by-domain/neuroscience.md`, `by-structure/phase_transitions.md`
+
+### B2 batch-008: reservoir generalized synchronization — Takens re-derived (2026-08-25)
+
+**Grigoryeva, Hart & Ortega (2021) — Learning Strange Attractors with Reservoir Systems**: arXiv: 2108.05024. Takens' Embedding Theorem recovered as a special case of generalized synchronization in random linear state-space systems: the reservoir's synchronization map is a topological conjugacy onto the source attractor — embedding IS synchronization. Dynamics-side closure of the bridge pair with `annotations/2409.08768.md` (measure-theoretic Takens-via-OT): the same classical theorem re-derived via matching-as-conjugacy vs matching-as-measure-coupling.
+**Machines**: matching (conjugacy correspondence), stability (conditional contraction).
+Full annotation: `annotations/2108.05024.md` (B2 pass 44). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/optimal_transport.md`, `annotations/2409.08768.md`
+
+**Hart (2023) — Attractor Reconstruction with Reservoir Computers (Conditional Lyapunov Exponents)**: arXiv: 2401.00885. Quantitative stability condition for the reconstruction correspondence: largest conditional Lyapunov exponent of the driven reservoir must be significantly more negative than the target's most negative exponent; spectral radius of the adjacency matrix is the hyperparameter controlling that margin (small beats edge-of-chaos for reconstruction).
+**Machines**: stability (core), matching (weak).
+Full annotation: `annotations/2401.00885.md` (B2 pass 44). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/optimal_transport.md`, `annotations/2108.05024.md`
+
+**Fadera (2025) — On the Dimension of Pullback Attractors in Recurrent Neural Networks**: arXiv: 2501.11357. Box-counting dimension of the reservoir's pullback attractor bounded above by the input-sequence-space dimension: high-nominal-dimension state space carries effective low-dimensional dynamics; dimension-theoretic half of the reservoir embedding conjecture for general activations, extending `annotations/2108.05024.md` from linear to inequality-based.
+**Machines**: stability (dimension-stability), matching (weak).
+Full annotation: `annotations/2501.11357.md` (B2 pass 44). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/optimal_transport.md`, `annotations/2108.05024.md`
