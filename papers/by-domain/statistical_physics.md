@@ -193,3 +193,21 @@ Full annotation: `annotations/1906.05212.md` (B2 pass 51). Abstract-only provena
 Analytic + surrogate null for avalanche-based SOC claims: thresholded stochastic processes provably produce spurious log-log power-law scaling that fails Kolmogorov-Smirnov testing; a known-SOC artificial network passes the same rigorous tests — the null is discriminating, not universal.
 **Machines**: null hypothesis (core), stability (verdict instability under threshold/analysis-class perturbation).
 Full annotation: `annotations/0910.0805.md` (B2 pass 57). **See also**: `by-domain/neuroscience.md`, `by-structure/phase_transitions.md` (null-surrogate lineage).
+
+### Biehl, Pollock & Kanai (2020) — A Technical Critique of Some Parts of the Free Energy Principle
+arXiv: 2001.06408. Refutation side of the FEP pair: counterexample disproving the original free energy lemma; non-equivalent Markov-blanket definitions across FEP works; the Bayesian-inference reading shown to hinge on an unjustified variational/ergodic density equality — the composite boundary is version-dependent, so the excess it licenses is not well-defined until the definition class is fixed.
+**Machines**: null hypothesis (core — first corpus entry whose null targets a formalism's derivation rather than an empirical claim), stability (locus-of-failure analysis), joint-vs-marginal (boundary non-well-definedness).
+Full annotation: `annotations/2001.06408.md` (B2 pass 56; filed here pass 58 — backfill debt). Abstract-only provenance — depth-limited. **Annotated AS A PAIR with `annotations/1906.10184.md`; note in `glossary/ANTISYNONYMS.md`.**
+**See also**: `by-domain/neuroscience.md`, `by-structure/composite_systems.md`.
+
+### Moosavi, Montakhab & Valizadeh (2018) — Coexistence of scale invariant and rhythmic behavior in self-organized criticality
+arXiv: 1807.07213. Oscillatory perturbation of the Zhang model: rhythms embedded in scale-free avalanches, amplitude decaying with frequency, optimal amplification at the critical point — criticality-as-resonance in a known-SOC positive control.
+**Machines**: stability (core), parameterized homology (frequency axis), null hypothesis (incompatibility reading).
+Full annotation: `annotations/1807.07213.md` (B2 pass 58). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/neuroscience.md`, `by-structure/phase_transitions.md` (batch-011 soc group).
+
+### Girardi-Schappo, Kinouchi & Tragtenberg (2012) — Critical Avalanches and Subsampling in Map-based Neural Networks
+arXiv: 1209.3271. Synaptic noise as sufficient generator of critical avalanches in map-based networks, plus explicit subsampling analysis — noise-induced criticality as alternative mechanism and partial recording as artifact channel for experimental SOC claims.
+**Machines**: null hypothesis (core), stability, parameterized homology (weak).
+Full annotation: `annotations/1209.3271.md` (B2 pass 58). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/neuroscience.md`, `by-structure/phase_transitions.md` (batch-011 soc group).

@@ -10,9 +10,9 @@ Updated: 2026-08-25 (derived by scripts/gen_stats.py from papers/annotations/)
 TDA                   *37*        *41*        *35*        *50*           9        *25*
 QEC                   *14*        *11*        *14*        *19*           6        *14*
 Dynamics              *13*        *21*        *19*        *37*        *16*        *32*
-Neuro                 *19*        *27*           7        *23*        *21*        *33*
+Neuro                 *19*        *29*           7        *25*        *21*        *35*
 InfoTheo              *19*        *36*        *27*        *36*        *40*        *51*
-StatPhys                 2        *16*        *11*        *23*        *15*        *21*
+StatPhys                 2        *18*        *11*        *25*        *15*        *23*
 ```
 
 (`*n*` marks deep cells ≥10.)
@@ -29,9 +29,9 @@ block-beta
   TDA["TDA"] TDA_CC["37"] TDA_PH["41"] TDA_MA["35"] TDA_ST["50"] TDA_JM["9"] TDA_NH["25"]
   QEC["QEC"] QEC_CC["14"] QEC_PH["11"] QEC_MA["14"] QEC_ST["19"] QEC_JM["6"] QEC_NH["14"]
   DYN["Dynamics"] DYN_CC["13"] DYN_PH["21"] DYN_MA["19"] DYN_ST["37"] DYN_JM["16"] DYN_NH["32"]
-  NEU["Neuro"] NEU_CC["19"] NEU_PH["27"] NEU_MA["7"] NEU_ST["23"] NEU_JM["21"] NEU_NH["33"]
+  NEU["Neuro"] NEU_CC["19"] NEU_PH["29"] NEU_MA["7"] NEU_ST["25"] NEU_JM["21"] NEU_NH["35"]
   IT["InfoTheo"] IT_CC["19"] IT_PH["36"] IT_MA["27"] IT_ST["36"] IT_JM["40"] IT_NH["51"]
-  SP["StatPhys"] SP_CC["2"] SP_PH["16"] SP_MA["11"] SP_ST["23"] SP_JM["15"] SP_NH["21"]
+  SP["StatPhys"] SP_CC["2"] SP_PH["18"] SP_MA["11"] SP_ST["25"] SP_JM["15"] SP_NH["23"]
   style TDA_CC fill:#9f9,stroke:#333
   style TDA_PH fill:#9f9,stroke:#333
   style TDA_MA fill:#9f9,stroke:#333
@@ -78,4 +78,4 @@ fails if these numbers drift from the claims in README.md / docs/index.html.
 
 ## Coverage Status
 
-176 fully annotated papers. 32 of 36 cells ≥10 (deep); min cell = 2.
+178 fully annotated papers. 32 of 36 cells ≥10 (deep); min cell = 2.

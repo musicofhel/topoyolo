@@ -335,3 +335,15 @@ The empirical null: across species and sleep/wake states, unit avalanches scale 
 **Machines**: null hypothesis (core: fitted-alternative family = bi-exponential vs power law), stability (negative: verdict unstable across channel/species/state; stable: the rejection itself), matching (distribution-family model selection on CDFs).
 Full annotation: `annotations/1203.0738.md` (B2 pass 57). Abstract-only provenance — depth-limited.
 **See also**: `annotations/2102.09124.md`, `annotations/0910.0805.md`, `glossary/ANTISYNONYMS.md`, `by-structure/phase_transitions.md`
+
+### Moosavi, Montakhab & Valizadeh (2018) — Coexistence of scale invariant and rhythmic behavior in self-organized criticality
+Mechanism/reconciliation side of the soc disagreement: oscillatory perturbation of the Zhang model yields rhythms embedded in scale-free avalanches, with optimal amplification AT the critical point — criticality recast as resonance, coexistence demonstrated inside one known-SOC model rather than argued against an incompatibility null.
+**Machines**: stability (core: scaling class survives rhythmic perturbation), parameterized homology (frequency axis), null hypothesis (the incompatibility reading).
+Full annotation: `annotations/1807.07213.md` (B2 pass 58). Abstract-only provenance — depth-limited.
+**See also**: `annotations/2102.09124.md`, `annotations/2312.03489.md` (oscillation thermodynamics), `by-domain/statistical_physics.md`, `by-structure/phase_transitions.md`
+
+### Girardi-Schappo, Kinouchi & Tragtenberg (2012) — Critical Avalanches and Subsampling in Map-based Neural Networks
+Mechanism + subsampling-artifact side: synaptic noise alone drives critical avalanches in map-based networks (noise-induced, not self-organized), with explicit subsampling analysis — partial recording shapes apparent scaling, the simulation-side cousin of the empirical measurement-channel critique.
+**Machines**: null hypothesis (core: noise-driven generator + subsampling artifact channel), stability (parameter region locating the critical regime; scaling under reduced unit sets), parameterized homology (weak, synaptic parameter sweep).
+Full annotation: `annotations/1209.3271.md` (B2 pass 58). Abstract-only provenance — depth-limited.
+**See also**: `annotations/1203.0738.md`, `annotations/0910.0805.md`, `glossary/ANTISYNONYMS.md`, `by-domain/statistical_physics.md`, `by-structure/phase_transitions.md`
