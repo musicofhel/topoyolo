@@ -1,19 +1,22 @@
 # research/INDEX.md — pass reports + task status (newest first)
 
 **Lint state:** check_structure.py exit 0; 1 warning = pre-existing baseline
-(2 author-year-prose crossrefs); `--check` 0 errors. Derived corpus: **149
-fully annotated papers** (+3 pass 46), **36 cells (6 machines × 6 domains)**,
-min cell 2, 30 cells ≥10. Domain-alias table landed in gen_stats.py (pass 27);
-ML→InfoTheo and OT→TDA mappings await Aaron's ratification. Standing policy
-(pass 43, sanctioned): README/docs count patches land in the SAME commit as
-the gen_stats regen.
+(2 author-year-prose crossrefs); `--check` 0 errors. Derived corpus: **151
+fully annotated papers** (+2 pass 47), **36 cells (6 machines × 6 domains)**,
+min cell 2, **31 cells ≥10**. Domain-alias table landed in gen_stats.py
+(pass 27); ML→InfoTheo and OT→TDA mappings await Aaron's ratification.
+Standing policy (pass 43, sanctioned): README/docs count patches land in the
+SAME commit as the gen_stats regen.
 
 ## Reports
+- `2026-08-25-0831.md` — Pass 47: **batch-008 CLOSED 11/11** (kuramoto 10–11:
+  2109.08918 ML-for-Kuramoto; 1305.1742 Kuramoto-in-Hamiltonian-systems) +
+  B3 sub-slice 5 (MATCHING.md "Same theorem, two machines": Takens via
+  conjugacy vs via pushforward). Counts to derived 151, deep cells 31.
 - `2026-08-25-0827.md` — Pass 46: B2 batch-008 kuramoto 3/5 ANNOTATED
   (2407.02416 Buendía mesoscopic; 2505.10114 extreme sync transitions —
   null-hypothesis core, atlas-relevant; cond-mat/0606048 eight-regime
-  taxonomy). Counts to derived 149, deep cells 30. by-structure/matching.md
-  question on Aaron-gated list — file not created; judgment placements in report.
+  taxonomy). Counts to derived 149, deep cells 30.
 - `2026-08-25-0750.md` / `2026-08-25-0740.md` — Passes 44–45: batch-008
   reservoir-gs group CLOSED 6/6 (GS=matching arc: Takens-as-GS bridge pair,
   conditional-Lyapunov margins, abstraction-as-attractor-continuum).
@@ -30,13 +33,11 @@ the gen_stats regen.
 ## Task status (LOOP_MISSION.md ledger is canonical)
 - **A1–A6:** all [done].
 - **B1 ingestion contract:** [done] (6ebfcf2).
-- **B2 queue consumption:** [in_progress] — batch-008 kuramoto 3/5 consumed
-  (pass 46); next default slice takes kuramoto candidates 10–11 to close the
-  batch, then the queued B3 dynamical_systems bridge-pair slice. Residual
-  Wave-era catch-all pointer debt (~100, ≤5/pass sanctioned).
-- **B3 atlas synthesis:** [in_progress] — sub-slices 1–4 done (passes 33–38).
-  Open hooks: null-surrogate triangle (batch-007 closed); reservoir-gs ↔
-  2409.08768 bridge pair documented in annotations/2108.05024.md + both index
-  entries — ready for a B3 atlas slice on dynamical_systems.md. Pass-46 hook:
-  2505.10114 as authorial statement of the transition-vs-bifurcation null
-  (candidate ANTISYNONYMS support).
+- **B2 queue consumption:** [in_progress] — batch-008 CLOSED 11/11 (pass 47,
+  zero rejections). IDLE until orchestrator drops batch-009 (foraging) in
+  papers/queue/. Residual Wave-era catch-all pointer debt (~100, ≤5/pass
+  sanctioned).
+- **B3 atlas synthesis:** [in_progress] — sub-slices 1–5 done (5 = pass 47
+  MATCHING.md Takens bridge-pair section). Open hooks: fold 2505.10114 into
+  glossary/ANTISYNONYMS.md as transition-vs-bifurcation null support;
+  catch-all pointer sweeps; dynamical_systems.md atlas re-read post-batch-008.
