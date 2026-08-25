@@ -203,7 +203,7 @@ THE standard computational tool for PH. Implicit coboundary matrix representatio
 
 ## Cross-listed from Dynamical Systems
 
-- **Zhou, Chu, Xu, Liu, Yu (2020)** — "Detecting Predictable Segments of Chaotic Financial Time Series via Neural Network." Phase space reconstruction + SOM clustering to detect predictable vs. chaotic segments. Full annotation in `by-domain/dynamical_systems.md`. Machines: parameterized homology, null hypothesis.
+- **Zhou, Chu, Xu, Liu, Yu (2020)** — "Detecting Predictable Segments of Chaotic Financial Time Series via Neural Network." Phase space reconstruction + SOM clustering to detect predictable vs. chaotic segments. Full annotation: `annotations/10.3390-electronics9050823.md` (promoted B2 pass 19). Machines: parameterized homology, null hypothesis.
 
 ---
 

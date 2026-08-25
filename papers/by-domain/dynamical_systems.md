@@ -44,77 +44,20 @@ arXiv: 2006.02361 | NeurIPS 2020
 ## Colbrook, Drmac, Horning (2025)
 **"An Introductory Guide to Koopman Learning"**
 arXiv: 2510.22002
-
-**Domain(s)**: Dynamical systems, numerical analysis
-
-**Abstract machines instantiated**:
-- **Parameterized homology**: The paper provides a comprehensive treatment of how Koopman spectral analysis tracks dynamical invariants as the system evolves. Spectral measures mu_g of the Koopman operator decompose the dynamics into components: point spectrum (periodic/quasi-periodic modes), absolutely continuous spectrum (mixing/chaotic dynamics), and singular continuous spectrum (fractal-like dynamics). The spectral type is itself an invariant that classifies the dynamical system — and computing it from data requires tracking how approximations converge as the dictionary size (the parameter) increases.
-- **Stability**: A central theme is rigorous convergence of data-driven methods. The paper unifies error control via residuals: for EDMD matrix approximation, the residual ||K*psi_j - sum_i A_ij psi_i||^2 quantifies how far the finite-dimensional approximation is from the true operator. Pseudospectra sigma_epsilon(K) = {z : ||(K - zI)^{-1}|| > 1/epsilon} provide stability bounds — points in the epsilon-pseudospectrum are eigenvalues that persist under perturbations of size epsilon. This is the spectral analogue of persistence stability.
-- **Matching (spectral)**: The delay embedding approach connects to matching: given a single observable, the Krylov subspace {g, Kg, K^2 g, ...} generates a subspace from which the operator can be approximated. The generalized Laplace analysis matches observables to their spectral components via time-averaging: P_lambda[g] = lim_{N->inf} (1/N) sum_{n=0}^{N-1} e^{-i*lambda*n} K^n g. This is an optimal assignment of spectral weight to frequencies.
-
-**What is genuinely new (not reducible to shared abstraction)**:
-- Unified error control via residuals across finite and infinite-dimensional settings. The paper provides a single framework for assessing EDMD, DMD, and delay-embedded approximations — showing that residuals are the fundamental diagnostic regardless of method.
-- Elementary proof that generalized Laplace analysis converges for spectral operators with continuous spectra and no spectral gaps. Previous convergence results required point spectrum; this extends to the mixing/chaotic case.
-- Comprehensive comparison of three families of spectral measure computation methods: moment-based (Christoffel-Darboux kernels), eigenvalue-based (smoothed EDMD spectra), and resolvent-based (Stone's formula). This taxonomy of approaches is itself a contribution.
-- The classification theory section: distinguishing pure point, absolutely continuous, and singular continuous spectra from finite data is posed as a computational challenge with rigorous algorithmic solutions.
-
-**Connections the authors acknowledge**: Extensive survey of Koopman operator literature (Mezic, Schmid, Brunton, Budisic, Kutz). Applications in fluid dynamics, control theory. Cite Takens embedding theorem as the theoretical foundation for delay-based methods. No connections to TDA, QEC, or information theory — the paper stays within dynamical systems and numerical analysis.
-
-**Vocabulary mapping**:
-| Paper term | Rosetta term |
-|---|---|
-| Koopman operator K | Linear lifting of nonlinear dynamics |
-| Spectral measure mu_g | Distribution of dynamical invariants (parameterized) |
-| Point spectrum | Persistent features (discrete eigenvalues = periodic modes) |
-| Continuous spectrum | Mixing/chaotic structure (no isolated eigenvalues) |
-| EDMD matrix A | Finite-dimensional boundary operator approximation |
-| Residual ||K*psi - A*psi|| | Error in the approximation (stability diagnostic) |
-| Pseudospectrum sigma_epsilon | epsilon-perturbation set (stability under noise) |
-| Generalized Laplace analysis | Spectral projection (matching observable to frequency) |
-| Krylov subspace | Delay embedding (Takens reconstruction in function space) |
-| DMD / Dynamic Mode Decomposition | Data-driven spectral decomposition |
-| Dictionary {psi_j} | Basis for the function space (analogous to simplicial basis) |
-| Coherency | Forecast reliability measure |
-
-**See also**: `by-structure/filtrations.md`
+Promoted to per-paper annotation file (B2 pass 19, batch-003 candidate-01, promote-on-encounter).
+Machines: parameterized homology, stability, matching (spectral).
+Full annotation: `annotations/2510.22002.md`.
+**See also**: `by-structure/filtrations.md`, `by-structure/phase_transitions.md`
 
 ---
 
 ## Zhou, Chu, Xu, Liu, Yu (2020)
 **"Detecting Predictable Segments of Chaotic Financial Time Series via Neural Network"**
 DOI: 10.3390/electronics9050823 | Electronics 9(5):823
-
-**Domain(s)**: Dynamical systems, finance (applied), machine learning
-
-**Abstract machines instantiated**:
-- **Parameterized homology**: Phase space reconstruction (PSR) via Takens embedding is the core methodology. The time series x(t) is embedded into m-dimensional phase space as vectors X(t) = [x(t), x(t+tau), ..., x(t+(m-1)*tau)]. The embedding dimension m and time delay tau are the parameters. As these parameters vary, the topological structure of the reconstructed attractor changes. The paper uses mutual information to determine optimal tau and the Grassberger-Procaccia algorithm to determine m — both are parameter selection procedures that seek the simplest faithful topological representation.
-- **Null hypothesis**: The SOM (Self-Organizing Map) clustering of phase track segments separates linear (predictable) components from nonlinear (chaotic) components. The chaotic segments serve as the null: regions where structure has been destroyed by sensitivity to initial conditions (positive Lyapunov exponent). The predictable segments are the signal — structure that persists despite the surrounding chaos. The Lyapunov exponent L itself is the diagnostic: 0 < L < 1 means short-term predictability; L > 1 means unpredictable.
-- **Stability**: Takens embedding theorem guarantees that for generic m and tau, the reconstructed phase space is diffeomorphic to the true attractor — the topology is preserved under embedding. This is a stability result: the topological invariants of the attractor are robust to the choice of embedding parameters (as long as they are generic). The SOM clustering adds a second stability layer: similar phase track segments cluster together, and the prediction accuracy measures whether the learned patterns are stable enough to forecast.
-
-**What is genuinely new (not reducible to shared abstraction)**:
-- The key insight is detecting WHICH segments of a chaotic time series are predictable, rather than estimating overall predictability. Previous work computed global Lyapunov exponents; this paper provides local, time-varying predictability assessment via unsupervised clustering.
-- Using SOM neural networks to cluster phase track segments by similarity. Phase tracks that recur in similar patterns (periodic or quasi-periodic segments within an otherwise chaotic series) are identified and grouped. LSTM is then applied only to the predictable clusters.
-- The interpretation of intermittent chaos in financial markets: alternating between predictable (linear superposition) and unpredictable (chaotic) regimes. This provides a dynamical systems explanation for phenomena like sudden market crashes ("black swans") — they correspond to transitions from predictable to chaotic dynamics.
-- Tested on multiple financial indices (Dow Jones, Nikkei, Chinese markets, gold) demonstrating generality.
-
-**Connections the authors acknowledge**: Cite phase space reconstruction (Takens, 1981), Lyapunov exponents, Hurst index (MF-DFA). Cite LSTM and SOM neural networks. Acknowledge the tension between nonlinear model success and the "initial sensitivity law" of chaos — prediction accuracy should be impossible beyond the Lyapunov horizon. No connections to TDA (despite using topological reconstruction), QEC, or information theory.
-
-**Vocabulary mapping**:
-| Paper term | Rosetta term |
-|---|---|
-| Phase space reconstruction | Takens embedding (topology-preserving map) |
-| Embedding dimension m | Parameter (controls the chain complex dimension) |
-| Time delay tau | Parameter (controls the sampling resolution) |
-| Strange attractor | Invariant topological object (the manifold) |
-| Lyapunov exponent L | Stability diagnostic (sensitivity to perturbation) |
-| Predictable segment | Region with preserved structure (low L) |
-| Chaotic segment | Region with destroyed structure (high L, null model) |
-| SOM clustering | Unsupervised matching of phase track segments |
-| Phase track similarity | Distance metric on embedded trajectories |
-| Intermittent chaos | Alternating parameterized regimes (phase transitions) |
-| Hurst index h | Long-range dependence measure (stability of correlations) |
-
-**See also**: `by-structure/filtrations.md`, `by-domain/tda.md` (cross-listed — uses topological reconstruction)
+Promoted to per-paper annotation file (B2 pass 19, batch-003 candidate-02, promote-on-encounter).
+Machines: parameterized homology, null hypothesis, stability.
+Full annotation: `annotations/10.3390-electronics9050823.md`.
+**See also**: `by-structure/filtrations.md`, `by-structure/phase_transitions.md`, `by-domain/tda.md`
 
 ---
 

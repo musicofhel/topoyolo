@@ -101,11 +101,11 @@ Stability: PREVALENT embeddings (measure-theoretic genericity, strictly stronger
 Stability: Koopman predictions accurate over a non-trivial training window before diverging. Complexity analysis shows when partitioned Koopman training provides speedup (small partitions). Stability degrades as loss landscape becomes increasingly nonlinear. Full annotation: `by-domain/dynamical_systems.md`.
 
 ### Colbrook, Drmac, Horning (2025) — Introductory Guide to Koopman Learning
-Stability: Central theme. Residuals ||K*psi - A*psi|| quantify approximation error. Pseudospectra sigma_epsilon(K) provide perturbation bounds — eigenvalues in the epsilon-pseudospectrum persist under size-epsilon perturbations. This is the spectral analogue of persistence diagram stability. Rigorous convergence proofs for generalized Laplace analysis even with continuous spectra. Full annotation: `by-domain/dynamical_systems.md`.
+Stability: Central theme. Residuals ||K*psi - A*psi|| quantify approximation error. Pseudospectra sigma_epsilon(K) provide perturbation bounds — eigenvalues in the epsilon-pseudospectrum persist under size-epsilon perturbations. This is the spectral analogue of persistence diagram stability. Rigorous convergence proofs for generalized Laplace analysis even with continuous spectra. Full annotation: `annotations/2510.22002.md` (B2 pass 19).
 
 ### Zhou, Chu, Xu, Liu, Yu (2020) — Detecting Predictable Segments in Chaotic Time Series
 Stability: Takens embedding theorem guarantees topology preservation for generic parameters. SOM clustering adds second stability layer — similar phase track segments cluster together.
-Null hypothesis: Chaotic segments (L > 1) serve as the null — regions where sensitivity to initial conditions has destroyed predictable structure. Predictable segments (0 < L < 1) are the signal. Lyapunov exponent is the diagnostic. Full annotation: `by-domain/dynamical_systems.md`.
+Null hypothesis: Chaotic segments (L > 1) serve as the null — regions where sensitivity to initial conditions has destroyed predictable structure. Predictable segments (0 < L < 1) are the signal. Lyapunov exponent is the diagnostic. Full annotation: `annotations/10.3390-electronics9050823.md` (B2 pass 19).
 
 ### Sugihara, May, Ye, Hsieh, Deyle, Fogarty, Munch (2012) — Convergent Cross-Mapping
 Stability: Convergence criterion — cross-prediction skill improves and stabilizes as library size L increases. Takens embedding provides foundational stability (diffeomorphic reconstruction for generic parameters). The convergence curve rho(L) itself is a stability diagnostic: genuine causal coupling produces monotonically improving, stabilizing prediction; absence of coupling produces flat/non-convergent skill.

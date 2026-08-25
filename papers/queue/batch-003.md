@@ -9,7 +9,7 @@ Consume per papers/INGESTION.md (≤3 papers/pass; triage-reject with one senten
 
 ---
 
-## candidate-01 [dyn-matching] — UNCONSUMED
+## candidate-01 [dyn-matching] — ANNOTATED as 2510.22002 (promote-on-encounter: already covered as a prose block in by-domain/dynamical_systems.md; block migrated verbatim to annotations/2510.22002.md, pass 19. Queue-group label 'dyn-matching' is a filter artifact — paper instantiates parameterized homology, stability, spectral matching; no optimal-transport matching.)
 
 **Title:** 2510.22002v1
 
@@ -92,7 +92,7 @@ positions encode information about the state-space dynamics. Numerical approxima
 snapshot data allow nonlinear forecasting, and spectral computations uncover struct
 ```
 
-## candidate-02 [dyn-matching] — UNCONSUMED
+## candidate-02 [dyn-matching] — ANNOTATED as 10.3390-electronics9050823 (promote-on-encounter: duplicate of existing prose-block coverage in dynamical_systems/filtrations/phase_transitions indices; block migrated verbatim to annotations/, pass 19)
 
 **Title:** electronics 09 00823 v3
 

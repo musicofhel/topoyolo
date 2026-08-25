@@ -81,10 +81,10 @@ Parameter: embedding dimension d. Invariant: faithful embedding (prevalent). Cri
 Parameter: training step t. Invariant: Koopman eigenvalues (dynamical modes of weight evolution). Dominant eigenvalues = persistent modes; decaying eigenvalues = transient features. Weight trajectory in weight space treated as discrete dynamical system; Koopman operator lifts nonlinear dynamics to linear spectral analysis. Full annotation: `by-domain/dynamical_systems.md`.
 
 ### Colbrook, Drmac, Horning (2025) — Introductory Guide to Koopman Learning
-Parameter: dictionary size N (finite-dimensional truncation). Invariant: spectral type of Koopman operator (point, absolutely continuous, singular continuous spectrum). Convergence of EDMD approximations as N grows. Spectral measures decompose dynamics into periodic, mixing, and fractal components. Residuals as convergence diagnostics. Full annotation: `by-domain/dynamical_systems.md`.
+Parameter: dictionary size N (finite-dimensional truncation). Invariant: spectral type of Koopman operator (point, absolutely continuous, singular continuous spectrum). Convergence of EDMD approximations as N grows. Spectral measures decompose dynamics into periodic, mixing, and fractal components. Residuals as convergence diagnostics. Full annotation: `annotations/2510.22002.md` (B2 pass 19).
 
 ### Zhou, Chu, Xu, Liu, Yu (2020) — Detecting Predictable Segments in Chaotic Time Series
-Parameter: embedding dimension m and time delay tau (phase space reconstruction). Invariant: attractor topology and Lyapunov exponent L. As m increases, the reconstructed phase space converges to the true attractor topology (Takens). L classifies predictability: 0 < L < 1 (predictable), L > 1 (unpredictable). SOM clustering separates phase track segments by dynamical regime. Full annotation: `by-domain/dynamical_systems.md`.
+Parameter: embedding dimension m and time delay tau (phase space reconstruction). Invariant: attractor topology and Lyapunov exponent L. As m increases, the reconstructed phase space converges to the true attractor topology (Takens). L classifies predictability: 0 < L < 1 (predictable), L > 1 (unpredictable). SOM clustering separates phase track segments by dynamical regime. Full annotation: `annotations/10.3390-electronics9050823.md` (B2 pass 19).
 
 ---
 
