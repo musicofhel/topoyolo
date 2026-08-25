@@ -1006,7 +1006,7 @@ arXiv: 1909.02297
 **Domain(s)**: Neuroscience (consciousness), information theory
 PhiID = Integrated Information Decomposition. Double-redundancy lattice (product of two PID lattices, 16 nodes) with Moebius inversion gives 16 atoms decomposing excess entropy. Six-category taxonomy: storage, copy, transfer, erasure, upward causation, downward causation. Unifies IIT and PID. Shows Phi_WMS, psi, Phi_G, CD each capture different atom subsets (Table I). Corrected Phi_WMS,c avoids negativity by adding back double-redundancy.
 **Machines**: joint-vs-marginal, chain complex, parameterized homology, null hypothesis, stability.
-Full annotation: `annotations/1703.00810.md` (arXiv: 1909.02297).
+Full annotation: `annotations/1909.02297.md` (arXiv: 1909.02297).
 **See also**: `by-structure/composite_systems.md`, `by-domain/neuroscience.md`
 
 ### Barrett (2015) — PID for Gaussian Systems
@@ -1015,7 +1015,7 @@ arXiv: 1411.2832
 **Domain(s)**: Information theory, neuroscience
 First PID for continuous variables. For Gaussian with univariate target: all PIDs satisfying marginal-dependence collapse to MMI (R = min{I(X;Y), I(X;Z)}). Synergy = extra info from weaker source given stronger. Net synergy positive even when sources uncorrelated (log concavity effect). Dynamical MVAR analysis: synergy decreases with lag depth, increases with weaker connection, decreases with source correlation. Proposes synergistic complexity SC as alternative to Phi.
 **Machines**: joint-vs-marginal, parameterized homology, null hypothesis, stability.
-Full annotation: `annotations/1703.00810.md` (arXiv: 1411.2832).
+Full annotation: `annotations/1411.2832.md` (arXiv: 1411.2832).
 **See also**: `by-structure/composite_systems.md`, `by-domain/neuroscience.md`
 
 ---

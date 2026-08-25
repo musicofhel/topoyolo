@@ -167,7 +167,7 @@ arXiv: 1909.02297
 **Domain(s)**: Neuroscience (consciousness), information theory
 PhiID = Integrated Information Decomposition. Combines PID with IIT to decompose excess entropy into 16 atoms on a double-redundancy (product) lattice. Reveals that "integration" is actually an aggregate of storage, copy, transfer, erasure, upward causation, and downward causation — six qualitatively distinct modes of joint-vs-marginal excess. Shows existing Phi measures (Phi_WMS, psi, Phi_G, CD) each capture different subsets of atoms. Motivated by consciousness research: understanding WHAT KIND of integration the brain performs, not just HOW MUCH.
 **Machines**: joint-vs-marginal, chain complex (product lattice + Moebius inversion), parameterized homology, null hypothesis, stability.
-Full annotation: `annotations/tort-2010.md` (arXiv: 1909.02297).
+Full annotation: `annotations/1909.02297.md` (arXiv: 1909.02297).
 **See also**: `by-structure/composite_systems.md`
 
 ### Barrett (2015) — PID for Gaussian Systems
@@ -176,7 +176,7 @@ arXiv: 1411.2832
 **Domain(s)**: Information theory, neuroscience
 First systematic PID analysis for continuous (Gaussian) variables. Key result: for univariate target, broad class of PIDs collapse to MMI (redundancy = min of individual MIs). Synergy prevalent even when sources are uncorrelated. Applied to MVAR dynamical systems: synergy decreases with lag depth, increases with weaker connection strength, decreases with source correlation. Discusses neuroscience applications: neural coding, EEG connectivity, epilepsy, consciousness.
 **Machines**: joint-vs-marginal, parameterized homology, null hypothesis, stability.
-Full annotation: `annotations/tort-2010.md` (arXiv: 1411.2832).
+Full annotation: `annotations1411.28320.md` (arXiv: 1411.2832).
 **See also**: `by-structure/composite_systems.md`
 
 ---

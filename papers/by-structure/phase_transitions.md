@@ -216,11 +216,11 @@ The taxonomy now extends to 6 flavors:
 
 ### Stability
 
-**Aharonov & Ben-Or (1997/1999) — Threshold Theorem**: THE foundational stability result for quantum computation. If eta < eta_c (constant), arbitrarily long quantum computations can be performed with arbitrarily high reliability at polylogarithmic overhead. Doubly-exponential error suppression: (c*eta)^{2^r} after r levels of concatenation. Holds for very general noise (probabilistic, decoherent, amplitude damping, depolarizing, correlated). The quantum analogue of von Neumann's 1956 classical fault-tolerance result. Full annotation: `annotations/2508.19048.md` (arXiv: quant-ph/9906129).
+**Aharonov & Ben-Or (1997/1999) — Threshold Theorem**: THE foundational stability result for quantum computation. If eta < eta_c (constant), arbitrarily long quantum computations can be performed with arbitrarily high reliability at polylogarithmic overhead. Doubly-exponential error suppression: (c*eta)^{2^r} after r levels of concatenation. Holds for very general noise (probabilistic, decoherent, amplitude damping, depolarizing, correlated). The quantum analogue of von Neumann's 1956 classical fault-tolerance result. Full annotation: `annotations/quant-ph-9906129.md` (arXiv: quant-ph/9906129).
 
-**Knill, Laflamme, Zurek (1998) — Threshold Theorem**: Independent proof via 7-qubit Steane code. Effective error c^{2^h-1} p^{2^h} after h concatenation levels. Explicit numerical threshold ~3 x 10^{-6} from counting minimal failure pairs in recovery network. Extends to quasi-independent stochastic and monotone error models. Full annotation: `annotations/2508.19048.md` (arXiv: quant-ph/9702058).
+**Knill, Laflamme, Zurek (1998) — Threshold Theorem**: Independent proof via 7-qubit Steane code. Effective error c^{2^h-1} p^{2^h} after h concatenation levels. Explicit numerical threshold ~3 x 10^{-6} from counting minimal failure pairs in recovery network. Extends to quasi-independent stochastic and monotone error models. Full annotation: `annotaquant-ph-9702058.19048.md` (arXiv: quant-ph/9702058).
 
-**Breuckmann & Eberhardt (2021) — LDPC Stability**: Multiple stability levels. Gottesman's constant overhead theorem: LDPC codes can reduce fault-tolerance overhead to a CONSTANT (not polylogarithmic). Hyperbolic surface code thresholds under MWPM/union-find decoders. Systolic geometry connects code distance to shortest non-contractible submanifold. Full annotation: `annotations/2508.19048.md` (arXiv: 2103.06309).
+**Breuckmann & Eberhardt (2021) — LDPC Stability**: Multiple stability levels. Gottesman's constant overhead theorem: LDPC codes can reduce fault-tolerance overhead to a CONSTANT (not polylogarithmic). Hyperbolic surface code thresholds under MWPM/union-find decoders. Systolic geometry connects code distance to shortest non-contractible submanifold. Full annotation: `2103.06309s/2508.19048.md` (arXiv: 2103.06309).
 
 ### Null Hypothesis
 
