@@ -54,7 +54,7 @@ The typical model for measurement noise in quantum error correction is to random
 Realizing the full potential of quantum computation requires quantum error correction (QEC), with most recent breakthrough demonstrations of QEC using the surface code. QEC codes use multiple noisy physical qubits to encode information in fewer logical qubits, enabling the identification of errors through a decoding process. This process increases the logical fidelity (or accuracy) making the computation more reliable. However, most fast (efficient runtime) decoders neglect important noise characteristics, thereby reducing their accuracy. In this work, we introduce decoders that are both fast and accurate, and can be used with a wide class of QEC codes including the surface code. Our decoders, named belief-matching and belief-find, exploit all noise information and thereby unlock higher accuracy demonstrations of QEC. Using the surface code threshold as a performance metric, we observe a threshold at 0.94% error probability for our decoders, outperforming the 0.82% threshold for a standard minimum-weight perfect matching decoder. We also tested our belief-matching decoders in a theoretical case study of codes tailored to a biased noise model. We find that the decoders led to a much higher threshold and lower qubit overhead in the tailored surface code with respect to the standard, square surface code. Surprisingly, in the well-below threshold regime, the rectangular surface code becomes more resource-efficient than the tailored surface code, due to a previously unnoticed phenomenon that we call "fragile boundaries". Our decoders outperform all other fast decoders in terms of threshold and accuracy, enabling better results in current quantum error correction experiments and opening up new areas for theoretical case studies.
 ```
 
-## candidate-04 [qec-mwpm] — UNCONSUMED
+## candidate-04 [qec-mwpm] — ANNOTATED as 1705.07855 (pass 41)
 
 **Title:** Machine-learning-assisted correction of correlated qubit errors in a topological code
 
@@ -68,7 +68,7 @@ Realizing the full potential of quantum computation requires quantum error corre
 A fault-tolerant quantum computation requires an efficient means to detect and correct errors that accumulate in encoded quantum information. In the context of machine learning, neural networks are a promising new approach to quantum error correction. Here we show that a recurrent neural network can be trained, using only experimentally accessible data, to detect errors in a widely used topological code, the surface code, with a performance above that of the established minimum-weight perfect matching (or blossom) decoder. The performance gain is achieved because the neural network decoder can detect correlations between bit-flip (X) and phase-flip (Z) errors. The machine learning algorithm adapts to the physical system, hence no noise model is needed. The long short-term memory layers of the recurrent neural network maintain their performance over a large number of quantum error correction cycles, making it a practical decoder for forthcoming experimental realizations of the surface code.
 ```
 
-## candidate-05 [qec-mwpm] — UNCONSUMED
+## candidate-05 [qec-mwpm] — ANNOTATED as 2603.05381 (pass 41)
 
 **Title:** Achieving Thresholds via Standalone Belief Propagation on Surface Codes
 
@@ -82,7 +82,7 @@ A fault-tolerant quantum computation requires an efficient means to detect and c
 The usual belief propagation (BP) decoders are, in general, exchanging local information on the Tanner graph of the quantum error-correcting (QEC) code and, in particular, are known to not have a threshold for the surface code. We propose novel BP decoders that exchange messages on the decoding graph and obtain code capacity thresholds via standalone BP for the surface code under depolarizing noise. Our approach, similarly to the minimum weight perfect matching (MWPM) decoder, is applicable to any graphlike QEC code. The thresholds observed with our decoders are close to those obtained by MWPM. This result opens the path towards scalable hardware-accelerated implementations of MWPM-compatible decoders.
 ```
 
-## candidate-06 [qec-mwpm] — UNCONSUMED
+## candidate-06 [qec-mwpm] — ANNOTATED as 1202.5602 (pass 41)
 
 **Title:** Towards practical classical processing for the surface code: timing analysis
 

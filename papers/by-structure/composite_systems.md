@@ -373,3 +373,6 @@ Predictive-coding strategies recast as competing constraints between local activ
 
 ### Wong & Vong (2021) — Persistence Diagrams as Supervisory Targets (ICCV 2021)
 PHGCN: filtration barcodes as GCN features with a Persistence Diagram Loss penalizing diagram-vs-diagram mismatch of predicted segmentation — matching cost between topological summaries closed into an optimization loop. DOI 10.1109/ICCV48922.2021.00701. Full annotation: `annotations/wong-vong-2021.md` (B2 pass 39). **See also**: `by-domain/tda.md`.
+
+### Baireuther, O'Brien, Tarasinski & Beenakker (2017) — RNN decoder for correlated errors (arXiv: 1705.07855)
+Decoder-side joint-vs-marginal gain: an RNN beats MWPM precisely because it detects X–Z error correlations that the matching decoder's independent X and Z matchings cannot represent — joint structure cashed out as logical performance rather than an information measure. Full annotation: `annotations/1705.07855.md` (B2 pass 41). **See also**: `by-domain/qec.md`, `by-structure/phase_transitions.md`.

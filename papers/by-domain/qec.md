@@ -234,3 +234,21 @@ arXiv: 2203.04948. Belief propagation on the full circuit-level noise model feed
 **Machines**: matching (core), chain complex, phase transitions, stability.
 Full annotation: `annotations/2203.04948.md` (B2 pass 40). Abstract-only provenance — depth-limited.
 **See also**: `by-structure/phase_transitions.md`, `by-structure/boundary_operators.md`
+
+### Baireuther, O'Brien, Tarasinski & Beenakker (2017) — RNN decoder for correlated errors
+arXiv: 1705.07855. Recurrent (LSTM) decoder trained only on experimentally accessible syndrome data beats MWPM on the surface code because it detects X–Z error correlations that matching factorizes away — joint-vs-marginal excess realized as decoder advantage; no noise model needed (the network learns its own implicit null model).
+**Machines**: joint-vs-marginal excess (core), matching, null hypothesis.
+Full annotation: `annotations/1705.07855.md` (B2 pass 41). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/composite_systems.md`
+
+### Hack, Menti, Lazaro & Paler (2026) — Standalone BP on the decoding graph
+arXiv: 2603.05381. BP run on the decoding graph (not the Tanner graph) attains standalone code-capacity thresholds near MWPM under depolarizing noise — locating Tanner-graph BP's known failure in the carrier-graph choice, not the message-passing algorithm; MWPM-compatible for any graphlike QEC code. Joins the ldpc-bp BP-vs-assignment lineage.
+**Machines**: chain complex / message passing (core), stability, matching.
+Full annotation: `annotations/2603.05381.md` (B2 pass 41). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/phase_transitions.md`
+
+### Fowler, Whiteside & Hollenberg (2012) — MWPM timing analysis
+arXiv: 1202.5602. Empirical O(n²) average time per correction round for exact MWPM on surface codes at distances 4–512 with verified true-minimum matchings: the Matching machine's fault-tolerance practicality rests on the sparse local structure of sub-threshold syndrome instances, not blossom's super-polynomial worst case. Ancestor complexity anchor of this lineage.
+**Machines**: matching (core), stability.
+Full annotation: `annotations/1202.5602.md` (B2 pass 41). Abstract-only provenance — depth-limited.
+
