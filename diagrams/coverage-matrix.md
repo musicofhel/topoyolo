@@ -8,11 +8,11 @@ Updated: 2026-08-25 (derived by scripts/gen_stats.py from papers/annotations/)
                 ChainCmplx    ParamHom    Matching   Stability   JointMarg     NullHyp
 ──────────────────────────────────────────────────────────────────────────────────────
 TDA                   *30*        *31*        *22*        *33*           9        *18*
-QEC                   *12*           8           7        *12*           2           9
+QEC                   *12*        *10*           7        *14*           3        *11*
 Dynamics              *13*        *20*           8        *20*        *10*        *16*
 Neuro                 *18*        *22*           5        *15*        *16*        *24*
-InfoTheo              *11*        *23*        *15*        *19*        *28*        *34*
-StatPhys                 2           2           6           4           5           6
+InfoTheo              *11*        *26*        *18*        *23*        *31*        *39*
+StatPhys                 2           5           9           8           8        *11*
 ```
 
 (`*n*` marks deep cells ≥10.)
@@ -27,18 +27,20 @@ block-beta
   space:1 CC["ChainCmplx"] PH["ParamHom"] MA["Matching"] ST["Stability"] JM["JointMarg"] NH["NullHyp"]
 
   TDA["TDA"] TDA_CC["30"] TDA_PH["31"] TDA_MA["22"] TDA_ST["33"] TDA_JM["9"] TDA_NH["18"]
-  QEC["QEC"] QEC_CC["12"] QEC_PH["8"] QEC_MA["7"] QEC_ST["12"] QEC_JM["2"] QEC_NH["9"]
+  QEC["QEC"] QEC_CC["12"] QEC_PH["10"] QEC_MA["7"] QEC_ST["14"] QEC_JM["3"] QEC_NH["11"]
   DYN["Dynamics"] DYN_CC["13"] DYN_PH["20"] DYN_MA["8"] DYN_ST["20"] DYN_JM["10"] DYN_NH["16"]
   NEU["Neuro"] NEU_CC["18"] NEU_PH["22"] NEU_MA["5"] NEU_ST["15"] NEU_JM["16"] NEU_NH["24"]
-  IT["InfoTheo"] IT_CC["11"] IT_PH["23"] IT_MA["15"] IT_ST["19"] IT_JM["28"] IT_NH["34"]
-  SP["StatPhys"] SP_CC["2"] SP_PH["2"] SP_MA["6"] SP_ST["4"] SP_JM["5"] SP_NH["6"]
+  IT["InfoTheo"] IT_CC["11"] IT_PH["26"] IT_MA["18"] IT_ST["23"] IT_JM["31"] IT_NH["39"]
+  SP["StatPhys"] SP_CC["2"] SP_PH["5"] SP_MA["9"] SP_ST["8"] SP_JM["8"] SP_NH["11"]
   style TDA_CC fill:#9f9,stroke:#333
   style TDA_PH fill:#9f9,stroke:#333
   style TDA_MA fill:#9f9,stroke:#333
   style TDA_ST fill:#9f9,stroke:#333
   style TDA_NH fill:#9f9,stroke:#333
   style QEC_CC fill:#9f9,stroke:#333
+  style QEC_PH fill:#9f9,stroke:#333
   style QEC_ST fill:#9f9,stroke:#333
+  style QEC_NH fill:#9f9,stroke:#333
   style DYN_CC fill:#9f9,stroke:#333
   style DYN_PH fill:#9f9,stroke:#333
   style DYN_ST fill:#9f9,stroke:#333
@@ -55,6 +57,7 @@ block-beta
   style IT_ST fill:#9f9,stroke:#333
   style IT_JM fill:#9f9,stroke:#333
   style IT_NH fill:#9f9,stroke:#333
+  style SP_NH fill:#9f9,stroke:#333
 ```
 
 ## Legend
@@ -69,4 +72,4 @@ fails if these numbers drift from the claims in README.md / docs/index.html.
 
 ## Coverage Status
 
-104 fully annotated papers. 23 of 36 cells ≥10 (deep); min cell = 2.
+109 fully annotated papers. 26 of 36 cells ≥10 (deep); min cell = 2.

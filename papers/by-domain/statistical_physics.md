@@ -96,3 +96,19 @@ Full annotation: `annotations/1109.3041.md` (B2 pass 29). Abstract-only provenan
 **See also**: `by-domain/information_theory.md`, `by-structure/phase_transitions.md`, `annotations/1905.10031.md`
 
 *Batch-004 ldpc-bp group closed 4/4 (B2 pass 29): cond-mat/9908358, 1307.5210, 1905.10031, 1109.3041.*
+
+---
+
+## B2 batch-005 — channel-capacity ↔ dissipation / criticality (2026-08-25)
+
+### Qian & Roy (2011) — Capacity of biochemical signaling modules vs free-energy expenditure
+arXiv: 1112.4589. Equilibrium (zero free-energy expenditure) is exactly where channel capacity vanishes; driving breaks detailed balance and buys capacity. Cascades as distributed multistage codes maintained dissipatively.
+**Machines**: parameterized homology, null hypothesis, matching.
+Full annotation: `annotations/1112.4589.md` (B2 pass 30). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/information_theory.md`, `by-structure/optimal_transport.md`
+
+### Choi, Bao, Qi & Altman (2019) — Measurement-induced phase transition as QEC transition
+arXiv: 1903.05124. Random unitary circuits with intermittent measurements: volume-law/area-law entanglement transition understood via error-correction thresholds of the scrambling-encoded information.
+**Machines**: joint-vs-marginal excess (core), stability, parameterized homology.
+Full annotation: `annotations/1903.05124.md` (B2 pass 30). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/qec.md`, `by-structure/phase_transitions.md`

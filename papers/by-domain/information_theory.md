@@ -1153,3 +1153,19 @@ Full annotation: `annotations/1109.3041.md` (B2 pass 29). Abstract-only provenan
 **See also**: `by-domain/statistical_physics.md`, `by-structure/phase_transitions.md`, `annotations/1905.10031.md`
 
 *Batch-004 ldpc-bp group closed 4/4 (B2 pass 29); batch-004 fully consumed 17/17.*
+
+---
+
+## B2 batch-005 — channel-capacity group (2026-08-25)
+
+### Qian & Roy (2011) — Channel capacity of the phosphorylation–dephosphorylation cycle
+arXiv: 1112.4589. Channel capacity of driven biochemical signaling modules is zero iff free-energy expenditure is zero (positive correlation in between); linear signaling cascades act as distributed multistage codes trading capacity against code complexity. Cleanest single statement in the corpus linking Shannon capacity to nonequilibrium dissipation.
+**Machines**: matching, parameterized homology, null hypothesis, joint-vs-marginal excess (instrumental).
+Full annotation: `annotations/1112.4589.md` (B2 pass 30). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/statistical_physics.md`, `by-structure/optimal_transport.md`
+
+### Plenio & Virmani (2007) — Spin chains and channels with memory
+arXiv: quant-ph/0702059. Correlated-error channel capacities mapped to critical phenomena; capacity non-analyticities are real features of memory channels, with independent-error channels as the reference ensemble.
+**Machines**: parameterized homology (core), null hypothesis, stability.
+Full annotation: `annotations/quant-ph-0702059.md` (B2 pass 30). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/qec.md`, `by-structure/phase_transitions.md`

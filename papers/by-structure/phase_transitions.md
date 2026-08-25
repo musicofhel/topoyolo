@@ -305,3 +305,11 @@ DOI: s41468-022-00089-3. Stability: DMT metric is stable — bounded by interlea
 **Decelle, Krzakala, Moore & Zdeborová (2011)** — arXiv: 1109.3041. Stability: cavity-method phase diagram of the stochastic block model — detectability/undetectability transition (KS-style null boundary for planted structure) and easy/hard transition (statistical-to-computational gap); translates into asymptotically optimal BP detection. Canonical detectability-transition anchor. Full annotation: `annotations/1109.3041.md` (B2 pass 29). **See also**: `by-domain/statistical_physics.md`.
 
 *Batch-004 ldpc-bp group closed 4/4 (B2 pass 29).*
+
+### B2 batch-005: channel-capacity phase transitions (2026-08-25)
+
+**Choi, Bao, Qi & Altman (2019)** — arXiv: 1903.05124. Entanglement-scaling invariant (volume-law ↔ area-law) tracked across measurement rate and scrambling degree; transition = QEC error threshold; quantum channel capacity itself undergoes the transition. Null: above-threshold area-law states erase all hidden logical structure. Canonical MIPT-as-QEC anchor. Full annotation: `annotations/1903.05124.md` (B2 pass 30). **See also**: `by-domain/qec.md`.
+
+**Qian & Roy (2011)** — arXiv: 1112.4589. Channel capacity tracked along the free-energy-expenditure parameter; zero exactly at the equilibrium (detailed-balance) null. Full annotation: `annotations/1112.4589.md` (B2 pass 30). **See also**: `by-domain/information_theory.md`.
+
+**Plenio & Virmani (2007)** — arXiv: quant-ph/0702059. Capacity-under-correlated-error as a function of memory strength with genuine non-analytic points; dictionary to spin-chain criticality. Full annotation: `annotations/quant-ph-0702059.md` (B2 pass 30). **See also**: `by-domain/qec.md`.

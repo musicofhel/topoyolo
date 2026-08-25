@@ -190,3 +190,19 @@ arXiv: 2410.20233. Constructs n-dimensional toric codes from lattice codes via c
 **Machines**: chain complex, stability.
 Full annotation: `annotations/0711.0468.md` (Wave 10c).
 **See also**: `by-structure/boundary_operators.md`, `by-structure/phase_transitions.md`
+
+---
+
+## B2 batch-005 — channel-capacity ↔ QEC / monitored dynamics (2026-08-25)
+
+### Choi, Bao, Qi & Altman (2019) — QEC in scrambling dynamics and the measurement-induced phase transition
+arXiv: 1903.05124. Measurement-induced entanglement transitions recast as quantum error correction: chaotic unitary evolution encodes, projective measurements act as errors, and a phase transition (volume-law ↔ area-law) occurs when the error rate exceeds a scrambling-dependent threshold; entanglement scaling linked explicitly to changes in quantum channel capacity.
+**Machines**: joint-vs-marginal excess (core), parameterized homology, stability, null hypothesis.
+Full annotation: `annotations/1903.05124.md` (B2 pass 30). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/statistical_physics.md`, `by-structure/phase_transitions.md`
+
+### Plenio & Virmani (2007) — Spin chains and channels with memory
+arXiv: quant-ph/0702059. Channel capacity under correlated error mapped onto critical behaviour in many-body physics; capacities display genuine non-analyticities ('phase transitions') as error-memory varies, with i.i.d.-error channels as the destroyed-structure null and spin-chain techniques solving channel models exactly.
+**Machines**: parameterized homology (core), null hypothesis, stability.
+Full annotation: `annotations/quant-ph-0702059.md` (B2 pass 30). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/information_theory.md`, `by-structure/phase_transitions.md`
