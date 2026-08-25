@@ -1,14 +1,19 @@
 # research/INDEX.md — pass reports + task status (newest first)
 
 **Lint state:** check_structure.py exit 0; 1 warning = pre-existing baseline
-(2 author-year-prose crossrefs); `--check` 0 errors. Derived corpus: **151
-fully annotated papers** (+2 pass 47), **36 cells (6 machines × 6 domains)**,
+(2 author-year-prose crossrefs); `--check` 0 errors. Derived corpus: **154
+fully annotated papers** (+3 pass 48), **36 cells (6 machines × 6 domains)**,
 min cell 2, **31 cells ≥10**. Domain-alias table landed in gen_stats.py
 (pass 27); ML→InfoTheo and OT→TDA mappings await Aaron's ratification.
 Standing policy (pass 43, sanctioned): README/docs count patches land in the
 SAME commit as the gen_stats regen.
 
 ## Reports
+- `2026-08-25-0837.md` — Pass 48: B2 batch-009 pid-theory 3/5 ANNOTATED
+  (1004.2515 Williams-Beer founding lattice — fresh per-paper file despite
+  heavy prose references; 2306.00734 mereological base-concept unification;
+  1910.05979 cooperative-game second-lattice decomposition). Counts to
+  derived 154, deep cells 31.
 - `2026-08-25-0831.md` — Pass 47: **batch-008 CLOSED 11/11** (kuramoto 10–11:
   2109.08918 ML-for-Kuramoto; 1305.1742 Kuramoto-in-Hamiltonian-systems) +
   B3 sub-slice 5 (MATCHING.md "Same theorem, two machines": Takens via
@@ -33,11 +38,13 @@ SAME commit as the gen_stats regen.
 ## Task status (LOOP_MISSION.md ledger is canonical)
 - **A1–A6:** all [done].
 - **B1 ingestion contract:** [done] (6ebfcf2).
-- **B2 queue consumption:** [in_progress] — batch-008 CLOSED 11/11 (pass 47,
-  zero rejections). IDLE until orchestrator drops batch-009 (foraging) in
-  papers/queue/. Residual Wave-era catch-all pointer debt (~100, ≤5/pass
-  sanctioned).
+- **B2 queue consumption:** [in_progress] — batch-009 pid-theory 3/5 consumed
+  (pass 48). Next: candidates 04–05 (2404.01470 QEC crossref noted;
+  1303.3440 localizability axiom), then rg-dl 06–10 incl. the built-in
+  skeptical null 1906.05212 to pair with 1410.3831 Mehta-Schwab. Residual
+  Wave-era catch-all pointer debt (~100, ≤5/pass sanctioned).
 - **B3 atlas synthesis:** [in_progress] — sub-slices 1–5 done (5 = pass 47
   MATCHING.md Takens bridge-pair section). Open hooks: fold 2505.10114 into
   glossary/ANTISYNONYMS.md as transition-vs-bifurcation null support;
-  catch-all pointer sweeps; dynamical_systems.md atlas re-read post-batch-008.
+  possible ANTISYNONYMS note from 1910.05979 (positivity+identity is a
+  lattice property); dynamical_systems.md atlas re-read post-batch-008.
