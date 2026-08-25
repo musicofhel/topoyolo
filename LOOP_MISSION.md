@@ -135,8 +135,11 @@ skill, dual-index filing, glossary/atlas updates, matrix regen via A4's tool.
   **batch-001 FULLY CONSUMED 21/21** (8 annotated, 13 rejected): pass-13 added
   candidate-18 → ying-2016, candidate-12 → liu-2025, candidate-03 → brusch-2023,
   candidate-19 → silva-2018; pass-13 rejections 02/06/07/09/10/11/15/16/17/20
-  (zero machines / off-mission / DTW-as-tool). batch-002 (40 candidates) is
-  next. Lint 0 errors 0 warnings.]
+  (zero machines / off-mission / DTW-as-tool). **batch-002 started (pass 14:
+  candidates 01–03 REJECTED — geometric-dl application wrappers, zero
+  machines); 37 queued.** Also pass 14: fixed 5 wrong-pointer crossrefs in
+  by-structure/optimal_transport.md; README/docs counts patched to derived 77.
+  Lint --check 0 errors.]
   Consume queue batches.** Repeatable task — each pass takes ≤3
   papers from the oldest unconsumed batch. Prioritize (from Wave-10 state):
   neuroscience cells (weakest), Matching×InfoTheory, and any paper bridging

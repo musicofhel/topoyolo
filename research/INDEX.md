@@ -1,33 +1,33 @@
 # topo-rosetta RW loop — INDEX
 
 **Branch:** `loop/atlas-structure-v1` (never pushed; Aaron reviews/merges)
-**Lint:** `python3 scripts/check_structure.py` → **0 errors, 0 warnings**.
-Derived truth: ~78 fully annotated papers.
+**Lint:** `python3 scripts/check_structure.py --check` → **0 errors**, 25
+warnings (gen_stats domain-alias notes — pre-existing debt class).
+Derived truth: **77 fully annotated papers**.
 
 ## Task status
 - A1 structure lint tool — **done 2026-08-24 (e6d03df)**
 - A2 cross-ref/link debt paydown — **done 2026-08-24 (6f10501+b673c24)**
-- A3 per-paper annotation files — **done 2026-08-24**. Carried debt: 51 full
-  annotations still live as prose blocks in by-domain/by-structure files;
-  B2 promotes-on-encounter. New instance found pass 13: Wave-9/10 entries in
-  `by-structure/optimal_transport.md` wrongly point at blahut-arimoto-1972.md
-  (Peyré, Panaretos & Zemel, Curry et al.) — same prose-debt class.
+- A3 per-paper annotation files — **done 2026-08-24**. Carried debt: ~51 full
+  annotations live as prose blocks in by-domain/by-structure index files;
+  B2 promotes-on-encounter. Wrong-pointer instances in
+  `by-structure/optimal_transport.md` FIXED pass 14 (5 repointed to their own
+  annotation files); prose-block debt itself remains.
 - A4 stats from data — **done 2026-08-24 (a49e738+db97bca)**. Thin cells:
-  Dynamics×Matching, QEC×JointMarg → B2 targets; slice-4 added two pure-Matching
-  papers (ying-2016, silva-2018); matrix regen still owed next pass.
+  Dynamics×Matching (=4), QEC×JointMarg (=2) → B2 targets. README/docs count
+  drift fixed pass 14 (77 / 20 cells ≥10, min cell 2).
 - A5 loose-file adjudication — **done 2026-08-24 (61fee02)**.
 - A6 SEPARATRIX review — **done 2026-08-24** (accept-directionally, gates G1–G3).
 - **Phase A COMPLETE. Phase B UNLOCKED.**
 - B1 ingestion contract — **done 2026-08-24 (6ebfcf2)**.
-- B2 consume queue batches — **in_progress: slices 1–4 done.**
-  **batch-001 FULLY CONSUMED 21/21** (8 annotated, 13 rejected). Pass-13 fresh
-  annotations: ying-2016 (fast approximate DTW), silva-2018 (exact DTW pruning),
-  liu-2025 (KANGCI Granger causality), brusch-2023 (multi-view variable-channel
-  SSL); rejections 02/06/07/09/10/11/15/16/17/20 (zero machines / off-mission /
-  DTW-as-tool). **Next: batch-002 (40 candidates). Lint 0 errors 0 warnings.**
+- B2 consume queue batches — **in_progress: slices 1–5 done.**
+  batch-001 FULLY CONSUMED 21/21 (8 annotated, 13 rejected). **batch-002
+  STARTED pass 14: candidates 01–03 REJECTED (geometric-dl wrappers, zero
+  machines); 37 of 40 queued.** Lint --check 0 errors.
 - B3 atlas synthesis touch-ups — open (after ~15 new papers).
 
 ## Reports (newest first)
+- [2026-08-25-0235](2026-08-25-0235.md) — Pass 14 / B2 slice-5: batch-002 opened, candidates 01–03 rejected; 5 blahut-class wrong-pointers fixed; README/docs counts patched to 77; Dynamics×Matching still thin at 4.
 - [2026-08-25-0221](2026-08-25-0221.md) — Pass 13 / B2 slice-4: batch-001 emptied (21/21); fresh annotations ying-2016, liu-2025, brusch-2023, silva-2018; 10 triage-rejections; Dynamics×Matching strengthened.
 - [2026-08-25-0205](2026-08-25-0205.md) — Pass 12 / B2 slice-3: candidates 08, 04, 05 promoted from hidden prose (Fasoli pcbi.1013995, GC-STCL wang-2024, Simpson simpson-2013); content conserved; lint to 0 warnings.
 - [2026-08-25-0007](2026-08-25-0007.md) — Pass 11 / B2 slice-2: candidate-13 annotated (2604.08539, Matching+Stability), 01+14 rejected; stats 70 papers.
