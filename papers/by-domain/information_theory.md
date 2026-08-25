@@ -1129,3 +1129,15 @@ Full annotation: `annotations/2104.13662.md` (B2 pass 27). Abstract-only provena
 **Machines**: matching, null hypothesis (weak).
 Full annotation: `annotations/2601.16461.md` (B2 pass 28). Abstract-only provenance — depth-limited.
 **See also**: `by-structure/optimal_transport.md`, `annotations/2104.13662.md`
+
+### B2 batch-004: LDPC / belief-propagation × phase transitions (2026-08-25)
+
+**Aref, Macris & Vuffray (2013) — Spatially coupled LDGM + BP-guided decimation**: arXiv: 1307.5210. Lossy encoding as greedy soft-matching on the test-channel Gibbs posterior; cavity-method phase diagram (dynamical/condensation thresholds) explains why spatial coupling lifts the algorithmic RD curve to the ensemble optimum and, at large check degree, to the Shannon limit.
+**Machines**: matching, null hypothesis, stability (core).
+Full annotation: `annotations/1307.5210.md` (B2 pass 28). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/statistical_physics.md`, `by-structure/phase_transitions.md`, `annotations/2204.01612.md`
+
+**Jain, Koehler, Liu & Mossel (2019) — Accuracy-memory tradeoffs in BP**: arXiv: 1905.10031. Bounded-memory message passing transitions strictly below the Kesten–Stigum threshold (EKP conjecture); optimal transport enters the proof as the accuracy bound on message iterates — OT as proof technology for a phase-transition result.
+**Machines**: stability (core), null hypothesis, matching (instrumental).
+Full annotation: `annotations/1905.10031.md` (B2 pass 28). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/statistical_physics.md`, `by-structure/phase_transitions.md`

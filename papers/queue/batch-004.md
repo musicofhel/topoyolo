@@ -195,7 +195,7 @@ As conventional communication systems based on classic information theory have c
 We study lossy source coding under a distortion measure defined by the negative log-likelihood induced by a prescribed conditional distribution P_{X|U}. This log-likelihood distortion models compression settings in which the reconstruction is a semantic representation from which the source can be probabilistically generated, rather than a pointwise approximation. We formulate the corresponding rate-distortion problem and characterize fundamental properties of the resulting rate-distortion function, including its connections to lossy compression under log-loss, classical rate-distortion problems with arbitrary distortion measures, and rate-distortion with perfect perception.
 ```
 
-## candidate-14 [ldpc-bp] — UNCONSUMED
+## candidate-14 [ldpc-bp] — ANNOTATED as 1307.5210 (B2 pass 28 → annotations/1307.5210.md)
 
 **Title:** Approaching the Rate-Distortion Limit with Spatial Coupling, Belief propagation and Decimation
 
@@ -223,7 +223,7 @@ We investigate an encoding scheme for lossy compression of a binary symmetric so
 Low-density parity-check codes with irregular constructions have been recently shown to outperform the most advanced error-correcting codes to date. In this paper we apply methods of statistical physics to study the typical properties of simple irregular codes. We use the replica method to find a phase transition which coincides with Shannon's coding bound when appropriate parameters are chosen. The decoding by belief propagation is also studied using statistical physics arguments; the theoretical solutions obtained are in good agreement with simulations. We compare the performance of irregular with that of regular codes and discuss the factors that contribute to the improvement in performance.
 ```
 
-## candidate-16 [ldpc-bp] — UNCONSUMED
+## candidate-16 [ldpc-bp] — ANNOTATED as 1905.10031 (B2 pass 28 → annotations/1905.10031.md)
 
 **Title:** Accuracy-Memory Tradeoffs and Phase Transitions in Belief Propagation
 

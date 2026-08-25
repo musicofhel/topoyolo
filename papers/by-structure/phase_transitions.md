@@ -293,3 +293,9 @@ arXiv: 2410.20233. Stability: interleaving distance between n-D toric codes inhe
 
 ### Curry, DeSha, Hoff, Limberger, Luo & Qin (2022) — Decorated merge trees for persistent topology
 DOI: s41468-022-00089-3. Stability: DMT metric is stable — bounded by interleaving distance of underlying PH modules. Gromov-Wasserstein coupling provides computable stable metric on merge trees. Full annotation: `annotations/2508.19048.md` (Wave 10c).
+
+### B2 batch-004: LDPC / belief-propagation phase diagrams (2026-08-25)
+
+**Aref, Macris & Vuffray (2013)** — arXiv: 1307.5210. Stability: dynamical and condensation transition temperatures of the test-channel Gibbs measure computed by cavity method; spatial coupling saturates dynamical toward condensation, which approaches the Shannon noise level. Null hypothesis: Shannon rate-distortion limit as ideal-matcher reference. Full annotation: `annotations/1307.5210.md` (B2 pass 28). **See also**: `by-domain/information_theory.md`.
+
+**Jain, Koehler, Liu & Mossel (2019)** — arXiv: 1905.10031. Stability: bounded-memory message-passing transition proved strictly below the Kesten–Stigum/BP threshold; asymptotic normality at criticality. Matching: optimal transport bounds message accuracy in the proof. Full annotation: `annotations/1905.10031.md` (B2 pass 28). **See also**: `by-domain/statistical_physics.md`.

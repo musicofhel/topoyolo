@@ -58,3 +58,21 @@ Housekeeping entropy production of linear Langevin systems decomposes into indep
 **Machines**: joint-vs-marginal (instrumental), filtration/parameterization (weak).
 Full annotation: `annotations/2312.03489.md` (B2 pass 26). Abstract-only provenance — depth-limited.
 **See also**: `by-domain/neuroscience.md`, `by-structure/composite_systems.md`, `annotations/1810.09545.md`
+
+## Aref, Macris & Vuffray (2013)
+**"Approaching the Rate-Distortion Limit with Spatial Coupling, Belief Propagation and Decimation"**
+arXiv: 1307.5210 | cs.IT
+
+BP-guided decimation on spatially coupled LDGM codes approaches the Shannon rate-distortion limit; performance explained quantitatively via the cavity-method phase diagram of the binary symmetric test-channel Gibbs measure — dynamical threshold saturates toward condensation, which approaches the Shannon noise level at large check degree. Includes a self-contained cavity-method introduction.
+**Machines**: matching, null hypothesis, stability (core).
+Full annotation: `annotations/1307.5210.md` (B2 pass 28). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/information_theory.md`, `by-structure/phase_transitions.md`
+
+## Jain, Koehler, Liu & Mossel (2019)
+**"Accuracy-Memory Tradeoffs and Phase Transitions in Belief Propagation"**
+arXiv: 1905.10031 | cs.IT/math.ST
+
+Bounded-memory message passing on tree reconstruction has a phase transition strictly below the Kesten–Stigum threshold (EKP conjecture proved); proof imports optimal transport as a bounding device for message accuracy. A computational-to-statistical gap for reconstruction, made quantitative.
+**Machines**: stability (core), null hypothesis, matching (instrumental).
+Full annotation: `annotations/1905.10031.md` (B2 pass 28). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/information_theory.md`, `by-structure/phase_transitions.md`, `by-structure/optimal_transport.md`
