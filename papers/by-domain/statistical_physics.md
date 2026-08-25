@@ -188,3 +188,8 @@ arXiv: 1906.05212. Skeptical counterweight to the lineage's founding claim: hidd
 **Machines**: null hypothesis (the "deep learning is just RG" reading constructed so it can fail partially), stability (correlator persistence as the tracked signal), parameterized homology (layer ↔ RG step as scale parameter, used as test bench).
 Full annotation: `annotations/1906.05212.md` (B2 pass 51). Abstract-only provenance — depth-limited. **Annotated AS A PAIR with 1410.3831; claim-vs-refutation note filed in `glossary/ANTISYNONYMS.md`.**
 **See also**: `by-structure/filtrations.md`, `by-structure/phase_transitions.md`.
+
+### Touboul & Destexhe (2009) — Can power-law scaling and neuronal avalanches arise from stochastic dynamics?
+Analytic + surrogate null for avalanche-based SOC claims: thresholded stochastic processes provably produce spurious log-log power-law scaling that fails Kolmogorov-Smirnov testing; a known-SOC artificial network passes the same rigorous tests — the null is discriminating, not universal.
+**Machines**: null hypothesis (core), stability (verdict instability under threshold/analysis-class perturbation).
+Full annotation: `annotations/0910.0805.md` (B2 pass 57). **See also**: `by-domain/neuroscience.md`, `by-structure/phase_transitions.md` (null-surrogate lineage).

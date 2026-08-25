@@ -317,3 +317,21 @@ Dual-aspect information geometry from Markovian structure: intrinsic geometry of
 **Machines**: joint-vs-marginal (core), stability (NESS persistence of encoding), null hypothesis (no-shared-model simulation control).
 Full annotation: `annotations/2008.03238.md` (B2 pass 56). Abstract-only provenance — depth-limited.
 **See also**: `annotations/1906.10184.md`, `annotations/2001.06408.md`, `by-structure/composite_systems.md`
+
+### Plenz, Ribeiro, Miller, Kells, Vakili & Capek (2021) — Self-Organized Criticality in the Brain
+The affirmative case: layered cortex self-organizes toward a second-order phase transition — −3/2 avalanche power laws, branching parameter 1 homeostatically maintained, E/I balance + dopamine as control parameters; avalanches embedded in up-states and nested oscillations; dissociated layer-less cultures show first-order-like dynamics.
+**Machines**: stability (core: critical point as maintained fixed point), parameterized homology (preparation state as transition-class parameter).
+Full annotation: `annotations/2102.09124.md` (B2 pass 57). Abstract-only provenance — depth-limited.
+**See also**: `annotations/0910.0805.md`, `annotations/1203.0738.md` (structured-disagreement nulls), `by-structure/phase_transitions.md`
+
+### Touboul & Destexhe (2009) — Can power-law scaling and neuronal avalanches arise from stochastic dynamics?
+The methodological null: thresholded stochastic processes generically produce apparent log-log power laws that fail KS scrutiny; surrogate signals reproduce the scaling; analytic proof of spurious scaling without criticality, plus a positive control where true SOC passes the rigorous tests.
+**Machines**: null hypothesis (core: witness system = generic thresholded noise), stability (verdict instability under threshold moves / analysis-class change), joint-vs-marginal excess (thresholding artifact is a marginal property, licenses no collective inference).
+Full annotation: `annotations/0910.0805.md` (B2 pass 57). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/statistical_physics.md`, `papers/by-structure/phase_transitions.md` (null-surrogate lineage)
+
+### Dehghani, Hatsopoulos, Haga, Parker, Greger, Halgren, Cash & Destexhe (2012) — Avalanche analysis from multi-electrode ensemble recordings in cat, monkey and human cortex
+The empirical null: across species and sleep/wake states, unit avalanches scale exponentially not power-law; nLFP apparent power laws fail CDF-based tests; pLFP control reproduces the artifact; bi-exponential fits win throughout.
+**Machines**: null hypothesis (core: fitted-alternative family = bi-exponential vs power law), stability (negative: verdict unstable across channel/species/state; stable: the rejection itself), matching (distribution-family model selection on CDFs).
+Full annotation: `annotations/1203.0738.md` (B2 pass 57). Abstract-only provenance — depth-limited.
+**See also**: `annotations/2102.09124.md`, `annotations/0910.0805.md`, `glossary/ANTISYNONYMS.md`, `by-structure/phase_transitions.md`
