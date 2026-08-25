@@ -212,7 +212,7 @@ qec.md (Berry→2209.13581, Hastings-Haah→2107.02194, Aharonov-Ben-Or→quant-
   neuroscience cells (weakest), Matching×InfoTheory, and any paper bridging
   ≥3 domains. Every annotated paper: per-paper file + both indices + matrix
   regen + lint green. Status line here records papers consumed / queued.
-- **B3 [in_progress: sub-slice 1 done pass 33 — ANTISYNONYMS entry "Matching metric ≠ stability guarantee" landed (duality exact within TDA via isometry theorem 2506.02999; semantic split vs matching-as-heat 2103.00503). Next hooks: thermodynamic-instantiation subsections on optimal_transport.md / composite_systems.md; OT-as-proof-technology inbound to statphys.] Atlas synthesis touch-ups.** After ~15 new papers: re-read the
+- **B3 [in_progress: sub-slices 1–2 done passes 33–34 — ANTISYNONYMS entry "Matching metric ≠ stability guarantee"; thermodynamic-instantiation subsections landed on optimal_transport.md (matching=dissipation, equality direction) + composite_systems.md (joint-vs-marginal priced in work, inequality direction). Next hooks: OT-as-proof-technology inbound to statphys; cond-mat/9908104 as ldpc-bp ancestor lineage note.] Atlas synthesis touch-ups.** After ~15 new papers: re-read the
   6 atlas files against the new corpus; integrate the strongest new bridges
   and any new ANTISYNONYMS. One atlas file per pass max.
 
