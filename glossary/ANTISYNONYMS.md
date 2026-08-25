@@ -153,6 +153,14 @@ The apparent synonym — "deep learning performs renormalization" — fails at t
 
 ---
 
+### Abrupt order-parameter jump ≠ phase transition (2505.10114)
+
+Statistical physics and dynamical systems both say "transition," and both diagnose it from an order parameter moving abruptly. Lee, Kuklinski & Timme (2505.10114) give a named counterexample class: complexified Kuramoto systems exhibit "extreme synchronization transitions" — the order parameter leaps from ~N⁻¹ᐟ² to ~1 immediately past critical coupling, visually indistinguishable from an explosive/discontinuous phase transition — that occur at finite N and are therefore multi-dimensional bifurcations, not thermodynamic-limit transitions.
+
+The null hypothesis this supports: "abrupt jump ⇒ phase transition" is destroyed by exhibiting a mechanism (high-dimensional bifurcation analysis) that produces the identical observable without the thermodynamic structure. The sharp test is the N-scaling of the jump onset — finite-N immediacy is the bifurcation signature. When either domain reports a "transition" in this corpus, the entry should record whether the claim survives this null; the same caution applies to criticality claims in the rg-dl lineage (1410.3831/1906.05212 lean on Ising criticality where the transition is genuine, but the inference pattern is the one this entry polices).
+
+---
+
 ## Living Document
 
 Add divergences as they are discovered. Each entry should specify: which two domains are being compared, what the apparent synonym is, and precisely where the correspondence fails.
