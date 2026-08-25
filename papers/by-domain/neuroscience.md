@@ -264,3 +264,9 @@ Granger causality graph over EEG channels as oriented causal network (chain-comp
 **Machines**: joint-vs-marginal, parameterized homology, chain complex (weak).
 Full annotation: `annotations/wang-2024.md` (B2 pass 12).
 **See also**: `by-domain/information_theory.md`, `by-structure/composite_systems.md`
+
+### Simpson, Bowman, Laurienti (2013) — Analyzing Complex Functional Brain Networks: Fusing Statistics and Network Science to Understand the Brain
+Survey mapping where TDA machines apply to functional brain networks: correlation-threshold selection = filtration problem; higher-order structure needs simplicial methods beyond pairwise graphs.
+**Machines**: parameterized homology, joint-vs-marginal, null hypothesis.
+Full annotation: `annotations/simpson-2013.md` (B2 pass 12).
+**See also**: `by-structure/filtrations.md`, `by-structure/composite_systems.md`

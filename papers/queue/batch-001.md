@@ -362,7 +362,7 @@ To address the aforemen
 
 ---
 
-## candidate-05 [neuroscience] — UNCONSUMED
+## candidate-05 [neuroscience] — ANNOTATED as simpson-2013 (pass 12): functional brain networks survey; prose promoted from second_pass.md SP-15
 
 **Title:** Analyzing complex functional brain networks fusing statistics and network scienc
 

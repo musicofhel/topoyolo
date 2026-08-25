@@ -200,3 +200,6 @@ DOI: fnsys.2016.00085. Weight threshold on correlation network as filtration par
 
 ### Méndez & Sánchez-García (2020) — Directed Persistent Homology for Dissimilarity Functions
 arXiv: 2008.00711. Directed filtration from asymmetric dissimilarity function. Scale parameter ε determines which directed simplices exist. Tracks directed Betti numbers as ε varies — a new filtration type for non-symmetric data. Full annotation: `annotations/10.1017-S0140525X01000097.md` (Wave 10c).
+
+### Simpson, Bowman, Laurienti (2013) — Analyzing Complex Functional Brain Networks
+Correlation-threshold selection in functional brain networks framed as a filtration-parameter problem awaiting persistent homology. Full annotation: `annotations/simpson-2013.md`.
