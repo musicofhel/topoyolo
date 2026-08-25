@@ -183,7 +183,11 @@ skill, dual-index filing, glossary/atlas updates, matrix regen via A4's tool.
   annotations/10.1111-2041-210X.13985.md (max-ent soft-constraint nulls);
   chain-complex group: 27 ANNOTATED → annotations/10.1016-j.physrep.2020.05.004.md
   (Battiston higher-order networks survey), 28 REJECTED (PH-as-tool pruning
-  wrapper). Counts at derived 90.]** Also pass 14: fixed 5 wrong-pointer
+  wrapper). **Pass 24 (slice-23): batch-004 started, dyn-matching group 3/4 consumed — 01 ANNOTATED as
+  2409.08768 (measure-theoretic Takens: delay embedding as pushforward between measure spaces, OT machinery) + 02 ANNOTATED as
+  1907.08260 (reverse direction: attractor-reconstruction histories disambiguate OT map identification); 03 TrajectoryNet REJECTED
+  (one-machine dynamic-OT wrapper, superseded by MIOFlow candidate-04). Dynamics×Matching 5→7; counts at derived 92. Abstract-only
+  provenance — both entries depth-limited.]** Also pass 14: fixed 5 wrong-pointer
   crossrefs in by-structure/optimal_transport.md; counts now at derived 78.
   Lint --check 0 errors.]
   Consume queue batches.** Repeatable task — each pass takes ≤3
