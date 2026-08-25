@@ -83,7 +83,7 @@ In this paper, we define a new measure of the redundancy of information from a f
 Distributed computation in artificial life and complex systems is often described in terms of component operations on information: information storage, transfer and modification. Information modification remains poorly described however, with the popularly-understood examples of glider and particle collisions in cellular automata being only quantitatively identified to date using a heuristic (separable information) rather than a proper information-theoretic measure. We outline how a recently-introduced axiomatic framework for measuring information redundancy and synergy, called partial information decomposition, can be applied to a perspective of distributed computation in order to quantify component operations on information. Using this framework, we propose a new measure of information modification that captures the intuitive understanding of information modification events as those involving interactions between two or more information sources. We also consider how the local dynamics of information modification in space and time could be measured, and suggest a new axiom that redundancy measures would need to meet in order to make such local measurements. Finally, we evaluate the potential for existing redundancy measures to meet this localizability axiom.
 ```
 
-## candidate-06 [rg-dl] — UNCONSUMED
+## candidate-06 [rg-dl] — ANNOTATED as 1410.3831 (pass 49; B3 flag: pair with skeptical null 1906.05212 candidate-10)
 
 **Title:** An exact mapping between the Variational Renormalization Group and Deep Learning
 

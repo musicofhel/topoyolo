@@ -227,3 +227,5 @@ arXiv: 2601.01359. Scale β and sample densification S→X treated as a joint tw
 
 ### de Silva & Carlsson (2004) — Topological Estimation Using Witness Complexes
 Eurographics PBG 2004. Nested witness-complex families W(D;R,ν) over feature size R as PH-ready filtrations on landmark vertex sets; subsampling-induced denoising of barcodes. Full annotation: `annotations/desilva-carlsson-2004.md` (B2 pass 39). **See also**: `by-domain/tda.md`.
+
+**Mehta & Schwab (2014)**: arXiv: 1410.3831. Variational RG as exact RBM-stack map: layer index = length scale, so deep architectures carry a built-in filtration whose persistent features are the RG's relevant operators; demonstrated on 1D/2D Ising criticality. Full annotation: `annotations/1410.3831.md` (B2 pass 49). **See also**: `by-domain/statistical_physics.md`, `by-structure/phase_transitions.md`.

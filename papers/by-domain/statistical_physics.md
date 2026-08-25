@@ -156,3 +156,11 @@ arXiv: 1305.1742. A classical conservative system with 2N state variables whose 
 **Machines**: stability (transition as transverse instability), joint-vs-marginal excess (transverse dynamics = composite-level excess over the Kuramoto marginal).
 Full annotation: `annotations/1305.1742.md` (B2 pass 47). Abstract-only provenance — depth-limited.
 **See also**: `by-domain/dynamical_systems.md`, `by-structure/composite_systems.md`
+
+## B2 batch-009 — rg-dl bridge (2026-08-25)
+
+### Mehta & Schwab (2014) — Exact mapping: variational RG ↔ deep learning
+arXiv: 1410.3831. Term-by-term identity between Kadanoff's variational renormalization group and RBM-stack deep architectures (weights ↔ couplings, layers ↔ coarse-graining stages, relevant operators ↔ persisting features), demonstrated on the 1D/2D Ising model. Founding hypothesis of the rg-dl lineage: deep learning as a generalized RG-like feature-extraction scheme.
+**Machines**: parameterized homology (core; layer index = scale parameter), stability (relevance = persistence under the coarse-graining flow).
+Full annotation: `annotations/1410.3831.md` (B2 pass 49). Abstract-only provenance — depth-limited. **B3 flag:** pair with the skeptical null 1906.05212 (batch-009 candidate-10) when it lands.
+**See also**: `by-structure/filtrations.md`, `by-structure/phase_transitions.md`.
