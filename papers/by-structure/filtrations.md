@@ -229,3 +229,9 @@ arXiv: 2601.01359. Scale β and sample densification S→X treated as a joint tw
 Eurographics PBG 2004. Nested witness-complex families W(D;R,ν) over feature size R as PH-ready filtrations on landmark vertex sets; subsampling-induced denoising of barcodes. Full annotation: `annotations/desilva-carlsson-2004.md` (B2 pass 39). **See also**: `by-domain/tda.md`.
 
 **Mehta & Schwab (2014)**: arXiv: 1410.3831. Variational RG as exact RBM-stack map: layer index = length scale, so deep architectures carry a built-in filtration whose persistent features are the RG's relevant operators; demonstrated on 1D/2D Ising criticality. Full annotation: `annotations/1410.3831.md` (B2 pass 49). **See also**: `by-domain/statistical_physics.md`, `by-structure/phase_transitions.md`.
+
+**Howard et al. (2024)**: arXiv: 2405.17538. Bayesian RG: coarse-graining in parameter space at a Fisher-metric distinguishability scale — information shells as momentum shells; training read as the same filtration traversed IR→UV. Full annotation: `annotations/2405.17538.md` (B2 pass 50). **See also**: `by-domain/statistical_physics.md`.
+
+**de Mello Koch & Ghosh (2025)**: arXiv: 2504.12700. Training time as a two-regime filtration (fit then compress), with hidden-layer/input mutual information as the persistent quantity tracked across it; compression phase = principled forgetting. Full annotation: `annotations/2504.12700.md` (B2 pass 50). **See also**: `by-domain/statistical_physics.md`.
+
+**Rançon et al. (2025)**: arXiv: 2506.04016. Inverse RG: minimal generative nets traverse the coarse-graining filtration backwards, reproducing scale-indexed observables and nontrivial RG eigenvalues of the 2D Ising critical ensemble. Full annotation: `annotations/2506.04016.md` (B2 pass 50). **See also**: `by-domain/statistical_physics.md`.

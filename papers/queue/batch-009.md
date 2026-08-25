@@ -97,7 +97,7 @@ Distributed computation in artificial life and complex systems is often describe
 Deep learning is a broad set of techniques that uses multiple layers of representation to automatically learn relevant features directly from structured data. Recently, such techniques have yielded record-breaking results on a diverse set of difficult machine learning tasks in computer vision, speech recognition, and natural language processing. Despite the enormous success of deep learning, relatively little is understood theoretically about why these techniques are so successful at feature learning and compression. Here, we show that deep learning is intimately related to one of the most important and successful techniques in theoretical physics, the renormalization group (RG). RG is an iterative coarse-graining scheme that allows for the extraction of relevant features (i.e. operators) as a physical system is examined at different length scales. We construct an exact mapping from the variational renormalization group, first introduced by Kadanoff, and deep learning architectures based on Restricted Boltzmann Machines (RBMs). We illustrate these ideas using the nearest-neighbor Ising Model in one and two-dimensions. Our results suggests that deep learning algorithms may be employing a generalized RG-like scheme to learn relevant features from data.
 ```
 
-## candidate-07 [rg-dl] — UNCONSUMED
+## candidate-07 [rg-dl] — ANNOTATED as 2405.17538 (pass 50; BRG-NNFT Fisher-metric coarse graining)
 
 **Title:** Bayesian RG Flow in Neural Network Field Theories
 
@@ -111,7 +111,7 @@ Deep learning is a broad set of techniques that uses multiple layers of represen
 The Neural Network Field Theory correspondence (NNFT) is a mapping from neural network (NN) architectures into the space of statistical field theories (SFTs). The Bayesian renormalization group (BRG) is an information-theoretic coarse graining scheme that generalizes the principles of the exact renormalization group (ERG) to arbitrarily parameterized probability distributions, including those of NNs. In BRG, coarse graining is performed in parameter space with respect to an information-theoretic distinguishability scale set by the Fisher information metric. In this paper, we unify NNFT and BRG to form a powerful new framework for exploring the space of NNs and SFTs, which we coin BRG-NNFT. With BRG-NNFT, NN training dynamics can be interpreted as inducing a flow in the space of SFTs from the information-theoretic 'IR' to 'UV'. Conversely, applying an information-shell coarse graining to the trained network's parameters induces a flow in the space of SFTs from the information-theoretic 'UV' to 'IR'. When the information-theoretic cutoff scale coincides with a standard momentum scale, BRG is equivalent to ERG. We demonstrate the BRG-NNFT correspondence on two analytically tractable examples. First, we construct BRG flows for trained, infinite-width NNs, of arbitrary depth, with generic activation functions. As a special case, we then restrict to architectures with a single infinitely-wide layer, scalar outputs, and generalized cos-net activations. In this case, we show that BRG coarse-graining corresponds exactly to the momentum-shell ERG flow of a free scalar SFT. Our analytic results are corroborated by a numerical experiment in which an ensemble of asymptotically wide NNs are trained and subsequently renormalized using an information-shell BRG scheme.
 ```
 
-## candidate-08 [rg-dl] — UNCONSUMED
+## candidate-08 [rg-dl] — ANNOTATED as 2504.12700 (pass 50; two-phase learning, compression-as-RG)
 
 **Title:** A Two-Phase Perspective on Deep Learning Dynamics
 
@@ -125,7 +125,7 @@ The Neural Network Field Theory correspondence (NNFT) is a mapping from neural n
 We propose that learning in deep neural networks proceeds in two phases: a rapid curve fitting phase followed by a slower compression or coarse graining phase. This view is supported by the shared temporal structure of three phenomena: grokking, double descent and the information bottleneck, all of which exhibit a delayed onset of generalization well after training error reaches zero. We empirically show that the associated timescales align in two rather different settings. Mutual information between hidden layers and input data emerges as a natural progress measure, complementing circuit-based metrics such as local complexity and the linear mapping number. We argue that the second phase is not actively optimized by standard training algorithms and may be unnecessarily prolonged. Drawing on an analogy with the renormalization group, we suggest that this compression phase reflects a principled form of forgetting, critical for generalization.
 ```
 
-## candidate-09 [rg-dl] — UNCONSUMED
+## candidate-09 [rg-dl] — ANNOTATED as 2506.04016 (pass 50; inverse RG, minimal nets)
 
 **Title:** Dreaming up scale invariance via inverse renormalization group
 

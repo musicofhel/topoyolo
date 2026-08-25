@@ -164,3 +164,21 @@ arXiv: 1410.3831. Term-by-term identity between Kadanoff's variational renormali
 **Machines**: parameterized homology (core; layer index = scale parameter), stability (relevance = persistence under the coarse-graining flow).
 Full annotation: `annotations/1410.3831.md` (B2 pass 49). Abstract-only provenance — depth-limited. **B3 flag:** pair with the skeptical null 1906.05212 (batch-009 candidate-10) when it lands.
 **See also**: `by-structure/filtrations.md`, `by-structure/phase_transitions.md`.
+
+### Howard, Klinger, Maiti & Stapleton (2024) — Bayesian RG flow in neural network field theories
+arXiv: 2405.17538. BRG-NNFT: coarse-graining in *parameter space* against a Fisher-metric distinguishability scale; training = IR→UV flow, information-shell coarse graining = UV→IR; BRG ≡ ERG exactly when the two cutoffs coincide, demonstrated as exact momentum-shell ERG for a free scalar SFT in the infinite-width cos-net case. Replaces Mehta–Schwab's RBM-stack identity with an information-geometric one.
+**Machines**: parameterized homology (Fisher cutoff as filtration parameter), stability (equivalence-at-matched-cutoffs as persistence under reparameterization), matching (NN↔SFT structure-preserving correspondence).
+Full annotation: `annotations/2405.17538.md` (B2 pass 50). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/filtrations.md`.
+
+### de Mello Koch & Ghosh (2025) — Two-phase deep learning dynamics
+arXiv: 2504.12700. Learning as rapid curve-fitting then slow compression/coarse-graining; grokking, double descent and the information bottleneck unified by shared timescale structure; hidden-layer/input mutual information as the progress measure; compression = principled RG-like forgetting critical for generalization, not actively optimized by SGD.
+**Machines**: parameterized homology (training time as filtration parameter, MI as persistent quantity), stability (generalization as what survives the compression phase), null hypothesis (delayed generalization as excess over the "fitting explains it" null).
+Full annotation: `annotations/2504.12700.md` (B2 pass 50). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/filtrations.md`, `by-structure/phase_transitions.md`.
+
+### Rançon, Rançon, Ivek & Balog (2025) — Dreaming up scale invariance via inverse RG
+arXiv: 2506.04016. Minimal nets (three trainable parameters) invert real-space RG coarse-graining probabilistically on the 2D Ising model, generating critical configurations whose scaling observables and nontrivial RG eigenvalues check out; added depth gives no benefit — universality capturable by fractal-rule-style local rules. The lineage's first inverse-direction entry: generating microstates from coarse-grained ones rather than coarse-graining data or training dynamics.
+**Machines**: stability (certified by persistence of RG eigenvalues under iterated coarse-graining), parameterized homology (scale-indexed observable family), null hypothesis (probabilistic recovery against the destroyed-information null; depth ablation as complexity-null control).
+Full annotation: `annotations/2506.04016.md` (B2 pass 50). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/filtrations.md`, `by-structure/phase_transitions.md`.
