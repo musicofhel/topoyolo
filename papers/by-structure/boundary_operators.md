@@ -221,3 +221,7 @@ arXiv: 2303.16716. Simplicial complex from kNN graph over the point cloud; clust
 
 ### Battiston et al. (2020) — Networks Beyond Pairwise Interactions
 Physics Reports 874 survey: incidence/boundary matrices, simplicial homology, higher-order Laplacians as the graded chain apparatus of higher-order networks; random hypergraph ensembles as nulls. Full annotation: `annotations/10.1016-j.physrep.2020.05.004.md` (DOI: 10.1016/j.physrep.2020.05.004).
+
+### B2 batch-007: boundary sensitivity of tailored codes (2026-08-25)
+
+**Higgott, Bohdanowicz, Kubica, Flammia & Campbell (2022)** — arXiv: 2203.04948. Fragile boundaries: boundary tailoring that raises threshold near it becomes a resource liability well below threshold — boundary-operator modification's effect on code cost flips sign across the noise regime. Full annotation: `annotations/2203.04948.md` (B2 pass 40). **See also**: `by-domain/qec.md`, `by-structure/phase_transitions.md`.

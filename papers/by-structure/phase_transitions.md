@@ -335,3 +335,11 @@ DOI: s41468-022-00089-3. Stability: DMT metric is stable — bounded by interlea
 **Lim & Mémoli (2022)** — arXiv: 2201.09385. Stability side: generalized cMDS output stable w.r.t. Gromov-Wasserstein perturbation of the input mm-space; negative-eigenvalue sum vanishes exactly on Euclidean-flat reference structure (weak null-hypothesis reading). Full annotation: `annotations/2201.09385.md` (B2 pass 35). **See also**: `by-domain/tda.md`, `by-structure/optimal_transport.md`.
 
 **Hohmeier, Fraiman & Moosmueller (2026)** — arXiv: 2606.10295. Statistical-limit side: universal consistency of GW-k-NN on weak-isomorphism classes — classification risk converges to Bayes risk only after quotienting by structure-annihilating equivalence; the null reading is the quotient itself. Full annotation: `annotations/2606.10295.md` (B2 pass 36). **See also**: `by-domain/tda.md`, `by-structure/optimal_transport.md`.
+
+### B2 batch-007: decoder-side threshold shifts (2026-08-25)
+
+**Higgott & Gidney (2023)** — arXiv: 2303.15933. Sparse blossom MWPM operating deep in the sub-threshold regime at hardware syndrome rates; throughput-matched decoding as a stability claim about sustained noisy streams. Full annotation: `annotations/2303.15933.md` (B2 pass 40). **See also**: `by-domain/qec.md`.
+
+**Pattison, Beverland, da Silva & Delfosse (2021)** — arXiv: 2107.13589. Threshold raised 25% over any hard decoder by decoding from the joint analog outcome distribution instead of its binary marginal — the critical error rate itself moves with decoder information access; measurement-time parameter carries a resolution-vs-disturbance trade-off. Full annotation: `annotations/2107.13589.md` (B2 pass 40). **See also**: `by-domain/qec.md`.
+
+**Higgott, Bohdanowicz, Kubica, Flammia & Campbell (2022)** — arXiv: 2203.04948. Belief-propagation posteriors feeding matching shift the circuit-noise threshold 0.82% → 0.94%; fragile boundaries make the resource-optimal code geometry reverse across noise regimes. Full annotation: `annotations/2203.04948.md` (B2 pass 40). **See also**: `by-domain/qec.md`, `by-structure/boundary_operators.md`.

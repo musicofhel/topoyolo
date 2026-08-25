@@ -212,3 +212,25 @@ arXiv: 2210.11547. Error correction recast as one side of an adversarial game: E
 **Machines**: stability (core), parameterized homology, null hypothesis.
 Full annotation: `annotations/2210.11547.md` (B2 pass 31). Abstract-only provenance — depth-limited.
 **See also**: `by-domain/statistical_physics.md`, `by-structure/phase_transitions.md`, `annotations/1903.05124.md`
+
+---
+
+## B2 batch-007 — qec-mwpm decoder lineage (2026-08-25)
+
+### Higgott & Gidney (2023) — Sparse Blossom (PyMatching v2)
+arXiv: 2303.15933. The canonical fast MWPM decoder: sparse blossom, a blossom-algorithm variant that solves the QEC matching problem directly over the sparse syndrome-graph neighborhood structure instead of all-to-all Dijkstra searches; distance-17 surface code decoded in <1 μs per round per core at 0.1% circuit-level depolarising noise — real-time throughput matched to hardware syndrome generation.
+**Machines**: matching (core), stability, parameterized homology.
+Full annotation: `annotations/2303.15933.md` (B2 pass 40). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/phase_transitions.md`
+
+### Pattison, Beverland, da Silva & Delfosse (2021) — Soft-information decoding
+arXiv: 2107.13589. Soft (analog) measurement records folded into MWPM and Union-Find: decoding from the full joint outcome distribution rather than its binary marginal yields a 25% threshold gain — joint-vs-marginal excess cashed out as logical performance. Amplitude-damping soft measurement model exposes a resolution-vs-disturbance trade-off in measurement time whose optima for physical and logical error rates disagree.
+**Machines**: joint-vs-marginal excess (core), matching, phase transitions.
+Full annotation: `annotations/2107.13589.md` (B2 pass 40). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/phase_transitions.md`
+
+### Higgott, Bohdanowicz, Kubica, Flammia & Campbell (2022) — Belief-matching / belief-find
+arXiv: 2203.04948. Belief propagation on the full circuit-level noise model feeding BP posteriors to MWPM as reweighted edge costs: threshold 0.94% vs 0.82% plain. Also discovers "fragile boundaries": well below threshold, rectangular untailored surface codes beat boundary-tailored ones — a sign-reversing boundary sensitivity across noise regime. Direct lineage of the Mézard–Mora BP-as-matching identification.
+**Machines**: matching (core), chain complex, phase transitions, stability.
+Full annotation: `annotations/2203.04948.md` (B2 pass 40). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/phase_transitions.md`, `by-structure/boundary_operators.md`
