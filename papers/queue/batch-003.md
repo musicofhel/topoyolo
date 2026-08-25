@@ -664,7 +664,8 @@ See https://www.ieee.org/publications/rights/index.html for more information.
 Authorized licensed use limited to: University of N
 ```
 
-## candidate-09 [transport-matching] — UNCONSUMED
+## candidate-09 [transport-matching] — REJECTED
+QR-DQN — transport-as-tool: Wasserstein metric appears only as a training loss / contraction-metric for RL value distributions; no matching, filtration, or other atlas machine (pass 21).
 
 **Title:** Distributional Reinforcement Learning with Quantile Regression
 
@@ -747,7 +748,8 @@ Figure 1: Projection used by C 51 assigns mass inversely
 Distributional RL proportional to distance from nearest support. Update mini-
 ```
 
-## candidate-10 [transport-matching] — UNCONSUMED
+## candidate-10 [transport-matching] — REJECTED
+Hawkes-process functional limit theorems — pure probability theory; Wasserstein distance used only to bound convergence rates, zero atlas machines ('matching' hit is a text-filter artifact) (pass 21).
 
 **Title:** Functional Limit Theorems for Hawkes Processes
 
@@ -832,7 +834,8 @@ to path-wise LDPs in [ 23 ]. CLTs for marked Hawkes processes were first establi
 a light-tailed condition on t
 ```
 
-## candidate-11 [transport-matching] — UNCONSUMED
+## candidate-11 [transport-matching] — REJECTED
+GWGAN — GAN wrapper around the existing Gromov-Wasserstein distance used as a differentiable loss; single-machine Matching instantiation already covered more deeply by annotations/2206.09398.md (FUGW) and s41468-022-00089-3.md (pass 21).
 
 **Title:** Learning Generative Models across Incomparable Spaces
 
