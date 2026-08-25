@@ -56,7 +56,7 @@ Reservoir computing is a machine learning framework that has been shown to be ab
 Recurrent neural networks trained via the reservoir computing paradigm have demonstrated remarkable success in learning and reconstructing attractors from chaotic systems, often replicating quantities such as Lyapunov exponents and fractal dimensions. It has recently been conjectured that this is because the reservoir computer embeds the dynamics of the chaotic system in its state space before learning. This conjecture has been established for reservoir computers with linear activation functions and remains open for more general reservoir systems. In this work, we employ a non-autonomous dynamical systems approach to establish an upper bound for the box-counting dimension of the pullback attractor, a subset of the reservoir state space that is approximated during training and prediction phases. We prove that the box-counting dimension of the pullback attractor is bounded above by the box-counting dimension of the space of input sequences with respect to the product topology. In particular, for input sequences originating from an Nin-dimensional smooth dynamical system or their generic continuously differentiable observations, the box-counting dimension of the pullback attractor is bounded above by Nin. The results obtained here highlight the fact that, while a reservoir computer may possess a very high-dimensional state space, it exhibits effective low-dimensional dynamics. Our findings also partly explain why reservoir computers are successful in tasks such as attractor reconstruction and the computation of dynamic invariants like Lyapunov exponents and fractal dimensions.
 ```
 
-## candidate-04 [reservoir-gs] — UNCONSUMED
+## candidate-04 [reservoir-gs] — ANNOTATED as 2110.08631
 
 **Title:** Learning Continuous Chaotic Attractors with a Reservoir Computer
 
@@ -70,7 +70,7 @@ Recurrent neural networks trained via the reservoir computing paradigm have demo
 Neural systems are well known for their ability to learn and store information as memories. Even more impressive is their ability to abstract these memories to create complex internal representations, enabling advanced functions such as the spatial manipulation of mental representations. While recurrent neural networks (RNNs) are capable of representing complex information, the exact mechanisms of how dynamical neural systems perform abstraction are still not well-understood, thereby hindering the development of more advanced functions. Here, we train a 1000-neuron RNN -- a reservoir computer (RC) -- to abstract a continuous dynamical attractor memory from isolated examples of dynamical attractor memories. Further, we explain the abstraction mechanism with new theory. By training the RC on isolated and shifted examples of either stable limit cycles or chaotic Lorenz attractors, the RC learns a continuum of attractors, as quantified by an extra Lyapunov exponent equal to zero. We propose a theoretical mechanism of this abstraction by combining ideas from differentiable generalized synchronization and feedback dynamics. Our results quantify abstraction in simple neural systems, enabling us to design artificial RNNs for abstraction, and leading us towards a neural basis of abstraction.
 ```
 
-## candidate-05 [reservoir-gs] — UNCONSUMED
+## candidate-05 [reservoir-gs] — ANNOTATED as 2108.04074
 
 **Title:** Model-free inference of unseen attractors: Reconstructing phase space features from a single noisy trajectory using reservoir computing
 
@@ -84,7 +84,7 @@ Neural systems are well known for their ability to learn and store information a
 Reservoir computers are powerful tools for chaotic time series prediction. They can be trained to approximate phase space flows and can thus both predict future values to a high accuracy, as well as reconstruct the general properties of a chaotic attractor without requiring a model. In this work, we show that the ability to learn the dynamics of a complex system can be extended to systems with co-existing attractors, here a 4-dimensional extension of the well-known Lorenz chaotic system. We demonstrate that a reservoir computer can infer entirely unexplored parts of the phase space: a properly trained reservoir computer can predict the existence of attractors that were never approached during training and therefore are labelled as unseen. We provide examples where attractor inference is achieved after training solely on a single noisy trajectory.
 ```
 
-## candidate-06 [reservoir-gs] — UNCONSUMED
+## candidate-06 [reservoir-gs] — ANNOTATED as 2506.22335
 
 **Title:** Robust quantum reservoir computers for forecasting chaotic dynamics: generalized synchronization and stability
 

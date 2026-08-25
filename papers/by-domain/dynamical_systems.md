@@ -574,3 +574,20 @@ Full annotation: `annotations/2401.00885.md` (B2 pass 44). Abstract-only provena
 **Machines**: stability (dimension-stability), matching (weak).
 Full annotation: `annotations/2501.11357.md` (B2 pass 44). Abstract-only provenance — depth-limited.
 **See also**: `by-structure/optimal_transport.md`, `annotations/2108.05024.md`
+
+### B2 batch-008: reservoir generalized synchronization — abstraction, extrapolation, quantum (2026-08-25)
+
+**Smith, Kim, Lu & Bassett (2021) — Learning Continuous Chaotic Attractors with a Reservoir Computer**: arXiv: 2110.08631. An RC trained on isolated attractor examples abstracts a *continuum* of attractors (limit cycles; shifted Lorenz systems), certified by an extra zero Lyapunov exponent; mechanism proposed via differentiable generalized synchronization + feedback dynamics. Extends `annotations/2108.05024.md` from single-attractor embedding to parametrized families — the neutral stability direction is the spectral certificate of abstraction rather than memorization (null-hypothesis test).
+**Machines**: matching (parametrized-family correspondence), stability (neutral-exponent signature), null hypothesis.
+Full annotation: `annotations/2110.08631.md` (B2 pass 45). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/composite_systems.md`, `annotations/2108.05024.md`
+
+**Röhm, Gauthier & Fischer (2021) — Model-free Inference of Unseen Attractors**: arXiv: 2108.04074. RC trained on a single noisy trajectory near one co-existing attractor of a multistable Lorenz-like system predicts attractors never approached in training — reconstruction correspondence validated on unsampled phase space; multistability makes phase-space coverage a binary observable against the interpolation null.
+**Machines**: matching (extrapolating correspondence), stability (field robustness under extrapolation, weak), null hypothesis.
+Full annotation: `annotations/2108.04074.md` (B2 pass 45). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/composite_systems.md`, `annotations/2108.05024.md`, `annotations/2401.00885.md`
+
+**Ahmed, Tennie & Magri (2025) — Robust Quantum Reservoir Computers for Forecasting Chaotic Dynamics**: arXiv: 2506.22335. QRCs formulated as generalized-synchronization systems with the GS=ESP criterion (synchronization iff echo state property, analytic for recurrence-free architectures); Jacobian-derived Lyapunov spectra / covariant Lyapunov vectors / attractor dimensions read through the quantum channel; noise-induced dissipation enhances robustness — stability margin as design resource, transplanting `annotations/2401.00885.md`'s conditional-Lyapunov margin to near-term quantum hardware.
+**Machines**: matching (drive-response correspondence, GS=ESP well-definedness), stability (core).
+Full annotation: `annotations/2506.22335.md` (B2 pass 45). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/composite_systems.md`, `annotations/2401.00885.md`, `annotations/2108.05024.md`

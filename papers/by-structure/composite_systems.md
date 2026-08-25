@@ -379,3 +379,11 @@ PHGCN: filtration barcodes as GCN features with a Persistence Diagram Loss penal
 
 ### Baireuther, O'Brien, Tarasinski & Beenakker (2017) — RNN decoder for correlated errors (arXiv: 1705.07855)
 Decoder-side joint-vs-marginal gain: an RNN beats MWPM precisely because it detects X–Z error correlations that the matching decoder's independent X and Z matchings cannot represent — joint structure cashed out as logical performance rather than an information measure. Full annotation: `annotations/1705.07855.md` (B2 pass 41). **See also**: `by-domain/qec.md`, `by-structure/phase_transitions.md`.
+
+### B2 batch-008: reservoir generalized synchronization — drive-response as the matching machine (2026-08-25)
+
+**Smith, Kim, Lu & Bassett (2021)**: arXiv: 2110.08631. Abstraction in an RC = a *continuum* of attractors learned from isolated examples, certified spectrally by an extra zero Lyapunov exponent; mechanism via differentiable generalized synchronization + feedback dynamics — drive-response coupling whose sync map is smooth in the drive parameter. Machines: matching (parametrized family), stability (neutral direction), null hypothesis. Full annotation: `annotations/2110.08631.md` (B2 pass 45). **See also**: `by-domain/dynamical_systems.md`.
+
+**Röhm, Gauthier & Fischer (2021)**: arXiv: 2108.04074. Drive-response reconstruction extending beyond its training support: RC trained near one co-existing attractor predicts never-seen attractors of a multistable Lorenz-like system from a single noisy trajectory — multistability makes phase-space coverage binary against the interpolation null. Machines: matching (extrapolation), stability (weak), null hypothesis. Full annotation: `annotations/2108.04074.md` (B2 pass 45). **See also**: `by-domain/dynamical_systems.md`.
+
+**Ahmed, Tennie & Magri (2025)**: arXiv: 2506.22335. QRCs as GS systems with GS=ESP (synchronization iff echo state property, analytic for recurrence-free architectures): well-definedness of the drive-response matching and memory-fading proved co-extensive; Jacobian-derived Lyapunov spectra / CLVs / attractor dimensions carried through the quantum channel; noise dissipation enhances robustness. Machines: matching, stability (core). Full annotation: `annotations/2506.22335.md` (B2 pass 45). **See also**: `by-domain/dynamical_systems.md`, `annotations/2401.00885.md`.
