@@ -762,7 +762,9 @@ We establish network predictability theory by mapping link prediction onto a spi
 TL;DR: It is proved that global predictability decomposes into individual link contributions, enabling an efficient local sampling algorithm that reduces the computational complexity of evaluating individual link contributions from being dependent on the entire network to only its local neighborhood, scaling with the average degree.
 ```
 
-## candidate-13 [atlas-general] — UNCONSUMED
+## candidate-13 [atlas-general] — REJECTED
+
+Pure algebraic geometry (Kollár–Miyaoka–Mori 1992: rational connectedness and boundedness of Fano manifolds); instantiates none of the six machines.
 
 **Title:** Rational connectedness and boundedness of Fano manifolds
 
@@ -878,7 +880,9 @@ Proposition 1.1. Let X be a smooth projective variety over an alge-
 braically closed fiel
 ```
 
-## candidate-14 [atlas-general] — UNCONSUMED
+## candidate-14 [atlas-general] — REJECTED
+
+Osher–Sethian level-set PSC algorithms are numerical front-tracking methodology (Hamilton-Jacobi schemes); the only atlas-adjacent content is incidental topological merging/breaking, which is not a machine instantiation (<2 machines; separatrix is not a machine per A6).
 
 **Title:** 19880001113
 
@@ -978,7 +982,9 @@ cles come together in regions where the curvature of the propagating front build
 bility unless 
 ```
 
-## candidate-15 [atlas-general] — UNCONSUMED
+## candidate-15 [atlas-general] — REJECTED
+
+Barandes' stochastic-quantum theorem is Dynamics-domain-relevant but instantiates only one machine (joint-vs-marginal excess in the composite-system/subsystem construction); no chain complex, matching, stability bound, or surrogate/null test appears.
 
 **Title:** 2309.03085v1
 
