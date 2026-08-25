@@ -7,6 +7,10 @@ fully annotated papers**, **36 cells (6 machines × 6 domains)**, min cell 2,
 and OT→TDA mappings await Aaron's ratification.
 
 ## Reports
+- `2026-08-25-0749.md` — Pass 38: B3 sub-slice 4 — optimal_transport.md
+  "Monge–Kantorovich split inside this file": coupling-side vs map-side corpus
+  instances catalogued; Mémoli–Needham non-atomic GM=GW read as the regime
+  theorem (split bites only on atomic instances).
 - `2026-08-25-0735.md` — Pass 37: B2 slice-37 — **batch-006 CLOSED 8/8**
   (07 Beier et al 2112.11964 linear-GW REJECTED, <2 machines; 08 Wollstadt
   et al ANNOTATED as 2203.10810 — local info dynamics vs predictive-coding
@@ -26,25 +30,20 @@ and OT→TDA mappings await Aaron's ratification.
   CLOSED 12/12 + B3 sub-slices 1–2 (ANTISYNONYMS Matching↔Stability duality;
   thermodynamic-instantiation sections on optimal_transport +
   composite_systems).
-- `2026-08-25-0713.md` — Pass 32: channel-capacity CLOSED 7/7 (1708.03990);
-  ph-stability opened 2/5 (1205.3669, 2201.06650).
-- `2026-08-25-0708.md` / `2026-08-25-0703.md` — Passes 30–31: batch-005 opened,
-  channel-capacity 6/7; qec.md catch-all debt cleared.
-- `2026-08-25-0655.md` — Pass 29: **batch-004 CLOSED 17/17**. 9 pointer repairs;
-  ~113 residual catalogued (≤5/pass).
-- Earlier (`2026-08-24-*`, `2026-08-25-06*`): Phase A complete (A1–A6), B1 done,
-  B2 slices up to 29, gen_stats grid/alias follow-up.
+- Earlier (`2026-08-25-07*`, `2026-08-24-*`): batch-004 CLOSED, channel-capacity
+  + ph-stability groups, Phase A complete (A1–A6), B1 done, gen_stats follow-up.
 
 ## Task status (LOOP_MISSION.md ledger is canonical)
 - **A1–A6:** all [done].
 - **B1 ingestion contract:** [done] (6ebfcf2).
-- **B2 queue consumption:** [in_progress] — batches 001–004 fully consumed
-  (21; 18 with 22 HELD; 28; 17); batch-005 CLOSED 12/12; **batch-006 CLOSED
-  8/8 (pass 37)**. No unconsumed queue batches remain — awaiting batch-007
-  drop. Residual Wave-era catch-all pointer debt (~101, ≤5/pass sanctioned).
-- **B3 atlas synthesis:** [in_progress] — sub-slices 1–3 done (passes 33, 34,
-  37): ANTISYNONYMS duality entry; thermodynamic-instantiation sections on
-  optimal_transport.md + composite_systems.md; MATCHING.md "Two Cross-Machine
-  Roles" (OT-as-proof-technology; PH→Matching bridge) + ldpc-bp ancestor
-  lineage note. Next hook: Monge-vs-Kantorovich internal split (Mémoli–Needham
-  2212.14123) → optimal_transport.md. One atlas file per pass max.
+- **B2 queue consumption:** [in_progress] — batches 001–006 fully consumed or
+  HELD (batch-002's 22 HELD candidates fair game for a machines-first
+  re-triage now that the GW-theory core has landed). No unconsumed queue
+  batches remain — awaiting batch-007 drop (available on request via report).
+  Residual Wave-era catch-all pointer debt (~101, ≤5/pass sanctioned).
+- **B3 atlas synthesis:** [in_progress] — sub-slices 1–4 done (passes 33, 34,
+  37, 38): ANTISYNONYMS duality entry; thermodynamic-instantiation sections on
+  optimal_transport.md + composite_systems.md; MATCHING.md cross-machine roles
+  + ldpc-bp ancestor lineage; optimal_transport.md Monge–Kantorovich internal
+  split. Queued hooks exhausted — next session picks: batch-002 HELD re-triage
+  slice, or request batch-007 forage.
