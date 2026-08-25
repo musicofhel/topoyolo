@@ -307,6 +307,7 @@ def check_stats_drift(v):
 
 
 LAYOUT_CONTRACT = ROOT / "papers/README.md"
+INGESTION_CONTRACT = ROOT / "papers/INGESTION.md"
 
 
 def check_papers_layout(v):
@@ -328,6 +329,53 @@ def check_papers_layout(v):
                   f"(papers/ layout contract)")
         else:
             n += 1
+    return n
+
+
+QUEUE_DIR = ROOT / "papers/queue"
+CANDIDATE_RE = re.compile(r"^##\s+candidate-(\S+)\s+(?:\[[^\]]*\]\s*)?[—-]\s*(.+?)\s*$")
+VALID_STATUSES = ("UNCONSUMED", "ANNOTATED", "REJECTED")
+
+
+def check_queue_hygiene(v):
+    """B1 ingestion contract (papers/INGESTION.md §5): every candidate in
+    every papers/queue/batch-*.md carries a valid STATUS token; ids are
+    unique per batch; REJECTED candidates carry a one-sentence reason."""
+    if not INGESTION_CONTRACT.exists():
+        v.warn("papers/INGESTION.md missing — queue hygiene unchecked")
+        return 0
+    n = 0
+    for batch in sorted(QUEUE_DIR.glob("batch-*.md")):
+        lines = batch.read_text().splitlines()
+        seen_ids = set()
+        for i, line in enumerate(lines):
+            m = CANDIDATE_RE.match(line)
+            if not m:
+                continue
+            n += 1
+            cid, status = m.group(1), m.group(2)
+            loc = f"{batch.relative_to(ROOT)}:{i + 1}"
+            kind = status.split()[0]
+            if kind not in VALID_STATUSES:
+                v.err(f"{loc}: candidate-{cid} has invalid status "
+                      f"('{status}' — expected UNCONSUMED / "
+                      f"'ANNOTATED as <id>' / REJECTED) [INGESTION.md §5]")
+                continue
+            if cid in seen_ids:
+                v.err(f"{loc}: duplicate candidate id '{cid}' in {batch.name} "
+                      f"[INGESTION.md §5]")
+            seen_ids.add(cid)
+            if kind == "ANNOTATED" and not re.match(r"^ANNOTATED\s+as\s+\S+", status):
+                v.err(f"{loc}: candidate-{cid} ANNOTATED without an id "
+                      f"(expected 'ANNOTATED as <id>') [INGESTION.md §1]")
+            if kind == "REJECTED":
+                # the next non-empty line must be the rejection sentence
+                nxt = next((l for l in lines[i + 1:] if l.strip()), "")
+                if not nxt.strip() or CANDIDATE_RE.match(nxt) or \
+                        not re.search(r"[.!?)\]]\s*$", nxt.strip()):
+                    v.err(f"{loc}: REJECTED candidate-{cid} lacks a one-sentence "
+                          f"rejection reason directly under its header "
+                          f"[INGESTION.md §4]")
     return n
 
 
@@ -356,6 +404,7 @@ def main(argv):
     annotations = collect_annotations(v)
     n_layout = check_papers_layout(v)
     n_inbox = check_inbox_empty(v)
+    n_queue = check_queue_hygiene(v)
     texts = index_texts()
     n_ann = check_coverage(annotations, texts, v)
     n_md, n_broken = check_links(v)
@@ -366,6 +415,7 @@ def main(argv):
     print(f"  annotations parsed : {n_ann}")
     print(f"  papers/ entries    : {n_layout} documented in layout contract")
     print(f"  index files scanned: {len(texts)}")
+    print(f"  queue candidates   : {n_queue} in papers/queue/batch-*.md")
     print(f"  markdown files     : {n_md}")
     if stats:
         papers, n_deep, min_cell = stats

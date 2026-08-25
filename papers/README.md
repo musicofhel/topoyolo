@@ -25,6 +25,9 @@ directly under `papers/` must be listed here. Adding something new to
 
 ## Intake
 
+- **`INGESTION.md`** — the Phase B ingestion contract: queue file format,
+  per-paper pipeline, batch-size rule (≤3 papers/pass), triage-reject rule,
+  and the queue-hygiene checks the lint enforces. See `queue/`.
 - **`inbox.md`** — current leads and wave log. Contract at the top; pointer
   lists only — full annotations are NOT allowed here anymore (lint-enforced).
   New leads go here; when annotated, the annotation moves to `annotations/`
