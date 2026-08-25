@@ -23,11 +23,18 @@ cells ≥10, min cell 1).
   candidates), promotion-not-deletion rule; lint now fails on undocumented
   papers/ entries. Carried to B: promote Mollers-2023 + Mézard–Mora (index
   prose crossrefs with no annotation file).
-- A6 SEPARATRIX review (read-only, recommendation only) — open (NEXT)
-- Phase B (B1–B3): A1–A5 done → UNLOCKED. batch-001 (21 candidates,
-  commit 27d8938) sits in papers/queue/, unconsumed. Start with B1 contract.
+- A6 SEPARATRIX review — **done 2026-08-24 (recommendation only; merge is
+  Aaron's)**. Verdict: ACCEPT DIRECTIONALLY as PROPOSED 7th machine, gated on
+  G1 sharpen signature/demote margin, G2 ANTISYNONYMS stub vs Stability,
+  G3 no integration until ≥3 cited papers annotated in B2. If merged:
+  follow-up task to extend gen_stats.py to 7 columns (+ possible ML domain).
+  Details: research/2026-08-24-2353.md.
+- **Phase A COMPLETE. Phase B UNLOCKED.**
+- B1 ingestion contract — open (NEXT): papers/INGESTION.md + queue-hygiene lint.
+  batch-001 (21 candidates, commit 27d8938) stays unconsumed until B1 exists.
 
 ## Reports (newest first)
+- [2026-08-24-2353](2026-08-24-2353.md) — Pass 9 / A6 DONE: SEPARATRIX PR #1 review from orchestrator export; accept-directionally recommendation with three gates; answers to PR's Q1–Q3; gen_stats 7-column follow-up flagged.
 - [2026-08-24-2345](2026-08-24-2345.md) — Pass 8 / A5 DONE: papers/README.md layout contract + lint enforcement; ledgers documented not folded; new debt class found (index→annotation gap).
 - [2026-08-24-0840](2026-08-24-0840.md) — Pass 7 / A4 DONE: gen_stats.py + regenerated coverage-matrix.md, README/docs stats to derived truth (68 papers vs old 219 — delta explained), --check drift gate proven live.
 - [2026-08-24-0737](2026-08-24-0737.md) — Pass 6 / A3 slice 4 DONE: Waves 4c–10c migrated (36 verbatim files incl. blahut-arimoto-1972), 149 crossrefs repointed, inbox reshaped to contract+leads+wave index, lint enforces empty inboxes. A3 flipped done.

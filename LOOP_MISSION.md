@@ -96,13 +96,16 @@ the pass report as pre-existing baseline debt.
   - carried to Phase B: promote ledger candidates via normal ingestion; two
     index prose crossrefs lack annotation files (Mollers 2023 Hodge-aware CL;
     Mézard–Mora).
-- **A6 [open] SEPARATRIX proposal review (read-only).** Fetch is denied, so
-  work from `git log`/`git show` if `origin/atlas/separatrix` is available
-  locally; if not, record the blocker and let the orchestrator attach the
-  diff to `papers/queue/separatrix-diff.txt`. Assess against METHODOLOGY.md:
-  is SEPARATRIX a genuine seventh machine or a special case of the six?
-  Recommendation + evidence in the report. MERGE DECISION IS AARON'S — this
-  task produces a recommendation only.
+- **A6 [done 2026-08-24 — recommendation recorded, merge is Aaron's] SEPARATRIX
+  proposal review.** Worked from orchestrator's export `papers/queue/separatrix-pr1.md`
+  (no local origin branch needed). Verdict: ACCEPT DIRECTIONALLY — genuine seventh
+  machine (distinct primary object; independent ML/philosophy rediscovery of boundary
+  thickness; built-in falsification via EXP-88/F-10), with three gates before promotion:
+  G1 sharpen signature + demote margin to degenerate case; G2 add ANTISYNONYMS entry vs
+  Stability/Parameterized Homology; G3 no matrix/glossary/index integration until ≥3
+  cited papers survive B2 annotation. If merged, gen_stats.py needs a follow-up task for
+  the 7th column (+ possible ML domain). Answers to PR's Q1–Q3 in report.
+  Report: `research/2026-08-24-2353.md`.
 
 ## Phase B — ingestion: link-forge methodology (locked until A1–A5 done)
 
