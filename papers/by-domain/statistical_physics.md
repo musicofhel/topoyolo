@@ -144,3 +144,15 @@ arXiv: cond-mat/0606048. Degree-dependent coupling J k_i^{η−1} on scale-free 
 **Machines**: stability (finite-size scaling), parameterized homology (transition-class taxonomy in the (η, λ) plane), joint-vs-marginal (weak — synchronized clusters as composites).
 Full annotation: `annotations/cond-mat-0606048.md` (B2 pass 46). Abstract-only provenance — depth-limited.
 **See also**: `by-structure/phase_transitions.md`
+
+### Song, Choi & Kahng (2021) — Machine learning approaches for Kuramoto coupled oscillator systems
+arXiv: 2109.08918. ML determination of the transition point and criticality of a hybrid synchronization transition; network-structure inference from chaotic patterns; comparison of ML algorithms for chaotic time-series prediction, with a forward look to EEG-style inverse problems.
+**Machines**: stability (learned order parameters as transition detectors), matching (weak — recovering coupling structure from dynamics).
+Full annotation: `annotations/2109.08918.md` (B2 pass 47). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/phase_transitions.md`, `by-structure/optimal_transport.md`
+
+### Witthaut & Timme (2013) — Kuramoto dynamics in Hamiltonian systems
+arXiv: 1305.1742. A classical conservative system with 2N state variables whose N-dimensional invariant manifolds carry exact Kuramoto dynamics; the synchronization transition emerges where the transverse Hamiltonian action dynamics becomes unstable — dissipative sync located by conservative instability analysis.
+**Machines**: stability (transition as transverse instability), joint-vs-marginal excess (transverse dynamics = composite-level excess over the Kuramoto marginal).
+Full annotation: `annotations/1305.1742.md` (B2 pass 47). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/dynamical_systems.md`, `by-structure/composite_systems.md`

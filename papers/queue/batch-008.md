@@ -140,7 +140,7 @@ Across natural and human-made systems, transition points mark sudden changes of 
 We investigate the synchronization transition of the modified Kuramoto model where the oscillators form a scale-free network with degree exponent lambda. An oscillator of degree k_i is coupled to its neighboring oscillators with asymmetric and degree-dependent coupling in the form of J k_i^(eta-1). By invoking the mean-field approach, we determine the synchronization transition point J_c, which is zero (finite) when eta > lambda-2 (eta < lambda-2). We find eight different synchronization transition behaviors depending on the values of eta and lambda, and derive the critical exponents associated with the order parameter and the finite-size scaling in each case. The synchronization transition is also studied from the perspective of cluster formation of synchronized vertices. The cluster-size distribution and the largest cluster size as a function of the system size are derived for each case using the generating function technique. Our analytic results are confirmed by numerical simulations.
 ```
 
-## candidate-10 [kuramoto] — UNCONSUMED
+## candidate-10 [kuramoto] — ANNOTATED as 2109.08918
 
 **Title:** Machine learning approaches for Kuramoto coupled oscillator systems
 
@@ -154,7 +154,7 @@ We investigate the synchronization transition of the modified Kuramoto model whe
 Recently, there has been significant advancement in the machine learning (ML) approach and its application to diverse systems ranging from complex to quantum systems. As one of such systems, a coupled-oscillators system exhibits intriguing collective behaviors, synchronization phase transitions, chaotic behaviors and so on. Even though traditional approaches such as analytical and numerical methods enable to understand diverse properties of such systems, some properties still remain unclear. Here, we applied the ML approach to such systems particularly described by the Kuramoto model, with the aim of resolving the following intriguing problems, namely determination of the transition point and criticality of a hybrid synchronization transition; understanding network structures from chaotic patterns; and comparison of ML algorithms for the prediction of future chaotic behaviors. The proposed method is expected to be useful for further problems such as understanding a neural network structure from electroencephalogram signals.
 ```
 
-## candidate-11 [kuramoto] — UNCONSUMED
+## candidate-11 [kuramoto] — ANNOTATED as 1305.1742
 
 **Title:** Kuramoto dynamics in Hamiltonian systems
 

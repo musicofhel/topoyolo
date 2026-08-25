@@ -596,3 +596,13 @@ Full annotation: `annotations/2506.22335.md` (B2 pass 45). Abstract-only provena
 **Machines**: null hypothesis (transition-vs-bifurcation classification), stability (bifurcation mechanism of the extreme jump).
 Full annotation: `annotations/2505.10114.md` (B2 pass 46). Abstract-only provenance — depth-limited.
 **See also**: `by-structure/phase_transitions.md`
+
+**Song, Choi & Kahng (2021) — Machine learning approaches for Kuramoto systems**: arXiv: 2109.08918. ML determination of a hybrid synchronization transition's criticality; network structure inferred from chaotic patterns (inverse identification of the coupling graph from dynamics, same direction as the reservoir-GS cluster).
+**Machines**: stability (learned transition detection), matching (weak — structure-from-chaos inference).
+Full annotation: `annotations/2109.08918.md` (B2 pass 47). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/statistical_physics.md`, `by-structure/optimal_transport.md`
+
+**Witthaut & Timme (2013) — Kuramoto dynamics in Hamiltonian systems**: arXiv: 1305.1742. Exact embedding of dissipative Kuramoto dynamics on invariant manifolds of a 2N-variable conservative system; the synchronization transition is the transverse instability of the Hamiltonian action dynamics.
+**Machines**: stability (core — transverse instability), joint-vs-marginal excess (manifold marginal vs full joint system).
+Full annotation: `annotations/1305.1742.md` (B2 pass 47). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/statistical_physics.md`, `by-structure/composite_systems.md`

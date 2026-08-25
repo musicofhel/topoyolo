@@ -9,10 +9,10 @@ Updated: 2026-08-25 (derived by scripts/gen_stats.py from papers/annotations/)
 ──────────────────────────────────────────────────────────────────────────────────────
 TDA                   *33*        *40*        *34*        *46*           9        *23*
 QEC                   *13*        *11*        *14*        *19*           5        *14*
-Dynamics              *13*        *21*        *14*        *33*        *12*        *27*
+Dynamics              *13*        *21*        *15*        *35*        *13*        *27*
 Neuro                 *18*        *23*           6        *16*        *17*        *26*
 InfoTheo              *11*        *30*        *19*        *26*        *33*        *43*
-StatPhys                 2           9           9        *12*        *11*        *14*
+StatPhys                 2           9        *10*        *14*        *12*        *14*
 ```
 
 (`*n*` marks deep cells ≥10.)
@@ -28,10 +28,10 @@ block-beta
 
   TDA["TDA"] TDA_CC["33"] TDA_PH["40"] TDA_MA["34"] TDA_ST["46"] TDA_JM["9"] TDA_NH["23"]
   QEC["QEC"] QEC_CC["13"] QEC_PH["11"] QEC_MA["14"] QEC_ST["19"] QEC_JM["5"] QEC_NH["14"]
-  DYN["Dynamics"] DYN_CC["13"] DYN_PH["21"] DYN_MA["14"] DYN_ST["33"] DYN_JM["12"] DYN_NH["27"]
+  DYN["Dynamics"] DYN_CC["13"] DYN_PH["21"] DYN_MA["15"] DYN_ST["35"] DYN_JM["13"] DYN_NH["27"]
   NEU["Neuro"] NEU_CC["18"] NEU_PH["23"] NEU_MA["6"] NEU_ST["16"] NEU_JM["17"] NEU_NH["26"]
   IT["InfoTheo"] IT_CC["11"] IT_PH["30"] IT_MA["19"] IT_ST["26"] IT_JM["33"] IT_NH["43"]
-  SP["StatPhys"] SP_CC["2"] SP_PH["9"] SP_MA["9"] SP_ST["12"] SP_JM["11"] SP_NH["14"]
+  SP["StatPhys"] SP_CC["2"] SP_PH["9"] SP_MA["10"] SP_ST["14"] SP_JM["12"] SP_NH["14"]
   style TDA_CC fill:#9f9,stroke:#333
   style TDA_PH fill:#9f9,stroke:#333
   style TDA_MA fill:#9f9,stroke:#333
@@ -59,6 +59,7 @@ block-beta
   style IT_ST fill:#9f9,stroke:#333
   style IT_JM fill:#9f9,stroke:#333
   style IT_NH fill:#9f9,stroke:#333
+  style SP_MA fill:#9f9,stroke:#333
   style SP_ST fill:#9f9,stroke:#333
   style SP_JM fill:#9f9,stroke:#333
   style SP_NH fill:#9f9,stroke:#333
@@ -76,4 +77,4 @@ fails if these numbers drift from the claims in README.md / docs/index.html.
 
 ## Coverage Status
 
-149 fully annotated papers. 30 of 36 cells ≥10 (deep); min cell = 2.
+151 fully annotated papers. 31 of 36 cells ≥10 (deep); min cell = 2.
