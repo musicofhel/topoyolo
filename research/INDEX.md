@@ -1,39 +1,35 @@
 # topo-rosetta RW loop — INDEX
 
 **Branch:** `loop/atlas-structure-v1` (never pushed; Aaron reviews/merges)
-**Lint:** `python3 scripts/check_structure.py --check` → **0 errors**, 25
-warnings (gen_stats domain-alias notes — pre-existing debt class).
-Derived truth: **78 fully annotated papers**.
+**Lint:** `python3 scripts/check_structure.py --check` → **0 errors**, 27
+warnings (gen_stats domain-alias + unrecognized-domain notes — pre-existing debt class).
+Derived truth: **80 fully annotated papers**.
 
 ## Task status
 - A1 structure lint tool — **done 2026-08-24 (e6d03df)**
 - A2 cross-ref/link debt paydown — **done 2026-08-24 (6f10501+b673c24)**
-- A3 per-paper annotation files — **done 2026-08-24**. Carried debt: ~51 full
-  annotations live as prose blocks in by-domain/by-structure index files;
-  B2 promotes-on-encounter. Wrong-pointer instances in
-  `by-structure/optimal_transport.md` FIXED pass 14; prose-block debt remains.
-- A4 stats from data — **done 2026-08-24 (a49e738+db97bca)**. Thin cells:
-  Dynamics×Matching (=4), QEC×JointMarg (=2) → B2 targets. Counts at derived
-  78 / 20 cells ≥10, min cell 2.
+- A3 per-paper annotation files — **done 2026-08-24**. Carried debt: ~49 full
+  annotations still live as prose blocks in by-domain/by-structure index files;
+  B2 promotes-on-encounter (2 more promoted pass 19).
+- A4 stats from data — **done 2026-08-24 (a49e738+db97bca)**. Counts at derived
+  80 / 20 cells ≥10, min cell 2.
 - A5 loose-file adjudication — **done 2026-08-24 (61fee02)**.
 - A6 SEPARATRIX review — **done 2026-08-24** (accept-directionally, gates G1–G3).
 - **Phase A COMPLETE. Phase B UNLOCKED.**
-- B1 ingestion contract — **done 2026-08-24 (6ebfcf2)**. Duplication rule
-  adopted by orchestrator: batch-003 exports title-grep annotations/ first.
-- B2 consume queue batches — **in_progress: slices 1–9 done.**
-  batch-001 FULLY CONSUMED 21/21 (8 annotated, 13 rejected). batch-002:
-  **18/40 consumed, 22 queued** — candidates 01–06 REJECTED
-  (geometric-dl/equivariance wrappers), 07 & 09 REJECTED (duplicates),
-  **10 ANNOTATED → TPCC `annotations/2303.16716.md` (pass 15)**, 08/11/12/13/14/15
-  REJECTED (slices 7–8), and pass 18 (slice-9): 16 (Seshadri constants, zero
-  machines), 17 (SNGP — one-machine Stability-only; OOD is separatrix-class per
-  A6), 18 (Dean BSM info-geometry single-author draft) all REJECTED.
-  atlas-general tranche running 6/6 rejects; orchestrator preparing a
-  machines-filtered batch-003. Next: candidates 19–21; consider halting
-  batch-002 if that slice also all-rejects. Lint --check 0 errors.
+- B1 ingestion contract — **done 2026-08-24 (6ebfcf2)**. Orchestrator dedup
+  widened? NOT yet — batch-003 candidates 01+02 slipped through as prose-block
+  duplicates; title-grep should also cover by-domain/by-structure files.
+- B2 consume queue batches — **in_progress: slices 1–10 done.** batch-001 FULLY
+  CONSUMED 21/21 (8 annotated, 13 rejected). batch-002: 18/40 consumed, then
+  **HALT adopted early — remaining 22 HELD-by-orchestrator** (not rejected;
+  may return under machines-first re-triage). **batch-003 started (pass 19):
+  candidates 01+02 promote-on-encounter → `annotations/2510.22002.md` +
+  `annotations/10.3390-electronics9050823.md`; counts 78→80.** Next:
+  candidates 03–05 [filtration-ph]. Lint --check 0 errors.
 - B3 atlas synthesis touch-ups — open (after ~15 new papers).
 
 ## Reports (newest first)
+- [2026-08-25-0313](2026-08-25-0313.md) — Pass 19 / B2 slice-10: batch-003 opens; dyn-matching pair were already prose-block annotations → promoted verbatim (2510.22002 Koopman guide, Zhou electronics-823); counts to 80; batch-002 formally HELD-by-orchestrator; queue dedup gap flagged.
 - [2026-08-25-0307](2026-08-25-0307.md) — Pass 18 / B2 slice-9: all-reject pass — candidates 16 (zero-machine alg-geom), 17 (SNGP one-machine), 18 (Dean SSRN draft) rejected; batch-002 at 18/40, atlas-general tranche 6/6 rejects; halt-criterion proposed for candidates 19–21.
 - [2026-08-25-0258](2026-08-25-0258.md) — Pass 17 / B2 slice-8: three triage-rejections in atlas-general tranche open (13 KMM Fano zero machines, 14 Osher–Sethian numerics, 15 Barandes one-machine); batch-002 at 15/40; previews of 16–18 recorded for slice-9; orchestrator flagged on tranche quality.
 - [2026-08-25-0252](2026-08-25-0252.md) — Pass 16 / B2 slice-7: five triage-rejections (05/06 equivariance wrappers, 08 CL wrapper w/ misassigned separatrix tag, 11 Cheeger-refinement duplicate of 2302.01069, 12 cavity-as-tool); batch-002 at 12/40; all-rejection pass, counts stay 78.

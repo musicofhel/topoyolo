@@ -151,8 +151,14 @@ skill, dual-index filing, glossary/atlas updates, matrix regen via A4's tool.
   (pass 18/slice-9: candidates 16 REJECTED — Seshadri constants, zero machines;
   17 REJECTED — SNGP, one-machine Stability-only, OOD is separatrix-class per A6;
   18 REJECTED — Dean BSM info-geometry single-author draft); atlas-general
-  tranche running 6/6 rejects; 22 queued. Next: candidates 19–21; consider
-  halting batch-002 if that slice also all-rejects.** Also pass 14: fixed 5 wrong-pointer
+  tranche ran 6/6 rejects. **HALT ADOPTED (orchestrator, pass 19): remaining 22
+  batch-002 candidates are HELD-by-orchestrator (NOT rejected) — may return under
+  a machines-first re-triage.** **batch-003 started (pass 19/slice-10): candidates
+  01+02 were both already prose blocks in the indices (queue dedup checked only
+  annotations/) → promote-on-encounter: migrated verbatim to
+  annotations/2510.22002.md + annotations/10.3390-electronics9050823.md,
+  crossrefs repointed, counts to derived 80. Next: batch-003 candidates 03–05
+  [filtration-ph].** Also pass 14: fixed 5 wrong-pointer
   crossrefs in by-structure/optimal_transport.md; counts now at derived 78.
   Lint --check 0 errors.]
   Consume queue batches.** Repeatable task — each pass takes ≤3
