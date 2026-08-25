@@ -192,7 +192,11 @@ skill, dual-index filing, glossary/atlas updates, matrix regen via A4's tool.
   NEW DOMAIN by-domain/statistical_physics.md opened for the stoch-thermo group;
   05 Nakazato-Ito ANNOTATED as 2103.00503 (entropy production ≥ L2-Wasserstein path length; thermodynamic speed limits; matching-as-dissipation semantic divergence flagged);
   07 Ito-Oizumi-Amari ANNOTATED as 1810.09545 (additivity violation of partial EP = stochastic interaction/IIT — joint-vs-marginal excess in dissipation units; Neuroscience↔StatPhys bridge).
-  Counts at derived 95. Lint 0 errors, crossref debt back to baseline 2. Abstract-only provenance — all depth-limited.]** Also pass 14: fixed 5 wrong-pointer
+  Counts at derived 95. Lint 0 errors, crossref debt back to baseline 2. Abstract-only provenance — all depth-limited.] **Pass 26 (slice-25): stoch-thermo CLOSED
+  4/4 — 06 ANNOTATED as 2209.00527 (info geometry ↔ OT unified via excess EP; matching core), 08 ANNOTATED as 1408.1224 (Barato–Seifert information reservoirs;
+  generalized second law as joint-vs-marginal bookkeeping; null weak), 09 ANNOTATED as 2312.03489 (oscillatory-mode EP decomposition → monkey ECoG awake vs
+  anesthesia; second Neuroscience↔StatPhys bridge). batch-004 now 9/17 consumed; counts at derived 97 — README/docs were stale at 92, now patched and enforced by
+  --check. gen_stats grid question answered in report: alias/6th-column follow-up should precede domain confirmation.]** Also pass 14: fixed 5 wrong-pointer
   crossrefs in by-structure/optimal_transport.md; counts now at derived 78.
   Lint --check 0 errors.]
   Consume queue batches.** Repeatable task — each pass takes ≤3

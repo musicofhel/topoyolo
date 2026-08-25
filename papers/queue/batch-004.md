@@ -82,7 +82,7 @@ We present a method called Manifold Interpolating Optimal-Transport Flow (MIOFlo
 We study a relationship between optimal transport theory and stochastic thermodynamics for the Fokker-Planck equation. We show that the lower bound on the entropy production is the action measured by the path length of the L2-Wasserstein distance. Because the L2-Wasserstein distance is a geometric measure of optimal transport theory, our result implies a geometric interpretation of the entropy production. Based on this interpretation, we obtain a thermodynamic trade-off relation between transition time and the entropy production. This thermodynamic trade-off relation is regarded as a thermodynamic speed limit which gives a tighter bound of the entropy production. We also discuss stochastic thermodynamics for the subsystem and derive a lower bound on the partial entropy production as a generalization of the second law of information thermodynamics. Our formalism also provides a geometric picture of the optimal protocol to minimize the entropy production. We illustrate these results by the optimal stochastic heat engine and show a geometrical bound of the efficiency.
 ```
 
-## candidate-06 [stoch-thermo] — UNCONSUMED
+## candidate-06 [stoch-thermo] — ANNOTATED as 2209.00527 (B2 pass 26 → annotations/2209.00527.md)
 
 **Title:** Geometric thermodynamics for the Fokker-Planck equation: Stochastic thermodynamic links between information geometry and optimal transport
 
@@ -110,7 +110,7 @@ We propose a geometric theory of non-equilibrium thermodynamics, namely geometri
 We show a relationship between the entropy production in stochastic thermodynamics and the stochastic interaction in the information integrated theory. To clarify this relationship, we newly introduce an information geometric interpretation of the entropy production for a total system and the partial entropy productions for subsystems. We show that the violation of the additivity of the entropy productions is related to the stochastic interaction. This framework is a thermodynamic foundation of the integrated information theory. We also show that our information geometric formalism leads to a novel expression of the entropy production related to an optimization problem minimizing the Kullback-Leibler divergence. We analytically illustrate this interpretation by using the spin model.
 ```
 
-## candidate-08 [stoch-thermo] — UNCONSUMED
+## candidate-08 [stoch-thermo] — ANNOTATED as 1408.1224 (B2 pass 26 → annotations/1408.1224.md)
 
 **Title:** Stochastic thermodynamics with information reservoirs
 
@@ -124,7 +124,7 @@ We show a relationship between the entropy production in stochastic thermodynami
 We generalize stochastic thermodynamics to include information reservoirs. Such information reservoirs, which can be modeled as a sequence of bits, modify the second law. For example, work extraction from a system in contact with a single heat bath becomes possible if the system also interacts with an information reservoir. We obtain an inequality, and the corresponding fluctuation theorem, generalizing the standard entropy production of stochastic thermodynamics. From this inequality we can derive an information processing entropy production, which gives the second law in the presence of information reservoirs. We also develop a systematic linear response theory for information processing machines. For a unicyclic machine powered by an information reservoir, the efficiency at maximum power can deviate from the standard value of 1/2. For the case where energy is consumed to erase the tape, the efficiency at maximum erasure rate is found to be 1/2.
 ```
 
-## candidate-09 [stoch-thermo] — UNCONSUMED
+## candidate-09 [stoch-thermo] — ANNOTATED as 2312.03489 (B2 pass 26 → annotations/2312.03489.md; second Neuroscience bridge)
 
 **Title:** Decomposing Thermodynamic Dissipation of Linear Langevin Systems via Oscillatory Modes and Its Application to Neural Dynamics
 

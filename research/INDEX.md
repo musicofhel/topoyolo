@@ -1,12 +1,21 @@
 # research/INDEX.md — pass reports + task status (newest first)
 
 **Lint state:** check_structure.py exit 0; 1 warning = pre-existing baseline
-(2 author-year-prose crossrefs). Derived corpus: **95 fully annotated papers**,
-30 cells, min cell 2, 21 cells ≥10. **New domain this pass:
-`by-domain/statistical_physics.md`** (stoch-thermo group) — gen_stats cell grid
-still says "6 machines × 5 domains"; follow-up noted in pass 25 report.
+(2 author-year-prose crossrefs); `--check` 0 errors. Derived corpus: **97 fully
+annotated papers**, 30 cells, min cell 2, 22 cells ≥10. README + docs/index.html
+re-patched to derived count this pass (were stale at 92). **Provisional domain:
+`by-domain/statistical_physics.md`** — gen_stats grid still "6 machines × 5
+domains" with 44 unrecognized-domain notes incl. one paper literally declaring
+"statistical physics"; pass 26 recommends the alias/6th-column follow-up BEFORE
+Aaron confirms the domain (bundleable with A6's possible 7th machine column).
 
 ## Reports
+- `2026-08-25-0630.md` — Pass 26: B2 slice-25, **stoch-thermo group CLOSED 4/4**
+  — 06 Ito annotated (2209.00527, info geometry ↔ OT via excess EP), 08
+  Barato–Seifert annotated (1408.1224, information reservoirs), 09
+  Sekizawa–Ito–Oizumi annotated (2312.03489, ECoG EP decomposition — second
+  Neuroscience↔StatPhys bridge); counts to derived 97; answered gen_stats
+  grid question.
 - `2026-08-25-0623.md` — Pass 25: B2 slice-24, **dyn-matching group CLOSED
   4/4 + stoch-thermo opened** — 04 MIOFlow annotated (2206.14928), 05
   Nakazato–Ito annotated (2103.00503, new statistical_physics domain), 07
@@ -26,7 +35,6 @@ still says "6 machines × 5 domains"; follow-up noted in pass 25 report.
 - **B1 ingestion contract:** [done] (6ebfcf2).
 - **B2 queue consumption:** [in_progress] — batch-001 21/21, batch-002 18/40
   (22 HELD-by-orchestrator), batch-003 28/28 CLOSED,
-  **batch-004 6/17 consumed (pass 25)**: dyn-matching 4/4 DONE; stoch-thermo
-  1/5 done (05 annotated; 06/08/09 pending); rate-distortion (10–13) and
-  ldpc-bp (14–17) untouched.
-- **B3 atlas synthesis:** [open] — trigger ~15 new papers since Wave-10 baseline; currently +25 new annotations.
+  **batch-004 9/17 consumed (pass 26)**: dyn-matching 4/4 DONE; stoch-thermo
+  4/4 DONE; rate-distortion (10–13) and ldpc-bp (14–17) untouched.
+- **B3 atlas synthesis:** [open] — trigger ~15 new papers since Wave-10 baseline; currently +28 new annotations. Candidate first target: thermodynamic-instantiation subsections on optimal_transport.md / composite_systems.md (the Ito-lineage cluster).
