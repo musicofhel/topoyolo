@@ -367,3 +367,6 @@ Three gradations:
 Complementarity with the matching side: there the OT cost equals dissipation along a density path (`by-structure/optimal_transport.md`, B3 synthesis section); here the *non-additivity* of dissipation across subsystems is the signal. Matching instantiates thermodynamics through equality; joint-vs-marginal through inequality.
 
 **See also**: `by-domain/statistical_physics.md`, `by-structure/optimal_transport.md`.
+
+### Wollstadt et al. (2022) — Local Information Dynamics Against Analytical Circularity (arXiv: 2203.10810)
+Predictive-coding strategies recast as competing constraints between local active information storage and local transfer entropy; PID atoms separate bottom-up vs state-conditional transfer — joint-vs-marginal used as an assumption-minimizing instrument rather than a feature. Full annotation: `annotations/2203.10810.md` (B2 pass 37). **See also**: `by-domain/neuroscience.md`.

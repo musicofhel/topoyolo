@@ -287,3 +287,9 @@ Channel capacity, mutual information and transfer entropy between a single drivi
 **Machines**: parameterized homology, null hypothesis, stability (weak).
 Full annotation: `annotations/1708.03990.md` (B2 pass 32). Abstract-only provenance — depth-limited.
 **See also**: `by-domain/dynamical_systems.md`, `by-structure/phase_transitions.md`
+
+### Wollstadt, Rathbun, Usrey, Bastos, Lindner, Priesemann, Wibral (2022) — Information-Theoretic Analyses to Minimize Researchers' Assumptions in Predictive-Coding Studies
+Local information dynamics (local AIS + local TE) express predictive-coding strategies as testable AIS–TE relationships, breaking the circular analysis of correlate-hunting; PID separates bottom-up from state-conditional transfer on cat retinogeniculate spiking (synapse codes for predictable input).
+**Machines**: joint-vs-marginal, null hypothesis, matching (weak, strategy discrimination).
+Full annotation: `annotations/2203.10810.md` (B2 pass 37). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/information_theory.md`, `by-structure/composite_systems.md`

@@ -95,7 +95,10 @@ The Gromov--Wasserstein (GW) distance provides a framework for comparing metric 
 Optimal transport and Gromov--Wasserstein distances are useful tools for comparing probability measures and metric measure spaces, but their balanced formulations force all mass to be matched. This constraint is often too strong for data with outliers, missing parts, or only partial overlap. In this paper, we develop entropic partial optimal transport for Gaussian mixture models and define a partial mixture Gromov--Wasserstein distance. For the finite entropic partial optimal transport problem, we prove the existence and uniqueness of the minimizer and establish quantitative large-penalty estimates. Moreover, the resulting entropic partial component couplings induce continuous partial transport plans through Gaussian optimal maps. We analyze their large-penalty and subsequent zero-entropy limits and construct the associated displacement interpolations and barycentric projection maps. In addition, by identifying each Gaussian mixture with a finite metric measure space of Gaussian components, we establish the metric property and large-penalty limit of the partial mixture Gromov--Wasserstein distance. Finally, numerical experiments on synthetic Gaussian mixtures and point clouds illustrate the effects of the penalty and entropic regularization and the robustness of partial matching to outliers.
 ```
 
-## candidate-07 [gw-theory] — UNCONSUMED
+## candidate-07 [gw-theory] — REJECTED (pass 37)
+Barycentric-projection linearization is a computational accelerator for pairwise GW (a Matching-machine tool with numerical examples only): <2 machines and duplicate GW-theory coverage (2212.14123, 2201.09385).
+
+**Title:** On a linear Gromov-Wasserstein distance
 
 **Title:** On a linear Gromov-Wasserstein distance
 
@@ -109,7 +112,7 @@ Optimal transport and Gromov--Wasserstein distances are useful tools for compari
 Gromov-Wasserstein distances are generalization of Wasserstein distances, which are invariant under distance preserving transformations. Although a simplified version of optimal transport in Wasserstein spaces, called linear optimal transport (LOT), was successfully used in practice, there does not exist a notion of linear Gromov-Wasserstein distances so far. In this paper, we propose a definition of linear Gromov-Wasserstein distances. We motivate our approach by a generalized LOT model, which is based on barycentric projection maps of transport plans. Numerical examples illustrate that the linear Gromov-Wasserstein distances, similarly as LOT, can replace the expensive computation of pairwise Gromov-Wasserstein distances in applications like shape classification.
 ```
 
-## candidate-08 [neuro-pid] — UNCONSUMED
+## candidate-08 [neuro-pid] — ANNOTATED as 2203.10810 (pass 37)
 
 **Title:** Information-theoretic analyses of neural data to minimize the effect of researchers' assumptions in predictive coding studies
 
