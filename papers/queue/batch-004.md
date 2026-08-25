@@ -96,7 +96,7 @@ We study a relationship between optimal transport theory and stochastic thermody
 We propose a geometric theory of non-equilibrium thermodynamics, namely geometric thermodynamics, using our recent developments of differential-geometric aspects of entropy production rate in non-equilibrium thermodynamics. By revisiting our recent results on geometrical aspects of entropy production rate in stochastic thermodynamics for the Fokker-Planck equation, we introduce a geometric framework of non-equilibrium thermodynamics in terms of information geometry and optimal transport theory. We show that the proposed geometric framework is useful for obtaining several non-equilibrium thermodynamic relations, such as thermodynamic trade-off relations between the thermodynamic cost and the fluctuation of the observable, optimal protocols for the minimum thermodynamic cost and the decomposition of the entropy production rate for the non-equilibrium system. We clarify several stochastic-thermodynamic links between information geometry and optimal transport theory via the excess entropy production rate based on a relation between the gradient flow expression and information geometry in the space of probability densities and a relation between the velocity field in optimal transport and information geometry in the space of path probability densities.
 ```
 
-## candidate-07 [stoch-thermo] — UNCONSUMED
+## candidate-07 [stoch-thermo] — ANNOTATED as 1810.09545 (B2 pass 25 → annotations/1810.09545.md)
 
 **Title:** Unified framework for the entropy production and the stochastic interaction based on information geometry
 

@@ -14,3 +14,14 @@ Entropy production lower-bounded by the L2-Wasserstein path length of the densit
 **Machines**: matching (instrumental), joint-vs-marginal (weak).
 Full annotation: `annotations/2103.00503.md` (B2 pass 25). Abstract-only provenance — depth-limited.
 **See also**: `by-structure/optimal_transport.md`, `annotations/2206.14928.md`
+
+## Ito, Oizumi & Amari (2018)
+**"Unified framework for the entropy production and the stochastic interaction based on information geometry"**
+arXiv: 1810.09545 | cond-mat.stat-mech
+
+**Domain(s)**: Statistical physics, information theory
+
+Violation of additivity of partial entropy productions = stochastic interaction (IIT): the joint-vs-marginal excess given a thermodynamic reading; entropy production also expressed as KL-minimizing projection. A deliberate Neuroscience↔Statistical-physics bridge (IIT + information geometry).
+**Machines**: joint-vs-marginal (core), matching (weak), null hypothesis (implicit).
+Full annotation: `annotations/1810.09545.md` (B2 pass 25). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/neuroscience.md`, `annotations/2103.00503.md`
