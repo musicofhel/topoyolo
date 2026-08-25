@@ -421,7 +421,8 @@ tors. Popular fragment methods include KOWWIN, [8,9] tation of molecules, partic
 CLOGP, [10,11] ACD/LOGP, [12,13] KLOGP. [14,15] A major c
 ```
 
-## candidate-06 [filtration-ph] — UNCONSUMED
+## candidate-06 [filtration-ph] — REJECTED
+PHOM/NPHOM — one-machine PH-descriptor wrapper: 1-dim PH on weight clique complexes used only as an overfitting scalar diagnostic, no atlas machine beyond the descriptor itself (pass 21).
 
 **Title:** s41060 022 00332 1
 
@@ -501,7 +502,8 @@ layers, respectively. The one-dimensional PH investigates A barcode diagram prov
 the co-adaptations among neurons; thus, PHOM does not PH diagram. The barcode dia
 ```
 
-## candidate-07 [filtration-ph] — UNCONSUMED
+## candidate-07 [filtration-ph] — REJECTED
+PHG-Net — application wrapper: cubical-PH features vectorized via a PointNet-style encoder and fused into a medical-image classifier, PH-as-feature-extractor only (pass 21).
 
 **Title:** PHG Net Persistent Homology Guided Medical Image Classification
 
@@ -585,7 +587,8 @@ these features were integrated into ResNet for skin lesion to process persistenc
 classification. In [18], the persistence of each regio
 ```
 
-## candidate-08 [filtration-ph] — UNCONSUMED
+## candidate-08 [filtration-ph] — REJECTED
+ATPGCN — application wrapper: PH features concatenated with GCN readouts for brain-disease classification plus adversarial training; zero atlas machines (pass 21).
 
 **Title:** Adversarially Trained Persistent Homology Based Graph Convolutional Network for Disease Identification Using Brain Connectivity
 
