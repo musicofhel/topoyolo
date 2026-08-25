@@ -1,14 +1,19 @@
 # research/INDEX.md — pass reports + task status (newest first)
 
 **Lint state:** check_structure.py exit 0; 1 warning = pre-existing baseline
-(2 author-year-prose crossrefs); `--check` 0 errors. Derived corpus: **154
-fully annotated papers** (+3 pass 48), **36 cells (6 machines × 6 domains)**,
-min cell 2, **31 cells ≥10**. Domain-alias table landed in gen_stats.py
+(2 author-year-prose crossrefs); `--check` 0 errors. Derived corpus: **157
+fully annotated papers** (+3 pass 49), **36 cells (6 machines × 6 domains)**,
+min cell 2, **32 cells ≥10**. Domain-alias table landed in gen_stats.py
 (pass 27); ML→InfoTheo and OT→TDA mappings await Aaron's ratification.
-Standing policy (pass 43, sanctioned): README/docs count patches land in the
-SAME commit as the gen_stats regen.
+Standing policy (pass 43): README/docs count patches land in the SAME commit
+as the gen_stats regen.
 
 ## Reports
+- `2026-08-25-0843.md` — Pass 49: B2 batch-009 pid-theory group CLOSED 5/5
+  (04: 2404.01470 Milzman I_ft source-failure redundancy + QEC crossref;
+  05: 1303.3440 localizability axiom) + rg-dl opened 1/5 (06: 1410.3831
+  Mehta-Schwab exact RG↔RBM map; B3 flag: pair with skeptical null
+  1906.05212). Counts to derived 157, deep cells 32.
 - `2026-08-25-0837.md` — Pass 48: B2 batch-009 pid-theory 3/5 ANNOTATED
   (1004.2515 Williams-Beer founding lattice — fresh per-paper file despite
   heavy prose references; 2306.00734 mereological base-concept unification;
@@ -27,24 +32,23 @@ SAME commit as the gen_stats regen.
   conditional-Lyapunov margins, abstraction-as-attractor-continuum).
 - `2026-08-25-0735.md` — Pass 37→43 window: **batch-007 CLOSED 12/12**
   (qec-mwpm + null-surrogate groups), sanctioned same-commit count protocol.
-- `2026-08-25-0731.md` / `2026-08-25-0726.md` — Passes 35–36: batch-006
-  gw-theory core. Counts to derived 121.
-- `2026-08-25-0723.md` / `2026-08-25-0718.md` — Passes 33–34: batch-005
-  CLOSED 12/12 + B3 sub-slices 1–2 (ANTISYNONYMS; thermodynamic-instantiation
-  sections).
-- Earlier (`2026-08-25-07*`, `2026-08-24-*`): batch-004 CLOSED, channel-capacity
-  + ph-stability groups, Phase A complete (A1–A6), B1 done, gen_stats follow-up.
+- Earlier (`2026-08-25-07*`, `2026-08-24-*`): batch-005/006 CLOSED,
+  channel-capacity + ph-stability groups, Phase A complete (A1–A6), B1 done,
+  gen_stats follow-up.
 
 ## Task status (LOOP_MISSION.md ledger is canonical)
 - **A1–A6:** all [done].
 - **B1 ingestion contract:** [done] (6ebfcf2).
-- **B2 queue consumption:** [in_progress] — batch-009 pid-theory 3/5 consumed
-  (pass 48). Next: candidates 04–05 (2404.01470 QEC crossref noted;
-  1303.3440 localizability axiom), then rg-dl 06–10 incl. the built-in
-  skeptical null 1906.05212 to pair with 1410.3831 Mehta-Schwab. Residual
+- **B2 queue consumption:** [in_progress] — batch-009 pid-theory CLOSED 5/5;
+  rg-dl 1/5 (1410.3831 annotated pass 49). Next: candidates 07–09
+  (2405.17538, 2504.12700, 2506.04016), then close the batch with candidate-10
+  (1906.05212 skeptical null) annotated AS A PAIR with 1410.3831 — mutual
+  See-also links + a claim-vs-refutation note where they co-file. Residual
   Wave-era catch-all pointer debt (~100, ≤5/pass sanctioned).
 - **B3 atlas synthesis:** [in_progress] — sub-slices 1–5 done (5 = pass 47
   MATCHING.md Takens bridge-pair section). Open hooks: fold 2505.10114 into
   glossary/ANTISYNONYMS.md as transition-vs-bifurcation null support;
   possible ANTISYNONYMS note from 1910.05979 (positivity+identity is a
-  lattice property); dynamical_systems.md atlas re-read post-batch-008.
+  lattice property); dynamical_systems.md atlas re-read post-batch-008;
+  NEW: claim-vs-refutation pair note for 1410.3831 × 1906.05212 when
+  candidate-10 lands.
