@@ -1706,7 +1706,8 @@ by Shwartz-Ziv & Tishby (2017). Among other results, the authors studied the evo
 IP during the training process of DNNs and not
 ```
 
-## candidate-21 [stability-bounds] — UNCONSUMED
+## candidate-21 [stability-bounds] — REJECTED
+PAC-Bayes meta-learning bounds (Nguyen et al.): single-machine Stability-class — generalization-bound wrapper over a variational meta-learner; stability-via-PAC-Bayes-bounds coverage already held by second_pass SP-02 class; no filtration, chain complex, or null-hypothesis instantiation (pass 23).
 
 **Title:** PAC Bayes meta learning with implicit task specific posteriors
 
@@ -1788,7 +1789,8 @@ determine the label y
 guarantee on the error induced by arbitrary or even unseen ij = f ( x ij ) ,
 ```
 
-## candidate-22 [stability-bounds] — UNCONSUMED
+## candidate-22 [stability-bounds] — REJECTED
+Raginsky & Recht sensitivity-analysis reframing of generalization: one machine (stability as deterministic perturbation-sensitivity of optimization solutions); notable and may return under a machines-first re-triage, but instantiates no second atlas machine in the abstract (pass 23).
 
 **Title:** Separating Geometry from Probability in the Analysis of Generalization
 
@@ -1809,7 +1811,8 @@ Abstract:
 The goal of machine learning is to find models that minimize prediction error on data that has not yet been seen. Its operational paradigm assumes access to a dataset $S$ and articulates a scheme for evaluating how well a given model performs on an arbitrary sample. The sample can be $S$ (in which case we speak of ``in-sample'' performance) or some entirely new $S'$ (in which case we speak of ``out-of-sample'' performance). Traditional analysis of generalization assumes that both in- and out-of-sample data are i.i.d.\ draws from an infinite population. However, these probabilistic assumptions cannot be verified even in principle. This paper presents an alternative view of generalization through the lens of sensitivity analysis of solutions of optimization problems to perturbations in the problem data. Under this framework, generalization bounds are obtained by purely deterministic means and take the form of variational principles that relate in-sample and out-of-sample evaluations through an error term that quantifies how close out-of-sample data are to in-sample data. Statistical assumptions can then be used \textit{ex post} to characterize the situations when this error term is small (either on average or with high probability).
 ```
 
-## candidate-23 [null-surrogate] — UNCONSUMED
+## candidate-23 [null-surrogate] — REJECTED
+Temporal Watts cascade (Karimi & Holme): null-model comparison is simulation methodology, not an explicit analytic surrogate construction; threshold-cascade dynamics is a phase-transition phenomenon with zero further atlas machines (pass 23).
 
 **Title:** A temporal network version of Wattss cascade model
 
@@ -2196,7 +2199,8 @@ Contents
 3.1.2. Adjacency matrix.....................................................
 ```
 
-## candidate-28 [chain-complex] — UNCONSUMED
+## candidate-28 [chain-complex] — REJECTED
+Zigzag-PH layer pruning for LVLMs: PH-as-feature application wrapper (precedent: PHOM, TopP-S rejects); persistence machinery is tooling for a compression pipeline, not structural contribution (pass 23).
 
 **Title:** Topology-Aware Layer Pruning for Large Vision-Language Models
 
