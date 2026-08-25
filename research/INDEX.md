@@ -1,57 +1,20 @@
-# topo-rosetta RW loop — INDEX
+# research/INDEX.md — pass reports + task status (newest first)
 
-**Branch:** `loop/atlas-structure-v1` (never pushed; Aaron reviews/merges)
-**Lint:** `python3 scripts/check_structure.py --check` → **0 errors**, 28
-warnings (gen_stats domain-alias + unrecognized-domain notes — pre-existing debt
-class, slowly growing as promoted papers add new free-text domains; candidate
-follow-up: extend the alias table in scripts/gen_stats.py).
-Derived truth: **81 fully annotated papers**.
+**Lint state:** check_structure.py exit 0; --check exit 0 (33 informational
+gen_stats domain-alias notes, pre-existing class). Derived corpus: **86 fully
+annotated papers**, 30 cells, min cell 2, 21 cells ≥10.
 
-## Task status
-- A1 structure lint tool — **done 2026-08-24 (e6d03df)**
-- A2 cross-ref/link debt paydown — **done 2026-08-24 (6f10501+b673c24)**
-- A3 per-paper annotation files — **done 2026-08-24**. Carried debt: ~48 full
-  annotations still live as prose blocks in by-domain/by-structure index files;
-  B2 promotes-on-encounter (3 promoted so far, latest pass 20).
-- A4 stats from data — **done 2026-08-24 (a49e738+db97bca)**. Counts at derived
-  81 / 20 cells ≥10, min cell 2.
-- A5 loose-file adjudication — **done 2026-08-24 (61fee02)**.
-- A6 SEPARATRIX review — **done 2026-08-24** (accept-directionally, gates G1–G3).
-- **Phase A COMPLETE. Phase B UNLOCKED.**
-- B1 ingestion contract — **done 2026-08-24 (6ebfc2)**. Orchestrator dedup
-  widened (adopted pass 19/20): queue dedup + triage must grep by-domain/
-  by-structure prose too.
-- B2 consume queue batches — **in_progress: slices 1–14 done.** batch-001 FULLY
-  CONSUMED 21/21 (8 annotated, 13 rejected). batch-002: 18/40 consumed, then
-  **HALT adopted early — remaining 22 HELD-by-orchestrator** (may return under
-  machines-first re-triage). **batch-003: 14/28 consumed — candidates 01+02+04
-  promote-on-encounter (hidden prose blocks; counts to derived 81); candidates
-  03+05 rejected (filtration-ph); filtration-ph remainder 06/07/08 and ALL of
-  transport-matching 09–14 rejected (pass 21): PH-as-descriptor/feature wrappers,
-  transport-as-tool RL/probability papers, GWGAN single-machine wrapper, pure
-  geometric group theory.** Next group: info-machines (candidates 15–20).
-  Group-quality signal for orchestrator: filter is pulling a heavy RL tail.
-- B3 atlas synthesis touch-ups — open (after ~15 new papers).
+## Reports
+- `2026-08-25-0556.md` — Pass 22: B2 slices 15–17, batch-003 info-machines group closed 6/6 (5 promote-on-encounter dedups + CCMI new); counts to derived 86.
+- `2026-08-24-*` — Passes up to 21: Phase A complete (A1–A6), B1 done, B2 slices 1–14 (batch-001 21/21 consumed, batch-002 18/40 with remaining 22 HELD-by-orchestrator, batch-003 opened at 14/28).
 
-## Reports (newest first)
-- [2026-08-25-0550](2026-08-25-0550.md) — Pass 21 / B2 slices 12–14: batch-003 filtration-ph remainder + transport-matching group consumed, all six triage-rejected (PHOM/PHG-Net/ATPGCN wrappers; QR-DQN/Hawkes/CDRL transport-as-tool; GWGAN single-machine; Cornulier group theory); batch-003 at 14/28; lint caught a header-format slip pre-amend.
-- [2026-08-25-0335](2026-08-25-0335.md) — Pass 20 / B2 slice-11: candidate-04 promote-on-encounter (third hidden-prose duplicate), candidates 03+05 rejected; counts to 81; Dynamics×Matching unchanged at 5.
-- [2026-08-25-0313](2026-08-25-0313.md) — Pass 19 / B2 slice-10: batch-003 opens; dyn-matching pair were already prose-block annotations → promoted verbatim (2510.22002 Koopman guide, Zhou electronics-823); counts to 80; batch-002 formally HELD-by-orchestrator; queue dedup gap flagged.
-- [2026-08-25-0307](2026-08-25-0307.md) — Pass 18 / B2 slice-9: all-reject pass — candidates 16 (zero-machine alg-geom), 17 (SNGP one-machine), 18 (Dean SSRN draft) rejected; batch-002 at 18/40, atlas-general tranche 6/6 rejects; halt-criterion proposed for candidates 19–21.
-- [2026-08-25-0258](2026-08-25-0258.md) — Pass 17 / B2 slice-8: three triage-rejections in atlas-general tranche open (13 KMM Fano zero machines, 14 Osher–Sethian numerics, 15 Barandes one-machine); batch-002 at 15/40; previews of 16–18 recorded for slice-9.
-- [2026-08-25-0252](2026-08-25-0252.md) — Pass 16 / B2 slice-7: five triage-rejections (05/06 equivariance wrappers, 08 CL wrapper w/ misassigned separatrix tag, 11 Cheeger-refinement duplicate of 2302.01069, 12 cavity-as-tool); batch-002 at 12/40; counts stay 78.
-- [2026-08-25-0244](2026-08-25-0244.md) — Pass 15 / B2 slice-6: TPCC annotated (2303.16716); candidates 04/07/09 rejected (wrapper + two duplicates already in corpus); counts 77→78.
-- [2026-08-25-0235](2026-08-25-0235.md) — Pass 14 / B2 slice-5: batch-002 opened, candidates 01–03 rejected; 5 blahut-class wrong-pointers fixed; README/docs counts patched to 77.
-- [2026-08-25-0221](2026-08-25-0221.md) — Pass 13 / B2 slice-4: batch-001 emptied (21/21); fresh annotations ying-2016, liu-2025, brusch-2023, silva-2018; 10 triage-rejections; Dynamics×Matching strengthened.
-- [2026-08-25-0205](2026-08-25-0205.md) — Pass 12 / B2 slice-3: candidates 08, 04, 05 promoted from hidden prose (Fasoli pcbi.1013995, GC-STCL wang-2024, Simpson simpson-2013); content conserved; lint to 0 warnings.
-- [2026-08-25-0007](2026-08-25-0007.md) — Pass 11 / B2 slice-2: candidate-13 annotated (2604.08539, Matching+Stability), 01+14 rejected; stats 70 papers.
-- [2026-08-24-2358](2026-08-24-2358.md) — Pass 10 / B1 DONE + B2 slice-1: INGESTION.md + queue-hygiene lint; candidate-21 promotion; 51-block prose-annotation debt quantified.
-- [2026-08-24-2353](2026-08-24-2353.md) — Pass 9 / A6 DONE: SEPARATRIX PR #1 review.
-- [2026-08-24-2345](2026-08-24-2345.md) — Pass 8 / A5 DONE: layout contract + lint enforcement.
-- [2026-08-24-0840](2026-08-24-0840.md) — Pass 7 / A4 DONE: gen_stats.py + coverage-matrix regen + --check drift gate.
-- [2026-08-24-0737](2026-08-24-0737.md) — Pass 6 / A3 slice 4 DONE: Waves 4c–10c migrated, inbox reshaped, lint enforces empty inboxes.
-- [2026-08-24-0730](2026-08-24-0730.md) — Pass 5 / A3 slice 3: archive Phase 2 migrated (9 files).
-- [2026-08-24-0723](2026-08-24-0723.md) — Pass 4 / A3 slice 2: Wave 4b + Wave 3 triage (7 files).
-- [2026-08-24-0713](2026-08-24-0713.md) — Pass 3 / A3 slice 1: Waves 1–2 migrated.
-- [2026-08-24-0701](2026-08-24-0701.md) — Pass 2 / A2: crossref debt cleared.
-- [2026-08-24-0650](2026-08-24-0650.md) — Pass 1 / A1: lint tool committed + baseline census.
+## Task status (LOOP_MISSION.md ledger is canonical)
+- **A1–A6:** all [done].
+- **B1 ingestion contract:** [done] (6ebfcf2).
+- **B2 queue consumption:** [in_progress] — batch-003 at 20/28. Remaining:
+  stability-bounds (21–22), null-surrogate (23–26), chain-complex (27–28).
+  Next: candidate-21; check second_pass/third_pass ledgers + index prose blocks
+  for dedup BEFORE annotating (info-machines group was 5/6 dedup artifacts).
+- **B3 atlas synthesis:** [open], locked until ~15 new papers since B2 start.
+- Alias-table follow-up (flagged by pass 22 orchestrator note): valid small task
+  once batch-003 closes.

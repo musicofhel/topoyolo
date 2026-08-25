@@ -169,8 +169,14 @@ skill, dual-index filing, glossary/atlas updates, matrix regen via A4's tool.
   10 Hawkes FCLT convergence-rate tool; 11 GWGAN single-machine GW wrapper
   (covered by FUGW 2206.09398 + merge-tree s41468); 12 CDRL Cramér-distance
   RL theory; 13 Cornulier commability pure geometric group theory; 14 CP-DRL
-  OT-curriculum wrapper. batch-003 now 14/28 consumed; next group:
-  info-machines (15–20).]** Also pass 14: fixed 5 wrong-pointer
+  OT-curriculum wrapper. **Pass 22 (slices 15–17): info-machines group CLOSED,
+  6/6 consumed — 5 were dedup artifacts (promote-on-encounter: 15 Kawaguchi from
+  cross_domain_bridges ledger, 16 Kolchinsky PID-01 prose block, 17 Belghazi MINE
+  prose block, 20 Wickstrøm prose block, 19 CS-IB from second_pass SP-03 ledger);
+  only 18 CCMI was genuinely new (annotated as 1906.01824). batch-003 now 20/28;
+  counts at derived 86; remaining groups: stability-bounds (21–22),
+  null-surrogate (23–26), chain-complex (27–28); check historical ledgers for
+  dedup BEFORE annotating.]** Also pass 14: fixed 5 wrong-pointer
   crossrefs in by-structure/optimal_transport.md; counts now at derived 78.
   Lint --check 0 errors.]
   Consume queue batches.** Repeatable task — each pass takes ≤3
