@@ -1620,7 +1620,7 @@ by exploiting favorable properties of the Cauchy-Schwarz (CS) divergence (Princi
 Yu et al., 2023). We focus our attention on the regression setup, which is far less investigated tha
 ```
 
-## candidate-20 [info-machines] — UNCONSUMED
+## candidate-20 [info-machines] — ANNOTATED as 1909.11396 (promote-on-encounter: duplicate — already covered as full prose block in by-domain/information_theory.md plus summary rows in composite_systems/filtrations indices; block migrated verbatim to annotations/1909.11396.md, crossrefs repointed, pass 22)
 
 **Title:** Information Plane Analysis of Deep Neural Networks via Matrix Based Renyis Entro
 

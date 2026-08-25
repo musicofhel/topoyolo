@@ -9,7 +9,7 @@ The shared pattern: there is a parameter ε (scale, error rate, coupling strengt
 ## Information Theory / Machine Learning
 
 ### Wickstrøm et al. (2019) — Information Plane via Rényi Entropy
-Parameter: training epoch. Invariant: I(X;T) and I(T;Y). Two phases: fitting (both increase) and compression (I(X;T) decreases). Full annotation: `by-domain/information_theory.md`.
+Parameter: training epoch. Invariant: I(X;T) and I(T;Y). Two phases: fitting (both increase) and compression (I(X;T) decreases). Full annotation: `annotations/1909.11396.md`.
 
 ### Tax, Mediano & Shanahan (2017) — PID of Generative NNs
 Parameter: training epoch. Invariant: PID atoms (synergy, redundancy, unique). Phase transition from redundant to specialized. Full annotation: `by-domain/information_theory.md`.

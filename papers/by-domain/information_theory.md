@@ -17,35 +17,10 @@ Full annotation: `annotations/1801.04062.md`.
 ## Wickstrøm, Løkse, Kampffmeyer, Yu, Principe, Jenssen (2019)
 **"Information Plane Analysis of Deep Neural Networks via Matrix-Based Rényi's Entropy and Tensor Kernels"**
 arXiv: 1909.11396
-
-**Domain(s)**: Information theory, machine learning
-
-**Abstract machines instantiated**:
-- **Joint-vs-marginal excess**: The paper measures I(X;T) and I(T;Y) — mutual information between input X, hidden layer representation T, and output Y. Each MI quantity measures how much joint structure exists between a layer and input/output beyond what marginals would predict.
-- **Parameterized homology**: The core contribution is tracking how these MI values change as a parameter varies — here the parameter is training epoch, not a filtration scale or error rate. The "information plane" plots I(X;T) vs I(T;Y) across training, revealing two phases: a fitting phase (both increase) and a compression phase (I(X;T) decreases while I(T;Y) stays high). This is structurally analogous to tracking Betti numbers across a filtration, or tracking logical error rate across error threshold — an invariant changes character at critical parameter values.
-- **Null hypothesis**: The compression phase corresponds to the network destroying information about X that is not needed for Y — a selective destruction of structure while preserving task-relevant structure. This is the null-model logic inverted: instead of destroying coupling to test significance, the network learns to destroy irrelevant coupling.
-
-**What is genuinely new (not reducible to shared abstraction)**:
-- Matrix-based Rényi's entropy with tensor kernels: replaces Shannon entropy with Rényi's α-entropy computed via eigenvalues of a Gram matrix. This avoids density estimation entirely — a fundamentally different computational approach from bin-based or KNN MI estimators.
-- Scales to VGG-16 — first information plane analysis of a production-scale deep CNN. Prior work was limited to small networks.
-- Finding that compression phase correlates with overfitting: early stopping typically halts training before compression occurs. This challenges the Tishby-Shwartz-Ziv narrative that compression is beneficial.
-- Tensor kernel construction for convolutional layers — respects the spatial structure of feature maps rather than flattening.
-
-**Connections the authors acknowledge**: Extensive engagement with the Shwartz-Ziv & Tishby (2017) information bottleneck debate. Cite Saxe et al. (2018) who linked compression to activation saturation. No citations outside ML/information theory.
-
-**Vocabulary mapping**:
-| Paper term | Rosetta term |
-|---|---|
-| Information plane | Parameter space (2D projection of parameterized information invariants) |
-| I(X;T), I(T;Y) | Joint-vs-marginal excess at each layer |
-| Training epoch | The parameter (analogous to filtration scale ε) |
-| Fitting phase | Birth of features (analogous to feature appearance in persistence) |
-| Compression phase | Death of features (analogous to feature disappearance; selective structure destruction) |
-| Matrix-based Rényi's entropy | Spectral invariant of the data distribution |
-| Tensor kernel | Local structure encoder for convolutional layers |
-
+Promoted to per-paper annotation file (B2 pass 22, batch-003 candidate-20, promote-on-encounter).
+Machines: joint-vs-marginal, parameterized homology, null hypothesis.
+Full annotation: `annotations/1909.11396.md`.
 **See also**: `by-structure/composite_systems.md`, `by-structure/filtrations.md`
-
 ---
 
 ## Mézard & Mora (2008)

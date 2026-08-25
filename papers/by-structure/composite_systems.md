@@ -12,7 +12,7 @@ The shared pattern: given components A and B, measure some property P of the joi
 MI as D_KL(P_XZ || P_X ⊗ P_Z). Neural estimator using Donsker-Varadhan dual. Joint-vs-marginal excess IS the paper's core object. Full annotation: `annotations/1801.04062.md`.
 
 ### Wickstrøm et al. (2019) — Information Plane via Rényi Entropy
-I(X;T) and I(T;Y) at each hidden layer, tracked across training epochs. Also instantiates parameterized homology. Full annotation: `by-domain/information_theory.md`.
+I(X;T) and I(T;Y) at each hidden layer, tracked across training epochs. Also instantiates parameterized homology. Full annotation: `annotations/1909.11396.md`.
 
 ### Tax, Mediano & Shanahan (2017) — PID of Generative NNs
 Synergy as the joint-vs-marginal excess in PID. Tracks synergistic, redundant, and unique information atoms through RBM training. Full annotation: `by-domain/information_theory.md`.
