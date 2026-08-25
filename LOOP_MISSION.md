@@ -124,7 +124,15 @@ skill, dual-index filing, glossary/atlas updates, matrix regen via A4's tool.
   recorded sentence if it instantiates <2 machines or duplicates existing
   coverage; rejections logged in the queue file, never silently dropped).
   Done = contract committed + check_structure covers queue hygiene.
-- **B2 [open] Consume queue batches.** Repeatable task — each pass takes ≤3
+  - **done [2026-08-24 6ebfcf2]** papers/INGESTION.md committed (queue format,
+    ≤3/pass, triage-reject rule); check_queue_hygiene() in check_structure.py,
+    negative-tested. Report: `research/2026-08-24-2358.md`.
+  - discovered subtask (A3 debt): **51 full annotations still live as prose
+    blocks in by-domain/by-structure index files** (em-dash headers evade the
+    lint). Promote to per-paper files; extend lint to fail on the class.
+    B2 passes promote-on-encounter until then.
+- **B2 [in_progress: slice-1 done faf7f4f — batch-001 candidate-21 promoted as
+  2002.00208; 20 queued] Consume queue batches.** Repeatable task — each pass takes ≤3
   papers from the oldest unconsumed batch. Prioritize (from Wave-10 state):
   neuroscience cells (weakest), Matching×InfoTheory, and any paper bridging
   ≥3 domains. Every annotated paper: per-paper file + both indices + matrix
