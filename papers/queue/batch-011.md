@@ -43,7 +43,7 @@ This monograph attempts a theory of every 'thing' that can be distinguished from
 We summarize the original formulation of the free energy principle, and highlight some technical issues. We discuss how these issues affect related results involving generalised coordinates and, where appropriate, mention consequences for and reveal, up to now unacknowledged, differences to newer formulations of the free energy principle. In particular, we reveal that various definitions of the "Markov blanket" proposed in different works are not equivalent. We show that crucial steps in the free energy argument which involve rewriting the equations of motion of systems with Markov blankets, are not generally correct without additional (previously unstated) assumptions. We prove by counterexample that the original free energy lemma, when taken at face value, is wrong. We show further that this free energy lemma, when it does hold, implies equality of variational density and ergodic conditional density. The interpretation in terms of Bayesian inference hinges on this point, and we hence conclude that it is not sufficiently justified. Additionally, we highlight that the variational densities presented in newer formulations of the free energy principle and lemma are parameterised by different variables than in older works, leading to a substantially different interpretation of the theory. Note that we only highlight some specific problems in the discussed publications. These problems do not rule out conclusively that the general ideas behind the free energy principle are worth pursuing.
 ```
 
-## candidate-03 [fep] — UNCONSUMED
+## candidate-03 [fep] — ANNOTATED as 2008.03238
 
 **Title:** Neural and phenotypic representation under the free-energy principle
 

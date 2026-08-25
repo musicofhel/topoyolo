@@ -311,3 +311,9 @@ The paired null: counterexample disproving the original free energy lemma; non-e
 **Machines**: null hypothesis (core), stability (locus-of-failure analysis), joint-vs-marginal (boundary non-well-definedness).
 Full annotation: `annotations/2001.06408.md` (B2 pass 56). Abstract-only provenance — depth-limited.
 **See also**: `annotations/1906.10184.md` (paired claim), `by-structure/composite_systems.md`
+
+### Ramstead, Hesp, Tschantz, Smith, Constant & Friston (2020) — Neural and Phenotypic Representation under the FEP
+Dual-aspect information geometry from Markovian structure: intrinsic geometry of internal-state trajectories + extrinsic geometry encoding beliefs about external states; neuronal packet hypothesis with simulations — the lineage's post-critique constructive turn.
+**Machines**: joint-vs-marginal (core), stability (NESS persistence of encoding), null hypothesis (no-shared-model simulation control).
+Full annotation: `annotations/2008.03238.md` (B2 pass 56). Abstract-only provenance — depth-limited.
+**See also**: `annotations/1906.10184.md`, `annotations/2001.06408.md`, `by-structure/composite_systems.md`

@@ -413,3 +413,6 @@ Markov blanket as the composite-boundary object: internal and external states co
 
 ### Biehl, Pollock & Kanai (2020) — Technical Critique of Some Parts of the FEP (arXiv: 2001.06408)
 Refutation side of the pair: counterexample to the free energy lemma; inequivalent Markov-blanket definitions across formulations — the composite boundary itself is version-dependent, so the excess it licenses is not well-defined until the definition class is fixed. **Null-hypothesis machinery note: first corpus entry whose null targets a formalism's derivation rather than an empirical claim.** Full annotation: `annotations/2001.06408.md`. Abstract-only provenance.
+
+### Ramstead et al. (2020) — Neural and Phenotypic Representation under the FEP (arXiv: 2008.03238)
+Representation as joint-vs-marginal excess geometrized: intrinsic + extrinsic information geometries on the same blanket-bound internal states; simulations show stimulus information recoverable only when ensembles share the right generative model. Post-critique constructive turn of the fep group. Full annotation: `annotations/2008.03238.md`. Abstract-only provenance.
