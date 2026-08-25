@@ -389,7 +389,8 @@ We consider the hierarchical representation of documents as graphs and use geome
 TL;DR: This work considers the hierarchical representation of documents as graphs as graphs and uses geometric deep learning to classify them into different categories and applies this model to classify clinical trial (CT) protocols into completed and terminated categories.
 ```
 
-## candidate-05 [geometric-dl] — UNCONSUMED
+## candidate-05 [geometric-dl] — REJECTED
+Equivariance-architecture wrapper (kernel-basis completion for PDE forecasting): zero atlas machines instantiated — fewer than 2, triage rule §4 (same class as candidates 01–04).
 
 **Title:** Conditional Clifford-Steerable CNNs with Complete Kernel Basis for PDE Modeling
 
@@ -410,7 +411,8 @@ Abstract:
 Clifford-Steerable CNNs (CSCNNs) provide a unified framework that allows incorporating equivariance to arbitrary pseudo-Euclidean groups, including isometries of Euclidean space and Minkowski spacetime. In this work, we demonstrate that the kernel basis of CSCNNs is not complete, thus limiting the model expressivity. To address this issue, we propose Conditional Clifford-Steerable Kernels, which augment the kernels with equivariant representations computed from the input feature field. We derive the equivariance constraint for these input-dependent kernels and show how it can be solved efficiently via implicit parameterization. We empirically demonstrate an improved expressivity of the resulting framework on multiple PDE forecasting tasks, including fluid dynamics and relativistic electrodynamics, where our method consistently outperforms baseline methods.
 ```
 
-## candidate-06 [geometric-dl] — UNCONSUMED
+## candidate-06 [geometric-dl] — REJECTED
+Equivariant sparse autoencoders for mechanistic interpretability: zero atlas machines instantiated — fewer than 2, triage rule §4 (same class as candidates 01–04).
 
 **Title:** Group Equivariance Meets Mechanistic Interpretability: Equivariant Sparse Autoencoders
 
@@ -529,7 +531,8 @@ P N P N 1000
 1
 ```
 
-## candidate-08 [separatrix] — UNCONSUMED
+## candidate-08 [separatrix] — REJECTED
+Continual-learning wrapper (HSIC-bottleneck orthogonalization + equiangular embedding for catastrophic forgetting): zero atlas machines instantiated — fewer than 2, triage rule §4. The `separatrix` source tag is MISASSIGNED: the paper's "decision boundary distortion/adaptation" is ML classification-boundary language (linear decision boundaries between classes), not the SEPARATRIX machine (loss-landscape basin boundaries / phase-transition separatrices); no landscape, basin, or separatrix object appears in the extract.
 
 **Title:** Towards Continual Learning Desiderata via HSIC Bottleneck Orthogonalization and
 
@@ -714,7 +717,8 @@ Abstract:
 We present Topological Point Cloud Clustering (TPCC), a new method to cluster points in an arbitrary point cloud based on their contribution to global topological features. TPCC synthesizes desirable features from spectral clustering and topological data analysis and is based on considering the spectral properties of a simplicial complex associated to the considered point cloud. As it is based on considering sparse eigenvector computations, TPCC is similarly easy to interpret and implement as spectral clustering. However, by focusing not just on a single matrix associated to a graph created from the point cloud data, but on a whole set of Hodge-Laplacians associated to an appropriately constructed simplicial complex, we can leverage a far richer set of topological features to characterize the data points within the point cloud and benefit from the relative robustness of topological techniques against noise. We test the performance of TPCC on both synthetic and real-world data and compare it with classical spectral clustering.
 ```
 
-## candidate-11 [hodge] — UNCONSUMED
+## candidate-11 [hodge] — REJECTED
+Duplicate coverage: normalized-Hodge-Laplacian Cheeger inequalities on simplicial complexes are already covered by Jost & Zhang 2302.01069 (`annotations/2302.01069.md`, same machine pair chain-complex + stability); this is a normalization/refinement of that result with no new domain or machine bridge — triage rule §4.
 
 **Title:** Root-to-Leaf Path Random Walks, Normalized Hodge Laplacians, and Cheeger Inequalities on Simplicial Complexes
 
@@ -735,7 +739,8 @@ Abstract:
 We introduce root-to-leaf path random walks on double covers of graded signed graphs and analyze their behavior in a general setting. Viewing simplicial complexes within this framework, we show that these walks induce the natural normalization of the coboundary operator and of the Hodge Laplacians while preserving the basic structural features of combinatorial Hodge theory. We then derive Cheeger inequalities for the upper side of the normalized Hodge spectrum, identify the coherent structures governing these bounds, and combine the up- and down-cases into sharper estimates.
 ```
 
-## candidate-12 [spin-glass-codes] — UNCONSUMED
+## candidate-12 [spin-glass-codes] — REJECTED
+Link-prediction predictability via spin-glass energy + cavity method: statistical-physics machinery used as a tool on an ML task, no new instantiation of ≥2 atlas machines (cavity/factor-graph machinery already annotated via Mézard & Mora 0803.3061) — triage rule §4.
 
 **Title:** Predictability of complex networks
 
