@@ -299,3 +299,15 @@ Linear predictive coding re-derived as sheaf diffusion on a cochain complex: pre
 **Machines**: chain complex (core), null hypothesis (irreducible-error reading), stability (stall diagnosis).
 Full annotation: `annotations/2511.11092.md` (B2 pass 52). Abstract-only provenance — depth-limited.
 **See also**: `by-domain/tda.md`, `by-structure/boundary_operators.md`
+
+### Friston (2019) — A Free Energy Principle for a Particular Physics
+Canonical FEP monograph: Markov blankets as recursive conditional-independence structure; internal states at nonequilibrium steady-state acquire an information geometry interpretable as inference about external states — thinghood defined by statistical independence.
+**Machines**: joint-vs-marginal (core), null hypothesis (blanket destruction = thinghood null), stability (NESS attractor), parameterized homology (recursive blanket nesting).
+Full annotation: `annotations/1906.10184.md` (B2 pass 56). Abstract-only provenance — depth-limited.
+**See also**: `annotations/2001.06408.md` (paired critique), `by-structure/composite_systems.md`
+
+### Biehl, Pollock & Kanai (2020) — A Technical Critique of Some Parts of the Free Energy Principle
+The paired null: counterexample disproving the original free energy lemma; non-equivalent Markov-blanket definitions across FEP works; the Bayesian-inference reading shown to hinge on an unjustified variational/ergodic density equality.
+**Machines**: null hypothesis (core), stability (locus-of-failure analysis), joint-vs-marginal (boundary non-well-definedness).
+Full annotation: `annotations/2001.06408.md` (B2 pass 56). Abstract-only provenance — depth-limited.
+**See also**: `annotations/1906.10184.md` (paired claim), `by-structure/composite_systems.md`

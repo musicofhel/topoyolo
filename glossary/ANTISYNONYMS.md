@@ -161,6 +161,14 @@ The null hypothesis this supports: "abrupt jump ⇒ phase transition" is destroy
 
 ---
 
+### Markov-blanket formalism ≠ established lemma (1906.10184 vs 2001.06408)
+
+Neuroscience (the FEP lineage) supplies its own claim-vs-refutation arc, and the failure is sharper than the rg-dl case: not a qualification of scope but a counterexample. Friston (1906.10184) derives, from Markov-blanket conditional independence plus nonequilibrium steady-state dynamics, a free energy lemma whose payoff is reading internal states as performing Bayesian inference on external states. Biehl, Pollock & Kanai (2001.06408) show the derivation's rewriting steps need unstated assumptions, prove the lemma false by counterexample as stated, and — the part that outlives any single fix — show that "Markov blanket" is defined inequivalently across the lineage's own papers, with variational densities re-parameterized by different variables in newer formulations.
+
+The apparent synonym — "the free energy principle has been derived from statistical mechanics" — fails at definition-stability: an inference licensed by a partition cannot be stronger than the partition, and here the partition is version-dependent within the source lineage itself. The Rosetta rule this forces: when a corpus entry rests on a composite boundary (blanket, coarse-graining, sheaf stalk), record *which* definition of the boundary is load-bearing; two entries using the same term under different definitions are not instances of one machine but of two. The pairing fixes how the corpus reads the fep group: 1906.10184 states the program, 2001.06408 fences what is actually proven, and the corpus position — like rg-dl — is the pair. The null-machinery note: this is the first corpus refutation aimed at a *derivation* rather than an empirical claim, so the null witness is a system, not a surrogate dataset.
+
+---
+
 ## Living Document
 
 Add divergences as they are discovered. Each entry should specify: which two domains are being compared, what the apparent synonym is, and precisely where the correspondence fails.

@@ -15,7 +15,7 @@ Consume per papers/INGESTION.md (<=3 papers/pass; triage-reject with one sentenc
 
 ---
 
-## candidate-01 [fep] — UNCONSUMED
+## candidate-01 [fep] — ANNOTATED as 1906.10184
 
 **Title:** A free energy principle for a particular physics
 
@@ -29,7 +29,7 @@ Consume per papers/INGESTION.md (<=3 papers/pass; triage-reject with one sentenc
 This monograph attempts a theory of every 'thing' that can be distinguished from other things in a statistical sense. The ensuing statistical independencies, mediated by Markov blankets, speak to a recursive composition of ensembles (of things) at increasingly higher spatiotemporal scales. This decomposition provides a description of small things; e.g., quantum mechanics - via the Schrodinger equation, ensembles of small things - via statistical mechanics and related fluctuation theorems, through to big things - via classical mechanics. These descriptions are complemented with a Bayesian mechanics for autonomous or active things. Although this work provides a formulation of every thing, its main contribution is to examine the implications of Markov blankets for self-organisation to nonequilibrium steady-state. In brief, we recover an information geometry and accompanying free energy principle that allows one to interpret the internal states of something as representing or making inferences about its external states. The ensuing Bayesian mechanics is compatible with quantum, statistical and classical mechanics and may offer a formal description of lifelike particles.
 ```
 
-## candidate-02 [fep] — UNCONSUMED
+## candidate-02 [fep] — ANNOTATED as 2001.06408
 
 **Title:** A Technical Critique of Some Parts of the Free Energy Principle
 
