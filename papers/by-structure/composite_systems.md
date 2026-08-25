@@ -55,7 +55,7 @@ Reduced transfer entropy as debiased joint-vs-marginal excess with automatic MDL
 Intrinsic transfer entropy: refines joint-vs-marginal excess by subtracting synergistic information. Neural estimator via variational KL bounds. Also neuroscience. Full annotation: `by-domain/information_theory.md`.
 
 ### Amornbunchornvej, Zheleva, Berger-Wolf (2020) — Variable-lag GC and TE
-Variable-lag Granger causality with DTW matching. Joint-vs-marginal excess computed after optimal temporal alignment. Full annotation: `by-domain/information_theory.md`.
+Variable-lag Granger causality with DTW matching. Joint-vs-marginal excess computed after optimal temporal alignment. Full annotation: `annotations/2002.00208.md` (arXiv: 2002.00208).
 
 ### Marinazzo, Pellicoro, Stramaglia (2008) — Kernel Granger Causality
 Granger causality as variance-ratio excess lifted to RKHS. Bonferroni-controlled eigenvector selection. Applied to gene regulatory and chaotic map networks. Full annotation: `by-domain/information_theory.md`.

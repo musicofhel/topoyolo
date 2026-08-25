@@ -1839,7 +1839,12 @@ taking the strategy to consume liquidity using the simple a
 
 ---
 
-## candidate-21 [dynamics-matching] — UNCONSUMED
+## candidate-21 [dynamics-matching] — ANNOTATED as 2002.00208
+
+Promotion note: the paper was already fully annotated as a prose block in
+`by-domain/information_theory.md` (pre-A3 residue); this pass promoted that
+annotation verbatim to `annotations/2002.00208.md` + dual index (composite_systems,
+optimal_transport). No new annotation written.
 
 **Title:** Variable lag Granger Causality and Transfer Entropy for Time Series Analysis
 

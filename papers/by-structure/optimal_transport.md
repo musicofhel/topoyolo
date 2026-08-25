@@ -99,6 +99,8 @@ The cost function is always a metric or semi-metric, and the matching always res
 
 ### Dynamical Systems
 
+**Amornbunchornvej, Zheleva & Berger-Wolf (2020) — Variable-lag Granger Causality and Transfer Entropy**: DTW optimal warping path = minimum-cost matching between time indices; fixed-lag causality is the rigid (diagonal-path) special case. Full annotation: `annotations/2002.00208.md` (arXiv: 2002.00208).
+
 **Ensemble Control on Lie Groups**: Single broadcast control must simultaneously steer ALL systems in population to respective targets. Infinite-dimensional matching reduced to finite-dimensional by covering decomposition. Full annotation: `third_pass_dynamics_tda.md` (TP-12).
 
 **IC-PINN Coupled Oscillators**: Basis-free inference = function-level matching. Assign a coupling function (from infinite-dimensional space) to observed dynamics. Full annotation: `third_pass_dynamics_tda.md` (TP-11).
