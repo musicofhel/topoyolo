@@ -25,3 +25,36 @@ Violation of additivity of partial entropy productions = stochastic interaction 
 **Machines**: joint-vs-marginal (core), matching (weak), null hypothesis (implicit).
 Full annotation: `annotations/1810.09545.md` (B2 pass 25). Abstract-only provenance — depth-limited.
 **See also**: `by-domain/neuroscience.md`, `annotations/2103.00503.md`
+
+## Ito (2022)
+**"Geometric thermodynamics for the Fokker-Planck equation: Stochastic thermodynamic links between information geometry and optimal transport"**
+arXiv: 2209.00527 | cond-mat.stat-mech/math-ph
+
+**Domain(s)**: Statistical physics, optimal transport, information theory
+
+Unifies information geometry and optimal transport via the excess entropy production rate of the Fokker–Planck equation: gradient flow ties excess EP to information geometry on probability-density space, OT velocity fields are read through information geometry on path-probability space. Yields thermodynamic trade-offs (cost vs observable fluctuation), minimum-cost optimal protocols, EP decomposition.
+**Machines**: matching (core), joint-vs-marginal (weak).
+Full annotation: `annotations/2209.00527.md` (B2 pass 26). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/optimal_transport.md`, `annotations/2103.00503.md`
+
+## Barato & Seifert (2014)
+**"Stochastic thermodynamics with information reservoirs"**
+arXiv: 1408.1224 | cond-mat.stat-mech
+
+**Domain(s)**: Statistical physics, information theory
+
+Generalized second law for a system coupled to an information reservoir (bit sequence): work extraction from a single heat bath becomes possible once the information flow is credited — joint-vs-marginal bookkeeping in thermodynamic dress, with fluctuation theorem and linear response for information-processing machines (efficiency at max power can leave the universal 1/2).
+**Machines**: joint-vs-marginal (core), null hypothesis (weak).
+Full annotation: `annotations/1408.1224.md` (B2 pass 26). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/composite_systems.md`, `annotations/1810.09545.md`
+
+## Sekizawa, Ito & Oizumi (2023)
+**"Decomposing Thermodynamic Dissipation of Linear Langevin Systems via Oscillatory Modes and Its Application to Neural Dynamics"**
+arXiv: 2312.03489 | q-bio.NC/cond-mat.stat-mech
+
+**Domain(s)**: Statistical physics, neuroscience, dynamical systems
+
+Housekeeping entropy production of linear Langevin systems decomposes into independent positive contributions from oscillatory modes (per element under diagonal noise); applied to monkey ECoG awake vs anesthesia — delta-band contribution larger, theta smaller under anesthesia. Neural oscillations get a thermodynamic reading via physical limits of information processing.
+**Machines**: joint-vs-marginal (instrumental), filtration/parameterization (weak).
+Full annotation: `annotations/2312.03489.md` (B2 pass 26). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/neuroscience.md`, `by-structure/composite_systems.md`, `annotations/1810.09545.md`
