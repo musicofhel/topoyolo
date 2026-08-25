@@ -4,36 +4,12 @@ Papers from the information theory community, indexed by which abstract machines
 
 ---
 
-## Belghazi et al. (2018)
+## Belghazi, Baratin, Rajeswar, Ozair, Bengio, Courville, Hjelm (2018)
 **"Mutual Information Neural Estimation (MINE)"**
 arXiv: 1801.04062 | ICML 2018
-
-**Domain(s)**: Information theory, machine learning
-
-**Abstract machines instantiated**:
-- **Joint-vs-marginal excess**: The paper's core object IS the joint-vs-marginal gap. MI is defined as I(X;Z) = D_KL(P_XZ || P_X ⊗ P_Z) — the KL divergence between the joint distribution and the product of marginals. MINE estimates this divergence via the Donsker-Varadhan dual representation: I(X;Z) = sup_T E_joint[T] - log(E_product[e^T]), where T is parameterized by a neural network. The entire method is a machine for measuring excess structure in the joint relative to independent marginals.
-- **Null hypothesis**: The product of marginals P_X ⊗ P_Z serves as the explicit null distribution — it is what you get when you "destroy" the dependence between X and Z while preserving each variable's marginal statistics. MINE samples from both joint and product distributions; the gap between them is the signal.
-- **Stability**: The paper proves strong consistency — as sample size → ∞, the MINE estimate converges to the true MI. They also prove the estimator is Lipschitz-bounded with respect to network parameters, providing perturbation guarantees.
-
-**What is genuinely new (not reducible to shared abstraction)**:
-- The use of neural networks as the function class for the dual representation. Previous dual estimators (Nguyen et al., 2010) used fixed function classes; parameterizing with deep networks makes the estimator scalable to high-dimensional continuous variables.
-- The "exponential moving average" trick to reduce bias in the gradient of the Donsker-Varadhan bound — this is a practical optimization technique with no analogue in the other domains.
-- Application to the Information Bottleneck method, using MINE as a differentiable MI layer within a deep network. This makes MI a loss function rather than just a diagnostic, which is a distinctly ML contribution.
-- Applies MINE to improve mode coverage in GANs — uses MI maximization between generator input noise Z and generated output G(Z) to prevent mode dropping.
-
-**Connections the authors acknowledge**: Cite the information bottleneck (Tishby et al., 2000) extensively. Acknowledge KL divergence estimation literature (Nguyen, Wainwright, Jordan 2010). No citations to TDA, QEC, dynamical systems, or neuroscience.
-
-**Vocabulary mapping**:
-| Paper term | Rosetta term |
-|---|---|
-| Joint distribution P_XZ | Joint object |
-| Product of marginals P_X ⊗ P_Z | Independence (null model) |
-| Mutual information I(X;Z) | Excess (joint-vs-marginal gap) |
-| KL divergence D_KL | Detection method for excess |
-| Donsker-Varadhan representation | Dual formulation of excess detection |
-| Strong consistency | Stability guarantee |
-| Information bottleneck | Parameterized compression (related to parameterized homology) |
-
+Promoted to per-paper annotation file (B2 pass 22, batch-003 candidate-17, promote-on-encounter).
+Machines: joint-vs-marginal, null hypothesis, stability.
+Full annotation: `annotations/1801.04062.md`.
 **See also**: `by-structure/composite_systems.md`
 
 ---
@@ -289,41 +265,10 @@ The PID programme decomposes I(T; X1, ..., Xn) into redundant, unique, and syner
 
 ## PID-01 — Kolchinsky (2022)
 **"A Novel Approach to the Partial Information Decomposition"**
-
-**Domain(s)**: Information theory
-
-**Abstract machines instantiated**:
-
-- **Chain complex**: The redundancy lattice is a partially ordered set with a Mobius inversion formula that recovers partial information atoms from cumulative redundancy values. The Mobius inversion plays the role of a boundary operator: it maps cumulative (cycle-like) quantities to their differential (boundary-like) constituents. The lattice nodes are antichains of sources, and the partial ordering (one source is "more informative" than another) is the structural analogue of face inclusions in a simplicial complex. The relation I_partial = I_intersect - sum(I_intersect of sub-nodes) mirrors the alternating-sign structure of the boundary map.
-
-- **Joint-vs-marginal excess**: This is the paper's central concern. Synergy = I(T; X1,...,Xn) - Union_information. The joint system (X1,...,Xn) provides information about T that no individual source or sub-collection provides. Kolchinsky makes the key move of defining redundancy and union information independently (not via inclusion-exclusion), which means the excess of joint over marginal is not constrained by set-theoretic identities. The Blackwell order determines when one source is "more informative" than another in a decision-theoretic sense, and the gap between the joint and the Blackwell-optimal marginal is the synergy.
-
-- **Matching**: The Blackwell order instantiates a comparison: source X is more informative than source Y if there exists a stochastic channel kappa such that Y = kappa(X). Finding the "largest" source dominated by all input sources (redundancy) or the "smallest" source dominating all (union) is an optimization over channels — an assignment problem in the space of stochastic maps.
-
-- **Stability**: Implicit. The Blackwell order is preserved under post-processing (data processing inequality), which is a monotonicity/stability result: no stochastic transformation can increase informativeness.
-
-**What is genuinely new**:
-- The decoupling of redundancy and union information: Kolchinsky argues the inclusion-exclusion principle (|A union B| = |A| + |B| - |A intersect B|) does NOT hold for information, violating the set-theoretic analogy that motivated the original PID. This is a structural insight: information atoms do not form a Boolean algebra. The lattice is not distributive.
-- Grounding PID in the Blackwell order gives operational interpretability via decision theory (expected utility maximization), going beyond the purely axiomatic approaches of Williams-Beer or Bertschinger et al.
-- Explicit extension to algorithmic information theory and quantum information theory as future directions — the framework is parametric in the choice of ordering relation.
-
-**Connections the authors acknowledge**: Extensive engagement with prior PID work (Williams-Beer, Bertschinger et al., Griffith-Koch, Harder et al., Ince, Finn-Lizier). Acknowledges the Blackwell order's origins in statistical decision theory (Blackwell 1953, Le Cam). Does NOT acknowledge any connection to TDA, QEC, or dynamical systems.
-
-**Vocabulary mapping**:
-
-| Paper term | Rosetta term |
-|---|---|
-| Source random variable X_i | Component / marginal |
-| Target Y | Observable / stimulus |
-| Redundancy I_cap | Marginal content (what each component preserves) |
-| Union information I_cup | Joint content minus synergy |
-| Synergy | Joint-vs-marginal excess |
-| Partial information atom | Differential element (Mobius-inverted node) |
-| Redundancy lattice | Partially ordered set of source antichains |
-| Blackwell order (X > Y) | "More informative" = existence of degradation channel |
-| Inclusion-exclusion failure | Non-distributivity of the information lattice |
-| Stochastic channel kappa | Morphism between sources (degradation map) |
-
+DOI: 10.3390/e24030403 | Entropy 24(3):403
+Promoted to per-paper annotation file (B2 pass 22, batch-003 candidate-16, promote-on-encounter).
+Machines: chain complex (lattice + Mobius inversion), joint-vs-marginal, matching, stability.
+Full annotation: `annotations/10.3390-e24030403.md`.
 **See also**: `by-structure/composite_systems.md`
 
 ---
@@ -952,7 +897,7 @@ arXiv: 2111.05299
 
 - **Shwartz-Ziv & Tishby (2017)** — "Opening the Black Box of Deep Neural Networks via Information." The original information plane paper. Two-phase training (fitting + compression). SGD noise as null-model mechanism. Full annotation: `second_pass.md` (SP-01). Machines: parameterized homology, joint-vs-marginal, null hypothesis, stability.
 
-- **Kawaguchi, Deng, Ji, Huang (2023)** — "How Does Information Bottleneck Help Deep Learning?" First rigorous proof IB controls generalization. Bound sqrt(I(X;Z)/n) has same form as PH stability. Full annotation: `cross_domain_bridges.md` + `second_pass.md` (SP-02). Machines: stability, joint-vs-marginal, parameterized homology.
+- **Kawaguchi, Deng, Ji, Huang (2023)** — "How Does Information Bottleneck Help Deep Learning?" First rigorous proof IB controls generalization. Bound sqrt(I(X;Z)/n) has same form as PH stability. Full annotation: `annotations/2305.18887.md` (promoted from cross_domain_bridges.md, pass 22). Machines: stability, joint-vs-marginal, parameterized homology, null hypothesis.
 
 - **Yu, Yu, Løkse, Jenssen, Principe (2024)** — "Cauchy-Schwarz Divergence Information Bottleneck for Regression." CS divergence makes IB tractable without Gaussian assumptions. Closed-form compression + adversarial robustness. Full annotation: `second_pass.md` (SP-03). Machines: joint-vs-marginal, stability, null hypothesis.
 

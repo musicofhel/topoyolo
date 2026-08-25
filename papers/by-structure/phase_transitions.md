@@ -142,7 +142,7 @@ Stability takes three flavors across domains:
 ## From Second Pass + Bridges
 
 ### Stability
-- **Kawaguchi et al. (2023)** — Generalization bound Δ ≤ sqrt(I(X;Z)/n). Same form as PH stability. `cross_domain_bridges.md`.
+- **Kawaguchi et al. (2023)** — Generalization bound Δ ≤ sqrt(I(X;Z)/n). Same form as PH stability. `annotations/2305.18887.md`.
 - **Wang et al. (2021)** — HSIC bottleneck: layer-wise Lipschitz bounds as stability certificates. `second_pass.md` SP-04.
 - **Wang (2026)** — Grokking as dimensional phase transition: effective dimensionality D (from FSS of gradient avalanche dynamics) crosses sub-diffusive → super-diffusive regimes at generalization, architecture-invariant. arXiv: 2604.04655. Full annotation: `annotations/10.1017-S0140525X01000097.md` (Wave 9).
 - **Liu et al. (2020) SNGP** — Spectral normalization = Lipschitz constraint identical to PH stability form. `cross_domain_bridges.md`.

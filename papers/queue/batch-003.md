@@ -1201,7 +1201,7 @@ with s, s ′ ∈ S and a ∈ A the transition probability function, r ( s, a ) 
 γ ∈ [0 , 1) the discount factor. The solution to an MDP is an optimal policy P π ( a |
 ```
 
-## candidate-15 [info-machines] — UNCONSUMED
+## candidate-15 [info-machines] — ANNOTATED as 2305.18887 (promote-on-encounter: duplicate — full annotation already lived in the historical ledger cross_domain_bridges.md plus summary rows in four index files; block migrated verbatim to annotations/2305.18887.md, crossrefs repointed, pass 22)
 
 **Title:** How Does Information Bottleneck Help Deep Learning
 
@@ -1294,7 +1294,7 @@ l as fixed and independent of training data s . Indeed, r !
 I ( X 
 ```
 
-## candidate-16 [info-machines] — UNCONSUMED
+## candidate-16 [info-machines] — ANNOTATED as 10.3390-e24030403 (promote-on-encounter: duplicate — already covered as full prose block PID-01 in by-domain/information_theory.md; block migrated verbatim to annotations/, pass 22)
 
 **Title:** A Novel Approach to the Partial Information Decomposition
 
@@ -1376,7 +1376,7 @@ of intersections and unions are defined in set theory (other PID terms, such as 
 and unique information, can be computed in a straightforward way from redunda
 ```
 
-## candidate-17 [info-machines] — UNCONSUMED
+## candidate-17 [info-machines] — ANNOTATED as 1801.04062 (promote-on-encounter: duplicate — MINE itself, already covered as full prose block in by-domain/information_theory.md; block migrated verbatim to annotations/1801.04062.md, pass 22)
 
 **Title:** MINE Mutual Information Neural Estimation
 

@@ -56,41 +56,9 @@ arXiv: 2304.02381 | ICLR 2023 Workshop on Physics for Machine Learning
 ## Kawaguchi, Deng, Ji, Huang (2023)
 **"How Does Information Bottleneck Help Deep Learning?"**
 arXiv: 2305.18887 | ICML 2023
-
-**Domains bridged**: Information theory + Machine learning (statistical learning theory)
-
-**Domain(s)**: Information theory, statistical learning theory, deep learning
-
-**Abstract machines instantiated**:
-- **Joint-vs-marginal excess**: The information bottleneck principle is fundamentally a joint-vs-marginal comparison. I(X;Z) measures the mutual information between input X and hidden representation Z. The bottleneck goal is to minimize I(X;Z) (compress — remove marginal information about X that is irrelevant to Y) while maximizing I(Y;Z) (preserve — retain joint structure between Y and the representation). The excess I(X;Z) - I(Y;Z) quantifies the amount of task-irrelevant information retained in the representation.
-- **Stability**: The main theoretical contribution is a generalization bound: Delta(s) <= sqrt((2 I(X;Z_l) + log(2/delta)) / (2n)). This bound says that generalization error is controlled by the mutual information I(X;Z_l) at layer l. This is a stability result: small I(X;Z) implies that the learned function is insensitive to the specific training sample (the representation discards sample-specific information), which bounds generalization. The bound scales with information content, NOT with parameter count, VC dimension, or Rademacher complexity.
-- **Parameterized homology**: The information plane tracks I(X;Z_l) and I(Y;Z_l) at each layer l as training progresses. The trajectory through the information plane IS a parameterized curve (parameterized by training time and layer index) whose shape characterizes the learning dynamics. The paper proves that this trajectory's endpoint (the degree of information bottleneck) controls performance.
-- **Null hypothesis**: The training data s = {(x_i, y_i)} drawn from the distribution (X,Y) is the finite sample. The generalization error Delta(s) measures the gap between the empirical loss (on the sample) and the true loss (on the distribution). The distribution is the reference; the sample is the perturbation. The bound quantifies how much the finite-sample perturbation affects the learned function.
-
-**What is genuinely new (not reducible to shared abstraction)**:
-- First rigorous proof that the information bottleneck principle provides generalization bounds for learned representations. Previous work (Shwartz-Ziv & Tishby, 2017) conjectured this; this paper proves it. The key technical contribution is handling the case where the encoder is learned from data (not fixed a priori), which requires a novel analysis combining mutual information with PAC-Bayes-like arguments.
-- The bound is strictly tighter than parameter-count bounds for networks with strong information bottlenecks. This means that for networks that compress representations effectively, the information-theoretic bound is the right characterization of generalization, not the combinatorial (VC/Rademacher) one.
-- Resolution of the open conjecture from Shwartz-Ziv et al. (2019), extending it to the practical setting.
-
-**Connections the authors acknowledge**: Explicitly cite the information bottleneck literature (Tishby, Shwartz-Ziv, Alemi). Cite PAC-Bayes bounds and compression-based generalization theory. The paper IS a bridge between information theory and statistical learning theory. No connections to TDA, QEC, dynamical systems, or neuroscience.
-
-**Vocabulary mapping**:
-| Paper term | Rosetta term |
-|---|---|
-| I(X;Z) (input-representation MI) | Joint-vs-marginal excess (full) |
-| I(Y;Z) (label-representation MI) | Joint-vs-marginal excess (task-relevant) |
-| Information bottleneck | Compression of excess information |
-| Generalization bound Delta(s) | Stability guarantee (perturbation bound) |
-| Training data s (finite sample) | Perturbation of the true distribution |
-| Information plane trajectory | Parameterized curve (layer x epoch) |
-| Learned encoder phi | Map from input space to representation |
-| Parameter-count bound (VC, etc.) | Alternative stability guarantee (combinatorial) |
-| Compression phase | Death of unnecessary features |
-
-**Rosetta significance**: This paper provides the first rigorous link between information compression (killing unnecessary joint-vs-marginal structure) and stability (generalization). The bound sqrt(I(X;Z)/n) has the same form as persistence stability bounds (perturbation / sample_size), with mutual information playing the role of the perturbation magnitude. Networks that compress more are more stable — directly analogous to the TDA principle that simpler persistence diagrams (fewer features) are more robust.
-
----
-
+Promoted to per-paper annotation file (B2 pass 22, batch-003 candidate-15, promote-on-encounter).
+Machines: joint-vs-marginal, stability, parameterized homology, null hypothesis.
+Full annotation: `annotations/2305.18887.md`.
 ## Ma, Lewis, Kleijn (2020)
 **"The HSIC Bottleneck: Deep Learning without Back-Propagation"**
 AAAI 2020

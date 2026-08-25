@@ -9,7 +9,7 @@ The shared pattern: given components A and B, measure some property P of the joi
 ## Information Theory
 
 ### Belghazi et al. (2018) — MINE
-MI as D_KL(P_XZ || P_X ⊗ P_Z). Neural estimator using Donsker-Varadhan dual. Joint-vs-marginal excess IS the paper's core object. Full annotation: `by-domain/information_theory.md`.
+MI as D_KL(P_XZ || P_X ⊗ P_Z). Neural estimator using Donsker-Varadhan dual. Joint-vs-marginal excess IS the paper's core object. Full annotation: `annotations/1801.04062.md`.
 
 ### Wickstrøm et al. (2019) — Information Plane via Rényi Entropy
 I(X;T) and I(T;Y) at each hidden layer, tracked across training epochs. Also instantiates parameterized homology. Full annotation: `by-domain/information_theory.md`.
@@ -88,7 +88,7 @@ Multi-message information flow (accuracy vs. bias) guides edge pruning. Observat
 
 The PID programme is the information theory community's systematic treatment of joint-vs-marginal excess. All 8 papers decompose I(T; X1,...,Xn) into atoms. Synergy — the atom at the top of the redundancy lattice — is exactly the joint-vs-marginal excess: information present in the composite (X,Y) that is absent from X and Y individually.
 
-**PID-01 — Kolchinsky (2022)**: "A Novel Approach to the Partial Information Decomposition." Blackwell-order-based PID. Synergy defined via independent redundancy/union (no inclusion-exclusion). Also instantiates chain complex (lattice + Mobius), matching (optimization over channels), stability (data processing inequality). Full annotation: `by-domain/information_theory.md`.
+**PID-01 — Kolchinsky (2022)**: "A Novel Approach to the Partial Information Decomposition." Blackwell-order-based PID. Synergy defined via independent redundancy/union (no inclusion-exclusion). Also instantiates chain complex (lattice + Mobius), matching (optimization over channels), stability (data processing inequality). Full annotation: `annotations/10.3390-e24030403.md`.
 
 **PID-02 — Ince (2017)**: "The Partial Entropy Decomposition." Extends PID lattice to entropy (no target variable). Synergistic entropy = joint-vs-marginal excess in uncertainty. Reveals MI itself conflates redundant and synergistic entropy. Also instantiates chain complex, null hypothesis (diagnostic examples). Full annotation: `by-domain/information_theory.md`.
 
@@ -167,7 +167,7 @@ Cross-prediction from Y's shadow manifold to X tests whether the joint (coupled)
 
 ### Information Bottleneck Cluster
 - **Shwartz-Ziv & Tishby (2017)** — IB objective min I(X;T) - βI(T;Y) decomposes learning into joint (prediction) and marginal (compression). `second_pass.md` SP-01.
-- **Kawaguchi et al. (2023)** — Excess risk controlled by I(X;Z) gap. `cross_domain_bridges.md`.
+- **Kawaguchi et al. (2023)** — Excess risk controlled by I(X;Z) gap. `annotations/2305.18887.md`.
 - **Yu et al. (2024)** — CS divergence: closed-form joint-vs-marginal. `second_pass.md` SP-03.
 - **Wang et al. (2021)** — HSIC as kernel dependence measure. `second_pass.md` SP-04.
 - **Ma et al. (2020)** — HSIC bottleneck without backpropagation. `cross_domain_bridges.md`.

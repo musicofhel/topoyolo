@@ -114,7 +114,7 @@ The parameter takes different forms across domains, but the structure is isomorp
 
 ### Information Bottleneck
 - **Shwartz-Ziv & Tishby (2017)** — Training epoch as parameter. Fitting → compression phases. SGD drift → diffusion transition. `second_pass.md` SP-01.
-- **Kawaguchi et al. (2023)** — β (Lagrange multiplier) traces curve through representation space. `cross_domain_bridges.md`.
+- **Kawaguchi et al. (2023)** — β (Lagrange multiplier) traces curve through representation space. `annotations/2305.18887.md`.
 
 ### Other
 - **Bandt (2020)** — Lag parameter d as filtration. Pattern frequencies constant for small d (scale invariance). `second_pass.md` SP-13.
