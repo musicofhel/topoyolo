@@ -68,6 +68,15 @@ Parameter: the poset index itself — persistence modules as diagrams (ℝ, ≤)
 ### Gulen & McCleary (2022) --- Galois Connections in Persistent Homology
 PH re-expressed via Galois connections between posets: interleavings, matchings and multiparameter persistence diagrams as instances of one adjoint-pair formalism; Rota's theorem gives a substantially easier bottleneck-stability proof. Full annotation: `annotations/2201.06650.md` (B2 pass 32), `by-domain/tda.md`.
 
+### Perez (2020) --- C0-Persistent Homology and Trees
+Parameter: superlevel sets of an R-valued continuous function, carried by a metric tree construction that correctly identifies their connected components. Invariant: H0 persistence diagram retrievable from the tree; quantitative Wasserstein stability under C0 perturbation for α-Hölder functions on regular X; homological dimension bounded via upper-box dimension. Full annotation: `annotations/2012.02634.md` (B2 pass 33), `by-domain/tda.md`.
+
+### Broomhead & Pirashvili (2025) --- Isometry Theorem for Circle-Valued Persistence
+Parameter index leaves (ℝ, ≤) for S¹: circle-valued persistence modules with barcodes generalised to arcs on a derived-category geometric model. Invariant: extended interleaving distance proven ISOMETRIC to the extended bottleneck distance — the perturbation metric and the matching metric coincide exactly in this setting. Full annotation: `annotations/2506.02999.md` (B2 pass 33), `by-domain/tda.md`.
+
+### Carlsson (2020) --- Persistent Homology and Applied Homotopy Theory
+Survey anchor for the cell: persistence modules as primary objects, stability theorems for barcodes, generalized (multidimensional) persistence, barcode vectorization. Canonical citation base for Filtrations×Stability; its generalized-persistence section marks the frontier where single-parameter indexing strains. Full annotation: `annotations/2004.00738.md` (B2 pass 33), `by-domain/tda.md`.
+
 ## QEC
 
 ### Oreshkov (2013) — Continuous-time quantum error correction

@@ -137,7 +137,7 @@ We redevelop persistent homology (topological persistence) from a categorical po
 We present a new language for persistent homology in terms of Galois connections. This language has two main advantages over traditional approaches. First, it simplifies and unifies central concepts such as interleavings and matchings. Second, it provides access to Rota's Galois connection theorem -- a powerful tool with many potential applications in applied topology. To illustrate this, we use Rota's Galois connection theorem to give a substantially easier proof of the bottleneck stability theorem. Finally, we use this language to establish relationships between various notions of multiparameter persistence diagrams.
 ```
 
-## candidate-10 [ph-stability] — UNCONSUMED
+## candidate-10 [ph-stability] — ANNOTATED as 2012.02634 (pass 33)
 
 **Title:** On C0-persistent homology and trees
 
@@ -151,7 +151,7 @@ We present a new language for persistent homology in terms of Galois connections
 In this paper we give a metric construction of a tree which correctly identifies connected components of superlevel sets of R-valued continuous functions f on X and show that it is possible to retrieve the H0-persistent diagram from this tree. We revisit the notion of homological dimension previously introduced by Schweinhart and give some bounds for the latter in terms of the upper-box dimension of X, thereby partially answering a question of the same author. We prove a quantitative version of the Wasserstein stability theorem valid for regular enough X and alpha-Hölder functions and discuss some applications of this theory to random fields and the topology of their superlevel sets.
 ```
 
-## candidate-11 [ph-stability] — UNCONSUMED
+## candidate-11 [ph-stability] — ANNOTATED as 2506.02999 (pass 33)
 
 **Title:** An isometry theorem for persistent homology of circle-valued functions
 
@@ -165,7 +165,7 @@ In this paper we give a metric construction of a tree which correctly identifies
 This paper explores persistence modules for circle-valued functions, presenting a new extension of the interleaving and bottleneck distances in this setting. We propose a natural generalisation of barcodes in terms of arcs on a geometric model associated to the derived category of quiver representations. The main result is an isometry theorem that establishes an equivalence between the interleaving distance and the bottleneck distance for circle-valued persistence modules.
 ```
 
-## candidate-12 [ph-stability] — UNCONSUMED
+## candidate-12 [ph-stability] — ANNOTATED as 2004.00738 (pass 33)
 
 **Title:** Persistent Homology and Applied Homotopy Theory
 
