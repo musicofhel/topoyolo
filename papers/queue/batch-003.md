@@ -923,7 +923,8 @@ examples how to steer these additional degrees of freedom
 via regularization or adversaries in the model. The resulting Learning generative models 
 ```
 
-## candidate-12 [transport-matching] — UNCONSUMED
+## candidate-12 [transport-matching] — REJECTED
+CDRL analysis — RL theory around the Cramér distance and projected Bellman operators; Wasserstein only invoked by analogy, zero atlas machines ('transport' hit is a text-filter artifact) (pass 21).
 
 **Title:** An Analysis of Categorical Distributional Reinforcement Learning
 
@@ -1016,7 +1017,8 @@ t =0
 We write η π for the collection of distribution
 ```
 
-## candidate-13 [transport-matching] — UNCONSUMED
+## candidate-13 [transport-matching] — REJECTED
+Cornulier commability of focal locally compact groups — pure geometric group theory (quasi-isometry classification); no optimal transport or matching in the atlas sense (pass 21).
 
 **Title:** Commability and focal locally compact groups
 
@@ -1107,7 +1109,8 @@ Examples of compactly generated locally compact groups with W ( G ) not compact 
 to exhibit (e.g., finitely generated groups with an infinite, locally finite cent
 ```
 
-## candidate-14 [transport-matching] — UNCONSUMED
+## candidate-14 [transport-matching] — REJECTED
+CP-DRL — curriculum-learning application wrapper; optimal transport appears only inside a borrowed curriculum-optimization framework, single-machine-at-best tool usage (pass 21).
 
 **Title:** Causal Paced Deep Reinforcement Learning
 
