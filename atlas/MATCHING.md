@@ -46,7 +46,17 @@ Previously marked as "rarely used." Third pass found:
 5. **OT for MEG/EEG source imaging** (Janati et al., 2019): Optimal transport regularizes the MEG inverse problem; the transport plan matches sensor-space measurements to source-space activations with spatial smoothness enforced by the Wasserstein cost.
 6. **Hierarchical OT for neural decoding** (Lee et al., 2019): Multi-scale optimal transport matches neural population responses to stimulus categories, respecting the hierarchical structure of both neural representations and stimulus semantics.
 
+## Two Cross-Machine Roles (updated — B3 sub-slice 3, pass 37)
+
+### OT as proof technology (inbound to statistical physics)
+Optimal transport can enter a result not as the object being studied but as the instrument that proves it: in bounded-memory belief propagation (Jain–Koehler–Liu–Mossel, arXiv: 1905.10031), Wasserstein bounds on message iterates are what force the memory-limited transition strictly below the Kesten–Stigum threshold — the Matching machine's cost geometry doing the work of a phase-transition proof (`by-structure/phase_transitions.md`). Read such instances as *matching-as-lemma*: the coupling is never the phenomenon, only the estimate carrier.
+
+### PH → Matching bridge: filtration summary as measure
+Chambers & Meng (arXiv: 2507.01171) compose the machines in the direction the atlas has few instances of: an extended persistence diagram (Parameterized homology's birth-death summary) is converted to a persistence image and used as the *probability measure* of the mm-space on which Gromov-Wasserstein matching runs — with scalar-field stability carried end-to-end. The filtration does not merely weight features for a classifier; it defines the measure over which relational matching is performed. Compare the reverse direction already catalogued (Matching metrics consuming topological descriptors) — this is Parameterized homology supplying Matching's ground data, not vice versa.
+
 ## Key Divergences
+
+
 
 - **Causal vs. batch**: Syndrome decoding (JIT) must commit before seeing future data. Diagram matching is batch. This is a genuine structural difference — see ANTISYNONYMS.md.
 - **Cost function semantics**: Bottleneck = worst-case pairing cost. Wasserstein = total pairing cost. Syndrome graph = edge weight. These different cost functions produce different distances with different mathematical properties.

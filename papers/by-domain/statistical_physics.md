@@ -125,6 +125,8 @@ arXiv: cond-mat/9908104. Spin-glass analysis of Gallager codes: capacity saturat
 Full annotation: `annotations/cond-mat-9908104.md` (B2 pass 31). Abstract-only provenance — depth-limited.
 **See also**: `by-domain/information_theory.md`, `annotations/1307.5210.md`
 
+*Lineage note (B3 sub-slice 3, pass 37):* cond-mat/9908104 is the ancestor of the ldpc-bp cavity group closed in batch-004 — its TAP ≡ BP identification is what lets the later threshold-saturation results (cond-mat/9908358 replica decoding transition; 1307.5210 spatially-coupled LDGM cavity phase diagram; 1905.10031 bounded-memory transitions via OT proof technology; 1109.3041 SBM detectability) read as descendants of one spin-glass analysis.
+
 ### Kelly, Poschinger, Schmidt-Kaler, Fisher & Marino (2022) — Coherence requirements for quantum communication
 arXiv: 2210.11547. Monitored-dynamics/QEC unified as an adversarial unitary-vs-measurement game; coherence itself is the order parameter of a capacity/entanglement phase transition.
 **Machines**: parameterized homology, stability, null hypothesis.
