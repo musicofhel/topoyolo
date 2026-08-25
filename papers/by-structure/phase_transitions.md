@@ -299,3 +299,9 @@ DOI: s41468-022-00089-3. Stability: DMT metric is stable — bounded by interlea
 **Aref, Macris & Vuffray (2013)** — arXiv: 1307.5210. Stability: dynamical and condensation transition temperatures of the test-channel Gibbs measure computed by cavity method; spatial coupling saturates dynamical toward condensation, which approaches the Shannon noise level. Null hypothesis: Shannon rate-distortion limit as ideal-matcher reference. Full annotation: `annotations/1307.5210.md` (B2 pass 28). **See also**: `by-domain/information_theory.md`.
 
 **Jain, Koehler, Liu & Mossel (2019)** — arXiv: 1905.10031. Stability: bounded-memory message-passing transition proved strictly below the Kesten–Stigum/BP threshold; asymptotic normality at criticality. Matching: optimal transport bounds message accuracy in the proof. Full annotation: `annotations/1905.10031.md` (B2 pass 28). **See also**: `by-domain/statistical_physics.md`.
+
+**Vicente, Saad & Kabashima (1999)** — arXiv: cond-mat/9908358. Stability: replica-method decoding transition of irregular LDPC ensembles; its location placed on Shannon's coding bound by degree-distribution choice. Null hypothesis: Shannon bound as the transition point itself. Full annotation: `annotations/cond-mat-9908358.md` (B2 pass 29). **See also**: `by-domain/information_theory.md`.
+
+**Decelle, Krzakala, Moore & Zdeborová (2011)** — arXiv: 1109.3041. Stability: cavity-method phase diagram of the stochastic block model — detectability/undetectability transition (KS-style null boundary for planted structure) and easy/hard transition (statistical-to-computational gap); translates into asymptotically optimal BP detection. Canonical detectability-transition anchor. Full annotation: `annotations/1109.3041.md` (B2 pass 29). **See also**: `by-domain/statistical_physics.md`.
+
+*Batch-004 ldpc-bp group closed 4/4 (B2 pass 29).*

@@ -1141,3 +1141,15 @@ Full annotation: `annotations/1307.5210.md` (B2 pass 28). Abstract-only provenan
 **Machines**: stability (core), null hypothesis, matching (instrumental).
 Full annotation: `annotations/1905.10031.md` (B2 pass 28). Abstract-only provenance — depth-limited.
 **See also**: `by-domain/statistical_physics.md`, `by-structure/phase_transitions.md`
+
+**Vicente, Saad & Kabashima (1999) — Statistical physics of irregular LDPC codes**: arXiv: cond-mat/9908358. Replica method finds a decoding phase transition coinciding with Shannon's coding bound under chosen degree distributions; BP decoding analyzed statistically and checked against simulation. Early seed of the cavity-method coding lineage; irregularity as threshold-placement engineering.
+**Machines**: null hypothesis (core), stability, matching (instrumental).
+Full annotation: `annotations/cond-mat-9908358.md` (B2 pass 29). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/statistical_physics.md`, `by-structure/phase_transitions.md`, `annotations/1307.5210.md`
+
+**Decelle, Krzakala, Moore & Zdeborová (2011) — SBM phase diagram and algorithmic applications**: arXiv: 1109.3041. Detectability/undetectability transition at the KS-style bound (below it, planted structure is unextractable from topology) plus an easy/hard transition; cavity analysis translates into an asymptotically optimal BP community-detection algorithm. Canonical detectability-transition anchor for network inference.
+**Machines**: null hypothesis (core), stability, matching, joint-vs-marginal (instrumental).
+Full annotation: `annotations/1109.3041.md` (B2 pass 29). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/statistical_physics.md`, `by-structure/phase_transitions.md`, `annotations/1905.10031.md`
+
+*Batch-004 ldpc-bp group closed 4/4 (B2 pass 29); batch-004 fully consumed 17/17.*

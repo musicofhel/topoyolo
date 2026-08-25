@@ -209,7 +209,7 @@ We study lossy source coding under a distortion measure defined by the negative 
 We investigate an encoding scheme for lossy compression of a binary symmetric source based on simple spatially coupled Low-Density Generator-Matrix codes. The degree of the check nodes is regular and the one of code-bits is Poisson distributed with an average depending on the compression rate. The performance of a low complexity Belief Propagation Guided Decimation algorithm is excellent. The algorithmic rate-distortion curve approaches the optimal curve of the ensemble as the width of the coupling window grows. Moreover, as the check degree grows both curves approach the ultimate Shannon rate-distortion limit. The Belief Propagation Guided Decimation encoder is based on the posterior measure of a binary symmetric test-channel. This measure can be interpreted as a random Gibbs measure at a "temperature" directly related to the "noise level of the test-channel". We investigate the links between the algorithmic performance of the Belief Propagation Guided Decimation encoder and the phase diagram of this Gibbs measure. The phase diagram is investigated thanks to the cavity method of spin glass theory which predicts a number of phase transition thresholds. In particular the dynamical and condensation "phase transition temperatures" (equivalently test-channel noise thresholds) are computed. We observe that: (i) the dynamical temperature of the spatially coupled construction saturates towards the condensation temperature; (ii) for large degrees the condensation temperature approaches the temperature (i.e. noise level) related to the information theoretic Shannon test-channel noise parameter of rate-distortion theory. This provides heuristic insight into the excellent performance of the Belief Propagation Guided Decimation algorithm. The paper contains an introduction to the cavity method.
 ```
 
-## candidate-15 [ldpc-bp] — UNCONSUMED
+## candidate-15 [ldpc-bp] — ANNOTATED as cond-mat-9908358 (B2 pass 29 → annotations/cond-mat-9908358.md)
 
 **Title:** Statistical Physics of Irregular Low-Density Parity-Check Codes
 
@@ -237,7 +237,7 @@ Low-density parity-check codes with irregular constructions have been recently s
 The analysis of Belief Propagation and other algorithms for the reconstruction problem plays a key role in the analysis of community detection in inference on graphs, phylogenetic reconstruction in bioinformatics, and the cavity method in statistical physics. We prove a conjecture of Evans, Kenyon, Peres, and Schulman (2000) which states that any bounded memory message passing algorithm is statistically much weaker than Belief Propagation for the reconstruction problem. More formally, any recursive algorithm with bounded memory for the reconstruction problem on the trees with the binary symmetric channel has a phase transition strictly below the Belief Propagation threshold, also known as the Kesten-Stigum bound. The proof combines in novel fashion tools from recursive reconstruction, information theory, and optimal transport, and also establishes an asymptotic normality result for BP and other message-passing algorithms near the critical threshold.
 ```
 
-## candidate-17 [ldpc-bp] — UNCONSUMED
+## candidate-17 [ldpc-bp] — ANNOTATED as 1109.3041 (B2 pass 29 → annotations/1109.3041.md; canonical detectability-transition anchor; batch-004 CLOSED 17/17)
 
 **Title:** Asymptotic analysis of the stochastic block model for modular networks and its algorithmic applications
 

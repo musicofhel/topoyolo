@@ -76,3 +76,23 @@ Bounded-memory message passing on tree reconstruction has a phase transition str
 **Machines**: stability (core), null hypothesis, matching (instrumental).
 Full annotation: `annotations/1905.10031.md` (B2 pass 28). Abstract-only provenance — depth-limited.
 **See also**: `by-domain/information_theory.md`, `by-structure/phase_transitions.md`, `by-structure/optimal_transport.md`
+
+## Vicente, Saad & Kabashima (1999)
+**"Statistical Physics of Irregular Low-Density Parity-Check Codes"**
+arXiv: cond-mat/9908358 | cond-mat.dis-nn
+
+Replica method locates a decoding phase transition in irregular LDPC ensembles that coincides with Shannon's coding bound under chosen degree distributions; BP decoding analyzed statistically and checked against simulation. Early seed of the cavity-method coding literature; degree-distribution irregularity as threshold-placement engineering.
+**Machines**: null hypothesis (core), stability, matching (instrumental).
+Full annotation: `annotations/cond-mat-9908358.md` (B2 pass 29). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/information_theory.md`, `by-structure/phase_transitions.md`, `annotations/1307.5210.md`
+
+## Decelle, Krzakala, Moore & Zdeborová (2011)
+**"Asymptotic Analysis of the Stochastic Block Model for Modular Networks and Its Algorithmic Applications"**
+arXiv: 1109.3041 | cond-mat.stat-mech
+
+Cavity-method phase diagram of the SBM: detectability/undetectability transition (KS-bound style — below it planted structure is information-theoretically unextractable from topology) and an easy/hard transition (statistical-to-computational gap). Translates directly into an asymptotically optimal BP community-detection algorithm. Canonical anchor for the detectability-transition machine in network inference.
+**Machines**: null hypothesis (core), stability, matching, joint-vs-marginal (instrumental).
+Full annotation: `annotations/1109.3041.md` (B2 pass 29). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/information_theory.md`, `by-structure/phase_transitions.md`, `annotations/1905.10031.md`
+
+*Batch-004 ldpc-bp group closed 4/4 (B2 pass 29): cond-mat/9908358, 1307.5210, 1905.10031, 1109.3041.*
