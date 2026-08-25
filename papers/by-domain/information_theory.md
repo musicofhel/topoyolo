@@ -1178,3 +1178,9 @@ arXiv: 2604.08539. G²RPO replaces linear advantage standardization with non-lin
 **Machines**: matching, stability (null hypothesis marginal).
 Full annotation: `annotations/2604.08539.md` (batch-001 candidate-13).
 **See also**: `by-structure/optimal_transport.md`
+
+### Wang, Wang, Jin, Wei (2024) — GC-STCL: Granger Causality-Based Spatial-Temporal Contrastive Learning for EEG Emotion Recognition
+Granger causality (directed information flow) supplies the graph prior for a contrastive EEG emotion recognizer; frequency bands parameterize the causal graph family.
+**Machines**: joint-vs-marginal, parameterized homology.
+Full annotation: `annotations/wang-2024.md` (B2 pass 12).
+**See also**: `by-domain/neuroscience.md`

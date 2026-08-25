@@ -271,7 +271,7 @@ outputs of all input channels are concatenated and used as channels x c to obtai
 
 ---
 
-## candidate-04 [neuroscience] — UNCONSUMED
+## candidate-04 [neuroscience] — ANNOTATED as wang-2024 (pass 12): GC-STCL EEG emotion recognition; prose promoted from third_pass_infotheo_cross.md TP-01
 
 **Title:** GC STCL A Granger Causality Based SpatialTemporal Contrastive Learning Framework
 

@@ -258,3 +258,9 @@ PLoS Comput Biol 22(2), DOI: 10.1371/journal.pcbi.1013995. Whole-cortex network 
 **Machines**: parameterized homology, stability, null hypothesis, joint-vs-marginal.
 Full annotation: `annotations/10.1371-journal.pcbi.1013995.md` (B2 pass 12).
 **See also**: `by-domain/dynamical_systems.md`, `by-structure/phase_transitions.md`
+
+### Wang, Wang, Jin, Wei (2024) — GC-STCL: Granger Causality-Based Spatial-Temporal Contrastive Learning for EEG Emotion Recognition
+Granger causality graph over EEG channels as oriented causal network (chain-complex-like structure); frequency-band-parameterized GC graph topology = filtration analogue; spatial contrastive loss extracts cross-channel directed information flow absent from marginal channel statistics.
+**Machines**: joint-vs-marginal, parameterized homology, chain complex (weak).
+Full annotation: `annotations/wang-2024.md` (B2 pass 12).
+**See also**: `by-domain/information_theory.md`, `by-structure/composite_systems.md`

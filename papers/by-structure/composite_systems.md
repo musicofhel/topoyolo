@@ -57,6 +57,9 @@ Intrinsic transfer entropy: refines joint-vs-marginal excess by subtracting syne
 ### Amornbunchornvej, Zheleva, Berger-Wolf (2020) — Variable-lag GC and TE
 Variable-lag Granger causality with DTW matching. Joint-vs-marginal excess computed after optimal temporal alignment. Full annotation: `annotations/2002.00208.md` (arXiv: 2002.00208).
 
+### Wang, Wang, Jin, Wei (2024) — GC-STCL (EEG emotion recognition)
+Granger causality graph over EEG channels as oriented composite structure; band-parameterized causal topology. Full annotation: `annotations/wang-2024.md`.
+
 ### Marinazzo, Pellicoro, Stramaglia (2008) — Kernel Granger Causality
 Granger causality as variance-ratio excess lifted to RKHS. Bonferroni-controlled eigenvector selection. Applied to gene regulatory and chaotic map networks. Full annotation: `by-domain/information_theory.md`.
 
