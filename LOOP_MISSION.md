@@ -131,7 +131,7 @@ skill, dual-index filing, glossary/atlas updates, matrix regen via A4's tool.
     blocks in by-domain/by-structure index files** (em-dash headers evade the
     lint). Promote to per-paper files; extend lint to fail on the class.
     B2 passes promote-on-encounter until then.
-- **B2 [in_progress: batch-005 6/12 consumed — channel-capacity 6/7 done, ph-stability 08–12 remain. See history below for batches 001–004.]** History: batch-001 21/21, batch-002 18/40 (22 HELD-by-orchestrator),
+- **B2 [in_progress: batch-005 9/12 consumed — channel-capacity CLOSED 7/7, ph-stability 2/5 (08 Bubenik-Scott, 09 Gulen-McCleary annotated pass 32); candidates 10–12 remain. See history below for batches 001–004.]** History: batch-001 21/21, batch-002 18/40 (22 HELD-by-orchestrator),
   **batch-003 28/28 FULLY CONSUMED (pass 23)** — (8 annotated, 13 rejected): pass-13 added
   candidate-18 → ying-2016, candidate-12 → liu-2025, candidate-03 → brusch-2023,
   candidate-19 → silva-2018; pass-13 rejections 02/06/07/09/10/11/15/16/17/20
@@ -204,7 +204,7 @@ skill, dual-index filing, glossary/atlas updates, matrix regen via A4's tool.
 as cond-mat/9908104 (Gallager typical-case capacity saturation across sparse-matrix families; TAP ≡ BP decoding — ancestor of ldpc-bp group), 05 Kelly et al. ANNOTATED as 2210.11547
 (adversarial unitary-vs-measurement game; coherence-tuned capacity phase transition; coherence bounds stabilizer code distance). Sanctioned wrong-pointer sweep same pass: 5 repaired in
 qec.md (Berry→2209.13581, Hastings-Haah→2107.02194, Aharonov-Ben-Or→quant-ph-9906129, Knill-Laflamme-Zurek→quant-ph-9702058, Breuckmann-Eberhardt→2103.06309) — qec.md now clean of
-0711.0468 catch-alls except its own genuine entry. Counts at derived 112, deep cells 27; lint --check 0 errors.]** Also pass 14: fixed 5 wrong-pointer
+0711.0468 catch-alls except its own genuine entry. Counts at derived 112, deep cells 27; lint --check 0 errors.]** **Pass 32 (slice-32): channel-capacity group CLOSED 7/7 + ph-stability opened 2/5 — 07 Ashikaga-Asgari-Targhi ANNOTATED as 1708.03990 (capacity/MI/TE as spatial invariant field locating cardiac order-disorder wavebreaks; applied-dynamics close), 08 Bubenik-Scott ANNOTATED as 1205.3669 (categorified PH; interleaving generalizes bottleneck; stability as categorical property), 09 Gulen-McCleary ANNOTATED as 2201.06650 (Galois connections unify interleavings+matchings; Rota => easier bottleneck-stability proof). Counts to derived 115, deep cells 27; README cell-count drift (23 vs 27 deep) found and patched. Lint --check 0 errors.]** Also pass 14: fixed 5 wrong-pointer
   crossrefs in by-structure/optimal_transport.md; counts now at derived 78.
   Lint --check 0 errors.]
   Consume queue batches.** Repeatable task — each pass takes ≤3
