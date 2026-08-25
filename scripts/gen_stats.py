@@ -74,6 +74,7 @@ DOMAIN_ALIASES = {
 KNOWN_QUALIFIERS = {
     "applied", "finance", "causal inference", "complex systems",
     "category theory", "metric geometry", "algorithms", "computational",
+    "mathematics",
     "numerical analysis", "computational biology", "source imaging",
     "statistics", "foundational", "time series mining",
     "computational geometry", "trajectory analysis",
