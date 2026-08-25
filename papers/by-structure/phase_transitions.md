@@ -149,6 +149,11 @@ Full annotation: `annotations/1211.1162.md` (arXiv: 1211.1162).
 Null hypothesis: Null-machine transplant to graphs — sample networks consistent with observed data + explicit null (degree distribution); asks which measured properties are typical vs peculiar. Rare explicit authorial acknowledgment of the analogy to time-series surrogate methods.
 Full annotation: `annotations/1306.4064.md` (arXiv: 1306.4064).
 
+### Cobey & Baskerville (2016) --- Limits to causal inference with state-space reconstruction
+Null hypothesis: Power/limits study of CCM — wrong-alternative firing quantified for the state-space-reconstruction test; shared periodicity alone makes independent strains appear coupled. The Timmer-lineage critique transplanted from surrogates to cross mapping.
+Stability: Verdicts unstable under process noise, attractor drift, and reconstruction quality — perturbation directions unmeasurable in natural systems.
+Full annotation: `annotations/1601.00716.md` (arXiv: 1601.00716).
+
 ## Reinforcement Learning
 
 ### Dabney, Rowland, Bellemare, Munos (2018) — QR-DQN

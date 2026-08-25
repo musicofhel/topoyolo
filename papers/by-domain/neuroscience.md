@@ -293,3 +293,9 @@ Local information dynamics (local AIS + local TE) express predictive-coding stra
 **Machines**: joint-vs-marginal, null hypothesis, matching (weak, strategy discrimination).
 Full annotation: `annotations/2203.10810.md` (B2 pass 37). Abstract-only provenance — depth-limited.
 **See also**: `by-domain/information_theory.md`, `by-structure/composite_systems.md`
+
+### Seely (2025) — Sheaf Cohomology of Linear Predictive Coding Networks
+Linear predictive coding re-derived as sheaf diffusion on a cochain complex: prediction errors are coboundaries, inference is sheaf-Laplacian flow, and cohomology classes are exactly the error local learning cannot remove; Hodge decomposition identifies when recurrent feedback contradictions stall learning.
+**Machines**: chain complex (core), null hypothesis (irreducible-error reading), stability (stall diagnosis).
+Full annotation: `annotations/2511.11092.md` (B2 pass 52). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/tda.md`, `by-structure/boundary_operators.md`

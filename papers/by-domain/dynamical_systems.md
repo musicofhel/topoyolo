@@ -190,6 +190,25 @@ arXiv: 1306.4064
 
 ---
 
+## Cobey & Baskerville (2016)
+**"Limits to causal inference with state-space reconstruction for infectious disease"**
+arXiv: 1601.00716
+
+**Domain(s)**: Dynamical systems, epidemiology
+
+**Abstract machines instantiated**:
+- **Null hypothesis**: A systematic limits/power study of convergent cross mapping — quantifying the wrong-alternative firing rate of the state-space-reconstruction test: independent pathogen strains oscillating at similar frequencies are inferred as interacting. The Timmer-lineage move applied to CCM: measure when the test rejects a true null.
+- **Stability**: Verdicts shown unstable along three perturbation directions of the data-generating process — process noise level, attractor drift, and reconstruction quality — all unmeasurable in natural systems; instability under unobservable perturbations is the headline.
+- **Matching**: Cross mapping is nearest-neighbor matching between reconstructed state spaces; match quality inherits reconstruction artifacts rather than coupling strength.
+
+**What is genuinely new**: The diagnosis that CCM's central false-positive mode is shared periodicity — a spectral coincidence, not dynamical coupling — AND that alternative inference criteria dissolve this sensitivity while noise/drift sensitivity remains: a partially fixable failure, not a blanket rejection. Grounded in pre-vaccine measles/pertussis series (NYC, Chicago) where CCM's assumptions are exactly unverifiable.
+
+**Connections the authors acknowledge**: Sugihara et al. CCM; Granger causality literature; reconstruction diagnostics. Abstract-only provenance — depth-limited.
+
+**See also**: `annotations/1601.00716.md`, `by-structure/phase_transitions.md` (null-surrogate section)
+
+---
+
 ## Takens (1981)
 **"Detecting strange attractors in turbulence"**
 Lecture Notes in Mathematics, vol. 898, Springer
