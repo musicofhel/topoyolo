@@ -162,8 +162,15 @@ skill, dual-index filing, glossary/atlas updates, matrix regen via A4's tool.
   annotations/10.1007-s00521-024-10787-x.md (dedup-gap fix adopted and
   confirmed); candidates 03 REJECTED (CHIRPS, zero machines — filter artifact),
   05 REJECTED (TopP-S, one-machine PH-descriptor wrapper); counts to derived
-  81; Dynamics×Matching unchanged at 5. Next: batch-003 candidate-06
-  [filtration-ph], then transport group.]** Also pass 14: fixed 5 wrong-pointer
+  81; Dynamics×Matching unchanged at 5. **Pass 21/slice-12–14: filtration-ph
+  remainder + transport-matching group fully consumed, ALL six rejected —
+  06 PHOM one-machine PH-descriptor wrapper; 07 PHG-Net + 08 ATPGCN
+  PH-as-feature application wrappers; 09 QR-DQN Wasserstein-as-loss;
+  10 Hawkes FCLT convergence-rate tool; 11 GWGAN single-machine GW wrapper
+  (covered by FUGW 2206.09398 + merge-tree s41468); 12 CDRL Cramér-distance
+  RL theory; 13 Cornulier commability pure geometric group theory; 14 CP-DRL
+  OT-curriculum wrapper. batch-003 now 14/28 consumed; next group:
+  info-machines (15–20).]** Also pass 14: fixed 5 wrong-pointer
   crossrefs in by-structure/optimal_transport.md; counts now at derived 78.
   Lint --check 0 errors.]
   Consume queue batches.** Repeatable task — each pass takes ≤3
