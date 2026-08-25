@@ -1,5 +1,8 @@
 # Queue batch-009 — arXiv foraging export, 2026-08-25
 
+**CLOSED (pass 51): 10/10 annotated** (pid-theory 5/5 pass 49; rg-dl 5/5
+passes 49–51).
+
 Sixth foraged batch (abstract-only provenance). Two theory-core groups:
 **pid-theory** — the Joint-vs-Marginal machine's own axiomatic literature
 (Williams-Beer founding lattice, mereological unification, game-theoretic
@@ -139,7 +142,7 @@ We propose that learning in deep neural networks proceeds in two phases: a rapid
 We explore how minimal neural networks can invert the renormalization group (RG) coarse-graining procedure in the two-dimensional Ising model, effectively 'dreaming up' microscopic configurations from coarse-grained states. This task - formally impossible at the level of configurations - can be approached probabilistically, allowing machine learning models to reconstruct scale-invariant distributions without relying on microscopic input. We demonstrate that even neural networks with as few as three trainable parameters can learn to generate critical configurations, reproducing the scaling behavior of observables such as magnetic susceptibility, heat capacity, and Binder ratios. A real-space renormalization group analysis of the generated configurations confirms that the models capture not only scale invariance but also reproduce nontrivial eigenvalues of the RG transformation. While the inversion is necessarily imperfect, these minimal models robustly reproduce the RG-relevant structure of the critical distribution. Surprisingly, we find that increasing network complexity by introducing multiple layers offers no significant benefit. These findings suggest that simple local rules, akin to those generating fractal structures, are sufficient to encode the universality of critical phenomena, creating an opportunity for efficient generative models of statistical ensembles in physics.
 ```
 
-## candidate-10 [rg-dl] — UNCONSUMED
+## candidate-10 [rg-dl] — ANNOTATED as 1906.05212 (pass 51; paired with 1410.3831, B3 pairing flag discharged)
 
 **Title:** Is Deep Learning a Renormalization Group Flow?
 

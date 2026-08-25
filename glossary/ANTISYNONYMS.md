@@ -145,6 +145,14 @@ The atlas pairs Matching and Stability wherever barcodes appear: the bottleneck/
 
 ---
 
+### Exact RG↔DL mapping ≠ correlator-level identity (1410.3831 vs 1906.05212)
+
+Within one domain pair (statistical physics ↔ machine learning), the rg-dl lineage contains its own claim-vs-refutation arc, and the boundary is worth stating precisely. Mehta & Schwab (1410.3831) prove a term-by-term identity between Kadanoff's *variational* RG and an RBM stack — but the identity is architectural: it maps the equations of one coarse-graining step onto one layer's training objective. It does not show that what a trained network actually computes is an RG flow. de Mello Koch, de Mello Koch & Cheng (1906.05212) test exactly that stronger reading with hidden-visible correlator diagnostics on Ising-trained RBMs and find RG-like patterns **and** important differences between RG and deep learning in the same observables.
+
+The apparent synonym — "deep learning performs renormalization" — fails at the level of what is measured versus what is mapped: an exact correspondence between two formalisms at one step is not evidence that the learned representation traverses the same flow as the physical system's RG treatment. The Rosetta rule this forces: for any "X is Y" claim in the corpus, distinguish the mapped formalism (where exactness can hold) from the instantiated dynamics (where only diagnostics can decide). The pairing also fixes how the corpus should read its own founding hypothesis: 1410.3831 states it, 1906.05212 qualifies it, and neither alone is the lineage's position.
+
+---
+
 ## Living Document
 
 Add divergences as they are discovered. Each entry should specify: which two domains are being compared, what the apparent synonym is, and precisely where the correspondence fails.

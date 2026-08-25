@@ -160,10 +160,10 @@ Full annotation: `annotations/1305.1742.md` (B2 pass 47). Abstract-only provenan
 ## B2 batch-009 — rg-dl bridge (2026-08-25)
 
 ### Mehta & Schwab (2014) — Exact mapping: variational RG ↔ deep learning
-arXiv: 1410.3831. Term-by-term identity between Kadanoff's variational renormalization group and RBM-stack deep architectures (weights ↔ couplings, layers ↔ coarse-graining stages, relevant operators ↔ persisting features), demonstrated on the 1D/2D Ising model. Founding hypothesis of the rg-dl lineage: deep learning as a generalized RG-like feature-extraction scheme.
+arXiv: 1410.3831. Term-by-term identity between Kadanoff's variational renormalization group and RBM-stack deep architectures (weights ↔ couplings, layers ↔ coarse-graining stages, relevant operators ↔ persisting features), demonstrated on the 1D/2D Ising model. Founding hypothesis of the rg-dl lineage: deep learning as a generalized RG-like feature-extraction scheme; its skeptical refinement is 1906.05212 (pass 51).
 **Machines**: parameterized homology (core; layer index = scale parameter), stability (relevance = persistence under the coarse-graining flow).
-Full annotation: `annotations/1410.3831.md` (B2 pass 49). Abstract-only provenance — depth-limited. **B3 flag:** pair with the skeptical null 1906.05212 (batch-009 candidate-10) when it lands.
-**See also**: `by-structure/filtrations.md`, `by-structure/phase_transitions.md`.
+Full annotation: `annotations/1410.3831.md` (B2 pass 49). Abstract-only provenance — depth-limited. **B3 flag DISCHARGED (pass 51):** paired with the skeptical null 1906.05212 — claim-vs-refutation note in `glossary/ANTISYNONYMS.md`.
+**See also**: `annotations/1906.05212.md`, `by-structure/filtrations.md`, `by-structure/phase_transitions.md`.
 
 ### Howard, Klinger, Maiti & Stapleton (2024) — Bayesian RG flow in neural network field theories
 arXiv: 2405.17538. BRG-NNFT: coarse-graining in *parameter space* against a Fisher-metric distinguishability scale; training = IR→UV flow, information-shell coarse graining = UV→IR; BRG ≡ ERG exactly when the two cutoffs coincide, demonstrated as exact momentum-shell ERG for a free scalar SFT in the infinite-width cos-net case. Replaces Mehta–Schwab's RBM-stack identity with an information-geometric one.
@@ -181,4 +181,10 @@ Full annotation: `annotations/2504.12700.md` (B2 pass 50). Abstract-only provena
 arXiv: 2506.04016. Minimal nets (three trainable parameters) invert real-space RG coarse-graining probabilistically on the 2D Ising model, generating critical configurations whose scaling observables and nontrivial RG eigenvalues check out; added depth gives no benefit — universality capturable by fractal-rule-style local rules. The lineage's first inverse-direction entry: generating microstates from coarse-grained ones rather than coarse-graining data or training dynamics.
 **Machines**: stability (certified by persistence of RG eigenvalues under iterated coarse-graining), parameterized homology (scale-indexed observable family), null hypothesis (probabilistic recovery against the destroyed-information null; depth ablation as complexity-null control).
 Full annotation: `annotations/2506.04016.md` (B2 pass 50). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/filtrations.md`, `by-structure/phase_transitions.md`.
+
+### de Mello Koch, de Mello Koch & Cheng (2019) — Is Deep Learning a Renormalization Group Flow?
+arXiv: 1906.05212. Skeptical counterweight to the lineage's founding claim: hidden-visible correlators of RBMs trained on Ising configurations are used as operational diagnostics for RG-like coarse graining. Numerics find RG-like patterns AND important differences between RG and deep learning in the same observables — converts Mehta–Schwab's mapping into a measurable, partially-refuted hypothesis.
+**Machines**: null hypothesis (the "deep learning is just RG" reading constructed so it can fail partially), stability (correlator persistence as the tracked signal), parameterized homology (layer ↔ RG step as scale parameter, used as test bench).
+Full annotation: `annotations/1906.05212.md` (B2 pass 51). Abstract-only provenance — depth-limited. **Annotated AS A PAIR with 1410.3831; claim-vs-refutation note filed in `glossary/ANTISYNONYMS.md`.**
 **See also**: `by-structure/filtrations.md`, `by-structure/phase_transitions.md`.
