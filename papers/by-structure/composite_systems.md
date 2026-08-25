@@ -45,6 +45,12 @@ Cross-Barcode(P,Q) = pairwise topological comparison of two manifold-supported d
 ### Jónsson et al. (2020) — DNN Convergence with MI Regularization
 MINE-estimated I(X;T) as regularizer. Confirms compression phase in VGG-16. MI-based loss stabilizes training. Full annotation: `by-domain/information_theory.md`.
 
+### Yu, Yu, Løkse, Jenssen, Principe (2024) — CS-IB
+IB with Cauchy-Schwarz divergence: closed-form quadratic-MI compression, no variational approximation or Gaussian assumption; adversarial robustness guarantees. Also stability. Full annotation: `annotations/2404.17951.md` (arXiv: 2404.17951).
+
+### Mukherjee, Asnani, Kannan (2019) — CCMI
+Conditional MI as KL divergence between conditional joint and a learned conditional-product null; classifier-dual estimator for conditional-independence testing. Also null hypothesis. Full annotation: `annotations/1906.01824.md` (arXiv: 1906.01824).
+
 ### Kolchinsky (2024) — PID Redundancy as Information Bottleneck
 Redundancy reformulated as IB compression-prediction tradeoff. "RB curve" = parameterized family of decompositions indexed by compression β. Bridges Joint (PID) and Param (IB) machines formally. Efficient iterative algorithm. Full annotation: `annotations/2405.07665.md` (arXiv: 2405.07665).
 

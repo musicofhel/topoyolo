@@ -1446,7 +1446,7 @@ tions of the KL-divergence. We will primarily work with
 the Donsker-Varadhan rep
 ```
 
-## candidate-18 [info-machines] — UNCONSUMED
+## candidate-18 [info-machines] — ANNOTATED as 1906.01824 (new full-depth annotation; CCMI = classifier-dual CMI estimator, machines joint-vs-marginal + null hypothesis (+weak stability); filed in information_theory + composite_systems indices, pass 22)
 
 **Title:** CCMI Classifier based Conditional Mutual Information Estimation
 
@@ -1532,7 +1532,7 @@ neighbor estimates (Sricharan et al. 2013; Jiao et al. timators perform well eve
 Singh et al. 2003; Singh and Póczos 2016). Build- beyond 
 ```
 
-## candidate-19 [info-machines] — UNCONSUMED
+## candidate-19 [info-machines] — ANNOTATED as 2404.17951 (promote-on-encounter: duplicate — full annotation already in historical ledger second_pass.md (SP-03) plus index row in by-domain/information_theory.md; block migrated verbatim to annotations/, crossref repointed, pass 22)
 
 **Title:** Cauchy Schwarz Divergence Information Bottleneck for Regression
 

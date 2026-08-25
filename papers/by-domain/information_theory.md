@@ -874,7 +874,8 @@ arXiv: 2111.05299
 
 - **Kawaguchi, Deng, Ji, Huang (2023)** — "How Does Information Bottleneck Help Deep Learning?" First rigorous proof IB controls generalization. Bound sqrt(I(X;Z)/n) has same form as PH stability. Full annotation: `annotations/2305.18887.md` (promoted from cross_domain_bridges.md, pass 22). Machines: stability, joint-vs-marginal, parameterized homology, null hypothesis.
 
-- **Yu, Yu, Løkse, Jenssen, Principe (2024)** — "Cauchy-Schwarz Divergence Information Bottleneck for Regression." CS divergence makes IB tractable without Gaussian assumptions. Closed-form compression + adversarial robustness. Full annotation: `second_pass.md` (SP-03). Machines: joint-vs-marginal, stability, null hypothesis.
+- **Yu, Yu, Løkse, Jenssen, Principe (2024)** — "Cauchy-Schwarz Divergence Information Bottleneck for Regression." CS divergence makes IB tractable without Gaussian assumptions. Closed-form compression + adversarial robustness. Full annotation: `annotations/2404.17951.md` (promoted from second_pass.md SP-03, pass 22). Machines: joint-vs-marginal, stability, null hypothesis.
+- **Mukherjee, Asnani, Kannan (2019)** — "CCMI: Classifier Based Conditional Mutual Information Estimation." CMI as KL divergence between conditional joint and learned conditional-product null; classifier-dual estimation robust to 100 dimensions. Full annotation: `annotations/1906.01824.md`. Machines: joint-vs-marginal, null hypothesis.
 
 - **Wang, Jian, Masoomi, Ioannidis, Dy (2021)** — "Revisiting HSIC Bottleneck for Adversarial Robustness." Proves HSIC bottleneck implies adversarial robustness. Layer-wise Lipschitz bounds. Full annotation: `second_pass.md` (SP-04). Machines: stability, chain complex (weak), joint-vs-marginal.
 
