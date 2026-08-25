@@ -1,12 +1,16 @@
 # research/INDEX.md — pass reports + task status (newest first)
 
 **Lint state:** check_structure.py exit 0; 1 warning = pre-existing baseline
-(2 author-year-prose crossrefs); `--check` 0 errors. Derived corpus: **125
-fully annotated papers**, **36 cells (6 machines × 6 domains)**, min cell 2,
-27 cells ≥10. Domain-alias table landed in gen_stats.py (pass 27); ML→InfoTheo
-and OT→TDA mappings await Aaron's ratification.
+(2 author-year-prose crossrefs); `--check` 0 errors. Derived corpus: **128
+fully annotated papers** (+3 pass 39), **36 cells (6 machines × 6 domains)**,
+min cell 2, 27 cells ≥10. Domain-alias table landed in gen_stats.py (pass 27);
+ML→InfoTheo and OT→TDA mappings await Aaron's ratification.
 
 ## Reports
+- `2026-08-25-0752.md` — Pass 39: B2 — batch-002 HELD re-triage DONE: all
+  22 held candidates (19–40) triaged machines-first; 3 ANNOTATED (2601.01359
+  VR-shadow inverse limits; Wong–Vong PHGCN diagram loss; de Silva–Carlsson
+  witness complexes), 19 REJECTED (<2 machines). Counts to derived 128.
 - `2026-08-25-0749.md` — Pass 38: B3 sub-slice 4 — optimal_transport.md
   "Monge–Kantorovich split inside this file": coupling-side vs map-side corpus
   instances catalogued; Mémoli–Needham non-atomic GM=GW read as the regime
@@ -21,7 +25,7 @@ and OT→TDA mappings await Aaron's ratification.
   2507.01171 Reeb-graph GW with persistence-image measure + scalar-field
   stability; 05 Hohmeier et al 2606.10295 GW-kNN universal consistency on
   weak-isomorphism classes; 06 Yachimura–Zou 2608.09265 entropic partial OT /
-  partial mixture GW). Counts to derived 124.
+  partial mixture GW). Counts to derived 121.
 - `2026-08-25-0726.md` — Pass 35: B2 slice-35 — batch-006 opened 3/8
   (gw-theory core: 2006.12287 trimmed-GW asymptotic inference;
   2212.14123 GW=GM on non-atomic mm-spaces; 2201.09385 generalized cMDS +
@@ -36,14 +40,15 @@ and OT→TDA mappings await Aaron's ratification.
 ## Task status (LOOP_MISSION.md ledger is canonical)
 - **A1–A6:** all [done].
 - **B1 ingestion contract:** [done] (6ebfcf2).
-- **B2 queue consumption:** [in_progress] — batches 001–006 fully consumed or
-  HELD (batch-002's 22 HELD candidates fair game for a machines-first
-  re-triage now that the GW-theory core has landed). No unconsumed queue
-  batches remain — awaiting batch-007 drop (available on request via report).
-  Residual Wave-era catch-all pointer debt (~101, ≤5/pass sanctioned).
+- **B2 queue consumption:** [in_progress] — batches 001–006 consumed; batch-002's
+  22 HELD candidates re-triaged machines-first in pass 39 (3 annotated, 19
+  rejected). No unconsumed queue batches remain — awaiting batch-007 drop
+  (forage requested by orchestrator, running on their side). Residual
+  Wave-era catch-all pointer debt (~101, ≤5/pass sanctioned).
 - **B3 atlas synthesis:** [in_progress] — sub-slices 1–4 done (passes 33, 34,
   37, 38): ANTISYNONYMS duality entry; thermodynamic-instantiation sections on
   optimal_transport.md + composite_systems.md; MATCHING.md cross-machine roles
   + ldpc-bp ancestor lineage; optimal_transport.md Monge–Kantorovich internal
-  split. Queued hooks exhausted — next session picks: batch-002 HELD re-triage
-  slice, or request batch-007 forage.
+  split. Queued hooks exhausted — next options: a B3 synthesis section over the
+  three new TDA-foundations annotations (pass 39), or batch-007 consumption
+  when it drops.

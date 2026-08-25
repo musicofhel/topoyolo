@@ -370,3 +370,6 @@ Complementarity with the matching side: there the OT cost equals dissipation alo
 
 ### Wollstadt et al. (2022) — Local Information Dynamics Against Analytical Circularity (arXiv: 2203.10810)
 Predictive-coding strategies recast as competing constraints between local active information storage and local transfer entropy; PID atoms separate bottom-up vs state-conditional transfer — joint-vs-marginal used as an assumption-minimizing instrument rather than a feature. Full annotation: `annotations/2203.10810.md` (B2 pass 37). **See also**: `by-domain/neuroscience.md`.
+
+### Wong & Vong (2021) — Persistence Diagrams as Supervisory Targets (ICCV 2021)
+PHGCN: filtration barcodes as GCN features with a Persistence Diagram Loss penalizing diagram-vs-diagram mismatch of predicted segmentation — matching cost between topological summaries closed into an optimization loop. DOI 10.1109/ICCV48922.2021.00701. Full annotation: `annotations/wong-vong-2021.md` (B2 pass 39). **See also**: `by-domain/tda.md`.

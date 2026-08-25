@@ -1370,7 +1370,9 @@ on the same manifold should produce BSM on some distinguished sub-structure, wit
 signature of departure from it. The body of this paper makes t
 ```
 
-## candidate-19 [atlas-general] — UNCONSUMED
+## candidate-19 [atlas-general] — REJECTED
+
+Re-triage (B2 pass 39, machines-first): Decorative Khovanov/knot analogy; no boundary-operator or homology computation on data — <2 machines.
 
 **Title:** Cohomology theory for financial Statistical Mechanics
 
@@ -1439,7 +1441,9 @@ application to measure the human activity,. Cohomology [11], first discovered in
 detect a source of hidden inductive chain and cochain of k
 ```
 
-## candidate-20 [atlas-general] — UNCONSUMED
+## candidate-20 [atlas-general] — REJECTED
+
+Re-triage (B2 pass 39, machines-first): QH effective field theory; none of the six machines instantiated.
 
 **Title:** arovas Zhang1992A
 
@@ -1453,7 +1457,9 @@ detect a source of hidden inductive chain and cochain of k
 
 ```
 
-## candidate-21 [atlas-general] — UNCONSUMED
+## candidate-21 [atlas-general] — REJECTED
+
+Re-triage (B2 pass 39, machines-first): Single-invariant robustness (Chern number from vortex linking); no filtration/matching/joint-vs-marginal — <2 machines.
 
 **Title:** s41467 019 09668 y
 
@@ -1527,7 +1533,9 @@ was measured for the Hofstadter model 13 using transport mea-
 surements and for the Haldane model using quantize
 ```
 
-## candidate-22 [atlas-general] — UNCONSUMED
+## candidate-22 [atlas-general] — REJECTED
+
+Re-triage (B2 pass 39, machines-first): "Topology" = shape optimization with buckling constraints; zero machines.
 
 **Title:** Two Scale Optimization of Graded Lattice Structures respecting Buckling on Micro
 
@@ -1609,7 +1617,9 @@ Keller 1962; Huang and Sheu 1968; Khot et al. For dehomogenized designs scale ef
 1976). Neves et al. (1995) were the first to conduct 
 ```
 
-## candidate-23 [atlas-general] — UNCONSUMED
+## candidate-23 [atlas-general] — REJECTED
+
+Re-triage (B2 pass 39, machines-first): Metric-flattening regularizer on VAE latent space — <2 machines.
 
 **Title:** Learning Flat Latent Manifolds with VAEs
 
@@ -1693,7 +1703,9 @@ E p D ( x ) log p θ ( x ) ≥ E p D ( x ) E q φ ( z | x ) log p θ ( x | z ) a
 ( ) ] lower bound on the log-likeliho
 ```
 
-## candidate-24 [atlas-general] — UNCONSUMED
+## candidate-24 [atlas-general] — REJECTED
+
+Re-triage (B2 pass 39, machines-first): Structure preservation as soft contrastive regularizer only — <2 machines.
 
 **Title:** Structure preserving contrastive learning for spatial time series
 
@@ -1773,7 +1785,9 @@ two regularisers at di ff erent scales to preserve the original similarity struc
 One is a topology-preserving regulariser for the global scale, and the other is a 
 ```
 
-## candidate-25 [atlas-general] — UNCONSUMED
+## candidate-25 [atlas-general] — REJECTED
+
+Re-triage (B2 pass 39, machines-first): Supplies reach bounds feeding the stability machine, but no second machine instantiated. Hook: if stability.md ever gains a quantitative-reach section (1904.04502, bottleneck degree via Chern/polar classes), revisit.
 
 **Title:** The bottleneck degree of algebraic varieties
 
@@ -1863,7 +1877,9 @@ components of X R is realized by || x − y || for some bottleneck ( x , y ) wit
 Figure 3 for an illustra
 ```
 
-## candidate-26 [atlas-general] — UNCONSUMED
+## candidate-26 [atlas-general] — REJECTED
+
+Re-triage (B2 pass 39, machines-first): Koopman linearization of training dynamics — computational tool, <2 machines.
 
 **Title:** Optimizing Neural Networks via Koopman Operator Theory
 
@@ -1950,7 +1966,9 @@ could accurately mode weight/bias evolutions.
 Unbeknownst (and in paral
 ```
 
-## candidate-27 [atlas-general] — UNCONSUMED
+## candidate-27 [atlas-general] — REJECTED
+
+Re-triage (B2 pass 39, machines-first): Poset information geometry; higher-order-interaction decomposition adjacent to joint-vs-marginal but no poset machinery maps onto the six machines as instantiated. Second-closest reject of the batch.
 
 **Title:** Information Decomposition on Structured Space
 
@@ -2063,7 +2081,9 @@ Let us first introduce the θ - coordinate system of the mani-
 fold S , which is realized as a mapping θ : S → R . In the expo- for every s, s ′ ∈ S + with the Kronecker delta δ
 ```
 
-## candidate-28 [atlas-general] — UNCONSUMED
+## candidate-28 [atlas-general] — REJECTED
+
+Re-triage (B2 pass 39, machines-first): Ensemble controllability theory on Lie groups; zero machines.
 
 **Title:** Ensemble Control on Lie Groups
 
@@ -2148,7 +2168,9 @@ of this method is to decompose the state space Lie group of a bilinear ensemble 
 collection of Lie subgroups, which generates the Lie group, so that controllability of the e
 ```
 
-## candidate-29 [atlas-general] — UNCONSUMED
+## candidate-29 [atlas-general] — REJECTED
+
+Re-triage (B2 pass 39, machines-first): Moment-based ensemble control; zero machines.
 
 **Title:** Moment Based Ensemble Control
 
@@ -2234,7 +2256,9 @@ same controllability property. Such equivalences enable and facilitate the desig
 moment-feedback control laws by 
 ```
 
-## candidate-30 [atlas-general] — UNCONSUMED
+## candidate-30 [atlas-general] — REJECTED
+
+Re-triage (B2 pass 39, machines-first): Meta-trained in-context learners; phase-transition language but zero machines.
 
 **Title:** General Purpose In Context Learning by Meta Learning Transformers
 
@@ -2323,7 +2347,9 @@ are implicitly encoded in the black-box neural network.
 What is a genera
 ```
 
-## candidate-31 [atlas-general] — UNCONSUMED
+## candidate-31 [atlas-general] — REJECTED
+
+Re-triage (B2 pass 39, machines-first): Pure commutative algebra (liftings of ideals); zero machines.
 
 **Title:** The scheme of liftings and applications
 
@@ -2413,7 +2439,9 @@ codimension two has a radical lifting (Theorem 7.8).
 All the results we present are b
 ```
 
-## candidate-32 [atlas-general] — UNCONSUMED
+## candidate-32 [atlas-general] — REJECTED
+
+Re-triage (B2 pass 39, machines-first): Sparse RNN Granger causality; null-hypothesis adjacent but implicit only — <2 machines.
 
 **Title:** Economy Statistical Recurrent Units For Inferring Nonlinear Granger Causality
 
@@ -2501,7 +2529,9 @@ We now proceed to interpret Granger causality in the context of the above compon
 series model. Recalling 
 ```
 
-## candidate-33 [atlas-general] — UNCONSUMED
+## candidate-33 [atlas-general] — REJECTED
+
+Re-triage (B2 pass 39, machines-first): LLM-agent graph navigation; zero machines.
 
 **Title:** AgentGL Towards Agentic Graph Learning with LLMs via Reinforcement Learning
 
@@ -2597,7 +2627,9 @@ ing these challenges demands a principled formula- has focused on bridging the g
 tion of graph-native action spaces and stable 
 ```
 
-## candidate-34 [atlas-general] — UNCONSUMED
+## candidate-34 [atlas-general] — ANNOTATED as 2601.01359
+
+Re-triage (B2 pass 39): ≥2 machines confirmed.
 
 **Title:** 2601.01359v1
 
@@ -2682,7 +2714,9 @@ plexes and their shadows is motivated by the practical challenge of reconstructi
 an
 ```
 
-## candidate-35 [atlas-general] — UNCONSUMED
+## candidate-35 [atlas-general] — ANNOTATED as wong-vong-2021 (ICCV 2021)
+
+Re-triage (B2 pass 39): ≥2 machines confirmed.
 
 **Title:** Persistent Homology based Graph Convolution Network for Fine grained 3D Shape Segmentation
 
@@ -2756,7 +2790,9 @@ persistent homological features in the resulting persistence As there is no dire
 diagram correspond to the connecte
 ```
 
-## candidate-36 [atlas-general] — UNCONSUMED
+## candidate-36 [atlas-general] — ANNOTATED as desilva-carlsson-2004 (Eurographics 2004)
+
+Re-triage (B2 pass 39): ≥2 machines confirmed.
 
 **Title:** 157 166
 
@@ -2844,7 +2880,9 @@ detailed, motivated description of a family of constructions
 
 ```
 
-## candidate-37 [atlas-general] — UNCONSUMED
+## candidate-37 [atlas-general] — REJECTED
+
+Re-triage (B2 pass 39, machines-first): Speculative geometric reframing of NNs; no machine mechanisms demonstrated.
 
 **Title:** Deep Manifold Neural Network Mathematics
 
@@ -2959,7 +2997,9 @@ From Fixed Point to Learnable Computation
 ○ Mathematics becomes computation only when residuals are it
 ```
 
-## candidate-38 [atlas-general] — UNCONSUMED
+## candidate-38 [atlas-general] — REJECTED
+
+Re-triage (B2 pass 39, machines-first): PH-as-featurization application (ESPH descriptors), single machine.
 
 **Title:** quantitative toxicity prediction using topology based multitask deep neural networks
 
@@ -3041,7 +3081,9 @@ features. logical descriptors and auxiliary descriptors calculated from
 Geometric represe
 ```
 
-## candidate-39 [atlas-general] — UNCONSUMED
+## candidate-39 [atlas-general] — REJECTED
+
+Re-triage (B2 pass 39, machines-first): Manifold-constrained latent reasoning for recommendation; zero machines.
 
 **Title:** ManCAR: Manifold-Constrained Latent Reasoning with Adaptive Test-Time Computation for Sequential Recommendation
 
@@ -3062,7 +3104,9 @@ Abstract:
 Sequential recommendation increasingly employs latent multi-step reasoning to enhance test-time computation. Despite empirical gains, existing approaches largely drive intermediate reasoning states via target-dominant objectives without imposing explicit feasibility constraints. This results in latent drift, where reasoning trajectories deviate into implausible regions. We argue that effective recommendation reasoning should instead be viewed as navigation on a collaborative manifold rather than free-form latent refinement. To this end, we propose ManCAR (Manifold-Constrained Adaptive Reasoning), a principled framework that grounds reasoning within the topology of a global interaction graph. ManCAR constructs a local intent prior from the collaborative neighborhood of a user's recent actions, represented as a distribution over the item simplex. During training, the model progressively aligns its latent predictive distribution with this prior, forcing the reasoning trajectory to remain within the valid manifold. At test time, reasoning proceeds adaptively until the predictive distribution stabilizes, avoiding over-refinement. We provide a variational interpretation of ManCAR to theoretically validate its drift-prevention and adaptive test-time stopping mechanisms. Experiments on seven benchmarks demonstrate that ManCAR consistently outperforms state-of-the-art baselines, achieving up to a 46.88% relative improvement w.r.t. NDCG@10. Our code is available at https://github.com/FuCongResearchSquad/ManCAR.
 ```
 
-## candidate-40 [atlas-general] — UNCONSUMED
+## candidate-40 [atlas-general] — REJECTED
+
+Re-triage (B2 pass 39, machines-first): Contrastive graph structure learning for soft sensing — <2 machines.
 
 **Title:** 2501.02015v1
 

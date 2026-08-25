@@ -221,3 +221,9 @@ Correlation-threshold selection in functional brain networks framed as a filtrat
 
 ### Chambers & Meng (2025) — Stable GW Distance for Reeb Graph Comparison using Persistence Images
 arXiv: 2507.01171. Extended persistence diagrams of the scalar field, vectorized to persistence images, define the probability weighting of a Reeb-graph Gromov-Wasserstein distance — the filtration's birth-death summary consumed as the measure of a matching problem; scalar-field-perturbation stability proven. Full annotation: `annotations/2507.01171.md` (B2 pass 36). **See also**: `by-domain/tda.md`, `by-structure/optimal_transport.md`.
+
+### Kawamura, Majhi & Mitra (2026) — The Shadow of Vietoris–Rips Complexes in Limits
+arXiv: 2601.01359. Scale β and sample densification S→X treated as a joint two-parameter net via inverse systems (shape theory); limit projection isomorphism on homotopy/homology for ANRs even where each finite-stage shadow projection is singular. Full annotation: `annotations/2601.01359.md` (B2 pass 39). **See also**: `by-domain/tda.md`.
+
+### de Silva & Carlsson (2004) — Topological Estimation Using Witness Complexes
+Eurographics PBG 2004. Nested witness-complex families W(D;R,ν) over feature size R as PH-ready filtrations on landmark vertex sets; subsampling-induced denoising of barcodes. Full annotation: `annotations/desilva-carlsson-2004.md` (B2 pass 39). **See also**: `by-domain/tda.md`.

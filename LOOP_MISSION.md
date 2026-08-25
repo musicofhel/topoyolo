@@ -131,7 +131,7 @@ skill, dual-index filing, glossary/atlas updates, matrix regen via A4's tool.
     blocks in by-domain/by-structure index files** (em-dash headers evade the
     lint). Promote to per-paper files; extend lint to fail on the class.
     B2 passes promote-on-encounter until then.
-- **B2 [in_progress: batch-006 CLOSED 8/8 (pass 37) — gw-theory core: 01 Weitkamp 2006.12287, 02 Mémoli–Needham 2212.14123, 03 Lim–Mémoli 2201.09385, 04 Chambers–Meng 2507.01171, 05 Hohmeier et al 2606.10295, 06 Yachimura–Zou 2608.09265 annotated; 07 Beier et al 2112.11964 REJECTED (<2 machines, linearization tool); 08 Wollstadt et al ANNOTATED as 2203.10810. No unconsumed batches remain — awaiting batch-007 drop. See history below for batches 001–005.]** History: batch-001 21/21, batch-002 18/40 (22 HELD-by-orchestrator),
+- **B2 [in_progress: pass 39 — batch-002 HELD re-triage DONE: all 22 held candidates (19–40) triaged machines-first; 3 ANNOTATED (34 Kawamura–Majhi–Mitra 2601.01359 VR-shadow limits; 35 Wong–Vong PHGCN ICCV-2021 diagram loss; 36 de Silva–Carlsson 2004 witness complexes — filed tda.md + filtrations.md + composite_systems.md), 19 REJECTED (<2 machines; closest rejects: 25 bottleneck-degree reach hook, 27 poset info geometry). batch-006 closed pass 37; awaiting batch-007 drop. See history below for batches 001–006.]]** History: batch-001 21/21, batch-002 18/40 (22 HELD-by-orchestrator),
   **batch-003 28/28 FULLY CONSUMED (pass 23)** — (8 annotated, 13 rejected): pass-13 added
   candidate-18 → ying-2016, candidate-12 → liu-2025, candidate-03 → brusch-2023,
   candidate-19 → silva-2018; pass-13 rejections 02/06/07/09/10/11/15/16/17/20
