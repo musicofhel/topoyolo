@@ -1,23 +1,27 @@
 # research/INDEX.md — pass reports + task status (newest first)
 
 **Lint state:** check_structure.py exit 0; 1 warning = pre-existing baseline
-(2 author-year-prose crossrefs); `--check` 0 errors. Derived corpus: **134
-fully annotated papers** (+3 pass 41), **36 cells (6 machines × 6 domains)**,
+(2 author-year-prose crossrefs); `--check` 0 errors. Derived corpus: **137
+fully annotated papers** (+3 pass 42), **36 cells (6 machines × 6 domains)**,
 min cell 2, 28 cells ≥10. Domain-alias table landed in gen_stats.py (pass 27);
 ML→InfoTheo and OT→TDA mappings await Aaron's ratification.
 
 ## Reports
+- `2026-08-25-0808.md` — Pass 42: B2 — batch-007 null-surrogate slice 3/3 all
+  ANNOTATED: 07 Timmer nlin/0009032 (surrogate-null epistemics anchor);
+  08 Timmer chao-dyn/9807039 (power vs non-stationarity); 09 Palus
+  comp-gas/9507004 (multivariate redundancy nulls, joint-vs-marginal inside
+  the null machinery). Theiler wrong-pointer repair; README/docs drift (stale
+  at 131) patched. Counts to derived 137.
 - `2026-08-25-0803.md` — Pass 41: B2 — batch-007 **qec-mwpm group CLOSED 6/6**:
   04 Baireuther et al RNN decoder 1705.07855 (joint-vs-marginal as decoder
   advantage); 05 Hack et al BP-on-decoding-graph 2603.05381 (carrier-graph fix,
   ldpc-bp lineage); 06 Fowler et al 1202.5602 (O(n²) average-case anchor of
-  exact MWPM). Promote-on-encounter check vs RNN-decoder authors clean. Counts
-  to derived 134, deep cells 28.
+  exact MWPM). Promote-on-encounter check vs RNN-decoder authors clean.
 - `2026-08-25-0758.md` — Pass 40: B2 — batch-007 opened, qec-mwpm slice 3/12
   all ANNOTATED (01 Higgott–Gidney sparse blossom 2303.15933; 02 Pattison et
   al. soft info 2107.13589 — joint-vs-marginal gain in decoder form; 03
-  Higgott et al. belief-matching 2203.04948 + fragile boundaries). Counts to
-  derived 131; README line-5/line-9 count drift found and fixed.
+  Higgott et al. belief-matching 2203.04948 + fragile boundaries).
 - `2026-08-25-0752.md` — Pass 39: B2 — batch-002 HELD re-triage DONE: all
   22 held candidates (19–40) triaged machines-first; 3 ANNOTATED (2601.01359
   VR-shadow inverse limits; Wong–Vong PHGCN diagram loss; de Silva–Carlsson
@@ -43,11 +47,12 @@ ML→InfoTheo and OT→TDA mappings await Aaron's ratification.
 ## Task status (LOOP_MISSION.md ledger is canonical)
 - **A1–A6:** all [done].
 - **B1 ingestion contract:** [done] (6ebfcf2).
-- **B2 queue consumption:** [in_progress] — batch-007 open: qec-mwpm group
-  CLOSED 6/6 (passes 40–41); null-surrogate group candidates 07–12 untouched
-  (next default slice). Promote-on-encounter checks ran clean both passes.
-  Residual Wave-era catch-all pointer debt (~101, ≤5/pass sanctioned).
+- **B2 queue consumption:** [in_progress] — batch-007 open: qec-mwpm CLOSED
+  6/6 (passes 40–41); null-surrogate 3/6 done (pass 42: candidates 07–09);
+  candidates 10–12 remain (next default slice closes batch-007). Residual
+  Wave-era catch-all pointer debt (~100, ≤5/pass sanctioned).
 - **B3 atlas synthesis:** [in_progress] — sub-slices 1–4 done (passes 33, 34,
-  37, 38); queued hooks exhausted. Next option per orchestrator: a two-parameter
-  refinement hook under PARAMETERIZED_HOMOLOGY, may alternate with batch-007
-  slices at pass judgment.
+  37, 38); queued hooks exhausted. Open hook: null-surrogate triangle
+  (Theiler/Palus/Timmer) once batch-007 closes. Orchestrator alternative:
+  two-parameter refinement under PARAMETERIZED_HOMOLOGY; may alternate with
+  batch-007 slices at pass judgment. Batch-008 foraging in progress.
