@@ -11,7 +11,7 @@ Consume per papers/INGESTION.md (≤3 papers/pass; triage-reject with one senten
 
 ---
 
-## candidate-01 [channel-capacity] — UNCONSUMED
+## candidate-01 [channel-capacity] — ANNOTATED as 2205.08782 (pass 31)
 
 **Title:** Secure Coding via Gaussian Random Fields
 
@@ -25,7 +25,7 @@ Consume per papers/INGESTION.md (≤3 papers/pass; triage-reject with one senten
 Inverse probability problems whose generative models are given by strictly nonlinear Gaussian random fields show the all-or-nothing behavior: There exists a critical rate at which Bayesian inference exhibits a phase transition. Below this rate, the optimal Bayesian estimator recovers the data perfectly, and above it the recovered data becomes uncorrelated. This study uses the replica method from the theory of spin glasses to show that this critical rate is the channel capacity. This interesting finding has a particular application to the problem of secure transmission: A strictly nonlinear Gaussian random field along with random binning can be used to securely encode a confidential message in a wiretap channel. Our large-system characterization demonstrates that this secure coding scheme asymptotically achieves the secrecy capacity of the Gaussian wiretap channel.
 ```
 
-## candidate-02 [channel-capacity] — UNCONSUMED
+## candidate-02 [channel-capacity] — ANNOTATED as cond-mat-9908104 (pass 31)
 
 **Title:** Typical Performance of Gallager-type Error-Correcting Codes
 
@@ -67,7 +67,7 @@ Signal transduction, the information processing mechanism in biological cells, i
 We analyze the dynamics of entanglement entropy in a generic quantum many-body open system from the perspective of quantum information and error corrections. We introduce a random unitary circuit model with intermittent projective measurements, in which the degree of information scrambling by the unitary and the rate of projective measurements are independently controlled. This model displays two stable phases, characterized by the volume-law and area-law scaling entanglement entropy in steady states. The transition between the two phases is understood from the point of view of quantum error correction: the chaotic unitary evolution protects quantum information from projective measurements that act as errors. A phase transition occurs when the rate of errors exceeds a threshold that depends on the degree of information scrambling. We confirm these results using numerical simulations and obtain the phase diagram of our model. Our work shows that information scrambling plays a crucial role in understanding the dynamics of entanglement in an open quantum system and relates the entanglement phase transition to changes in quantum channel capacity.
 ```
 
-## candidate-05 [channel-capacity] — UNCONSUMED
+## candidate-05 [channel-capacity] — ANNOTATED as 2210.11547 (pass 31)
 
 **Title:** Coherence requirements for quantum communication from hybrid circuit dynamics
 
