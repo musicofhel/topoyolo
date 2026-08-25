@@ -434,3 +434,10 @@ Reverse-direction bridge: short observation histories (delay-vector side informa
 **Machines**: matching, stability (weak), parameterized homology (weak).
 Full annotation: `annotations/1907.08260.md` (B2 pass 24). Abstract-only provenance — depth-limited.
 **See also**: `by-structure/optimal_transport.md`, `annotations/2409.08768.md`
+
+### B2 batch-004: MIOFlow — OT back into dynamics (2026-08-25)
+
+**Huguet, Magruder, Tong, Fasina, Kuchroo, Wolf & Krishnaswamy (2022) — Manifold Interpolating Optimal-Transport Flows (MIOFlow)**: arXiv: 2206.14928. Neural-ODE flow realizing the dynamic-OT coupling between population snapshots; manifold geodesic ground cost; geodesic autoencoder learns the metric hosting the matching. Closes the batch-004 Dynamics×Matching group in the applied direction (03 TrajectoryNet rejected as the thinner wrapper).
+**Machines**: matching, stability (weak).
+Full annotation: `annotations/2206.14928.md` (B2 pass 25). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/optimal_transport.md`, `annotations/2409.08768.md`, `annotations/1907.08260.md`
