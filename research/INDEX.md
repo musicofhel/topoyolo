@@ -20,18 +20,21 @@ Derived truth: **78 fully annotated papers**.
 - **Phase A COMPLETE. Phase B UNLOCKED.**
 - B1 ingestion contract — **done 2026-08-24 (6ebfcf2)**. Duplication rule
   adopted by orchestrator: batch-003 exports title-grep annotations/ first.
-- B2 consume queue batches — **in_progress: slices 1–7 done.**
+- B2 consume queue batches — **in_progress: slices 1–8 done.**
   batch-001 FULLY CONSUMED 21/21 (8 annotated, 13 rejected). batch-002:
-  **12/40 consumed** — candidates 01–06 REJECTED (geometric-dl/equivariance
+  **15/40 consumed** — candidates 01–06 REJECTED (geometric-dl/equivariance
   wrappers), 07 & 09 REJECTED (duplicates of existing annotations),
-  **10 ANNOTATED → TPCC `annotations/2303.16716.md` (pass 15)**, pass 16
-  rejections: 08 (CL wrapper; separatrix tag misassigned), 11 (Cheeger
-  refinement duplicate of Jost & Zhang 2302.01069), 12 (cavity-as-tool);
-  28 queued. Next: candidate-13 (`atlas-general` tranche). Lint --check
-  0 errors.
+  **10 ANNOTATED → TPCC `annotations/2303.16716.md` (pass 15)**, passes
+  16–17 rejections: 08 (CL wrapper; separatrix tag misassigned),
+  11 (Cheeger refinement duplicate), 12 (cavity-as-tool), 13 (KMM Fano,
+  zero machines), 14 (Osher–Sethian level-set numerics <2 machines),
+  15 (Barandes stochastic-quantum: one machine only); 25 queued. Next:
+  candidate-16 (`atlas-general` tranche — weak start, see pass-17 report).
+  Lint --check 0 errors.
 - B3 atlas synthesis touch-ups — open (after ~15 new papers).
 
 ## Reports (newest first)
+- [2026-08-25-0258](2026-08-25-0258.md) — Pass 17 / B2 slice-8: three triage-rejections in atlas-general tranche open (13 KMM Fano zero machines, 14 Osher–Sethian numerics, 15 Barandes one-machine); batch-002 at 15/40; previews of 16–18 recorded for slice-9; orchestrator flagged on tranche quality.
 - [2026-08-25-0252](2026-08-25-0252.md) — Pass 16 / B2 slice-7: five triage-rejections (05/06 equivariance wrappers, 08 CL wrapper w/ misassigned separatrix tag, 11 Cheeger-refinement duplicate of 2302.01069, 12 cavity-as-tool); batch-002 at 12/40; all-rejection pass, counts stay 78.
 - [2026-08-25-0244](2026-08-25-0244.md) — Pass 15 / B2 slice-6: TPCC annotated (2303.16716); candidates 04/07/09 rejected (wrapper + two duplicates already in corpus); counts 77→78.
 - [2026-08-25-0235](2026-08-25-0235.md) — Pass 14 / B2 slice-5: batch-002 opened, candidates 01–03 rejected; 5 blahut-class wrong-pointers fixed; README/docs counts patched to 77; Dynamics×Matching still thin at 4.

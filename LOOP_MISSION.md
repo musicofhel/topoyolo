@@ -131,7 +131,7 @@ skill, dual-index filing, glossary/atlas updates, matrix regen via A4's tool.
     blocks in by-domain/by-structure index files** (em-dash headers evade the
     lint). Promote to per-paper files; extend lint to fail on the class.
     B2 passes promote-on-encounter until then.
-- **B2 [in_progress: slices 1–4 done (…, slice-4 = d701877+3e65164) —
+- **B2 [in_progress: slices 1–8 done —
   **batch-001 FULLY CONSUMED 21/21** (8 annotated, 13 rejected): pass-13 added
   candidate-18 → ying-2016, candidate-12 → liu-2025, candidate-03 → brusch-2023,
   candidate-19 → silva-2018; pass-13 rejections 02/06/07/09/10/11/15/16/17/20
@@ -141,12 +141,15 @@ skill, dual-index filing, glossary/atlas updates, matrix regen via A4's tool.
   wrapper), candidate-07 REJECTED (Mézard-Mora duplicate — already annotated
   as 0803.3061), candidate-09 REJECTED (Hodge-Aware CL duplicate, already in
   tda.md), candidate-10 ANNOTATED → TPCC `annotations/2303.16716.md`;
-  candidate-10 ANNOTATED → TPCC `annotations/2303.16716.md`; pass 16
-  (slice-7): candidates 05, 06 REJECTED (equivariance wrappers), candidate-08
-  REJECTED (CL wrapper — separatrix tag confirmed misassigned), candidate-11
-  REJECTED (Cheeger refinement duplicate of Jost & Zhang 2302.01069),
-  candidate-12 REJECTED (cavity-as-tool); batch-002 now 12/40 consumed,
-  28 queued. Next tranche: candidates 13+ [atlas-general].** Also pass 14: fixed 5 wrong-pointer
+  candidate-10 ANNOTATED → TPCC `annotations/2303.16716.md`; passes 16–17
+  (slices 7–8): candidates 05, 06 REJECTED (equivariance wrappers), 08
+  REJECTED (CL wrapper — separatrix tag confirmed misassigned), 11 REJECTED
+  (Cheeger refinement duplicate of Jost & Zhang 2302.01069), 12 REJECTED
+  (cavity-as-tool), 13 REJECTED (KMM Fano, zero machines), 14 REJECTED
+  (Osher–Sethian level-set numerics <2 machines), 15 REJECTED (Barandes
+  stochastic-quantum: one machine only); batch-002 now 15/40 consumed,
+  25 queued. Next tranche: candidates 16+ [atlas-general — weak start,
+  see pass-17 report].** Also pass 14: fixed 5 wrong-pointer
   crossrefs in by-structure/optimal_transport.md; counts now at derived 78.
   Lint --check 0 errors.]
   Consume queue batches.** Repeatable task — each pass takes ≤3
