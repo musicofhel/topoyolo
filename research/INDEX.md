@@ -1,9 +1,9 @@
 # topo-rosetta RW loop — INDEX
 
 **Branch:** `loop/atlas-structure-v1` (never pushed; Aaron reviews/merges)
-**Lint:** `python3 scripts/check_structure.py --check` → exit 0, **0 errors,
-19 warnings** (pre-existing gen_stats domain-alias notes). Derived truth: 70
-fully annotated papers, 19/30 cells ≥10, min cell 2.
+**Lint:** `python3 scripts/check_structure.py` → **0 errors, 0 warnings**
+(crossref debt cleared in pass 12). Derived truth: ~74 fully annotated papers,
+19/30 cells ≥10, min cell 2.
 
 ## Task status
 - A1 structure lint tool — **done 2026-08-24 (e6d03df)**
@@ -24,13 +24,15 @@ fully annotated papers, 19/30 cells ≥10, min cell 2.
   (queue format, ≤3/pass, triage-reject w/ one sentence); check_queue_hygiene()
   in lint, negative-tested. Note: rejection reason must sit on the line *under*
   the header (lint-enforced).
-- B2 consume queue batches — **in_progress**: slices 1–2 done (faf7f4f, fe9443d).
-  batch-001: candidate-21 promoted as 2002.00208; candidate-13 annotated as
-  2604.08539 (G²RPO 1D-OT advantage matching); candidates 01+14 triage-rejected.
-  **18 queued in batch-001; batch-002 (40 candidates) waiting.**
+- B2 consume queue batches — **in_progress**: slices 1–3 done (faf7f4f, fe9443d,
+  slice-3 = 01925ed+a7fb91c+bcaf6e3). batch-001: 21→08, 04, 05 promoted this pass
+  (title-grep first: 3 hidden prose annotations found and conserved); 13+14 rejected;
+  01 rejected. **13 queued in batch-001 (all need fresh annotations); batch-002
+  (40) waiting. Lint now 0 errors 0 warnings (crossref debt cleared).**
 - B3 atlas synthesis touch-ups — open (after ~15 new papers).
 
 ## Reports (newest first)
+- [2026-08-25-0205](2026-08-25-0205.md) — Pass 12 / B2 slice-3: candidates 08, 04, 05 promoted from hidden prose (Fasoli pcbi.1013995, GC-STCL wang-2024, Simpson simpson-2013); content conserved; lint to 0 warnings; 13 left in batch-001, all fresh-annotation work.
 - [2026-08-25-0007](2026-08-25-0007.md) — Pass 11 / B2 slice-2: candidate-13 annotated (2604.08539, Matching+Stability), 01+14 rejected; stats 70 papers; neuroscience-tag mis-filtering noted to orchestrator.
 - [2026-08-24-2358](2026-08-24-2358.md) — Pass 10 / B1 DONE + B2 slice-1: INGESTION.md + queue-hygiene lint; candidate-21 = promotion of existing prose annotation (2002.00208); 51-block prose-annotation debt quantified.
 - [2026-08-24-2353](2026-08-24-2353.md) — Pass 9 / A6 DONE: SEPARATRIX PR #1 review; accept-directionally with three gates; gen_stats 7-column follow-up flagged.

@@ -131,9 +131,11 @@ skill, dual-index filing, glossary/atlas updates, matrix regen via A4's tool.
     blocks in by-domain/by-structure index files** (em-dash headers evade the
     lint). Promote to per-paper files; extend lint to fail on the class.
     B2 passes promote-on-encounter until then.
-- **B2 [in_progress: slices 1–2 done (faf7f4f, fe9443d) — batch-001: candidate-21
-  promoted as 2002.00208, candidate-13 annotated as 2604.08539 (G²RPO 1D-OT),
-  candidates 01+14 rejected; 18 queued in batch-001, batch-002 (40) waiting]
+- **B2 [in_progress: slices 1–3 done (faf7f4f, fe9443d, 01925ed+a7fb91c+bcaf6e3) —
+  batch-001: candidate-21 → 2002.00208, candidate-13 → 2604.08539 (G²RPO 1D-OT),
+  pass-12 promotions candidate-08 → pcbi.1013995, candidate-04 → wang-2024,
+  candidate-05 → simpson-2013; candidates 01+14 rejected. 13 queued in batch-001,
+  batch-002 (40) waiting. Lint 0 errors 0 warnings.]
   Consume queue batches.** Repeatable task — each pass takes ≤3
   papers from the oldest unconsumed batch. Prioritize (from Wave-10 state):
   neuroscience cells (weakest), Matching×InfoTheory, and any paper bridging
