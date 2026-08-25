@@ -18,6 +18,10 @@ entries in ANTISYNONYMS.md (convention set pass 57; idiom provisionally
 ratified by Aaron).
 
 ## Reports
+- `2026-08-25-0947.md` — Pass 59: B3 sub-slice 9 — ANTISYNONYMS "GIT
+  semistability ≠ persistence stability" (2605.11178 vs math/0604068 lineage;
+  object/quantifier/failure-mode axes, S-equivalence, equal-stalk stability
+  wall as incarnation-3-native null). Lint --check 0 errors.
 - `2026-08-25-0940.md` — Pass 58: **batch-011 CLOSED 8/9 + 1 triage-reject** —
   soc 08 = 1807.07213 Moosavi et al. (oscillation-criticality coexistence;
   criticality-as-resonance), soc 09 = 1209.3271 Girardi-Schappo et al.
@@ -49,8 +53,7 @@ ratified by Aaron).
 - **B2 queue consumption:** batch-011 CLOSED (pass 58). IDLE until batch-012
   lands in papers/queue/. Residual Wave-era catch-all pointer debt (~100,
   ≤5/pass).
-- **B3 atlas synthesis:** [in_progress] — sub-slices 1–8 done. Next hook:
-  ANTISYNONYMS "GIT semistability ≠ persistence stability" (2605.11178 × the
-  persistence-stability column). Other open hooks: possible ANTISYNONYMS from
-  1910.05979 (positivity+identity lattice property); dynamical_systems.md atlas
-  re-read post-batch-008.
+- **B3 atlas synthesis:** [in_progress] — sub-slices 1–9 done (9 = pass 59,
+  GIT-semistability antisynonym). Open hooks: role-map extension question
+  (Aaron-gated); possible ANTISYNONYMS from 1910.05979 (positivity+identity
+  lattice property); dynamical_systems.md atlas re-read post-batch-008.
