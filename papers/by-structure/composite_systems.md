@@ -54,6 +54,9 @@ Conditional MI as KL divergence between conditional joint and a learned conditio
 ### Rindt, Sejdinovic, Steinsaltz (2020) — dHSIC Permutation Consistency
 Permutation test = null surrogate that severs dependence links while preserving marginals; consistency proof is separation of the true excess from the surrogate's vanishing one. Also joint-vs-marginal. Full annotation: `annotations/2005.06573.md` (arXiv: 2005.06573).
 
+### Palus (1995) — Multivariate Surrogate Nonlinearity Test
+Early ancestor of the above: multivariate surrogate null severs cross-variable joint structure while preserving univariate marginals; linear-redundancy controls separate imperfect-surrogate artifacts (visible marginally) from genuine joint excess. Also null hypothesis. Full annotation: `annotations/comp-gas-9507004.md` (arXiv: comp-gas/9507004).
+
 ### Kolchinsky (2024) — PID Redundancy as Information Bottleneck
 Redundancy reformulated as IB compression-prediction tradeoff. "RB curve" = parameterized family of decompositions indexed by compression β. Bridges Joint (PID) and Param (IB) machines formally. Efficient iterative algorithm. Full annotation: `annotations/2405.07665.md` (arXiv: 2405.07665).
 

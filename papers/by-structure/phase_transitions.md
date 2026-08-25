@@ -118,7 +118,22 @@ Null hypothesis: Fixed-point attractor, limit cycle, or conventional strange att
 ### Theiler, Eubank, Longtin, Galdrikian, Farmer (1992) --- Testing for nonlinearity in time series: the method of surrogate data
 Null hypothesis: THE foundational surrogate data paper. Three algorithms define three null hypotheses of increasing strength: (0) random shuffle destroys all temporal correlations, (1) phase randomization preserves power spectrum but destroys phase relationships (null: linear Gaussian process), (2) AAFT preserves power spectrum + amplitude distribution (null: static nonlinear transformation of linear Gaussian process). Each surrogate type is a precise choice of what to destroy and what to preserve. Test statistic compared to surrogate ensemble by rank ordering.
 Stability: Preserved quantities (power spectrum under Algorithm 1, amplitude distribution under Algorithm 2) are stability invariants -- they survive the surrogate transformation exactly by construction. The rank-ordering significance test is nonparametric (no distributional assumptions on the test statistic).
-Full annotation: `annotations/10.1017-S0140525X01000097.md` (DOI: 10.1016/0167-2789(92)90102-S).
+Full annotation: `annotations/10.1016-0167-2789(92)90102-S.md` (DOI: 10.1016/0167-2789(92)90102-S).
+
+### Timmer (2000) --- What can be inferred from surrogate data testing?
+Null hypothesis: The null machine's epistemics at maximum sharpness — a surrogate rejection licenses only the negation of its constructed null ("not linear Gaussian stationary"), never confirmation of the favored nonlinear alternative. Every downstream null-surrogate fix responds to this falsification/confirmation gap.
+Stability: The inferred conclusion is not stable under moving the truth within the null's complement — a non-stationary linear process rejects the same null.
+Full annotation: `annotations/nlin-0009032.md` (arXiv: nlin/0009032).
+
+### Timmer (1998) --- The power of surrogate data testing with respect to non-stationarity
+Null hypothesis: Quantifies the wrong-alternative firing rate — power of the surrogate test against linear *non-stationary* processes, which reject the stationary null as readily as nonlinear ones.
+Stability: Power analysis = stability study of the test verdict under perturbing the true process away from the null along the stationarity direction while keeping linearity.
+Full annotation: `annotations/chao-dyn-9807039.md` (arXiv: chao-dyn/9807039).
+
+### Palus (1995) --- Detecting nonlinearity in multivariate time series
+Null hypothesis: Surrogate null extended to multivariate linear stochastic processes — destroy cross-variable dependence, preserve univariate statistics.
+Joint-vs-marginal: Test statistic separates general redundancy (joint dependence) from linear redundancy (marginal/Gaussian-level), so spurious rejections from imperfect surrogates are caught at the linear level before being read as nonlinearity. An early joint-vs-marginal protocol inside the null machinery, predating the permutation-consistency lineage (2005.06573).
+Full annotation: `annotations/comp-gas-9507004.md` (arXiv: comp-gas/9507004).
 
 ## Reinforcement Learning
 

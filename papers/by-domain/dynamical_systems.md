@@ -81,6 +81,61 @@ Full annotation: `annotations/10.1016-0167-2789(92)90102-S.md` (DOI: 10.1016/016
 
 ---
 
+## Timmer (2000)
+**"What can be inferred from surrogate data testing?"**
+arXiv: nlin/0009032
+
+**Domain(s)**: Dynamical systems
+
+**Abstract machines instantiated**:
+- **Null hypothesis**: The null machine's epistemics at maximum sharpness. A surrogate rejection licenses exactly the negation of the constructed null and nothing more; using it to "confirm" a specific nonlinear inference conflates rejecting one null with verifying a favored alternative — an inferential step the machinery never performed.
+- **Stability**: The conclusion "nonlinear" is not stable under moving the truth within the null's complement: a non-stationary linear process rejects the same null identically. Only the rejected-null boundary, not the inferred alternative, is robust.
+
+**What is genuinely new**: The one-page sharpening of what surrogate rejection entails for the whole post-Theiler literature; methodological anchor that Palus (1995) and Timmer (1998) respond to from either side.
+
+**Connections the authors acknowledge**: Surrogate data testing as practiced in nonlinear time series analysis. Abstract-only provenance — depth-limited.
+
+**See also**: `by-structure/phase_transitions.md`
+
+---
+
+## Timmer (1998)
+**"The power of surrogate data testing with respect to non-stationarity"**
+arXiv: chao-dyn/9807039
+
+**Domain(s)**: Dynamical systems
+
+**Abstract machines instantiated**:
+- **Null hypothesis**: Because the tested null is "linear, Gaussian, stationary", a positive outcome can come from a linear non-stationary process as readily as a nonlinear one; the paper computes the test's power against non-stationarity specifically.
+- **Stability**: Power analysis = stability study of the test verdict under perturbing the truth away from the null along the stationarity direction while keeping linearity; the reject boundary is crossed by purely linear drifts.
+
+**What is genuinely new**: Turning the generic caveat into a quantitative power curve, making concrete the Timmer 2000 epistemic critique.
+
+**Connections the authors acknowledge**: Theiler et al. (1992) framework. Abstract-only provenance — depth-limited.
+
+**See also**: `by-structure/phase_transitions.md`
+
+---
+
+## Palus (1995)
+**"Detecting nonlinearity in multivariate time series"**
+arXiv: comp-gas/9507004
+
+**Domain(s)**: Dynamical systems
+
+**Abstract machines instantiated**:
+- **Null hypothesis**: Multivariate extension of the surrogate null — destroy cross-variable dependence while preserving each variable's univariate statistics.
+- **Joint-vs-marginal excess**: Test statistic separates general redundancy (joint dependence) from linear redundancy (marginal/Gaussian-level); spurious rejections from imperfect surrogates surface at the linear level before being read as nonlinearity — joint-vs-marginal bookkeeping embedded in the null machinery itself.
+- **Stability**: Linear-redundancy controls stabilize the verdict against a known artifact of imperfect null construction.
+
+**What is genuinely new**: Multivariate surrogate nulls with redundancy-order bookkeeping, demonstrated on coupled synthetic systems plus meteorological and physiological records; an early ancestor of the permutation-consistency null protocol (2005.06573).
+
+**Connections the authors acknowledge**: Univariate surrogate testing (Theiler et al. 1992); information-theoretic redundancy measures. Abstract-only provenance — depth-limited.
+
+**See also**: `by-structure/phase_transitions.md`, `by-structure/composite_systems.md`
+
+---
+
 ## Takens (1981)
 **"Detecting strange attractors in turbulence"**
 Lecture Notes in Mathematics, vol. 898, Springer

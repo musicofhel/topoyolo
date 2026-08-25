@@ -96,7 +96,7 @@ The usual belief propagation (BP) decoders are, in general, exchanging local inf
 Topological quantum error correction codes have high thresholds and are well suited to physical implementation. The minimum weight perfect matching algorithm can be used to efficiently handle errors in such codes. We perform a timing analysis of our current implementation of the minimum weight perfect matching algorithm. Our implementation performs the classical processing associated with an nxn lattice of qubits realizing a square surface code storing a single logical qubit of information in a fault-tolerant manner. We empirically demonstrate that our implementation requires only O(n^2) average time per round of error correction for code distances ranging from 4 to 512 and a range of depolarizing error rates. We also describe tests we have performed to verify that it always obtains a true minimum weight perfect matching.
 ```
 
-## candidate-07 [null-surrogate] — UNCONSUMED
+## candidate-07 [null-surrogate] — ANNOTATED as nlin-0009032 (pass 42)
 
 **Title:** What can be inferred from surrogate data testing?
 
@@ -110,7 +110,7 @@ Topological quantum error correction codes have high thresholds and are well sui
 Surrogate data testing for linearity is frequently applied to confirm the results of nonlinear time series analysis. We argue that this, in general, is not possible.
 ```
 
-## candidate-08 [null-surrogate] — UNCONSUMED
+## candidate-08 [null-surrogate] — ANNOTATED as chao-dyn-9807039 (pass 42)
 
 **Title:** The power of surrogate data testing with respect to non-stationarity
 
@@ -124,7 +124,7 @@ Surrogate data testing for linearity is frequently applied to confirm the result
 Surrogate data testing is a method frequently applied to evaluate the results of nonlinear time series analysis. Since the null hypothesis tested against is a linear, gaussian, stationary stochastic process a positive outcome may not only result from an underlying nonlinear or even chaotic system, but also from e.g. a non-stationary linear one. We investigate the power of the test against non-stationarity.
 ```
 
-## candidate-09 [null-surrogate] — UNCONSUMED
+## candidate-09 [null-surrogate] — ANNOTATED as comp-gas-9507004 (pass 42)
 
 **Title:** Detecting nonlinearity in multivariate time series
 
