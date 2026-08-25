@@ -218,3 +218,6 @@ arXiv: 2008.00711. Directed filtration from asymmetric dissimilarity function. S
 
 ### Simpson, Bowman, Laurienti (2013) — Analyzing Complex Functional Brain Networks
 Correlation-threshold selection in functional brain networks framed as a filtration-parameter problem awaiting persistent homology. Full annotation: `annotations/simpson-2013.md`.
+
+### Chambers & Meng (2025) — Stable GW Distance for Reeb Graph Comparison using Persistence Images
+arXiv: 2507.01171. Extended persistence diagrams of the scalar field, vectorized to persistence images, define the probability weighting of a Reeb-graph Gromov-Wasserstein distance — the filtration's birth-death summary consumed as the measure of a matching problem; scalar-field-perturbation stability proven. Full annotation: `annotations/2507.01171.md` (B2 pass 36). **See also**: `by-domain/tda.md`, `by-structure/optimal_transport.md`.

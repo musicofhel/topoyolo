@@ -53,7 +53,7 @@ Inspired by the Kantorovich formulation of optimal transport distance between pr
 We generalize the classical Multidimensional Scaling procedure to the setting of general metric measure spaces. We develop a related spectral theory for the generalized cMDS operator, which provides a more natural and rigorous mathematical background for cMDS. Also, we show that the sum of all negative eigenvalues of the cMDS operator is a new invariant measuring non-flatness of a metric measure space. Furthermore, the cMDS output of several non-finite exemplar metric measures spaces, in particular the cMDS for spheres S^{d-1} and subsets of Euclidean space, are studied. Finally, we prove the stability of the generalized cMDS process with respect to the Gromov-Wasserstein distance.
 ```
 
-## candidate-04 [gw-theory] — UNCONSUMED
+## candidate-04 [gw-theory] — ANNOTATED as 2507.01171 (pass 36)
 
 **Title:** A Stable and Theoretically Grounded Gromov-Wasserstein Distance for Reeb Graph Comparison using Persistence Images
 
@@ -67,7 +67,7 @@ We generalize the classical Multidimensional Scaling procedure to the setting of
 Reeb graphs are a fundamental structure for analyzing the topological and geometric properties of scalar fields. Comparing Reeb graphs is crucial for advancing research in this domain, yet existing metrics are often computationally prohibitive or fail to capture essential topological features effectively. In this paper, we explore the application of the Gromov-Wasserstein distance, a versatile metric for comparing metric measure spaces, to Reeb graphs. We propose a framework integrating a symmetric variant of the Reeb radius for robust geometric comparison, and a novel probabilistic weighting scheme based on Persistence Images derived from extended persistence diagrams to effectively incorporate topological significance. A key contribution of this work is the rigorous theoretical proof of the stability of our proposed Reeb Gromov-Wasserstein distance with respect to perturbations in the underlying scalar fields. This ensures that small changes in the input data lead to small changes in the computed distance between Reeb graphs, a critical property for reliable analysis. We demonstrate the advantages of our approach, including its enhanced ability to capture topological features and its proven stability, through comparisons with other alternatives on several datasets, showcasing its practical utility and theoretical soundness.
 ```
 
-## candidate-05 [gw-theory] — UNCONSUMED
+## candidate-05 [gw-theory] — ANNOTATED as 2606.10295 (pass 36)
 
 **Title:** k-Nearest Neighbors in Gromov--Wasserstein Space
 
@@ -81,7 +81,7 @@ Reeb graphs are a fundamental structure for analyzing the topological and geomet
 The Gromov--Wasserstein (GW) distance provides a framework for comparing metric measure spaces, regardless of their underlying structure or geometry. For network-based data, it enables direct comparisons of graphs with different numbers of nodes, without requiring an embedding or other abstraction. Furthermore, through a variant of GW known as fused Gromov--Wasserstein (fGW), it is also possible to incorporate node features in addition to graph structure. In this work, we implement k-nearest neighbors (k-NN) classification using the GW and fGW distances. We prove the universal consistency of the GW-k-NN classifier on the space of equivalence classes of metric measure spaces with finite support and uniform probability measure. By viewing graphs as finitely supported metric measure spaces equipped with the pairwise distance metric and a uniform probability measure on the nodes, we obtain universal consistency of GW-k-NN for the space of graphs. Likewise for fGW-k-NN, we prove universal consistency on the space of weak isomorphism classes of structured objects consisting of metric measure spaces with finite support and uniform probability measure and feature maps into Euclidean space, thus establishing universal consistency on the space of node-attributed graphs. Our numerical experiments show that GW-k-NN and fGW-k-NN consistently perform well across multiple graph datasets, suggesting that metric classifiers such as k-NN work well in the GW framework.
 ```
 
-## candidate-06 [gw-theory] — UNCONSUMED
+## candidate-06 [gw-theory] — ANNOTATED as 2608.09265 (pass 36)
 
 **Title:** Entropic Partial Optimal Transport and Partial Gromov--Wasserstein Distance between Gaussian Mixtures
 
