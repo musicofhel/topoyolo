@@ -263,6 +263,7 @@ arXiv: 1307.2493
 
 - **Tarnowski et al. (2019)** — "Measuring topology from dynamics: Chern number from linking number." Static topological invariant extracted from post-quench dynamics. Linking number = Chern number. Full annotation: `second_pass.md` (SP-12). Machines: chain complex, parameterized homology, null hypothesis, stability. **Also QEC.**
 
+- **Caruso, Clemente, Rillig & Garlaschelli (2021)** — "Fluctuating ecological networks." Maximum-entropy ensembles with soft (fluctuating) constraints as honest nulls for ecological network pattern detection; hard-vs-soft constraints = whether marginals are pinned exactly or only in expectation. Full annotation: `annotations/10.1111-2041-210X.13985.md`. Machines: null hypothesis, joint-vs-marginal.
 - **Bandt (2020)** — "Order patterns, their variation and change points." Permutation entropy with lag as filtration parameter. Brownian motion as null. Up-down balance as joint excess. Full annotation: `annotations/10.1007-s00362-020-01171-7.md`. Machines: null hypothesis, parameterized homology, joint-vs-marginal.
 
 - **Bennett, Cucuringu, Reinert (2022)** — "Lead-lag detection and network clustering." Hermitian spectral clustering for directed networks. Lead-lag as directed matching. Full annotation: `second_pass.md` (SP-14). Machines: matching, chain complex (weak), null hypothesis, joint-vs-marginal.

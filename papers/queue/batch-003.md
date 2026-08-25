@@ -2097,7 +2097,7 @@ statistics has the 1 / n accuracy coming from binomial distribution. In Bienaym�
 case it is even
 ```
 
-## candidate-26 [null-surrogate] — UNCONSUMED
+## candidate-26 [null-surrogate] — ANNOTATED as 10.1111-2041-210X.13985 (new full-depth annotation; Caruso et al., max-ent soft-constraint nulls for ecological networks; machines null hypothesis + joint-vs-marginal — hard-vs-soft constraints read as marginals pinned exactly vs in expectation); filed in dynamical_systems + composite_systems indices, pass 23)
 
 **Title:** Fluctuating ecological networks: A synthesis of maximum‐entropy approaches for pattern detection and process inference
 

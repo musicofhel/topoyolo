@@ -340,5 +340,8 @@ Full annotation: `annotations/1703.00810.md` (Wave 7).
 ### Baudot, Tapia, Bennequin & Goaillard (2019) — Topological Information Data Analysis
 arXiv: 1907.04242. I_k measures k-th-order excess structure in joint absent from lower-order marginals. I_k = 0 for all k ≥ 2 iff independence (necessary and sufficient). Negative I_k = synergy = Borromean-link structure (pairwise independent, collectively dependent). Total correlation G_k is weaker — fails to discriminate subtypes. Full annotation: `annotations/1703.00810.md` (Wave 10a).
 
+### Caruso, Clemente, Rillig & Garlaschelli (2021) — Fluctuating Ecological Networks
+Max-ent null models with soft constraints: marginals enforced in expectation rather than exactly, so detected patterns measure genuine joint excess. Also null hypothesis. Full annotation: `annotations/10.1111-2041-210X.13985.md` (DOI: 10.1111/2041-210X.13985).
+
 ### Chaudhuri et al. (2019) — Head direction ring attractor
 DOI: 10.1038/s41593-019-0460-x. Ring (S^1) manifold is a population-level phenomenon — individual neurons show noisy tuning curves. The topology emerges only from joint activity, not from any single neuron. Pure joint-vs-marginal excess. Full annotation: `annotations/1703.00810.md` (Wave 10a).
