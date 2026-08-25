@@ -1,15 +1,17 @@
 # research/INDEX.md — pass reports + task status (newest first)
 
 **Lint state:** check_structure.py exit 0; 1 warning = pre-existing baseline
-(2 author-year-prose crossrefs); `--check` 0 errors. Derived corpus: **97 fully
-annotated papers**, 30 cells, min cell 2, 22 cells ≥10. README + docs/index.html
-re-patched to derived count this pass (were stale at 92). **Provisional domain:
-`by-domain/statistical_physics.md`** — gen_stats grid still "6 machines × 5
-domains" with 44 unrecognized-domain notes incl. one paper literally declaring
-"statistical physics"; pass 26 recommends the alias/6th-column follow-up BEFORE
-Aaron confirms the domain (bundleable with A6's possible 7th machine column).
+(2 author-year-prose crossrefs); `--check` 0 errors, zero gen_stats notes.
+Derived corpus: **99 fully annotated papers**, **36 cells (6 machines × 6
+domains — statistical_physics is now the 6th grid column)**, min cell 2,
+23 cells ≥10. Domain-alias table landed in gen_stats.py (pass 27); ML→InfoTheo
+and OT→TDA mappings await Aaron's ratification.
 
 ## Reports
+- `2026-08-25-0636.md` — Pass 27: gen_stats grid+alias follow-up — StatPhys as
+  6th domain column; full alias + qualifier table (28 warnings → 0); parser
+  fixes (short Joint-vs-marginal label; missing Domain line in 2404.17951);
+  counts to derived 99, 23/36 deep; README/docs/matrix repointed.
 - `2026-08-25-0630.md` — Pass 26: B2 slice-25, **stoch-thermo group CLOSED 4/4**
   — 06 Ito annotated (2209.00527, info geometry ↔ OT via excess EP), 08
   Barato–Seifert annotated (1408.1224, information reservoirs), 09
@@ -37,4 +39,6 @@ Aaron confirms the domain (bundleable with A6's possible 7th machine column).
   (22 HELD-by-orchestrator), batch-003 28/28 CLOSED,
   **batch-004 9/17 consumed (pass 26)**: dyn-matching 4/4 DONE; stoch-thermo
   4/4 DONE; rate-distortion (10–13) and ldpc-bp (14–17) untouched.
+  Pass 27 did the orchestrator-directed gen_stats grid/alias follow-up
+  (StatPhys 6th column, alias table, counts → derived 99).
 - **B3 atlas synthesis:** [open] — trigger ~15 new papers since Wave-10 baseline; currently +28 new annotations. Candidate first target: thermodynamic-instantiation subsections on optimal_transport.md / composite_systems.md (the Ito-lineage cluster).
