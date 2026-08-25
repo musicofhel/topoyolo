@@ -1,12 +1,17 @@
 # research/INDEX.md — pass reports + task status (newest first)
 
 **Lint state:** check_structure.py exit 0; 1 warning = pre-existing baseline
-(2 author-year-prose crossrefs); `--check` 0 errors. Derived corpus: **128
-fully annotated papers** (+3 pass 39), **36 cells (6 machines × 6 domains)**,
-min cell 2, 27 cells ≥10. Domain-alias table landed in gen_stats.py (pass 27);
+(2 author-year-prose crossrefs); `--check` 0 errors. Derived corpus: **131
+fully annotated papers** (+3 pass 40), **36 cells (6 machines × 6 domains)**,
+min cell 2, 28 cells ≥10. Domain-alias table landed in gen_stats.py (pass 27);
 ML→InfoTheo and OT→TDA mappings await Aaron's ratification.
 
 ## Reports
+- `2026-08-25-0758.md` — Pass 40: B2 — batch-007 opened, qec-mwpm slice 3/12
+  all ANNOTATED (01 Higgott–Gidney sparse blossom 2303.15933; 02 Pattison et
+  al. soft info 2107.13589 — joint-vs-marginal gain in decoder form; 03
+  Higgott et al. belief-matching 2203.04948 + fragile boundaries). Counts to
+  derived 131; README line-5/line-9 count drift found and fixed.
 - `2026-08-25-0752.md` — Pass 39: B2 — batch-002 HELD re-triage DONE: all
   22 held candidates (19–40) triaged machines-first; 3 ANNOTATED (2601.01359
   VR-shadow inverse limits; Wong–Vong PHGCN diagram loss; de Silva–Carlsson
@@ -40,15 +45,12 @@ ML→InfoTheo and OT→TDA mappings await Aaron's ratification.
 ## Task status (LOOP_MISSION.md ledger is canonical)
 - **A1–A6:** all [done].
 - **B1 ingestion contract:** [done] (6ebfcf2).
-- **B2 queue consumption:** [in_progress] — batches 001–006 consumed; batch-002's
-  22 HELD candidates re-triaged machines-first in pass 39 (3 annotated, 19
-  rejected). No unconsumed queue batches remain — awaiting batch-007 drop
-  (forage requested by orchestrator, running on their side). Residual
-  Wave-era catch-all pointer debt (~101, ≤5/pass sanctioned).
+- **B2 queue consumption:** [in_progress] — batch-007 open: qec-mwpm group 3/12
+  consumed (pass 40), null-surrogate group 07–12 untouched. Orchestrator notes
+  Wave-era prose in qec.md for some MWPM entries — promote-on-encounter check
+  re-runs per slice (clean for 01–03). Residual Wave-era catch-all pointer
+  debt (~101, ≤5/pass sanctioned).
 - **B3 atlas synthesis:** [in_progress] — sub-slices 1–4 done (passes 33, 34,
-  37, 38): ANTISYNONYMS duality entry; thermodynamic-instantiation sections on
-  optimal_transport.md + composite_systems.md; MATCHING.md cross-machine roles
-  + ldpc-bp ancestor lineage; optimal_transport.md Monge–Kantorovich internal
-  split. Queued hooks exhausted — next options: a B3 synthesis section over the
-  three new TDA-foundations annotations (pass 39), or batch-007 consumption
-  when it drops.
+  37, 38); queued hooks exhausted. Next option per orchestrator: a two-parameter
+  refinement hook under PARAMETERIZED_HOMOLOGY, to alternate with batch-007
+  slices at pass judgment.
