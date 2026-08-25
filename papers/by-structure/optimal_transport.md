@@ -169,3 +169,16 @@ Exact monotone assignment with zero-error pruning inside the DP grid; lower-boun
 **Ito (2022) — Geometric Thermodynamics for the Fokker-Planck Equation**: arXiv: 2209.00527. Information geometry and optimal transport unified through the excess entropy production rate: gradient flow ↔ information geometry on probability-density space, OT velocity field ↔ information geometry on path-probability space; thermodynamic trade-offs and minimum-cost optimal protocols fall out of the shared geometry. Machines: matching (core), joint-vs-marginal (weak). Full annotation: `annotations/2209.00527.md` (B2 pass 26). Abstract-only provenance — depth-limited. **See also**: `by-domain/statistical_physics.md`.
 
 **Gulen & McCleary (2022) — Galois Connections in Persistent Homology**: arXiv: 2201.06650. Barcode matchings and interleavings unified via Galois connections; Rota's theorem gives an easier proof of bottleneck stability — the matching machine revealed as order-theoretically dual to the perturbation relation in the PH setting. Machines: matching, stability, parameterized homology. Full annotation: `annotations/2201.06650.md` (B2 pass 32). Abstract-only provenance — depth-limited. **See also**: `by-domain/tda.md`, `annotations/1205.3669.md`.
+
+---
+
+## B3 synthesis: thermodynamic instantiation of the matching machine (2026-08-25)
+
+Batch-004's stoch-thermo group showed the matching machine acquiring a *physical* incarnation: the OT cost is not merely analogous to dissipation, it IS dissipation under specified dynamics.
+
+- **Nakazato & Ito (2021)** (`annotations/2103.00503.md`): for overdamped Langevin dynamics, entropy production ≥ L²-Wasserstein path length of the density path. The Kantorovich cost between successive densities is bounded below by heat dissipated — speed limits and optimal-protocol problems become optimal-matching problems.
+- **Ito (2022)** (`annotations/2209.00527.md`): the unification runs deeper — excess entropy production rate is precisely the coordinate that makes information geometry (density space) and optimal transport (path-probability space) one geometry. Minimum-dissipation protocols = geodesics.
+
+Two cautions sharpen the claim (see also the ANTISYNONYMS entry "Matching metric ≠ stability guarantee" in this corpus): (1) the equality direction is dynamics-specific — Nakazato–Ito's bound uses the L²/Wasserstein cost *because* the Fokker–Planck current supplies it; a bare matching metric on arbitrary measures carries no thermodynamic reading (the TDA isometry theorem `annotations/2506.02999.md`, by contrast, makes matching=stability exact with no physics at all). (2) The thermodynamic instantiation prices the *coupling*, while the joint-vs-marginal machine prices the *excess* — see the composite-systems side in `by-structure/composite_systems.md`.
+
+**See also**: `by-domain/statistical_physics.md`, `by-structure/composite_systems.md`.

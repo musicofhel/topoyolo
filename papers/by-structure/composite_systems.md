@@ -351,3 +351,19 @@ DOI: 10.1038/s41593-019-0460-x. Ring (S^1) manifold is a population-level phenom
 **Barato & Seifert (2014) — Stochastic Thermodynamics with Information Reservoirs**: arXiv: 1408.1224. Generalized second law for a system coupled to a bit-sequence information reservoir: the joint ledger (system + reservoir) restores the inequality that the marginal system ledger violates — work extraction from a single heat bath via informational fuel; fluctuation theorem + linear response for information-processing machines. Machines: joint-vs-marginal (core), null hypothesis (weak). Full annotation: `annotations/1408.1224.md` (B2 pass 26). Abstract-only provenance — depth-limited. **See also**: `by-domain/statistical_physics.md`.
 
 **Sekizawa, Ito & Oizumi (2023) — Decomposing Thermodynamic Dissipation of Linear Langevin Systems via Oscillatory Modes**: arXiv: 2312.03489. Housekeeping entropy production decomposes into independent positive mode-attributable contributions (per element under diagonal noise); applied to monkey ECoG awake vs anesthesia — band-resolved dissipation profiles as a thermodynamic reading of neural oscillation. Second empirical Neuroscience↔StatPhys bridge in batch-004. Machines: joint-vs-marginal (instrumental), filtration/parameterization (weak). Full annotation: `annotations/2312.03489.md` (B2 pass 26). Abstract-only provenance — depth-limited. **See also**: `by-domain/statistical_physics.md`, `by-domain/neuroscience.md`.
+
+---
+
+## B3 synthesis: thermodynamic instantiation of the joint-vs-marginal machine (2026-08-25)
+
+The stoch-thermo group gives the composite-systems machine its physical unit of account: the joint-vs-marginal excess, elsewhere measured in nats or bottleneck distance, here measured in **dissipated work** — which makes it falsifiable by calorimetry.
+
+Three gradations:
+
+1. **Ledger restoration** — Barato & Seifert (`annotations/1408.1224.md`): the marginal (system-only) second law fails; adjoining the information reservoir restores it. Joint-vs-marginal as bookkeeping correction, with extractable work as the exchange rate between the two ledgers.
+2. **Excess as interaction** — Ito, Oizumi & Amari (`annotations/1810.09545.md`): when partial entropy productions fail to add up, the violation itself IS stochastic interaction (IIT's Φ given a thermodynamic body). The excess is not corrected away — it is the quantity of interest.
+3. **Excess decomposed** — Sekizawa, Ito & Oizumi (`annotations/2312.03489.md`): for linear Langevin systems the housekeeping dissipation splits into independent positive mode-attributable parts, so the joint ledger can be read per oscillatory channel — the empirical handle behind the awake-vs-anesthesia result.
+
+Complementarity with the matching side: there the OT cost equals dissipation along a density path (`by-structure/optimal_transport.md`, B3 synthesis section); here the *non-additivity* of dissipation across subsystems is the signal. Matching instantiates thermodynamics through equality; joint-vs-marginal through inequality.
+
+**See also**: `by-domain/statistical_physics.md`, `by-structure/optimal_transport.md`.
