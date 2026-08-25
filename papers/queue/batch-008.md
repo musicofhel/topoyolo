@@ -98,7 +98,7 @@ Reservoir computers are powerful tools for chaotic time series prediction. They 
 We show that recurrent quantum reservoir computers (QRCs) and their recurrence-free architectures (RF-QRCs) are robust tools for learning and forecasting chaotic dynamics from time-series data. First, we formulate and interpret quantum reservoir computers as coupled dynamical systems, where the reservoir acts as a response system driven by training data; in other words, quantum reservoir computers are generalized-synchronization (GS) systems. Second, we show that quantum reservoir computers can learn chaotic dynamics and their invariant properties, such as Lyapunov spectra, attractor dimensions, and geometric properties such as the covariant Lyapunov vectors. This analysis is enabled by deriving the Jacobian of the quantum reservoir update. Third, by leveraging tools from generalized synchronization, we provide a method for designing robust quantum reservoir computers. We propose the criterion GS=ESP: GS implies the echo state property (ESP), and vice versa. We analytically show that RF-QRCs, by design, fulfill GS=ESP. Finally, we analyze the effect of simulated noise. We find that dissipation from noise enhances the robustness of quantum reservoir computers. Numerical verifications on systems of different dimensions support our conclusions. This work opens opportunities for designing robust quantum machines for chaotic time series forecasting on near-term quantum hardware.
 ```
 
-## candidate-07 [kuramoto] — UNCONSUMED
+## candidate-07 [kuramoto] — ANNOTATED as 2407.02416
 
 **Title:** A mesoscopic theory for stochastic coupled oscillators
 
@@ -112,7 +112,7 @@ We show that recurrent quantum reservoir computers (QRCs) and their recurrence-f
 The celebrated Ott-Antonsen ansatz for coupled oscillators provides a useful framework to work with deterministic systems in the thermodynamic limit, but remains just an approximation for stochastic models. In this paper, I construct a general mesoscopic description of finite-sized populations of stochastic coupled oscillators and apply it to study the stochastic Kuramoto model. From such a mesoscopic description it is possible to obtain the natural, multiplicative fluctuations of the oscillator ensemble. The analysis allows one to derive highly accurate, closed expressions for the stochastic Kuramoto model's order parameter for the first time. Moreover, it is possible to get novel insights into the system's fluctuations and the synchronization transition's critical exponents which were inaccessible before.
 ```
 
-## candidate-08 [kuramoto] — UNCONSUMED
+## candidate-08 [kuramoto] — ANNOTATED as 2505.10114
 
 **Title:** Extreme Synchronization Transitions
 
@@ -126,7 +126,7 @@ The celebrated Ott-Antonsen ansatz for coupled oscillators provides a useful fra
 Across natural and human-made systems, transition points mark sudden changes of order and are thus key to understanding overarching system features. Motivated by recent experimental observations, we here uncover an intriguing class of transitions in coupled oscillators, extreme synchronization transitions, from asynchronous disordered states to synchronous states with almost completely ordered phases. Whereas such a transition appears like discontinuous or explosive phase transitions, it exhibits markedly distinct features. First, the transition occurs already in finite systems of N units and so constitutes an intriguing bifurcation of multi-dimensional systems rather than a genuine phase transition that emerges in the thermodynamic limit N to infinity only. Second, the synchronization order parameter jumps from moderate values of the order of N^(-1/2) to values extremely close to 1, its theoretical maximum, immediately upon crossing a critical coupling strength. We analytically explain the mechanisms underlying such extreme transitions in coupled complexified Kuramoto oscillators. Extreme transitions may similarly occur across other systems of coupled oscillators as well as in certain percolation processes. In applications, their occurrence impacts our ability of ensuring or preventing strong forms of ordering, for instance in biological and engineered systems.
 ```
 
-## candidate-09 [kuramoto] — UNCONSUMED
+## candidate-09 [kuramoto] — ANNOTATED as cond-mat-0606048
 
 **Title:** Synchronization transition of heterogeneously coupled oscillators on scale-free networks
 

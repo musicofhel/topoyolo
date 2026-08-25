@@ -591,3 +591,8 @@ Full annotation: `annotations/2108.04074.md` (B2 pass 45). Abstract-only provena
 **Machines**: matching (drive-response correspondence, GS=ESP well-definedness), stability (core).
 Full annotation: `annotations/2506.22335.md` (B2 pass 45). Abstract-only provenance — depth-limited.
 **See also**: `by-structure/composite_systems.md`, `annotations/2401.00885.md`, `annotations/2108.05024.md`
+
+**Lee, Kuklinski & Timme (2025) — Extreme Synchronization Transitions**: arXiv: 2505.10114. Complexified Kuramoto systems show finite-N transitions that mimic explosive phase transitions but are multi-dimensional bifurcations — order parameter jumps from ~N^{-1/2} to ~1 immediately past critical coupling. A named counterexample class for "abrupt jump ⇒ phase transition" inference, with transfer claims to percolation.
+**Machines**: null hypothesis (transition-vs-bifurcation classification), stability (bifurcation mechanism of the extreme jump).
+Full annotation: `annotations/2505.10114.md` (B2 pass 46). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/phase_transitions.md`

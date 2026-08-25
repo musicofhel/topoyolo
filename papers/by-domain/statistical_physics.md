@@ -132,3 +132,15 @@ arXiv: 2210.11547. Monitored-dynamics/QEC unified as an adversarial unitary-vs-m
 **Machines**: parameterized homology, stability, null hypothesis.
 Full annotation: `annotations/2210.11547.md` (B2 pass 31). Abstract-only provenance — depth-limited.
 **See also**: `by-domain/qec.md`, `by-domain/information_theory.md`
+
+### Buendía (2024) — A mesoscopic theory for stochastic coupled oscillators
+arXiv: 2407.02416. Finite-N mesoscopic description of stochastic Kuramoto: first closed expressions for the stochastic order parameter; the missing piece beyond Ott–Antonsen is identified as *multiplicative* ensemble fluctuations — composite-level structure absent from both single-oscillator marginals and the thermodynamic-limit reduction.
+**Machines**: joint-vs-marginal excess, stability (critical exponents under finite-size noise).
+Full annotation: `annotations/2407.02416.md` (B2 pass 46). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/composite_systems.md`
+
+### Oh, Lee, Kahng & Kim (2006) — Heterogeneously coupled oscillators on scale-free networks
+arXiv: cond-mat/0606048. Degree-dependent coupling J k_i^{η−1} on scale-free networks yields eight synchronization-transition behaviors indexed by (η, λ), split by the η = λ−2 line into zero- and finite-J_c regimes; critical exponents + finite-size scaling per regime, cluster-size distributions via generating functions.
+**Machines**: stability (finite-size scaling), parameterized homology (transition-class taxonomy in the (η, λ) plane), joint-vs-marginal (weak — synchronized clusters as composites).
+Full annotation: `annotations/cond-mat-0606048.md` (B2 pass 46). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/phase_transitions.md`
