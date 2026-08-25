@@ -471,3 +471,9 @@ Full annotation: `annotations/10.1371-journal.pcbi.1013995.md` (B2 pass 12).
 **Machines**: matching, stability.
 Full annotation: `annotations/ying-2016.md` (B2 pass 13).
 **See also**: `by-domain/information_theory.md`, `by-structure/optimal_transport.md`, `by-structure/composite_systems.md`
+
+### Silva, Giusti, Keogh, Batista (2018) — Exact Similarity Search under DTW with Alignment Pruning
+Prunes provably non-optimal cells of the DTW assignment grid; exactness preserved (zero-error stability of the matching value), up to 5× over UCR suite.
+**Machines**: matching, stability, null hypothesis (weak).
+Full annotation: `annotations/silva-2018.md` (B2 pass 13).
+**See also**: `by-domain/information_theory.md`, `by-structure/optimal_transport.md`, `by-structure/composite_systems.md`

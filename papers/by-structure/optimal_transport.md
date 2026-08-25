@@ -144,3 +144,6 @@ The cost function is always a metric or semi-metric, and the matching always res
 
 ### Ying, Pan, Fox, Agarwal (2016) — Fast Approximate DTW (κ-packed curves)
 DTW as minimum-cost monotone correspondence assignment; (1+ε) stability bound on matching value; packing constant κ as the structure condition enabling fast matching. Also dynamical systems. Full annotation: `annotations/ying-2016.md` (B2 pass 13).
+
+### Silva, Giusti, Keogh, Batista (2018) — Pruning unpromising DTW alignments
+Exact monotone assignment with zero-error pruning inside the DP grid; lower-bound certificates bound the matching value. Complements ying-2016's (1+ε) approximation. Full annotation: `annotations/silva-2018.md` (B2 pass 13).

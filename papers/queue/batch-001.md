@@ -92,7 +92,8 @@ Determining pneumonia from chest x-ray (CXR) images is an extremely di
 
 ---
 
-## candidate-02 [neuroscience] — UNCONSUMED
+## candidate-02 [neuroscience] — REJECTED
+HMM/GMM + orthogonal-transform dimensionality reduction engineering; instantiates zero of the six machines.
 
 **Title:** A Recurrent Probabilistic Neural Network with Dimensionality Reduction Based on
 
@@ -461,7 +462,8 @@ disease status, age, race, nodal clustering, nodal centrality, etc.) on the o
 
 ---
 
-## candidate-06 [neuroscience] — UNCONSUMED
+## candidate-06 [neuroscience] — REJECTED
+Inverse-variance summary-statistic inference methodology; no abstract-machine content.
 
 **Title:** Powerful statistical inference for nested data using sufficient summary statisti
 
@@ -541,7 +543,8 @@ e ff ect size measures have not yet been summarized in a single by H 1 . A one-t
 
 ---
 
-## candidate-07 [neuroscience] — UNCONSUMED
+## candidate-07 [neuroscience] — REJECTED
+Multimodal attention fusion architecture; zero of the six machines instantiated.
 
 **Title:** Multimodal Attention Network for Continuous Time Emotion Recognition Using Video
 
@@ -709,7 +712,8 @@ taneous large-scale activity in the human brai
 
 ---
 
-## candidate-09 [neuroscience] — UNCONSUMED
+## candidate-09 [neuroscience] — REJECTED
+fMRI meta-analysis of prediction-error paradigms; empirical cognitive neuroscience with no machine structure.
 
 **Title:** Learning about Expectation Violation from Prediction Error Paradigms A Meta Anal
 
@@ -794,7 +798,8 @@ the actual outco
 
 ---
 
-## candidate-10 [neuroscience] — UNCONSUMED
+## candidate-10 [neuroscience] — REJECTED
+Clinical brain-structure review; off-mission for the atlas (no machine instantiation).
 
 **Title:** A Review of the Status of Brain Structure Research in Transsexualism
 
@@ -874,7 +879,8 @@ philic (APA, 2013, pp. 455–456
 
 ---
 
-## candidate-11 [neuroscience] — UNCONSUMED
+## candidate-11 [neuroscience] — REJECTED
+Wavelet-denoising benchmark comparison; signal-processing tooling, zero machines.
 
 **Title:** WAVELET TRANSFORMS FOR EEG SIGNAL DENOISING AND DECOMPOSITION
 
@@ -1277,7 +1283,8 @@ fundamental concepts, beginning with the definition of a Time defined as the dis
 
 ---
 
-## candidate-15 [dynamics-matching] — UNCONSUMED
+## candidate-15 [dynamics-matching] — REJECTED
+DTW-SOM visualization wrapper around motif discovery; duplicates DTW-matching coverage already held by 2002.00208 and ying-2016.
 
 **Title:** 2308.09995v1
 
@@ -1373,7 +1380,8 @@ constraint, which determines that segments in a motif should have
 
 ---
 
-## candidate-16 [dynamics-matching] — UNCONSUMED
+## candidate-16 [dynamics-matching] — REJECTED
+Stock-pattern DTW application; uses matching as an off-the-shelf tool, adds nothing to the machine.
 
 **Title:** JQE Volume 21 Issue 1 Pages 1 28
 
@@ -1485,7 +1493,8 @@ financial resources in the c
 
 ---
 
-## candidate-17 [dynamics-matching] — UNCONSUMED
+## candidate-17 [dynamics-matching] — REJECTED
+SAX+DTW news-sentiment forecasting application; off-the-shelf matching tool, zero machine novelty.
 
 **Title:** Measuring the Impact of Financial News and Social
 
@@ -1655,7 +1664,7 @@ It
 
 ---
 
-## candidate-19 [dynamics-matching] — UNCONSUMED
+## candidate-19 [dynamics-matching] — ANNOTATED as silva-2018 (pass 13): exact DTW via pruning unpromising alignments → Dynamics/OptimalTransport matching+stability
 
 **Title:** s10618 018 0557 y
 
@@ -1756,7 +1765,8 @@ the warping distance, i.e.,
 
 ---
 
-## candidate-20 [dynamics-matching] — UNCONSUMED
+## candidate-20 [dynamics-matching] — REJECTED
+Intraday volume prediction via GA-tuned averaging; DTW incidental, effectively zero machines.
 
 **Title:** sustainability 13 01011
 
