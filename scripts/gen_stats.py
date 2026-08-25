@@ -23,18 +23,60 @@ ANNOTATION_DIR = ROOT / "papers/annotations"
 MATRIX_PATH = ROOT / "diagrams/coverage-matrix.md"
 
 # Canonical domains, in matrix row order.
-DOMAINS = ["TDA", "QEC", "Dynamics", "Neuro", "InfoTheo"]
+DOMAINS = ["TDA", "QEC", "Dynamics", "Neuro", "InfoTheo", "StatPhys"]
 
-# Prose -> canonical domain. First token of each comma/slash-separated
-# Domain(s) entry, lowercased, must match a key here; anything else is
-# reported as unrecognized and ignored.
+# Prose -> canonical domain. Each comma/slash-separated Domain(s) entry is
+# tried against these keys full-phrase, then two-word, then first-token
+# (all lowercased); anything else is checked against KNOWN_QUALIFIERS and
+# otherwise reported as unrecognized and ignored.
 DOMAIN_ALIASES = {
     "tda": "TDA",
+    "topological data analysis": "TDA",
     "qec": "QEC",
     "quantum": "QEC",
     "dynamical": "Dynamics",
+    "dynamical systems": "Dynamics",
     "neuroscience": "Neuro",
+    # neuroscience sub-fields named as top-level domains in some annotations
+    "computational neuroscience": "Neuro",
+    "neuroimaging": "Neuro",
+    "fmri": "Neuro",
+    "meg": "Neuro",
+    "eeg": "Neuro",
+    "neural decoding": "Neuro",
+    "motor cortex": "Neuro",
     "information": "InfoTheo",
+    "information theory": "InfoTheo",
+    # ML-theory papers in this corpus are all information-theoretic
+    # (IB / MI estimation / learning theory); the atlas files them under
+    # InfoTheo (decision recorded in research/2026-08-25-0636.md)
+    "machine learning": "InfoTheo",
+    "deep learning": "InfoTheo",
+    "statistical learning theory": "InfoTheo",
+    "statistical physics": "StatPhys",
+    "self organized criticality": "StatPhys",
+    # time-series causality lives in the Dynamics column in this atlas
+    "granger causality": "Dynamics",
+    "gradient dynamics": "Dynamics",
+    # contrastive-learning theory papers are InfoNCE/MI-based -> InfoTheo
+    # (same rationale as the machine-learning mapping above)
+    "contrastive learning": "InfoTheo",
+    # OT is filed under TDA throughout the by-domain index (see tda.md)
+    "optimal transport": "TDA",
+    "algebraic topology": "TDA",
+    "computational topology": "TDA",
+}
+
+# Sub-field qualifiers that follow a canonical domain in parentheses
+# (e.g. 'TDA (optimal transport)', 'finance (applied)'). They describe the
+# instantiation, not a domain column — recognized so they do not surface as
+# unrecognized-domain warnings, and deliberately NOT counted anywhere.
+KNOWN_QUALIFIERS = {
+    "applied", "finance", "causal inference", "complex systems",
+    "category theory", "metric geometry", "algorithms", "computational",
+    "numerical analysis", "computational biology", "source imaging",
+    "statistics", "foundational", "time series mining",
+    "computational geometry", "trajectory analysis",
 }
 
 # Canonical machines, in matrix column order, with the bullet-label prefix
@@ -49,7 +91,7 @@ MACHINES = [
     ("Null hypothesis", "Null hypothesis"),
 ]
 
-MATRIX_HEADER = """# Coverage Matrix — 6 Machines × 5 Domains
+MATRIX_HEADER = """# Coverage Matrix — 6 Machines × 6 Domains
 
 Updated: {updated} (derived by scripts/gen_stats.py from papers/annotations/)
 
@@ -70,9 +112,19 @@ fails if these numbers drift from the claims in README.md / docs/index.html.
 
 
 def normalize_domain(raw):
-    """First word of a domain mention -> canonical name or None."""
-    word = re.split(r"[^A-Za-z]", raw.strip(), maxsplit=1)[0].lower()
-    return DOMAIN_ALIASES.get(word)
+    """A domain mention -> canonical name or None. Tries the full phrase,
+    then its first two words, then its first word, against DOMAIN_ALIASES
+    (keys lowercased); falls back to KNOWN_QUALIFIERS -> 'qualifier'."""
+    text = re.sub(r"[^A-Za-z\s/]", " ", raw.lower())
+    words = [w for w in re.split(r"[\s/]+", text) if w]
+    for n in (len(words), min(2, len(words)), 1):
+        key = " ".join(words[:n]) if words else ""
+        if key in DOMAIN_ALIASES:
+            return DOMAIN_ALIASES[key]
+    key = " ".join(words)
+    if key in KNOWN_QUALIFIERS:
+        return "qualifier"
+    return None
 
 
 def split_domains(line):
@@ -82,9 +134,9 @@ def split_domains(line):
     unknown = []
     for part in re.split(r"[,/]| \(|\)|;", rest):
         d = normalize_domain(part)
-        if d:
+        if d and d != "qualifier":
             out.add(d)
-        elif part.strip():
+        elif not d and part.strip():
             unknown.append(part.strip())
     return out, unknown
 
@@ -107,7 +159,10 @@ def parse_machines(lines):
         if m:
             label = re.sub(r"\s*\([^)]*\)", "", m.group(1)).strip().lower()
             for canon, _disp in MACHINES:
-                if label == canon.lower():
+                cl = canon.lower()
+                # exact match, or the short form ('Joint-vs-marginal' for
+                # 'Joint-vs-marginal excess', used by several annotations)
+                if label == cl or (label and cl.startswith(label + " ")):
                     out.add(canon)
     return out
 
@@ -142,13 +197,14 @@ def cell_label(n, deep=False):
     return f"**{n}**" if deep else str(n)
 
 
-def render_matrix(papers, matrix, updated="2026-08-24"):
+def render_matrix(papers, matrix, updated="2026-08-25"):
     cols = [disp for _, disp in MACHINES]
     short = ["ChainCmplx", "ParamHom", "Matching", "Stability",
              "JointMarg", "NullHyp"]
     width = max(len(s) for s in short) + 2
     n_deep = sum(1 for d in DOMAINS for c, _ in MACHINES if matrix[d][c] >= 10)
     min_cell = min(matrix[d][c] for d in DOMAINS for c, _ in MACHINES)
+    n_cells = len(DOMAINS) * len(MACHINES)
 
     out = MATRIX_HEADER.format(updated=updated)
     out += "```\n"
@@ -164,27 +220,27 @@ def render_matrix(papers, matrix, updated="2026-08-24"):
     out += "\n(`*n*` marks deep cells ≥10.)\n"
 
     out += "\n## Mermaid Heatmap\n\n```mermaid\n"
-    out += "%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '14px'}}}%%\nblock-beta\n  columns 7\n\n  space:1 "
+    out += "%%{init: {'theme': 'base', 'themeVariables': {'fontSize': '14px'}}}%%\nblock-beta\n  columns 8\n\n  space:1 "
     ids = ["CC", "PH", "MA", "ST", "JM", "NH"]
     out += " ".join(f'{i}["{l.replace(chr(10), chr(92) + "n")}"]'
                     for i, l in zip(ids, short)) + "\n\n"
     for d in DOMAINS:
         did = {"TDA": "TDA", "QEC": "QEC", "Dynamics": "DYN",
-               "Neuro": "NEU", "InfoTheo": "IT"}[d]
+               "Neuro": "NEU", "InfoTheo": "IT", "StatPhys": "SP"}[d]
         cells = []
         for i, (c, _) in enumerate(MACHINES):
             cells.append(f'{did}_{ids[i]}["{matrix[d][c]}"]')
         out += f'  {did}["{d}"] ' + " ".join(cells) + "\n"
     for d in DOMAINS:
         did = {"TDA": "TDA", "QEC": "QEC", "Dynamics": "DYN",
-               "Neuro": "NEU", "InfoTheo": "IT"}[d]
+               "Neuro": "NEU", "InfoTheo": "IT", "StatPhys": "SP"}[d]
         for i, (c, _) in enumerate(MACHINES):
             if matrix[d][c] >= 10:
                 out += f"  style {did}_{ids[i]} fill:#9f9,stroke:#333\n"
     out += "```\n"
     out += MATRIX_FOOTER
     out += (f"\n## Coverage Status\n\n{papers} fully annotated papers. "
-            f"{n_deep} of 30 cells ≥10 (deep); min cell = {min_cell}.\n")
+            f"{n_deep} of {n_cells} cells ≥10 (deep); min cell = {min_cell}.\n")
     return out
 
 
@@ -196,7 +252,8 @@ def main():
 
     print("topo-rosetta derived stats (source: papers/annotations/*.md)")
     print(f"  fully annotated papers : {papers}")
-    print(f"  cells                  : 30 (6 machines x 5 domains)")
+    print(f"  cells                  : {len(DOMAINS) * len(MACHINES)}"
+          f" ({len(MACHINES)} machines x {len(DOMAINS)} domains)")
     print(f"  min cell               : {min_cell}")
     print(f"  cells >=10 (deep)      : {n_deep}")
     for note in notes:

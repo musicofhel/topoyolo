@@ -1,17 +1,18 @@
-# Coverage Matrix — 6 Machines × 5 Domains
+# Coverage Matrix — 6 Machines × 6 Domains
 
-Updated: 2026-08-24 (derived by scripts/gen_stats.py from papers/annotations/)
+Updated: 2026-08-25 (derived by scripts/gen_stats.py from papers/annotations/)
 
 ## Paper Counts
 
 ```
                 ChainCmplx    ParamHom    Matching   Stability   JointMarg     NullHyp
 ──────────────────────────────────────────────────────────────────────────────────────
-TDA                   *30*        *30*        *17*        *30*           7        *18*
+TDA                   *30*        *31*        *22*        *33*           9        *18*
 QEC                   *12*           8           7        *12*           2           9
-Dynamics              *11*        *19*           8        *20*           7        *14*
-Neuro                 *18*        *21*           5        *14*        *14*        *23*
-InfoTheo              *11*        *21*        *10*        *15*        *25*        *27*
+Dynamics              *13*        *20*           8        *20*        *10*        *16*
+Neuro                 *18*        *22*           5        *15*        *16*        *24*
+InfoTheo              *11*        *22*        *10*        *17*        *28*        *29*
+StatPhys                 2           2           4           2           5           4
 ```
 
 (`*n*` marks deep cells ≥10.)
@@ -21,15 +22,16 @@ InfoTheo              *11*        *21*        *10*        *15*        *25*      
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'fontSize': '14px'}}}%%
 block-beta
-  columns 7
+  columns 8
 
   space:1 CC["ChainCmplx"] PH["ParamHom"] MA["Matching"] ST["Stability"] JM["JointMarg"] NH["NullHyp"]
 
-  TDA["TDA"] TDA_CC["30"] TDA_PH["30"] TDA_MA["17"] TDA_ST["30"] TDA_JM["7"] TDA_NH["18"]
+  TDA["TDA"] TDA_CC["30"] TDA_PH["31"] TDA_MA["22"] TDA_ST["33"] TDA_JM["9"] TDA_NH["18"]
   QEC["QEC"] QEC_CC["12"] QEC_PH["8"] QEC_MA["7"] QEC_ST["12"] QEC_JM["2"] QEC_NH["9"]
-  DYN["Dynamics"] DYN_CC["11"] DYN_PH["19"] DYN_MA["8"] DYN_ST["20"] DYN_JM["7"] DYN_NH["14"]
-  NEU["Neuro"] NEU_CC["18"] NEU_PH["21"] NEU_MA["5"] NEU_ST["14"] NEU_JM["14"] NEU_NH["23"]
-  IT["InfoTheo"] IT_CC["11"] IT_PH["21"] IT_MA["10"] IT_ST["15"] IT_JM["25"] IT_NH["27"]
+  DYN["Dynamics"] DYN_CC["13"] DYN_PH["20"] DYN_MA["8"] DYN_ST["20"] DYN_JM["10"] DYN_NH["16"]
+  NEU["Neuro"] NEU_CC["18"] NEU_PH["22"] NEU_MA["5"] NEU_ST["15"] NEU_JM["16"] NEU_NH["24"]
+  IT["InfoTheo"] IT_CC["11"] IT_PH["22"] IT_MA["10"] IT_ST["17"] IT_JM["28"] IT_NH["29"]
+  SP["StatPhys"] SP_CC["2"] SP_PH["2"] SP_MA["4"] SP_ST["2"] SP_JM["5"] SP_NH["4"]
   style TDA_CC fill:#9f9,stroke:#333
   style TDA_PH fill:#9f9,stroke:#333
   style TDA_MA fill:#9f9,stroke:#333
@@ -40,6 +42,7 @@ block-beta
   style DYN_CC fill:#9f9,stroke:#333
   style DYN_PH fill:#9f9,stroke:#333
   style DYN_ST fill:#9f9,stroke:#333
+  style DYN_JM fill:#9f9,stroke:#333
   style DYN_NH fill:#9f9,stroke:#333
   style NEU_CC fill:#9f9,stroke:#333
   style NEU_PH fill:#9f9,stroke:#333
@@ -66,4 +69,4 @@ fails if these numbers drift from the claims in README.md / docs/index.html.
 
 ## Coverage Status
 
-97 fully annotated papers. 22 of 30 cells ≥10 (deep); min cell = 2.
+99 fully annotated papers. 23 of 36 cells ≥10 (deep); min cell = 2.

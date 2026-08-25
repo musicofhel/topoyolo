@@ -269,7 +269,7 @@ def strip_tags(s):
 def derived_stats():
     """Import gen_stats (scripts/, stdlib only) and derive corpus truth."""
     sys.path.insert(0, str(ROOT / "scripts"))
-    from gen_stats import derive, render_matrix
+    from gen_stats import DOMAINS, MACHINES, derive, render_matrix
 
     papers, matrix, notes = derive()
     machines = sorted(next(iter(matrix.values())).keys()) if matrix else []
@@ -419,8 +419,10 @@ def main(argv):
     print(f"  markdown files     : {n_md}")
     if stats:
         papers, n_deep, min_cell = stats
-        print(f"  derived stats      : {papers} papers, {n_deep}/30 cells >=10, "
-              f"min cell {min_cell} (--check)")
+        from gen_stats import DOMAINS, MACHINES
+        n_cells = len(DOMAINS) * len(MACHINES)
+        print(f"  derived stats      : {papers} papers, "
+              f"{n_deep}/{n_cells} cells >=10, min cell {min_cell} (--check)")
     print()
     for w in v.warnings:
         print(f"WARN  {w}")
