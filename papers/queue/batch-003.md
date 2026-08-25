@@ -1905,7 +1905,7 @@ Here, for simplicity, we only divide the population into adopters and non-adopte
 thus study cascades of adoption from ado
 ```
 
-## candidate-24 [null-surrogate] — UNCONSUMED
+## candidate-24 [null-surrogate] — ANNOTATED as 2005.06573 (new full-depth annotation; permutation test = marginals-preserved null surrogate, consistency proof as excess-separation; machines null hypothesis + joint-vs-marginal; filed in information_theory + composite_systems indices, pass 23)
 
 **Title:** Consistency of permutation tests for HSIC and dHSIC
 
