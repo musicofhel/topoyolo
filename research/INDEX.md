@@ -1,14 +1,25 @@
 # research/INDEX.md — pass reports + task status (newest first)
 
 **Lint state:** check_structure.py exit 0; 1 warning = pre-existing baseline
-(2 author-year-prose crossrefs); `--check` 0 errors. Derived corpus: **157
-fully annotated papers** (+3 pass 49), **36 cells (6 machines × 6 domains)**,
+(2 author-year-prose crossrefs); `--check` 0 errors. Derived corpus: **160
+fully annotated papers** (+3 pass 50), **36 cells (6 machines × 6 domains)**,
 min cell 2, **32 cells ≥10**. Domain-alias table landed in gen_stats.py
 (pass 27); ML→InfoTheo and OT→TDA mappings await Aaron's ratification.
 Standing policy (pass 43): README/docs count patches land in the SAME commit
 as the gen_stats regen.
+Machine-vocabulary translation (pass 50, for consistent filing): by-structure
+file names → six machines: boundary_operators→chain complex; filtrations→
+parameterized homology; matching/optimal_transport→matching; phase_transitions→
+stability; composite_systems→joint-vs-marginal excess; null hypothesis has no
+structure file.
 
 ## Reports
+- `2026-08-25-0851.md` — Pass 50: B2 batch-009 rg-dl 4/5 ANNOTATED (07:
+  2405.17538 BRG-NNFT Fisher-metric coarse graining; 08: 2504.12700 two-phase
+  fit→compress with MI progress measure + null reading of grokking/DD/IB;
+  09: 2506.04016 inverse-RG minimal nets — lineage's first inverse-direction
+  entry). Counts to derived 160, deep cells 32. Fixed stale README "31 cells"
+  debt from passes 47/49.
 - `2026-08-25-0843.md` — Pass 49: B2 batch-009 pid-theory group CLOSED 5/5
   (04: 2404.01470 Milzman I_ft source-failure redundancy + QEC crossref;
   05: 1303.3440 localizability axiom) + rg-dl opened 1/5 (06: 1410.3831
@@ -32,19 +43,19 @@ as the gen_stats regen.
   conditional-Lyapunov margins, abstraction-as-attractor-continuum).
 - `2026-08-25-0735.md` — Pass 37→43 window: **batch-007 CLOSED 12/12**
   (qec-mwpm + null-surrogate groups), sanctioned same-commit count protocol.
-- Earlier (`2026-08-25-07*`, `2026-08-24-*`): batch-005/006 CLOSED,
+- Earlier (`2026-08-25-07*`, `2026-08-24-*`): batch-002/003/005/006 CLOSED,
   channel-capacity + ph-stability groups, Phase A complete (A1–A6), B1 done,
   gen_stats follow-up.
 
 ## Task status (LOOP_MISSION.md ledger is canonical)
 - **A1–A6:** all [done].
 - **B1 ingestion contract:** [done] (6ebfcf2).
-- **B2 queue consumption:** [in_progress] — batch-009 pid-theory CLOSED 5/5;
-  rg-dl 1/5 (1410.3831 annotated pass 49). Next: candidates 07–09
-  (2405.17538, 2504.12700, 2506.04016), then close the batch with candidate-10
-  (1906.05212 skeptical null) annotated AS A PAIR with 1410.3831 — mutual
-  See-also links + a claim-vs-refutation note where they co-file. Residual
-  Wave-era catch-all pointer debt (~100, ≤5/pass sanctioned).
+- **B2 queue consumption:** [in_progress] — batch-009 rg-dl 4/5 (06
+  1410.3831, 07 2405.17538, 08 2504.12700, 09 2506.04016 annotated pass 50).
+  Next: candidate-10 (1906.05212 skeptical null) annotated AS A PAIR with
+  1410.3831 — mutual See-also links + a claim-vs-refutation note where they
+  co-file — closes batch-009. Residual Wave-era catch-all pointer debt
+  (~100, ≤5/pass sanctioned).
 - **B3 atlas synthesis:** [in_progress] — sub-slices 1–5 done (5 = pass 47
   MATCHING.md Takens bridge-pair section). Open hooks: fold 2505.10114 into
   glossary/ANTISYNONYMS.md as transition-vs-bifurcation null support;
