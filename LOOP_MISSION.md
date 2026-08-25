@@ -80,13 +80,22 @@ the pass report as pre-existing baseline debt.
   branch — they only deploy when Aaron merges). Wire a `--check` mode into
   check_structure.py so drift fails the lint. Done = regenerated matrix
   committed, stats consistent, lint enforces it.
-- **A5 [open] Loose-file adjudication.** `second_pass.md`,
+- **A5 [done 2026-08-24 61fee02] Loose-file adjudication.** `papers/README.md`
+  layout contract: all five loose files adjudicated as historical search-pass
+  ledgers (67 SP/TP candidate entries, non-canonical, promotion-not-deletion
+  rule); check_structure.py now fails on any undocumented papers/ entry.
+  Lint: 0 errors, 18 pre-existing gen_stats alias notes.
+  Report: `research/2026-08-24-2345.md`.
+  Original: `second_pass.md`,
   `third_pass_*.md`, `cross_domain_bridges.md`: for each, determine what it
   is (read it), then either (a) fold its content into the canonical structure
   (per-paper files / atlas / glossary) or (b) document its role in a
   `papers/README.md` layout guide. No deletions — content moves or gets
   documented, never dropped. Done = papers/ has a written layout contract and
   no undocumented files.
+  - carried to Phase B: promote ledger candidates via normal ingestion; two
+    index prose crossrefs lack annotation files (Mollers 2023 Hodge-aware CL;
+    Mézard–Mora).
 - **A6 [open] SEPARATRIX proposal review (read-only).** Fetch is denied, so
   work from `git log`/`git show` if `origin/atlas/separatrix` is available
   locally; if not, record the blocker and let the orchestrator attach the

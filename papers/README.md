@@ -54,9 +54,11 @@ by deletion.
   information-theory/cross-domain focus, 9 new candidates + summary tables of
   machine/domain coverage and zero-result search gaps.
 - **`third_pass_neuro_qec.md`** (2026-04-05) — third sweep, neuroscience+QEC
-  focus, 12 candidates + summary tables. Note: TP-08 (Hodge-aware contrastive
-  learning) and TP-12 (Mézard–Mora) were subsequently promoted and DO exist as
-  canonical annotations; their ledger entries remain as provenance.
+  focus, 12 candidates + summary tables. Note: two entries here are already
+  referenced in the dual index as prose crossrefs without per-paper files of
+  their own — TP-08 (Mollers et al., Hodge-aware contrastive learning, in
+  `by-structure/filtrations.md`) and TP-12 (Mézard–Mora, in
+  `by-domain/qec.md`). They still need promotion to full annotations.
 - **`cross_domain_bridges.md`** — curated list of papers explicitly bridging
   ≥2 domains (the atlas's highest-value class): 13 paper entries across three
   sections (core bridges, Phase-2 additions 2026-04-06, Wave-10a additions

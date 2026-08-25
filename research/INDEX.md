@@ -16,14 +16,19 @@ cells ≥10, min cell 1).
   tightening still queued.
 - A4 stats from data — **done 2026-08-24 (a49e738+db97bca)**. gen_stats.py derives
   matrix + headline counts from annotations, regenerates coverage-matrix.md;
-  README/docs patched to derived truth (219 claim replaced by 68 fully annotated);
-  `--check` fails lint on drift. Thin cells exposed: Dynamics×Matching=1,
-  QEC×JointMarg=2 → B2 targets.
-- A5 loose-file adjudication — open (NEXT)
-- A6 SEPARATRIX review (read-only) — open
-- Phase B (B1–B3) locked until A1–A5 done.
+  README/docs patched to derived truth; `--check` fails lint on drift.
+  Thin cells exposed: Dynamics×Matching=1, QEC×JointMarg=2 → B2 targets.
+- A5 loose-file adjudication — **done 2026-08-24 (61fee02)**. papers/README.md
+  layout contract; five loose files = historical search-pass ledgers (67 SP/TP
+  candidates), promotion-not-deletion rule; lint now fails on undocumented
+  papers/ entries. Carried to B: promote Mollers-2023 + Mézard–Mora (index
+  prose crossrefs with no annotation file).
+- A6 SEPARATRIX review (read-only, recommendation only) — open (NEXT)
+- Phase B (B1–B3): A1–A5 done → UNLOCKED. batch-001 (21 candidates,
+  commit 27d8938) sits in papers/queue/, unconsumed. Start with B1 contract.
 
 ## Reports (newest first)
+- [2026-08-24-2345](2026-08-24-2345.md) — Pass 8 / A5 DONE: papers/README.md layout contract + lint enforcement; ledgers documented not folded; new debt class found (index→annotation gap).
 - [2026-08-24-0840](2026-08-24-0840.md) — Pass 7 / A4 DONE: gen_stats.py + regenerated coverage-matrix.md, README/docs stats to derived truth (68 papers vs old 219 — delta explained), --check drift gate proven live.
 - [2026-08-24-0737](2026-08-24-0737.md) — Pass 6 / A3 slice 4 DONE: Waves 4c–10c migrated (36 verbatim files incl. blahut-arimoto-1972), 149 crossrefs repointed, inbox reshaped to contract+leads+wave index, lint enforces empty inboxes. A3 flipped done.
 - [2026-08-24-0730](2026-08-24-0730.md) — Pass 5 / A3 slice 3: archive Phase 2 migrated (9 verbatim files), 4 Core ATT stubs repointed.
