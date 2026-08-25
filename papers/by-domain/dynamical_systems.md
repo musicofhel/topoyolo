@@ -625,3 +625,8 @@ Full annotation: `annotations/2109.08918.md` (B2 pass 47). Abstract-only provena
 **Machines**: stability (core — transverse instability), joint-vs-marginal excess (manifold marginal vs full joint system).
 Full annotation: `annotations/1305.1742.md` (B2 pass 47). Abstract-only provenance — depth-limited.
 **See also**: `by-domain/statistical_physics.md`, `by-structure/composite_systems.md`
+
+**Butler, Waxman & Djurić (2024) — Tangent Space Causal Inference**: arXiv: 2410.23499. TSCI: causal discovery by learning explicit vector fields on reconstructed manifolds and testing the degree of synchronization between them — the causal signal moves from cross-manifold state prediction (CCM's neighbor matching) to tangent-bundle dynamics agreement; drop-in CCM replacement with a ladder of function classes (local linear → latent-variable → deep).
+**Machines**: matching (function-fit replaces neighbor retrieval), joint-vs-marginal excess (synchronization as composite-only structure), null hypothesis (lower wrong-alternative rate vs CCM on benchmarks).
+Full annotation: `annotations/2410.23499.md` (B2 pass 53). Abstract-only provenance — depth-limited.
+**See also**: `annotations/1601.00716.md`, `by-structure/composite_systems.md`

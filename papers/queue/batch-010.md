@@ -41,7 +41,7 @@ We present a generalization of graph convolutional networks by generalizing the 
 Predictive coding (PC) replaces global backpropagation with local optimization over weights and activations. We show that linear PC networks admit a natural formulation as cellular sheaves: the sheaf coboundary maps activations to edge-wise prediction errors, and PC inference is diffusion under the sheaf Laplacian. Sheaf cohomology then characterizes irreducible error patterns that inference cannot remove. We analyze recurrent topologies where feedback loops create internal contradictions, introducing prediction errors unrelated to supervision. Using a Hodge decomposition, we determine when these contradictions cause learning to stall. The sheaf formalism provides both diagnostic tools for identifying problematic network configurations and design principles for effective weight initialization for recurrent PC networks.
 ```
 
-## candidate-03 [sheaf] — UNCONSUMED
+## candidate-03 [sheaf] — ANNOTATED as 2505.23993
 
 **Title:** Cellular Sheaves on Higher-Dimensional Structures
 
@@ -55,7 +55,7 @@ Predictive coding (PC) replaces global backpropagation with local optimization o
 Defining cellular sheaves beyond graph structures, such as on simplicial complexes containing higher-dimensional simplices, is an essential and intriguing topic in topological data analysis (TDA) and the development of sheaf neural networks. In this paper, we explore methods for constructing non-trivial cellular sheaves on spaces that include structures of dimension greater than one. This extends the focus from 0- or 1-dimensional components, such as vertices and edges, to elements like triangles, tetrahedra, and other higher-dimensional simplices within a simplicial complex. We develop a unified framework that incorporates both geometric and algebraic approaches to modeling such complex systems using cellular sheaf theory. Motivated by the geometric and physical insights from anisotropic network models (ANM), we first introduce constructions that define sheaf structures whose 0-th sheaf Laplacians recover classical ANM Hessian matrices. The higher-dimensional sheaf Laplacians in this setting encode additional patterns of multi-way interactions. In parallel, we propose an algebraic framework based on commutative algebra and ringed spaces, where sheaves of ideals and modules are used to define sheaf structures in a combinatorial and algebraically grounded manner. These two perspectives -- the geometric-physical and the algebraic -- offer complementary strengths and together provide a versatile framework for encoding structural relationships and analyzing multi-scale data over simplicial complexes.
 ```
 
-## candidate-04 [sheaf] — UNCONSUMED
+## candidate-04 [sheaf] — ANNOTATED as 2605.11178
 
 **Title:** Oversmoothing as Representation Degeneracy in Neural Sheaf Diffusion
 
@@ -69,7 +69,7 @@ Defining cellular sheaves beyond graph structures, such as on simplicial complex
 Neural Sheaf Diffusion (NSD) generalizes diffusion-based Graph Neural Networks by replacing scalar graph Laplacians with sheaf Laplacians whose learned restriction maps define a task-adapted geometry. While the diffusion limit of NSD is known to be the space of global sections, the representation-theoretic structure of this harmonic space remains largely implicit. We develop a quiver-theoretic interpretation of NSD by identifying cellular sheaves on graphs with representations of the associated incidence quiver. Under this correspondence, learned sheaf geometries become points in a finite-dimensional representation space. We show that direct-sum decompositions of the underlying incidence-quiver representation induce decompositions of the harmonic space reached in the diffusion limit. This gives an algebraic interpretation of oversmoothing as representation degeneration: learned sheaves may collapse toward low-complexity summands whose global sections fail to preserve discriminative information. Building on this viewpoint, we connect sheaf diffusion to stability and moment-map principles from Geometric Invariant Theory. We introduce moment-map-inspired regularizers that bias restriction maps toward balanced representation geometries, and identify a structural obstruction in equal-stalk architectures: when d_v = d_e, admissibility for learnable stability parameters forces the trivial all-object summand onto a stability wall. Non-uniform stalk dimensions remove this obstruction, making adaptive stability meaningful. Experiments on heterophilic benchmarks are consistent with this mechanism: breaking stalk symmetry can reduce variance or improve validation behavior, and adaptive stability becomes more effective in selected rectangular settings. Overall, our framework reframes oversmoothing as a degeneration phenomenon in the representation geometry underlying learned sheaf diffusion.
 ```
 
-## candidate-05 [ccm] — UNCONSUMED
+## candidate-05 [ccm] — ANNOTATED as 2410.23499
 
 **Title:** Tangent Space Causal Inference: Leveraging Vector Fields for Causal Discovery in Dynamical Systems
 
