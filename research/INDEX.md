@@ -14,20 +14,25 @@ Derived truth: **78 fully annotated papers**.
   `by-structure/optimal_transport.md` FIXED pass 14; prose-block debt remains.
 - A4 stats from data — **done 2026-08-24 (a49e738+db97bca)**. Thin cells:
   Dynamics×Matching (=4), QEC×JointMarg (=2) → B2 targets. Counts at derived
-  78 / 20 cells ≥10, min cell 2 (re-patched pass 15).
+  78 / 20 cells ≥10, min cell 2.
 - A5 loose-file adjudication — **done 2026-08-24 (61fee02)**.
 - A6 SEPARATRIX review — **done 2026-08-24** (accept-directionally, gates G1–G3).
 - **Phase A COMPLETE. Phase B UNLOCKED.**
-- B1 ingestion contract — **done 2026-08-24 (6ebfcf2)**.
-- B2 consume queue batches — **in_progress: slices 1–6 done.**
+- B1 ingestion contract — **done 2026-08-24 (6ebfcf2)**. Duplication rule
+  adopted by orchestrator: batch-003 exports title-grep annotations/ first.
+- B2 consume queue batches — **in_progress: slices 1–7 done.**
   batch-001 FULLY CONSUMED 21/21 (8 annotated, 13 rejected). batch-002:
-  7/40 consumed — candidates 01–04 REJECTED (geometric-dl wrappers),
-  07 & 09 REJECTED (duplicates of existing annotations), **10 ANNOTATED →
-  TPCC `annotations/2303.16716.md` (pass 15)**; 33 queued. Next: candidate-05,
-  then hodge/spin-glass tranche (11, 12). Lint --check 0 errors.
+  **12/40 consumed** — candidates 01–06 REJECTED (geometric-dl/equivariance
+  wrappers), 07 & 09 REJECTED (duplicates of existing annotations),
+  **10 ANNOTATED → TPCC `annotations/2303.16716.md` (pass 15)**, pass 16
+  rejections: 08 (CL wrapper; separatrix tag misassigned), 11 (Cheeger
+  refinement duplicate of Jost & Zhang 2302.01069), 12 (cavity-as-tool);
+  28 queued. Next: candidate-13 (`atlas-general` tranche). Lint --check
+  0 errors.
 - B3 atlas synthesis touch-ups — open (after ~15 new papers).
 
 ## Reports (newest first)
+- [2026-08-25-0252](2026-08-25-0252.md) — Pass 16 / B2 slice-7: five triage-rejections (05/06 equivariance wrappers, 08 CL wrapper w/ misassigned separatrix tag, 11 Cheeger-refinement duplicate of 2302.01069, 12 cavity-as-tool); batch-002 at 12/40; all-rejection pass, counts stay 78.
 - [2026-08-25-0244](2026-08-25-0244.md) — Pass 15 / B2 slice-6: TPCC annotated (2303.16716); candidates 04/07/09 rejected (wrapper + two duplicates already in corpus); counts 77→78.
 - [2026-08-25-0235](2026-08-25-0235.md) — Pass 14 / B2 slice-5: batch-002 opened, candidates 01–03 rejected; 5 blahut-class wrong-pointers fixed; README/docs counts patched to 77; Dynamics×Matching still thin at 4.
 - [2026-08-25-0221](2026-08-25-0221.md) — Pass 13 / B2 slice-4: batch-001 emptied (21/21); fresh annotations ying-2016, liu-2025, brusch-2023, silva-2018; 10 triage-rejections; Dynamics×Matching strengthened.

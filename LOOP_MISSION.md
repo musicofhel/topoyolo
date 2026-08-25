@@ -141,7 +141,12 @@ skill, dual-index filing, glossary/atlas updates, matrix regen via A4's tool.
   wrapper), candidate-07 REJECTED (Mézard-Mora duplicate — already annotated
   as 0803.3061), candidate-09 REJECTED (Hodge-Aware CL duplicate, already in
   tda.md), candidate-10 ANNOTATED → TPCC `annotations/2303.16716.md`;
-  batch-002 now 7/40 consumed, 33 queued.** Also pass 14: fixed 5 wrong-pointer
+  candidate-10 ANNOTATED → TPCC `annotations/2303.16716.md`; pass 16
+  (slice-7): candidates 05, 06 REJECTED (equivariance wrappers), candidate-08
+  REJECTED (CL wrapper — separatrix tag confirmed misassigned), candidate-11
+  REJECTED (Cheeger refinement duplicate of Jost & Zhang 2302.01069),
+  candidate-12 REJECTED (cavity-as-tool); batch-002 now 12/40 consumed,
+  28 queued. Next tranche: candidates 13+ [atlas-general].** Also pass 14: fixed 5 wrong-pointer
   crossrefs in by-structure/optimal_transport.md; counts now at derived 78.
   Lint --check 0 errors.]
   Consume queue batches.** Repeatable task — each pass takes ≤3
