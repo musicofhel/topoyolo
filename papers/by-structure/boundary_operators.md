@@ -12,10 +12,10 @@ The shared pattern: there is a graded algebraic object (simplicial complex, code
 LDPC parity-check matrix H as boundary operator over GF(2). Codewords are ker(H), syndromes are im(H). Factor graphs generalize the chain complex structure. Full annotation: `by-domain/information_theory.md`.
 
 ### Baudot & Bennequin (2015) — The Homological Nature of Entropy
-Information structures as simplicial complexes. k-simplices = k-tuples of random variables. Coboundary δ maps (k-1)-information functions to k-information functions, δ²=0. Shannon entropy H is a 1-COCYCLE: the chain rule IS the cocycle condition δH=0. Exact identification, not analogy. Extends to Tsallis/Rényi as deformed cocycles. Full annotation: `inbox.md`.
+Information structures as simplicial complexes. k-simplices = k-tuples of random variables. Coboundary δ maps (k-1)-information functions to k-information functions, δ²=0. Shannon entropy H is a 1-COCYCLE: the chain rule IS the cocycle condition δH=0. Exact identification, not analogy. Extends to Tsallis/Rényi as deformed cocycles. Full annotation: `annotations/baudot-2015.md` (MDPI Entropy 17(5):3253).
 
 ### Bradley (2021) — Entropy as a Topological Operad Derivation
-Shannon entropy = unique derivation (up to scalar) of the operad of topological simplices. Strengthens Baudot-Bennequin: not only is H a cocycle, it's the ONLY one satisfying operad derivation axioms. Category-theoretic chain complex perspective. Full annotation: `inbox.md` (arXiv: 2107.09581).
+Shannon entropy = unique derivation (up to scalar) of the operad of topological simplices. Strengthens Baudot-Bennequin: not only is H a cocycle, it's the ONLY one satisfying operad derivation axioms. Category-theoretic chain complex perspective. Full annotation: `annotations/2107.09581.md` (arXiv: 2107.09581).
 
 ### Sugiyama, Nakahara & Tsuda (2016) — Information Decomposition on Structured Space
 Dual θ/η coordinates on posets as order-theoretic chain complex. Möbius function as boundary operator. Principal ideals (↓x) and filters (↑x) as ∂ and δ supports. Pythagorean theorem for KL divergence decomposes interactions by level. Full annotation: `by-domain/information_theory.md`.
@@ -31,10 +31,10 @@ Full chain complex on simplicial complexes of order 2. Incidence matrices B_1 (n
 Khovanov cohomology (categorification of Jones polynomial) on financial time series. Cochain groups from market microstructure states. Coboundary operators from knot/link structure of figure-eight hyperbolic knots. delta^2 = 0 from standard Khovanov construction. Cohomology classifies 8 fundamental market states. Full annotation: `by-domain/tda.md`.
 
 ### Bauer (2021) --- Ripser
-Vietoris-Rips complex with implicit COBOUNDARY matrix representation. Coboundary is sparse (few cofaces per simplex) vs dense boundary matrix. Apparent/emergent pair optimizations identify persistence pairs without full column reduction. Clearing optimization via homology-cohomology duality. Full annotation: `inbox.md` (arXiv: 2108.03831).
+Vietoris-Rips complex with implicit COBOUNDARY matrix representation. Coboundary is sparse (few cofaces per simplex) vs dense boundary matrix. Apparent/emergent pair optimizations identify persistence pairs without full column reduction. Clearing optimization via homology-cohomology duality. Full annotation: `annotations/2108.03831.md` (arXiv: 2108.03831).
 
 ### Peek, Pritam, Skerritt, Chalup (2025) --- TE + Directed PH in Spiking Systems
-Directed flag complex from transfer entropy adjacency matrix. Directed k-simplices from consistently oriented (k+1)-cliques. Standard simplicial boundary on oriented simplices. Same construction as Reimann et al. but driven by information-theoretic (TE) coupling rather than synaptic connectivity. Flagser for directed PH computation. Full annotation: `inbox.md` (arXiv: 2508.19048).
+Directed flag complex from transfer entropy adjacency matrix. Directed k-simplices from consistently oriented (k+1)-cliques. Standard simplicial boundary on oriented simplices. Same construction as Reimann et al. but driven by information-theoretic (TE) coupling rather than synaptic connectivity. Flagser for directed PH computation. Full annotation: `annotations/2508.19048.md` (arXiv: 2508.19048).
 
 ## QEC
 
@@ -42,27 +42,27 @@ Directed flag complex from transfer entropy adjacency matrix. Directed k-simplic
 Subsystem decomposition H_S = H_A ⊗ H_B ⊕ K as Hilbert-space chain complex. Code subsystem H_A = protected information (cycles); gauge subsystem H_B = correctable errors (boundaries); K = uncorrectable states. Error-correcting map R projects onto code space (projection to ker/im). Correctability condition = functional ∂^2 = 0. Full annotation: `by-domain/qec.md`.
 
 ### Kitaev (1997) — Fault-tolerant quantum computation by anyons
-Toric code IS a chain complex on T². Qubits on edges (1-cells), X-stabilizers = ∂ (boundary of faces), Z-stabilizers = δ (coboundary of vertices). Logical qubits = H₁(T², ℤ/2). Computation via anyon braiding on the fusion space. Full annotation: `inbox.md` (arXiv: quant-ph/9707021).
+Toric code IS a chain complex on T². Qubits on edges (1-cells), X-stabilizers = ∂ (boundary of faces), Z-stabilizers = δ (coboundary of vertices). Logical qubits = H₁(T², ℤ/2). Computation via anyon braiding on the fusion space. Full annotation: `annotations/quant-ph-9707021.md` (arXiv: quant-ph/9707021).
 
 ### Dennis, Kitaev, Landahl, Preskill (2002) — Topological quantum memory
-Surface codes with explicit recovery protocols. Qubits on edges, stabilizers from ∂ and δ. Threshold maps to 3D Z₂ lattice gauge theory. Full annotation: `inbox.md` (arXiv: quant-ph/0110143).
+Surface codes with explicit recovery protocols. Qubits on edges, stabilizers from ∂ and δ. Threshold maps to 3D Z₂ lattice gauge theory. Full annotation: `annotations/quant-ph-0110143.md` (arXiv: quant-ph/0110143).
 
 ## Neuroscience
 
 ### Giusti, Pastalkova, Curto, Itskov (2015) — Clique topology reveals intrinsic geometric structure in neural correlations
-Order complex from pairwise correlations of hippocampal pyramidal neurons. Vertices = neurons; k-cliques become (k-1)-simplices. Boundary operators are standard simplicial ∂. Key property: topological features depend only on rank ordering of correlations (invariant under monotone nonlinear transformations). Detects geometric structure invisible to eigenvalue methods. Structure persists during non-spatial behaviors (wheel running, REM sleep). Null model: random matrices. Full annotation: `inbox.md` (arXiv: 1502.06172).
+Order complex from pairwise correlations of hippocampal pyramidal neurons. Vertices = neurons; k-cliques become (k-1)-simplices. Boundary operators are standard simplicial ∂. Key property: topological features depend only on rank ordering of correlations (invariant under monotone nonlinear transformations). Detects geometric structure invisible to eigenvalue methods. Structure persists during non-spatial behaviors (wheel running, REM sleep). Null model: random matrices. Full annotation: `annotations/1502.06172.md` (arXiv: 1502.06172).
 
 ### Reimann, Nolte, Scolamiero, Turner, Perin, Chindemi, Dłotko, Levi, Hess, Markram (2017) — Cliques of Neurons Bound into Cavities Provide a Missing Link between Structure and Function
-DIRECTED simplicial complexes from synaptic connectivity in reconstructed rat neocortex (~31,000 neurons, ~8M connections). Directed k-simplex = clique of (k+1) neurons with single source and sink, encoding information flow direction. Standard simplicial ∂ on oriented simplices. Finds directed simplices up to dimension 6-7 (~80M directed 3-simplices), vastly exceeding Erdős-Rényi null. Stimulus triggers hierarchical cavity formation over time. Full annotation: `inbox.md` (DOI: 10.3389/fncom.2017.00048).
+DIRECTED simplicial complexes from synaptic connectivity in reconstructed rat neocortex (~31,000 neurons, ~8M connections). Directed k-simplex = clique of (k+1) neurons with single source and sink, encoding information flow direction. Standard simplicial ∂ on oriented simplices. Finds directed simplices up to dimension 6-7 (~80M directed 3-simplices), vastly exceeding Erdős-Rényi null. Stimulus triggers hierarchical cavity formation over time. Full annotation: `annotations/10.3389-fncom.2017.00048.md` (DOI: 10.3389/fncom.2017.00048).
 
 ### Dabaghian, Mémoli, Frank, Carlsson (2012) — A Topological Paradigm for Hippocampal Spatial Map Formation Using Persistent Homology
-Temporal nerve complex T(t) from place cell co-firing. Vertices = place cells; k cells co-firing within a theta cycle span a (k-1)-simplex. Complex grows with exploration. PH tracks Betti numbers (b₀ = components, b₁ = loops/obstacles). Identifies "learning region" in parameter space where correct environment topology is recovered in 2-5 minutes. Full annotation: `inbox.md` (DOI: 10.1371/journal.pcbi.1002581).
+Temporal nerve complex T(t) from place cell co-firing. Vertices = place cells; k cells co-firing within a theta cycle span a (k-1)-simplex. Complex grows with exploration. PH tracks Betti numbers (b₀ = components, b₁ = loops/obstacles). Identifies "learning region" in parameter space where correct environment topology is recovered in 2-5 minutes. Full annotation: `annotations/10.1371-journal.pcbi.1002581.md` (DOI: 10.1371/journal.pcbi.1002581).
 
 ### Curto & Itskov (2008) — Cell Groups Reveal Structure of Stimulus Space
-Nerve complex from place cell co-firing groups (250ms windows). The Nerve Theorem guarantees: homology of nerve complex = homology of stimulus space (given convex receptive fields). H₁ counts obstacles/holes. Geometric reconstruction via shortest-path distances on cell-group graph achieves ~3% accuracy with 120-140 cells. Robust to 10% spike-timing noise. Full annotation: `inbox.md` (DOI: 10.1371/journal.pcbi.1000205).
+Nerve complex from place cell co-firing groups (250ms windows). The Nerve Theorem guarantees: homology of nerve complex = homology of stimulus space (given convex receptive fields). H₁ counts obstacles/holes. Geometric reconstruction via shortest-path distances on cell-group graph achieves ~3% accuracy with 120-140 cells. Robust to 10% spike-timing noise. Full annotation: `annotations/10.1371-journal.pcbi.1000205.md` (DOI: 10.1371/journal.pcbi.1000205).
 
 ### Gardner, Hermansen, Pachitariu, Burak, Baas, Dunn, M. Moser, E. Moser (2022) — Toroidal topology of population activity in grid cells
-Persistent cohomology on Neuropixels recordings of hundreds of grid cells reveals the population activity manifold is a torus T². The torus has H₁(T²,Z) = Z² — two independent 1-cycles encoding two spatial dimensions. This is the SAME homological structure as Kitaev's toric code, where H₁(T²,Z/2) = (Z/2)² defines two logical qubits. The chain complex is constructed via PH on the population activity point cloud. Toroidal structure persists across environments and wake-to-sleep transitions, consistent with CAN models. The torus is a population-level object invisible from individual cell marginals. Full annotation: `inbox.md` (DOI: 10.1038/s41586-021-04268-7). **Bridge**: neuro ↔ QEC via shared T² — see `cross_domain_bridges.md`.
+Persistent cohomology on Neuropixels recordings of hundreds of grid cells reveals the population activity manifold is a torus T². The torus has H₁(T²,Z) = Z² — two independent 1-cycles encoding two spatial dimensions. This is the SAME homological structure as Kitaev's toric code, where H₁(T²,Z/2) = (Z/2)² defines two logical qubits. The chain complex is constructed via PH on the population activity point cloud. Toroidal structure persists across environments and wake-to-sleep transitions, consistent with CAN models. The torus is a population-level object invisible from individual cell marginals. Full annotation: `annotations/10.1038-s41586-021-04268-7.md` (DOI: 10.1038/s41586-021-04268-7). **Bridge**: neuro ↔ QEC via shared T² — see `cross_domain_bridges.md`.
 
 ---
 
@@ -134,13 +134,13 @@ The Hodge decomposition appears in both the TDA and information theory contexts 
 
 ### Phase 2 (2026-04-06)
 
-**Freedman, Kitaev, Larsen, Wang (2001) — Topological Quantum Computation**: arXiv: quant-ph/0101025. Quantum computation from anyonic systems = unitary topological modular functors (Witten-Chern-Simons). Fusion rules generalize boundary operators. Braiding as categorified chain complex composition. Error rate e^{-αℓ} via topological protection. Full annotation: `inbox.md`.
+**Freedman, Kitaev, Larsen, Wang (2001) — Topological Quantum Computation**: arXiv: quant-ph/0101025. Quantum computation from anyonic systems = unitary topological modular functors (Witten-Chern-Simons). Fusion rules generalize boundary operators. Braiding as categorified chain complex composition. Error rate e^{-αℓ} via topological protection. Full annotation: `annotations/quant-ph-0101025.md`.
 
-**Bombin & Martin-Delgado (2007) — Statistical Mechanical Models and Topological Color Codes**: arXiv: 0711.0468. Color codes on trivalent lattices with Z₂×Z₂ gauge group. Overlap with factorized state = 3-body Ising partition function. Different cellulation from toric code, same homological machinery but richer transversality (direct Clifford gates). Full annotation: `inbox.md`.
+**Bombin & Martin-Delgado (2007) — Statistical Mechanical Models and Topological Color Codes**: arXiv: 0711.0468. Color codes on trivalent lattices with Z₂×Z₂ gauge group. Overlap with factorized state = 3-body Ising partition function. Different cellulation from toric code, same homological machinery but richer transversality (direct Clifford gates). Full annotation: `annotations/0711.0468.md`.
 
-**Berry et al. (2023) — Quantum Advantage in TDA**: arXiv: 2209.13581. The chain complex in its purest COMPUTATIONAL form. Boundary operators dG_k on clique complexes, combinatorial Laplacian Delta = dG^{dagger} dG + dG dG^{dagger}, Dirac operator BG = dG + dG^{dagger}. Betti number = dim(ker(Delta)). The quantum algorithm projects onto ker(BG) restricted to k-chain subspace. Direct TDA-QEC bridge: quantum algorithm computes TDA's chain complex invariants. Full annotation: `inbox.md`.
+**Berry et al. (2023) — Quantum Advantage in TDA**: arXiv: 2209.13581. The chain complex in its purest COMPUTATIONAL form. Boundary operators dG_k on clique complexes, combinatorial Laplacian Delta = dG^{dagger} dG + dG dG^{dagger}, Dirac operator BG = dG + dG^{dagger}. Betti number = dim(ker(Delta)). The quantum algorithm projects onto ker(BG) restricted to k-chain subspace. Direct TDA-QEC bridge: quantum algorithm computes TDA's chain complex invariants. Full annotation: `annotations/2209.13581.md`..
 
-**Hastings & Haah (2021) — Floquet Code (Honeycomb Code)**: arXiv: 2107.02194. Honeycomb cellular complex on T^2. Qubits on vertices (0-cells), 2-qubit Pauli checks on edges (1-cells), hexagonal plaquettes (2-cells). Product of checks on any 1-cycle = stabilizer; plaquette stabilizers = boundaries. As subsystem code: 0 logical qubits (all homology is trivial). With periodic measurement schedule: 2 logical qubits from H_1(T^2, Z/2). DYNAMICAL chain complex: the boundary structure changes each round (different edge subset measured). Syndrome in 2+1D spacetime forms cubic lattice for MWPM decoding. Full annotation: `inbox.md`.
+**Hastings & Haah (2021) — Floquet Code (Honeycomb Code)**: arXiv: 2107.02194. Honeycomb cellular complex on T^2. Qubits on vertices (0-cells), 2-qubit Pauli checks on edges (1-cells), hexagonal plaquettes (2-cells). Product of checks on any 1-cycle = stabilizer; plaquette stabilizers = boundaries. As subsystem code: 0 logical qubits (all homology is trivial). With periodic measurement schedule: 2 logical qubits from H_1(T^2, Z/2). DYNAMICAL chain complex: the boundary structure changes each round (different edge subset measured). Syndrome in 2+1D spacetime forms cubic lattice for MWPM decoding. Full annotation: `annotations/0711.0468.md`.
 
 ### Cross-Domain Observation
 
@@ -158,13 +158,13 @@ The chain complex now has **7 incarnations** (expanding from 6 in third pass), w
 ## Wave 4c (2026-04-06) — Foundational Threshold Theorems
 
 ### Breuckmann & Eberhardt (2021) — Quantum LDPC Codes
-arXiv: 2103.06309. THE definitive statement that CSS codes ARE chain complexes. C_2 --partial_2--> C_1 --partial_1--> C_0 with partial_1 partial_2 = 0 (equivalently H_Z H_X^T = 0). Physical qubits = 1-cells, Z-stabilizers from partial_2 (faces), X-stabilizers from partial_1^T (vertices). Logical qubits = H_1(C). Code distance = min-weight non-trivial homology class = systole of underlying manifold. Product constructions (hypergraph, tensor, fiber bundle, lifted, balanced) are operations on chain complexes governed by Kunneth formula. Hyperbolic codes exploit Gauss-Bonnet-Chern (curvature determines homology dimension). Full annotation: `papers/inbox.md`.
+arXiv: 2103.06309. THE definitive statement that CSS codes ARE chain complexes. C_2 --partial_2--> C_1 --partial_1--> C_0 with partial_1 partial_2 = 0 (equivalently H_Z H_X^T = 0). Physical qubits = 1-cells, Z-stabilizers from partial_2 (faces), X-stabilizers from partial_1^T (vertices). Logical qubits = H_1(C). Code distance = min-weight non-trivial homology class = systole of underlying manifold. Product constructions (hypergraph, tensor, fiber bundle, lifted, balanced) are operations on chain complexes governed by Kunneth formula. Hyperbolic codes exploit Gauss-Bonnet-Chern (curvature determines homology dimension). Full annotation: `annotations/0711.0468.md`.
 
 ### Aharonov & Ben-Or (1997/1999) — CSS and Polynomial Codes
-arXiv: quant-ph/9906129. CSS codes defined by orthogonality condition H_Z H_X^T = 0 = chain complex condition. Polynomial codes over F_p: codewords are superpositions of polynomial evaluations, degree d filtration provides graded algebraic structure. Fault-tolerant procedures systematically derived from algebraic properties of the polynomial ring. Full annotation: `papers/inbox.md`.
+arXiv: quant-ph/9906129. CSS codes defined by orthogonality condition H_Z H_X^T = 0 = chain complex condition. Polynomial codes over F_p: codewords are superpositions of polynomial evaluations, degree d filtration provides graded algebraic structure. Fault-tolerant procedures systematically derived from algebraic properties of the polynomial ring. Full annotation: `annotations/0711.0468.md`.
 
 ### Knill, Laflamme, Zurek (1998) — 7-Qubit Steane Code
-arXiv: quant-ph/9702058. The 7-qubit code based on [7,4,3] Hamming code. Q^{tensor 7} = A tensor S decomposition: A = logical qubit (homology class), S = syndrome space (cokernel). Six stabilizer observables S_1...S_6 (tensor products of Pauli operators) = boundary operators. Syndrome measurement = projection onto code space = projection to ker/im. Normalizer group provides algebraic structure for encoded operations. Full annotation: `papers/inbox.md`.
+arXiv: quant-ph/9702058. The 7-qubit code based on [7,4,3] Hamming code. Q^{tensor 7} = A tensor S decomposition: A = logical qubit (homology class), S = syndrome space (cokernel). Six stabilizer observables S_1...S_6 (tensor products of Pauli operators) = boundary operators. Syndrome measurement = projection onto code space = projection to ker/im. Normalizer group provides algebraic structure for encoded operations. Full annotation: `annotations/0711.0468.md`.
 
 ### Cross-Domain Observation (Updated)
 
@@ -175,43 +175,69 @@ The chain complex incarnation count remains at **7** but incarnation #1 (Geometr
 ## Wave 10 — link-forge update (2026-04-17)
 
 ### Baudot, Tapia, Bennequin & Goaillard (2019) — Topological Information Data Analysis
-arXiv: 1907.04242. Simplicial complex Δ([n]) of random variables. Entropy and MI are co-chains. I_2 = coboundary of H (δH = I_2). Topos-theoretic cohomology foundation. Full annotation: `inbox.md` (Wave 10a).
+arXiv: 1907.04242. Simplicial complex Δ([n]) of random variables. Entropy and MI are co-chains. I_2 = coboundary of H (δH = I_2). Topos-theoretic cohomology foundation. Full annotation: `annotations/0711.0468.md` (Wave 10a).
 
 ### Ghorbanchian, Restrepo, Torres & Bianconi (2020) — Higher-order simplicial synchronization
-DOI: 10.1038/s42005-021-00605-4. Hodge Laplacian L_k from boundary operators B_k. Dynamics ON a chain complex — boundary operator mediates coupling between topological signals on different-dimensional simplices. Full annotation: `inbox.md` (Wave 10a).
+DOI: 10.1038/s42005-021-00605-4. Hodge Laplacian L_k from boundary operators B_k. Dynamics ON a chain complex — boundary operator mediates coupling between topological signals on different-dimensional simplices. Full annotation: `annotations/0711.0468.md` (Wave 10a).
 
 ### Dey, Mrozek & Slechta (2021) — Conley-Morse graph persistence
-arXiv: 2107.02115. Conley index = relative homology H_k(P,E) of index pair. Explicitly chain-level construction on simplicial complexes with face-relation boundary operators. Morse sets annotated with Poincaré polynomials (graded homological fingerprint). Full annotation: `inbox.md` (Wave 10a).
+arXiv: 2107.02115. Conley index = relative homology H_k(P,E) of index pair. Explicitly chain-level construction on simplicial complexes with face-relation boundary operators. Morse sets annotated with Poincaré polynomials (graded homological fingerprint). Full annotation: `annotations/0711.0468.md` (Wave 10a).
 
 ### Petri et al. (2014) — Homological scaffolds of brain networks
-DOI: 10.1098/rsif.2014.0873. Weighted clique complex from fMRI correlations. Homological scaffold extracts which edges carry persistent cycles. Chain-level information preserved and re-encoded as network. Full annotation: `inbox.md` (Wave 10a).
+DOI: 10.1098/rsif.2014.0873. Weighted clique complex from fMRI correlations. Homological scaffold extracts which edges carry persistent cycles. Chain-level information preserved and re-encoded as network. Full annotation: `annotations/0711.0468.md` (Wave 10a).
 
 ### Chaudhuri et al. (2019) — Head direction ring attractor
-DOI: 10.1038/s41593-019-0460-x. Population activity traces S^1 ring manifold (H_1 = ℤ). The 1-cycle is the topological invariant of the circuit. Extracted via Isomap dimensionality reduction. Full annotation: `inbox.md` (Wave 10a).
+DOI: 10.1038/s41593-019-0460-x. Population activity traces S^1 ring manifold (H_1 = ℤ). The 1-cycle is the topological invariant of the circuit. Extracted via Isomap dimensionality reduction. Full annotation: `annotations/0711.0468.md` (Wave 10a).
 
 ### Chung, El-Yaagoubi, Qiu & Ombao (2025) — From Density to Void
-arXiv: 2503.14700. Explicit ∂_k boundary matrices from Intersecting Neighbor Sets algorithm on fMRI correlations. λ_k = N_k / C(p,k) ratio drops to ~10^{-5} for k ≥ 4. Chain complex machinery reveals absence of higher-order structure. Full annotation: `inbox.md` (Wave 10b).
+arXiv: 2503.14700. Explicit ∂_k boundary matrices from Intersecting Neighbor Sets algorithm on fMRI correlations. λ_k = N_k / C(p,k) ratio drops to ~10^{-5} for k ≥ 4. Chain complex machinery reveals absence of higher-order structure. Full annotation: `annotations/0711.0468.md` (Wave 10b).
 
 ### Dabaghian, Brandt & Frank (2014) — Hippocampal map as topological template
-eLife 03476. Nerve complex from place cell co-firing. Topological invariants (H_0, H_1) of the complex encode environment topology. Geometric deformations (track morphing) do not change the chain complex invariants. Full annotation: `inbox.md` (Wave 10b).
+eLife.03476. Nerve complex from place cell co-firing. Topological invariants (H_0, H_1) of the complex encode environment topology. Geometric deformations (track morphing) do not change the chain complex invariants. Full annotation: `annotations/0711.0468.md` (Wave 10b).
 
 ### Donato et al. (2016) — PH analysis of Phase Transitions
-arXiv: 1601.03641. Rips-Vietoris complex with full ∂_n boundary operators in appendix. Betti numbers β_0, β_1 tracked through filtration. Chain complex formalism applied to configuration space samples from MFXY and φ^4 models. Full annotation: `inbox.md` (Wave 10b).
+arXiv: 1601.03641. Rips-Vietoris complex with full ∂_n boundary operators in appendix. Betti numbers β_0, β_1 tracked through filtration. Chain complex formalism applied to configuration space samples from MFXY and φ^4 models. Full annotation: `annotations/0711.0468.md` (Wave 10b).
 
 ### Batko, Mischaikow, Mrozek & Przybylski (2019) — Conley Index from Sampled Dynamics
-arXiv: 1904.03757. Cohomological Conley index: endomorphism on H*(P_1/P_2, [P_2]) via Leray functor. Cubical homology on binned phase space. Index map matrices on H^1 give explicit symbolic dynamics encoding. Full annotation: `inbox.md` (Wave 10b).
+arXiv: 1904.03757. Cohomological Conley index: endomorphism on H*(P_1/P_2, [P_2]) via Leray functor. Cubical homology on binned phase space. Index map matrices on H^1 give explicit symbolic dynamics encoding. Full annotation: `annotations/0711.0468.md` (Wave 10b).
 
 ### Lord, Expert, Fernandes, Petri, Van Hartevelt, Vaccarino, Deco, Turkheimer & Kringelbach (2016) — Insights into Brain Architectures from the Homological Scaffolds
-DOI: fnsys.2016.00085. Weighted clique complex from resting-state fMRI correlations. Extends Petri et al. 2014 scaffold: boundary operators on weighted simplicial complex mediate scaffold extraction. Chain complex formalism identifies which edges carry persistent cycles. Full annotation: `inbox.md` (Wave 10c).
+DOI: fnsys.2016.00085. Weighted clique complex from resting-state fMRI correlations. Extends Petri et al. 2014 scaffold: boundary operators on weighted simplicial complex mediate scaffold extraction. Chain complex formalism identifies which edges carry persistent cycles. Full annotation: `annotations/0711.0468.md` (Wave 10c).
 
 ### Jost & Zhang (2023) — Cheeger inequalities on simplicial complexes
-arXiv: 2302.01069. Higher-order Cheeger constants h_k defined via boundary operators on k-chains. Spectral gap of k-Hodge Laplacian L_k = B_k^T B_k + B_{k+1} B_{k+1}^T bounded by h_k. Explicit ∂²=0 chain complex structure underlies the spectral analysis. Full annotation: `inbox.md` (Wave 10c).
+arXiv: 2302.01069. Higher-order Cheeger constants h_k defined via boundary operators on k-chains. Spectral gap of k-Hodge Laplacian L_k = B_k^T B_k + B_{k+1} B_{k+1}^T bounded by h_k. Explicit ∂²=0 chain complex structure underlies the spectral analysis. Full annotation: `annotations/0711.0468.md` (Wave 10c).
 
 ### Trinca, Bollauf & Zamir (2024) — n-Dimensional Toric Codes from Lattice Codes
-arXiv: 2410.20233. n-dimensional toric codes constructed from lattice codes via chain complex on n-torus T^n. Boundary operators ∂_k on k-cells of the cellular decomposition. Logical qubits = H_k(T^n, Z/2). Extends Kitaev's 2D toric code to arbitrary dimension. Full annotation: `inbox.md` (Wave 10c).
+arXiv: 2410.20233. n-dimensional toric codes constructed from lattice codes via chain complex on n-torus T^n. Boundary operators ∂_k on k-cells of the cellular decomposition. Logical qubits = H_k(T^n, Z/2). Extends Kitaev's 2D toric code to arbitrary dimension. Full annotation: `annotations/0711.0468.md` (Wave 10c).
 
 ### Curry, DeSha, Hoff, Limberger, Luo & Qin (2022) — Decorated merge trees for persistent topology
-DOI: s41468-022-00089-3. Boundary operators on merge tree edge complex. DMT functor preserves chain complex structure from PH module to merge tree. Interleaving of R[x]-modules encodes birth-death via boundary map kernels and images. Full annotation: `inbox.md` (Wave 10c).
+DOI: s41468-022-00089-3. Boundary operators on merge tree edge complex. DMT functor preserves chain complex structure from PH module to merge tree. Interleaving of R[x]-modules encodes birth-death via boundary map kernels and images. Full annotation: `annotations/0711.0468.md` (Wave 10c).
 
 ### Méndez & Sánchez-García (2020) — Directed Persistent Homology for Dissimilarity Functions
-arXiv: 2008.00711. Directed boundary operators on oriented simplices of pre-ordered Rips complex. Asymmetric dissimilarity function drives directed filtration. ∂²=0 on directed chains — same algebraic condition, new geometric content capturing asymmetry. Full annotation: `inbox.md` (Wave 10c).
+arXiv: 2008.00711. Directed boundary operators on oriented simplices of pre-ordered Rips complex. Asymmetric dissimilarity function drives directed filtration. ∂²=0 on directed chains — same algebraic condition, new geometric content capturing asymmetry. Full annotation: `annotations/0711.0468.md` (Wave 10c).
+
+### Grande & Schaub (2023) — Topological Point Cloud Clustering
+arXiv: 2303.16716. Simplicial complex from kNN graph over the point cloud; clustering reads the full set of Hodge Laplacians L_k = B_{k+1} B_{k+1}^T + B_k^T B_k rather than only the graph Laplacian L_0 = B_1 B_1^T. Points are assigned to the homology class (component / cycle / cavity) they contribute to. Full annotation: `annotations/2303.16716.md` (pass 15, batch-002).
+
+### Battiston et al. (2020) — Networks Beyond Pairwise Interactions
+Physics Reports 874 survey: incidence/boundary matrices, simplicial homology, higher-order Laplacians as the graded chain apparatus of higher-order networks; random hypergraph ensembles as nulls. Full annotation: `annotations/10.1016-j.physrep.2020.05.004.md` (DOI: 10.1016/j.physrep.2020.05.004).
+
+### B2 batch-007: boundary sensitivity of tailored codes (2026-08-25)
+
+**Higgott, Bohdanowicz, Kubica, Flammia & Campbell (2022)** — arXiv: 2203.04948. Fragile boundaries: boundary tailoring that raises threshold near it becomes a resource liability well below threshold — boundary-operator modification's effect on code cost flips sign across the noise regime. Full annotation: `annotations/2203.04948.md` (B2 pass 40). **See also**: `by-domain/qec.md`, `by-structure/phase_transitions.md`.
+
+### B2 batch-009: pid-theory — combinatorial incarnation deepened (2026-08-25)
+
+**Williams & Beer (2010)**: arXiv: 1004.2515. Origin of the combinatorial chain-complex incarnation (#4): sources organized into an antichain poset ordered by subset-superset relations; partial information atoms recovered from cumulative I_min by Möbius inversion over that lattice — graded poset + inversion formula, the same skeleton homology uses. Full annotation: `annotations/1004.2515.md` (B2 pass 48). **See also**: `by-domain/information_theory.md`, `by-structure/composite_systems.md`.
+
+**Milzman (2024)**: arXiv: 2404.01470. Boundary reading of the redundant atom: I_ft = exactly the information surviving individual source failures — redundancy re-grounded as persistence under coordinate deletion, with an order-reversing correspondence between source-fallible instantiation collections and the Williams-Beer lattice (two graded posets dual-linked). First corpus bridge from axiomatic PID to engineering fault tolerance. Full annotation: `annotations/2404.01470.md` (B2 pass 49). **See also**: `by-domain/information_theory.md`, `by-domain/qec.md`.
+
+### B2 batch-010: sheaf neural networks — the chain complex as learnable architecture (2026-08-25)
+
+**Hansen & Gebhart (2020)** — "Sheaf Neural Networks." arXiv: 2012.06333. Founding SNN paper: sheaf Laplacian built from per-edge restriction maps between dimension-varying stalks — diffusion on the cochain complex C⁰ → C¹ rather than bare node features; constant-stalk/identity-restriction case recovers the graph Laplacian L = BᵀB exactly. The novelty for the machine: restriction maps (coboundary coefficients) become *learnable parameters*, and stalks need not share dimension. Full annotation: `annotations/2012.06333.md` (B2 pass 52). **See also**: `by-domain/tda.md`.
+
+**Seely (2025)** — "Sheaf Cohomology of Linear Predictive Coding Networks." arXiv: 2511.11092. Linear predictive coding IS a cellular sheaf: coboundary = edge-wise prediction error, PC inference = sheaf-Laplacian diffusion; cohomology classes = error patterns no amount of inference removes (null-by-construction); Hodge decomposition locates learning stalls in the harmonic component of recurrent feedback topologies. First corpus entry where cohomology itself carries the semantic load, and the chain-complex↔neuroscience bridge. Full annotation: `annotations/2511.11092.md` (B2 pass 52). **See also**: `by-domain/neuroscience.md`, `by-domain/tda.md`.
+
+**Hu (2025)** — "Cellular Sheaves on Higher-Dimensional Structures." arXiv: 2505.23993. Extends cellular sheaves from graphs to full simplicial complexes: graded cochain data C⁰ → C¹ → C² → … with sheaf-valued coefficients; geometric branch's 0th sheaf Laplacian recovers ANM Hessian matrices (elasticity as special case), higher Laplacians encode multi-way interactions; parallel algebraic branch grounds sheaves in ringed spaces and ideals/modules. Full annotation: `annotations/2505.23993.md` (B2 pass 53). **See also**: `by-domain/tda.md`.
+
+**Dönmez, Mosig, Fritsche & Koch (2026)** — "Oversmoothing as Representation Degeneracy in Neural Sheaf Diffusion." arXiv: 2605.11178. NSD as incidence-quiver representations: direct-sum decompositions of boundary data induce decompositions of the harmonic space reached at the diffusion limit; oversmoothing = degeneration toward low-complexity summands; GIT stability + moment-map regularizers bias learned restrictions to balanced geometries, with an equal-stalk stability-wall obstruction that non-uniform stalks remove. Third stability incarnation (orbit-closure semistability) applied to the machine itself. Full annotation: `annotations/2605.11178.md` (B2 pass 53). **See also**: `by-domain/tda.md`.

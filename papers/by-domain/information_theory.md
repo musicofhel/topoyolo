@@ -4,36 +4,12 @@ Papers from the information theory community, indexed by which abstract machines
 
 ---
 
-## Belghazi et al. (2018)
+## Belghazi, Baratin, Rajeswar, Ozair, Bengio, Courville, Hjelm (2018)
 **"Mutual Information Neural Estimation (MINE)"**
 arXiv: 1801.04062 | ICML 2018
-
-**Domain(s)**: Information theory, machine learning
-
-**Abstract machines instantiated**:
-- **Joint-vs-marginal excess**: The paper's core object IS the joint-vs-marginal gap. MI is defined as I(X;Z) = D_KL(P_XZ || P_X ⊗ P_Z) — the KL divergence between the joint distribution and the product of marginals. MINE estimates this divergence via the Donsker-Varadhan dual representation: I(X;Z) = sup_T E_joint[T] - log(E_product[e^T]), where T is parameterized by a neural network. The entire method is a machine for measuring excess structure in the joint relative to independent marginals.
-- **Null hypothesis**: The product of marginals P_X ⊗ P_Z serves as the explicit null distribution — it is what you get when you "destroy" the dependence between X and Z while preserving each variable's marginal statistics. MINE samples from both joint and product distributions; the gap between them is the signal.
-- **Stability**: The paper proves strong consistency — as sample size → ∞, the MINE estimate converges to the true MI. They also prove the estimator is Lipschitz-bounded with respect to network parameters, providing perturbation guarantees.
-
-**What is genuinely new (not reducible to shared abstraction)**:
-- The use of neural networks as the function class for the dual representation. Previous dual estimators (Nguyen et al., 2010) used fixed function classes; parameterizing with deep networks makes the estimator scalable to high-dimensional continuous variables.
-- The "exponential moving average" trick to reduce bias in the gradient of the Donsker-Varadhan bound — this is a practical optimization technique with no analogue in the other domains.
-- Application to the Information Bottleneck method, using MINE as a differentiable MI layer within a deep network. This makes MI a loss function rather than just a diagnostic, which is a distinctly ML contribution.
-- Applies MINE to improve mode coverage in GANs — uses MI maximization between generator input noise Z and generated output G(Z) to prevent mode dropping.
-
-**Connections the authors acknowledge**: Cite the information bottleneck (Tishby et al., 2000) extensively. Acknowledge KL divergence estimation literature (Nguyen, Wainwright, Jordan 2010). No citations to TDA, QEC, dynamical systems, or neuroscience.
-
-**Vocabulary mapping**:
-| Paper term | Rosetta term |
-|---|---|
-| Joint distribution P_XZ | Joint object |
-| Product of marginals P_X ⊗ P_Z | Independence (null model) |
-| Mutual information I(X;Z) | Excess (joint-vs-marginal gap) |
-| KL divergence D_KL | Detection method for excess |
-| Donsker-Varadhan representation | Dual formulation of excess detection |
-| Strong consistency | Stability guarantee |
-| Information bottleneck | Parameterized compression (related to parameterized homology) |
-
+Promoted to per-paper annotation file (B2 pass 22, batch-003 candidate-17, promote-on-encounter).
+Machines: joint-vs-marginal, null hypothesis, stability.
+Full annotation: `annotations/1801.04062.md`.
 **See also**: `by-structure/composite_systems.md`
 
 ---
@@ -41,35 +17,10 @@ arXiv: 1801.04062 | ICML 2018
 ## Wickstrøm, Løkse, Kampffmeyer, Yu, Principe, Jenssen (2019)
 **"Information Plane Analysis of Deep Neural Networks via Matrix-Based Rényi's Entropy and Tensor Kernels"**
 arXiv: 1909.11396
-
-**Domain(s)**: Information theory, machine learning
-
-**Abstract machines instantiated**:
-- **Joint-vs-marginal excess**: The paper measures I(X;T) and I(T;Y) — mutual information between input X, hidden layer representation T, and output Y. Each MI quantity measures how much joint structure exists between a layer and input/output beyond what marginals would predict.
-- **Parameterized homology**: The core contribution is tracking how these MI values change as a parameter varies — here the parameter is training epoch, not a filtration scale or error rate. The "information plane" plots I(X;T) vs I(T;Y) across training, revealing two phases: a fitting phase (both increase) and a compression phase (I(X;T) decreases while I(T;Y) stays high). This is structurally analogous to tracking Betti numbers across a filtration, or tracking logical error rate across error threshold — an invariant changes character at critical parameter values.
-- **Null hypothesis**: The compression phase corresponds to the network destroying information about X that is not needed for Y — a selective destruction of structure while preserving task-relevant structure. This is the null-model logic inverted: instead of destroying coupling to test significance, the network learns to destroy irrelevant coupling.
-
-**What is genuinely new (not reducible to shared abstraction)**:
-- Matrix-based Rényi's entropy with tensor kernels: replaces Shannon entropy with Rényi's α-entropy computed via eigenvalues of a Gram matrix. This avoids density estimation entirely — a fundamentally different computational approach from bin-based or KNN MI estimators.
-- Scales to VGG-16 — first information plane analysis of a production-scale deep CNN. Prior work was limited to small networks.
-- Finding that compression phase correlates with overfitting: early stopping typically halts training before compression occurs. This challenges the Tishby-Shwartz-Ziv narrative that compression is beneficial.
-- Tensor kernel construction for convolutional layers — respects the spatial structure of feature maps rather than flattening.
-
-**Connections the authors acknowledge**: Extensive engagement with the Shwartz-Ziv & Tishby (2017) information bottleneck debate. Cite Saxe et al. (2018) who linked compression to activation saturation. No citations outside ML/information theory.
-
-**Vocabulary mapping**:
-| Paper term | Rosetta term |
-|---|---|
-| Information plane | Parameter space (2D projection of parameterized information invariants) |
-| I(X;T), I(T;Y) | Joint-vs-marginal excess at each layer |
-| Training epoch | The parameter (analogous to filtration scale ε) |
-| Fitting phase | Birth of features (analogous to feature appearance in persistence) |
-| Compression phase | Death of features (analogous to feature disappearance; selective structure destruction) |
-| Matrix-based Rényi's entropy | Spectral invariant of the data distribution |
-| Tensor kernel | Local structure encoder for convolutional layers |
-
+Promoted to per-paper annotation file (B2 pass 22, batch-003 candidate-20, promote-on-encounter).
+Machines: joint-vs-marginal, parameterized homology, null hypothesis.
+Full annotation: `annotations/1909.11396.md`.
 **See also**: `by-structure/composite_systems.md`, `by-structure/filtrations.md`
-
 ---
 
 ## Mézard & Mora (2008)
@@ -289,41 +240,10 @@ The PID programme decomposes I(T; X1, ..., Xn) into redundant, unique, and syner
 
 ## PID-01 — Kolchinsky (2022)
 **"A Novel Approach to the Partial Information Decomposition"**
-
-**Domain(s)**: Information theory
-
-**Abstract machines instantiated**:
-
-- **Chain complex**: The redundancy lattice is a partially ordered set with a Mobius inversion formula that recovers partial information atoms from cumulative redundancy values. The Mobius inversion plays the role of a boundary operator: it maps cumulative (cycle-like) quantities to their differential (boundary-like) constituents. The lattice nodes are antichains of sources, and the partial ordering (one source is "more informative" than another) is the structural analogue of face inclusions in a simplicial complex. The relation I_partial = I_intersect - sum(I_intersect of sub-nodes) mirrors the alternating-sign structure of the boundary map.
-
-- **Joint-vs-marginal excess**: This is the paper's central concern. Synergy = I(T; X1,...,Xn) - Union_information. The joint system (X1,...,Xn) provides information about T that no individual source or sub-collection provides. Kolchinsky makes the key move of defining redundancy and union information independently (not via inclusion-exclusion), which means the excess of joint over marginal is not constrained by set-theoretic identities. The Blackwell order determines when one source is "more informative" than another in a decision-theoretic sense, and the gap between the joint and the Blackwell-optimal marginal is the synergy.
-
-- **Matching**: The Blackwell order instantiates a comparison: source X is more informative than source Y if there exists a stochastic channel kappa such that Y = kappa(X). Finding the "largest" source dominated by all input sources (redundancy) or the "smallest" source dominating all (union) is an optimization over channels — an assignment problem in the space of stochastic maps.
-
-- **Stability**: Implicit. The Blackwell order is preserved under post-processing (data processing inequality), which is a monotonicity/stability result: no stochastic transformation can increase informativeness.
-
-**What is genuinely new**:
-- The decoupling of redundancy and union information: Kolchinsky argues the inclusion-exclusion principle (|A union B| = |A| + |B| - |A intersect B|) does NOT hold for information, violating the set-theoretic analogy that motivated the original PID. This is a structural insight: information atoms do not form a Boolean algebra. The lattice is not distributive.
-- Grounding PID in the Blackwell order gives operational interpretability via decision theory (expected utility maximization), going beyond the purely axiomatic approaches of Williams-Beer or Bertschinger et al.
-- Explicit extension to algorithmic information theory and quantum information theory as future directions — the framework is parametric in the choice of ordering relation.
-
-**Connections the authors acknowledge**: Extensive engagement with prior PID work (Williams-Beer, Bertschinger et al., Griffith-Koch, Harder et al., Ince, Finn-Lizier). Acknowledges the Blackwell order's origins in statistical decision theory (Blackwell 1953, Le Cam). Does NOT acknowledge any connection to TDA, QEC, or dynamical systems.
-
-**Vocabulary mapping**:
-
-| Paper term | Rosetta term |
-|---|---|
-| Source random variable X_i | Component / marginal |
-| Target Y | Observable / stimulus |
-| Redundancy I_cap | Marginal content (what each component preserves) |
-| Union information I_cup | Joint content minus synergy |
-| Synergy | Joint-vs-marginal excess |
-| Partial information atom | Differential element (Mobius-inverted node) |
-| Redundancy lattice | Partially ordered set of source antichains |
-| Blackwell order (X > Y) | "More informative" = existence of degradation channel |
-| Inclusion-exclusion failure | Non-distributivity of the information lattice |
-| Stochastic channel kappa | Morphism between sources (degradation map) |
-
+DOI: 10.3390/e24030403 | Entropy 24(3):403
+Promoted to per-paper annotation file (B2 pass 22, batch-003 candidate-16, promote-on-encounter).
+Machines: chain complex (lattice + Mobius inversion), joint-vs-marginal, matching, stability.
+Full annotation: `annotations/10.3390-e24030403.md`.
 **See also**: `by-structure/composite_systems.md`
 
 ---
@@ -710,37 +630,8 @@ arXiv: 1912.07277
 
 ---
 
-## 2002.00208 — Amornbunchornvej, Zheleva, Berger-Wolf (2020)
-**"Variable-lag Granger Causality and Transfer Entropy for Time Series Analysis"**
-arXiv: 2002.00208
-
-**Domain(s)**: Information theory, dynamical systems
-
-**Abstract machines instantiated**:
-- **Joint-vs-marginal excess**: Variable-lag Granger causality generalizes the standard excess: X Granger-causes Y if including past-X (at variable, DTW-aligned delays) improves prediction of Y beyond past-Y alone. The variable-lag transfer entropy is I(X_{t-m}^{t-1}; Y_{φ(t)} | Y_{φ(t)-n}^{φ(t)-1}), where φ is an optimal warping function. The excess is computed after temporally aligning the causal influence, generalizing the fixed-lag assumption.
-- **Matching**: Dynamic Time Warping (DTW) is explicitly an optimal assignment: it finds the minimum-cost alignment (warping path) between two time series under monotonicity and continuity constraints. The DTW distance serves as both the matching cost and the quality measure for the causal relation. The paper proves that fixed-lag causality is a special case where the warping path is the diagonal — rigid matching as a special case of flexible matching.
-- **Stability**: The paper proves that traditional fixed-lag Granger causality and transfer entropy are special cases of their variable-lag generalizations (warping path restricted to fixed offset). This establishes that the generalization is conservative: it reduces to the standard measure under the constraint of constant delay.
-
-**What is genuinely new (not reducible to shared abstraction)**:
-- The integration of DTW (a metric geometry / time series distance tool) with Granger causality. DTW's warping path φ(t) allows causes to influence effects at dynamically changing delays. This temporal deformation is more akin to reparameterization in differential geometry than to any of the six abstract machines.
-- The aggregate causal relation theorem: if multiple time series jointly initiate behavioral convergence, the aggregate cause-effect relation holds. This is a compositionality result with no direct analogue in TDA.
-- Application to collective movement (inferring leaders in animal groups) and financial markets introduces spatial-temporal causality beyond standard time series.
-
-**Connections the authors acknowledge**: Granger causality, transfer entropy, DTW clustering methods, directed information graphs. No connections to TDA, QEC, or dynamical systems topology.
-
-**Vocabulary mapping**:
-| Paper term | Rosetta term |
-|---|---|
-| Variable-lag Granger causality | Temporally warped joint-vs-marginal excess |
-| DTW optimal warping path | Optimal matching (between time indices) |
-| Warping distance | Matching cost |
-| Fixed-lag causality | Rigid matching (diagonal warping path) |
-| BIC-based lag selection | Model selection (parameter for excess computation) |
-| Causal initiator | Source node in directed coupling |
-| Aggregate cause | Composite component in joint-vs-marginal |
-| VLTimeCausality R package | Implementation |
-
-**See also**: `by-structure/composite_systems.md`, `by-structure/optimal_transport.md`
+### Amornbunchornvej, Zheleva & Berger-Wolf (2020) — Variable-lag Granger Causality and Transfer Entropy
+Variable-lag generalizations of Granger causality and transfer entropy; DTW optimal warping path infers causes acting at dynamically changing delays. Fixed-lag definitions proved to be special cases. Applied to collective movement leadership and financial markets. Full annotation: `annotations/2002.00208.md` (arXiv: 2002.00208).
 
 ---
 
@@ -971,7 +862,7 @@ arXiv: 2111.05299
 
 ## Cross-listed from Neuroscience + TDA
 
-- **Peek, Pritam, Skerritt, Chalup (2025)** — "Time Series Analysis of Spiking Neural Systems via Transfer Entropy and Directed Persistent Homology." Transfer entropy as the information-theoretic measure driving directed flag complex construction. TE quantifies directed information flow between neuron pairs. Full annotation: `inbox.md` (arXiv: 2508.19048). Machines: chain complex, parameterized homology, null hypothesis.
+- **Peek, Pritam, Skerritt, Chalup (2025)** — "Time Series Analysis of Spiking Neural Systems via Transfer Entropy and Directed Persistent Homology." Transfer entropy as the information-theoretic measure driving directed flag complex construction. TE quantifies directed information flow between neuron pairs. Full annotation: `annotations/2508.19048.md` (arXiv: 2508.19048). Machines: chain complex, parameterized homology, null hypothesis.
 
 ---
 
@@ -981,10 +872,12 @@ arXiv: 2111.05299
 
 - **Shwartz-Ziv & Tishby (2017)** — "Opening the Black Box of Deep Neural Networks via Information." The original information plane paper. Two-phase training (fitting + compression). SGD noise as null-model mechanism. Full annotation: `second_pass.md` (SP-01). Machines: parameterized homology, joint-vs-marginal, null hypothesis, stability.
 
-- **Kawaguchi, Deng, Ji, Huang (2023)** — "How Does Information Bottleneck Help Deep Learning?" First rigorous proof IB controls generalization. Bound sqrt(I(X;Z)/n) has same form as PH stability. Full annotation: `cross_domain_bridges.md` + `second_pass.md` (SP-02). Machines: stability, joint-vs-marginal, parameterized homology.
+- **Kawaguchi, Deng, Ji, Huang (2023)** — "How Does Information Bottleneck Help Deep Learning?" First rigorous proof IB controls generalization. Bound sqrt(I(X;Z)/n) has same form as PH stability. Full annotation: `annotations/2305.18887.md` (promoted from cross_domain_bridges.md, pass 22). Machines: stability, joint-vs-marginal, parameterized homology, null hypothesis.
 
-- **Yu, Yu, Løkse, Jenssen, Principe (2024)** — "Cauchy-Schwarz Divergence Information Bottleneck for Regression." CS divergence makes IB tractable without Gaussian assumptions. Closed-form compression + adversarial robustness. Full annotation: `second_pass.md` (SP-03). Machines: joint-vs-marginal, stability, null hypothesis.
+- **Yu, Yu, Løkse, Jenssen, Principe (2024)** — "Cauchy-Schwarz Divergence Information Bottleneck for Regression." CS divergence makes IB tractable without Gaussian assumptions. Closed-form compression + adversarial robustness. Full annotation: `annotations/2404.17951.md` (promoted from second_pass.md SP-03, pass 22). Machines: joint-vs-marginal, stability, null hypothesis.
+- **Mukherjee, Asnani, Kannan (2019)** — "CCMI: Classifier Based Conditional Mutual Information Estimation." CMI as KL divergence between conditional joint and learned conditional-product null; classifier-dual estimation robust to 100 dimensions. Full annotation: `annotations/1906.01824.md`. Machines: joint-vs-marginal, null hypothesis.
 
+- **Rindt, Sejdinovic, Steinsaltz (2020)** — "Consistency of Permutation Tests for HSIC and dHSIC." Proves permutation-test consistency: statistic → positive constant under alternatives, → 0 in probability under marginals-preserved permutations. Full annotation: `annotations/2005.06573.md`. Machines: null hypothesis, joint-vs-marginal.
 - **Wang, Jian, Masoomi, Ioannidis, Dy (2021)** — "Revisiting HSIC Bottleneck for Adversarial Robustness." Proves HSIC bottleneck implies adversarial robustness. Layer-wise Lipschitz bounds. Full annotation: `second_pass.md` (SP-04). Machines: stability, chain complex (weak), joint-vs-marginal.
 
 - **Ma, Lewis, Kleijn (2020)** — "The HSIC Bottleneck: Deep Learning without Back-Propagation." Kernel independence replaces MI for IB. Stability by layer-wise decoupling. Emergent discrete structure. Full annotation: `cross_domain_bridges.md`. Machines: joint-vs-marginal, null hypothesis, stability, chain complex (weak).
@@ -1015,19 +908,19 @@ arXiv: 2111.05299
 
 ### Baudot & Bennequin (2015) — The Homological Nature of Entropy
 **"The Homological Nature of Entropy"**
-MDPI Entropy 17(5):3253
+MDPI Entropy 17(5):3253. Full annotation: `annotations/baudot-2015.md`.
 Shannon entropy = cocycle in information cohomology. Chain rule = cocycle condition. Information structures as simplicial complexes. Foundational Chain×Info paper.
 **Machines**: chain complex, parameterized homology (weak). **See also**: `by-structure/boundary_operators.md`.
 
 ### Bradley (2021) — Entropy as Topological Operad Derivation
 **"Entropy as a Topological Operad Derivation"**
-arXiv: 2107.09581
+arXiv: 2107.09581. Full annotation: `annotations/2107.09581.md`.
 Shannon entropy = unique derivation of simplicial operad. Strengthens Baudot-Bennequin. Category-theoretic.
 **Machines**: chain complex. **See also**: `by-structure/boundary_operators.md`.
 
 ### Kolchinsky (2024) — PID Redundancy as Information Bottleneck
 **"Partial information decomposition: redundancy as information bottleneck"**
-arXiv: 2405.07665
+arXiv: 2405.07665. Full annotation: `annotations/2405.07665.md`.
 PID redundancy = IB compression-prediction tradeoff. RB curve as parameterized decomposition. Formally bridges Joint (PID) and Param (IB) machines.
 **Machines**: joint-vs-marginal, parameterized homology, matching. **See also**: `by-structure/composite_systems.md`, `by-structure/filtrations.md`.
 
@@ -1086,7 +979,7 @@ arXiv: 1703.00810
 **Domain(s)**: Information theory, machine learning
 Origin paper for the "information plane" trajectory analysis of deep learning. Training epoch parameterizes the information plane: each layer's (I(X;T), I(T;Y)) traces a path with two phases — fitting (both increase) then compression (I(X;T) decreases while I(T;Y) stays high). Converged layers lie on the IB bound. Drift-diffusion transition in SGD gradients at ~350 epochs. **Caveat**: Saxe et al. (2018) and Geiger (2021) showed compression may be an artifact of saturating activations + binning-based MI estimation; see ANTISYNONYMS.md.
 **Machines**: parameterized homology (primary), joint-vs-marginal, null hypothesis, stability.
-Full annotation: `inbox.md` (arXiv: 1703.00810).
+Full annotation: `annotations/1703.00810.md` (arXiv: 1703.00810).
 **See also**: `by-structure/filtrations.md`, `by-structure/composite_systems.md`
 
 ### Cross-listed from Dynamical Systems (third pass):
@@ -1113,7 +1006,7 @@ arXiv: 1909.02297
 **Domain(s)**: Neuroscience (consciousness), information theory
 PhiID = Integrated Information Decomposition. Double-redundancy lattice (product of two PID lattices, 16 nodes) with Moebius inversion gives 16 atoms decomposing excess entropy. Six-category taxonomy: storage, copy, transfer, erasure, upward causation, downward causation. Unifies IIT and PID. Shows Phi_WMS, psi, Phi_G, CD each capture different atom subsets (Table I). Corrected Phi_WMS,c avoids negativity by adding back double-redundancy.
 **Machines**: joint-vs-marginal, chain complex, parameterized homology, null hypothesis, stability.
-Full annotation: `inbox.md` (arXiv: 1909.02297).
+Full annotation: `annotations/1909.02297.md` (arXiv: 1909.02297).
 **See also**: `by-structure/composite_systems.md`, `by-domain/neuroscience.md`
 
 ### Barrett (2015) — PID for Gaussian Systems
@@ -1122,7 +1015,7 @@ arXiv: 1411.2832
 **Domain(s)**: Information theory, neuroscience
 First PID for continuous variables. For Gaussian with univariate target: all PIDs satisfying marginal-dependence collapse to MMI (R = min{I(X;Y), I(X;Z)}). Synergy = extra info from weaker source given stronger. Net synergy positive even when sources uncorrelated (log concavity effect). Dynamical MVAR analysis: synergy decreases with lag depth, increases with weaker connection, decreases with source correlation. Proposes synergistic complexity SC as alternative to Phi.
 **Machines**: joint-vs-marginal, parameterized homology, null hypothesis, stability.
-Full annotation: `inbox.md` (arXiv: 1411.2832).
+Full annotation: `annotations/1411.2832.md` (arXiv: 1411.2832).
 **See also**: `by-structure/composite_systems.md`, `by-domain/neuroscience.md`
 
 ---
@@ -1135,7 +1028,7 @@ DOI: 10.1016/j.neuroimage.2013.08.056, NeuroImage 85(2):853-872. 281 citations.
 **Domain(s)**: Neuroscience, information theory
 Phase TE = transfer entropy applied to Morlet-filtered phase time series. Isolates directed oscillatory coupling: how much source phase history improves prediction of target phase updates beyond target's own history. Differential TE quantifies net directionality. Frequency band as discrete parameter yields band-specific directed connectivity graphs. Surrogate-based null hypothesis testing validated (no false positives under noise + mixing). Extends Schreiber (2000) TE to the phase domain.
 **Machines**: joint-vs-marginal, null hypothesis, parameterized homology.
-Full annotation: `inbox.md` (Wave 6).
+Full annotation: `annotations/1703.00810.md` (Wave 6).
 **See also**: `by-structure/composite_systems.md`, `by-structure/phase_transitions.md`, `by-domain/neuroscience.md`
 
 ### Shorten, Spinney, Lizier (2021) — Continuous-Time Transfer Entropy for Spike Trains
@@ -1144,7 +1037,7 @@ DOI: 10.1371/journal.pcbi.1008054, PLOS Computational Biology 17(4):e1008054. 58
 **Domain(s)**: Information theory, neuroscience
 Continuous-time TE formulated via Radon-Nikodym derivatives between path measures. kNN estimator in inter-event-interval space is provably consistent (discrete-time plug-in estimators converge to wrong value for event data). Local permutation surrogates provide correct null for point processes (source-time-shift surrogates demonstrated to fail). Pathwise TE decomposes into jump contributions (at target events) and continuous contributions (between events). Captures fine-and-coarse timescale relationships simultaneously. Validated on stomatogastric ganglion pyloric circuit where previous estimators failed.
 **Machines**: joint-vs-marginal, null hypothesis, parameterized homology.
-Full annotation: `inbox.md` (Wave 6).
+Full annotation: `annotations/1703.00810.md` (Wave 6).
 **See also**: `by-structure/composite_systems.md`, `by-structure/phase_transitions.md`, `by-domain/neuroscience.md`
 
 ---
@@ -1157,7 +1050,7 @@ PLoS Computational Biology, 16(12), e1008289. arXiv: 2004.08220. 143 citations.
 **Domain(s)**: Information theory, neuroscience, dynamical systems (complex systems)
 Inverted joint-vs-marginal: macro feature V has causal power exceeding sum of micro parts. Ψ^(1) = I(V_t; V_{t'}) - Σ_j I(X^j_t; V_{t'}) > 0. Theorem 1: causal emergence iff dynamical synergy Syn^(k) > 0. Decomposition: Syn^(k) = D^(k) (downward causation) + G^(k) (causal decoupling / "statistical ghosts"). Three parameters: order k, time lag, partition choice. Practical sufficiency criteria using only pairwise MI. Applied to Game of Life (Ψ=0.58, particles decoupled from cells), Reynolds flocking (emergence at edge of chaos), macaque ECoG (Ψ=1.275, motor decoding emergent up to ~0.2s). Extends Mediano PhiID; no TDA/QEC awareness.
 **Machines**: joint-vs-marginal (inverted), parameterized homology, null hypothesis, chain complex (inherited from PID/PhiID).
-Full annotation: `inbox.md` (Wave 7).
+Full annotation: `annotations/1703.00810.md` (Wave 7).
 **See also**: `by-structure/composite_systems.md`, `by-domain/neuroscience.md`, `atlas/JOINT_VS_MARGINAL.md`
 
 ### Varley, Mediano, Patania & Bongard (2025) — The Topology of Synergy
@@ -1166,7 +1059,7 @@ PLoS Computational Biology, DOI: 10.1371/journal.pcbi.1013649. arXiv: 2504.10140
 **Domain(s)**: TDA, information theory, neuroscience
 Head-to-head comparison of O-information (TC, DTC, O, S) with H2 persistent homology (Rips/Chebyshev/Ripser) on toy manifolds and fMRI. H2 cavities <-> synergy (O < 0), knots <-> redundancy (O > 0). Normalized O-bar vs avg H2 persistence: rho = -0.55 to -0.65 in fMRI. PCA destroys synergy (rho(O-bar, PC1 variance) = 0.91-0.95) while preserving redundancy. KNN-based O-information estimator with single neighbor search (Eq. 14). Intrinsic vs. contextual higher-order information distinction. Circular-shift null model. EXPLICIT cross-domain bridge: TDA + information theory.
 **Machines**: chain complex, parameterized homology, joint-vs-marginal, null hypothesis, stability.
-Full annotation: `inbox.md` (Wave 7).
+Full annotation: `annotations/1703.00810.md` (Wave 7).
 **See also**: `cross_domain_bridges.md`, `by-domain/tda.md`, `by-domain/neuroscience.md`, `by-structure/composite_systems.md`, `by-structure/filtrations.md`
 
 ---
@@ -1180,7 +1073,8 @@ Combined citations: 3000+.
 **Domain(s)**: Information theory (foundational)
 Optimal assignment between source and channel/reproduction alphabets. Channel capacity: find P(x) maximizing I(X;Y) = optimal matching of source symbols to channel inputs. Rate-distortion R(D): find test channel P(y|x) minimizing I(X;Y) at distortion ≤ D = minimum-cost soft assignment. Alternating minimization predates EM (1977): fix one marginal, optimize the other. Each step is a matching update. R(D) curve parameterized by distortion D; slope = -s (Lagrange multiplier). Converges to global optimum by convexity.
 **Machines**: matching, parameterized homology, null hypothesis (weak).
-Full annotation: `inbox.md` (Wave 8).
+Full annotation: `annotations/blahut-arimoto-1972.md` (slug: blahut-arimoto-1972).
+Full annotation: `annotations/blahut-arimoto-1972.md` (Wave 8).
 **See also**: `by-structure/optimal_transport.md`, `atlas/MATCHING.md`
 
 ---
@@ -1189,12 +1083,124 @@ Full annotation: `inbox.md` (Wave 8).
 
 ### Baudot, Tapia, Bennequin & Goaillard (2019) — Topological Information Data Analysis
 arXiv: 1907.04242. k-multivariate MI I_k defined as co-chains on simplicial complex Δ([n]) of random variables. I_2 = coboundary of H (δH = I_2). Negative I_k = synergy (Borromean links). Information landscape tracks I_k across all faces. Shuffling null. Bethe free energy as alternating sum over simplicial faces. Application: unsupervised cell-type classification.
+- **Battiston et al. (2020)** — "Networks beyond pairwise interactions." Physics Reports 874 survey: simplicial-complex chain apparatus (boundary operators, higher-order Laplacians, Betti numbers) plus max-ent/random generative nulls for higher-order structure. Full annotation: `annotations/10.1016-j.physrep.2020.05.004.md`. Machines: chain complex, null hypothesis, parameterized homology (weak).
 **Machines**: chain complex, joint-vs-marginal, null hypothesis, parameterized homology, stability.
-Full annotation: `inbox.md` (Wave 10a).
+Full annotation: `annotations/1907.04242.md` (Wave 10a).
 **See also**: `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/composite_systems.md`, `by-structure/phase_transitions.md`, `papers/cross_domain_bridges.md`
 
 ### Panaretos & Zemel (2019) — Statistical Aspects of Wasserstein Distances
 DOI: annurev-statistics-030718-104938. 913 citations. Comprehensive review of Wasserstein distances as statistical tools: convergence rates, CLTs, minimax estimation, goodness-of-fit testing. W_p family parameterized by order p. Bottleneck distance on PDs IS W_∞. Otto calculus gives Riemannian geometry of Wasserstein space.
 **Machines**: matching, stability, parameterized homology.
-Full annotation: `inbox.md` (Wave 10b).
+Full annotation: `annotations/annurev-statistics-030718-104938.md` (Wave 10b).
 **See also**: `by-structure/optimal_transport.md`
+
+## Wave 11 — link-forge batch-001 (2026-08-25)
+
+### Hu et al. (2026) — OpenVLThinkerV2 / Gaussian GRPO
+arXiv: 2604.08539. G²RPO replaces linear advantage standardization with non-linear distributional matching: a 1D optimal transport coupling forces each task's advantage distribution onto N(0,1), equalizing gradient updates across tasks with heterogeneous reward topologies; outlier robustness and entropy shaping bound the update two-sidedly. The moment-matching-vs-measure-matching gap is stated as RL engineering but is the W_1-vs-shape distinction of the optimal-transport cell.
+**Machines**: matching, stability (null hypothesis marginal).
+Full annotation: `annotations/2604.08539.md` (batch-001 candidate-13).
+**See also**: `by-structure/optimal_transport.md`
+
+### Wang, Wang, Jin, Wei (2024) — GC-STCL: Granger Causality-Based Spatial-Temporal Contrastive Learning for EEG Emotion Recognition
+Granger causality (directed information flow) supplies the graph prior for a contrastive EEG emotion recognizer; frequency bands parameterize the causal graph family.
+**Machines**: joint-vs-marginal, parameterized homology.
+Full annotation: `annotations/wang-2024.md` (B2 pass 12).
+**See also**: `by-domain/neuroscience.md`
+### Liu, Xu, Li, Si, Yang, Yang, Zhao (2025) — KANGCI
+KAN-based nonlinear Granger causality; conditional-prediction excess as per-edge learned quantity; group sparsity null + time-reversal falsification of spurious edges. Full annotation: `annotations/liu-2025.md` (B2 pass 13).
+
+### Brüsch, Schmidt, Alstrøm (2023) — Multi-view SSL for variable-channel time series
+Cross-channel MPNN aggregation vs marginal single-channel encodings under a contrastive objective; negatives define the no-shared-origin null. Full annotation: `annotations/brusch-2023.md` (B2 pass 13).
+
+### B2 batch-004: rate-distortion lineage — neural estimation + operational perception (2026-08-25)
+
+**Lei, Hassani & Saeedi Bidokhti (2022) — NERD**: arXiv: 2204.01612. Neural re-formulation of the Blahut–Arimoto functional optimization for regimes where alternating minimization is infeasible; returns the optimal test channel (soft assignment) and the R(D) curve itself, then converts it via reverse channel coding into an operational one-shot lossy code. R(D) serves as the computable null against which DNN codecs are benchmarked (within several bits on real images).
+**Machines**: matching, null hypothesis, parameterized homology (weak).
+Full annotation: `annotations/2204.01612.md` (B2 pass 27). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/optimal_transport.md`, `annotations/blahut-arimoto-1972.md`
+
+**Theis & Wagner (2021) — Coding theorem for the rate-distortion-perception function**: arXiv: 2104.13662. Adds a marginal-agreement constraint (reconstruction distribution ≡ source distribution) to the constrained soft-matching problem; proves the Blau–Michaeli variational function is achievable by stochastic variable-length codes and lower-bounds their rate — realism made operational rather than adversarial-proxy.
+**Machines**: matching, null hypothesis (weak).
+Full annotation: `annotations/2104.13662.md` (B2 pass 27). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/optimal_transport.md`, `annotations/2204.01612.md`
+
+**Yadav, Song, Shkel & Özgür (2026) — Log-likelihood loss for semantic compression**: arXiv: 2601.16461. Rate-distortion with the distortion measure itself a negative log-likelihood under a prescribed generative channel P_{X|U}: reconstruction as a semantic latent from which the source is probabilistically generated. Unifies log-loss RD, arbitrary-distortion RD, and perfect-perception RD (the Theis–Wagner marginal-agreement constraint appears as a boundary case). Closes the batch-004 rate-distortion group 4/4.
+**Machines**: matching, null hypothesis (weak).
+Full annotation: `annotations/2601.16461.md` (B2 pass 28). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/optimal_transport.md`, `annotations/2104.13662.md`
+
+### B2 batch-004: LDPC / belief-propagation × phase transitions (2026-08-25)
+
+**Aref, Macris & Vuffray (2013) — Spatially coupled LDGM + BP-guided decimation**: arXiv: 1307.5210. Lossy encoding as greedy soft-matching on the test-channel Gibbs posterior; cavity-method phase diagram (dynamical/condensation thresholds) explains why spatial coupling lifts the algorithmic RD curve to the ensemble optimum and, at large check degree, to the Shannon limit.
+**Machines**: matching, null hypothesis, stability (core).
+Full annotation: `annotations/1307.5210.md` (B2 pass 28). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/statistical_physics.md`, `by-structure/phase_transitions.md`, `annotations/2204.01612.md`
+
+**Jain, Koehler, Liu & Mossel (2019) — Accuracy-memory tradeoffs in BP**: arXiv: 1905.10031. Bounded-memory message passing transitions strictly below the Kesten–Stigum threshold (EKP conjecture); optimal transport enters the proof as the accuracy bound on message iterates — OT as proof technology for a phase-transition result.
+**Machines**: stability (core), null hypothesis, matching (instrumental).
+Full annotation: `annotations/1905.10031.md` (B2 pass 28). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/statistical_physics.md`, `by-structure/phase_transitions.md`
+
+**Vicente, Saad & Kabashima (1999) — Statistical physics of irregular LDPC codes**: arXiv: cond-mat/9908358. Replica method finds a decoding phase transition coinciding with Shannon's coding bound under chosen degree distributions; BP decoding analyzed statistically and checked against simulation. Early seed of the cavity-method coding lineage; irregularity as threshold-placement engineering.
+**Machines**: null hypothesis (core), stability, matching (instrumental).
+Full annotation: `annotations/cond-mat-9908358.md` (B2 pass 29). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/statistical_physics.md`, `by-structure/phase_transitions.md`, `annotations/1307.5210.md`
+
+**Decelle, Krzakala, Moore & Zdeborová (2011) — SBM phase diagram and algorithmic applications**: arXiv: 1109.3041. Detectability/undetectability transition at the KS-style bound (below it, planted structure is unextractable from topology) plus an easy/hard transition; cavity analysis translates into an asymptotically optimal BP community-detection algorithm. Canonical detectability-transition anchor for network inference.
+**Machines**: null hypothesis (core), stability, matching, joint-vs-marginal (instrumental).
+Full annotation: `annotations/1109.3041.md` (B2 pass 29). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/statistical_physics.md`, `by-structure/phase_transitions.md`, `annotations/1905.10031.md`
+
+*Batch-004 ldpc-bp group closed 4/4 (B2 pass 29); batch-004 fully consumed 17/17.*
+
+---
+
+## B2 batch-005 — channel-capacity group (2026-08-25)
+
+### Qian & Roy (2011) — Channel capacity of the phosphorylation–dephosphorylation cycle
+arXiv: 1112.4589. Channel capacity of driven biochemical signaling modules is zero iff free-energy expenditure is zero (positive correlation in between); linear signaling cascades act as distributed multistage codes trading capacity against code complexity. Cleanest single statement in the corpus linking Shannon capacity to nonequilibrium dissipation.
+**Machines**: matching, parameterized homology, null hypothesis, joint-vs-marginal excess (instrumental).
+Full annotation: `annotations/1112.4589.md` (B2 pass 30). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/statistical_physics.md`, `by-structure/optimal_transport.md`
+
+### Plenio & Virmani (2007) — Spin chains and channels with memory
+arXiv: quant-ph/0702059. Correlated-error channel capacities mapped to critical phenomena; capacity non-analyticities are real features of memory channels, with independent-error channels as the reference ensemble.
+**Machines**: parameterized homology (core), null hypothesis, stability.
+Full annotation: `annotations/quant-ph-0702059.md` (B2 pass 30). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/qec.md`, `by-structure/phase_transitions.md`
+
+### Bereyhi, Loureiro, Krzakala, Müller & Schulz-Baldes (2022) — Secure coding via Gaussian random fields
+arXiv: 2205.08782. Replica method shows the all-or-nothing inference transition's critical rate IS the channel capacity; the same Gaussian-random-field model plus random binning asymptotically achieves the Gaussian wiretap secrecy capacity — secrecy as a joint-vs-marginal excess threshold.
+**Machines**: parameterized homology (core), null hypothesis, joint-vs-marginal excess.
+Full annotation: `annotations/2205.08782.md` (B2 pass 31). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/statistical_physics.md`, `by-structure/phase_transitions.md`, `by-domain/qec.md`
+
+### Kabashima, Murayama & Saad (1999) — Typical performance of Gallager-type codes
+arXiv: cond-mat/9908104. Statistical-physics analysis of Gallager's product-of-bits codes: many sparse-matrix families saturate Shannon capacity typical-case; TAP decoding shown identical to belief-propagation decoding. Early ancestor of the ldpc-bp cavity group.
+**Machines**: null hypothesis (core), stability, parameterized homology.
+Full annotation: `annotations/cond-mat-9908104.md` (B2 pass 31). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/statistical_physics.md`, `by-structure/phase_transitions.md`, `annotations/cond-mat-9908358.md`
+
+### Kelly, Poschinger, Schmidt-Kaler, Fisher & Marino (2022) — Coherence requirements for quantum communication
+arXiv: 2210.11547. Unitary-vs-measurement information game between Alice and Eve over hybrid circuits: coherence-tuned phase transitions in entanglement and quantum channel capacity; theorem bounding stabilizer code distance by available coherence.
+**Machines**: parameterized homology (core), stability, null hypothesis.
+Full annotation: `annotations/2210.11547.md` (B2 pass 31). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/qec.md`, `by-structure/phase_transitions.md`
+
+### B2 batch-009: pid-theory — axiomatic core (2026-08-25)
+
+**Williams & Beer (2010)**: arXiv: 1004.2515. THE founding PID paper: redundancy as minimum per-outcome information induces the antichain redundancy lattice; atoms nonnegative by construction via Möbius inversion; interaction information's negativity diagnosed as redundancy/synergy confounding. The lattice every annotated PID paper consumes as given. Machines: chain complex (core), joint-vs-marginal excess (core), matching (I_min worst-case aggregation). Full annotation: `annotations/1004.2515.md` (B2 pass 48). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/composite_systems.md`, `by-structure/boundary_operators.md`, `annotations/10.3390-e24030403.md`
+
+**Gutknecht, Makkeh & Wibral (2023)**: arXiv: 2306.00734. Mereological formulation: PID base-concepts as logical conditions on parthood relations; one general pattern of which all literature base-concepts are special cases, plus a novel one ("vulnerable information"). Choosing a base-concept = choosing which joint-vs-marginal direction is primitive. Machines: chain complex (meta-level unification), joint-vs-marginal excess (core). Full annotation: `annotations/2306.00734.md` (B2 pass 48). Abstract-only provenance — depth-limited.
+**See also**: `annotations/1004.2515.md`
+
+**Milzman (2024)**: arXiv: 2404.01470. Redundancy from a source-failure perspective: I_ft defines the redundant atom as exactly the information robust to individual source failures; an order-reversing correspondence links collections of source-fallible instantiations to the Williams-Beer lattice, satisfying the common PID axioms — the first corpus instance bridging axiomatic PID to engineering fault tolerance (QEC-adjacent). Machines: chain complex (order-reversing correspondence of graded posets), boundary operators (persistence under coordinate deletion), joint-vs-marginal excess. Full annotation: `annotations/2404.01470.md` (B2 pass 49). Abstract-only provenance — depth-limited.
+**See also**: `annotations/1004.2515.md`, `by-structure/boundary_operators.md`, `by-domain/qec.md`
+
+**Lizier, Flecker & Williams (2013)**: arXiv: 1303.3440. Information modification via PID synergy: modification events = interactions between ≥2 sources no single source carries, replacing the separable-information heuristic; proposes the LOCALIZABILITY axiom (redundancy certifiable per realisation/per source pair for space-time-local measurement) and finds existing redundancy measures largely fail it. Machines: joint-vs-marginal excess (core), chain complex (computation steps decomposed over the lattice), matching (pointwise certificate requirement). Full annotation: `annotations/1303.3440.md` (B2 pass 49). Abstract-only provenance — depth-limited.
+**See also**: `annotations/1004.2515.md`, `annotations/1910.05979.md`, `atlas/MATCHING.md`
+
+**Ay, Polani & Virgo (2019)**: arXiv: 1910.05979. Cooperative-game-theory decomposition: fair-share allocation of MI to source coalitions on a DIFFERENT lattice from Williams-Beer — no redundancy term, but local positivity + identity hold simultaneously, which no PID measure can achieve. The lattice is a design parameter, not a given. Machines: joint-vs-marginal excess (core), matching (value allocation), chain complex (alternative order structure), stability (axiomatic feasibility). Full annotation: `annotations/1910.05979.md` (B2 pass 48). Abstract-only provenance — depth-limited.
+**See also**: `annotations/1004.2515.md`

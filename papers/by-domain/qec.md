@@ -6,7 +6,7 @@ Papers from the QEC community, indexed by which abstract machines they instantia
 
 ## Cross-listed from Inbox
 
-- **de la Fuente, Feldman, Eisert, Bauer (2025)** — "High-threshold decoding of non-Pauli codes for 2D universality." Toric/surface code as cellular homology, JIT matching decoder, error threshold as parameterized phase transition. Full annotation in `papers/inbox.md`. Machines: chain complex, matching, parameterized homology, stability, null hypothesis.
+- **de la Fuente, Feldman, Eisert, Bauer (2025)** — arXiv: 2604.02033. "High-threshold decoding of non-Pauli codes for 2D universality." Toric/surface code as cellular homology, JIT matching decoder, error threshold as parameterized phase transition. Full annotation in `annotations/2604.02033.md`. Machines: chain complex, matching, parameterized homology, stability, null hypothesis.
 
 ---
 
@@ -65,13 +65,13 @@ arXiv: 1311.2485 | Chapter in *Quantum Error Correction* (Cambridge University P
 
 ### Kitaev (1997) — Fault-tolerant quantum computation by anyons
 **"Fault-tolerant quantum computation by anyons"**
-arXiv: quant-ph/9707021
+arXiv: quant-ph/9707021. Full annotation: `annotations/quant-ph-9707021.md`.
 THE foundational toric code paper. Chain complex on T² (qubits on edges, stabilizers from ∂/δ). Logical qubits = H₁(T², ℤ/2). Anyonic excitations matched by fusion. Computation via braid group on fusion space. Topological fault tolerance: errors must create non-trivial homology cycle.
 **Machines**: chain complex, matching, stability. **See also**: `by-structure/boundary_operators.md`, `by-structure/optimal_transport.md`.
 
 ### Dennis, Kitaev, Landahl, Preskill (2002) — Topological quantum memory
 **"Topological quantum memory"**
-arXiv: quant-ph/0110143
+arXiv: quant-ph/0110143. Full annotation: `annotations/quant-ph-0110143.md`.
 Explicit surface code construction with recovery protocols. Threshold theorem: below p_c, exponential suppression. Phase transition maps EXACTLY to 3D Z₂ lattice gauge theory (cross-domain bridge to stat mech). MWPM syndrome matching. 4D procedure without measurement.
 **Machines**: chain complex, parameterized homology, matching, stability, null hypothesis. **See also**: `by-structure/boundary_operators.md`, `by-structure/phase_transitions.md`, `by-structure/optimal_transport.md`.
 
@@ -135,7 +135,7 @@ arXiv: 2209.13581 | PRX Quantum 4, 040349 (2023)
 
 The paper that asks: can quantum computers speed up TDA? Works directly with the chain complex of the clique complex of a graph G: boundary operators dG_k, combinatorial Laplacian Delta^G_{k-1}, Dirac operator BG = dG + dG^{dagger}. Betti number = dim(ker(Delta)). Quantum algorithm projects onto ker(BG) via Chebyshev polynomial eigenvalue filtering + amplitude estimation. Key finding: super-quadratic quantum speedup requires multiplicative error AND asymptotically growing Betti number. Dequantization via classical random walk on k-simplices shows exponentially large dimension + Betti number are necessary but INSUFFICIENT for super-polynomial advantage. Tens of billions of Toffoli gates sufficient for classically intractable instances.
 **Machines**: chain complex (the computation IS the chain complex), parameterized homology (epsilon-filtration + dimension k), matching (weak — random walk on simplices), stability (robustness of quantum advantage to parameter regime), null hypothesis (dequantization as classical null).
-Full annotation: `inbox.md`.
+Full annotation: `annotations/2209.13581.md`.
 **See also**: `by-structure/boundary_operators.md`, `by-structure/filtrations.md`, `cross_domain_bridges.md`
 
 ### Hastings & Haah (2021) — Dynamically Generated Logical Qubits (Honeycomb/Floquet Code)
@@ -146,7 +146,7 @@ arXiv: 2107.02194
 
 The foundational Floquet code paper. Honeycomb lattice with 2-qubit Pauli checks measured in period-3 rounds. As a subsystem code: ZERO logical qubits. With periodic measurement schedule: TWO logical qubits with distance proportional to system size. The ISG S(r) changes every round; logical operators have period-6 dynamics (electric <-> magnetic exchange). Fault tolerance via MWPM on 2+1D spacetime syndrome lattice (bipartite simple cubic structure). Maps to Kitaev's honeycomb model via Majorana fermions; inner logical operators transport fermions, outer transport bosons (e/m anyons).
 **Machines**: chain complex (honeycomb cellular complex on T^2, stabilizers from cycles), parameterized homology (THE key machine — time parameterizes the code, logical qubits emerge from periodic orbit not any snapshot), stability (error threshold despite time-varying code), null hypothesis (static subsystem code with 0 logical qubits), matching (MWPM on spacetime syndrome lattice).
-Full annotation: `inbox.md`.
+Full annotation: `annotations/2107.02194.md`.
 **See also**: `by-structure/boundary_operators.md`, `by-structure/filtrations.md`
 
 ## Wave 4c (2026-04-06) — Foundational Threshold Theorems
@@ -156,7 +156,7 @@ Full annotation: `inbox.md`.
 arXiv: quant-ph/9906129 (originally STOC 1997, full version 1999)
 THE original threshold theorem (with Knill-Laflamme-Zurek independently). Proves that if error rate eta < eta_c (a constant), arbitrarily long quantum computation can be performed at polylogarithmic overhead. Uses concatenated CSS codes including novel polynomial codes over F_p. Effective error after r levels: (c*eta)^{2^r} — doubly-exponential suppression. General noise model: probabilistic, decoherence, amplitude damping, depolarization, correlations. Threshold ~10^{-6}. No measurements needed.
 **Machines**: chain complex (CSS/polynomial codes), parameterized homology (eta parameterizes family), stability (THE threshold theorem), null hypothesis (uncorrected circuit).
-Full annotation: `papers/inbox.md`.
+Full annotation: `annotations/quant-ph-9906129.md`.
 **See also**: `by-structure/phase_transitions.md`
 
 ### Knill, Laflamme, Zurek (1998) — Resilient Quantum Computation
@@ -164,7 +164,7 @@ Full annotation: `papers/inbox.md`.
 arXiv: quant-ph/9702058
 Independent proof of the threshold theorem. Uses 7-qubit Steane code (Hamming-based). Concatenation maps p to cp^2; after h levels: c^{2^h-1} p^{2^h}. Explicit threshold calculation from counting minimal failure sets in recovery network (~190K pairs for operational, ~416K for total). Threshold ~3 x 10^{-6} for stochastic errors. Detailed error model taxonomy: independent stochastic, quasi-independent stochastic/monotone. Complete fault-tolerant procedure set via normalizer group.
 **Machines**: chain complex (Steane code), parameterized homology (p parameterizes family), stability (threshold theorem), null hypothesis (unencoded network).
-Full annotation: `papers/inbox.md`.
+Full annotation: `annotations/quant-ph-9702058.md`.
 **See also**: `by-structure/phase_transitions.md`
 
 ### Breuckmann & Eberhardt (2021) — Quantum LDPC Codes
@@ -172,14 +172,14 @@ Full annotation: `papers/inbox.md`.
 arXiv: 2103.06309 | PRX Quantum review
 Comprehensive review placing quantum LDPC codes in their homological context. CSS codes ARE chain complexes (partial^2 = 0). Surveys geometric constructions (hyperbolic manifolds, Gauss-Bonnet-Chern), product constructions (hypergraph, tensor, fiber bundle, lifted, balanced — all chain complex operations with Kunneth formula). Gottesman's constant overhead theorem. Systolic geometry: code distance = systole of underlying manifold. Bridge to quantum gravity (holographic codes). The most cross-disciplinary QEC paper.
 **Machines**: chain complex (PRIMARY — CSS = chain complex), parameterized homology (code families, systole), stability (Gottesman constant overhead, individual thresholds), null hypothesis (surface code as baseline).
-Full annotation: `papers/inbox.md`.
+Full annotation: `annotations/2103.06309.md`.
 **See also**: `by-structure/boundary_operators.md`, `by-structure/phase_transitions.md`
 
 ---
 
 ## Cross-listed from TDA (Wave 7)
 
-- **Hamilton & Leditzky (2023/2024)** — "Probing Multipartite Entanglement Through Persistent Homology." Commun. Math. Phys. 405, article 125. arXiv: 2307.07492. 8 citations. PH applied to multipartite entanglement. Sublevel set filtration by q-deformed total correlation C_q(J) = Σ S_q(v) - S_q(J). Integrated Euler characteristic = n-tangle τ_n at q=2 (resolves Eltschka-Siewert conjecture). Barcodes distinguish SLOCC orbits with identical τ_n (strictly finer). Relative PH gives -I(A:B|R) ≤ 0 by strong subadditivity. Proposes generalization to arbitrary resource theories. Full annotation: `inbox.md` (Wave 7). Machines: joint-vs-marginal, chain complex, parameterized homology, stability, matching, null hypothesis. **See also**: `by-domain/tda.md`, `by-structure/composite_systems.md`.
+- **Hamilton & Leditzky (2023/2024)** — "Probing Multipartite Entanglement Through Persistent Homology." Commun. Math. Phys. 405, article 125. arXiv: 2307.07492. 8 citations. PH applied to multipartite entanglement. Sublevel set filtration by q-deformed total correlation C_q(J) = Σ S_q(v) - S_q(J). Integrated Euler characteristic = n-tangle τ_n at q=2 (resolves Eltschka-Siewert conjecture). Barcodes distinguish SLOCC orbits with identical τ_n (strictly finer). Relative PH gives -I(A:B|R) ≤ 0 by strong subadditivity. Proposes generalization to arbitrary resource theories. Full annotation: `annotations/2307.07492.md` (Wave 7). Machines: joint-vs-marginal, chain complex, parameterized homology, stability, matching, null hypothesis. **See also**: `by-domain/tda.md`, `by-structure/composite_systems.md`.
 
 ---
 
@@ -188,5 +188,75 @@ Full annotation: `papers/inbox.md`.
 ### Trinca, Bollauf & Zamir (2024) — n-Dimensional Toric Codes from Lattice Codes
 arXiv: 2410.20233. Constructs n-dimensional toric codes from lattice codes via chain complex on n-torus T^n. Generalizes Kitaev's 2D toric code to arbitrary dimension. Qubits on k-cells, stabilizers from ∂_k and δ_k. Logical qubits = H_k(T^n, Z/2). Lattice geometry provides code distance bounds via systole. Burst error correction from interleaving structure. Connects algebraic coding theory (lattice codes) with homological QEC.
 **Machines**: chain complex, stability.
-Full annotation: `inbox.md` (Wave 10c).
+Full annotation: `annotations/2410.20233.md` (Wave 10c).
 **See also**: `by-structure/boundary_operators.md`, `by-structure/phase_transitions.md`
+
+---
+
+## B2 batch-005 — channel-capacity ↔ QEC / monitored dynamics (2026-08-25)
+
+### Choi, Bao, Qi & Altman (2019) — QEC in scrambling dynamics and the measurement-induced phase transition
+arXiv: 1903.05124. Measurement-induced entanglement transitions recast as quantum error correction: chaotic unitary evolution encodes, projective measurements act as errors, and a phase transition (volume-law ↔ area-law) occurs when the error rate exceeds a scrambling-dependent threshold; entanglement scaling linked explicitly to changes in quantum channel capacity.
+**Machines**: joint-vs-marginal excess (core), parameterized homology, stability, null hypothesis.
+Full annotation: `annotations/1903.05124.md` (B2 pass 30). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/statistical_physics.md`, `by-structure/phase_transitions.md`
+
+### Plenio & Virmani (2007) — Spin chains and channels with memory
+arXiv: quant-ph/0702059. Channel capacity under correlated error mapped onto critical behaviour in many-body physics; capacities display genuine non-analyticities ('phase transitions') as error-memory varies, with i.i.d.-error channels as the destroyed-structure null and spin-chain techniques solving channel models exactly.
+**Machines**: parameterized homology (core), null hypothesis, stability.
+Full annotation: `annotations/quant-ph-0702059.md` (B2 pass 30). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/information_theory.md`, `by-structure/phase_transitions.md`
+
+### Kelly, Poschinger, Schmidt-Kaler, Fisher & Marino (2022) — Coherence requirements for quantum communication
+arXiv: 2210.11547. Error correction recast as one side of an adversarial game: Eve's measurements attack channel capacity, Alice's unitaries defend it; minimum-coherence theorem caps achievable stabilizer code distance. Second feed into the thin QEC×Joint-vs-Marginal cell alongside Choi et al.
+**Machines**: stability (core), parameterized homology, null hypothesis.
+Full annotation: `annotations/2210.11547.md` (B2 pass 31). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/statistical_physics.md`, `by-structure/phase_transitions.md`, `annotations/1903.05124.md`
+
+---
+
+## B2 batch-007 — qec-mwpm decoder lineage (2026-08-25)
+
+### Higgott & Gidney (2023) — Sparse Blossom (PyMatching v2)
+arXiv: 2303.15933. The canonical fast MWPM decoder: sparse blossom, a blossom-algorithm variant that solves the QEC matching problem directly over the sparse syndrome-graph neighborhood structure instead of all-to-all Dijkstra searches; distance-17 surface code decoded in <1 μs per round per core at 0.1% circuit-level depolarising noise — real-time throughput matched to hardware syndrome generation.
+**Machines**: matching (core), stability, parameterized homology.
+Full annotation: `annotations/2303.15933.md` (B2 pass 40). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/phase_transitions.md`
+
+### Pattison, Beverland, da Silva & Delfosse (2021) — Soft-information decoding
+arXiv: 2107.13589. Soft (analog) measurement records folded into MWPM and Union-Find: decoding from the full joint outcome distribution rather than its binary marginal yields a 25% threshold gain — joint-vs-marginal excess cashed out as logical performance. Amplitude-damping soft measurement model exposes a resolution-vs-disturbance trade-off in measurement time whose optima for physical and logical error rates disagree.
+**Machines**: joint-vs-marginal excess (core), matching, phase transitions.
+Full annotation: `annotations/2107.13589.md` (B2 pass 40). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/phase_transitions.md`
+
+### Higgott, Bohdanowicz, Kubica, Flammia & Campbell (2022) — Belief-matching / belief-find
+arXiv: 2203.04948. Belief propagation on the full circuit-level noise model feeding BP posteriors to MWPM as reweighted edge costs: threshold 0.94% vs 0.82% plain. Also discovers "fragile boundaries": well below threshold, rectangular untailored surface codes beat boundary-tailored ones — a sign-reversing boundary sensitivity across noise regime. Direct lineage of the Mézard–Mora BP-as-matching identification.
+**Machines**: matching (core), chain complex, phase transitions, stability.
+Full annotation: `annotations/2203.04948.md` (B2 pass 40). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/phase_transitions.md`, `by-structure/boundary_operators.md`
+
+### Baireuther, O'Brien, Tarasinski & Beenakker (2017) — RNN decoder for correlated errors
+arXiv: 1705.07855. Recurrent (LSTM) decoder trained only on experimentally accessible syndrome data beats MWPM on the surface code because it detects X–Z error correlations that matching factorizes away — joint-vs-marginal excess realized as decoder advantage; no noise model needed (the network learns its own implicit null model).
+**Machines**: joint-vs-marginal excess (core), matching, null hypothesis.
+Full annotation: `annotations/1705.07855.md` (B2 pass 41). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/composite_systems.md`
+
+### Hack, Menti, Lazaro & Paler (2026) — Standalone BP on the decoding graph
+arXiv: 2603.05381. BP run on the decoding graph (not the Tanner graph) attains standalone code-capacity thresholds near MWPM under depolarizing noise — locating Tanner-graph BP's known failure in the carrier-graph choice, not the message-passing algorithm; MWPM-compatible for any graphlike QEC code. Joins the ldpc-bp BP-vs-assignment lineage.
+**Machines**: chain complex / message passing (core), stability, matching.
+Full annotation: `annotations/2603.05381.md` (B2 pass 41). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/phase_transitions.md`
+
+### Fowler, Whiteside & Hollenberg (2012) — MWPM timing analysis
+arXiv: 1202.5602. Empirical O(n²) average time per correction round for exact MWPM on surface codes at distances 4–512 with verified true-minimum matchings: the Matching machine's fault-tolerance practicality rests on the sparse local structure of sub-threshold syndrome instances, not blossom's super-polynomial worst case. Ancestor complexity anchor of this lineage.
+**Machines**: matching (core), stability.
+Full annotation: `annotations/1202.5602.md` (B2 pass 41). Abstract-only provenance — depth-limited.
+
+
+## B2 batch-009 — pid-theory × fault tolerance (2026-08-25)
+
+### Milzman (2024) — Redundancy from a source failure perspective
+arXiv: 2404.01470. Defines I_ft on the presupposition that redundant information is exactly what survives individual source failures; an order-reversing correspondence links collections of source-fallible instantiations to the Williams-Beer PID lattice, and I_ft satisfies the common PID axioms. First corpus bridge from axiomatic redundancy to engineering fault tolerance — generic component failures, QEC-adjacent rather than stabilizer-specific (cf. 1903.05124's MIPT-as-QEC).
+**Machines**: chain complex (dual graded posets), boundary operators, joint-vs-marginal excess.
+Full annotation: `annotations/2404.01470.md` (B2 pass 49). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/information_theory.md`, `by-structure/boundary_operators.md`.

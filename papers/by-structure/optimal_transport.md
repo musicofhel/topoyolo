@@ -19,14 +19,14 @@ Belief Propagation as approximate matching on factor graphs. For LDPC codes, red
 Bottleneck pairs = critical points of squared distance ||x-y||^2 on the variety. This IS an optimal assignment problem: find pairs (x, y) where the line xy is normal to X at both points. Bottleneck degree counts solutions — algebraic complexity of the matching. Formula in Chern classes and polar classes. Controls the reach, which determines topological inference guarantees. Full annotation: `by-domain/tda.md`.
 
 ### Divol & Lacombe (2019) — Understanding the Space of Persistence Diagrams via Optimal Partial Transport
-PD distances (Wasserstein, bottleneck) ARE optimal partial transport problems — exact identification, not analogy. Extends PDs to Radon measures on the upper half-plane. Provides geometric description of Fréchet means. Characterizes ALL continuous linear representations. Full annotation: `inbox.md` (arXiv: 1901.03048).
+PD distances (Wasserstein, bottleneck) ARE optimal partial transport problems — exact identification, not analogy. Extends PDs to Radon measures on the upper half-plane. Provides geometric description of Fréchet means. Characterizes ALL continuous linear representations. Full annotation: `annotations/1901.03048.md` (arXiv: 1901.03048).
 
 *(See also inbox for Cohen-Steiner bottleneck distance, Adams persistence images)*
 
 ## Information Geometry / Optimal Transport
 
 ### Wong & Yang (2019) — Pseudo-Riemannian geometry embeds information geometry in optimal transport
-Information geometry (Fisher metric, Bregman divergence) EMBEDS into OT geometry (Wasserstein) via pseudo-Riemannian framework. Ma-Trudinger-Wang condition ↔ information-geometric curvature. Exact functorial embedding, not analogy. Full annotation: `inbox.md` (arXiv: 1906.00030).
+Information geometry (Fisher metric, Bregman divergence) EMBEDS into OT geometry (Wasserstein) via pseudo-Riemannian framework. Ma-Trudinger-Wang condition ↔ information-geometric curvature. Exact functorial embedding, not analogy. Full annotation: `annotations/1906.00030.md` (arXiv: 1906.00030).
 
 ## Optimal Transport / Machine Learning
 
@@ -36,16 +36,19 @@ Gromov-Wasserstein distance: second-order optimal transport matching pairwise in
 ### Dabney, Rowland, Bellemare, Munos (2018) — QR-DQN (Distributional RL)
 Wasserstein-1 distance W_1(F,G) = integral |F^{-1}(tau) - G^{-1}(tau)| d(tau) minimized via quantile regression. Distributional Bellman operator contracts in W_infinity. QR-DQN uses N adjustable quantile locations with fixed uniform probabilities. Closes the theory-practice gap from C51 by operating end-to-end under Wasserstein. 33% median improvement on Atari. Full annotation: `by-domain/dynamical_systems.md`.
 
+### Hu et al. (2026) — OpenVLThinkerV2 / Gaussian GRPO (G²RPO)
+1D optimal transport as an RL objective: a non-linear coupling forces each task's advantage distribution onto the fixed reference measure N(0,1), replacing moment-matching standardization. Equalizes gradient updates across tasks with different reward topologies (sparse binary vs dense IoU); tail compression gives outlier robustness (stability), entropy shaping bounds exploration two-sidedly. Moment-matching cannot fix distributional shape — same W_1-vs-shape gap QR-DQN sits on. Full annotation: `annotations/2604.08539.md` (arXiv: 2604.08539).
+
 ### Bayraktar & Zhou (2017) — Model-Independent Pricing via Optimal Transport
 Martingale optimal transport: given marginals mu_1, ..., mu_n (from call prices), optimize over all martingale couplings. Super-hedging price = worst-case matching cost. Duality: min hedging cost = sup_{Q in M} E_Q[Phi] + U^{-1}(alpha). Shortfall hedging reduces to super-hedging of knockout options. Full annotation: `by-domain/dynamical_systems.md`.
 
 ## QEC
 
 ### Kitaev (1997) — Fault-tolerant quantum computation by anyons
-Matching: Anyonic excitations come in pairs. Error correction = fusing (matching) anyon pairs back to vacuum. Fusion rules define which pairs can annihilate. Full annotation: `inbox.md` (arXiv: quant-ph/9707021).
+Matching: Anyonic excitations come in pairs. Error correction = fusing (matching) anyon pairs back to vacuum. Fusion rules define which pairs can annihilate. Full annotation: `annotations/quant-ph-9707021.md` (arXiv: quant-ph/9707021).
 
 ### Dennis et al. (2002) — Topological quantum memory
-Matching: Recovery = identifying and matching syndrome defects via MWPM on syndrome graph. Full annotation: `inbox.md` (arXiv: quant-ph/0110143).
+Matching: Recovery = identifying and matching syndrome defects via MWPM on syndrome graph. Full annotation: `annotations/quant-ph-0110143.md` (arXiv: quant-ph/0110143).
 
 ---
 
@@ -99,6 +102,8 @@ The cost function is always a metric or semi-metric, and the matching always res
 
 ### Dynamical Systems
 
+**Amornbunchornvej, Zheleva & Berger-Wolf (2020) — Variable-lag Granger Causality and Transfer Entropy**: DTW optimal warping path = minimum-cost matching between time indices; fixed-lag causality is the rigid (diagonal-path) special case. Full annotation: `annotations/2002.00208.md` (arXiv: 2002.00208).
+
 **Ensemble Control on Lie Groups**: Single broadcast control must simultaneously steer ALL systems in population to respective targets. Infinite-dimensional matching reduced to finite-dimensional by covering decomposition. Full annotation: `third_pass_dynamics_tda.md` (TP-12).
 
 **IC-PINN Coupled Oscillators**: Basis-free inference = function-level matching. Assign a coupling function (from infinite-dimensional space) to observed dynamics. Full annotation: `third_pass_dynamics_tda.md` (TP-11).
@@ -107,32 +112,116 @@ The cost function is always a metric or semi-metric, and the matching always res
 
 ### Neuroscience (Wave 5, 2026-04-06)
 
-**Thual et al. (2022) — FUGW Brain Alignment**: Fused Unbalanced Gromov-Wasserstein for whole-brain inter-subject fMRI alignment. Transport plan P in R^{n x p} between cortical vertices. Combines Wasserstein (feature) + Gromov-Wasserstein (geometry) + unbalanced marginals. NeurIPS 2022, 46 citations. Full annotation: `inbox.md` (Wave 5).
+**Thual et al. (2022) — FUGW Brain Alignment**: arXiv: 2206.09398. Fused Unbalanced Gromov-Wasserstein for whole-brain inter-subject fMRI alignment. Transport plan P in R^{n x p} between cortical vertices. Combines Wasserstein (feature) + Gromov-Wasserstein (geometry) + unbalanced marginals. NeurIPS 2022, 46 citations. Full annotation: `annotations/2206.09398.md (Wave 5)` (Wave 5).
 
-**Janati et al. (2019) — Minimum Wasserstein Estimates**: Unbalanced OT regularizer for multi-subject MEG/EEG source imaging. Wasserstein barycenter as group-level source estimate. Cost = cortical geodesic distance. Generalized Sinkhorn solver. Full annotation: `inbox.md` (Wave 5).
+**Janati et al. (2019) — Minimum Wasserstein Estimates**: arXiv: 1902.04812. Unbalanced OT regularizer for multi-subject MEG/EEG source imaging. Wasserstein barycenter as group-level source estimate. Cost = cortical geodesic distance. Generalized Sinkhorn solver. Full annotation: `annotations/1902.04812.md (Wave 5)` (Wave 5).
 
-**Lee, Dabagia, Dyer, Rozell (2019) — Hierarchical OT for Neural Decoding**: Two-level Wasserstein alignment (cluster + point) for cross-session neural population decoding in macaque motor cortex. ADMM + Sinkhorn. NeurIPS 2019, 78 citations. Full annotation: `inbox.md` (Wave 5).
+**Lee, Dabagia, Dyer, Rozell (2019) — Hierarchical OT for Neural Decoding**: arXiv: 1906.11768. Two-level Wasserstein alignment (cluster + point) for cross-session neural population decoding in macaque motor cortex. ADMM + Sinkhorn. NeurIPS 2019, 78 citations. Full annotation: `annotations/1906.11768.md (Wave 5)` (Wave 5).
 
 ---
 
 ### Wave 8: TDA Matching Foundations (2026-04-07)
 
-**Bubenik & Elchesen (2019) — Universality of PD Distances**: Proves bottleneck and Wasserstein distances on persistence diagrams are universal constructions — THE canonical optimal matching metrics. 1-Wasserstein satisfies Kantorovich-Rubinstein duality. Any distance on PDs factors through these. Extends to multiparameter persistence. arXiv: 1912.02563, 15 citations. Full annotation: `inbox.md` (Wave 8).
+**Bubenik & Elchesen (2019) — Universality of PD Distances**: Proves bottleneck and Wasserstein distances on persistence diagrams are universal constructions — THE canonical optimal matching metrics. 1-Wasserstein satisfies Kantorovich-Rubinstein duality. Any distance on PDs factors through these. Extends to multiparameter persistence. arXiv: 1912.02563, 15 citations. Full annotation: `annotations/1912.02563.md (Wave 8)` (Wave 8).
 
-**Chen & Wang (2021) — Near-Linear Wasserstein on PDs**: Approximation algorithms for 1-Wasserstein distance between PDs via randomly shifted quadtrees. Near-linear time O(n log n / ε^d). Key technical challenge: diagonal as infinite reservoir. 100-1000x speedup over Hungarian/auction. arXiv: 2104.07710, 9 citations. Full annotation: `inbox.md` (Wave 8).
+**Chen & Wang (2021) — Near-Linear Wasserstein on PDs**: Approximation algorithms for 1-Wasserstein distance between PDs via randomly shifted quadtrees. Near-linear time O(n log n / ε^d). Key technical challenge: diagonal as infinite reservoir. 100-1000x speedup over Hungarian/auction. arXiv: 2104.07710, 9 citations. Full annotation: `annotations/2104.07710.md (Wave 8)` (Wave 8).
 
 ### Wave 8: Information Theory Matching Foundations (2026-04-07)
 
-**Blahut (1972) + Arimoto (1972) — Channel Capacity and Rate-Distortion**: THE foundational IT matching algorithms. Channel capacity = optimal matching of source to channel inputs. Rate-distortion R(D) = minimum-cost soft assignment between source and reproduction alphabets. Alternating minimization: fix one marginal, optimize the other (predates EM by 5 years). R(D) curve parameterized by D with slope -s. 3000+ combined citations. Full annotation: `inbox.md` (Wave 8).
+**Blahut (1972) + Arimoto (1972) — Channel Capacity and Rate-Distortion**: THE foundational IT matching algorithms. Channel capacity = optimal matching of source to channel inputs. Rate-distortion R(D) = minimum-cost soft assignment between source and reproduction alphabets. Alternating minimization: fix one marginal, optimize the other (predates EM by 5 years). R(D) curve parameterized by D with slope -s. 3000+ combined citations. Full annotation: `annotations/blahut-arimoto-1972.md` (slug: blahut-arimoto-1972).
+
+### B2 batch-004: rate-distortion lineage (2026-08-25)
+
+**Lei, Hassani & Saeedi Bidokhti (2022) — NERD**: Neural estimation of the RD functional where BA alternating minimization is infeasible; recovers the optimal test channel and the parameterized R(D) curve; reverse channel coding turns the estimate into an operational one-shot lossy code. Machines: matching, null hypothesis, parameterized homology (weak). arXiv: 2204.01612. Full annotation: `annotations/2204.01612.md` (B2 pass 27). Abstract-only provenance — depth-limited.
+
+**Theis & Wagner (2021) — RDPF coding theorem**: The perception term is a marginal-agreement constraint on the coupling — the OT-style distributional matching condition layered on top of the distortion-constrained soft assignment; achievability + converse for stochastic variable-length codes. Machines: matching, null hypothesis (weak). arXiv: 2104.13662. Full annotation: `annotations/2104.13662.md` (B2 pass 27). Abstract-only provenance — depth-limited.
+
+**Yadav, Song, Shkel & Özgür (2026) — Log-likelihood loss for semantic compression**: RD under a cross-entropy cost on the coupling induced by a prescribed generative channel P_{X|U} — soft-matching where "distortion" is misfit to a generative model; perfect-perception (marginal-agreement) RD appears as a boundary case. Closes batch-004 rate-distortion 4/4. Machines: matching, null hypothesis (weak). arXiv: 2601.16461. Full annotation: `annotations/2601.16461.md` (B2 pass 28). Abstract-only provenance — depth-limited.
 
 ### Wave 9: Spectral Wasserstein (2026-04-07)
 
-**Peyré (2026) — Muon Dynamics as a Spectral Wasserstein Flow**: Family of Spectral Wasserstein distances W_γ parameterized by Schatten norm index p. Cost acts on global displacement covariance matrix, not per-particle scalar costs. Trace norm (p=1) → classical W2; operator norm (p=∞) → Muon geometry. Kantorovich (couplings = matchings) equals Benamou-Brenier (gradient flows) for monotone norms. Max-min representation: W_γ² = max over anisotropic quadratic transports. Metric equivalence with W2: √c_γ · W2 ≤ W_γ ≤ √C_γ · W2. Geodesic convexity. Gaussian case: closed-form metric extending Bures-Wasserstein. arXiv: 2604.04891. Full annotation: `inbox.md` (Wave 9).
+**Peyré (2026) — Muon Dynamics as a Spectral Wasserstein Flow**: Family of Spectral Wasserstein distances W_γ parameterized by Schatten norm index p. Cost acts on global displacement covariance matrix, not per-particle scalar costs. Trace norm (p=1) → classical W2; operator norm (p=∞) → Muon geometry. Kantorovich (couplings = matchings) equals Benamou-Brenier (gradient flows) for monotone norms. Max-min representation: W_γ² = max over anisotropic quadratic transports. Metric equivalence with W2: √c_γ · W2 ≤ W_γ ≤ √C_γ · W2. Geodesic convexity. Gaussian case: closed-form metric extending Bures-Wasserstein. arXiv: 2604.04891. Full annotation: `annotations/2604.04891.md` (Wave 9).
 
 ### Wave 10: Statistical Wasserstein (2026-04-17)
 
-**Panaretos & Zemel (2019) — Statistical Aspects of Wasserstein Distances**: Comprehensive review unifying OT as statistical inference tool. W_p family parameterized by order p: W_1 (location), W_2 (Riemannian geometry via Otto calculus), W_∞ (bottleneck = PH stability). Convergence rates, CLTs, minimax estimation, goodness-of-fit testing. Curse of dimensionality O(n^{-1/d}) for d ≥ 3. Entropic/sliced regularization. DOI: annurev-statistics-030718-104938, 913 citations. Full annotation: `inbox.md` (Wave 10b).
+**Panaretos & Zemel (2019) — Statistical Aspects of Wasserstein Distances**: Comprehensive review unifying OT as statistical inference tool. W_p family parameterized by order p: W_1 (location), W_2 (Riemannian geometry via Otto calculus), W_∞ (bottleneck = PH stability). Convergence rates, CLTs, minimax estimation, goodness-of-fit testing. Curse of dimensionality O(n^{-1/d}) for d ≥ 3. Entropic/sliced regularization. DOI: annurev-statistics-030718-104938, 913 citations. Full annotation: `annotations/annurev-statistics-030718-104938.md` (Wave 10b).
 
 ### Wave 10c: DMT Matching (2026-04-17)
 
-**Curry, DeSha, Hoff, Limberger, Luo & Qin (2022) — Decorated merge trees for persistent topology**: DOI: s41468-022-00089-3. Gromov-Wasserstein coupling between decorated merge trees defines a stable metric for comparing persistent homology modules. The matching is between tree edge sets with costs determined by interleaving distance. DMT metric provides a computable alternative to interleaving distance that preserves the full tree structure (not just the barcode). Full annotation: `inbox.md` (Wave 10c). **See also**: `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/phase_transitions.md`.
+**Curry, DeSha, Hoff, Limberger, Luo & Qin (2022) — Decorated merge trees for persistent topology**: DOI: s41468-022-00089-3. Gromov-Wasserstein coupling between decorated merge trees defines a stable metric for comparing persistent homology modules. The matching is between tree edge sets with costs determined by interleaving distance. DMT metric provides a computable alternative to interleaving distance that preserves the full tree structure (not just the barcode). Full annotation: `annotations/s41468-022-00089-3.md` (Wave 10c). **See also**: `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/phase_transitions.md`.
+
+### Ying, Pan, Fox, Agarwal (2016) — Fast Approximate DTW (κ-packed curves)
+DTW as minimum-cost monotone correspondence assignment; (1+ε) stability bound on matching value; packing constant κ as the structure condition enabling fast matching. Also dynamical systems. Full annotation: `annotations/ying-2016.md` (B2 pass 13).
+
+### Silva, Giusti, Keogh, Batista (2018) — Pruning unpromising DTW alignments
+Exact monotone assignment with zero-error pruning inside the DP grid; lower-bound certificates bound the matching value. Complements ying-2016's (1+ε) approximation. Full annotation: `annotations/silva-2018.md` (B2 pass 13).
+
+### B2 batch-004: Dynamics×Matching bridges (2026-08-25)
+
+**Botvinick-Greenhouse, Oprea, Maulik & Yang (2024) — Measure-Theoretic Time-Delay Embedding**: arXiv: 2409.08768. Delay embedding as pushforward between probability-measure spaces (Eulerian dynamics); OT machinery supplies the coupling; robustness to sparse/noisy data. Machines: matching, stability. Full annotation: `annotations/2409.08768.md` (B2 pass 24). **See also**: `by-domain/dynamical_systems.md`.
+
+**Moosmüller, Dietrich & Kevrekidis (2019) — Transport of Discontinuous Densities**: arXiv: 1907.08260. Attractor-reconstruction side information (short histories) disambiguates non-bijective transport-map identification. Machines: matching, stability (weak). Full annotation: `annotations/1907.08260.md` (B2 pass 24). **See also**: `by-domain/dynamical_systems.md`.
+
+**Huguet, Magruder, Tong, Fasina, Kuchroo, Wolf & Krishnaswamy (2022) — Manifold Interpolating Optimal-Transport Flows (MIOFlow)**: arXiv: 2206.14928. Neural-ODE population dynamics penalized by dynamic OT with a manifold (multiscale geodesic) ground cost; geodesic autoencoder couples the learned latent metric to the OT cost. Machines: matching, stability (weak). Full annotation: `annotations/2206.14928.md` (B2 pass 25). Abstract-only provenance — depth-limited. **See also**: `by-domain/dynamical_systems.md`, `annotations/2409.08768.md`.
+
+**Nakazato & Ito (2021) — Geometrical Aspects of Entropy Production via Wasserstein Distance**: arXiv: 2103.00503. Entropy production ≥ L2-Wasserstein path length of the density path — the matching cost reappears as physical dissipation; thermodynamic speed limits, optimal protocols, partial EP bounds. Machines: matching (instrumental), joint-vs-marginal (weak). Full annotation: `annotations/2103.00503.md` (B2 pass 25). Abstract-only provenance — depth-limited. **See also**: `by-domain/statistical_physics.md`.
+
+**Ito (2022) — Geometric Thermodynamics for the Fokker-Planck Equation**: arXiv: 2209.00527. Information geometry and optimal transport unified through the excess entropy production rate: gradient flow ↔ information geometry on probability-density space, OT velocity field ↔ information geometry on path-probability space; thermodynamic trade-offs and minimum-cost optimal protocols fall out of the shared geometry. Machines: matching (core), joint-vs-marginal (weak). Full annotation: `annotations/2209.00527.md` (B2 pass 26). Abstract-only provenance — depth-limited. **See also**: `by-domain/statistical_physics.md`.
+
+**Gulen & McCleary (2022) — Galois Connections in Persistent Homology**: arXiv: 2201.06650. Barcode matchings and interleavings unified via Galois connections; Rota's theorem gives an easier proof of bottleneck stability — the matching machine revealed as order-theoretically dual to the perturbation relation in the PH setting. Machines: matching, stability, parameterized homology. Full annotation: `annotations/2201.06650.md` (B2 pass 32). Abstract-only provenance — depth-limited. **See also**: `by-domain/tda.md`, `annotations/1205.3669.md`.
+
+---
+
+## B3 synthesis: thermodynamic instantiation of the matching machine (2026-08-25)
+
+Batch-004's stoch-thermo group showed the matching machine acquiring a *physical* incarnation: the OT cost is not merely analogous to dissipation, it IS dissipation under specified dynamics.
+
+- **Nakazato & Ito (2021)** (`annotations/2103.00503.md`): for overdamped Langevin dynamics, entropy production ≥ L²-Wasserstein path length of the density path. The Kantorovich cost between successive densities is bounded below by heat dissipated — speed limits and optimal-protocol problems become optimal-matching problems.
+- **Ito (2022)** (`annotations/2209.00527.md`): the unification runs deeper — excess entropy production rate is precisely the coordinate that makes information geometry (density space) and optimal transport (path-probability space) one geometry. Minimum-dissipation protocols = geodesics.
+
+Two cautions sharpen the claim (see also the ANTISYNONYMS entry "Matching metric ≠ stability guarantee" in this corpus): (1) the equality direction is dynamics-specific — Nakazato–Ito's bound uses the L²/Wasserstein cost *because* the Fokker–Planck current supplies it; a bare matching metric on arbitrary measures carries no thermodynamic reading (the TDA isometry theorem `annotations/2506.02999.md`, by contrast, makes matching=stability exact with no physics at all). (2) The thermodynamic instantiation prices the *coupling*, while the joint-vs-marginal machine prices the *excess* — see the composite-systems side in `by-structure/composite_systems.md`.
+
+**See also**: `by-domain/statistical_physics.md`, `by-structure/composite_systems.md`.
+
+## B3 synthesis: the Monge–Kantorovich split inside this file (2026-08-25)
+
+The entries above quietly span a split *internal* to the matching machine that Mémoli & Needham (`annotations/2212.14123.md`) made precise: **Kantorovich form** = optimize over couplings/soft assignments; **Monge form** = optimize over deterministic maps/hard assignments. The corpus carries both:
+
+- **Coupling-side (Kantorovich)**: GW distances themselves (Bunne et al., Chambers–Meng 2507.01171, Yachimura–Zou 2608.09265), unbalanced/fused variants where mass may leak (FUGW 2206.09398, Janati et al. 1902.04812), and partial transport on persistence diagrams (Divol–Lacombe 1901.03048). Soft assignment is essential wherever correspondence is genuinely one-to-many or mass-varying.
+- **Map-side (Monge)**: transport-map identification (Moosmüller et al. 1907.08260), MWPM syndrome decoding (a hard pairing by construction — Kitaev quant-ph/9707021, Dennis et al.), DTW's monotone warping path as a deterministic assignment (ying-2016, silva-2018), and martingale optimal transport's coupling-with-map structure (Bayraktar–Zhou).
+
+The theorem that makes this an atlas-level fact rather than a notational one: for non-atomic mm-spaces, GM = GW **exactly** — once atoms vanish, restricting soft matching to hard matching costs nothing, and GM is bi-Hölder equivalent to the isometry-invariant Monge OT used in shape analysis. So the corpus's mixed usage is principled: continuous-measure applications may freely read couplings as maps, while discrete/atomic instances (finite diagrams, syndrome graphs, alphabets) are exactly where the split bites and the two formulations diverge.
+
+**See also**: `atlas/MATCHING.md`, `annotations/2212.14123.md`.
+
+## B2 batch-006 — GW-theory core (2026-08-25)
+
+Three foundations papers for the relational-matching instantiation itself (abstract-only provenance; all depth-limited).
+
+**Weitkamp, Proksch, Tameling & Munk (2020)** — arXiv: 2006.12287. Asymptotic inference for GW-based object matching: trimmed GW lower bound → pose-invariant discrimination test with derived distributional limits (U-process weak convergence). First corpus entry supplying the matching functional's *sampling theory*. Machines: matching, null hypothesis, stability (distributional). Full annotation: `annotations/2006.12287.md` (B2 pass 35). **See also**: `by-domain/tda.md`, `by-structure/phase_transitions.md`.
+
+**Mémoli & Needham (2022)** — arXiv: 2212.14123. Gromov-Monge (map) vs Gromov-Wasserstein (coupling): equal for non-atomic mm-spaces; bi-Hölder equivalence with isometry-invariant Monge OT. The Kantorovich/Monge duality carried into relational matching — internal foundations for when deterministic assignment is free. Machines: matching, stability. Full annotation: `annotations/2212.14123.md` (B2 pass 35). **See also**: `by-domain/tda.md`.
+
+**Lim & Mémoli (2022)** — arXiv: 2201.09385. Generalized cMDS on metric measure spaces: spectral theory, negative-eigenvalue-sum non-flatness invariant, and stability of the embedding w.r.t. GW distance — cross-instantiation robustness control within the matching family. Machines: matching, stability, null hypothesis (weak). Full annotation: `annotations/2201.09385.md` (B2 pass 35). **See also**: `by-domain/tda.md`, `by-structure/phase_transitions.md`.
+
+**Chambers & Meng (2025)** — arXiv: 2507.01171. GW distance between Reeb graphs with the mm-space's probability measure derived from persistence images of extended persistence diagrams; proven stable under scalar-field perturbation — a filtration summary feeding directly into the matching functional's measure. Machines: matching, parameterized homology (consumed), stability. Full annotation: `annotations/2507.01171.md` (B2 pass 36). **See also**: `by-domain/tda.md`, `by-structure/filtrations.md`.
+
+**Hohmeier, Fraiman & Moosmueller (2026)** — arXiv: 2606.10295. k-NN classification under GW/fGW distances: universal consistency on weak-isomorphism classes of finite mm-spaces — downstream prediction risk converges to Bayes-optimal on the relational-matching geometry itself. Machines: matching, stability (consistency form). Full annotation: `annotations/2606.10295.md` (B2 pass 36). **See also**: `by-domain/tda.md`, `by-structure/phase_transitions.md`.
+
+**Yachimura & Zou (2026)** — arXiv: 2608.09265. Entropic partial OT and partial mixture GW between Gaussian mixtures as component-level mm-spaces: existence/uniqueness of the entropic minimizer, quantitative large-penalty and zero-entropy limits, metric property — mass conservation relaxed inside relational matching. Machines: matching, stability (relaxation-path continuity), null hypothesis (weak). Full annotation: `annotations/2608.09265.md` (B2 pass 36). **See also**: `by-domain/tda.md`.
+
+**Fowler, Whiteside & Hollenberg (2012)** — arXiv: 1202.5602. Empirical O(n²) average time per round for exact MWPM on surface-code syndrome graphs (distances 4–512, verified true-minimum matchings): the Matching machine's typical-case cost on sparse sub-threshold defect patterns is polynomial even though blossom's worst case is not — average-case complexity as the practicality theorem of matching-based fault tolerance. Machines: matching (core), stability. Full annotation: `annotations/1202.5602.md` (B2 pass 41). **See also**: `by-domain/qec.md`.
+
+**Grigoryeva, Hart & Ortega (2021)** — arXiv: 2108.05024. Generalized synchronization as the Matching machine on dynamics' home ground: the driven reservoir's sync map is a topological conjugacy embedding the source attractor into reservoir state space; Takens' delay embedding falls out as a special case. Bridge pair with the measure-side Takens-via-pushforward (`annotations/2409.08768.md`). Machines: matching (conjugacy), stability (conditional contraction). Full annotation: `annotations/2108.05024.md` (B2 pass 44). **See also**: `by-domain/dynamical_systems.md`.
+
+**Hart (2023)** — arXiv: 2401.00885. Error side of the same correspondence: reconstruction fidelity controlled by a spectral gap in conditional vs target Lyapunov exponents, tuned via reservoir spectral radius. Machines: stability (core), matching (weak). Full annotation: `annotations/2401.00885.md` (B2 pass 44). **See also**: `by-domain/dynamical_systems.md`.
+
+**Fadera (2025)** — arXiv: 2501.11357. Pullback-attractor box dimension ≤ input-sequence dimension: effective low-dimensional dynamics caps where the correspondence can live regardless of nominal reservoir size. Machines: stability (dimension bound), matching (weak). Full annotation: `annotations/2501.11357.md` (B2 pass 44). **See also**: `by-domain/dynamical_systems.md`.
+
+**Song, Choi & Kahng (2021)** — arXiv: 2109.08918. Network structure inferred from chaotic Kuramoto patterns: inverse identification of the coupling graph from observed collective dynamics, the same inference direction as the reservoir-GS cluster but with the reconstructed object being the network itself. Machines: matching (weak), stability (ML determination of hybrid-sync criticality). Full annotation: `annotations/2109.08918.md` (B2 pass 47). Abstract-only provenance — depth-limited. **See also**: `by-domain/statistical_physics.md`, `by-structure/phase_transitions.md`.
+
+**Butler, Waxman & Djurić (2024)** — arXiv: 2410.23499. TSCI: causal discovery by learning explicit vector fields on reconstructed manifolds and testing synchronization degree between them — CCM's nearest-neighbor cross mapping replaced by tangent-space function fitting, with the test statistic fixed across a function-class ladder (local linear → latent-variable → deep). Machines: matching (core — fit replaces neighbor retrieval), joint-vs-marginal excess (synchronization as composite-only structure), null hypothesis (empirical wrong-alternative calibration vs CCM). Full annotation: `annotations/2410.23499.md` (B2 pass 53). Abstract-only provenance — depth-limited. **See also**: `by-domain/dynamical_systems.md`.
+
+**Zhang, Mirallès, Rousseau-Rizzi, Zinflou, Wu & Boulet (2025)** — arXiv: 2502.03802. MXMap/multiPCM: Partial Cross Mapping lifted into multivariate delay embeddings — the conditioning test that separates direct from indirect causal links runs on higher-dimensional shadows of the joint attractor; two-phase workflow (pairwise CCM over-generates edges, multiPCM prunes against the mediation null). Machines: matching (multivariate library cross mapping), joint-vs-marginal excess (conditioned-vs-marginal mapping quality), null hypothesis (per-edge "fully mediated" test). Full annotation: `annotations/2502.03802.md` (B2 pass 54). Abstract-only provenance — depth-limited. **See also**: `by-domain/dynamical_systems.md`.
+
+**Glad & Woolf (2021)** — arXiv: 2110.12288. Path-signature area causal discovery: the signed area between two series is the antisymmetric degree-2 iterated integral of their increments; maximizing pairwise signed areas across time shifts matches causal direction over the lag axis, with confidence sequences supplying anytime-valid significance. Rough-path algebra as a new feature extractor on the CCM shelf (alongside Granger/CCM/PCMCI). Machines: matching (lag-axis pairing), stability (anytime-valid certificates), null hypothesis (no-directed-coupling boundary). Full annotation: `annotations/2110.12288.md` (B2 pass 54). Abstract-only provenance — depth-limited. **See also**: `by-domain/dynamical_systems.md`.

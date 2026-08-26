@@ -68,6 +68,35 @@ Two sub-flavors: (a) **undirected** clique/nerve complexes from co-firing statis
 
 The chain complex now has **7 incarnations**: geometric (simplicial/cellular), algebraic (Lie algebra), categorified (Khovanov), combinatorial (PID lattice), gauge-theoretic (de Rham/Chern-Simons), graded-informational (k-body info, bigraded layers), and **neural** — with two sub-flavors: undirected clique/nerve complexes from co-firing (Giusti, Dabaghian, Curto & Itskov) where the Nerve Theorem guarantees homology = stimulus space topology, and directed simplicial complexes from synaptic connectivity (Reimann) and information-flow topology (Peek, TE-derived flag complex) where orientation encodes information flow direction. The QEC chain complex is now the richest subsection: CSS codes (Breuckmann & Eberhardt), concatenated codes (Aharonov & Ben-Or), Steane codes (KLZ), Floquet codes (Hastings & Haah), and quantum TDA algorithms (Berry et al.) all instantiate ∂² = 0 with distinct algebraic and temporal structure.
 
+## B3 synthesis: cellular sheaves — the chain complex with structure maps (2026-08-25)
+
+Batch-010's four sheaf papers (the corpus's first sheaf entries) refine rather than extend
+the incarnation list: a cellular sheaf is a chain complex *plus* restriction maps on the
+stalks — the boundary operator acquires attachment data that plain simplicial/cellular
+complexes leave implicit.
+
+- **Sheaf neural networks** (Hansen & Gebhart, `annotations/2012.06333.md`): the chain
+  complex becomes the learnable architecture itself — sheaf Laplacian with learned
+  restriction maps over dimension-varying stalks; training tunes the maps between cochain
+  spaces, not the cochain data alone.
+- **Predictive coding as sheaf cohomology** (Seely, `annotations/2511.11092.md`): the
+  coboundary operator is the prediction-error map, so H¹ measures inference error that no
+  local update can remove — an irreducible-residue reading of cohomology, and the first
+  corpus bridge from chain-complex algebra to predictive-coding neuroscience.
+- **Higher-dimensional sheaf data** (Hu et al., `annotations/2505.23993.md`): graded
+  cochain sequences C⁰→C¹→C² beyond graphs; two branches — geometric (0th sheaf Laplacian
+  recovers ANM Hessians; higher Laplacians as multi-way interactions) and algebraic
+  (ringed-space ideals).
+- **Degeneration as instability** (Dönmez et al., `annotations/2605.11178.md`): GIT
+  semistability of incidence-quiver representations governs when the sheaf Laplacian's
+  harmonic space stays informative under oversmoothing — stability machinery applied to
+  the machine itself (see the Stability atlas file for the third-incarnation thread).
+
+**What the sheaf adds across all four**: ∂² = 0 is unchanged; what changes is that edges
+carry *maps* (restriction/boundary data), so homology now measures misfit between attached
+local models and not just holes in a point cloud or code space. The Key Divergences below
+(coefficient fields, factor graphs lacking ∂²=0) apply unchanged to sheaf entries.
+
 ## Key Divergences
 
 - **Coefficient fields**: TDA uses ℝ or ℤ/2; QEC uses ℤ/2 or ℤ/p; information theory uses ℝ. Same machine, different arithmetic.

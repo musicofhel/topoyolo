@@ -24,17 +24,17 @@ Papers from or relevant to the neuroscience community, indexed by which abstract
 
 ## Chain Complex (annotated from inbox — Wave 1)
 
-- **Giusti, Pastalkova, Curto, Itskov (2015)** — "Clique topology reveals intrinsic geometric structure in neural correlations." Order complex from hippocampal correlation matrices. Rank-ordering invariance under monotone transforms. Detects geometry invisible to spectral methods. Full annotation: `inbox.md` (arXiv: 1502.06172). Machines: chain complex, parameterized homology, null hypothesis. **See also**: `by-structure/boundary_operators.md`.
+- **Giusti, Pastalkova, Curto, Itskov (2015)** — "Clique topology reveals intrinsic geometric structure in neural correlations." Order complex from hippocampal correlation matrices. Rank-ordering invariance under monotone transforms. Detects geometry invisible to spectral methods. Full annotation: `annotations/1502.06172.md` (arXiv: 1502.06172). Machines: chain complex, parameterized homology, null hypothesis. **See also**: `by-structure/boundary_operators.md`.
 
-- **Reimann, Nolte, Scolamiero, Turner et al. (2017)** — "Cliques of Neurons Bound into Cavities Provide a Missing Link between Structure and Function." Directed simplicial complexes from Blue Brain reconstruction (~31K neurons). Directed simplices up to dim 6-7. Stimulus-evoked hierarchical cavity formation. Full annotation: `inbox.md` (DOI: 10.3389/fncom.2017.00048). Machines: chain complex, parameterized homology, null hypothesis. **See also**: `by-structure/boundary_operators.md`.
+- **Reimann, Nolte, Scolamiero, Turner et al. (2017)** — "Cliques of Neurons Bound into Cavities Provide a Missing Link between Structure and Function." Directed simplicial complexes from Blue Brain reconstruction (~31K neurons). Directed simplices up to dim 6-7. Stimulus-evoked hierarchical cavity formation. Full annotation: `annotations/10.3389-fncom.2017.00048.md` (DOI: 10.3389/fncom.2017.00048). Machines: chain complex, parameterized homology, null hypothesis. **See also**: `by-structure/boundary_operators.md`.
 
-- **Dabaghian, Mémoli, Frank, Carlsson (2012)** — "A Topological Paradigm for Hippocampal Spatial Map Formation Using Persistent Homology." Nerve complex from place cell co-firing. PH recovers environment topology in 2-5 min. Learning region in parameter space. Full annotation: `inbox.md` (DOI: 10.1371/journal.pcbi.1002581). Machines: chain complex, parameterized homology, stability. **See also**: `by-structure/boundary_operators.md`.
+- **Dabaghian, Mémoli, Frank, Carlsson (2012)** — "A Topological Paradigm for Hippocampal Spatial Map Formation Using Persistent Homology." Nerve complex from place cell co-firing. PH recovers environment topology in 2-5 min. Learning region in parameter space. Full annotation: `annotations/10.1371-journal.pcbi.1002581.md` (DOI: 10.1371/journal.pcbi.1002581). Machines: chain complex, parameterized homology, stability. **See also**: `by-structure/boundary_operators.md`.
 
-- **Curto & Itskov (2008)** — "Cell Groups Reveal Structure of Stimulus Space." Nerve of receptive field cover. Nerve Theorem guarantees H_* of complex = H_* of stimulus space. Geometric reconstruction ~3% accuracy. Full annotation: `inbox.md` (DOI: 10.1371/journal.pcbi.1000205). Machines: chain complex, matching, stability. **See also**: `by-structure/boundary_operators.md`.
+- **Curto & Itskov (2008)** — "Cell Groups Reveal Structure of Stimulus Space." Nerve of receptive field cover. Nerve Theorem guarantees H_* of complex = H_* of stimulus space. Geometric reconstruction ~3% accuracy. Full annotation: `annotations/10.1371-journal.pcbi.1000205.md` (DOI: 10.1371/journal.pcbi.1000205). Machines: chain complex, matching, stability. **See also**: `by-structure/boundary_operators.md`.
 
 ## Wave 4c (2026-04-06) — Inbox Annotations
 
-- **Tort, Komorowski, Eichenbaum, Kopell (2010)** — "Measuring Phase-Amplitude Coupling Between Neuronal Oscillations of Different Frequencies." Modulation Index = D_KL(observed PAC distribution || uniform). Joint-vs-marginal excess quantifies cross-frequency coupling. Time-shifted surrogates as null. Full annotation: `inbox.md`. Machines: joint-vs-marginal, null hypothesis, parameterized homology (weak). **See also**: `by-structure/composite_systems.md`, `by-structure/phase_transitions.md`.
+- **Tort, Komorowski, Eichenbaum, Kopell (2010)** — "Measuring Phase-Amplitude Coupling Between Neuronal Oscillations of Different Frequencies." Modulation Index = D_KL(observed PAC distribution || uniform). Joint-vs-marginal excess quantifies cross-frequency coupling. Time-shifted surrogates as null. Full annotation: `annotations/tort-2010.md`. Machines: joint-vs-marginal, null hypothesis, parameterized homology (weak). **See also**: `by-structure/composite_systems.md`, `by-structure/phase_transitions.md`.
 
 ### Oizumi, Albantakis, Tononi (2014) — Integrated Information Theory 3.0
 **"From the Phenomenology to the Mechanisms of Consciousness: Integrated Information Theory 3.0"**
@@ -44,9 +44,9 @@ THE foundational formalization of joint-vs-marginal excess in neuroscience. Φ =
 
 ## Annotated papers (full annotations in inbox)
 
-- **Gardner et al. (2022)** — "Toroidal topology of population activity in grid cells." PH on Neuropixels grid cell recordings reveals toroidal manifold T². Five machines: chain complex (T² with H₁=Z²), parameterized homology (PH across filtration), stability (persists across environments and wake→sleep), null hypothesis (feedforward models falsified), joint-vs-marginal (torus is population-level, invisible from marginals). Full annotation: `inbox.md` (DOI: 10.1038/s41586-021-04268-7). **See also**: `by-structure/boundary_operators.md`, `cross_domain_bridges.md` (neuro ↔ QEC via shared T²).
-- **Peek, Pritam, Skerritt, Chalup (2025)** — "Time Series Analysis of Spiking Neural Systems via Transfer Entropy and Directed Persistent Homology." TE+PH pipeline: spike trains -> pairwise TE -> directed flag complex -> directed PH. Applied to synthetic SNNs (logic gates, image classification) and mouse cortical recordings. Higher-dimensional homology discriminates task complexity. Wasserstein distances on PDs recover graded task space geometry. Triple-domain bridge: neuroscience + TDA + information theory. Full annotation: `inbox.md` (arXiv: 2508.19048). Machines: chain complex (directed flag complex from TE graph), parameterized homology (inverted TE filtration), null hypothesis (baseline epochs, simple tasks as reference). **See also**: `by-structure/boundary_operators.md`, `by-structure/filtrations.md`, `by-domain/tda.md`, `by-domain/information_theory.md`.
-- **Tsuda (2001)** — "Toward an interpretation of dynamic neural activity in terms of chaotic dynamical systems." Chaotic itinerancy: trajectory wanders among attractor ruins, tracing a path through topology space parameterized by time. Quasi-stability via destroyed attractors (Milnor attractors). Fixed-point/limit-cycle as null. Full annotation: `inbox.md` (DOI: 10.1017/S0140525X01000097). Machines: parameterized homology, stability (anti-stability), null hypothesis, chain complex (weak). **See also**: `by-structure/filtrations.md`, `by-structure/phase_transitions.md`.
+- **Gardner et al. (2022)** — "Toroidal topology of population activity in grid cells." PH on Neuropixels grid cell recordings reveals toroidal manifold T². Five machines: chain complex (T² with H₁=Z²), parameterized homology (PH across filtration), stability (persists across environments and wake→sleep), null hypothesis (feedforward models falsified), joint-vs-marginal (torus is population-level, invisible from marginals). Full annotation: `annotations/10.1038-s41586-021-04268-7.md` (DOI: 10.1038/s41586-021-04268-7). **See also**: `by-structure/boundary_operators.md`, `cross_domain_bridges.md` (neuro ↔ QEC via shared T²).
+- **Peek, Pritam, Skerritt, Chalup (2025)** — "Time Series Analysis of Spiking Neural Systems via Transfer Entropy and Directed Persistent Homology." TE+PH pipeline: spike trains -> pairwise TE -> directed flag complex -> directed PH. Applied to synthetic SNNs (logic gates, image classification) and mouse cortical recordings. Higher-dimensional homology discriminates task complexity. Wasserstein distances on PDs recover graded task space geometry. Triple-domain bridge: neuroscience + TDA + information theory. Full annotation: `annotations/2508.19048.md` (arXiv: 2508.19048). Machines: chain complex (directed flag complex from TE graph), parameterized homology (inverted TE filtration), null hypothesis (baseline epochs, simple tasks as reference). **See also**: `by-structure/boundary_operators.md`, `by-structure/filtrations.md`, `by-domain/tda.md`, `by-domain/information_theory.md`.
+- **Tsuda (2001)** — "Toward an interpretation of dynamic neural activity in terms of chaotic dynamical systems." Chaotic itinerancy: trajectory wanders among attractor ruins, tracing a path through topology space parameterized by time. Quasi-stability via destroyed attractors (Milnor attractors). Fixed-point/limit-cycle as null. Full annotation: `annotations/10.1017-S0140525X01000097.md` (DOI: 10.1017/S0140525X01000097). Machines: parameterized homology, stability (anti-stability), null hypothesis, chain complex (weak). **See also**: `by-structure/filtrations.md`, `by-structure/phase_transitions.md`.
 
 ---
 
@@ -56,7 +56,7 @@ THE foundational formalization of joint-vs-marginal excess in neuroscience. Φ =
 
 - **Fasoli et al. (2026)** — "Attractor dynamics of whole-cortex network model." Mouse cortex: directed connectivity essential for full attractor repertoire (Z vs Z/2 homology). Static fMRI constraints determine dynamic topology. Full annotation: `cross_domain_bridges.md`. Machines: parameterized homology, stability, null hypothesis, joint-vs-marginal. **Bridge: neuroscience + dynamical systems.**
 
-- **Tort et al. (2010)** — PAC modulation index. *(Fully annotated in inbox.md — see Wave 4c above.)*
+- **Tort et al. (2010)** — PAC modulation index. *(Fully annotated in annotations/tort-2010.md — see Wave 4c above.)*
 
 ---
 
@@ -140,21 +140,21 @@ Papers filling the Match x Neuro cell: genuine optimal transport / matching appl
 **"Aligning individual brains with Fused Unbalanced Gromov-Wasserstein"** (NeurIPS 2022, arXiv: 2206.09398)
 Fused Unbalanced Gromov-Wasserstein computes optimal transport plans between cortical surfaces of different subjects. Combines feature-based Wasserstein matching with geometry-preserving Gromov-Wasserstein, with unbalanced marginals to handle inter-subject area size differences. Applied to whole-brain fMRI alignment on the Individual Brain Charting dataset (12 subjects, 400 maps each). Outperforms FreeSurfer and MSM baselines. 46 citations.
 **Machines**: matching, stability, parameterized homology, null hypothesis.
-Full annotation: `inbox.md` (Wave 5).
+Full annotation: `annotations/tort-2010.md` (Wave 5).
 **See also**: `by-structure/optimal_transport.md`
 
 ### Janati, Bazeille, Thirion, Cuturi, Gramfort (2019) — Minimum Wasserstein Estimates
 **"Group level MEG/EEG source imaging via optimal transport: minimum Wasserstein estimates"** (arXiv: 1902.04812)
 Unbalanced OT as regularizer for multi-subject MEG/EEG source localization. Wasserstein barycenter defines group-level source estimate respecting cortical geometry. Cost matrix = geodesic distance on cortical mesh. Reduces localization error from ~4 cm (Lasso) to <1 cm. Validated on Wakeman-Henson face perception data; localizes fusiform face area consistent with fMRI.
 **Machines**: matching, stability, null hypothesis, parameterized homology.
-Full annotation: `inbox.md` (Wave 5).
+Full annotation: `annotations/tort-2010.md` (Wave 5).
 **See also**: `by-structure/optimal_transport.md`
 
 ### Lee, Dabagia, Dyer, Rozell (2019) — Hierarchical OT for Neural Decoding
 **"Hierarchical Optimal Transport for Multimodal Distribution Alignment"** (NeurIPS 2019, arXiv: 1906.11768)
 Two-level OT: coarse cluster matching + fine within-cluster alignment. Applied to neural population decoding in macaque primary motor cortex (M1): aligns firing patterns across recording sessions to enable cross-session movement direction/velocity decoding. Exploits clustered structure in neural population activity. Distributed ADMM + Sinkhorn. 78 citations.
 **Machines**: matching, stability, parameterized homology, null hypothesis.
-Full annotation: `inbox.md` (Wave 5).
+Full annotation: `annotations/tort-2010.md` (Wave 5).
 **See also**: `by-structure/optimal_transport.md`
 
 ---
@@ -167,7 +167,7 @@ arXiv: 1909.02297
 **Domain(s)**: Neuroscience (consciousness), information theory
 PhiID = Integrated Information Decomposition. Combines PID with IIT to decompose excess entropy into 16 atoms on a double-redundancy (product) lattice. Reveals that "integration" is actually an aggregate of storage, copy, transfer, erasure, upward causation, and downward causation — six qualitatively distinct modes of joint-vs-marginal excess. Shows existing Phi measures (Phi_WMS, psi, Phi_G, CD) each capture different subsets of atoms. Motivated by consciousness research: understanding WHAT KIND of integration the brain performs, not just HOW MUCH.
 **Machines**: joint-vs-marginal, chain complex (product lattice + Moebius inversion), parameterized homology, null hypothesis, stability.
-Full annotation: `inbox.md` (arXiv: 1909.02297).
+Full annotation: `annotations/1909.02297.md` (arXiv: 1909.02297).
 **See also**: `by-structure/composite_systems.md`
 
 ### Barrett (2015) — PID for Gaussian Systems
@@ -176,7 +176,7 @@ arXiv: 1411.2832
 **Domain(s)**: Information theory, neuroscience
 First systematic PID analysis for continuous (Gaussian) variables. Key result: for univariate target, broad class of PIDs collapse to MMI (redundancy = min of individual MIs). Synergy prevalent even when sources are uncorrelated. Applied to MVAR dynamical systems: synergy decreases with lag depth, increases with weaker connection strength, decreases with source correlation. Discusses neuroscience applications: neural coding, EEG connectivity, epilepsy, consciousness.
 **Machines**: joint-vs-marginal, parameterized homology, null hypothesis, stability.
-Full annotation: `inbox.md` (arXiv: 1411.2832).
+Full annotation: `annotations1411.28320.md` (arXiv: 1411.2832).
 **See also**: `by-structure/composite_systems.md`
 
 ---
@@ -189,7 +189,7 @@ DOI: 10.1016/j.neuroimage.2013.08.056, NeuroImage 85(2):853-872. 281 citations.
 **Domain(s)**: Neuroscience, information theory
 Phase TE computes transfer entropy on Morlet-filtered phase time series, isolating directed oscillatory coupling from amplitude effects. Differential TE (dTE) quantifies net directionality. Robust to linear mixing (volume conduction) and noise at realistic MEG/EEG levels. Frequency-band-specific: different bands yield different directed coupling graphs. Validated on coupled Neural Mass Models. Computationally much faster than real-valued TE.
 **Machines**: joint-vs-marginal, null hypothesis, parameterized homology.
-Full annotation: `inbox.md` (Wave 6).
+Full annotation: `annotations/tort-2010.md` (Wave 6).
 **See also**: `by-structure/composite_systems.md`, `by-structure/phase_transitions.md`, `by-domain/information_theory.md`
 
 ### Rosas, Mediano et al. (2020) — Causal Emergence via PID
@@ -198,7 +198,7 @@ PLoS Computational Biology, 16(12), e1008289. arXiv: 2004.08220. 143 citations.
 **Domain(s)**: Information theory, neuroscience, dynamical systems
 Inverted joint-vs-marginal: macro coarse-grained feature has causal power exceeding sum of micro parts. Applied to 64-channel macaque ECoG during reaching: Ψ^(1) = 1.275 > 0 at 8ms timescale, motor representation emergent up to ~0.2s. Emergence decomposes into downward causation D^(k) and causal decoupling G^(k) ("statistical ghosts"). Extends Mediano PhiID.
 **Machines**: joint-vs-marginal (inverted), parameterized homology, null hypothesis, chain complex (inherited).
-Full annotation: `inbox.md` (Wave 7).
+Full annotation: `annotations/tort-2010.md` (Wave 7).
 **See also**: `by-structure/composite_systems.md`, `by-domain/information_theory.md`, `atlas/JOINT_VS_MARGINAL.md`
 
 ### Shorten, Spinney, Lizier (2021) — Continuous-Time Transfer Entropy for Spike Trains
@@ -207,7 +207,7 @@ DOI: 10.1371/journal.pcbi.1008054, PLOS Computational Biology 17(4):e1008054. 58
 **Domain(s)**: Information theory, neuroscience
 Continuous-time TE via Radon-Nikodym derivatives on path space, estimated with kNN in inter-event-interval embedding. Provably consistent (unlike discrete-time plug-in estimators which converge to wrong value). Local permutation surrogates for correct null hypothesis testing on point processes (source-time-shift surrogates shown to fail). Captures relationships at both fine and coarse timescales simultaneously. Validated on pyloric circuit (stomatogastric ganglion) where previous estimators failed.
 **Machines**: joint-vs-marginal, null hypothesis, parameterized homology.
-Full annotation: `inbox.md` (Wave 6).
+Full annotation: `annotations/tort-2010.md` (Wave 6).
 **See also**: `by-structure/composite_systems.md`, `by-structure/phase_transitions.md`, `by-domain/information_theory.md`
 
 ### Varley, Mediano, Patania & Bongard (2025) — The Topology of Synergy
@@ -216,7 +216,7 @@ PLoS Computational Biology, DOI: 10.1371/journal.pcbi.1013649. arXiv: 2504.10140
 **Domain(s)**: TDA, information theory, neuroscience
 Applied to HCP resting-state fMRI (200-node Schaefer parcellation, 100 subjects). 1,313,400 triads tested; 30,100 significantly redundant, 6,200 significantly synergistic (circular-shift null). H2 persistent homology features (3D cavities) correlate with synergistic information: avg persistence vs normalized O-bar rho = -0.55 to -0.65. PCA fails to preserve synergy or topology: most synergistic triads look random to PCA (PC1 variance near 33%). Neural manifold learning systematically misses synergistic structure.
 **Machines**: chain complex, parameterized homology, joint-vs-marginal, null hypothesis, stability.
-Full annotation: `inbox.md` (Wave 7).
+Full annotation: `annotations/tort-2010.md` (Wave 7).
 **See also**: `cross_domain_bridges.md`, `by-domain/tda.md`, `by-domain/information_theory.md`, `by-structure/composite_systems.md`, `by-structure/filtrations.md`
 
 ---
@@ -226,29 +226,124 @@ Full annotation: `inbox.md` (Wave 7).
 ### Petri, Expert, Turkheimer, Carhart-Harris, Nutt, Hellyer & Vaccarino (2014) — Homological scaffolds
 J. R. Soc. Interface, DOI: 10.1098/rsif.2014.0873. 657 citations. PH applied to weighted clique complex from fMRI correlations. Homological scaffold = network encoding which edges carry persistent cycles. Psilocybin dramatically restructures scaffold: many transient + few highly persistent structures not seen under placebo. Bridges TDA and network neuroscience.
 **Machines**: chain complex, parameterized homology, null hypothesis.
-Full annotation: `inbox.md` (Wave 10a).
+Full annotation: `annotations/tort-2010.md` (Wave 10a).
 **See also**: `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/filtrations.md`, `by-structure/phase_transitions.md`, `papers/cross_domain_bridges.md`
 
 ### Chaudhuri, Gerçek, Pandey, Peyrache & Fiete (2019) — Head direction ring attractor
 Nature Neuroscience, DOI: 10.1038/s41593-019-0460-x. 339 citations. Head direction circuit population activity traces S^1 ring manifold (H_1 = ℤ). Isometric and invariant across waking and REM sleep. Blind decoding from topology alone. Ring is population-level (absent from individual neurons). Complements Gardner 2022 T^2 grid cell toroid.
 **Machines**: chain complex, stability, joint-vs-marginal.
-Full annotation: `inbox.md` (Wave 10a).
+Full annotation: `annotations/tort-2010.md` (Wave 10a).
 **See also**: `by-structure/boundary_operators.md`, `by-structure/phase_transitions.md`, `by-structure/composite_systems.md`
 
 ### Chung, El-Yaagoubi, Qiu & Ombao (2025) — From Density to Void
 arXiv: 2503.14700. Simplicial complexes from fMRI correlations with explicit boundary operators. Central finding is a null result: higher-order brain interactions (k > 3) fail FDR correction and cross-subject replication. Anti-stability: topological features not robust across subjects. Density-void dilemma as fundamental methodological limitation.
 **Machines**: chain complex, null hypothesis, stability (anti).
-Full annotation: `inbox.md` (Wave 10b).
+Full annotation: `annotations/tort-2010.md` (Wave 10b).
 **See also**: `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/phase_transitions.md`
 
 ### Dabaghian, Brandt & Frank (2014) — Reconceiving the hippocampal map as a topological template
-eLife 03476. 136 citations. Place cells encode topology, not geometry. Morphing linear tracks dissociates topology from geometry; place fields preserve spatial ordering but not metric features. Direction-independent. Extends Dabaghian et al. 2012 from computation to experiment.
+eLife.03476. 136 citations. Place cells encode topology, not geometry. Morphing linear tracks dissociates topology from geometry; place fields preserve spatial ordering but not metric features. Direction-independent. Extends Dabaghian et al. 2012 from computation to experiment.
 **Machines**: chain complex, stability, null hypothesis.
-Full annotation: `inbox.md` (Wave 10b).
+Full annotation: `annotations/tort-2010.md` (Wave 10b).
 **See also**: `by-structure/boundary_operators.md`, `by-structure/phase_transitions.md`
 
 ### Lord, Expert, Fernandes, Petri, Van Hartevelt, Vaccarino, Deco, Turkheimer & Kringelbach (2016) — Insights into Brain Architectures from the Homological Scaffolds
 Frontiers in Systems Neuroscience, DOI: fnsys.2016.00085. Extends Petri et al. 2014 homological scaffold method to resting-state fMRI across multiple subjects. Scaffold encodes which edges carry persistent cycles in the weighted clique complex. Reveals hierarchical modular organization invisible to standard graph metrics. Chain complex from correlation-weighted clique filtration; parameterized homology across weight threshold.
 **Machines**: chain complex, parameterized homology.
-Full annotation: `inbox.md` (Wave 10c).
+Full annotation: `annotations/tort-2010.md` (Wave 10c).
 **See also**: `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/filtrations.md`
+
+### Fasoli, Coletta, Gutierrez-Barragan, Gini, Gozzi, Panzeri (2026) — Attractor Dynamics of a Whole-Cortex Network Model
+PLoS Comput Biol 22(2), DOI: 10.1371/journal.pcbi.1013995. Whole-cortex network fitted only to static fMRI statistics (mean/variance/covariance) spontaneously reproduces empirical co-activation patterns; attractor count tracks inter-hemispheric connectivity strength as a bifurcation parameter. Directed-vs-undirected connectivity null = orientation-tracking chain complex over Z vs Z/2.
+**Machines**: parameterized homology, stability, null hypothesis, joint-vs-marginal.
+Full annotation: `annotations/10.1371-journal.pcbi.1013995.md` (B2 pass 12).
+**See also**: `by-domain/dynamical_systems.md`, `by-structure/phase_transitions.md`
+
+### Wang, Wang, Jin, Wei (2024) — GC-STCL: Granger Causality-Based Spatial-Temporal Contrastive Learning for EEG Emotion Recognition
+Granger causality graph over EEG channels as oriented causal network (chain-complex-like structure); frequency-band-parameterized GC graph topology = filtration analogue; spatial contrastive loss extracts cross-channel directed information flow absent from marginal channel statistics.
+**Machines**: joint-vs-marginal, parameterized homology, chain complex (weak).
+Full annotation: `annotations/wang-2024.md` (B2 pass 12).
+**See also**: `by-domain/information_theory.md`, `by-structure/composite_systems.md`
+
+### Simpson, Bowman, Laurienti (2013) — Analyzing Complex Functional Brain Networks: Fusing Statistics and Network Science to Understand the Brain
+Survey mapping where TDA machines apply to functional brain networks: correlation-threshold selection = filtration problem; higher-order structure needs simplicial methods beyond pairwise graphs.
+**Machines**: parameterized homology, joint-vs-marginal, null hypothesis.
+Full annotation: `annotations/simpson-2013.md` (B2 pass 12).
+**See also**: `by-structure/filtrations.md`, `by-structure/composite_systems.md`
+### Liu, Xu, Li, Si, Yang, Yang, Zhao (2025) — KANGCI: Kolmogorov-Arnold Networks for Granger Causality Inference
+KAN-based nonlinear GC on fMRI BOLD, VAR and EEG; group sparsity encodes the no-link null; time-reversed GC agreement filters spurious edges.
+**Machines**: joint-vs-marginal, null hypothesis, chain complex (weak).
+Full annotation: `annotations/liu-2025.md` (B2 pass 13).
+**See also**: `by-domain/information_theory.md`, `by-structure/composite_systems.md`
+
+### Brüsch, Schmidt, Alstrøm (2023) — Multi-View Self-Supervised Learning for Variable-Channel Time Series
+Channel-agnostic shared encoder + MPNN fusion for EEG sleep staging; cross-channel aggregation beats marginal per-channel embeddings; contrastive negatives as null.
+**Machines**: joint-vs-marginal, null hypothesis, matching (weak).
+Full annotation: `annotations/brusch-2023.md` (B2 pass 13).
+**See also**: `by-domain/information_theory.md`, `by-structure/composite_systems.md`
+
+### Ashikaga & Asgari-Targhi (2017) — Locating Order-Disorder Phase Transition in a Cardiac System
+Channel capacity, mutual information and transfer entropy between a single driving component and each tissue component locate the wavebreaks that initiate ventricular fibrillation — an information-theoretic invariant profile whose spatial structure predicts where an order-disorder transition nucleates; interventional target selection.
+**Machines**: parameterized homology, null hypothesis, stability (weak).
+Full annotation: `annotations/1708.03990.md` (B2 pass 32). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/dynamical_systems.md`, `by-structure/phase_transitions.md`
+
+### Wollstadt, Rathbun, Usrey, Bastos, Lindner, Priesemann, Wibral (2022) — Information-Theoretic Analyses to Minimize Researchers' Assumptions in Predictive-Coding Studies
+Local information dynamics (local AIS + local TE) express predictive-coding strategies as testable AIS–TE relationships, breaking the circular analysis of correlate-hunting; PID separates bottom-up from state-conditional transfer on cat retinogeniculate spiking (synapse codes for predictable input).
+**Machines**: joint-vs-marginal, null hypothesis, matching (weak, strategy discrimination).
+Full annotation: `annotations/2203.10810.md` (B2 pass 37). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/information_theory.md`, `by-structure/composite_systems.md`
+
+### Seely (2025) — Sheaf Cohomology of Linear Predictive Coding Networks
+Linear predictive coding re-derived as sheaf diffusion on a cochain complex: prediction errors are coboundaries, inference is sheaf-Laplacian flow, and cohomology classes are exactly the error local learning cannot remove; Hodge decomposition identifies when recurrent feedback contradictions stall learning.
+**Machines**: chain complex (core), null hypothesis (irreducible-error reading), stability (stall diagnosis).
+Full annotation: `annotations/2511.11092.md` (B2 pass 52). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/tda.md`, `by-structure/boundary_operators.md`
+
+### Friston (2019) — A Free Energy Principle for a Particular Physics
+Canonical FEP monograph: Markov blankets as recursive conditional-independence structure; internal states at nonequilibrium steady-state acquire an information geometry interpretable as inference about external states — thinghood defined by statistical independence.
+**Machines**: joint-vs-marginal (core), null hypothesis (blanket destruction = thinghood null), stability (NESS attractor), parameterized homology (recursive blanket nesting).
+Full annotation: `annotations/1906.10184.md` (B2 pass 56). Abstract-only provenance — depth-limited.
+**See also**: `annotations/2001.06408.md` (paired critique), `by-structure/composite_systems.md`
+
+### Biehl, Pollock & Kanai (2020) — A Technical Critique of Some Parts of the Free Energy Principle
+The paired null: counterexample disproving the original free energy lemma; non-equivalent Markov-blanket definitions across FEP works; the Bayesian-inference reading shown to hinge on an unjustified variational/ergodic density equality.
+**Machines**: null hypothesis (core), stability (locus-of-failure analysis), joint-vs-marginal (boundary non-well-definedness).
+Full annotation: `annotations/2001.06408.md` (B2 pass 56). Abstract-only provenance — depth-limited.
+**See also**: `annotations/1906.10184.md` (paired claim), `by-structure/composite_systems.md`
+
+### Ramstead, Hesp, Tschantz, Smith, Constant & Friston (2020) — Neural and Phenotypic Representation under the FEP
+Dual-aspect information geometry from Markovian structure: intrinsic geometry of internal-state trajectories + extrinsic geometry encoding beliefs about external states; neuronal packet hypothesis with simulations — the lineage's post-critique constructive turn.
+**Machines**: joint-vs-marginal (core), stability (NESS persistence of encoding), null hypothesis (no-shared-model simulation control).
+Full annotation: `annotations/2008.03238.md` (B2 pass 56). Abstract-only provenance — depth-limited.
+**See also**: `annotations/1906.10184.md`, `annotations/2001.06408.md`, `by-structure/composite_systems.md`
+
+### Plenz, Ribeiro, Miller, Kells, Vakili & Capek (2021) — Self-Organized Criticality in the Brain
+The affirmative case: layered cortex self-organizes toward a second-order phase transition — −3/2 avalanche power laws, branching parameter 1 homeostatically maintained, E/I balance + dopamine as control parameters; avalanches embedded in up-states and nested oscillations; dissociated layer-less cultures show first-order-like dynamics.
+**Machines**: stability (core: critical point as maintained fixed point), parameterized homology (preparation state as transition-class parameter).
+Full annotation: `annotations/2102.09124.md` (B2 pass 57). Abstract-only provenance — depth-limited.
+**See also**: `annotations/0910.0805.md`, `annotations/1203.0738.md` (structured-disagreement nulls), `by-structure/phase_transitions.md`
+
+### Touboul & Destexhe (2009) — Can power-law scaling and neuronal avalanches arise from stochastic dynamics?
+The methodological null: thresholded stochastic processes generically produce apparent log-log power laws that fail KS scrutiny; surrogate signals reproduce the scaling; analytic proof of spurious scaling without criticality, plus a positive control where true SOC passes the rigorous tests.
+**Machines**: null hypothesis (core: witness system = generic thresholded noise), stability (verdict instability under threshold moves / analysis-class change), joint-vs-marginal excess (thresholding artifact is a marginal property, licenses no collective inference).
+Full annotation: `annotations/0910.0805.md` (B2 pass 57). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/statistical_physics.md`, `papers/by-structure/phase_transitions.md` (null-surrogate lineage)
+
+### Dehghani, Hatsopoulos, Haga, Parker, Greger, Halgren, Cash & Destexhe (2012) — Avalanche analysis from multi-electrode ensemble recordings in cat, monkey and human cortex
+The empirical null: across species and sleep/wake states, unit avalanches scale exponentially not power-law; nLFP apparent power laws fail CDF-based tests; pLFP control reproduces the artifact; bi-exponential fits win throughout.
+**Machines**: null hypothesis (core: fitted-alternative family = bi-exponential vs power law), stability (negative: verdict unstable across channel/species/state; stable: the rejection itself), matching (distribution-family model selection on CDFs).
+Full annotation: `annotations/1203.0738.md` (B2 pass 57). Abstract-only provenance — depth-limited.
+**See also**: `annotations/2102.09124.md`, `annotations/0910.0805.md`, `glossary/ANTISYNONYMS.md`, `by-structure/phase_transitions.md`
+
+### Moosavi, Montakhab & Valizadeh (2018) — Coexistence of scale invariant and rhythmic behavior in self-organized criticality
+Mechanism/reconciliation side of the soc disagreement: oscillatory perturbation of the Zhang model yields rhythms embedded in scale-free avalanches, with optimal amplification AT the critical point — criticality recast as resonance, coexistence demonstrated inside one known-SOC model rather than argued against an incompatibility null.
+**Machines**: stability (core: scaling class survives rhythmic perturbation), parameterized homology (frequency axis), null hypothesis (the incompatibility reading).
+Full annotation: `annotations/1807.07213.md` (B2 pass 58). Abstract-only provenance — depth-limited.
+**See also**: `annotations/2102.09124.md`, `annotations/2312.03489.md` (oscillation thermodynamics), `by-domain/statistical_physics.md`, `by-structure/phase_transitions.md`
+
+### Girardi-Schappo, Kinouchi & Tragtenberg (2012) — Critical Avalanches and Subsampling in Map-based Neural Networks
+Mechanism + subsampling-artifact side: synaptic noise alone drives critical avalanches in map-based networks (noise-induced, not self-organized), with explicit subsampling analysis — partial recording shapes apparent scaling, the simulation-side cousin of the empirical measurement-channel critique.
+**Machines**: null hypothesis (core: noise-driven generator + subsampling artifact channel), stability (parameter region locating the critical regime; scaling under reduced unit sets), parameterized homology (weak, synaptic parameter sweep).
+Full annotation: `annotations/1209.3271.md` (B2 pass 58). Abstract-only provenance — depth-limited.
+**See also**: `annotations/1203.0738.md`, `annotations/0910.0805.md`, `glossary/ANTISYNONYMS.md`, `by-domain/statistical_physics.md`, `by-structure/phase_transitions.md`

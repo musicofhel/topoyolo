@@ -74,6 +74,54 @@ Mézard & Mora (2008): BP convergence regimes. In the easy-SAT regime (α < α_d
 
 The stability taxonomy now has **7 flavors**: (1) Lipschitz (TDA, Adams persistence images), (2) exponential suppression (QEC threshold, Aharonov-Ben-Or concatenation), (3) topological protection (FQHE gap), (4) anti-stability (spin-boson sqrt singularity), (5) distribution-free (conformal prediction), (6) ghost stability (Tsuda chaotic itinerancy — quasi-stable visits to destroyed attractor ruins), (7) dimensional (Wang grokking — sub-/super-diffusive phase transition at D = 1).
 
+## Three Incarnations of the Stability Claim
+
+The 7 flavors above classify the *form of the bound*. Orthogonally to that, the
+corpus now contains three distinct *incarnations* — answers to "what object is
+being stabilized?":
+
+### Incarnation 1 — Stability of an invariant (TDA: bottleneck / interleaving)
+The data moves; the guarantee protects a computed descriptor. The Persistence
+Stability Theorem bounds bottleneck distance between diagrams by Hausdorff
+distance between point clouds; Adams et al. extend it to featurizations
+(W₁-Lipschitz persistence images); Bubenik & Scott (`annotations/1205.3669.md`)
+generalize bottleneck to categorical interleavings — stability as a property of
+a functor — and Gulen & McCleary (`annotations/2201.06650.md`) recover both
+interleaving and matching distances as Galois connections, making the
+bottleneck-stability proof easier. Here stability is a *metric inequality
+between invariants*, evaluated after the fact.
+
+### Incarnation 2 — Stability of a trajectory correspondence (Dynamics: Lyapunov / GS)
+The flow moves; the guarantee protects synchronization or reconstruction.
+Generalized synchronization makes a driven reservoir's state a well-defined
+function of the drive exactly when the echo state property holds
+(`annotations/2506.22335.md`: GS = ESP); Carroll & Nagloo
+(`annotations/2401.00885.md`) quantify the margin: faithful attractor
+reconstruction requires the reservoir's largest conditional Lyapunov exponent
+to be strictly more negative than the target's most negative exponent — a
+spectral gap in contraction rates. Gallicchio & Micheli's Banach contraction
+(ρ(W) < 1) is the fixed-point special case. Here stability is a *contraction
+rate of the dynamics themselves*, checked before any inference runs.
+
+### Incarnation 3 — Stability of the structure itself (GIT: moment-map semistability)
+Dönmez et al. (`annotations/2605.11178.md`) stabilize neither an invariant nor
+a trajectory but the boundary operator: sheaf geometries are points in a
+representation space, oversmoothing is *degeneration* toward unstable
+(direct-sum-decomposable, low-complexity) summands in orbit closures, and
+moment-map-inspired regularizers bias learned restriction maps toward GIT-
+semistable points. The equal-stalk "stability wall" is the structural null —
+the parameter regime where the stability test cannot fire. Here stability is
+algebraic-geometric (orbit-closure semistability à la Mumford), applied to the
+machine itself rather than to anything passing through it.
+
+**How they compose.** The three stack: GIT semistability (3) certifies the
+learned boundary data is non-degenerate; TDA stability (1) then certifies the
+persistence diagram computed from that complex is robust to residual
+perturbation; Lyapunov/GS contraction (2) certifies that dynamics observed on
+the resulting structure synchronize faithfully enough to be read at all. A
+failure at any level is invisible to the others — which is why the corpus has
+three words for "stable" and why ANTISYNONYMS refuses to let them merge.
+
 ## Key Divergences
 
 - **Lipschitz vs. exponential vs. topological vs. distribution-free**: The mathematical form of the guarantee differs across domains. See ANTISYNONYMS.md.

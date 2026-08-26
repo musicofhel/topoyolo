@@ -12,38 +12,8 @@ DOI: 10.1371/journal.pcbi.1013995 | PLoS Computational Biology 22(2)
 
 **Domains bridged**: Neuroscience + Dynamical systems
 
-**Domain(s)**: Computational neuroscience, dynamical systems theory
+Full annotation promoted to `annotations/10.1371-journal.pcbi.1013995.md` (B2 pass 12, content conserved). Machines: parameterized homology, stability, null hypothesis, joint-vs-marginal.
 
-**Abstract machines instantiated**:
-- **Parameterized homology**: The model's attractor landscape is parameterized by inter-hemispheric connectivity strength. As this parameter is varied (decreased or increased from real anatomical values), the number of attractors changes — fewer attractors emerge, and their ability to predict empirical co-activation patterns (CAPs) degrades. This is a bifurcation diagram: a parameterized family of dynamical systems whose invariants (number and type of attractors: stationary vs. oscillatory) change at critical parameter values. The attractor count IS the topological invariant being tracked.
-- **Stability**: The model parameters are fitted only to static fMRI properties (mean, variance, covariance on the timescale of minutes), yet the model predicts rich frame-by-frame dynamics on the timescale of seconds. This is a stability result: the dynamical structure (attractor topology) is robust — it emerges from the fitted static properties without being explicitly optimized for. The attractors recapitulate empirical CAPs, meaning the topological organization of the attractor landscape is stable under the perturbation of going from fitted static constraints to emergent dynamics.
-- **Null hypothesis**: Neglecting fiber directionality (replacing directed anatomical connectivity with undirected) serves as the structural null. This null severely reduces the number of attractors and their explanatory power for CAPs. The gap between directed and undirected connectivity models quantifies the contribution of directionality to the dynamical repertoire — a structure-removal null.
-- **Joint-vs-marginal excess**: The model reveals that CAPs are not independent patterns but emerge from the joint interaction of excitatory-inhibitory populations across cortical regions via directed connectivity. The attractor structure is absent from any individual region's dynamics and emerges only from the coupled system — genuine composite structure.
-
-**What is genuinely new (not reducible to shared abstraction)**:
-- The key finding is that a model fitted only to static correlations spontaneously generates the correct dynamic repertoire (CAPs). This means the attractor topology is fully determined by the static statistical structure — a striking constraint that has no direct analogue in TDA (where persistence diagrams require explicit scale parameterization) or QEC (where dynamic error correction requires explicit decoder design).
-- Directionality of anatomical connectivity is essential: undirected connectivity produces far fewer attractors. This shows that the boundary operator's orientation matters — not just whether connections exist, but their direction. Analogous to the difference between chain complexes over Z (which track orientation) vs. Z/2 (which do not).
-- The excitatory-inhibitory balance within regions creates the nonlinearity needed for multiple attractors. Without this balance (e.g., purely excitatory networks), the system has only one attractor. This is a domain-specific mechanism with no direct analogue in TDA or information theory.
-
-**Connections the authors acknowledge**: Cite dynamical systems theory (bifurcation, attractor landscapes) and computational neuroscience (CAPs, resting-state fMRI). Explicitly note the connection between attractor dynamics and neural manifold geometry. Do NOT cite TDA, QEC, or information theory — the bridge to dynamical systems is acknowledged, but not to other Rosetta domains.
-
-**Vocabulary mapping**:
-| Paper term | Rosetta term |
-|---|---|
-| Attractor (stationary/oscillatory) | Topological invariant (fixed point/limit cycle) |
-| Co-activation pattern (CAP) | Empirical signature of an attractor basin |
-| Inter-hemispheric connectivity strength | Parameterization variable |
-| Number of attractors | Betti-like count (topological complexity of the landscape) |
-| Directed anatomical connectivity | Oriented boundary operator (chain complex over Z) |
-| Undirected connectivity null | Chain complex over Z/2 (orientation removed) |
-| Excitatory-inhibitory balance | Nonlinearity enabling multiple invariants |
-| Static fMRI properties | Constraints that determine the filtration |
-| Frame-by-frame dynamics | Emergent trajectory in the parameterized space |
-| Allen mouse brain atlas | Ground-truth chain complex (the anatomical wiring) |
-
-**Rosetta significance**: This paper demonstrates that attractor topology (dynamical systems) predicts neural activity patterns (neuroscience) and that the topological complexity depends on the oriented structure of the connectivity graph. The analogy to chain complexes over Z vs. Z/2 is structural and deep: directed vs. undirected connectivity is exactly the difference between tracking orientation or not in homology. The paper does not make this connection.
-
----
 
 ## Niroomand & Wales (2023)
 **"Physics-Inspired Interpretability of Machine Learning Models"**
@@ -86,41 +56,9 @@ arXiv: 2304.02381 | ICLR 2023 Workshop on Physics for Machine Learning
 ## Kawaguchi, Deng, Ji, Huang (2023)
 **"How Does Information Bottleneck Help Deep Learning?"**
 arXiv: 2305.18887 | ICML 2023
-
-**Domains bridged**: Information theory + Machine learning (statistical learning theory)
-
-**Domain(s)**: Information theory, statistical learning theory, deep learning
-
-**Abstract machines instantiated**:
-- **Joint-vs-marginal excess**: The information bottleneck principle is fundamentally a joint-vs-marginal comparison. I(X;Z) measures the mutual information between input X and hidden representation Z. The bottleneck goal is to minimize I(X;Z) (compress — remove marginal information about X that is irrelevant to Y) while maximizing I(Y;Z) (preserve — retain joint structure between Y and the representation). The excess I(X;Z) - I(Y;Z) quantifies the amount of task-irrelevant information retained in the representation.
-- **Stability**: The main theoretical contribution is a generalization bound: Delta(s) <= sqrt((2 I(X;Z_l) + log(2/delta)) / (2n)). This bound says that generalization error is controlled by the mutual information I(X;Z_l) at layer l. This is a stability result: small I(X;Z) implies that the learned function is insensitive to the specific training sample (the representation discards sample-specific information), which bounds generalization. The bound scales with information content, NOT with parameter count, VC dimension, or Rademacher complexity.
-- **Parameterized homology**: The information plane tracks I(X;Z_l) and I(Y;Z_l) at each layer l as training progresses. The trajectory through the information plane IS a parameterized curve (parameterized by training time and layer index) whose shape characterizes the learning dynamics. The paper proves that this trajectory's endpoint (the degree of information bottleneck) controls performance.
-- **Null hypothesis**: The training data s = {(x_i, y_i)} drawn from the distribution (X,Y) is the finite sample. The generalization error Delta(s) measures the gap between the empirical loss (on the sample) and the true loss (on the distribution). The distribution is the reference; the sample is the perturbation. The bound quantifies how much the finite-sample perturbation affects the learned function.
-
-**What is genuinely new (not reducible to shared abstraction)**:
-- First rigorous proof that the information bottleneck principle provides generalization bounds for learned representations. Previous work (Shwartz-Ziv & Tishby, 2017) conjectured this; this paper proves it. The key technical contribution is handling the case where the encoder is learned from data (not fixed a priori), which requires a novel analysis combining mutual information with PAC-Bayes-like arguments.
-- The bound is strictly tighter than parameter-count bounds for networks with strong information bottlenecks. This means that for networks that compress representations effectively, the information-theoretic bound is the right characterization of generalization, not the combinatorial (VC/Rademacher) one.
-- Resolution of the open conjecture from Shwartz-Ziv et al. (2019), extending it to the practical setting.
-
-**Connections the authors acknowledge**: Explicitly cite the information bottleneck literature (Tishby, Shwartz-Ziv, Alemi). Cite PAC-Bayes bounds and compression-based generalization theory. The paper IS a bridge between information theory and statistical learning theory. No connections to TDA, QEC, dynamical systems, or neuroscience.
-
-**Vocabulary mapping**:
-| Paper term | Rosetta term |
-|---|---|
-| I(X;Z) (input-representation MI) | Joint-vs-marginal excess (full) |
-| I(Y;Z) (label-representation MI) | Joint-vs-marginal excess (task-relevant) |
-| Information bottleneck | Compression of excess information |
-| Generalization bound Delta(s) | Stability guarantee (perturbation bound) |
-| Training data s (finite sample) | Perturbation of the true distribution |
-| Information plane trajectory | Parameterized curve (layer x epoch) |
-| Learned encoder phi | Map from input space to representation |
-| Parameter-count bound (VC, etc.) | Alternative stability guarantee (combinatorial) |
-| Compression phase | Death of unnecessary features |
-
-**Rosetta significance**: This paper provides the first rigorous link between information compression (killing unnecessary joint-vs-marginal structure) and stability (generalization). The bound sqrt(I(X;Z)/n) has the same form as persistence stability bounds (perturbation / sample_size), with mutual information playing the role of the perturbation magnitude. Networks that compress more are more stable — directly analogous to the TDA principle that simpler persistence diagrams (fewer features) are more robust.
-
----
-
+Promoted to per-paper annotation file (B2 pass 22, batch-003 candidate-15, promote-on-encounter).
+Machines: joint-vs-marginal, stability, parameterized homology, null hypothesis.
+Full annotation: `annotations/2305.18887.md`.
 ## Ma, Lewis, Kleijn (2020)
 **"The HSIC Bottleneck: Deep Learning without Back-Propagation"**
 AAAI 2020

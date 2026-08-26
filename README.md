@@ -1,12 +1,12 @@
 # topo-rosetta
 
-*A cartography of shared algebraic structure across five disciplines that independently discovered the same six abstract machines.*
+*A cartography of shared algebraic structure across six disciplines that independently discovered the same six abstract machines.*
 
-Persistent homology, quantum error correction, dynamical systems, neural coding, information theory — these fields use different vocabularies to describe the same algebraic objects. This repo collects 219+ papers, maps the repetitions, and makes the synonyms explicit. It also maps the divergences — where the analogy breaks, which is equally informative.
+Persistent homology, quantum error correction, dynamical systems, neural coding, information theory — these fields use different vocabularies to describe the same algebraic objects. This repo collects annotated papers (131 full annotations), maps the repetitions, and makes the synonyms explicit. It also maps the divergences — where the analogy breaks, which is equally informative.
 
 The goal is not synthesis or unification. It is *differentiation* — in the Deleuzian sense. The same abstract machine is actualized differently in each domain. By cataloguing the repetitions and the genuine divergences, we make visible the plane that connects them.
 
-`5 domains · 6 machines · 219 papers · 30 cells, all ≥ 4 · 16 cells ≥ 10`
+`6 domains · 6 machines · 178 fully annotated papers · 36 cells, min cell 2 · 32 cells ≥ 10`
 
 ---
 
@@ -21,13 +21,14 @@ The goal is not synthesis or unification. It is *differentiation* — in the Del
 | **Joint-vs-marginal excess** | I(X_joint) − Σ I(Xᵢ) > 0 | Structure in composite systems absent from components — binding, entanglement, synergy |
 | **Null hypothesis** | H₀: destroy, measure residual | Reference distribution by destroying specific structure while preserving other properties |
 
-## The Five Domains
+## The Six Domains
 
 - **TDA** — Topological Data Analysis. Multi-scale filtration; the only domain where persistence diagrams are native objects.
-- **QEC** — Quantum Error Correction. Finite fields; error thresholds as phase transitions. The richest chain complex instantiation (16+ papers).
+- **QEC** — Quantum Error Correction. Finite fields; error thresholds as phase transitions. Rich chain complex instantiation (12 annotated papers).
 - **Dynamical Systems** — Temporal structure, delay embedding, attractor reconstruction from partial observation. Takens embedding has no QEC analogue.
 - **Neuroscience** — Population-level topology. Both undirected co-firing complexes and directed synaptic complexes — where the chain complex bifurcates.
 - **Information Theory** — The home of joint-vs-marginal excess. PID decomposition, information cohomology, Shannon entropy as 1-cocycle.
+- **Statistical Physics** — Entropy production as the currency. Stochastic thermodynamics supplies dissipation-based readings of the joint-vs-marginal and matching machines; opened in batch-004 (see `papers/by-domain/statistical_physics.md`).
 
 ---
 
@@ -37,13 +38,15 @@ The goal is not synthesis or unification. It is *differentiation* — in the Del
 
 | | Chain Complex | Param. Homology | Matching | Stability | Joint vs Marginal | Null Hypothesis |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| **TDA** | **10+** | **11+** | 7+ | **11+** | 5+ | 4+ |
-| **QEC** | **16+** | 8+ | 8+ | **11+** | 6+ | 9+ |
-| **Dynamics** | **13+** | **16+** | **11+** | **13+** | 6+ | 9+ |
-| **Neuro** | **11+** | **12+** | 8+ | 9+ | **14+** | **12+** |
-| **InfoTheo** | **10+** | **10+** | 5+ | 8+ | **13+** | 9+ |
+| **TDA** | **29** | **29** | **16** | **28** | 7 | **17** |
+| **QEC** | **12** | 8 | 7 | **12** | 2 | 9 |
+| **Dynamics** | **10** | **13** | 1 | **11** | 3 | 7 |
+| **Neuro** | **15** | **19** | 4 | **14** | **10** | **19** |
+| **InfoTheo** | 7 | **16** | 4 | 9 | **12** | **13** |
 
-**Bold** = 10+ papers (deep coverage). All 30 cells ≥ 4. 16 cells ≥ 10.
+**Bold** = 10+ papers (deep coverage). Counts are derived from the per-paper
+annotations in [`papers/annotations/`](papers/annotations/) by `scripts/gen_stats.py`
+(min cell = 2; 32 of 36 cells ≥ 10).
 
 ---
 
@@ -53,7 +56,7 @@ There are four entry points, depending on what you're looking for:
 
 **By domain** — Start in [`papers/by-domain/`](papers/by-domain/). Pick your discipline. See all papers annotated from your vocabulary. Good for: "What has my field contributed to these shared structures?"
 
-**By machine** — Start in [`papers/by-structure/`](papers/by-structure/). Pick an abstract machine. See it instantiated across all five domains by communities that don't cite each other. Good for: "Who else discovered this?"
+**By machine** — Start in [`papers/by-structure/`](papers/by-structure/). Pick an abstract machine. See it instantiated across all six domains by communities that don't cite each other. Good for: "Who else discovered this?"
 
 **The atlas** — [`atlas/`](atlas/) contains one deep essay per machine, tracing how it appears in each domain. The chain complex map alone documents seven incarnations: geometric, algebraic, categorified, combinatorial, gauge-theoretic, graded-informational, and neural.
 
@@ -86,9 +89,11 @@ topo-rosetta/
 │   ├── JOINT_VS_MARGINAL.md
 │   └── NULL_HYPOTHESIS.md
 │
-├── papers/                     # Annotated bibliography (219+ papers)
-│   ├── inbox.md                # Full-depth annotations (primary store)
+├── papers/                     # Annotated bibliography (101 full annotations + index stubs)
+│   ├── annotations/            # Full-depth per-paper annotations (primary store)
+│   ├── inbox.md                # Intake ledger: contract + leads + wave index
 │   ├── inbox-archive.md        # Archived earlier waves
+│   ├── annotations/            # Per-paper annotation files (one file per paper)
 │   ├── by-domain/              # Papers indexed by discipline
 │   │   ├── tda.md
 │   │   ├── qec.md
@@ -121,4 +126,4 @@ Every paper is annotated along four axes: which abstract machine it instantiates
 
 ## Contributing
 
-Add papers to `papers/inbox.md` with a full annotation following the methodology. Periodically they get sorted into the dual index and integrated into the atlas and glossary.
+Annotate new papers as per-paper files under `papers/annotations/` following the methodology; log them in the `papers/inbox.md` wave index. They are then sorted into the dual index and integrated into the atlas and glossary.

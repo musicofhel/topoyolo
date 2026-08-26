@@ -9,10 +9,10 @@ The shared pattern: given components A and B, measure some property P of the joi
 ## Information Theory
 
 ### Belghazi et al. (2018) — MINE
-MI as D_KL(P_XZ || P_X ⊗ P_Z). Neural estimator using Donsker-Varadhan dual. Joint-vs-marginal excess IS the paper's core object. Full annotation: `by-domain/information_theory.md`.
+MI as D_KL(P_XZ || P_X ⊗ P_Z). Neural estimator using Donsker-Varadhan dual. Joint-vs-marginal excess IS the paper's core object. Full annotation: `annotations/1801.04062.md`.
 
 ### Wickstrøm et al. (2019) — Information Plane via Rényi Entropy
-I(X;T) and I(T;Y) at each hidden layer, tracked across training epochs. Also instantiates parameterized homology. Full annotation: `by-domain/information_theory.md`.
+I(X;T) and I(T;Y) at each hidden layer, tracked across training epochs. Also instantiates parameterized homology. Full annotation: `annotations/1909.11396.md`.
 
 ### Tax, Mediano & Shanahan (2017) — PID of Generative NNs
 Synergy as the joint-vs-marginal excess in PID. Tracks synergistic, redundant, and unique information atoms through RBM training. Full annotation: `by-domain/information_theory.md`.
@@ -30,23 +30,35 @@ Pythagorean theorem for KL divergence on posets decomposes interactions by order
 Surveys joint-vs-marginal (MI) estimation across architectures. Distinguishes geometric from information-theoretic compression. Full annotation: `by-domain/information_theory.md`.
 
 ### Shwartz-Ziv & Tishby (2017) — Opening the Black Box of DNNs via Information
-I(X;T) and I(T;Y) per hidden layer T — each is a joint-vs-marginal excess (D_KL of joint vs product of marginals). Each layer is a marginal (compressed) view of the input; the joint network's Markov chain captures dependencies across layers. Also primary instantiation of parameterized homology (training epoch as parameter). Full annotation: `inbox.md` (arXiv: 1703.00810).
+I(X;T) and I(T;Y) per hidden layer T — each is a joint-vs-marginal excess (D_KL of joint vs product of marginals). Each layer is a marginal (compressed) view of the input; the joint network's Markov chain captures dependencies across layers. Also primary instantiation of parameterized homology (training epoch as parameter). Full annotation: `annotations/1703.00810.md` (arXiv: 1703.00810).
 
 ## TDA
 
 ### Harrington, Otter, Schenck, Tillmann (2017) — Stratifying multiparameter persistent homology
-Multiparameter PH studies topological invariants as MULTIPLE parameters vary simultaneously. The joint bifiltration captures structure invisible to either single-parameter filtration alone — this IS joint-vs-marginal: joint persistent homology contains information absent from marginal (single-parameter) persistence diagrams. Three invariants from commutative algebra: multigraded associated primes, Hilbert series, local cohomology. Full annotation: `inbox.md` (arXiv: 1708.07390).
+Multiparameter PH studies topological invariants as MULTIPLE parameters vary simultaneously. The joint bifiltration captures structure invisible to either single-parameter filtration alone — this IS joint-vs-marginal: joint persistent homology contains information absent from marginal (single-parameter) persistence diagrams. Three invariants from commutative algebra: multigraded associated primes, Hilbert series, local cohomology. Full annotation: `annotations/1708.07390.md` (arXiv: 1708.07390).
 
 ### Barannikov, Trofimov, Sotnikov et al. (2021) — Cross-Barcode / Manifold Topology Divergence
-Cross-Barcode(P,Q) = pairwise topological comparison of two manifold-supported distributions. MTop-Divergence = 0 iff topologically equivalent. Detects mode-dropping, mode-collapse, mode-invention. Builds a SINGLE barcode from the pair — conceptually distinct from comparing two PDs via Wasserstein (which is Matching). Scales linearly with dimension. Full annotation: `inbox.md` (arXiv: 2106.04024).
+Cross-Barcode(P,Q) = pairwise topological comparison of two manifold-supported distributions. MTop-Divergence = 0 iff topologically equivalent. Detects mode-dropping, mode-collapse, mode-invention. Builds a SINGLE barcode from the pair — conceptually distinct from comparing two PDs via Wasserstein (which is Matching). Scales linearly with dimension. Full annotation: `annotations/2106.04024.md` (arXiv: 2106.04024).
 
 ## Information Theory — Causal Inference & PID
 
 ### Jónsson et al. (2020) — DNN Convergence with MI Regularization
 MINE-estimated I(X;T) as regularizer. Confirms compression phase in VGG-16. MI-based loss stabilizes training. Full annotation: `by-domain/information_theory.md`.
 
+### Yu, Yu, Løkse, Jenssen, Principe (2024) — CS-IB
+IB with Cauchy-Schwarz divergence: closed-form quadratic-MI compression, no variational approximation or Gaussian assumption; adversarial robustness guarantees. Also stability. Full annotation: `annotations/2404.17951.md` (arXiv: 2404.17951).
+
+### Mukherjee, Asnani, Kannan (2019) — CCMI
+Conditional MI as KL divergence between conditional joint and a learned conditional-product null; classifier-dual estimator for conditional-independence testing. Also null hypothesis. Full annotation: `annotations/1906.01824.md` (arXiv: 1906.01824).
+
+### Rindt, Sejdinovic, Steinsaltz (2020) — dHSIC Permutation Consistency
+Permutation test = null surrogate that severs dependence links while preserving marginals; consistency proof is separation of the true excess from the surrogate's vanishing one. Also joint-vs-marginal. Full annotation: `annotations/2005.06573.md` (arXiv: 2005.06573).
+
+### Palus (1995) — Multivariate Surrogate Nonlinearity Test
+Early ancestor of the above: multivariate surrogate null severs cross-variable joint structure while preserving univariate marginals; linear-redundancy controls separate imperfect-surrogate artifacts (visible marginally) from genuine joint excess. Also null hypothesis. Full annotation: `annotations/comp-gas-9507004.md` (arXiv: comp-gas/9507004).
+
 ### Kolchinsky (2024) — PID Redundancy as Information Bottleneck
-Redundancy reformulated as IB compression-prediction tradeoff. "RB curve" = parameterized family of decompositions indexed by compression β. Bridges Joint (PID) and Param (IB) machines formally. Efficient iterative algorithm. Full annotation: `inbox.md` (arXiv: 2405.07665).
+Redundancy reformulated as IB compression-prediction tradeoff. "RB curve" = parameterized family of decompositions indexed by compression β. Bridges Joint (PID) and Param (IB) machines formally. Efficient iterative algorithm. Full annotation: `annotations/2405.07665.md` (arXiv: 2405.07665).
 
 ### Kirkley (2025) — Transfer Entropy for Finite Data
 Reduced transfer entropy as debiased joint-vs-marginal excess with automatic MDL null. Combinatorial entropy avoids random-variable assumption. Full annotation: `by-domain/information_theory.md`.
@@ -55,7 +67,16 @@ Reduced transfer entropy as debiased joint-vs-marginal excess with automatic MDL
 Intrinsic transfer entropy: refines joint-vs-marginal excess by subtracting synergistic information. Neural estimator via variational KL bounds. Also neuroscience. Full annotation: `by-domain/information_theory.md`.
 
 ### Amornbunchornvej, Zheleva, Berger-Wolf (2020) — Variable-lag GC and TE
-Variable-lag Granger causality with DTW matching. Joint-vs-marginal excess computed after optimal temporal alignment. Full annotation: `by-domain/information_theory.md`.
+Variable-lag Granger causality with DTW matching. Joint-vs-marginal excess computed after optimal temporal alignment. Full annotation: `annotations/2002.00208.md` (arXiv: 2002.00208).
+
+### Wang, Wang, Jin, Wei (2024) — GC-STCL (EEG emotion recognition)
+Granger causality graph over EEG channels as oriented composite structure; band-parameterized causal topology. Full annotation: `annotations/wang-2024.md`.
+
+### Liu, Xu, Li, Si, Yang, Yang, Zhao (2025) — KANGCI (KAN Granger causality)
+Causal adjacency graph learned via KAN edge functions; group sparsity as no-link null; time-reversal agreement filters spurious edges. Full annotation: `annotations/liu-2025.md` (B2 pass 13).
+
+### Brüsch, Schmidt, Alstrøm (2023) — Multi-view SSL for variable-channel time series
+Cross-channel MPNN aggregation vs per-channel marginal encodings; contrastive negatives as null. Full annotation: `annotations/brusch-2023.md` (B2 pass 13).
 
 ### Marinazzo, Pellicoro, Stramaglia (2008) — Kernel Granger Causality
 Granger causality as variance-ratio excess lifted to RKHS. Bonferroni-controlled eigenvector selection. Applied to gene regulatory and chaotic map networks. Full annotation: `by-domain/information_theory.md`.
@@ -79,7 +100,7 @@ Multi-message information flow (accuracy vs. bias) guides edge pruning. Observat
 
 The PID programme is the information theory community's systematic treatment of joint-vs-marginal excess. All 8 papers decompose I(T; X1,...,Xn) into atoms. Synergy — the atom at the top of the redundancy lattice — is exactly the joint-vs-marginal excess: information present in the composite (X,Y) that is absent from X and Y individually.
 
-**PID-01 — Kolchinsky (2022)**: "A Novel Approach to the Partial Information Decomposition." Blackwell-order-based PID. Synergy defined via independent redundancy/union (no inclusion-exclusion). Also instantiates chain complex (lattice + Mobius), matching (optimization over channels), stability (data processing inequality). Full annotation: `by-domain/information_theory.md`.
+**PID-01 — Kolchinsky (2022)**: "A Novel Approach to the Partial Information Decomposition." Blackwell-order-based PID. Synergy defined via independent redundancy/union (no inclusion-exclusion). Also instantiates chain complex (lattice + Mobius), matching (optimization over channels), stability (data processing inequality). Full annotation: `annotations/10.3390-e24030403.md`.
 
 **PID-02 — Ince (2017)**: "The Partial Entropy Decomposition." Extends PID lattice to entropy (no target variable). Synergistic entropy = joint-vs-marginal excess in uncertainty. Reveals MI itself conflates redundant and synergistic entropy. Also instantiates chain complex, null hypothesis (diagnostic examples). Full annotation: `by-domain/information_theory.md`.
 
@@ -137,20 +158,20 @@ GW distance captures relational structure invariant to ambient dimension/rotatio
 ## Neuroscience
 
 ### Tort, Komorowski, Eichenbaum, Kopell (2010) — PAC Modulation Index
-Phase-amplitude coupling: Modulation Index = D_KL(observed PAC distribution || uniform). Gamma amplitude modulated by theta phase = joint-vs-marginal excess. Time-shifted surrogates as null. Full annotation: `inbox.md`.
+Phase-amplitude coupling: Modulation Index = D_KL(observed PAC distribution || uniform). Gamma amplitude modulated by theta phase = joint-vs-marginal excess. Time-shifted surrogates as null. Full annotation: `annotations/tort-2010.md`.
 
 ### Oizumi, Albantakis, Tononi (2014) — Integrated Information Theory 3.0
-Φ = D(p(X^t|X^{t-1}) || Π_i p(X_i^t|X_i^{t-1})). THE foundational formalization of joint-vs-marginal excess for consciousness. Partitioned system as null. MICS = maximally irreducible conceptual structure. Exclusion postulate selects spatiotemporal grain maximizing Φ. Predicts simple systems can be conscious, complex feed-forward ones cannot. Full annotation: `inbox.md` (DOI: 10.1371/journal.pcbi.1003588).
+Φ = D(p(X^t|X^{t-1}) || Π_i p(X_i^t|X_i^{t-1})). THE foundational formalization of joint-vs-marginal excess for consciousness. Partitioned system as null. MICS = maximally irreducible conceptual structure. Exclusion postulate selects spatiotemporal grain maximizing Φ. Predicts simple systems can be conscious, complex feed-forward ones cannot. Full annotation: `annotations/10.1371-journal.pcbi.1003588.md` (DOI: 10.1371/journal.pcbi.1003588).
 
 ## Information Theory / Dynamical Systems
 
 ### Schreiber (2000) — Transfer Entropy
-T_{Y→X} = H(X_{t+1}|X_t^(k)) - H(X_{t+1}|X_t^(k),Y_t^(l)). Directed joint-vs-marginal: how much does joint (X,Y) history improve prediction beyond marginal X history? Asymmetric (unlike MI). Shuffled surrogates as null. Full annotation: `inbox.md`.
+T_{Y→X} = H(X_{t+1}|X_t^(k)) - H(X_{t+1}|X_t^(k),Y_t^(l)). Directed joint-vs-marginal: how much does joint (X,Y) history improve prediction beyond marginal X history? Asymmetric (unlike MI). Shuffled surrogates as null. Full annotation: `annotations/schreiber-2000.md`.
 
 ## Dynamical Systems
 
 ### Sugihara, May, Ye, Hsieh, Deyle, Fogarty, Munch (2012) — Convergent Cross-Mapping
-Cross-prediction from Y's shadow manifold to X tests whether the joint (coupled) attractor contains more information than the marginal (single-variable) reconstruction. Convergence of cross-prediction skill with library size L = the excess is real and recoverable. Directional asymmetry (rho_{Y->X} != rho_{X->Y}) identifies causal direction. Surrogates as null. Full annotation: `inbox.md` (DOI: 10.1126/science.1227079). Machines: joint-vs-marginal, stability, null hypothesis, parameterized homology (weak).
+Cross-prediction from Y's shadow manifold to X tests whether the joint (coupled) attractor contains more information than the marginal (single-variable) reconstruction. Convergence of cross-prediction skill with library size L = the excess is real and recoverable. Directional asymmetry (rho_{Y->X} != rho_{X->Y}) identifies causal direction. Surrogates as null. Full annotation: `annotations/10.1126-science.1227079.md` (DOI: 10.1126/science.1227079). Machines: joint-vs-marginal, stability, null hypothesis, parameterized homology (weak).
 
 ---
 
@@ -158,7 +179,7 @@ Cross-prediction from Y's shadow manifold to X tests whether the joint (coupled)
 
 ### Information Bottleneck Cluster
 - **Shwartz-Ziv & Tishby (2017)** — IB objective min I(X;T) - βI(T;Y) decomposes learning into joint (prediction) and marginal (compression). `second_pass.md` SP-01.
-- **Kawaguchi et al. (2023)** — Excess risk controlled by I(X;Z) gap. `cross_domain_bridges.md`.
+- **Kawaguchi et al. (2023)** — Excess risk controlled by I(X;Z) gap. `annotations/2305.18887.md`.
 - **Yu et al. (2024)** — CS divergence: closed-form joint-vs-marginal. `second_pass.md` SP-03.
 - **Wang et al. (2021)** — HSIC as kernel dependence measure. `second_pass.md` SP-04.
 - **Ma et al. (2020)** — HSIC bottleneck without backpropagation. `cross_domain_bridges.md`.
@@ -181,7 +202,7 @@ Cross-prediction from Y's shadow manifold to X tests whether the joint (coupled)
 - **Simpson et al. (2013)** — Functional connectivity = pairwise joint excess. Integration vs segregation = global vs local balance. `second_pass.md` SP-15.
 - **Fasoli et al. (2026)** — Attractor structure absent from individual regions, emerges from coupled system. `cross_domain_bridges.md`.
 - **Bennett et al. (2022)** — Lead-lag = joint predictive structure. `second_pass.md` SP-14.
-- **Bandt (2020)** — Up-down balance and turning rate as joint statistics absent from marginals. `second_pass.md` SP-13.
+- **Bandt (2020)** — Up-down balance and turning rate as joint statistics absent from marginals. `annotations/10.1007-s00362-020-01171-7.md`.
 
 ---
 
@@ -248,11 +269,11 @@ Cross-prediction from Y's shadow manifold to X tests whether the joint (coupled)
 
 ### Mediano, Rosas, Carhart-Harris, Seth, Barrett (2019) — PhiID
 arXiv: 1909.02297
-PhiID decomposes the total joint-vs-marginal excess (excess entropy E) into 16 atoms on a product lattice, distinguishing SIX modes of how joint information exceeds marginal: storage, copy, transfer, erasure, upward causation, downward causation. Synergistic atoms (source or target = {12}) are the pure joint-vs-marginal excess; redundant atoms are the "shared floor." The corrected Phi_WMS,c removes the confound of double-redundancy causing negative integration scores. Key contribution to the composite_systems programme: "integration" is not one thing --- it is a heterogeneous aggregate of qualitatively distinct excess types. Full annotation: `inbox.md`.
+PhiID decomposes the total joint-vs-marginal excess (excess entropy E) into 16 atoms on a product lattice, distinguishing SIX modes of how joint information exceeds marginal: storage, copy, transfer, erasure, upward causation, downward causation. Synergistic atoms (source or target = {12}) are the pure joint-vs-marginal excess; redundant atoms are the "shared floor." The corrected Phi_WMS,c removes the confound of double-redundancy causing negative integration scores. Key contribution to the composite_systems programme: "integration" is not one thing --- it is a heterogeneous aggregate of qualitatively distinct excess types. Full annotation: `annotations/1703.00810.md`.
 
 ### Barrett (2015) — PID for Gaussian Systems
 arXiv: 1411.2832
-WMS = I(X;Y,Z) - I(X;Y) - I(X;Z) = S - R is the net joint-vs-marginal excess. For Gaussians with univariate target, all PIDs collapse to MMI: R = min{I(X;Y), I(X;Z)}, S = I(X;Z|Y) when I(X;Y) >= I(X;Z). Net synergy positive even when sources uncorrelated (b=0) because log concavity creates excess absent from the linear variance measure. In dynamical (MVAR) systems, synergy decreases as more history is observed (infinite-lag vs 1-lag). Proposes synergistic complexity SC = average synergy per triplet as complexity measure. Full annotation: `inbox.md`.
+WMS = I(X;Y,Z) - I(X;Y) - I(X;Z) = S - R is the net joint-vs-marginal excess. For Gaussians with univariate target, all PIDs collapse to MMI: R = min{I(X;Y), I(X;Z)}, S = I(X;Z|Y) when I(X;Y) >= I(X;Z). Net synergy positive even when sources uncorrelated (b=0) because log concavity creates excess absent from the linear variance measure. In dynamical (MVAR) systems, synergy decreases as more history is observed (infinite-lag vs 1-lag). Proposes synergistic complexity SC = average synergy per triplet as complexity measure. Full annotation: `annotations/1703.00810.md`.
 
 ### Connection to existing PID cluster
 Both papers extend the PID programme (8 core PID papers already in composite_systems) into the **dynamical** regime. Mediano's PhiID is the temporal extension of PID to multivariate time series (source = past, target = future), while Barrett provides the first continuous-variable (Gaussian) instantiation. Together with IIT 3.0 (Oizumi et al. 2014, already indexed), they form a trio:
@@ -273,19 +294,19 @@ Both papers extend the PID programme (8 core PID papers already in composite_sys
 DOI: 10.1016/j.neuroimage.2013.08.056
 Phase TE is joint-vs-marginal at two levels: (1) directed TE measures how joint (source + target) phase history exceeds marginal (target-only) for prediction, and (2) phase extraction itself projects the full amplitude-phase signal to its phase marginal. Differential TE (dTE = TE(1->2) - TE(2->1)) isolates the asymmetric directional excess. Frequency-band-specific: directed coupling graphs differ across oscillatory bands, yielding a parameterized family of joint-vs-marginal measures. Surrogate nulls validated.
 **Machines**: joint-vs-marginal, null hypothesis, parameterized homology.
-Full annotation: `inbox.md` (Wave 6).
+Full annotation: `annotations/1703.00810.md` (Wave 6).
 
 ### Shorten, Spinney, Lizier (2021) — Continuous-Time TE for Spike Trains
 DOI: 10.1371/journal.pcbi.1008054
 Continuous-time TE = KL divergence between true conditional measure (given full source + target history) and reduced conditional (target history only) on path space. The purest Radon-Nikodym formulation of directed joint-vs-marginal excess for event data. Local permutation surrogates generate correct null for conditional independence testing on point processes (source-time-shift surrogates fail). Pathwise TE decomposes into jump (at events) and continuous (between events) components.
 **Machines**: joint-vs-marginal, null hypothesis, parameterized homology.
-Full annotation: `inbox.md` (Wave 6).
+Full annotation: `annotations/1703.00810.md` (Wave 6).
 
 ### Rosas, Mediano et al. (2020) — Causal Emergence
 PLoS Computational Biology, 16(12), e1008289. arXiv: 2004.08220. 143 citations.
 Inverted joint-vs-marginal: macro Ψ = I(V_t; V_{t'}) - Σ_j I(X^j_t; V_{t'}) > 0 means coarse-grained macro has causal power exceeding sum of micro parts. Ψ iff dynamical synergy Syn^(k) > 0 (Theorem 1). Decomposition: downward causation D^(k) + causal decoupling G^(k) = "statistical ghosts" (emergent features with no micro-level causal trace). Three parameters: order k, time lag, partition. Game of Life particles decoupled from cells, flocking emergence at critical regime, macaque ECoG motor decoding emergent.
 **Machines**: joint-vs-marginal (inverted), parameterized homology, null hypothesis, chain complex (inherited).
-Full annotation: `inbox.md` (Wave 7).
+Full annotation: `annotations/1703.00810.md` (Wave 7).
 
 ### Connection to existing TE cluster
 Together with Schreiber (2000, already indexed), Lobier (2014), and Peek et al. (2025, already indexed), these papers form a progression of the joint-vs-marginal machine in directed information flow:
@@ -301,26 +322,97 @@ Together with Schreiber (2000, already indexed), Lobier (2014), and Peek et al. 
 PLoS Comput. Biol., DOI: 10.1371/journal.pcbi.1013649. arXiv: 2504.10140. 4 citations.
 O-information (TC - DTC) as signed joint-vs-marginal excess: synergy = information in joint absent from all proper subsets. H2 cavities in Rips filtration correlate with synergy dominance. Normalized O-bar vs avg H2 persistence: rho = -0.55 to -0.65 in fMRI. PCA preferentially preserves redundancy (marginal-preserving) and destroys synergy (joint-only). Connects to Rosas (2020): O-information is the O(X) = TC - DTC family that Rosas used to define causal emergence; this paper gives it a topological interpretation.
 **Machines**: joint-vs-marginal, parameterized homology, chain complex, null hypothesis, stability.
-Full annotation: `inbox.md` (Wave 7).
+Full annotation: `annotations/1703.00810.md` (Wave 7).
 
 ### Hamilton & Leditzky (2023/2024) — PH of Multipartite Entanglement
 Commun. Math. Phys. 405, art. 125. arXiv: 2307.07492. 8 citations.
 PH with multipartite filtration: q-deformed total correlation C_q(J) as sublevel set functional on the simplex of n parties. Integrated Euler characteristic = n-tangle (entanglement monotone) at q=2. Barcodes strictly finer than n-tangle — distinguish SLOCC orbits. Relative PH gives -I(A:B|R) ≤ 0 by strong subadditivity. Entanglement IS joint-vs-marginal excess; PH captures its multiscale structure.
 **Machines**: joint-vs-marginal, chain complex, parameterized homology, stability, matching, null hypothesis.
-Full annotation: `inbox.md` (Wave 7).
+Full annotation: `annotations/1703.00810.md` (Wave 7).
 
 ### Natarajan, Chaplin, Bull et al. (2026) — Multi-species Topology
 arXiv: 2603.03237.
 Kernel/image/cokernel persistence of k-chromatic gluing map yields four categories: (i) common features, (ii) features destroyed by composition (kernel), (iii) features ONLY in the joint (cokernel = pure joint-vs-marginal excess), (iv) features formed by some, persisting with others (image). Cokernel captures topological structure invisible in all k-species marginals. Applied to tumor microenvironment: recovers immunoediting regimes, detects trichromatic spatial interactions.
 **Machines**: joint-vs-marginal, chain complex, parameterized homology, null hypothesis, stability.
-Full annotation: `inbox.md` (Wave 7).
+Full annotation: `annotations/1703.00810.md` (Wave 7).
 
 ---
 
 ## Wave 10 — link-forge update (2026-04-17)
 
 ### Baudot, Tapia, Bennequin & Goaillard (2019) — Topological Information Data Analysis
-arXiv: 1907.04242. I_k measures k-th-order excess structure in joint absent from lower-order marginals. I_k = 0 for all k ≥ 2 iff independence (necessary and sufficient). Negative I_k = synergy = Borromean-link structure (pairwise independent, collectively dependent). Total correlation G_k is weaker — fails to discriminate subtypes. Full annotation: `inbox.md` (Wave 10a).
+arXiv: 1907.04242. I_k measures k-th-order excess structure in joint absent from lower-order marginals. I_k = 0 for all k ≥ 2 iff independence (necessary and sufficient). Negative I_k = synergy = Borromean-link structure (pairwise independent, collectively dependent). Total correlation G_k is weaker — fails to discriminate subtypes. Full annotation: `annotations/1703.00810.md` (Wave 10a).
+
+### Caruso, Clemente, Rillig & Garlaschelli (2021) — Fluctuating Ecological Networks
+Max-ent null models with soft constraints: marginals enforced in expectation rather than exactly, so detected patterns measure genuine joint excess. Also null hypothesis. Full annotation: `annotations/10.1111-2041-210X.13985.md` (DOI: 10.1111/2041-210X.13985).
 
 ### Chaudhuri et al. (2019) — Head direction ring attractor
-DOI: 10.1038/s41593-019-0460-x. Ring (S^1) manifold is a population-level phenomenon — individual neurons show noisy tuning curves. The topology emerges only from joint activity, not from any single neuron. Pure joint-vs-marginal excess. Full annotation: `inbox.md` (Wave 10a).
+DOI: 10.1038/s41593-019-0460-x. Ring (S^1) manifold is a population-level phenomenon — individual neurons show noisy tuning curves. The topology emerges only from joint activity, not from any single neuron. Pure joint-vs-marginal excess. Full annotation: `annotations/1703.00810.md` (Wave 10a).
+
+**Ito, Oizumi & Amari (2018) — Unified Framework for Entropy Production and Stochastic Interaction**: arXiv: 1810.09545. Violation of additivity of partial entropy productions = stochastic interaction (IIT): the joint-vs-marginal excess measured in dissipation units, grounding IIT thermodynamically. Machines: joint-vs-marginal (core), matching (weak), null hypothesis (implicit). Full annotation: `annotations/1810.09545.md` (B2 pass 25). Abstract-only provenance — depth-limited. **See also**: `by-domain/statistical_physics.md`.
+
+**Barato & Seifert (2014) — Stochastic Thermodynamics with Information Reservoirs**: arXiv: 1408.1224. Generalized second law for a system coupled to a bit-sequence information reservoir: the joint ledger (system + reservoir) restores the inequality that the marginal system ledger violates — work extraction from a single heat bath via informational fuel; fluctuation theorem + linear response for information-processing machines. Machines: joint-vs-marginal (core), null hypothesis (weak). Full annotation: `annotations/1408.1224.md` (B2 pass 26). Abstract-only provenance — depth-limited. **See also**: `by-domain/statistical_physics.md`.
+
+**Sekizawa, Ito & Oizumi (2023) — Decomposing Thermodynamic Dissipation of Linear Langevin Systems via Oscillatory Modes**: arXiv: 2312.03489. Housekeeping entropy production decomposes into independent positive mode-attributable contributions (per element under diagonal noise); applied to monkey ECoG awake vs anesthesia — band-resolved dissipation profiles as a thermodynamic reading of neural oscillation. Second empirical Neuroscience↔StatPhys bridge in batch-004. Machines: joint-vs-marginal (instrumental), filtration/parameterization (weak). Full annotation: `annotations/2312.03489.md` (B2 pass 26). Abstract-only provenance — depth-limited. **See also**: `by-domain/statistical_physics.md`, `by-domain/neuroscience.md`.
+
+---
+
+## B3 synthesis: thermodynamic instantiation of the joint-vs-marginal machine (2026-08-25)
+
+The stoch-thermo group gives the composite-systems machine its physical unit of account: the joint-vs-marginal excess, elsewhere measured in nats or bottleneck distance, here measured in **dissipated work** — which makes it falsifiable by calorimetry.
+
+Three gradations:
+
+1. **Ledger restoration** — Barato & Seifert (`annotations/1408.1224.md`): the marginal (system-only) second law fails; adjoining the information reservoir restores it. Joint-vs-marginal as bookkeeping correction, with extractable work as the exchange rate between the two ledgers.
+2. **Excess as interaction** — Ito, Oizumi & Amari (`annotations/1810.09545.md`): when partial entropy productions fail to add up, the violation itself IS stochastic interaction (IIT's Φ given a thermodynamic body). The excess is not corrected away — it is the quantity of interest.
+3. **Excess decomposed** — Sekizawa, Ito & Oizumi (`annotations/2312.03489.md`): for linear Langevin systems the housekeeping dissipation splits into independent positive mode-attributable parts, so the joint ledger can be read per oscillatory channel — the empirical handle behind the awake-vs-anesthesia result.
+
+Complementarity with the matching side: there the OT cost equals dissipation along a density path (`by-structure/optimal_transport.md`, B3 synthesis section); here the *non-additivity* of dissipation across subsystems is the signal. Matching instantiates thermodynamics through equality; joint-vs-marginal through inequality.
+
+**See also**: `by-domain/statistical_physics.md`, `by-structure/optimal_transport.md`.
+
+### Wollstadt et al. (2022) — Local Information Dynamics Against Analytical Circularity (arXiv: 2203.10810)
+Predictive-coding strategies recast as competing constraints between local active information storage and local transfer entropy; PID atoms separate bottom-up vs state-conditional transfer — joint-vs-marginal used as an assumption-minimizing instrument rather than a feature. Full annotation: `annotations/2203.10810.md` (B2 pass 37). **See also**: `by-domain/neuroscience.md`.
+
+### Wong & Vong (2021) — Persistence Diagrams as Supervisory Targets (ICCV 2021)
+PHGCN: filtration barcodes as GCN features with a Persistence Diagram Loss penalizing diagram-vs-diagram mismatch of predicted segmentation — matching cost between topological summaries closed into an optimization loop. DOI 10.1109/ICCV48922.2021.00701. Full annotation: `annotations/wong-vong-2021.md` (B2 pass 39). **See also**: `by-domain/tda.md`.
+
+### Baireuther, O'Brien, Tarasinski & Beenakker (2017) — RNN decoder for correlated errors (arXiv: 1705.07855)
+Decoder-side joint-vs-marginal gain: an RNN beats MWPM precisely because it detects X–Z error correlations that the matching decoder's independent X and Z matchings cannot represent — joint structure cashed out as logical performance rather than an information measure. Full annotation: `annotations/1705.07855.md` (B2 pass 41). **See also**: `by-domain/qec.md`, `by-structure/phase_transitions.md`.
+
+### B2 batch-008: reservoir generalized synchronization — drive-response as the matching machine (2026-08-25)
+
+**Smith, Kim, Lu & Bassett (2021)**: arXiv: 2110.08631. Abstraction in an RC = a *continuum* of attractors learned from isolated examples, certified spectrally by an extra zero Lyapunov exponent; mechanism via differentiable generalized synchronization + feedback dynamics — drive-response coupling whose sync map is smooth in the drive parameter. Machines: matching (parametrized family), stability (neutral direction), null hypothesis. Full annotation: `annotations/2110.08631.md` (B2 pass 45). **See also**: `by-domain/dynamical_systems.md`.
+
+**Röhm, Gauthier & Fischer (2021)**: arXiv: 2108.04074. Drive-response reconstruction extending beyond its training support: RC trained near one co-existing attractor predicts never-seen attractors of a multistable Lorenz-like system from a single noisy trajectory — multistability makes phase-space coverage binary against the interpolation null. Machines: matching (extrapolation), stability (weak), null hypothesis. Full annotation: `annotations/2108.04074.md` (B2 pass 45). **See also**: `by-domain/dynamical_systems.md`.
+
+**Ahmed, Tennie & Magri (2025)**: arXiv: 2506.22335. QRCs as GS systems with GS=ESP (synchronization iff echo state property, analytic for recurrence-free architectures): well-definedness of the drive-response matching and memory-fading proved co-extensive; Jacobian-derived Lyapunov spectra / CLVs / attractor dimensions carried through the quantum channel; noise dissipation enhances robustness. Machines: matching, stability (core). Full annotation: `annotations/2506.22335.md` (B2 pass 45). **See also**: `by-domain/dynamical_systems.md`, `annotations/2401.00885.md`.
+
+### B2 batch-008: kuramoto — finite-N ensembles as composites (2026-08-25)
+
+**Buendía (2024)**: arXiv: 2407.02416. Mesoscopic theory of stochastic coupled oscillators: the finite-N ensemble carries multiplicative fluctuations present in neither the individual oscillator nor the Ott–Antonsen thermodynamic-limit reduction — first closed expressions for the stochastic order parameter quantify exactly the composite's excess over its marginals and its N→∞ limit. Machines: joint-vs-marginal excess (core), stability (weak). Full annotation: `annotations/2407.02416.md` (B2 pass 46). **See also**: `by-domain/statistical_physics.md`.
+
+**Witthaut & Timme (2013)**: arXiv: 1305.1742. Kuramoto dynamics in Hamiltonian systems — a 2N-variable conservative system whose invariant manifolds carry exact Kuramoto dynamics as a marginal; the transverse dynamics is composite-level structure absent from the marginal, and it alone decides where synchrony sets in. Machines: joint-vs-marginal excess (core), stability (transition as transverse instability). Full annotation: `annotations/1305.1742.md` (B2 pass 47). **See also**: `by-domain/dynamical_systems.md`.
+
+### B2 batch-009: pid-theory — axiomatic core (2026-08-25)
+
+The PID programme's own founding and axiom papers, filed alongside the 8-paper prose block above.
+
+**Williams & Beer (2010)**: arXiv: 1004.2515. Founding PID: redundancy lattice over source antichains, Möbius-inverted into nonnegative atoms; synergy = top-of-lattice joint-vs-marginal excess; interaction information's negativity = redundancy/synergy confounding — the first explicit statement that naive joint-minus-marginal bookkeeping mixes two distinct structures. Machines: chain complex, joint-vs-marginal excess (core), matching (weak). Full annotation: `annotations/1004.2515.md` (B2 pass 48). **See also**: `by-domain/information_theory.md`.
+
+**Gutknecht, Makkeh & Wibral (2023)**: arXiv: 2306.00734. All PID base-concepts are special cases of one logical pattern on parthood relations; base-concept choice = which joint-vs-marginal direction is primitive. Machines: joint-vs-marginal excess (core), chain complex (meta-level). Full annotation: `annotations/2306.00734.md` (B2 pass 48). **See also**: `by-domain/information_theory.md`.
+
+**Ay, Polani & Virgo (2019)**: arXiv: 1910.05979. Game-theoretic fair-share decomposition on a second lattice: synergy/unique analogues without a redundancy node; positivity + identity jointly satisfiable only off the standard lattice. Machines: joint-vs-marginal excess (core), matching (coalition value allocation), stability (axiom feasibility). Full annotation: `annotations/1910.05979.md` (B2 pass 48). **See also**: `by-domain/information_theory.md`.
+
+**Milzman (2024)**: arXiv: 2404.01470. Redundant atom = information robust to individual source failures; order-reversing correspondence between source-fallible instantiation collections and the Williams-Beer lattice, satisfying the common PID axioms — failure-robustness semantics for joint-vs-marginal bookkeeping, QEC-adjacent. Machines: chain complex (dual graded posets), boundary operators (persistence under deletion), joint-vs-marginal excess. Full annotation: `annotations/2404.01470.md` (B2 pass 49). **See also**: `by-domain/information_theory.md`, `by-structure/boundary_operators.md`.
+
+**Lizier, Flecker & Williams (2013)**: arXiv: 1303.3440. Information modification events = interactions between ≥2 sources no single source carries — PID synergy localized in space-time over distributed computation (CA glider/particle collisions); proposes the localizability axiom on redundancy measures and shows existing measures largely fail it. Machines: joint-vs-marginal excess (core), chain complex (computation steps over the lattice), matching (pointwise certificate). Full annotation: `annotations/1303.3440.md` (B2 pass 49). **See also**: `by-domain/information_theory.md`, `atlas/MATCHING.md`.
+
+### Friston (2019) — Free Energy Principle for a Particular Physics (arXiv: 1906.10184)
+Markov blanket as the composite-boundary object: internal and external states conditionally independent given sensory+active states, so internal "representation" of the external is exactly the joint-vs-marginal excess across the blanket; recursive blanket nesting gives a scale-parameterized filtration. **B2 pass 56 pair with 2001.06408.** Full annotation: `annotations/1906.10184.md`. Abstract-only provenance.
+
+### Biehl, Pollock & Kanai (2020) — Technical Critique of Some Parts of the FEP (arXiv: 2001.06408)
+Refutation side of the pair: counterexample to the free energy lemma; inequivalent Markov-blanket definitions across formulations — the composite boundary itself is version-dependent, so the excess it licenses is not well-defined until the definition class is fixed. **Null-hypothesis machinery note: first corpus entry whose null targets a formalism's derivation rather than an empirical claim.** Full annotation: `annotations/2001.06408.md`. Abstract-only provenance.
+
+### Ramstead et al. (2020) — Neural and Phenotypic Representation under the FEP (arXiv: 2008.03238)
+Representation as joint-vs-marginal excess geometrized: intrinsic + extrinsic information geometries on the same blanket-bound internal states; simulations show stimulus information recoverable only when ensembles share the right generative model. Post-critique constructive turn of the fep group. Full annotation: `annotations/2008.03238.md`. Abstract-only provenance.

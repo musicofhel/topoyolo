@@ -46,7 +46,25 @@ Previously marked as "rarely used." Third pass found:
 5. **OT for MEG/EEG source imaging** (Janati et al., 2019): Optimal transport regularizes the MEG inverse problem; the transport plan matches sensor-space measurements to source-space activations with spatial smoothness enforced by the Wasserstein cost.
 6. **Hierarchical OT for neural decoding** (Lee et al., 2019): Multi-scale optimal transport matches neural population responses to stimulus categories, respecting the hierarchical structure of both neural representations and stimulus semantics.
 
+## Two Cross-Machine Roles (updated — B3 sub-slice 3, pass 37)
+
+### OT as proof technology (inbound to statistical physics)
+Optimal transport can enter a result not as the object being studied but as the instrument that proves it: in bounded-memory belief propagation (Jain–Koehler–Liu–Mossel, arXiv: 1905.10031), Wasserstein bounds on message iterates are what force the memory-limited transition strictly below the Kesten–Stigum threshold — the Matching machine's cost geometry doing the work of a phase-transition proof (`by-structure/phase_transitions.md`). Read such instances as *matching-as-lemma*: the coupling is never the phenomenon, only the estimate carrier.
+
+### PH → Matching bridge: filtration summary as measure
+Chambers & Meng (arXiv: 2507.01171) compose the machines in the direction the atlas has few instances of: an extended persistence diagram (Parameterized homology's birth-death summary) is converted to a persistence image and used as the *probability measure* of the mm-space on which Gromov-Wasserstein matching runs — with scalar-field stability carried end-to-end. The filtration does not merely weight features for a classifier; it defines the measure over which relational matching is performed. Compare the reverse direction already catalogued (Matching metrics consuming topological descriptors) — this is Parameterized homology supplying Matching's ground data, not vice versa.
+
+### Same theorem, two machines: Takens via conjugacy vs via pushforward (B3 sub-slice 5, pass 47)
+Takens' delay embedding now exists in the corpus in two independent re-derivations that split along exactly the Lagrangian/Eulerian line the Matching machine's two roles trace:
+
+1. **Matching-as-conjugacy** (Grigoryeva–Hart–Ortega, arXiv: 2108.05024): in driven reservoir systems, generalized synchronization *is* the embedding — the sync map is a topological conjugacy carrying the source attractor into reservoir state space, and Takens' delay coordinates fall out as the special case. Pointwise map on states, deterministic flows, fidelity certified by a conditional-Lyapunov spectral gap (`annotations/2401.00885.md`), dimension capped by pullback-attractor dimension (`annotations/2501.11357.md`).
+2. **Matching-as-measure-coupling** (Botvinick-Greenhouse–Oprea–Maulik–Yang, arXiv: 2409.08768): the same theorem recast Eulerian-style — dynamics evolves a probability measure μ_t, and reconstruction becomes a pushforward Φ_#: P(M) → P(R^{2m+1}) between spaces of measures, solved with optimal-transport machinery. No trajectory is matched; only the image of the measure, which degrades continuously under sparse/noisy observation.
+
+The pair is the cleanest corpus instance that the abstract machine survives a change of *description level* while its instances do not: what counts as "the coupling" (pointwise conjugacy vs induced measure coupling) and what counts as "reconstruction succeeds" (exact trajectory vs pushforward image) both shift, yet the Matching bookkeeping — assignment, cost, stability of the correspondence — is identical on both sides. Read them as one theorem observed from two sides of the Lagrangian/Eulerian divide, with the Stability machine supplying complementary certificates each way (spectral gap for the conjugacy side; measure-degradation robustness for the pushforward side).
+
 ## Key Divergences
+
+
 
 - **Causal vs. batch**: Syndrome decoding (JIT) must commit before seeing future data. Diagram matching is batch. This is a genuine structural difference — see ANTISYNONYMS.md.
 - **Cost function semantics**: Bottleneck = worst-case pairing cost. Wasserstein = total pairing cost. Syndrome graph = edge weight. These different cost functions produce different distances with different mathematical properties.

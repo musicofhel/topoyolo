@@ -44,77 +44,20 @@ arXiv: 2006.02361 | NeurIPS 2020
 ## Colbrook, Drmac, Horning (2025)
 **"An Introductory Guide to Koopman Learning"**
 arXiv: 2510.22002
-
-**Domain(s)**: Dynamical systems, numerical analysis
-
-**Abstract machines instantiated**:
-- **Parameterized homology**: The paper provides a comprehensive treatment of how Koopman spectral analysis tracks dynamical invariants as the system evolves. Spectral measures mu_g of the Koopman operator decompose the dynamics into components: point spectrum (periodic/quasi-periodic modes), absolutely continuous spectrum (mixing/chaotic dynamics), and singular continuous spectrum (fractal-like dynamics). The spectral type is itself an invariant that classifies the dynamical system — and computing it from data requires tracking how approximations converge as the dictionary size (the parameter) increases.
-- **Stability**: A central theme is rigorous convergence of data-driven methods. The paper unifies error control via residuals: for EDMD matrix approximation, the residual ||K*psi_j - sum_i A_ij psi_i||^2 quantifies how far the finite-dimensional approximation is from the true operator. Pseudospectra sigma_epsilon(K) = {z : ||(K - zI)^{-1}|| > 1/epsilon} provide stability bounds — points in the epsilon-pseudospectrum are eigenvalues that persist under perturbations of size epsilon. This is the spectral analogue of persistence stability.
-- **Matching (spectral)**: The delay embedding approach connects to matching: given a single observable, the Krylov subspace {g, Kg, K^2 g, ...} generates a subspace from which the operator can be approximated. The generalized Laplace analysis matches observables to their spectral components via time-averaging: P_lambda[g] = lim_{N->inf} (1/N) sum_{n=0}^{N-1} e^{-i*lambda*n} K^n g. This is an optimal assignment of spectral weight to frequencies.
-
-**What is genuinely new (not reducible to shared abstraction)**:
-- Unified error control via residuals across finite and infinite-dimensional settings. The paper provides a single framework for assessing EDMD, DMD, and delay-embedded approximations — showing that residuals are the fundamental diagnostic regardless of method.
-- Elementary proof that generalized Laplace analysis converges for spectral operators with continuous spectra and no spectral gaps. Previous convergence results required point spectrum; this extends to the mixing/chaotic case.
-- Comprehensive comparison of three families of spectral measure computation methods: moment-based (Christoffel-Darboux kernels), eigenvalue-based (smoothed EDMD spectra), and resolvent-based (Stone's formula). This taxonomy of approaches is itself a contribution.
-- The classification theory section: distinguishing pure point, absolutely continuous, and singular continuous spectra from finite data is posed as a computational challenge with rigorous algorithmic solutions.
-
-**Connections the authors acknowledge**: Extensive survey of Koopman operator literature (Mezic, Schmid, Brunton, Budisic, Kutz). Applications in fluid dynamics, control theory. Cite Takens embedding theorem as the theoretical foundation for delay-based methods. No connections to TDA, QEC, or information theory — the paper stays within dynamical systems and numerical analysis.
-
-**Vocabulary mapping**:
-| Paper term | Rosetta term |
-|---|---|
-| Koopman operator K | Linear lifting of nonlinear dynamics |
-| Spectral measure mu_g | Distribution of dynamical invariants (parameterized) |
-| Point spectrum | Persistent features (discrete eigenvalues = periodic modes) |
-| Continuous spectrum | Mixing/chaotic structure (no isolated eigenvalues) |
-| EDMD matrix A | Finite-dimensional boundary operator approximation |
-| Residual ||K*psi - A*psi|| | Error in the approximation (stability diagnostic) |
-| Pseudospectrum sigma_epsilon | epsilon-perturbation set (stability under noise) |
-| Generalized Laplace analysis | Spectral projection (matching observable to frequency) |
-| Krylov subspace | Delay embedding (Takens reconstruction in function space) |
-| DMD / Dynamic Mode Decomposition | Data-driven spectral decomposition |
-| Dictionary {psi_j} | Basis for the function space (analogous to simplicial basis) |
-| Coherency | Forecast reliability measure |
-
-**See also**: `by-structure/filtrations.md`
+Promoted to per-paper annotation file (B2 pass 19, batch-003 candidate-01, promote-on-encounter).
+Machines: parameterized homology, stability, matching (spectral).
+Full annotation: `annotations/2510.22002.md`.
+**See also**: `by-structure/filtrations.md`, `by-structure/phase_transitions.md`
 
 ---
 
 ## Zhou, Chu, Xu, Liu, Yu (2020)
 **"Detecting Predictable Segments of Chaotic Financial Time Series via Neural Network"**
 DOI: 10.3390/electronics9050823 | Electronics 9(5):823
-
-**Domain(s)**: Dynamical systems, finance (applied), machine learning
-
-**Abstract machines instantiated**:
-- **Parameterized homology**: Phase space reconstruction (PSR) via Takens embedding is the core methodology. The time series x(t) is embedded into m-dimensional phase space as vectors X(t) = [x(t), x(t+tau), ..., x(t+(m-1)*tau)]. The embedding dimension m and time delay tau are the parameters. As these parameters vary, the topological structure of the reconstructed attractor changes. The paper uses mutual information to determine optimal tau and the Grassberger-Procaccia algorithm to determine m — both are parameter selection procedures that seek the simplest faithful topological representation.
-- **Null hypothesis**: The SOM (Self-Organizing Map) clustering of phase track segments separates linear (predictable) components from nonlinear (chaotic) components. The chaotic segments serve as the null: regions where structure has been destroyed by sensitivity to initial conditions (positive Lyapunov exponent). The predictable segments are the signal — structure that persists despite the surrounding chaos. The Lyapunov exponent L itself is the diagnostic: 0 < L < 1 means short-term predictability; L > 1 means unpredictable.
-- **Stability**: Takens embedding theorem guarantees that for generic m and tau, the reconstructed phase space is diffeomorphic to the true attractor — the topology is preserved under embedding. This is a stability result: the topological invariants of the attractor are robust to the choice of embedding parameters (as long as they are generic). The SOM clustering adds a second stability layer: similar phase track segments cluster together, and the prediction accuracy measures whether the learned patterns are stable enough to forecast.
-
-**What is genuinely new (not reducible to shared abstraction)**:
-- The key insight is detecting WHICH segments of a chaotic time series are predictable, rather than estimating overall predictability. Previous work computed global Lyapunov exponents; this paper provides local, time-varying predictability assessment via unsupervised clustering.
-- Using SOM neural networks to cluster phase track segments by similarity. Phase tracks that recur in similar patterns (periodic or quasi-periodic segments within an otherwise chaotic series) are identified and grouped. LSTM is then applied only to the predictable clusters.
-- The interpretation of intermittent chaos in financial markets: alternating between predictable (linear superposition) and unpredictable (chaotic) regimes. This provides a dynamical systems explanation for phenomena like sudden market crashes ("black swans") — they correspond to transitions from predictable to chaotic dynamics.
-- Tested on multiple financial indices (Dow Jones, Nikkei, Chinese markets, gold) demonstrating generality.
-
-**Connections the authors acknowledge**: Cite phase space reconstruction (Takens, 1981), Lyapunov exponents, Hurst index (MF-DFA). Cite LSTM and SOM neural networks. Acknowledge the tension between nonlinear model success and the "initial sensitivity law" of chaos — prediction accuracy should be impossible beyond the Lyapunov horizon. No connections to TDA (despite using topological reconstruction), QEC, or information theory.
-
-**Vocabulary mapping**:
-| Paper term | Rosetta term |
-|---|---|
-| Phase space reconstruction | Takens embedding (topology-preserving map) |
-| Embedding dimension m | Parameter (controls the chain complex dimension) |
-| Time delay tau | Parameter (controls the sampling resolution) |
-| Strange attractor | Invariant topological object (the manifold) |
-| Lyapunov exponent L | Stability diagnostic (sensitivity to perturbation) |
-| Predictable segment | Region with preserved structure (low L) |
-| Chaotic segment | Region with destroyed structure (high L, null model) |
-| SOM clustering | Unsupervised matching of phase track segments |
-| Phase track similarity | Distance metric on embedded trajectories |
-| Intermittent chaos | Alternating parameterized regimes (phase transitions) |
-| Hurst index h | Long-range dependence measure (stability of correlations) |
-
-**See also**: `by-structure/filtrations.md`, `by-domain/tda.md` (cross-listed — uses topological reconstruction)
+Promoted to per-paper annotation file (B2 pass 19, batch-003 candidate-02, promote-on-encounter).
+Machines: parameterized homology, null hypothesis, stability.
+Full annotation: `annotations/10.3390-electronics9050823.md`.
+**See also**: `by-structure/filtrations.md`, `by-structure/phase_transitions.md`, `by-domain/tda.md`
 
 ---
 
@@ -132,9 +75,137 @@ DOI: 10.1016/0167-2789(92)90102-S | Physica D, 58:77--94
 
 **What is genuinely new**: The method itself -- the first rigorous statistical framework for testing nonlinearity claims in experimental time series. The graded hierarchy of nulls (Algorithm 0 < 1 < 2) has no analogue in other domains. AAFT specifically addresses nonlinear observation functions. Overturned many prior claims of low-dimensional chaos.
 
-Full annotation: `inbox.md` (DOI: 10.1016/0167-2789(92)90102-S).
+Full annotation: `annotations/10.1016-0167-2789(92)90102-S.md` (DOI: 10.1016/0167-2789(92)90102-S).
 
 **See also**: `by-structure/phase_transitions.md`
+
+---
+
+## Timmer (2000)
+**"What can be inferred from surrogate data testing?"**
+arXiv: nlin/0009032
+
+**Domain(s)**: Dynamical systems
+
+**Abstract machines instantiated**:
+- **Null hypothesis**: The null machine's epistemics at maximum sharpness. A surrogate rejection licenses exactly the negation of the constructed null and nothing more; using it to "confirm" a specific nonlinear inference conflates rejecting one null with verifying a favored alternative — an inferential step the machinery never performed.
+- **Stability**: The conclusion "nonlinear" is not stable under moving the truth within the null's complement: a non-stationary linear process rejects the same null identically. Only the rejected-null boundary, not the inferred alternative, is robust.
+
+**What is genuinely new**: The one-page sharpening of what surrogate rejection entails for the whole post-Theiler literature; methodological anchor that Palus (1995) and Timmer (1998) respond to from either side.
+
+**Connections the authors acknowledge**: Surrogate data testing as practiced in nonlinear time series analysis. Abstract-only provenance — depth-limited.
+
+**See also**: `by-structure/phase_transitions.md`
+
+---
+
+## Timmer (1998)
+**"The power of surrogate data testing with respect to non-stationarity"**
+arXiv: chao-dyn/9807039
+
+**Domain(s)**: Dynamical systems
+
+**Abstract machines instantiated**:
+- **Null hypothesis**: Because the tested null is "linear, Gaussian, stationary", a positive outcome can come from a linear non-stationary process as readily as a nonlinear one; the paper computes the test's power against non-stationarity specifically.
+- **Stability**: Power analysis = stability study of the test verdict under perturbing the truth away from the null along the stationarity direction while keeping linearity; the reject boundary is crossed by purely linear drifts.
+
+**What is genuinely new**: Turning the generic caveat into a quantitative power curve, making concrete the Timmer 2000 epistemic critique.
+
+**Connections the authors acknowledge**: Theiler et al. (1992) framework. Abstract-only provenance — depth-limited.
+
+**See also**: `by-structure/phase_transitions.md`
+
+---
+
+## Palus (1995)
+**"Detecting nonlinearity in multivariate time series"**
+arXiv: comp-gas/9507004
+
+**Domain(s)**: Dynamical systems
+
+**Abstract machines instantiated**:
+- **Null hypothesis**: Multivariate extension of the surrogate null — destroy cross-variable dependence while preserving each variable's univariate statistics.
+- **Joint-vs-marginal excess**: Test statistic separates general redundancy (joint dependence) from linear redundancy (marginal/Gaussian-level); spurious rejections from imperfect surrogates surface at the linear level before being read as nonlinearity — joint-vs-marginal bookkeeping embedded in the null machinery itself.
+- **Stability**: Linear-redundancy controls stabilize the verdict against a known artifact of imperfect null construction.
+
+**What is genuinely new**: Multivariate surrogate nulls with redundancy-order bookkeeping, demonstrated on coupled synthetic systems plus meteorological and physiological records; an early ancestor of the permutation-consistency null protocol (2005.06573).
+
+**Connections the authors acknowledge**: Univariate surrogate testing (Theiler et al. 1992); information-theoretic redundancy measures. Abstract-only provenance — depth-limited.
+
+**See also**: `by-structure/phase_transitions.md`, `by-structure/composite_systems.md`
+
+---
+
+## Guarin, Delgado, Orozco (2011)
+**"Band-phase-randomized Surrogates to assess nonlinearity in non-stationary time series"**
+arXiv: 1101.6063
+
+**Domain(s)**: Dynamical systems
+
+**Abstract machines instantiated**:
+- **Null hypothesis**: Partially-destructive constrained null for non-stationary data — only Fourier phases in a high frequency band are randomized, so the constructed null is "linear with the observed low-band (non-stationarity-carrying) structure"; a rejection licenses "nonlinear beyond what low-band linear drift explains", narrowing the Timmer (2000) gap.
+- **Stability**: The preserved low band is a stability invariant of the surrogate ensemble by construction, isolating the verdict from drift-induced rejections (the power-loss failure mode of chao-dyn/9807039).
+
+**What is genuinely new**: The band-splitting design decision — which spectral region carries preserved vs destroyed structure is outside what the machines dictate; validated on HRV with spikes/artefacts where existing surrogates cannot reproduce linear correlations.
+
+**Connections the authors acknowledge**: Linear surrogate data methods (Theiler et al. 1992 lineage) and their stationarity dependence. Abstract-only provenance — depth-limited.
+
+**See also**: `by-structure/phase_transitions.md`
+
+---
+
+## Donges, Donner, Kurths (2012)
+**"Testing time series irreversibility using complex network methods"**
+arXiv: 1211.1162
+
+**Domain(s)**: Dynamical systems
+
+**Abstract machines instantiated**:
+- **Null hypothesis**: Time-reversal symmetry as the null reached WITHOUT surrogate generation — direct statistical comparison of time-directed variants of visibility-graph statistics (degree, local clustering); an explicit surrogate-free branch of the lineage.
+- **Joint-vs-marginal excess**: The statistic lives on the directed graph encoding; marginal amplitude statistics (histograms, spectra) are reversal-symmetric and blind to the excess time-directed structure.
+
+**What is genuinely new**: The nonlinear-map step (irreversible dynamics → asymmetric graph statistics via visibility graphs), plus applicability to short series where surrogate ensembles are too thin to rank against.
+
+**Connections the authors acknowledge**: Explicitly positions against surrogate data testing as the incumbent; visibility-graph literature (Lacasa et al.). Abstract-only provenance — depth-limited.
+
+**See also**: `by-structure/phase_transitions.md`, Third Pass "Visibility Graph Irreversibility" entry below
+
+---
+
+## Small, Judd, Stemler (2013)
+**"A surrogate for networks -- How scale-free is my scale-free network?"**
+arXiv: 1306.4064
+
+**Domain(s)**: Dynamical systems
+
+**Abstract machines instantiated**:
+- **Null hypothesis**: Surrogate machine transplanted from time series to complex networks — generate "statistically likely" networks consistent with both the observed data and a chosen null (e.g. a degree distribution); typical-vs-peculiar verdicts license only the constructed null's negation.
+- **Stability**: Typical = property stable under null-preserving regeneration of the network; peculiar = unstable under it.
+
+**What is genuinely new**: The carrier change (series → graph): what plays the role of phase randomization for a network is a new generator-design problem; directly interrogates the scale-free claim itself.
+
+**Connections the authors acknowledge**: THE rare explicit bridge in this group — abstract states "a direct analogy between the approach we propose here and the surrogate data methods applied to nonlinear time series data." Abstract-only provenance — depth-limited.
+
+**See also**: `by-structure/phase_transitions.md`
+
+---
+
+## Cobey & Baskerville (2016)
+**"Limits to causal inference with state-space reconstruction for infectious disease"**
+arXiv: 1601.00716
+
+**Domain(s)**: Dynamical systems, epidemiology
+
+**Abstract machines instantiated**:
+- **Null hypothesis**: A systematic limits/power study of convergent cross mapping — quantifying the wrong-alternative firing rate of the state-space-reconstruction test: independent pathogen strains oscillating at similar frequencies are inferred as interacting. The Timmer-lineage move applied to CCM: measure when the test rejects a true null.
+- **Stability**: Verdicts shown unstable along three perturbation directions of the data-generating process — process noise level, attractor drift, and reconstruction quality — all unmeasurable in natural systems; instability under unobservable perturbations is the headline.
+- **Matching**: Cross mapping is nearest-neighbor matching between reconstructed state spaces; match quality inherits reconstruction artifacts rather than coupling strength.
+
+**What is genuinely new**: The diagnosis that CCM's central false-positive mode is shared periodicity — a spectral coincidence, not dynamical coupling — AND that alternative inference criteria dissolve this sensitivity while noise/drift sensitivity remains: a partially fixable failure, not a blanket rejection. Grounded in pre-vaccine measles/pertussis series (NYC, Chicago) where CCM's assumptions are exactly unverifiable.
+
+**Connections the authors acknowledge**: Sugihara et al. CCM; Granger causality literature; reconstruction diagnostics. Abstract-only provenance — depth-limited.
+
+**See also**: `annotations/1601.00716.md`, `by-structure/phase_transitions.md` (null-surrogate section)
 
 ---
 
@@ -142,7 +213,7 @@ Full annotation: `inbox.md` (DOI: 10.1016/0167-2789(92)90102-S).
 **"Detecting strange attractors in turbulence"**
 Lecture Notes in Mathematics, vol. 898, Springer
 
-THE foundational delay embedding theorem. For generic (C^2-residual) pairs (diffeomorphism phi, observation function y) on a compact manifold M, the delay map F(x) = (y(x), y(phi(x)), ..., y(phi^{2d}(x))) is an embedding if d > dim(M). Reconstructed manifold has identical homology to original. Single scalar observable suffices to recover attractor topology. Full annotation: `inbox.md`.
+THE foundational delay embedding theorem. For generic (C^2-residual) pairs (diffeomorphism phi, observation function y) on a compact manifold M, the delay map F(x) = (y(x), y(phi(x)), ..., y(phi^{2d}(x))) is an embedding if d > dim(M). Reconstructed manifold has identical homology to original. Single scalar observable suffices to recover attractor topology. Full annotation: `annotations/takens-1981.md`.
 **Machines**: chain complex (implicit), stability (topological genericity), parameterized homology (weak -- embedding dimension as parameter).
 **See also**: `by-structure/filtrations.md`, `by-structure/phase_transitions.md`
 
@@ -152,7 +223,7 @@ THE foundational delay embedding theorem. For generic (C^2-residual) pairs (diff
 **"Embedology"**
 Journal of Statistical Physics 65(3-4):579-616
 
-Extends Takens to PREVALENCE (measure-theoretic genericity). Works for fractal attractors with non-integer box-counting dimension d_B(A). Minimal embedding dimension 2*d_B(A)+1. Prevalence is strictly stronger than topological genericity. Full annotation: `inbox.md`.
+Extends Takens to PREVALENCE (measure-theoretic genericity). Works for fractal attractors with non-integer box-counting dimension d_B(A). Minimal embedding dimension 2*d_B(A)+1. Prevalence is strictly stronger than topological genericity. Full annotation: `annotations/sauer-1991.md`.
 **Machines**: stability (prevalence = measure-theoretic robustness), parameterized homology (weak -- embedding dimension, now fractal-valued).
 **See also**: `by-structure/phase_transitions.md`
 
@@ -188,7 +259,7 @@ DOI: 10.1126/science.1227079 | Science 338:496–500
 
 **See also**: `by-structure/composite_systems.md`, `by-structure/phase_transitions.md`
 
-Full annotation: `inbox.md` (DOI: 10.1126/science.1227079)
+Full annotation: `annotations/10.1126-science.1227079.md` (DOI: 10.1126/science.1227079)
 
 ---
 
@@ -320,7 +391,9 @@ arXiv: 1307.2493
 
 - **Tarnowski et al. (2019)** — "Measuring topology from dynamics: Chern number from linking number." Static topological invariant extracted from post-quench dynamics. Linking number = Chern number. Full annotation: `second_pass.md` (SP-12). Machines: chain complex, parameterized homology, null hypothesis, stability. **Also QEC.**
 
-- **Bandt (2020)** — "Order patterns, their variation and change points." Permutation entropy with lag as filtration parameter. Brownian motion as null. Up-down balance as joint excess. Full annotation: `second_pass.md` (SP-13). Machines: null hypothesis, parameterized homology, joint-vs-marginal.
+- **Battiston, Cencetti, Iacopini, Latora, Lucas, Patania, Young & Petri (2020)** — "Networks beyond pairwise interactions" (Physics Reports survey). Hypergraphs/simplicial complexes: boundary operators, higher-order Laplacians, explosive transitions. Full annotation: `annotations/10.1016-j.physrep.2020.05.004.md`. Machines: chain complex, null hypothesis, parameterized homology (weak).
+- **Caruso, Clemente, Rillig & Garlaschelli (2021)** — "Fluctuating ecological networks." Maximum-entropy ensembles with soft (fluctuating) constraints as honest nulls for ecological network pattern detection; hard-vs-soft constraints = whether marginals are pinned exactly or only in expectation. Full annotation: `annotations/10.1111-2041-210X.13985.md`. Machines: null hypothesis, joint-vs-marginal.
+- **Bandt (2020)** — "Order patterns, their variation and change points." Permutation entropy with lag as filtration parameter. Brownian motion as null. Up-down balance as joint excess. Full annotation: `annotations/10.1007-s00362-020-01171-7.md`. Machines: null hypothesis, parameterized homology, joint-vs-marginal.
 
 - **Bennett, Cucuringu, Reinert (2022)** — "Lead-lag detection and network clustering." Hermitian spectral clustering for directed networks. Lead-lag as directed matching. Full annotation: `second_pass.md` (SP-14). Machines: matching, chain complex (weak), null hypothesis, joint-vs-marginal.
 
@@ -334,13 +407,13 @@ arXiv: 1307.2493
 
 ### Perea & Harer (2013) — SW1PerS (cross-listed from TDA)
 Sliding window embedding of time series → Rips complex → PH. SW1PerS score (max H₁ persistence) quantifies periodicity. Formal bridge: Takens embedding (dynamics) → persistent homology (TDA). Convergence theorems.
-**Machines**: chain complex, parameterized homology, stability. Full annotation: `inbox.md` (arXiv: 1307.6188). **Bridge: dynamics + TDA.**
+**Machines**: chain complex, parameterized homology, stability. Full annotation: `annotations/1307.6188.md` (arXiv: 1307.6188). **Bridge: dynamics + TDA.**
 
 ### Tsuda (2001) — Chaotic Itinerancy (cross-listed from Neuroscience)
 **"Toward an interpretation of dynamic neural activity in terms of chaotic dynamical systems"**
 DOI: 10.1017/S0140525X01000097
 Chaotic itinerancy: trajectory wanders among attractor ruins (destroyed attractors that retain geometric influence). Each quasi-stable epoch has its own local topology; the itinerant trajectory traces a path through topology space parameterized by time. Milnor attractors formalize the intermediate stability status. Fixed-point/limit-cycle as non-itinerant null. Proposed as dynamical mechanism for cognitive flexibility (olfactory perception, episodic memory).
-**Machines**: parameterized homology, stability (anti-stability: attractors destroyed but ruins exploited), null hypothesis, chain complex (weak). Full annotation: `inbox.md`.
+**Machines**: parameterized homology, stability (anti-stability: attractors destroyed but ruins exploited), null hypothesis, chain complex (weak). Full annotation: `annotations/10.1017-S0140525X01000097.md`.
 **See also**: `by-structure/filtrations.md`, `by-structure/phase_transitions.md`, `by-domain/neuroscience.md`.
 
 ---
@@ -421,14 +494,15 @@ Full annotation: `third_pass_neuro_qec.md` (TP-06).
 **Domain(s)**: Dynamical systems (gradient flows, mean-field optimization), TDA/Optimal Transport
 Muon optimizer = gradient flow on Spectral Wasserstein geometry. Family of W_γ distances parameterized by Schatten norm p: trace (p=1) → W2, operator (p=∞) → Muon. Kantorovich static matching equals Benamou-Brenier dynamic formulation for monotone norms. Continuity equation ∂_t ρ + div(ρv) = 0 is the chain complex condition. Metric equivalence with W2. Geodesic convexity. Applied to two-layer MLPs with spherical reduction.
 **Machines**: matching, parameterized homology, stability, chain complex (weak).
-Full annotation: `inbox.md` (Wave 9).
+Full annotation: `annotations/10.1017-S0140525X01000097.md` (Wave 9).
 **See also**: `by-domain/tda.md`, `by-structure/optimal_transport.md`, `atlas/MATCHING.md`, `atlas/STABILITY.md`
 
 ### Wang (2026) — Grokking as Dimensional Phase Transition in Neural Networks
+arXiv: 2604.04655.
 **Domain(s)**: Dynamical systems (self-organized criticality, gradient dynamics)
 Grokking = dimensional phase transition. Effective dimensionality D, from FSS of gradient avalanche dynamics (s_max ~ N^D across 8 model scales, N = 81–2001), crosses from sub-diffusive (D ≈ 0.90) through random-diffusion baseline (D = 1) to super-diffusive (D ≈ 1.20) at generalization. Three non-overlapping bootstrap distributions: D_pre = 0.90 ± 0.02, D_post = 1.20 ± 0.02, D_synth = 0.99 ± 0.01. Topology-invariant (5 architectures, CV < 0.3%) — D reflects gradient field geometry, not network architecture. SOC with Barabási-Albert network and TDU-OFC threshold diffusion. Companion study confirms on Transformer/ModAdd-59.
 **Machines**: stability, null hypothesis, parameterized homology, chain complex (weak).
-Full annotation: `inbox.md` (Wave 9).
+Full annotation: `annotations/10.1017-S0140525X01000097.md` (Wave 9).
 **See also**: `atlas/STABILITY.md`, `atlas/NULL_HYPOTHESIS.md`
 
 ---
@@ -438,23 +512,136 @@ Full annotation: `inbox.md` (Wave 9).
 ### Ghorbanchian, Restrepo, Torres & Bianconi (2020) — Higher-order simplicial synchronization
 Nature Comms Physics, DOI: 10.1038/s42005-021-00605-4. 113 citations. Hodge Laplacian L_k = B_k^T B_k + B_{k+1} B_{k+1}^T governs dynamics of topological signals on k-simplices. Coupling between node and link phases mediated by boundary operator B_1. Explosive (discontinuous) synchronization at critical coupling σ_c. Hysteresis loop width depends on Hodge spectral gap. Tested on connectomes.
 **Machines**: chain complex, parameterized homology, stability.
-Full annotation: `inbox.md` (Wave 10a).
+Full annotation: `annotations/10.1017-S0140525X01000097.md` (Wave 10a).
 **See also**: `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/filtrations.md`, `by-structure/phase_transitions.md`, `papers/cross_domain_bridges.md`
 
 ### Dey, Mrozek & Slechta (2021) — Conley-Morse graph persistence
 arXiv: 2107.02115. Zigzag persistence applied to sequences of Conley-Morse graphs from combinatorial multivector fields. Conley index = relative homology H_k(P,E). Two filtration types: Conley-Morse (index pair) and graph (Morse decomposition topology). Redundancy elimination across subfiltrations. Noise-resilient "thickened" index pairs. Entirely combinatorial framework.
 **Machines**: chain complex, parameterized homology, stability.
-Full annotation: `inbox.md` (Wave 10a).
+Full annotation: `annotations/10.1017-S0140525X01000097.md` (Wave 10a).
 **See also**: `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/filtrations.md`, `by-structure/phase_transitions.md`, `papers/cross_domain_bridges.md`
 
 ### Donato et al. (2016) — Persistent Homology analysis of Phase Transitions
 arXiv: 1601.03641. PH on Rips complex from configuration space samples. Energy density ε parameterizes submanifolds; PH detects topological phase transition in MFXY model (H_1 long tail below ε_c). φ^4 lattice as negative control (no topological signal). Persistence landscapes with 95% confidence bands. Jacobi metric for Rips construction.
 **Machines**: chain complex, parameterized homology, stability, null hypothesis.
-Full annotation: `inbox.md` (Wave 10b).
+Full annotation: `annotations/10.1017-S0140525X01000097.md` (Wave 10b).
 **See also**: `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/filtrations.md`, `by-structure/phase_transitions.md`, `papers/cross_domain_bridges.md`
 
 ### Batko, Mischaikow, Mrozek & Przybylski (2019) — Conley Index Approach to Sampled Dynamics
 arXiv: 1904.03757. Cohomological Conley index from weak index pairs on cubical complexes. Sunflower enclosure constructs multivalued map from time series. Isolating neighborhoods persist under ε-perturbation (Theorem 3.2). Semiconjugacy to symbolic dynamics from sampled data. Proved positive topological entropy from 30K Henon map points.
 **Machines**: chain complex, parameterized homology, stability.
-Full annotation: `inbox.md` (Wave 10b).
+Full annotation: `annotations/10.1017-S0140525X01000097.md` (Wave 10b).
 **See also**: `by-domain/tda.md`, `by-structure/boundary_operators.md`, `by-structure/filtrations.md`, `by-structure/phase_transitions.md`
+
+### Fasoli, Coletta, Gutierrez-Barragan, Gini, Gozzi, Panzeri (2026) — Attractor Dynamics of a Whole-Cortex Network Model
+PLoS Comput Biol 22(2), DOI: 10.1371/journal.pcbi.1013995. Attractor landscape of a spiking whole-cortex model as a parameterized family over inter-hemispheric connectivity; attractor count is the tracked invariant. Static-fit → emergent-dynamics stability result; undirected-connectivity structural null.
+**Machines**: parameterized homology, stability, null hypothesis, joint-vs-marginal.
+Full annotation: `annotations/10.1371-journal.pcbi.1013995.md` (B2 pass 12).
+**See also**: `by-domain/neuroscience.md`, `by-structure/phase_transitions.md`
+
+### Ying, Pan, Fox, Agarwal (2016) — Fast Approximate Dynamic Time Warping
+(1+ε)-approximation of the monotone correspondence assignment in O(κ²/ε · n log σ) for κ-packed curves; stability bound on matching value under bounded-complexity structure conditions.
+**Machines**: matching, stability.
+Full annotation: `annotations/ying-2016.md` (B2 pass 13).
+**See also**: `by-domain/information_theory.md`, `by-structure/optimal_transport.md`, `by-structure/composite_systems.md`
+
+### Silva, Giusti, Keogh, Batista (2018) — Exact Similarity Search under DTW with Alignment Pruning
+Prunes provably non-optimal cells of the DTW assignment grid; exactness preserved (zero-error stability of the matching value), up to 5× over UCR suite.
+**Machines**: matching, stability, null hypothesis (weak).
+Full annotation: `annotations/silva-2018.md` (B2 pass 13).
+**See also**: `by-domain/information_theory.md`, `by-structure/optimal_transport.md`, `by-structure/composite_systems.md`
+
+### Botvinick-Greenhouse, Oprea, Maulik & Yang (2024) — Measure-Theoretic Time-Delay Embedding
+Generalizes Takens measure-theoretically: Eulerian description of the dynamics, delay embedding as a pushforward Φ_# between spaces of probability measures, built on optimal transport; reconstruction robust to sparse/noisy observations (Lorenz-63, NOAA SST, ERA5).
+**Machines**: matching (measure-valued assignment), stability.
+Full annotation: `annotations/2409.08768.md` (B2 pass 24). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/optimal_transport.md`, `annotations/1907.08260.md`
+
+### Moosmüller, Dietrich & Kevrekidis (2019) — Geometric Transport of Discontinuous Densities
+Reverse-direction bridge: short observation histories (delay-vector side information from an observation process) disambiguate OT map identification when source-target densities are non-bijective (folds, marginalization); smooth-manifold hypothesis restores well-posedness.
+**Machines**: matching, stability (weak), parameterized homology (weak).
+Full annotation: `annotations/1907.08260.md` (B2 pass 24). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/optimal_transport.md`, `annotations/2409.08768.md`
+
+### B2 batch-004: MIOFlow — OT back into dynamics (2026-08-25)
+
+**Huguet, Magruder, Tong, Fasina, Kuchroo, Wolf & Krishnaswamy (2022) — Manifold Interpolating Optimal-Transport Flows (MIOFlow)**: arXiv: 2206.14928. Neural-ODE flow realizing the dynamic-OT coupling between population snapshots; manifold geodesic ground cost; geodesic autoencoder learns the metric hosting the matching. Closes the batch-004 Dynamics×Matching group in the applied direction (03 TrajectoryNet rejected as the thinner wrapper).
+**Machines**: matching, stability (weak).
+Full annotation: `annotations/2206.14928.md` (B2 pass 25). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/optimal_transport.md`, `annotations/2409.08768.md`, `annotations/1907.08260.md`
+
+### B2 batch-005: capacity as spatial order-disorder predictor (2026-08-25)
+
+**Ashikaga & Asgari-Targhi (2017) — Locating Order-Disorder Phase Transition in a Cardiac System**: arXiv: 1708.03990. Channel capacity / MI / transfer entropy computed as a spatially-resolved invariant field over the components of a driven cardiac system; wavebreak sites initiating fibrillation are the loci where the invariant changes character — order parameter located by information profile, not by topology. Closes the batch-005 channel-capacity group on the applied-dynamics side.
+**Machines**: parameterized homology, null hypothesis, stability (weak).
+Full annotation: `annotations/1708.03990.md` (B2 pass 32). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/neuroscience.md`, `by-structure/phase_transitions.md`
+
+### B2 batch-008: reservoir generalized synchronization — Takens re-derived (2026-08-25)
+
+**Grigoryeva, Hart & Ortega (2021) — Learning Strange Attractors with Reservoir Systems**: arXiv: 2108.05024. Takens' Embedding Theorem recovered as a special case of generalized synchronization in random linear state-space systems: the reservoir's synchronization map is a topological conjugacy onto the source attractor — embedding IS synchronization. Dynamics-side closure of the bridge pair with `annotations/2409.08768.md` (measure-theoretic Takens-via-OT): the same classical theorem re-derived via matching-as-conjugacy vs matching-as-measure-coupling.
+**Machines**: matching (conjugacy correspondence), stability (conditional contraction).
+Full annotation: `annotations/2108.05024.md` (B2 pass 44). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/optimal_transport.md`, `annotations/2409.08768.md`
+
+**Hart (2023) — Attractor Reconstruction with Reservoir Computers (Conditional Lyapunov Exponents)**: arXiv: 2401.00885. Quantitative stability condition for the reconstruction correspondence: largest conditional Lyapunov exponent of the driven reservoir must be significantly more negative than the target's most negative exponent; spectral radius of the adjacency matrix is the hyperparameter controlling that margin (small beats edge-of-chaos for reconstruction).
+**Machines**: stability (core), matching (weak).
+Full annotation: `annotations/2401.00885.md` (B2 pass 44). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/optimal_transport.md`, `annotations/2108.05024.md`
+
+**Fadera (2025) — On the Dimension of Pullback Attractors in Recurrent Neural Networks**: arXiv: 2501.11357. Box-counting dimension of the reservoir's pullback attractor bounded above by the input-sequence-space dimension: high-nominal-dimension state space carries effective low-dimensional dynamics; dimension-theoretic half of the reservoir embedding conjecture for general activations, extending `annotations/2108.05024.md` from linear to inequality-based.
+**Machines**: stability (dimension-stability), matching (weak).
+Full annotation: `annotations/2501.11357.md` (B2 pass 44). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/optimal_transport.md`, `annotations/2108.05024.md`
+
+### B2 batch-008: reservoir generalized synchronization — abstraction, extrapolation, quantum (2026-08-25)
+
+**Smith, Kim, Lu & Bassett (2021) — Learning Continuous Chaotic Attractors with a Reservoir Computer**: arXiv: 2110.08631. An RC trained on isolated attractor examples abstracts a *continuum* of attractors (limit cycles; shifted Lorenz systems), certified by an extra zero Lyapunov exponent; mechanism proposed via differentiable generalized synchronization + feedback dynamics. Extends `annotations/2108.05024.md` from single-attractor embedding to parametrized families — the neutral stability direction is the spectral certificate of abstraction rather than memorization (null-hypothesis test).
+**Machines**: matching (parametrized-family correspondence), stability (neutral-exponent signature), null hypothesis.
+Full annotation: `annotations/2110.08631.md` (B2 pass 45). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/composite_systems.md`, `annotations/2108.05024.md`
+
+**Röhm, Gauthier & Fischer (2021) — Model-free Inference of Unseen Attractors**: arXiv: 2108.04074. RC trained on a single noisy trajectory near one co-existing attractor of a multistable Lorenz-like system predicts attractors never approached in training — reconstruction correspondence validated on unsampled phase space; multistability makes phase-space coverage a binary observable against the interpolation null.
+**Machines**: matching (extrapolating correspondence), stability (field robustness under extrapolation, weak), null hypothesis.
+Full annotation: `annotations/2108.04074.md` (B2 pass 45). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/composite_systems.md`, `annotations/2108.05024.md`, `annotations/2401.00885.md`
+
+**Ahmed, Tennie & Magri (2025) — Robust Quantum Reservoir Computers for Forecasting Chaotic Dynamics**: arXiv: 2506.22335. QRCs formulated as generalized-synchronization systems with the GS=ESP criterion (synchronization iff echo state property, analytic for recurrence-free architectures); Jacobian-derived Lyapunov spectra / covariant Lyapunov vectors / attractor dimensions read through the quantum channel; noise-induced dissipation enhances robustness — stability margin as design resource, transplanting `annotations/2401.00885.md`'s conditional-Lyapunov margin to near-term quantum hardware.
+**Machines**: matching (drive-response correspondence, GS=ESP well-definedness), stability (core).
+Full annotation: `annotations/2506.22335.md` (B2 pass 45). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/composite_systems.md`, `annotations/2401.00885.md`, `annotations/2108.05024.md`
+
+**Lee, Kuklinski & Timme (2025) — Extreme Synchronization Transitions**: arXiv: 2505.10114. Complexified Kuramoto systems show finite-N transitions that mimic explosive phase transitions but are multi-dimensional bifurcations — order parameter jumps from ~N^{-1/2} to ~1 immediately past critical coupling. A named counterexample class for "abrupt jump ⇒ phase transition" inference, with transfer claims to percolation.
+**Machines**: null hypothesis (transition-vs-bifurcation classification), stability (bifurcation mechanism of the extreme jump).
+Full annotation: `annotations/2505.10114.md` (B2 pass 46). Abstract-only provenance — depth-limited.
+**See also**: `by-structure/phase_transitions.md`
+
+**Song, Choi & Kahng (2021) — Machine learning approaches for Kuramoto systems**: arXiv: 2109.08918. ML determination of a hybrid synchronization transition's criticality; network structure inferred from chaotic patterns (inverse identification of the coupling graph from dynamics, same direction as the reservoir-GS cluster).
+**Machines**: stability (learned transition detection), matching (weak — structure-from-chaos inference).
+Full annotation: `annotations/2109.08918.md` (B2 pass 47). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/statistical_physics.md`, `by-structure/optimal_transport.md`
+
+**Witthaut & Timme (2013) — Kuramoto dynamics in Hamiltonian systems**: arXiv: 1305.1742. Exact embedding of dissipative Kuramoto dynamics on invariant manifolds of a 2N-variable conservative system; the synchronization transition is the transverse instability of the Hamiltonian action dynamics.
+**Machines**: stability (core — transverse instability), joint-vs-marginal excess (manifold marginal vs full joint system).
+Full annotation: `annotations/1305.1742.md` (B2 pass 47). Abstract-only provenance — depth-limited.
+**See also**: `by-domain/statistical_physics.md`, `by-structure/composite_systems.md`
+
+**Butler, Waxman & Djurić (2024) — Tangent Space Causal Inference**: arXiv: 2410.23499. TSCI: causal discovery by learning explicit vector fields on reconstructed manifolds and testing the degree of synchronization between them — the causal signal moves from cross-manifold state prediction (CCM's neighbor matching) to tangent-bundle dynamics agreement; drop-in CCM replacement with a ladder of function classes (local linear → latent-variable → deep).
+**Machines**: matching (function-fit replaces neighbor retrieval), joint-vs-marginal excess (synchronization as composite-only structure), null hypothesis (lower wrong-alternative rate vs CCM on benchmarks).
+Full annotation: `annotations/2410.23499.md` (B2 pass 53). Abstract-only provenance — depth-limited.
+**See also**: `annotations/1601.00716.md`, `by-structure/composite_systems.md`
+
+**Zhang, Mirallès, Rousseau-Rizzi, Zinflou, Wu & Boulet (2025) — MXMap**: arXiv: 2502.03802. Multivariate extension of Partial Cross Mapping: multiPCM runs the conditioning test for indirect links inside multivariate delay embeddings, and MXMap wraps it in a two-phase causal-graph workflow — pairwise CCM to over-generate edges, then per-edge pruning against the mediation null; validated on simulated systems and ERA5 reanalysis.
+**Machines**: matching (multivariate library cross mapping), joint-vs-marginal excess (direct-vs-indirect as conditioned-vs-marginal mapping quality), null hypothesis (per-edge "fully mediated" pruning test).
+Full annotation: `annotations/2502.03802.md` (B2 pass 54). Abstract-only provenance — depth-limited.
+**See also**: `annotations/2410.23499.md`, `by-structure/optimal_transport.md`
+
+**Barraquand, Picoche, Detto & Hartig (2019) — GC vs CCM on ecological networks**: arXiv: 1909.00731. Empirical null over the method-selection heuristic itself: across predator–prey cycles, chaotic/stochastic competition, and 10–20-species networks there is no correspondence between dynamics nonlinearity and whether linear Granger or CCM performs better — the folklore "nonlinearity ⇒ use CCM" rule fails its own null test, and linear MAR(p) Granger is declared valid for nonlinear ecological networks.
+**Machines**: null hypothesis (core — wrong-alternative study of a method-choice rule rather than of either method).
+Full annotation: `annotations/1909.00731.md` (B2 pass 54). Abstract-only provenance — depth-limited.
+**See also**: `annotations/1601.00716.md`, `by-structure/phase_transitions.md` (null-surrogate section)
+
+**Glad & Woolf (2021) — Path-signature area causal discovery**: arXiv: 2110.12288. Signed areas of path signatures as a model-free coupling statistic: the antisymmetric degree-2 iterated integral of two series' increments, maximized over time shifts to locate lag/lead relationships, with confidence sequences giving anytime-valid significance — rough-path algebra imported onto the CCM shelf alongside Granger/CCM/PCMCI.
+**Machines**: matching (pairing over the lag axis), stability (anytime-valid confidence certificates converging with sample length), null hypothesis (no-directed-coupling boundary crossing).
+Full annotation: `annotations/2110.12288.md` (B2 pass 54). Abstract-only provenance — depth-limited.
+**See also**: `annotations/2502.03802.md`, `by-structure/optimal_transport.md`
