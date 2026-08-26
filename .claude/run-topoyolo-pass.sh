@@ -22,6 +22,7 @@ if [ -z "${OPENROUTER_API_KEY:-}" ]; then
 fi
 [ -n "$OPENROUTER_API_KEY" ] || { echo "no OPENROUTER_API_KEY found" >&2; exit 1; }
 
+export CLAUDE_HANDOFF_SKIP=1
 export ANTHROPIC_BASE_URL="http://127.0.0.1:8399"
 export ANTHROPIC_AUTH_TOKEN="$OPENROUTER_API_KEY"
 export ANTHROPIC_API_KEY=""
